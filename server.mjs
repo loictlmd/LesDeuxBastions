@@ -1,0 +1,78 @@
+import http from 'node:http';
+import { readFile } from 'node:fs/promises';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+import os from 'node:os';
+import { spawn } from 'node:child_process';
+import { GameService, GameError } from './src/game.mjs';
+
+const root = path.join(path.dirname(fileURLToPath(import.meta.url)), 'public');
+export function createGameServer({ service = new GameService() } = {}) {
+  const limits = new Map();
+  const server = http.createServer(async (req, res) => {
+    const send = (status, value) => { res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(value)); };
+    res.setHeader('X-Content-Type-Options', 'nosniff');
+    res.setHeader('Referrer-Policy', 'same-origin');
+    res.setHeader('Content-Security-Policy', "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");
+    try {
+      const url = new URL(req.url, 'http://localhost');
+      if (url.pathname.startsWith('/api/')) {
+        if (req.headers.origin && new URL(req.headers.origin).host !== req.headers.host) throw new GameError('Origine non autorisée.', 403);
+        const ip = req.socket.remoteAddress;
+        const key = `${ip}:${req.method === 'GET' ? 'read' : 'write'}`;
+        const now = Date.now(); const limit = limits.get(key) || { at: now, count: 0 };
+        if (now - limit.at > 60_000) { limit.at = now; limit.count = 0; }
+        limit.count++; limits.set(key, limit);
+        if (limit.count > (req.method === 'GET' ? 1200 : 240)) throw new GameError('Trop de demandes. Patientez une minute.', 429);
+        if (req.method === 'GET' && url.pathname === '/api/network') {
+          const port = server.address().port;
+          const addresses = Object.values(os.networkInterfaces()).flat().filter(n => n.family === 'IPv4' && !n.internal).map(n => `http://${n.address}:${port}`);
+          return send(200, { addresses });
+        }
+        const token = req.headers.authorization?.startsWith('Bearer ') ? req.headers.authorization.slice(7) : '';
+        if (req.method === 'GET' && url.pathname === '/api/state') return send(200, service.state(url.searchParams.get('code'), token));
+        if (req.method !== 'POST') throw new GameError('Route introuvable.', 404);
+        const chunks = []; let size = 0;
+        for await (const chunk of req) { size += chunk.length; if (size > 4096) throw new GameError('Requête trop volumineuse.', 413); chunks.push(chunk); }
+        let body; try { body = JSON.parse(Buffer.concat(chunks).toString('utf8')); } catch { throw new GameError('Requête JSON invalide.'); }
+        if (!body || typeof body !== 'object' || Array.isArray(body)) throw new GameError('Requête invalide.');
+        if (url.pathname === '/api/rooms') return send(201, service.create(body.name, body.practice === true));
+        if (url.pathname === '/api/join') return send(200, service.join(body.code, body.name));
+        if (url.pathname === '/api/action') return send(200, service.action(body.code, token, body));
+        throw new GameError('Route introuvable.', 404);
+      }
+      if (req.method !== 'GET' && req.method !== 'HEAD') throw new GameError('Méthode non autorisée.', 405);
+      let relative;
+      try { relative = decodeURIComponent(url.pathname); } catch { throw new GameError('Adresse invalide.'); }
+      if (relative === '/') relative = '/index.html';
+      const filename = path.resolve(root, `.${relative}`);
+      if (!filename.startsWith(root + path.sep)) throw new GameError('Accès refusé.', 403);
+      const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.png': 'image/png', '.ico': 'image/x-icon' }[path.extname(filename)];
+      if (!mime) throw new GameError('Fichier introuvable.', 404);
+      let content; try { content = await readFile(filename); } catch { throw new GameError('Fichier introuvable.', 404); }
+      res.writeHead(200, { 'Content-Type': `${mime}; charset=utf-8`, 'Cache-Control': 'no-cache' });
+      res.end(req.method === 'HEAD' ? undefined : content);
+    } catch (error) { if (!(error instanceof GameError)) console.error(error); if (!res.headersSent) send(error.status || 500, { error: error instanceof GameError ? error.message : 'Le serveur rencontre un problème. Réessayez.' }); else res.end(); }
+  });
+  server.requestTimeout = 10_000;
+  const tick = setInterval(() => service.tickAll(), 100); tick.unref();
+  const cleanup = setInterval(() => { service.cleanup(); for (const [key, value] of limits) if (Date.now() - value.at > 60_000) limits.delete(key); }, 60_000); cleanup.unref();
+  server.on('close', () => { clearInterval(tick); clearInterval(cleanup); });
+  return server;
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  const port = Number(process.env.PORT || 3000);
+  const server = createGameServer();
+  server.on('error', error => { console.error(error.code === 'EADDRINUSE' ? `Le port ${port} est déjà utilisé. Fermez l’autre serveur ou lancez avec PORT=3001.` : error.message); process.exitCode = 1; });
+  server.listen(port, '0.0.0.0', () => {
+    console.log(`\n  LES DEUX BASTIONS\n  Sur cet ordinateur : http://localhost:${server.address().port}\n`);
+    for (const entries of Object.values(os.networkInterfaces())) for (const entry of entries || []) if (entry.family === 'IPv4' && !entry.internal) console.log(`  Sur les téléphones (même Wi-Fi) : http://${entry.address}:${server.address().port}`);
+    console.log('\n  Gardez cette fenêtre ouverte pendant la partie. Ctrl+C pour arrêter.\n');
+    if (process.argv.includes('--open')) {
+      const url = `http://localhost:${server.address().port}`;
+      const opener = process.platform === 'darwin' ? ['open', [url]] : process.platform === 'win32' ? ['cmd', ['/c', 'start', '', url]] : ['xdg-open', [url]];
+      const browser = spawn(opener[0], opener[1], { stdio: 'ignore' }); browser.on('error', () => {}); browser.unref();
+    }
+  });
+}
