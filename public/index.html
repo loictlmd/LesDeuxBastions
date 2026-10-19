@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+ <meta name="theme-color" content="#132831"><meta name="description" content="Deux équipes, deux villages, une bataille d’idées. Le jeu de quiz et de stratégie à partager en équipe.">
+ <title>Les Deux Bastions — La bataille des idées</title>
+ <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg"><link rel="stylesheet" href="/style.css">
+ <script type="module" src="/app.js"></script>
+</head>
+<body>
+ <div class="page-grain" aria-hidden="true"></div>
+ <header class="site-header">
+  <a class="brand" href="/" aria-label="Les Deux Bastions, accueil"><img src="/assets/favicon.svg" width="44" height="44" alt=""><span>LES DEUX<br><strong>BASTIONS</strong></span></a>
+  <div class="header-right"><span class="header-tag">Un jeu qui fait équipe.</span><button class="text-button" id="rules-button">Les règles <span aria-hidden="true">↗</span></button><button class="sound-toggle" id="sound-button" aria-label="Activer les sons" title="Activer les sons">♪ <span>Off</span></button></div>
+ </header>
+ <div id="connection" class="connection-banner" role="status" hidden></div>
+ <main id="app"></main>
+ <footer class="site-footer"><span>LES DEUX BASTIONS <span class="footer-dot">◆</span> Culture commune. Esprit d’équipe.</span><button class="text-button" id="project-button">Le projet Scrum ↗</button></footer>
+ <div id="toast" class="toast" role="status" aria-live="polite"></div>
+ <dialog id="rules-dialog" class="modal">
+  <button class="modal-close" data-close="rules-dialog" aria-label="Fermer les règles">×</button><p class="eyebrow">LE CONSEIL DES STRATÈGES</p><h2>La force du collectif.</h2><p class="modal-intro">Deux équipes, un téléphone par équipe. Discutez, choisissez votre réponse, puis décidez ensemble comment dépenser vos pièces.</p>
+  <div class="rules-grid"><section><b>01 · Faites le plein d’idées</b><p>Une même question pour les deux équipes toutes les <strong>30 secondes</strong>. Vous avez 25 secondes pour répondre, une seule fois. Bonne réponse : <strong>+12 pièces</strong>. Mauvaise réponse : aucun gain, aucune pénalité.</p></section><section><b>02 · Choisissez votre stratégie</b><p>Votre village commence avec <strong>120 PV et 12 pièces</strong>. Chaque nouvelle manche apporte 3 pièces de ravitaillement. Achetez des attaques ou des défenses pendant toute la manche.</p></section><section><b>03 · Réagissez ensemble</b><p>Les attaques arrivent en 4 à 7 secondes. Un bouclier absorbe les dégâts, sauf ceux de l’éclair. Le miroir bloque et renvoie 40 % d’une attaque, puis disparaît. Deux achats sont espacés d’au moins 2 secondes.</p></section><section><b>04 · Faites tomber le bastion</b><p>À <strong>4 minutes</strong>, les attaques deviennent 50 % plus fortes. À <strong>6 minutes</strong>, la tempête retire 8 PV toutes les 10 secondes, même à travers les boucliers, et ferme l’atelier. Le premier village détruit perd. Une destruction simultanée donne une égalité.</p></section></div>
+  <div class="note"><strong>Le petit plus team building</strong><p>Changez de porte-parole toutes les deux questions. Donnez la parole à chacun avant de valider. Prévoyez 2 minutes de débrief après la partie.</p></div>
+  <p class="small muted">Une déconnexion n’arrête pas le chronomètre. Rechargez la page sur le même téléphone pour reprendre votre équipe. Après 90 secondes d’absence, l’équipe encore connectée gagne par forfait. Les parties sont conservées en mémoire jusqu’à l’arrêt du serveur.</p>
+  <button class="button primary wide" data-close="rules-dialog">À nous de jouer</button>
+ </dialog>
+ <dialog id="project-dialog" class="modal small-modal"><button class="modal-close" data-close="project-dialog" aria-label="Fermer">×</button><p class="eyebrow">PROJET DE COURS · AGILE / SCRUM</p><h2>Construire. Jouer. Apprendre.</h2><p>Notre objectif : créer une expérience courte qui encourage la communication et les décisions collectives lors d’un team building.</p><div class="note"><b>Le prochain test utilisateur</b><p>Faites jouer deux équipes. Observez la facilité de connexion, la compréhension des cartes et le temps de parole de chacun. Recueillez une amélioration par équipe pour le prochain sprint.</p></div><p>Les fiches de démarrage, le backlog et les modèles de sprint sont disponibles dans le dossier <strong>docs</strong> du projet.</p><button class="button primary wide" data-close="project-dialog">C’est parti</button></dialog>
+ <dialog id="leave-dialog" class="modal small-modal"><p class="eyebrow">QUITTER LE CHAMP DE BATAILLE</p><h2>Quitter la partie ?</h2><p id="leave-description">Vous pourrez créer une nouvelle partie ensuite.</p><div class="button-row"><button class="button secondary" data-close="leave-dialog">Rester</button><button class="button danger" id="confirm-leave">Quitter</button></div></dialog>
+ <noscript>Activez JavaScript dans votre navigateur pour jouer aux Deux Bastions.</noscript>
+</body>
+</html>
