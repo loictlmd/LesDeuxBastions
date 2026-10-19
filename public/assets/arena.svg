@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520" fill="none">
+<defs>
+ <linearGradient id="sky" x1="500" y1="0" x2="500" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#142f40"/><stop offset="1" stop-color="#254d52"/></linearGradient>
+ <linearGradient id="river" x1="560" y1="200" x2="470" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#72b8b3" stop-opacity=".04"/><stop offset="1" stop-color="#83d5cd" stop-opacity=".6"/></linearGradient>
+ <linearGradient id="island" x1="240" y1="310" x2="240" y2="480" gradientUnits="userSpaceOnUse"><stop stop-color="#345d5d"/><stop offset="1" stop-color="#152c3a"/></linearGradient>
+ <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e9e4ce"/><stop offset="1" stop-color="#b7c7bc"/></linearGradient>
+ <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f1d7be"/><stop offset="1" stop-color="#d1bba6"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#e2cf92" stop-opacity=".3"/><stop offset="1" stop-color="#e2cf92" stop-opacity="0"/></radialGradient>
+ <filter id="blur"><feGaussianBlur stdDeviation="15"/></filter>
+ <g id="pine"><path d="M0 0v43" stroke="#b0ac7f" stroke-width="4"/><path d="m0-25-18 32h9l-15 24h48L9 7h9L0-25Z" fill="#416d63"/><path d="m0-25 18 32H9l15 24H0v-56Z" fill="#284f4d"/></g>
+ <g id="window"><path d="M-7 14V0a7 7 0 0 1 14 0v14Z" fill="#344e54"/><path d="M0-5v19" stroke="#77958b" stroke-width="2"/></g>
+ <g id="bush"><ellipse rx="18" ry="11" fill="#6e9675"/><ellipse cx="12" cy="-8" rx="15" ry="12" fill="#81a67e"/></g>
+ <g id="spark"><path d="M0-5v10M-5 0H5" stroke="#e4ddbd" stroke-width="1.5"/></g>
+</defs>
+<rect width="1000" height="520" rx="30" fill="url(#sky)"/>
+<ellipse cx="500" cy="105" rx="250" ry="170" fill="url(#glow)"/>
+<circle cx="510" cy="86" r="30" fill="#f7eac7" opacity=".92"/><circle cx="522" cy="77" r="27" fill="#1d3a46"/>
+<g opacity=".5"><use href="#spark" x="98" y="68"/><use href="#spark" x="381" y="48"/><use href="#spark" x="723" y="59"/><use href="#spark" x="906" y="112"/><use href="#spark" x="604" y="151"/><circle cx="200" cy="104" r="2" fill="#e4ddbd"/><circle cx="820" cy="34" r="2" fill="#e4ddbd"/><circle cx="420" cy="118" r="2" fill="#e4ddbd"/></g>
+<path d="m0 249 101-65 88 42 113-92 111 78 114-47 100 63 126-77 130 91 117-42v220H0Z" fill="#294a51" opacity=".7"/>
+<path d="m0 308 124-60 138 45 128-51 111 56 112-76 127 65 120-43 140 74v202H0Z" fill="#2f5758" opacity=".6"/>
+<path d="M579 243c-124 63-33 93-93 137-49 36-110 58-99 140h192c-90-80-29-97-24-145 4-44-66-60 24-132Z" fill="url(#river)"/>
+<path d="M521 324c-19 28 18 34-7 58m-9 30c-31 17-40 27-42 40m63 12 7 8" stroke="#a5d9cd" stroke-opacity=".25" stroke-width="3" stroke-linecap="round"/>
+<ellipse cx="244" cy="441" rx="199" ry="25" fill="#102a35" opacity=".45" filter="url(#blur)"/><ellipse cx="763" cy="441" rx="192" ry="25" fill="#102a35" opacity=".45" filter="url(#blur)"/>
+<!-- L'île de sauge -->
+<path d="m49 351 84-46 198-13 103 56-17 43-94 62-157-2-94-49Z" fill="url(#island)"/>
+<path d="m49 351 88-51 192-7 105 55-77 50-184 15Z" fill="#68927a"/><path d="m49 351 124 50 184-15 77-38-77 50-184 15Z" fill="#8bb08a"/>
+<path d="m173 413 11 29 10-33m116-7-12 39m74-52 5 20" stroke="#496f67" stroke-width="5"/>
+<path d="m271 346 48 15-47 48-49 2Z" fill="#b2b297"/>
+<g transform="translate(108 297) scale(.85)"><use href="#pine"/></g><g transform="translate(371 316) scale(.75)"><use href="#pine"/></g><g transform="translate(77 334) scale(.55)"><use href="#pine"/></g>
+<!-- Forteresse verte -->
+<path d="m171 259 111-34 69 42v85l-109 37-71-43Z" fill="#b5c4b5"/>
+<path d="m242 294 109-27v85l-109 37Z" fill="#809f95"/>
+<path d="m171 259 71 35 109-27-69-42Z" fill="#eee8cf"/>
+<path d="M201 231v-63l50-15 43 24v77l-48 20-45-26Z" fill="url(#stone)"/>
+<path d="m251 153 43 24v77l-43 18Z" fill="#9ab3a6"/>
+<path d="m191 171 61-87 52 99-53-21Z" fill="#7dc2a0"/><path d="m252 84 52 99-53-21Z" fill="#3f897b"/>
+<path d="M252 87V51" stroke="#d9dec2" stroke-width="3"/><path d="m254 52 46 8-13 10-33-6Z" fill="#a9e6b8"/>
+<g transform="translate(223 208)"><use href="#window"/></g><g transform="translate(272 214)"><use href="#window"/></g>
+<path d="m147 253 39-15 29 16v91l-37 14-31-19Z" fill="url(#stone)"/><path d="m178 271 37-17v91l-37 14Z" fill="#99b0a2"/>
+<path d="m137 256 47-66 41 66-47 18Z" fill="#7dc2a0"/><path d="m184 190 41 66-47 18Z" fill="#3f897b"/>
+<g transform="translate(162 295) scale(.72)"><use href="#window"/></g>
+<path d="m303 270 37-13 29 16v84l-38 16-28-18Z" fill="url(#stone)"/><path d="m331 289 38-16v84l-38 16Z" fill="#93ac9d"/>
+<path d="m293 272 48-63 38 67-48 17Z" fill="#7dc2a0"/><path d="m341 209 38 67-48 17Z" fill="#3f897b"/>
+<g transform="translate(345 310) scale(.72)"><use href="#window"/></g>
+<path d="m251 380 1-38c0-21 28-30 28-9v38" fill="#263f45"/><path d="m259 376 1-34c0-10 10-17 12-6v37" fill="#d9b97a"/>
+<path d="m218 308 15 5m54-13 13-4m-105 35 10 4m96 1 9-3" stroke="#91a698" stroke-width="3"/>
+<g transform="translate(129 365)"><use href="#bush"/></g><g transform="translate(349 381) scale(.7)"><use href="#bush"/></g>
+<!-- L'île corail -->
+<path d="m570 352 94-52 191-8 100 59-21 47-91 52-158 5-96-50Z" fill="url(#island)"/>
+<path d="m570 352 93-56 192-5 100 60-81 50-179 15Z" fill="#87917b"/><path d="m570 352 125 51 179-15 81-37-81 50-179 15Z" fill="#a5aa85"/>
+<path d="m696 416 10 25 10-29m109-8-12 39m75-56 7 21" stroke="#496f67" stroke-width="5"/>
+<path d="m772 349 50 20-47 45-47 1Z" fill="#c1b49a"/>
+<g transform="translate(617 304) scale(.8)"><use href="#pine"/></g><g transform="translate(910 331) scale(.7)"><use href="#pine"/></g><g transform="translate(885 290) scale(.5)"><use href="#pine"/></g>
+<!-- Forteresse corail -->
+<path d="m685 261 110-33 70 42v86l-109 37-71-43Z" fill="#d3c2a7"/><path d="m756 296 109-26v86l-109 37Z" fill="#a69d8e"/><path d="m685 261 71 35 109-26-70-42Z" fill="#f2dec0"/>
+<path d="M717 233v-63l49-15 44 24v77l-49 20-44-26Z" fill="url(#rose)"/><path d="m766 155 44 24v77l-44 18Z" fill="#b9a794"/>
+<path d="m707 173 60-87 53 99-54-21Z" fill="#e5a18d"/><path d="m767 86 53 99-54-21Z" fill="#b96f64"/>
+<path d="M767 89V53" stroke="#dfd4bb" stroke-width="3"/><path d="m769 54 46 8-13 10-33-6Z" fill="#f3b69c"/>
+<g transform="translate(738 210)"><use href="#window"/></g><g transform="translate(787 216)"><use href="#window"/></g>
+<path d="m661 255 39-15 29 16v91l-37 14-31-19Z" fill="url(#rose)"/><path d="m692 273 37-17v91l-37 14Z" fill="#bba994"/>
+<path d="m651 258 47-66 41 66-47 18Z" fill="#e5a18d"/><path d="m698 192 41 66-47 18Z" fill="#b96f64"/>
+<g transform="translate(676 297) scale(.72)"><use href="#window"/></g>
+<path d="m817 272 37-13 29 16v84l-38 16-28-18Z" fill="url(#rose)"/><path d="m845 291 38-16v84l-38 16Z" fill="#b7a590"/>
+<path d="m807 274 48-63 38 67-48 17Z" fill="#e5a18d"/><path d="m855 211 38 67-48 17Z" fill="#b96f64"/>
+<g transform="translate(859 312) scale(.72)"><use href="#window"/></g>
+<path d="m765 384 1-38c0-21 28-30 28-9v38" fill="#3e4647"/><path d="m773 380 1-34c0-10 10-17 12-6v37" fill="#e3b77c"/>
+<path d="m732 310 15 5m54-13 13-4m-105 35 10 4m96 1 9-3" stroke="#b5a58d" stroke-width="3"/>
+<g transform="translate(648 376)"><use href="#bush"/></g><g transform="translate(869 385) scale(.7)"><use href="#bush"/></g>
+<!-- Chemin de l'affrontement -->
+<path d="M337 163Q498 7 674 163" stroke="#e9d6a7" stroke-opacity=".35" stroke-width="2" stroke-dasharray="5 9"/>
+<g transform="translate(503 47) rotate(19)"><path d="m-14 2 27-5-7 13Z" fill="#f4dfab"/><path d="m-14 2 15 2 5 6" stroke="#acb296" stroke-width="1"/></g>
+<g opacity=".5"><path d="M43 454h54m786 15h50M81 476h27m572 7h31" stroke="#719b8c" stroke-width="2" stroke-linecap="round"/></g>
+</svg>
