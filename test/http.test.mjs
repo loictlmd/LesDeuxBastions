@@ -1,0 +1,31 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { createGameServer } from '../server.mjs';
+
+test('real HTTP server: two players join, answer, attack and resume', async t => {
+  const server = createGameServer(); await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+  t.after(() => new Promise(resolve => server.close(resolve)));
+  const base = `http://127.0.0.1:${server.address().port}`;
+  const request = async (path, body, token) => { const response = await fetch(base + path, { method: body ? 'POST' : 'GET', headers: { 'Content-Type': 'application/json', ...(token ? { Authorization: `Bearer ${token}` } : {}) }, body: body ? JSON.stringify(body) : undefined }); return { status: response.status, value: await response.json() }; };
+  const page = await fetch(base); assert.equal(page.status, 200); assert.match(await page.text(), /Les Deux Bastions/);
+  assert.equal((await fetch(base + '/src/questions.mjs')).status, 404);
+  const a = (await request('/api/rooms', { name: 'Téléphone A' })).value;
+  const b = (await request('/api/join', { name: 'Téléphone B', code: a.code })).value;
+  assert.notEqual(a.token, b.token);
+  assert.equal((await request('/api/state?code=' + a.code)).status, 401);
+  assert.equal((await request('/api/join', { name: 'Troisième téléphone', code: a.code })).status, 409);
+  const action = (p, type, details = {}) => request('/api/action', { code: p.code, type, ...details }, p.token);
+  await action(a, 'ready'); await action(b, 'ready'); const started = await action(a, 'start'); assert.equal(started.value.status, 'playing');
+  const one = (await request('/api/state?code=' + a.code, null, a.token)).value;
+  const two = (await request('/api/state?code=' + b.code, null, b.token)).value;
+  assert.deepEqual(one.question, two.question); assert.equal(one.question.correct, undefined);
+  const answers = await Promise.all([action(a, 'answer', { round: 1, choice: 0 }), action(a, 'answer', { round: 1, choice: 0 })]);
+  assert.deepEqual(answers.map(r => r.status).sort(), [200, 400]);
+  await action(a, 'buy', { item: 'arrows' }); await action(b, 'buy', { item: 'shield' });
+  const resumed = (await request('/api/state?code=' + a.code, null, a.token)).value;
+  assert.equal(resumed.projectiles.length, 1); assert.equal(resumed.teams.find(p => p.id !== resumed.me).shield, 18);
+  const invalid = await fetch(base + '/api/rooms', { method: 'POST', body: '{broken' }); assert.equal(invalid.status, 400);
+  const crossOrigin = await fetch(base + '/api/rooms', { method: 'POST', headers: { Origin: 'https://other.example' }, body: '{}' }); assert.equal(crossOrigin.status, 403);
+  await action(b, 'leave'); const result = (await request('/api/state?code=' + a.code, null, a.token)).value;
+  assert.equal(result.status, 'finished'); assert.equal(result.winner, one.me);
+});
