@@ -2,11 +2,11 @@
 
 Ordre proposé à confirmer par le Product Owner. « Implémenté » signifie présent et vérifié techniquement ; « À valider en recette » ne signifie pas « Done » selon la définition de votre groupe. Les estimations ci-dessous sont indicatives, en points relatifs, à refaire ensemble ; elles ne représentent ni des heures ni du travail déjà planifié.
 
-| Ordre / ID | User story | Points proposés | État au 19/10/2026 |
+| Ordre / ID | User story | Points proposés | État au 20/10/2026 |
 |---|---|---:|---|
 | 1 · US01 | En tant qu’équipe, je veux créer ou rejoindre une partie par code pour affronter la bonne équipe. | 3 | Implémenté, à valider en recette |
 | 2 · US02 | En tant qu’équipe, je veux confirmer ma présence avant un démarrage commun pour commencer à égalité. | 2 | Implémenté, à valider en recette |
-| 3 · US03 | En tant qu’équipe, je veux une question commune toutes les 30 secondes et une récompense contrôlée pour gagner des ressources équitablement. | 5 | Implémenté, à valider en recette |
+| 3 · US03 | En tant qu’équipe, je veux une question commune et une récompense selon la rapidité pour gagner des ressources équitablement. | 5 | Implémenté, à valider en recette |
 | 4 · US04 | En tant qu’équipe, je veux choisir entre plusieurs attaques pour adapter ma stratégie à la défense adverse. | 5 | Implémenté, à valider en recette |
 | 5 · US05 | En tant qu’équipe, je veux protéger ou réparer mon village pour réagir aux attaques. | 5 | Implémenté, à valider en recette |
 | 6 · US06 | En tant que joueur, je veux voir les points de vie et les attaques en approche pour comprendre la situation. | 3 | Implémenté, à valider sur vrais mobiles |
@@ -17,7 +17,7 @@ Ordre proposé à confirmer par le Product Owner. « Implémenté » signifie pr
 | 11 · US11 | En tant que groupe projet, je veux observer des joueurs pour prioriser les prochaines améliorations. | 3 | À faire : 3 parties observées |
 | 12 · US12 | En tant que joueur, je veux des textes et commandes lisibles sur mon téléphone pour agir facilement. | 3 | Interface adaptée ; recette iOS/Android à faire |
 | 13 · US13 | En tant qu’animateur, je veux choisir la difficulté ou les thèmes pour adapter le jeu au public. | À estimer | Évolution non implémentée |
-| 14 · US14 | En tant qu’animateur, je veux faire jouer des équipes sur des réseaux différents. | À estimer | Hébergement Internet non réalisé |
+| 14 · US14 | En tant qu’animateur, je veux faire jouer des équipes sur des réseaux différents. | À estimer | Tunnel ngrok intégré au lanceur ; connexion réelle à valider, hébergement permanent non réalisé |
 
 ## Critères d’acceptation
 
@@ -31,23 +31,23 @@ Ordre proposé à confirmer par le Product Owner. « Implémenté » signifie pr
 ### US02 — Démarrage commun
 
 - Seule l’équipe créatrice peut lancer ; deux équipes connectées et prêtes sont nécessaires.
-- Les deux villages commencent avec 120 PV et 12 pièces.
+- Les deux villages commencent avec 300 PV et 12 pièces. Un pop-up récapitulatif attend la validation des deux équipes avant de démarrer le chronomètre.
 - Les horloges sont fondées sur le serveur, sans dépendre de l’heure des téléphones.
 
 ### US03 — Quiz et ressources
 
 - Les deux équipes voient la même question et les mêmes propositions dans chaque manche.
-- Une nouvelle question commence toutes les 30 secondes ; répondre est possible pendant 25 secondes.
-- Une bonne réponse donne 12 pièces une seule fois ; une mauvaise réponse n’en donne aucune.
+- Répondre est possible pendant 25 secondes. Après deux réponses, le résultat dure 3 secondes puis la question suivante arrive ; sinon la manche dure 30 secondes.
+- Une bonne réponse donne entre 2 et 5 pièces selon le temps serveur, une seule fois, avec une animation du gain ; une mauvaise réponse n’en donne aucune.
 - Une réponse en retard, répétée ou destinée à l’ancienne manche est refusée.
-- Le ravitaillement de 3 pièces arrive une seule fois par nouvelle manche.
+- Le ravitaillement de 1 pièce arrive une seule fois par nouvelle manche.
 
 ### US04 / US05 — Équipements
 
-- Chaque achat déduit exactement son prix et respecte le solde et les délais.
-- Une attaque n’applique ses dégâts qu’au moment de son impact.
+- Chaque achat déduit exactement son prix et respecte le solde et les délais. Chaque attaque nécessite un déblocage payé une seule fois, suivi de sa construction ; la progression et le déblocage sont visibles sur les deux bastions.
+- Une attaque n’applique ses dégâts qu’au moment de son impact. Chaque achat de tir augmente son prix pour cette équipe et cette attaque uniquement ; un achat refusé ne fait pas monter le prix. Un cadre rouge, orange ou vert et un libellé indiquent le déblocage.
 - L’éclair traverse les boucliers ; le sabotage les réduit ; le miroir ne déclenche pas une boucle de renvois.
-- Le bouclier ne dépasse pas 36 points et expire ; la réparation ne dépasse pas 120 PV et ferme pendant la tempête.
+- Le bouclier ne dépasse pas 36 points et expire ; la réparation ne dépasse pas 300 PV et ferme pendant la tempête.
 
 ### US06 / US12 — Lisibilité
 
@@ -59,7 +59,7 @@ Ordre proposé à confirmer par le Product Owner. « Implémenté » signifie pr
 ### US07 / US08 — Fin et reprise
 
 - Un village à zéro PV termine la partie ; une destruction simultanée affiche une égalité.
-- Aucun achat après la fin ; la revanche requiert les deux accords et remet les compteurs à zéro.
+- Aucun achat après la fin ; la revanche requiert les deux accords, remet les compteurs et les déblocages et les prix à zéro, conserve les couleurs, puis réaffiche le récapitulatif.
 - Le même onglet retrouve son équipe après rechargement, avec ses ressources et son historique conservés.
 - Une absence prolongée de 90 secondes donne une victoire par forfait à l’équipe restée connectée.
 
@@ -69,3 +69,12 @@ Ordre proposé à confirmer par le Product Owner. « Implémenté » signifie pr
 - Trois parties sont observées sur les appareils choisis ; les difficultés et durées sont notées.
 - Les résultats sont présentés en review et au moins une amélioration est priorisée dans le backlog.
 - Chaque partie comprend une rotation de porte-parole et un court débrief.
+
+## Compléments — pause, couleurs et durée
+
+- Chaque équipe choisit parmi six couleurs dans le camp ou en cours de bataille ; le choix recolore le château sur les deux écrans. Une couleur déjà prise reste réservée à son équipe.
+- Les deux camps disposent du bouton Pause. Tous les délais de jeu et le forfait pour absence sont gelés pendant la pause. La reprise nécessite l’accord des deux camps connectés ; le bot confirme automatiquement.
+- Un rechargement conserve la pause, les couleurs, les prix et les ressources. Aucune réponse ni dépense pendant la pause.
+- Les bastions commencent avec 300 PV. Le siège commence à 8 min, les réparations ferment à 9 min, la tempête frappe à partir de 9 min 10 s.
+- La limite est fixée à 10 minutes de jeu effectif, hors pauses. Un bastion détruit perd avant cette limite ; sinon le plus grand nombre de PV détermine le gagnant. PV égaux : égalité.
+- L’atelier coûte 20 pièces et restaure 8 PV, avec une recharge de 30 s, afin de limiter la domination d’une stratégie reposant uniquement sur les réparations.

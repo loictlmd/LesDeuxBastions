@@ -8,15 +8,15 @@
 
 ## 🎯 Le but du jeu
 
-**Détruire le bastion adverse avant que le vôtre ne tombe à zéro point de vie.**
+**Détruire le bastion adverse, ou conserver plus de points de vie que lui après dix minutes de jeu effectif.**
 
-Chaque équipe commence avec **120 points de vie ❤️** et **12 pièces 🪙**. Toutes les **30 secondes ⏱️**, les deux équipes reçoivent la même question aléatoire. Vous disposez de **25 secondes** pour discuter et valider une seule réponse.
+Chaque équipe commence avec **300 points de vie ❤️** et **12 pièces 🪙**. Un **récapitulatif des règles** s’ouvre au lancement et à chaque revanche : le chronomètre attend l’accord des deux équipes. Elles reçoivent ensuite la même question aléatoire et disposent de **25 secondes** pour discuter et valider une seule réponse. Quand les deux ont répondu, le résultat reste affiché **3 secondes**, puis la question suivante commence. Sinon, la manche dure 30 secondes.
 
-- ✅ Bonne réponse : **+12 pièces**.
+- ✅ Bonne réponse : **+2 à +5 pièces selon la rapidité** : 5 au départ, puis une pièce de moins toutes les 6 secondes, jusqu’à 2. Une animation indique le gain, y compris 0 après une erreur ou une absence de réponse.
 - ❌ Mauvaise réponse ou absence de réponse : aucun gain, aucune pénalité.
-- 📦 Nouvelle manche : **+3 pièces** de ravitaillement.
-- ⚔️ Dépensez vos pièces pour attaquer, vous protéger ou réparer votre village.
-- 🏆 La dernière équipe dont le village tient debout remporte la partie ! Une destruction simultanée donne une égalité.
+- 📦 Nouvelle manche : **+1 pièce** de ravitaillement.
+- ⚔️ Payez une fois le **déblocage** d’une attaque, attendez sa construction, puis payez chaque tir, de plus en plus cher à chaque utilisation. Les constructions et les attaques débloquées sont visibles sous les deux bastions. Les défenses sont disponibles dès le départ.
+- 🏆 Un bastion détruit perd immédiatement. À **10 minutes de jeu effectif**, le bastion avec le plus de PV gagne ; une égalité de PV ou une destruction simultanée donne une égalité.
 
 Les projectiles mettent **4 à 7 secondes** à arriver : surveillez les attaques et défendez-vous à temps. Les achats restent possibles pendant le quiz.
 
@@ -25,7 +25,7 @@ Les projectiles mettent **4 à 7 secondes** à arriver : surveillez les attaques
 - 👥 **Deux équipes**, avec **un téléphone par équipe**.
 - 💬 Les joueurs discutent des réponses et prennent leurs décisions ensemble.
 - 🔄 Changez de porte-parole toutes les deux questions pour faire participer chacun.
-- ⏳ Comptez environ **3 à 9 minutes** de jeu, puis un court débrief.
+- ⏳ Comptez environ **10 minutes de jeu effectif** de jeu, puis un court débrief.
 - 💡 Après la partie : « Quelle idée d’un coéquipier a changé notre stratégie ? »
 
 Le projet est réalisé dans le cadre d’un **cours utilisant la méthode Agile avec Scrum**. Les documents de démarrage et de suivi sont disponibles dans le dossier [`docs/`](docs/README.md).
@@ -33,12 +33,14 @@ Le projet est réalisé dans le cadre d’un **cours utilisant la méthode Agile
 ## ✨ Ce que contient le jeu
 
 - 🏕️ Création d’une partie et invitation par code de six caractères.
-- 📚 **72 questions** dans six thèmes de culture générale.
+- 📚 **144 nouvelles questions** de niveau intermédiaire à difficile dans huit thèmes : géographie, histoire, physique/chimie, mathématiques/logique, littérature/langues, arts/musique, informatique/techniques, nature/astronomie.
 - ⚔️ **Quatre attaques** et 🛡️ **trois défenses**.
 - 🎨 Villages illustrés, projectiles animés, boucliers et journal de bataille.
 - 📱 Interface adaptée aux téléphones et aux ordinateurs.
 - 🔁 Reconnexion après rechargement et revanche avec l’accord des deux équipes.
 - 🤖 Mode **« Explorer une démo »** contre une équipe automatique.
+- 🎨 Six couleurs de château au choix par équipe, visibles sur les deux écrans.
+- ⏸️ Pause disponible aux deux camps ; reprise après accord des deux équipes.
 - 🔊 Sons facultatifs, activables dans l’interface.
 
 ## 💻 Avant de commencer
@@ -48,9 +50,9 @@ Il vous faut :
 - Un ordinateur **Windows, macOS ou Linux** pour héberger la partie.
 - **[Node.js](https://nodejs.org/) version 20 ou supérieure**, installé sur cet ordinateur. Vérifiez avec `node --version`.
 - Deux téléphones avec un navigateur.
-- L’ordinateur et les téléphones connectés au **même réseau Wi-Fi**, autorisant les échanges entre appareils.
+- En local : l’ordinateur et les téléphones sur le **même réseau Wi-Fi**, autorisant les échanges entre appareils. Sur Internet : un tunnel ngrok sur l’ordinateur ; les téléphones peuvent utiliser d’autres réseaux.
 
-📦 Le projet n’utilise **aucune dépendance externe à installer** : pas besoin de `npm install`.
+📦 Le projet n’utilise **aucune dépendance npm à installer** : pas besoin de `npm install`.
 
 🌐 Une fois Node.js et le projet téléchargés, le jeu fonctionne sur le réseau local sans accès Internet. Aucun compte joueur n’est nécessaire.
 
@@ -107,7 +109,9 @@ chmod +x "Lancer le jeu.command"
 
 ### 🪟 Raccourci sur Windows
 
-Double-cliquez sur **`Lancer le jeu.bat`** après avoir installé Node.js. Le navigateur s’ouvre automatiquement.
+Double-cliquez sur **`Lancer le jeu.bat`** après avoir installé Node.js et configuré ngrok. Il lance **le jeu et le tunnel ensemble**, affiche le lien HTTPS et l’ouvre dans le navigateur. Il retrouve notamment le ngrok téléchargé dans `%TEMP%\bastions-ngrok`. Pour une installation durable, placez `ngrok.exe` dans `tools`.
+
+La configuration initiale de l’authtoken et le dépannage sont décrits dans [Jouer sur Internet avec ngrok](docs/05_TUNNEL_INTERNET.md). Fermez l’ancien serveur avant de lancer le `.bat`. Sans ngrok disponible, le jeu reste accessible localement. Pour un lancement local seul, utilisez `npm start`.
 
 ### 🐧 Sur Linux
 
@@ -115,13 +119,17 @@ Utilisez `npm start`, puis ouvrez [http://localhost:3000](http://localhost:3000)
 
 ## 📱 Connecter les deux équipes
 
+**Avec ngrok :** ouvrez le lien HTTPS affiché sur les deux appareils, puis suivez les étapes 3 à 7 ci-dessous.
+
+**En réseau local :**
+
 1. 📶 Connectez les deux téléphones au **même Wi-Fi que l’ordinateur**.
 2. 🌐 Ouvrez sur chaque téléphone l’adresse **« Sur les téléphones »** affichée dans le terminal.
 3. 🏕️ **Équipe A** : saisissez votre nom et choisissez **Créer une partie**.
 4. 🔑 **Équipe B** : choisissez **Rejoindre** et entrez le code partagé par l’équipe A. Le lien d’invitation fonctionne aussi.
 5. ✅ Chaque équipe appuie sur **Nous sommes prêts**.
 6. 🚩 L’équipe qui a créé le camp appuie sur **Lancer la bataille**.
-7. 🏆 Jouez jusqu’au résultat, puis proposez une revanche !
+7. 📋 Chaque équipe valide le petit récapitulatif, puis la bataille démarre. Jouez jusqu’au résultat et proposez une revanche !
 
 > 💡 Sur un téléphone, n’utilisez pas `localhost` : cela désigne le téléphone lui-même, pas l’ordinateur qui héberge la partie.
 
@@ -129,34 +137,49 @@ Utilisez `npm start`, puis ouvrez [http://localhost:3000](http://localhost:3000)
 
 ### 🤖 Découvrir le jeu seul
 
-Ouvrez [http://localhost:3000](http://localhost:3000), puis cliquez sur **Explorer une démo**. Confirmez que votre équipe est prête et lancez la bataille contre les Veilleurs, une équipe automatique.
+Ouvrez [http://localhost:3000](http://localhost:3000), puis cliquez sur **Explorer une démo**. Confirmez que votre équipe est prête, lancez la bataille puis validez le récapitulatif. Les Veilleurs, une équipe automatique, débloquent aussi leurs attaques.
 
 Pour essayer le mode deux équipes sur un seul ordinateur, ouvrez le jeu dans deux nouveaux onglets distincts. Chaque onglet conserve sa propre équipe.
 
 ## ⚔️ Attaques et défenses
 
-| Équipement | Prix 🪙 | Effet normal | Impact / recharge |
-|---|---:|---|---|
-| 🏹 Volée de flèches | 8 | 12 dégâts | 4 s / 4 s |
-| 🪨 Catapulte | 18 | 32 dégâts | 7 s / 7 s |
-| ⚡ Éclair perçant | 14 | 18 dégâts qui ignorent le bouclier | 6 s / 6 s |
-| 🧨 Sabotage | 10 | Retire jusqu’à 24 de bouclier, puis inflige 6 dégâts ordinaires | 5 s / 5 s |
-| 🛡️ Dôme protecteur | 10 | +18 de bouclier, maximum 36 ; dure 45 s | Immédiat / 8 s |
-| 🔧 Atelier de réparation | 14 | +16 PV, maximum 120 | Immédiat / 20 s |
-| 🪞 Miroir de riposte | 12 | Bloque et renvoie 40 % de la prochaine attaque ; expire après 12 s | Immédiat / 20 s |
+| Équipement | Déblocage unique / construction | Prix par utilisation | Effet normal | Impact / recharge |
+|---|---|---|---|---|
+| 🏹 Volée de flèches | 6 pièces / 5 s | 8, 16, 24… (+8 par tir) | 12 dégâts | 4 s / 4 s |
+| 🪨 Catapulte | 18 pièces / 12 s | 18, 31, 44… (+13 par tir) | 32 dégâts | 7 s / 7 s |
+| ⚡ Éclair perçant | 14 pièces / 10 s | 14, 24, 34… (+10 par tir) | 18 dégâts ignorant le bouclier | 6 s / 6 s |
+| 🧨 Sabotage | 10 pièces / 8 s | 10, 18, 26… (+8 par tir) | Retire jusqu’à 24 de bouclier, puis inflige 6 dégâts | 5 s / 5 s |
+| 🛡️ Dôme protecteur | Disponible dès le départ | 10 | +18 de bouclier, maximum 36 ; dure 45 s | Immédiat / 8 s |
+| 🔧 Atelier de réparation | Disponible dès le départ | 20 | +8 PV, maximum 300 | Immédiat / 30 s |
+| 🪞 Miroir de riposte | Disponible dès le départ | 12 | Bloque et renvoie 40 % de la prochaine attaque ; expire après 12 s | Immédiat / 20 s |
 
-⏱️ Deux achats doivent être espacés d’au moins **2 secondes**. Chaque équipement a également sa propre recharge.
+Le prix augmente seulement après un tir réussi à l’achat, indépendamment pour chaque attaque et chaque équipe. Un clic refusé ne change pas le prix. Chaque carte affiche son état : **rouge / verrouillée**, **orange / en construction**, **vert / débloquée**, avec un texte en complément de la couleur.
+
+Les déblocages restent acquis jusqu’à la fin de la partie, y compris après rechargement. Une revanche remet les constructions et les prix à zéro, tout en conservant la couleur choisie.
+
+⏱️ Deux achats, déblocages compris, doivent être espacés d’au moins **2 secondes**. Chaque équipement a également sa propre recharge.
 
 🪞 Le renvoi du miroir est arrondi à l’entier le plus proche. Il peut être absorbé par le bouclier adverse et ne déclenche pas de deuxième miroir. Un sabotage retire le bouclier avant la réduction des dégâts par le miroir.
 
 🛡️ Un second dôme ajoute des points jusqu’au plafond de 36 et renouvelle la protection pour 45 secondes.
 
-### 🌩️ Une fin de partie garantie
+### ⏸️ Pause et couleurs
 
-- À **4 minutes**, le siège commence : les nouvelles attaques infligent **50 % de dégâts supplémentaires**.
-- À **6 minutes**, les réparations ferment et une tempête se prépare.
-- Dès **6 min 10 s**, puis toutes les 10 secondes, chaque village perd **8 PV**, même à travers les boucliers.
-- Si le serveur reste actif, la partie finit au plus tard à **8 min 30 s**.
+Choisissez votre couleur dans le camp, ou ouvrez **Couleurs du château** pendant la bataille. Les toits, drapeaux et barres de vie changent pour les deux joueurs. Une couleur occupée par l’adversaire ne peut pas être choisie.
+
+Chaque équipe peut demander **Pause**, y compris depuis le raccourci mobile. Questions, récompenses, constructions, projectiles, protections, recharges, siège et tempête cessent d’avancer. Les deux équipes doivent cliquer sur **Reprendre** ; en démo, l’adversaire automatique est déjà d’accord. Une pause se conserve après rechargement. Les achats et réponses sont refusés pendant la pause.
+
+### 🌩️ Une partie de dix minutes au maximum
+
+Le chronomètre de partie exclut les pauses et commence après le récapitulatif.
+
+- À **8 minutes**, le siège commence : les nouvelles attaques infligent **50 % de dégâts supplémentaires**.
+- À **9 minutes**, les réparations ferment.
+- Dès **9 min 10 s**, puis toutes les 10 secondes, chaque village perd **8 PV**, à travers les boucliers.
+- À **10 minutes**, la partie s’arrête : l’équipe avec le plus de PV gagne, ou égalité si les PV sont égaux. Les impacts exactement à la limite sont résolus avant le classement.
+- Une destruction, un abandon ou un forfait peut terminer la partie plus tôt.
+
+Les simulations des règles actuelles durent entre **9 min 03 s et 10 min**. Il reste à confirmer le ressenti et les stratégies avec de vrais joueurs.
 
 ## 🛠️ Un problème de connexion ?
 
@@ -195,9 +218,9 @@ npm test
 npm run simulate
 ```
 
-- ✅ **17 tests automatisés** du moteur et du protocole HTTP passent.
-- 📱 Un parcours complet a été vérifié dans deux sessions Chromium avec des écrans mobiles simulés.
-- 🎲 **500 matchs simulés** ont été utilisés pour étudier les stratégies et vérifier que les parties se terminent.
+- ✅ **38 tests automatisés** du moteur, du protocole HTTP et du lanceur passent dans l’environnement Linux de développement. Les trois tests utilisant un faux exécutable ngrok sont ignorés sous Windows ; le double-clic réel reste à vérifier sur le PC.
+- 📱 Un parcours a été vérifié dans deux sessions Chromium indépendantes, mobile simulé et ordinateur : récapitulatif commun, couleurs synchronisées, cadres rouge/vert, prix progressifs, pauses et reprise à deux, rechargement pendant une pause, fin à dix minutes et revanche.
+- 🎲 **900 matchs simulés** ont été utilisés pour étudier les stratégies et vérifier que les parties se terminent.
 - 👥 L’équilibrage est une première base : il reste à l’affiner avec les joueurs et à tester sur les vrais téléphones et le Wi-Fi du cours.
 
 Le détail des vérifications et le protocole de recette sont dans [Tests et équilibrage](docs/04_TESTS_ET_EQUILIBRAGE.md).
@@ -217,7 +240,9 @@ LesDeuxBastions/
 │   ├── style.css              # Affichage ordinateur et mobile
 │   └── assets/                # Illustrations SVG originales
 ├── test/                      # Tests automatisés
-├── scripts/simulate.mjs        # Simulations d’équilibrage
+├── scripts/
+│   ├── simulate.mjs            # Simulations d’équilibrage
+│   └── launch.mjs              # Démarrage du serveur et du tunnel ngrok
 ├── docs/                      # Documents Scrum et recette
 ├── Lancer le jeu.command      # Lanceur macOS
 ├── Lancer le jeu.bat          # Lanceur Windows
@@ -237,7 +262,7 @@ Les noms, dates et décisions du groupe sont à compléter avec vos informations
 
 Cette version tourne **sur l’ordinateur de l’animateur**, avec un seul serveur Node.js. Les téléphones interrogent ce serveur toutes les 800 ms ; il contrôle les réponses, les pièces et les dégâts.
 
-**GitHub héberge le code, pas la partie.** GitHub Pages seul ne peut pas exécuter ce serveur Node.js. Pour jouer depuis des réseaux différents, il faudra prévoir un hébergement capable de faire tourner un processus Node.js ; aucun déploiement Internet n’est configuré dans cette version.
+**GitHub héberge le code, pas la partie.** GitHub Pages seul ne peut pas exécuter ce serveur Node.js. Pour jouer depuis des réseaux différents, le lanceur Windows peut ouvrir un tunnel ngrok vers ce serveur local. Le PC doit rester allumé. Un hébergement Node.js permanent demeure une évolution distincte.
 
 ---
 

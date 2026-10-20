@@ -1,9 +1,12 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { GameService } from '../src/game.mjs';
 import { createGameServer } from '../server.mjs';
 
 test('real HTTP server: two players join, answer, attack and resume', async t => {
-  const server = createGameServer(); await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
+  let clock = 1_000_000;
+  const service = new GameService({ now: () => clock });
+  const server = createGameServer({ service, getPublicUrl: () => 'https://test.ngrok.example' }); await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   t.after(() => new Promise(resolve => server.close(resolve)));
   const base = `http://127.0.0.1:${server.address().port}`;
   const request = async (path, body, token) => { const response = await fetch(base + path, { method: body ? 'POST' : 'GET', headers: { 'Content-Type': 'application/json', ...(token ? { Authorization: `Bearer ${token}` } : {}) }, body: body ? JSON.stringify(body) : undefined }); return { status: response.status, value: await response.json() }; };
@@ -15,15 +18,38 @@ test('real HTTP server: two players join, answer, attack and resume', async t =>
   assert.equal((await request('/api/state?code=' + a.code)).status, 401);
   assert.equal((await request('/api/join', { name: 'Troisième téléphone', code: a.code })).status, 409);
   const action = (p, type, details = {}) => request('/api/action', { code: p.code, type, ...details }, p.token);
-  await action(a, 'ready'); await action(b, 'ready'); const started = await action(a, 'start'); assert.equal(started.value.status, 'playing');
+  await action(a, 'ready'); await action(b, 'ready'); const started = await action(a, 'start'); assert.equal(started.value.status, 'briefing');
+  await action(a, 'briefed'); assert.equal(service.room(a.code).status, 'briefing');
+  await action(b, 'briefed');
+  assert.equal((await request('/api/network')).value.publicUrl, 'https://test.ngrok.example');
   const one = (await request('/api/state?code=' + a.code, null, a.token)).value;
   const two = (await request('/api/state?code=' + b.code, null, b.token)).value;
   assert.deepEqual(one.question, two.question); assert.equal(one.question.correct, undefined);
   const answers = await Promise.all([action(a, 'answer', { round: 1, choice: 0 }), action(a, 'answer', { round: 1, choice: 0 })]);
   assert.deepEqual(answers.map(r => r.status).sort(), [200, 400]);
-  await action(a, 'buy', { item: 'arrows' }); await action(b, 'buy', { item: 'shield' });
+  assert.equal((await action(a, 'buy', { item: 'arrows' })).status, 400);
+  assert.equal((await action(a, 'unlock', { item: 'arrows' })).status, 200);
+  const enemyView = (await request('/api/state?code=' + b.code, null, b.token)).value;
+  assert.equal(enemyView.teams.find(p => p.id === 0).unlocks.arrows.readyAt, clock + 5000);
+  // Fund the combat check independently of the randomly ordered answer selected above.
+  clock += 5000; service.room(a.code).teams[0].coins = 40;
+  assert.equal((await action(a, 'buy', { item: 'arrows' })).status, 200); await action(b, 'buy', { item: 'shield' });
   const resumed = (await request('/api/state?code=' + a.code, null, a.token)).value;
   assert.equal(resumed.projectiles.length, 1); assert.equal(resumed.teams.find(p => p.id !== resumed.me).shield, 18);
+  assert.equal((await action(a, 'color', { color: 'purple' })).status, 200);
+  assert.equal((await action(b, 'color', { color: 'purple' })).status, 400);
+  assert.equal((await action(b, 'color', { color: 'blue' })).status, 200);
+  const art = await fetch(base + '/assets/arena.svg?left=purple&right=blue');
+  assert.equal(art.status, 200); const svg = await art.text();
+  assert.match(svg, /#b59bea/); assert.match(svg, /#76b5f1/); assert.doesNotMatch(svg, /#7dc2a0|#e5a18d/);
+  assert.equal((await fetch(base + '/assets/arena.svg?left=invalid')).status, 400);
+  const paused = (await action(b, 'pause')).value; clock += 120000; service.tickAll();
+  const frozen = (await request('/api/state?code=' + a.code, null, a.token)).value;
+  assert.equal(frozen.paused, true); assert.equal(frozen.gameNow, paused.gameNow);
+  assert.equal(frozen.projectiles.length, 1); assert.equal(frozen.teams[0].color, 'purple');
+  assert.equal((await action(a, 'buy', { item: 'arrows' })).status, 400);
+  assert.equal((await action(a, 'resume')).value.paused, true);
+  assert.equal((await action(b, 'resume')).value.paused, false);
   const invalid = await fetch(base + '/api/rooms', { method: 'POST', body: '{broken' }); assert.equal(invalid.status, 400);
   const crossOrigin = await fetch(base + '/api/rooms', { method: 'POST', headers: { Origin: 'https://other.example' }, body: '{}' }); assert.equal(crossOrigin.status, 403);
   await action(b, 'leave'); const result = (await request('/api/state?code=' + a.code, null, a.token)).value;

@@ -4,10 +4,11 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import os from 'node:os';
 import { spawn } from 'node:child_process';
+import { TEAM_COLORS } from './src/catalog.mjs';
 import { GameService, GameError } from './src/game.mjs';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), 'public');
-export function createGameServer({ service = new GameService() } = {}) {
+export function createGameServer({ service = new GameService(), getPublicUrl = () => null } = {}) {
   const limits = new Map();
   const server = http.createServer(async (req, res) => {
     const send = (status, value) => { res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(value)); };
@@ -27,7 +28,7 @@ export function createGameServer({ service = new GameService() } = {}) {
         if (req.method === 'GET' && url.pathname === '/api/network') {
           const port = server.address().port;
           const addresses = Object.values(os.networkInterfaces()).flat().filter(n => n.family === 'IPv4' && !n.internal).map(n => `http://${n.address}:${port}`);
-          return send(200, { addresses });
+          return send(200, { addresses, publicUrl: getPublicUrl() });
         }
         const token = req.headers.authorization?.startsWith('Bearer ') ? req.headers.authorization.slice(7) : '';
         if (req.method === 'GET' && url.pathname === '/api/state') return send(200, service.state(url.searchParams.get('code'), token));
@@ -50,6 +51,14 @@ export function createGameServer({ service = new GameService() } = {}) {
       const mime = { '.html': 'text/html', '.css': 'text/css', '.js': 'text/javascript', '.svg': 'image/svg+xml', '.png': 'image/png', '.ico': 'image/x-icon' }[path.extname(filename)];
       if (!mime) throw new GameError('Fichier introuvable.', 404);
       let content; try { content = await readFile(filename); } catch { throw new GameError('Fichier introuvable.', 404); }
+      if (relative === '/assets/arena.svg') {
+        const left = url.searchParams.get('left') || 'sage', right = url.searchParams.get('right') || 'coral';
+        const palettes = [left, right].map(id => TEAM_COLORS.find(c => c.id === id));
+        if (palettes.some(c => !c)) throw new GameError('Couleur de château inconnue.');
+        const replacements = new Map();
+        for (const [i, original] of TEAM_COLORS.slice(0, 2).entries()) for (const key of ['roof', 'shade', 'flag']) replacements.set(original[key], palettes[i][key]);
+        content = content.toString('utf8').replace(/#[0-9a-f]{6}/gi, color => replacements.get(color) || color);
+      }
       res.writeHead(200, { 'Content-Type': `${mime}; charset=utf-8`, 'Cache-Control': 'no-cache' });
       res.end(req.method === 'HEAD' ? undefined : content);
     } catch (error) { if (!(error instanceof GameError)) console.error(error); if (!res.headersSent) send(error.status || 500, { error: error instanceof GameError ? error.message : 'Le serveur rencontre un problème. Réessayez.' }); else res.end(); }
