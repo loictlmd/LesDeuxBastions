@@ -16,10 +16,6 @@
     {
       "source": "/api/:path*",
       "destination": "/api?route=/api/:path*"
-    },
-    {
-      "source": "/assets/arena.svg",
-      "destination": "/api?route=/assets/arena.svg"
     }
   ],
   "crons": [

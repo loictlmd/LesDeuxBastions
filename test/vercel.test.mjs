@@ -32,8 +32,14 @@ test('Vercel entrypoint: rewritten routes, parsed bodies, persistent sessions, Q
   assert.equal(state.status, 200); assert.equal((await state.json()).teams[0].name, 'Vercel team');
   const qr = await fetch(base + '/api/home-qr');
   assert.equal(await qr.text(), await QRCode.toString('https://bastions.example/', { type: 'svg', margin: 4, errorCorrectionLevel: 'M' }));
-  const art = await fetch(base + '/assets/arena.svg&left=purple&right=blue');
-  assert.match(await art.text(), /#b59bea/);
+  const art = await fetch(base + '/api/arena&left=purple&right=blue');
+  const purple = await art.text();
+  assert.match(purple, /#b59bea/); assert.match(purple, /#76b5f1/);
+  assert.equal(art.headers.get('cache-control'), 'no-cache');
+  const changed = await fetch(base + '/api/arena&left=gold&right=coral');
+  assert.notEqual(await changed.text(), purple);
+  const config = JSON.parse(await readFile(new URL('../vercel.json', import.meta.url), 'utf8'));
+  assert.ok(!config.rewrites.some(route => route.source === '/assets/arena.svg'), 'Static files must not shadow recolouring routes');
   assert.equal((await fetch(base + '/api/cleanup')).status, 403);
   assert.equal((await fetch(base + '/api/cleanup', { headers: { Authorization: 'Bearer private-test-secret' } })).status, 200);
   assert.equal((await fetch(base + '/api/rooms', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: 'x'.repeat(5000) }) })).status, 413);

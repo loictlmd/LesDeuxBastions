@@ -39,10 +39,10 @@ test('real HTTP server: two players join, answer, attack and resume', async t =>
   assert.equal((await action(a, 'color', { color: 'purple' })).status, 200);
   assert.equal((await action(b, 'color', { color: 'purple' })).status, 400);
   assert.equal((await action(b, 'color', { color: 'blue' })).status, 200);
-  const art = await fetch(base + '/assets/arena.svg?left=purple&right=blue');
+  const art = await fetch(base + '/api/arena?left=purple&right=blue');
   assert.equal(art.status, 200); const svg = await art.text();
   assert.match(svg, /#b59bea/); assert.match(svg, /#76b5f1/); assert.doesNotMatch(svg, /#7dc2a0|#e5a18d/);
-  assert.equal((await fetch(base + '/assets/arena.svg?left=invalid')).status, 400);
+  assert.equal((await fetch(base + '/api/arena?left=invalid')).status, 400);
   const paused = (await action(b, 'pause')).value; clock += 120000; service.tickAll();
   const frozen = (await request('/api/state?code=' + a.code, null, a.token)).value;
   assert.equal(frozen.paused, true); assert.equal(frozen.gameNow, paused.gameNow);

@@ -18,6 +18,7 @@ export function createRequestHandler({ service = new GameService(), getPublicUrl
     res.setHeader('Content-Security-Policy', "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");
     try {
       const url = new URL(req.url, 'http://localhost');
+      if (url.pathname === '/api/arena') url.pathname = '/assets/arena.svg';
       if (url.pathname.startsWith('/api/')) {
         if (req.headers.origin && new URL(req.headers.origin).host !== req.headers.host && !allowedOrigins.includes(new URL(req.headers.origin).origin)) throw new GameError('Origine non autorisée.', 403);
         const ip = process.env.VERCEL ? req.headers['x-real-ip'] || req.socket?.remoteAddress : req.socket.remoteAddress;

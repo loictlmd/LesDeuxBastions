@@ -1440,5 +1440,3565 @@ export const ENGLISH_QUESTIONS = {
       "Keratin"
     ],
     "explanation": "Chlorophyll mainly absorbs blue and red light, making leaves appear green."
+  },
+  "145": {
+    "text": "In which country is the ancient city of Petra located?",
+    "options": [
+      "Jordan",
+      "Lebanon",
+      "Syria",
+      "Oman"
+    ],
+    "explanation": "This place is located in Jordan."
+  },
+  "146": {
+    "text": "In which country is Angkor located?",
+    "options": [
+      "Cambodia",
+      "Thailand",
+      "Laos",
+      "Vietnam"
+    ],
+    "explanation": "This place is located in Cambodia."
+  },
+  "147": {
+    "text": "In which country is Machu Picchu located?",
+    "options": [
+      "Peru",
+      "Bolivia",
+      "Ecuador",
+      "Colombia"
+    ],
+    "explanation": "This place is located in Peru."
+  },
+  "148": {
+    "text": "In which country is the Namib Desert located?",
+    "options": [
+      "Namibia",
+      "Mali",
+      "Chad",
+      "Egypt"
+    ],
+    "explanation": "This place is located in Namibia."
+  },
+  "149": {
+    "text": "In which country is Mount Fuji located?",
+    "options": [
+      "Japan",
+      "China",
+      "South Korea",
+      "Nepal"
+    ],
+    "explanation": "This place is located in Japan."
+  },
+  "150": {
+    "text": "In which country is the city of Samarkand located?",
+    "options": [
+      "Uzbekistan",
+      "Kazakhstan",
+      "Iran",
+      "Pakistan"
+    ],
+    "explanation": "This place is located in Uzbekistan."
+  },
+  "151": {
+    "text": "In which country is Chichen Itza located?",
+    "options": [
+      "Mexico",
+      "Guatemala",
+      "Honduras",
+      "Panama"
+    ],
+    "explanation": "This place is located in Mexico."
+  },
+  "152": {
+    "text": "In which country is the city of Dubrovnik located?",
+    "options": [
+      "Croatia",
+      "Montenegro",
+      "Albania",
+      "Slovenia"
+    ],
+    "explanation": "This place is located in Croatia."
+  },
+  "153": {
+    "text": "In which country is the Alhambra palace located?",
+    "options": [
+      "Spain",
+      "Portugal",
+      "Morocco",
+      "Italy"
+    ],
+    "explanation": "This place is located in Spain."
+  },
+  "154": {
+    "text": "In which country is Transylvania located?",
+    "options": [
+      "Romania",
+      "Bulgaria",
+      "Hungary",
+      "Serbia"
+    ],
+    "explanation": "This place is located in Romania."
+  },
+  "155": {
+    "text": "In which country is the city of Timbuktu located?",
+    "options": [
+      "Mali",
+      "Niger",
+      "Senegal",
+      "Mauritania"
+    ],
+    "explanation": "This place is located in Mali."
+  },
+  "156": {
+    "text": "In which country is Mount Kilimanjaro located?",
+    "options": [
+      "Tanzania",
+      "Kenya",
+      "Uganda",
+      "Ethiopia"
+    ],
+    "explanation": "This place is located in Tanzania."
+  },
+  "157": {
+    "text": "In which country is Yellowstone National Park located?",
+    "options": [
+      "United States",
+      "Canada",
+      "Iceland",
+      "New Zealand"
+    ],
+    "explanation": "This place is located in United States."
+  },
+  "158": {
+    "text": "In which country is Lake Bled located?",
+    "options": [
+      "Slovenia",
+      "Slovakia",
+      "Austria",
+      "Switzerland"
+    ],
+    "explanation": "This place is located in Slovenia."
+  },
+  "159": {
+    "text": "In which country is the city of Bergen located?",
+    "options": [
+      "Norway",
+      "Sweden",
+      "Finland",
+      "Denmark"
+    ],
+    "explanation": "This place is located in Norway."
+  },
+  "160": {
+    "text": "Which river flows through Cairo?",
+    "options": [
+      "The Nile",
+      "The Niger",
+      "The Congo",
+      "The Zambezi"
+    ],
+    "explanation": "Cairo lies on the banks of the Nile."
+  },
+  "161": {
+    "text": "Which capital stands on the River Spree?",
+    "options": [
+      "Berlin",
+      "Amsterdam",
+      "Copenhagen",
+      "Stockholm"
+    ],
+    "explanation": "The Spree flows through Berlin."
+  },
+  "162": {
+    "text": "Which river flows through Baghdad?",
+    "options": [
+      "The Tigris",
+      "The Euphrates",
+      "The Jordan",
+      "The Indus"
+    ],
+    "explanation": "Baghdad stands on the Tigris in Mesopotamia."
+  },
+  "163": {
+    "text": "Which river flows through Rome?",
+    "options": [
+      "The Tiber",
+      "The Po",
+      "The Arno",
+      "The Adige"
+    ],
+    "explanation": "The Tiber flows through Rome before reaching the Tyrrhenian Sea."
+  },
+  "164": {
+    "text": "Which river flows through Cologne?",
+    "options": [
+      "The Rhine",
+      "The Danube",
+      "The Oder",
+      "The Seine"
+    ],
+    "explanation": "Cologne is a German city on the Rhine."
+  },
+  "165": {
+    "text": "Which ocean borders Mozambique’s eastern coast?",
+    "options": [
+      "The Indian Ocean",
+      "The Atlantic Ocean",
+      "The Pacific Ocean",
+      "The Arctic Ocean"
+    ],
+    "explanation": "Mozambique faces Madagascar in the Indian Ocean."
+  },
+  "166": {
+    "text": "Which island is shared by Haiti and the Dominican Republic?",
+    "options": [
+      "Hispaniola",
+      "Jamaica",
+      "Cuba",
+      "Puerto Rico"
+    ],
+    "explanation": "Both countries occupy Hispaniola in the Caribbean."
+  },
+  "167": {
+    "text": "Which island is shared by Indonesia, Malaysia and Brunei?",
+    "options": [
+      "Borneo",
+      "Sumatra",
+      "Java",
+      "Sulawesi"
+    ],
+    "explanation": "Borneo is divided between these three states."
+  },
+  "168": {
+    "text": "Which mountain range forms a natural border between France and Spain?",
+    "options": [
+      "The Pyrenees",
+      "The Alps",
+      "The Carpathians",
+      "The Apennines"
+    ],
+    "explanation": "The Pyrenees stretch between the Atlantic and the Mediterranean."
+  },
+  "169": {
+    "text": "In which mountain range is Mont Blanc?",
+    "options": [
+      "The Alps",
+      "The Jura",
+      "The Vosges",
+      "Only the Dolomites"
+    ],
+    "explanation": "The Mont Blanc massif is part of the Alps."
+  },
+  "170": {
+    "text": "Which sea mainly separates Italy from the Croatian coast?",
+    "options": [
+      "The Adriatic",
+      "The Baltic",
+      "The Aegean",
+      "The Black Sea"
+    ],
+    "explanation": "The Adriatic lies between the Italian and Balkan peninsulas."
+  },
+  "171": {
+    "text": "Which strait connects the Black Sea to the Sea of Marmara?",
+    "options": [
+      "The Bosporus",
+      "The Dardanelles",
+      "Hormuz",
+      "Malacca"
+    ],
+    "explanation": "The Bosporus runs through Istanbul and connects these two seas."
+  },
+  "172": {
+    "text": "Which canal links the Mediterranean to the Red Sea?",
+    "options": [
+      "Suez",
+      "Panama",
+      "Kiel",
+      "Corinth"
+    ],
+    "explanation": "The Suez Canal crosses the Isthmus of Suez in Egypt."
+  },
+  "173": {
+    "text": "Which country contains the Cape of Good Hope?",
+    "options": [
+      "South Africa",
+      "Namibia",
+      "Angola",
+      "Mozambique"
+    ],
+    "explanation": "This cape is located near Cape Town in South Africa."
+  },
+  "174": {
+    "text": "Which country has Tallinn as its capital?",
+    "options": [
+      "Estonia",
+      "Latvia",
+      "Lithuania",
+      "Finland"
+    ],
+    "explanation": "Tallinn is Estonia’s capital on the Baltic Sea."
+  },
+  "175": {
+    "text": "Which city is the capital of Canada?",
+    "options": [
+      "Ottawa",
+      "Toronto",
+      "Montreal",
+      "Vancouver"
+    ],
+    "explanation": "Ottawa is Canada’s federal capital."
+  },
+  "176": {
+    "text": "Which country has Montevideo as its capital?",
+    "options": [
+      "Uruguay",
+      "Paraguay",
+      "Bolivia",
+      "Venezuela"
+    ],
+    "explanation": "Montevideo is Uruguay’s capital."
+  },
+  "177": {
+    "text": "Which country has Kathmandu as its capital?",
+    "options": [
+      "Nepal",
+      "Bhutan",
+      "Bangladesh",
+      "Sri Lanka"
+    ],
+    "explanation": "Kathmandu is Nepal’s capital in the Himalayas."
+  },
+  "178": {
+    "text": "Which continent has no sovereign countries?",
+    "options": [
+      "Antarctica",
+      "Oceania",
+      "South America",
+      "Europe"
+    ],
+    "explanation": "Antarctica contains no sovereign state."
+  },
+  "179": {
+    "text": "Which sea borders Sweden, Poland and Finland?",
+    "options": [
+      "The Baltic Sea",
+      "The North Sea",
+      "The Black Sea",
+      "The Caspian Sea"
+    ],
+    "explanation": "All three countries have coastlines on the Baltic Sea."
+  },
+  "180": {
+    "text": "What is a river mouth divided into several distributary channels called?",
+    "options": [
+      "A delta",
+      "A fjord",
+      "A mountain pass",
+      "A plateau"
+    ],
+    "explanation": "A delta forms through sediment accumulation at a river mouth."
+  },
+  "181": {
+    "text": "Which feature is a glacial valley flooded by the sea?",
+    "options": [
+      "A fjord",
+      "An atoll",
+      "A dune",
+      "An isthmus"
+    ],
+    "explanation": "Fjords are valleys carved by glaciers and later flooded."
+  },
+  "182": {
+    "text": "What is a narrow strip of land joining two larger land areas called?",
+    "options": [
+      "An isthmus",
+      "A strait",
+      "A gulf",
+      "An archipelago"
+    ],
+    "explanation": "An isthmus connects land areas; a strait connects bodies of water."
+  },
+  "183": {
+    "text": "On a 1:50,000 map, what distance does 2 cm represent?",
+    "options": [
+      "1 km",
+      "100 m",
+      "10 km",
+      "500 m"
+    ],
+    "explanation": "2 × 50,000 cm equals 100,000 cm, or 1 km."
+  },
+  "184": {
+    "text": "Which coordinate measures position east or west of Greenwich?",
+    "options": [
+      "Longitude",
+      "Latitude",
+      "Altitude",
+      "Depth"
+    ],
+    "explanation": "Longitude is measured relative to the Greenwich meridian."
+  },
+  "185": {
+    "text": "Which country lies on the equator and has Quito as its capital?",
+    "options": [
+      "Ecuador",
+      "Costa Rica",
+      "Chile",
+      "El Salvador"
+    ],
+    "explanation": "Ecuador’s name refers to its position on the equator."
+  },
+  "186": {
+    "text": "Which ocean borders Peru’s western coast?",
+    "options": [
+      "The Pacific",
+      "The Atlantic",
+      "The Indian",
+      "The Arctic"
+    ],
+    "explanation": "Peru has a coastline on the Pacific Ocean."
+  },
+  "187": {
+    "text": "Which country is separated from India by the Palk Strait?",
+    "options": [
+      "Sri Lanka",
+      "The Maldives",
+      "Indonesia",
+      "Bangladesh"
+    ],
+    "explanation": "The Palk Strait lies between southern India and Sri Lanka."
+  },
+  "188": {
+    "text": "Which country mainly consists of the North and South Islands?",
+    "options": [
+      "New Zealand",
+      "Japan",
+      "The Philippines",
+      "The United Kingdom"
+    ],
+    "explanation": "These two islands form most of New Zealand’s land area."
+  },
+  "189": {
+    "text": "Which French region borders both the English Channel and the Atlantic?",
+    "options": [
+      "Brittany",
+      "Alsace",
+      "Burgundy",
+      "Auvergne"
+    ],
+    "explanation": "The Breton peninsula lies between the English Channel and the Atlantic Ocean."
+  },
+  "190": {
+    "text": "In which year did the storming of the Bastille take place?",
+    "options": [
+      "1789",
+      "1792",
+      "1804",
+      "1848"
+    ],
+    "explanation": "This event took place in 1789."
+  },
+  "191": {
+    "text": "In which year did the fall of the Berlin Wall take place?",
+    "options": [
+      "1989",
+      "1979",
+      "1991",
+      "1961"
+    ],
+    "explanation": "This event took place in 1989."
+  },
+  "192": {
+    "text": "In which year did the United States Declaration of Independence take place?",
+    "options": [
+      "1776",
+      "1789",
+      "1812",
+      "1756"
+    ],
+    "explanation": "This event took place in 1776."
+  },
+  "193": {
+    "text": "In which year did the first human Moon landing take place?",
+    "options": [
+      "1969",
+      "1957",
+      "1961",
+      "1972"
+    ],
+    "explanation": "This event took place in 1969."
+  },
+  "194": {
+    "text": "In which year did the start of the First World War take place?",
+    "options": [
+      "1914",
+      "1918",
+      "1905",
+      "1939"
+    ],
+    "explanation": "This event took place in 1914."
+  },
+  "195": {
+    "text": "In which year did the end of the Second World War take place?",
+    "options": [
+      "1945",
+      "1944",
+      "1940",
+      "1950"
+    ],
+    "explanation": "This event took place in 1945."
+  },
+  "196": {
+    "text": "In which year did the Battle of Hastings take place?",
+    "options": [
+      "1066",
+      "1215",
+      "987",
+      "1453"
+    ],
+    "explanation": "This event took place in 1066."
+  },
+  "197": {
+    "text": "In which year did the Battle of Marignano take place?",
+    "options": [
+      "1515",
+      "1492",
+      "1598",
+      "1415"
+    ],
+    "explanation": "This event took place in 1515."
+  },
+  "198": {
+    "text": "In which year did Christopher Columbus’s arrival in the Caribbean take place?",
+    "options": [
+      "1492",
+      "1453",
+      "1522",
+      "1488"
+    ],
+    "explanation": "This event took place in 1492."
+  },
+  "199": {
+    "text": "In which year did Napoleon I’s coronation as emperor take place?",
+    "options": [
+      "1804",
+      "1799",
+      "1815",
+      "1789"
+    ],
+    "explanation": "This event took place in 1804."
+  },
+  "200": {
+    "text": "In which year did the opening of the Suez Canal take place?",
+    "options": [
+      "1869",
+      "1815",
+      "1914",
+      "1889"
+    ],
+    "explanation": "This event took place in 1869."
+  },
+  "201": {
+    "text": "In which year did the start of the Reformation associated with Luther’s 95 Theses take place?",
+    "options": [
+      "1517",
+      "1455",
+      "1598",
+      "1648"
+    ],
+    "explanation": "This event took place in 1517."
+  },
+  "202": {
+    "text": "In which year did the signing of the Peace of Westphalia take place?",
+    "options": [
+      "1648",
+      "1618",
+      "1713",
+      "1815"
+    ],
+    "explanation": "This event took place in 1648."
+  },
+  "203": {
+    "text": "In which year did India’s independence take place?",
+    "options": [
+      "1947",
+      "1930",
+      "1956",
+      "1962"
+    ],
+    "explanation": "This event took place in 1947."
+  },
+  "204": {
+    "text": "In which year did the proclamation of the People’s Republic of China take place?",
+    "options": [
+      "1949",
+      "1911",
+      "1937",
+      "1976"
+    ],
+    "explanation": "This event took place in 1949."
+  },
+  "205": {
+    "text": "In which year did the definitive abolition of slavery in the French colonies take place?",
+    "options": [
+      "1848",
+      "1789",
+      "1802",
+      "1871"
+    ],
+    "explanation": "This event took place in 1848."
+  },
+  "206": {
+    "text": "In which year did the start of Nelson Mandela’s presidency of South Africa take place?",
+    "options": [
+      "1994",
+      "1990",
+      "1984",
+      "2004"
+    ],
+    "explanation": "This event took place in 1994."
+  },
+  "207": {
+    "text": "In which year did the founding of the United Nations take place?",
+    "options": [
+      "1945",
+      "1919",
+      "1939",
+      "1957"
+    ],
+    "explanation": "This event took place in 1945."
+  },
+  "208": {
+    "text": "In which year did the launch of Sputnik 1 take place?",
+    "options": [
+      "1957",
+      "1961",
+      "1969",
+      "1945"
+    ],
+    "explanation": "This event took place in 1957."
+  },
+  "209": {
+    "text": "In which year did the signing of the Maastricht Treaty take place?",
+    "options": [
+      "1992",
+      "1957",
+      "1986",
+      "2007"
+    ],
+    "explanation": "This event took place in 1992."
+  },
+  "210": {
+    "text": "Which French king is known as the Sun King?",
+    "options": [
+      "Louis XIV",
+      "Louis XVI",
+      "Francis I",
+      "Henry II"
+    ],
+    "explanation": "Louis XIV used the sun as a symbol of his power."
+  },
+  "211": {
+    "text": "Which French ruler revoked the Edict of Nantes in 1685?",
+    "options": [
+      "Louis XIV",
+      "Henry IV",
+      "Louis XIII",
+      "Louis XV"
+    ],
+    "explanation": "Louis XIV revoked the Edict of Nantes through the Edict of Fontainebleau."
+  },
+  "212": {
+    "text": "Who became the first Roman emperor?",
+    "options": [
+      "Augustus",
+      "Julius Caesar",
+      "Nero",
+      "Trajan"
+    ],
+    "explanation": "Octavian received the title Augustus in 27 BCE."
+  },
+  "213": {
+    "text": "Which Carthaginian general crossed the Alps with elephants?",
+    "options": [
+      "Hannibal",
+      "Scipio",
+      "Pericles",
+      "Leonidas"
+    ],
+    "explanation": "Hannibal crossed the Alps during the Second Punic War."
+  },
+  "214": {
+    "text": "Which Egyptian queen is associated with Julius Caesar and Mark Antony?",
+    "options": [
+      "Cleopatra VII",
+      "Hatshepsut",
+      "Nefertiti",
+      "Boudicca"
+    ],
+    "explanation": "Cleopatra VII ruled Egypt in the first century BCE."
+  },
+  "215": {
+    "text": "Which Roman city was buried by Vesuvius in 79 CE?",
+    "options": [
+      "Pompeii",
+      "Ostia",
+      "Ravenna",
+      "Capua"
+    ],
+    "explanation": "The eruption of 79 CE buried Pompeii and Herculaneum."
+  },
+  "216": {
+    "text": "Which people used cuneiform writing in ancient Mesopotamia?",
+    "options": [
+      "The Sumerians",
+      "The Incas",
+      "The Vikings",
+      "The Aztecs"
+    ],
+    "explanation": "The Sumerians developed writing on clay tablets."
+  },
+  "217": {
+    "text": "Which navigator reached India by sailing around Africa in 1498?",
+    "options": [
+      "Vasco da Gama",
+      "Christopher Columbus",
+      "James Cook",
+      "Jacques Cartier"
+    ],
+    "explanation": "Vasco da Gama reached India via the Cape of Good Hope."
+  },
+  "218": {
+    "text": "Which Mongol leader founded a vast empire in the early 13th century?",
+    "options": [
+      "Genghis Khan",
+      "Timur",
+      "Attila",
+      "Saladin"
+    ],
+    "explanation": "Genghis Khan united the Mongol tribes in the early 13th century."
+  },
+  "219": {
+    "text": "Which leader led the Huns in the fifth century?",
+    "options": [
+      "Attila",
+      "Alaric",
+      "Clovis",
+      "Charlemagne"
+    ],
+    "explanation": "Attila ruled the Huns in the mid-fifth century."
+  },
+  "220": {
+    "text": "Which French heroine helped lift the siege of Orléans in 1429?",
+    "options": [
+      "Joan of Arc",
+      "Eleanor of Aquitaine",
+      "Anne of Brittany",
+      "Olympe de Gouges"
+    ],
+    "explanation": "Joan of Arc helped relieve Orléans during the Hundred Years’ War."
+  },
+  "221": {
+    "text": "Which thinker wrote The Social Contract?",
+    "options": [
+      "Jean-Jacques Rousseau",
+      "Montesquieu",
+      "Voltaire",
+      "Denis Diderot"
+    ],
+    "explanation": "Rousseau published The Social Contract in 1762."
+  },
+  "222": {
+    "text": "Who led the Soviet Union during most of the Second World War?",
+    "options": [
+      "Joseph Stalin",
+      "Nikita Khrushchev",
+      "Vladimir Lenin",
+      "Mikhail Gorbachev"
+    ],
+    "explanation": "Stalin led the USSR during the war."
+  },
+  "223": {
+    "text": "Which British leader delivered the “Iron Curtain” speech in 1946?",
+    "options": [
+      "Winston Churchill",
+      "Clement Attlee",
+      "Neville Chamberlain",
+      "Harold Wilson"
+    ],
+    "explanation": "Churchill delivered the speech in Fulton, in the United States."
+  },
+  "224": {
+    "text": "Who was the first president of the United States?",
+    "options": [
+      "George Washington",
+      "Thomas Jefferson",
+      "John Adams",
+      "Abraham Lincoln"
+    ],
+    "explanation": "George Washington took office in 1789."
+  },
+  "225": {
+    "text": "Which US president is associated with the Emancipation Proclamation of 1863?",
+    "options": [
+      "Abraham Lincoln",
+      "Andrew Jackson",
+      "Theodore Roosevelt",
+      "Woodrow Wilson"
+    ],
+    "explanation": "Lincoln issued this proclamation during the American Civil War."
+  },
+  "226": {
+    "text": "Which Indian movement is associated with Gandhi and nonviolence?",
+    "options": [
+      "The independence movement",
+      "The Industrial Revolution",
+      "The Protestant Reformation",
+      "The Japanese imperial restoration"
+    ],
+    "explanation": "Gandhi used civil disobedience against British rule."
+  },
+  "227": {
+    "text": "Which event in 1929 marked the start of a severe global economic crisis?",
+    "options": [
+      "The Wall Street Crash",
+      "The Suez Crisis",
+      "The oil shock",
+      "The collapse of Bretton Woods"
+    ],
+    "explanation": "The 1929 stock market crash preceded the Great Depression."
+  },
+  "228": {
+    "text": "In which war did the armistice of 11 November 1918 end fighting on the Western Front?",
+    "options": [
+      "The First World War",
+      "The Crimean War",
+      "The Franco-Prussian War",
+      "The Second World War"
+    ],
+    "explanation": "The armistice ended fighting on the Western Front of the First World War."
+  },
+  "229": {
+    "text": "Which series of wars was fought between Rome and Carthage?",
+    "options": [
+      "The Punic Wars",
+      "The Greco-Persian Wars",
+      "The Crusades",
+      "The Napoleonic Wars"
+    ],
+    "explanation": "Rome and Carthage fought three Punic Wars."
+  },
+  "230": {
+    "text": "Which Greek city is associated with Pericles’s democracy?",
+    "options": [
+      "Athens",
+      "Sparta",
+      "Corinth",
+      "Thebes"
+    ],
+    "explanation": "Pericles was a leading figure in fifth-century BCE Athenian democracy."
+  },
+  "231": {
+    "text": "Which country gave the Statue of Liberty to the United States?",
+    "options": [
+      "France",
+      "The United Kingdom",
+      "Italy",
+      "Germany"
+    ],
+    "explanation": "The statue, designed by Bartholdi, was a French gift dedicated in 1886."
+  },
+  "232": {
+    "text": "Which European war lasted from 1618 to 1648?",
+    "options": [
+      "The Thirty Years’ War",
+      "The Hundred Years’ War",
+      "The Seven Years’ War",
+      "The Crimean War"
+    ],
+    "explanation": "The Thirty Years’ War ended with the Peace of Westphalia."
+  },
+  "233": {
+    "text": "What is the Japanese period of modernisation beginning in 1868 called?",
+    "options": [
+      "The Meiji era",
+      "The Edo period",
+      "The Heian period",
+      "The Nara period"
+    ],
+    "explanation": "The Meiji Restoration began a period of major changes in Japan."
+  },
+  "234": {
+    "text": "Which city was the political centre of the Aztec Empire before the Spanish conquest?",
+    "options": [
+      "Tenochtitlan",
+      "Cusco",
+      "Machu Picchu",
+      "Carthage"
+    ],
+    "explanation": "Tenochtitlan stood on the site of present-day Mexico City."
+  },
+  "235": {
+    "text": "Which chemical element has the symbol Ag?",
+    "options": [
+      "Silver",
+      "Gold",
+      "Argon",
+      "Aluminium"
+    ],
+    "explanation": "Ag is the chemical symbol for silver."
+  },
+  "236": {
+    "text": "Which chemical element has the symbol Au?",
+    "options": [
+      "Gold",
+      "Silver",
+      "Copper",
+      "Uranium"
+    ],
+    "explanation": "Au is the chemical symbol for gold."
+  },
+  "237": {
+    "text": "Which chemical element has the symbol Fe?",
+    "options": [
+      "Iron",
+      "Fluorine",
+      "Francium",
+      "Fermium"
+    ],
+    "explanation": "Fe is the chemical symbol for iron."
+  },
+  "238": {
+    "text": "Which chemical element has the symbol K?",
+    "options": [
+      "Potassium",
+      "Krypton",
+      "Calcium",
+      "Cobalt"
+    ],
+    "explanation": "K is the chemical symbol for potassium."
+  },
+  "239": {
+    "text": "Which chemical element has the symbol Na?",
+    "options": [
+      "Sodium",
+      "Nitrogen",
+      "Neon",
+      "Nickel"
+    ],
+    "explanation": "Na is the chemical symbol for sodium."
+  },
+  "240": {
+    "text": "Which chemical element has the symbol Pb?",
+    "options": [
+      "Lead",
+      "Phosphorus",
+      "Platinum",
+      "Palladium"
+    ],
+    "explanation": "Pb is the chemical symbol for lead."
+  },
+  "241": {
+    "text": "Which chemical element has the symbol Sn?",
+    "options": [
+      "Tin",
+      "Silicon",
+      "Sulfur",
+      "Selenium"
+    ],
+    "explanation": "Sn is the chemical symbol for tin."
+  },
+  "242": {
+    "text": "Which chemical element has the symbol Cu?",
+    "options": [
+      "Copper",
+      "Calcium",
+      "Carbon",
+      "Chromium"
+    ],
+    "explanation": "Cu is the chemical symbol for copper."
+  },
+  "243": {
+    "text": "Which chemical element has the symbol Hg?",
+    "options": [
+      "Mercury",
+      "Helium",
+      "Hydrogen",
+      "Hafnium"
+    ],
+    "explanation": "Hg is the chemical symbol for mercury."
+  },
+  "244": {
+    "text": "Which chemical element has the symbol Si?",
+    "options": [
+      "Silicon",
+      "Sulfur",
+      "Silver",
+      "Sodium"
+    ],
+    "explanation": "Si is the chemical symbol for silicon."
+  },
+  "245": {
+    "text": "Which quantity is measured in watts?",
+    "options": [
+      "Power",
+      "Energy",
+      "Resistance",
+      "Pressure"
+    ],
+    "explanation": "One watt is an energy transfer of one joule per second."
+  },
+  "246": {
+    "text": "Which quantity is measured in coulombs?",
+    "options": [
+      "Electric charge",
+      "Temperature",
+      "Speed",
+      "Force"
+    ],
+    "explanation": "The coulomb is the SI unit of electric charge."
+  },
+  "247": {
+    "text": "What is the SI unit of force?",
+    "options": [
+      "The newton",
+      "The watt",
+      "The volt",
+      "The kelvin"
+    ],
+    "explanation": "One newton equals one kilogram metre per second squared."
+  },
+  "248": {
+    "text": "What is the SI unit of thermodynamic temperature?",
+    "options": [
+      "The kelvin",
+      "The degree Celsius",
+      "The joule",
+      "The degree Fahrenheit"
+    ],
+    "explanation": "The Kelvin scale starts at absolute zero."
+  },
+  "249": {
+    "text": "Which component stores energy in an electric field?",
+    "options": [
+      "A capacitor",
+      "An ideal resistor",
+      "An open switch alone",
+      "A fuse"
+    ],
+    "explanation": "A capacitor stores charge on two separated conductors."
+  },
+  "250": {
+    "text": "Which instrument measures atmospheric pressure?",
+    "options": [
+      "A barometer",
+      "A hygrometer",
+      "An anemometer",
+      "An ammeter"
+    ],
+    "explanation": "A barometer measures pressure exerted by the atmosphere."
+  },
+  "251": {
+    "text": "Which instrument measures electric current?",
+    "options": [
+      "An ammeter",
+      "A voltmeter",
+      "A barometer",
+      "A light meter"
+    ],
+    "explanation": "An ammeter measures current in amperes."
+  },
+  "252": {
+    "text": "Which particle in the nucleus has no electric charge?",
+    "options": [
+      "The neutron",
+      "The proton",
+      "The electron",
+      "The positron"
+    ],
+    "explanation": "A neutron is electrically neutral."
+  },
+  "253": {
+    "text": "Two isotopes of an element differ in their number of…",
+    "options": [
+      "Neutrons",
+      "Protons",
+      "Nuclei",
+      "Chemical elements"
+    ],
+    "explanation": "Isotopes have the same proton count but different neutron counts."
+  },
+  "254": {
+    "text": "What does an atom become when it loses an electron?",
+    "options": [
+      "A positive ion",
+      "A negative ion",
+      "A neutron",
+      "Necessarily a different isotope"
+    ],
+    "explanation": "Losing a negative charge leaves a net positive charge."
+  },
+  "255": {
+    "text": "Which formula represents carbon dioxide?",
+    "options": [
+      "CO₂",
+      "CO",
+      "CH₄",
+      "CaO"
+    ],
+    "explanation": "A CO₂ molecule contains one carbon atom and two oxygen atoms."
+  },
+  "256": {
+    "text": "Which formula represents methane?",
+    "options": [
+      "CH₄",
+      "NH₃",
+      "C₂H₆",
+      "H₂O"
+    ],
+    "explanation": "Methane has one carbon atom bonded to four hydrogen atoms."
+  },
+  "257": {
+    "text": "Which formula represents ammonia?",
+    "options": [
+      "NH₃",
+      "NO₂",
+      "N₂",
+      "HNO₃"
+    ],
+    "explanation": "Ammonia contains one nitrogen atom and three hydrogen atoms."
+  },
+  "258": {
+    "text": "Which gas makes up about 78% of Earth’s dry air?",
+    "options": [
+      "Nitrogen",
+      "Oxygen",
+      "Carbon dioxide",
+      "Argon"
+    ],
+    "explanation": "Nitrogen is the main constituent of dry air."
+  },
+  "259": {
+    "text": "What is the change from liquid to solid called?",
+    "options": [
+      "Freezing",
+      "Vaporisation",
+      "Sublimation",
+      "Melting"
+    ],
+    "explanation": "Freezing changes a liquid into a solid."
+  },
+  "260": {
+    "text": "What is the change from liquid to gas called?",
+    "options": [
+      "Vaporisation",
+      "Melting",
+      "Freezing",
+      "Deposition"
+    ],
+    "explanation": "Vaporisation includes evaporation and boiling."
+  },
+  "261": {
+    "text": "At standard atmospheric pressure, at approximately what temperature does pure water boil?",
+    "options": [
+      "100 °C",
+      "0 °C",
+      "50 °C",
+      "150 °C"
+    ],
+    "explanation": "Water’s boiling point depends on pressure and is about 100 °C at one atmosphere."
+  },
+  "262": {
+    "text": "Which technique separates liquids using their different boiling points?",
+    "options": [
+      "Distillation",
+      "Simple filtration",
+      "Sieving",
+      "Magnetic separation"
+    ],
+    "explanation": "Distillation vaporises and then condenses components."
+  },
+  "263": {
+    "text": "Which process separates an insoluble solid from a liquid through a porous material?",
+    "options": [
+      "Filtration",
+      "Melting",
+      "Electrolysis",
+      "Sublimation"
+    ],
+    "explanation": "The filter retains sufficiently large solid particles."
+  },
+  "264": {
+    "text": "What does a catalyst do in a reaction?",
+    "options": [
+      "It speeds up the reaction without being consumed overall",
+      "It turns elements into gold",
+      "It removes all activation energy",
+      "It always becomes the main product"
+    ],
+    "explanation": "A catalyst provides a reaction pathway with lower activation energy."
+  },
+  "265": {
+    "text": "A reaction that releases heat is described as…",
+    "options": [
+      "Exothermic",
+      "Endothermic",
+      "Necessarily isothermal",
+      "Necessarily radioactive"
+    ],
+    "explanation": "An exothermic reaction transfers heat to its surroundings."
+  },
+  "266": {
+    "text": "Which process transfers heat through the movement of a fluid?",
+    "options": [
+      "Convection",
+      "Conduction alone",
+      "Refraction",
+      "Diffraction"
+    ],
+    "explanation": "Convection involves movement of matter in a liquid or gas."
+  },
+  "267": {
+    "text": "Which property explains an object’s resistance to a change in velocity?",
+    "options": [
+      "Inertia",
+      "Refraction",
+      "Solubility",
+      "Polarisation"
+    ],
+    "explanation": "Inertia is the tendency to maintain a state of motion."
+  },
+  "268": {
+    "text": "If an object’s speed doubles at constant mass, its kinetic energy is…",
+    "options": [
+      "Multiplied by four",
+      "Multiplied by two",
+      "Unchanged",
+      "Divided by two"
+    ],
+    "explanation": "Kinetic energy equals half the mass times the square of speed."
+  },
+  "269": {
+    "text": "Which relation defines density?",
+    "options": [
+      "Mass divided by volume",
+      "Volume divided by mass",
+      "Mass times speed",
+      "Force divided by time"
+    ],
+    "explanation": "Density expresses mass per unit volume."
+  },
+  "270": {
+    "text": "In a vacuum, two objects released from rest at the same height near the ground fall…",
+    "options": [
+      "With the same acceleration",
+      "Faster if their mass is greater",
+      "Faster if their volume is greater",
+      "Without experiencing gravity"
+    ],
+    "explanation": "Without air resistance, falling acceleration does not depend on their mass."
+  },
+  "271": {
+    "text": "Which effect explains the changing pitch of a siren as it passes us?",
+    "options": [
+      "The Doppler effect",
+      "The photoelectric effect",
+      "The Joule effect",
+      "The greenhouse effect"
+    ],
+    "explanation": "Relative motion changes the observed frequency of a wave."
+  },
+  "272": {
+    "text": "Which of these visible colours has the shortest wavelength?",
+    "options": [
+      "Violet",
+      "Blue",
+      "Green",
+      "Red"
+    ],
+    "explanation": "Violet corresponds to the shortest wavelengths in the visible spectrum."
+  },
+  "273": {
+    "text": "Which optical object converges parallel rays in air?",
+    "options": [
+      "A converging lens",
+      "A diverging lens",
+      "A plane mirror",
+      "A parallel-sided glass pane"
+    ],
+    "explanation": "A converging lens brings parallel rays together at its focal point."
+  },
+  "274": {
+    "text": "Which phenomenon separates white light into colours in a prism?",
+    "options": [
+      "Dispersion",
+      "Conduction",
+      "Gravitation",
+      "Freezing"
+    ],
+    "explanation": "Refractive index depends on wavelength, separating the colours."
+  },
+  "275": {
+    "text": "Two north poles of magnets brought close together…",
+    "options": [
+      "Repel each other",
+      "Attract each other",
+      "Permanently cancel each other",
+      "Turn into south poles"
+    ],
+    "explanation": "Like magnetic poles repel each other."
+  },
+  "276": {
+    "text": "Which effect converts electrical energy into heat in a resistor?",
+    "options": [
+      "The Joule effect",
+      "The Doppler effect",
+      "Refraction",
+      "Sublimation"
+    ],
+    "explanation": "Current flowing through a resistor dissipates thermal energy."
+  },
+  "277": {
+    "text": "What voltage is across a 10 Ω resistor carrying 2 A?",
+    "options": [
+      "20 V",
+      "5 V",
+      "12 V",
+      "0.2 V"
+    ],
+    "explanation": "Ohm’s law gives V = 10 × 2 = 20 V."
+  },
+  "278": {
+    "text": "After two half-lives, what fraction of the initial radioactive nuclei remains undecayed?",
+    "options": [
+      "1/4",
+      "1/2",
+      "1/8",
+      "3/4"
+    ],
+    "explanation": "The remaining amount is halved with each half-life."
+  },
+  "279": {
+    "text": "Which material is mainly made from melted silica for ordinary windows?",
+    "options": [
+      "Glass",
+      "Rubber",
+      "Paper",
+      "Steel"
+    ],
+    "explanation": "Silica is the main constituent of ordinary glass."
+  },
+  "280": {
+    "text": "What is the sum of the interior angles of a convex hexagon?",
+    "options": [
+      "720°",
+      "540°",
+      "900°",
+      "360°"
+    ],
+    "explanation": "The formula (n − 2) × 180° gives 720° for six sides."
+  },
+  "281": {
+    "text": "How many diagonals does a convex octagon have?",
+    "options": [
+      "20",
+      "16",
+      "24",
+      "28"
+    ],
+    "explanation": "The formula n(n − 3)/2 gives 8 × 5 / 2 = 20."
+  },
+  "282": {
+    "text": "What is the volume of a cube with side length 4 cm?",
+    "options": [
+      "64 cm³",
+      "16 cm³",
+      "48 cm³",
+      "12 cm³"
+    ],
+    "explanation": "A cube’s volume is its side length cubed: 4³ = 64."
+  },
+  "283": {
+    "text": "What is the area of a disk of radius 3?",
+    "options": [
+      "9π",
+      "6π",
+      "3π",
+      "18π"
+    ],
+    "explanation": "Area equals πr², giving 9π."
+  },
+  "284": {
+    "text": "What is the circumference of a circle with diameter 10?",
+    "options": [
+      "10π",
+      "20π",
+      "100π",
+      "5π"
+    ],
+    "explanation": "Circumference equals π times the diameter."
+  },
+  "285": {
+    "text": "What is the area of a triangle with base 12 and corresponding height 5?",
+    "options": [
+      "30",
+      "60",
+      "17",
+      "120"
+    ],
+    "explanation": "Area equals base × height / 2, giving 30."
+  },
+  "286": {
+    "text": "In a right triangle, one acute angle is 35°. What is the other?",
+    "options": [
+      "55°",
+      "65°",
+      "145°",
+      "35°"
+    ],
+    "explanation": "The two acute angles of a right triangle total 90°."
+  },
+  "287": {
+    "text": "Which solid has four triangular faces?",
+    "options": [
+      "A tetrahedron",
+      "A cube",
+      "An octahedron",
+      "A dodecahedron"
+    ],
+    "explanation": "A tetrahedron has four faces, six edges and four vertices."
+  },
+  "288": {
+    "text": "What is the reflection of (3, −2) through the origin?",
+    "options": [
+      "(-3, 2)",
+      "(3, 2)",
+      "(-3, -2)",
+      "(2, -3)"
+    ],
+    "explanation": "Reflection through the origin changes the sign of both coordinates."
+  },
+  "289": {
+    "text": "What is the distance between (0, 0) and (5, 12)?",
+    "options": [
+      "13",
+      "17",
+      "7",
+      "60"
+    ],
+    "explanation": "Pythagoras gives √(25 + 144) = 13."
+  },
+  "290": {
+    "text": "Which value of x satisfies 3x + 7 = 22?",
+    "options": [
+      "5",
+      "7",
+      "9",
+      "15"
+    ],
+    "explanation": "Subtract 7, then divide by 3."
+  },
+  "291": {
+    "text": "What are the real solutions of x² = 49?",
+    "options": [
+      "−7 and 7",
+      "Only 7",
+      "Only −7",
+      "0 and 49"
+    ],
+    "explanation": "Both 7 and −7 have square 49."
+  },
+  "292": {
+    "text": "Which identity is correct?",
+    "options": [
+      "(a + b)² = a² + 2ab + b²",
+      "(a + b)² = a² + b²",
+      "(a + b)² = a² − b²",
+      "(a + b)² = 2a + 2b"
+    ],
+    "explanation": "The expansion includes the cross term 2ab."
+  },
+  "293": {
+    "text": "What is the factorisation of x² − 9?",
+    "options": [
+      "(x − 3)(x + 3)",
+      "(x − 9)(x + 9)",
+      "(x − 3)²",
+      "x(x − 9)"
+    ],
+    "explanation": "Use the difference of squares: a² − b² = (a − b)(a + b)."
+  },
+  "294": {
+    "text": "What is 3⁴?",
+    "options": [
+      "81",
+      "12",
+      "64",
+      "27"
+    ],
+    "explanation": "3⁴ = 3 × 3 × 3 × 3 = 81."
+  },
+  "295": {
+    "text": "What is 10⁻³?",
+    "options": [
+      "0.001",
+      "0.01",
+      "−1000",
+      "0.1"
+    ],
+    "explanation": "A negative exponent gives the reciprocal: 10⁻³ = 1/1000."
+  },
+  "296": {
+    "text": "What is log₁₀(1000)?",
+    "options": [
+      "3",
+      "10",
+      "100",
+      "30"
+    ],
+    "explanation": "10³ equals 1000, so its base-10 logarithm is 3."
+  },
+  "297": {
+    "text": "What is the derivative of 5x² + 3x?",
+    "options": [
+      "10x + 3",
+      "5x + 3",
+      "10x² + 3",
+      "5x³ + 3x²"
+    ],
+    "explanation": "The derivative of 5x² is 10x, and that of 3x is 3."
+  },
+  "298": {
+    "text": "Which function is an antiderivative of 2x over the reals?",
+    "options": [
+      "x²",
+      "2",
+      "2x²",
+      "x³"
+    ],
+    "explanation": "The derivative of x² is 2x."
+  },
+  "299": {
+    "text": "What is the slope of the line y = −3x + 8?",
+    "options": [
+      "−3",
+      "8",
+      "3",
+      "−8"
+    ],
+    "explanation": "In y = ax + b, the slope is a."
+  },
+  "300": {
+    "text": "A car travels 150 km in 2 hours 30 minutes. What is its average speed?",
+    "options": [
+      "60 km/h",
+      "75 km/h",
+      "50 km/h",
+      "90 km/h"
+    ],
+    "explanation": "2 hours 30 minutes is 2.5 hours; 150 / 2.5 = 60."
+  },
+  "301": {
+    "text": "An €80 item is discounted by 15%. What is its new price?",
+    "options": [
+      "€68",
+      "€65",
+      "€72",
+      "€60"
+    ],
+    "explanation": "The discount is €12, leaving a price of €68."
+  },
+  "302": {
+    "text": "After a 25% increase, a price reaches €100. What was the original price?",
+    "options": [
+      "€80",
+      "€75",
+      "€125",
+      "€90"
+    ],
+    "explanation": "Divide 100 by 1.25 to recover 80."
+  },
+  "303": {
+    "text": "Which fraction equals 0.375?",
+    "options": [
+      "3/8",
+      "3/4",
+      "5/8",
+      "1/3"
+    ],
+    "explanation": "3 divided by 8 equals 0.375."
+  },
+  "304": {
+    "text": "What is 2/3 + 1/4?",
+    "options": [
+      "11/12",
+      "3/7",
+      "5/12",
+      "7/12"
+    ],
+    "explanation": "Using denominator 12: 8/12 + 3/12 = 11/12."
+  },
+  "305": {
+    "text": "What is the reciprocal of 5/7?",
+    "options": [
+      "7/5",
+      "−5/7",
+      "2/7",
+      "5/12"
+    ],
+    "explanation": "A fraction multiplied by its reciprocal equals 1."
+  },
+  "306": {
+    "text": "What is the mean of 6, 10, 14 and 18?",
+    "options": [
+      "12",
+      "10",
+      "14",
+      "48"
+    ],
+    "explanation": "The sum is 48; dividing by 4 gives 12."
+  },
+  "307": {
+    "text": "What is the range of 3, 7, 8, 12, 19?",
+    "options": [
+      "16",
+      "19",
+      "8",
+      "12"
+    ],
+    "explanation": "The range is the maximum minus the minimum: 19 − 3."
+  },
+  "308": {
+    "text": "What is the mode of 2, 3, 3, 5, 8?",
+    "options": [
+      "3",
+      "2",
+      "5",
+      "8"
+    ],
+    "explanation": "The mode is the most frequent value."
+  },
+  "309": {
+    "text": "What is the probability of rolling a total of 7 with two fair dice?",
+    "options": [
+      "1/6",
+      "1/12",
+      "7/36",
+      "1/3"
+    ],
+    "explanation": "Six of the 36 ordered outcomes total 7."
+  },
+  "310": {
+    "text": "One card is drawn from a 52-card deck without jokers. What is the probability of an ace?",
+    "options": [
+      "1/13",
+      "1/4",
+      "1/26",
+      "4/13"
+    ],
+    "explanation": "The deck contains four aces: 4/52 = 1/13."
+  },
+  "311": {
+    "text": "A bag contains 3 red balls and 2 blue balls. What is the probability of drawing a blue one?",
+    "options": [
+      "2/5",
+      "3/5",
+      "1/2",
+      "2/3"
+    ],
+    "explanation": "Two of the five balls are blue."
+  },
+  "312": {
+    "text": "In how many ways can three distinct people be arranged in a line?",
+    "options": [
+      "6",
+      "3",
+      "9",
+      "12"
+    ],
+    "explanation": "There are 3! = 3 × 2 × 1 = 6 permutations."
+  },
+  "313": {
+    "text": "How many distinct unordered pairs can be chosen from five people?",
+    "options": [
+      "10",
+      "20",
+      "5",
+      "25"
+    ],
+    "explanation": "The number of combinations is 5 × 4 / 2 = 10."
+  },
+  "314": {
+    "text": "Which number follows 2, 6, 18, 54 in a geometric sequence?",
+    "options": [
+      "162",
+      "108",
+      "72",
+      "216"
+    ],
+    "explanation": "Each term is multiplied by 3."
+  },
+  "315": {
+    "text": "In an arithmetic sequence starting at 4 with common difference 3, what is the fifth term?",
+    "options": [
+      "16",
+      "19",
+      "12",
+      "15"
+    ],
+    "explanation": "The first five terms are 4, 7, 10, 13 and 16."
+  },
+  "316": {
+    "text": "What is the remainder when 47 is divided by 6?",
+    "options": [
+      "5",
+      "1",
+      "7",
+      "3"
+    ],
+    "explanation": "47 = 6 × 7 + 5."
+  },
+  "317": {
+    "text": "Which number is divisible by 9?",
+    "options": [
+      "729",
+      "731",
+      "734",
+      "737"
+    ],
+    "explanation": "7 + 2 + 9 = 18, which is divisible by 9."
+  },
+  "318": {
+    "text": "What is the prime factorisation of 60?",
+    "options": [
+      "2² × 3 × 5",
+      "2 × 3² × 5",
+      "2² × 3²",
+      "3 × 5²"
+    ],
+    "explanation": "4 × 3 × 5 = 60."
+  },
+  "319": {
+    "text": "If P implies Q and Q is false, what can be concluded?",
+    "options": [
+      "P is false",
+      "P is true",
+      "Q is true",
+      "Nothing about P"
+    ],
+    "explanation": "This is reasoning by contraposition, called modus tollens."
+  },
+  "320": {
+    "text": "Which statement negates “P and Q”?",
+    "options": [
+      "Not P or not Q",
+      "Not P and not Q",
+      "P or Q",
+      "P and not Q"
+    ],
+    "explanation": "De Morgan’s law turns the negation of a conjunction into a disjunction of negations."
+  },
+  "321": {
+    "text": "An inclusive “P or Q” statement is false when…",
+    "options": [
+      "Both P and Q are false",
+      "Only P is true",
+      "Only Q is true",
+      "Both P and Q are true"
+    ],
+    "explanation": "Inclusive OR is true when at least one proposition is true."
+  },
+  "322": {
+    "text": "What is the absolute value of −8?",
+    "options": [
+      "8",
+      "−8",
+      "0",
+      "64"
+    ],
+    "explanation": "Absolute value measures distance from zero."
+  },
+  "323": {
+    "text": "What is √144?",
+    "options": [
+      "12",
+      "−12",
+      "14",
+      "72"
+    ],
+    "explanation": "The principal square root is nonnegative: 12² = 144."
+  },
+  "324": {
+    "text": "Two quantities are inversely proportional. If one triples, the other…",
+    "options": [
+      "Is divided by three",
+      "Triples",
+      "Doubles",
+      "Does not change"
+    ],
+    "explanation": "The product of two inversely proportional quantities remains constant."
+  },
+  "325": {
+    "text": "Who wrote Les Misérables?",
+    "options": [
+      "Victor Hugo",
+      "Émile Zola",
+      "Honoré de Balzac",
+      "Gustave Flaubert"
+    ],
+    "explanation": "Les Misérables is a novel by Victor Hugo."
+  },
+  "326": {
+    "text": "Who wrote Madame Bovary?",
+    "options": [
+      "Gustave Flaubert",
+      "Stendhal",
+      "Victor Hugo",
+      "Guy de Maupassant"
+    ],
+    "explanation": "Madame Bovary is a novel by Gustave Flaubert."
+  },
+  "327": {
+    "text": "Who wrote Germinal?",
+    "options": [
+      "Émile Zola",
+      "Alphonse Daudet",
+      "Honoré de Balzac",
+      "Marcel Proust"
+    ],
+    "explanation": "Germinal is a novel by Émile Zola."
+  },
+  "328": {
+    "text": "Who wrote Father Goriot?",
+    "options": [
+      "Honoré de Balzac",
+      "Émile Zola",
+      "Stendhal",
+      "Alexandre Dumas"
+    ],
+    "explanation": "Father Goriot is a novel by Honoré de Balzac."
+  },
+  "329": {
+    "text": "Who wrote Bel-Ami?",
+    "options": [
+      "Guy de Maupassant",
+      "Gustave Flaubert",
+      "Émile Zola",
+      "Victor Hugo"
+    ],
+    "explanation": "Bel-Ami is a novel by Guy de Maupassant."
+  },
+  "330": {
+    "text": "Who wrote The Three Musketeers?",
+    "options": [
+      "Alexandre Dumas",
+      "Victor Hugo",
+      "Jules Verne",
+      "Honoré de Balzac"
+    ],
+    "explanation": "The Three Musketeers is a novel by Alexandre Dumas."
+  },
+  "331": {
+    "text": "Who wrote Twenty Thousand Leagues Under the Seas?",
+    "options": [
+      "Jules Verne",
+      "H. G. Wells",
+      "Robert Louis Stevenson",
+      "Daniel Defoe"
+    ],
+    "explanation": "Twenty Thousand Leagues Under the Seas is a novel by Jules Verne."
+  },
+  "332": {
+    "text": "Who wrote The Little Prince?",
+    "options": [
+      "Antoine de Saint-Exupéry",
+      "Jean Giono",
+      "Albert Camus",
+      "Marcel Pagnol"
+    ],
+    "explanation": "The Little Prince is a tale by Antoine de Saint-Exupéry."
+  },
+  "333": {
+    "text": "Who wrote The Plague?",
+    "options": [
+      "Albert Camus",
+      "Jean-Paul Sartre",
+      "André Malraux",
+      "Boris Vian"
+    ],
+    "explanation": "The Plague is a novel by Albert Camus."
+  },
+  "334": {
+    "text": "Who wrote Froth on the Daydream?",
+    "options": [
+      "Boris Vian",
+      "Raymond Queneau",
+      "Jacques Prévert",
+      "André Breton"
+    ],
+    "explanation": "Froth on the Daydream is a novel by Boris Vian."
+  },
+  "335": {
+    "text": "Who wrote Nineteen Eighty-Four?",
+    "options": [
+      "George Orwell",
+      "Aldous Huxley",
+      "Ray Bradbury",
+      "H. G. Wells"
+    ],
+    "explanation": "Nineteen Eighty-Four is a novel by George Orwell."
+  },
+  "336": {
+    "text": "Who wrote Brave New World?",
+    "options": [
+      "Aldous Huxley",
+      "George Orwell",
+      "Isaac Asimov",
+      "Philip K. Dick"
+    ],
+    "explanation": "Brave New World is a novel by Aldous Huxley."
+  },
+  "337": {
+    "text": "Who wrote Fahrenheit 451?",
+    "options": [
+      "Ray Bradbury",
+      "George Orwell",
+      "H. G. Wells",
+      "Arthur C. Clarke"
+    ],
+    "explanation": "Fahrenheit 451 is a novel by Ray Bradbury."
+  },
+  "338": {
+    "text": "Who wrote Dracula?",
+    "options": [
+      "Bram Stoker",
+      "Mary Shelley",
+      "Oscar Wilde",
+      "Edgar Allan Poe"
+    ],
+    "explanation": "Dracula is a novel by Bram Stoker."
+  },
+  "339": {
+    "text": "Who wrote The Picture of Dorian Gray?",
+    "options": [
+      "Oscar Wilde",
+      "Charles Dickens",
+      "Bram Stoker",
+      "Henry James"
+    ],
+    "explanation": "The Picture of Dorian Gray is a novel by Oscar Wilde."
+  },
+  "340": {
+    "text": "Who wrote Jane Eyre?",
+    "options": [
+      "Charlotte Brontë",
+      "Emily Brontë",
+      "Jane Austen",
+      "Virginia Woolf"
+    ],
+    "explanation": "Jane Eyre is a novel by Charlotte Brontë."
+  },
+  "341": {
+    "text": "Who wrote Wuthering Heights?",
+    "options": [
+      "Emily Brontë",
+      "Charlotte Brontë",
+      "Mary Shelley",
+      "George Eliot"
+    ],
+    "explanation": "Wuthering Heights is a novel by Emily Brontë."
+  },
+  "342": {
+    "text": "Who wrote Moby-Dick?",
+    "options": [
+      "Herman Melville",
+      "Mark Twain",
+      "Jack London",
+      "Ernest Hemingway"
+    ],
+    "explanation": "Moby-Dick is a novel by Herman Melville."
+  },
+  "343": {
+    "text": "Who wrote The Old Man and the Sea?",
+    "options": [
+      "Ernest Hemingway",
+      "John Steinbeck",
+      "William Faulkner",
+      "F. Scott Fitzgerald"
+    ],
+    "explanation": "The Old Man and the Sea is a novel by Ernest Hemingway."
+  },
+  "344": {
+    "text": "Who wrote The Great Gatsby?",
+    "options": [
+      "F. Scott Fitzgerald",
+      "Ernest Hemingway",
+      "John Steinbeck",
+      "Truman Capote"
+    ],
+    "explanation": "The Great Gatsby is a novel by F. Scott Fitzgerald."
+  },
+  "345": {
+    "text": "Who wrote The Grapes of Wrath?",
+    "options": [
+      "John Steinbeck",
+      "Jack London",
+      "William Faulkner",
+      "Herman Melville"
+    ],
+    "explanation": "The Grapes of Wrath is a novel by John Steinbeck."
+  },
+  "346": {
+    "text": "Who wrote War and Peace?",
+    "options": [
+      "Leo Tolstoy",
+      "Fyodor Dostoevsky",
+      "Anton Chekhov",
+      "Ivan Turgenev"
+    ],
+    "explanation": "War and Peace is a novel by Leo Tolstoy."
+  },
+  "347": {
+    "text": "Who wrote The Name of the Rose?",
+    "options": [
+      "Umberto Eco",
+      "Italo Calvino",
+      "Primo Levi",
+      "Alberto Moravia"
+    ],
+    "explanation": "The Name of the Rose is a novel by Umberto Eco."
+  },
+  "348": {
+    "text": "Who wrote The Alchemist?",
+    "options": [
+      "Paulo Coelho",
+      "José Saramago",
+      "Jorge Amado",
+      "Fernando Pessoa"
+    ],
+    "explanation": "The Alchemist is a novel by Paulo Coelho."
+  },
+  "349": {
+    "text": "Which playwright wrote Hamlet?",
+    "options": [
+      "William Shakespeare",
+      "Christopher Marlowe",
+      "Ben Jonson",
+      "Oscar Wilde"
+    ],
+    "explanation": "Hamlet is a Shakespeare tragedy set in Denmark."
+  },
+  "350": {
+    "text": "Which French playwright wrote Le Cid?",
+    "options": [
+      "Pierre Corneille",
+      "Jean Racine",
+      "Molière",
+      "Beaumarchais"
+    ],
+    "explanation": "Le Cid is a play by Pierre Corneille first performed in 1637."
+  },
+  "351": {
+    "text": "Which French playwright wrote Phèdre?",
+    "options": [
+      "Jean Racine",
+      "Pierre Corneille",
+      "Molière",
+      "Alfred de Musset"
+    ],
+    "explanation": "Phèdre is a tragedy by Jean Racine."
+  },
+  "352": {
+    "text": "Which French author was born Jean-Baptiste Poquelin?",
+    "options": [
+      "Molière",
+      "Voltaire",
+      "Stendhal",
+      "Beaumarchais"
+    ],
+    "explanation": "Molière was the stage name of Jean-Baptiste Poquelin."
+  },
+  "353": {
+    "text": "Which writer created Sherlock Holmes?",
+    "options": [
+      "Arthur Conan Doyle",
+      "Agatha Christie",
+      "Wilkie Collins",
+      "Edgar Allan Poe"
+    ],
+    "explanation": "Conan Doyle wrote about Holmes and his companion Watson."
+  },
+  "354": {
+    "text": "Which writer created Hercule Poirot?",
+    "options": [
+      "Agatha Christie",
+      "Dorothy L. Sayers",
+      "Patricia Highsmith",
+      "P. D. James"
+    ],
+    "explanation": "The Belgian detective Hercule Poirot was created by Agatha Christie."
+  },
+  "355": {
+    "text": "How many lines does a traditional sonnet contain?",
+    "options": [
+      "14",
+      "12",
+      "16",
+      "10"
+    ],
+    "explanation": "A sonnet contains fourteen lines."
+  },
+  "356": {
+    "text": "Which term describes deliberate expressive exaggeration?",
+    "options": [
+      "Hyperbole",
+      "Litotes",
+      "Ellipsis",
+      "Metonymy"
+    ],
+    "explanation": "Hyperbole exaggerates an idea for effect."
+  },
+  "357": {
+    "text": "Which figure of speech gives human characteristics to an object?",
+    "options": [
+      "Personification",
+      "Anagram",
+      "Antithesis",
+      "Assonance"
+    ],
+    "explanation": "Personification gives human traits to nonhuman things."
+  },
+  "358": {
+    "text": "Which figure replaces a term with a related one, as in “the crown” for the monarchy?",
+    "options": [
+      "Metonymy",
+      "Oxymoron",
+      "Hyperbole",
+      "Anaphora"
+    ],
+    "explanation": "Metonymy relies on a relationship of association or closeness."
+  },
+  "359": {
+    "text": "What is the repetition of the same consonant sound called?",
+    "options": [
+      "Alliteration",
+      "Assonance",
+      "Anaphora",
+      "Ellipsis"
+    ],
+    "explanation": "Alliteration repeats consonant sounds; assonance repeats vowel sounds."
+  },
+  "360": {
+    "text": "What is the repetition of the same vowel sound called?",
+    "options": [
+      "Assonance",
+      "Alliteration",
+      "Antonomasia",
+      "Periphrasis"
+    ],
+    "explanation": "Assonance is the recurrence of a vowel sound."
+  },
+  "361": {
+    "text": "What is a word formed by rearranging the letters of another called?",
+    "options": [
+      "An anagram",
+      "An antonym",
+      "A homophone",
+      "An acronym"
+    ],
+    "explanation": "An anagram uses the same letters in a different order."
+  },
+  "362": {
+    "text": "What are two words with opposite meanings called?",
+    "options": [
+      "Antonyms",
+      "Synonyms",
+      "Homonyms",
+      "Paronyms"
+    ],
+    "explanation": "Antonyms have opposite meanings, such as hot and cold."
+  },
+  "363": {
+    "text": "What are two words with the same pronunciation but different meanings called?",
+    "options": [
+      "Homophones",
+      "Antonyms",
+      "Acronyms",
+      "Diminutives"
+    ],
+    "explanation": "Homophones sound the same."
+  },
+  "364": {
+    "text": "Which language family includes Spanish, Italian and Portuguese?",
+    "options": [
+      "Romance languages",
+      "Germanic languages",
+      "Slavic languages",
+      "Semitic languages"
+    ],
+    "explanation": "Romance languages descend from Latin."
+  },
+  "365": {
+    "text": "Which alphabet is used to write Russian?",
+    "options": [
+      "Cyrillic",
+      "Greek",
+      "Hebrew",
+      "Armenian"
+    ],
+    "explanation": "Russian uses a version of the Cyrillic alphabet."
+  },
+  "366": {
+    "text": "What are instructions for acting and staging in a play called?",
+    "options": [
+      "Stage directions",
+      "Rhymes",
+      "Stanzas",
+      "Epigraphs"
+    ],
+    "explanation": "Stage directions guide gestures, movement and staging."
+  },
+  "367": {
+    "text": "Which type of narrator knows every character’s thoughts?",
+    "options": [
+      "Omniscient",
+      "Strictly external",
+      "Always a minor character",
+      "Necessarily unreliable"
+    ],
+    "explanation": "An omniscient narrator has knowledge beyond any individual character."
+  },
+  "368": {
+    "text": "Which genre depicts an imaginary society presented as ideal?",
+    "options": [
+      "Utopia",
+      "Dystopia",
+      "Only satire",
+      "Autobiography"
+    ],
+    "explanation": "A utopia describes an ideal social order, in contrast to a dystopia."
+  },
+  "369": {
+    "text": "Who painted The Starry Night?",
+    "options": [
+      "Vincent van Gogh",
+      "Paul Gauguin",
+      "Claude Monet",
+      "Paul Cézanne"
+    ],
+    "explanation": "This work is by Vincent van Gogh."
+  },
+  "370": {
+    "text": "Who painted the Mona Lisa?",
+    "options": [
+      "Leonardo da Vinci",
+      "Michelangelo",
+      "Raphael",
+      "Titian"
+    ],
+    "explanation": "This work is by Leonardo da Vinci."
+  },
+  "371": {
+    "text": "Who painted The Birth of Venus?",
+    "options": [
+      "Sandro Botticelli",
+      "Raphael",
+      "Caravaggio",
+      "Tintoretto"
+    ],
+    "explanation": "This work is by Sandro Botticelli."
+  },
+  "372": {
+    "text": "Who painted The Night Watch?",
+    "options": [
+      "Rembrandt",
+      "Johannes Vermeer",
+      "Frans Hals",
+      "Pieter Bruegel"
+    ],
+    "explanation": "This work is by Rembrandt."
+  },
+  "373": {
+    "text": "Who painted Las Meninas?",
+    "options": [
+      "Diego Velázquez",
+      "Francisco de Goya",
+      "El Greco",
+      "Pablo Picasso"
+    ],
+    "explanation": "This work is by Diego Velázquez."
+  },
+  "374": {
+    "text": "Who painted The Kiss, with its golden decoration?",
+    "options": [
+      "Gustav Klimt",
+      "Egon Schiele",
+      "Edvard Munch",
+      "Oskar Kokoschka"
+    ],
+    "explanation": "This work is by Gustav Klimt."
+  },
+  "375": {
+    "text": "Who painted The Treachery of Images, depicting a pipe?",
+    "options": [
+      "René Magritte",
+      "Salvador Dalí",
+      "Max Ernst",
+      "Joan Miró"
+    ],
+    "explanation": "This work is by René Magritte."
+  },
+  "376": {
+    "text": "Who painted Les Demoiselles d’Avignon?",
+    "options": [
+      "Pablo Picasso",
+      "Henri Matisse",
+      "Georges Braque",
+      "Fernand Léger"
+    ],
+    "explanation": "This work is by Pablo Picasso."
+  },
+  "377": {
+    "text": "Who painted Liberty Leading the People?",
+    "options": [
+      "Eugène Delacroix",
+      "Jacques-Louis David",
+      "Théodore Géricault",
+      "Jean-Auguste-Dominique Ingres"
+    ],
+    "explanation": "This work is by Eugène Delacroix."
+  },
+  "378": {
+    "text": "Who painted The Raft of the Medusa?",
+    "options": [
+      "Théodore Géricault",
+      "Eugène Delacroix",
+      "Gustave Courbet",
+      "Édouard Manet"
+    ],
+    "explanation": "This work is by Théodore Géricault."
+  },
+  "379": {
+    "text": "Who painted Le Déjeuner sur l’herbe, exhibited in 1863?",
+    "options": [
+      "Édouard Manet",
+      "Claude Monet",
+      "Auguste Renoir",
+      "Edgar Degas"
+    ],
+    "explanation": "This work is by Édouard Manet."
+  },
+  "380": {
+    "text": "Who painted The Card Players, a late-19th-century series?",
+    "options": [
+      "Paul Cézanne",
+      "Paul Signac",
+      "Georges Seurat",
+      "Henri Rousseau"
+    ],
+    "explanation": "This work is by Paul Cézanne."
+  },
+  "381": {
+    "text": "Who painted American Gothic?",
+    "options": [
+      "Grant Wood",
+      "Edward Hopper",
+      "Norman Rockwell",
+      "Jackson Pollock"
+    ],
+    "explanation": "This work is by Grant Wood."
+  },
+  "382": {
+    "text": "Who painted Nighthawks, showing a diner at night?",
+    "options": [
+      "Edward Hopper",
+      "Andy Warhol",
+      "Mark Rothko",
+      "Grant Wood"
+    ],
+    "explanation": "This work is by Edward Hopper."
+  },
+  "383": {
+    "text": "Who composed The Four Seasons?",
+    "options": [
+      "Antonio Vivaldi",
+      "Johann Sebastian Bach",
+      "George Frideric Handel",
+      "Joseph Haydn"
+    ],
+    "explanation": "This work was composed by Antonio Vivaldi."
+  },
+  "384": {
+    "text": "Who composed Swan Lake?",
+    "options": [
+      "Pyotr Ilyich Tchaikovsky",
+      "Sergei Prokofiev",
+      "Igor Stravinsky",
+      "Nikolai Rimsky-Korsakov"
+    ],
+    "explanation": "This work was composed by Pyotr Ilyich Tchaikovsky."
+  },
+  "385": {
+    "text": "Who composed the New World Symphony?",
+    "options": [
+      "Antonín Dvořák",
+      "Gustav Mahler",
+      "Johannes Brahms",
+      "Franz Schubert"
+    ],
+    "explanation": "This work was composed by Antonín Dvořák."
+  },
+  "386": {
+    "text": "Who composed the Symphonie fantastique?",
+    "options": [
+      "Hector Berlioz",
+      "Georges Bizet",
+      "Gabriel Fauré",
+      "Camille Saint-Saëns"
+    ],
+    "explanation": "This work was composed by Hector Berlioz."
+  },
+  "387": {
+    "text": "Who composed the Ninth Symphony featuring the Ode to Joy?",
+    "options": [
+      "Ludwig van Beethoven",
+      "Wolfgang Amadeus Mozart",
+      "Joseph Haydn",
+      "Robert Schumann"
+    ],
+    "explanation": "This work was composed by Ludwig van Beethoven."
+  },
+  "388": {
+    "text": "Who composed Clair de lune from the Suite bergamasque?",
+    "options": [
+      "Claude Debussy",
+      "Maurice Ravel",
+      "Erik Satie",
+      "Frédéric Chopin"
+    ],
+    "explanation": "This work was composed by Claude Debussy."
+  },
+  "389": {
+    "text": "Which instrument family does the cello belong to?",
+    "options": [
+      "Bowed strings",
+      "Brass",
+      "Woodwinds",
+      "Membrane percussion"
+    ],
+    "explanation": "The cello is mainly played with a bow."
+  },
+  "390": {
+    "text": "Which instrument usually has a keyboard and strings struck by hammers?",
+    "options": [
+      "The piano",
+      "The organ",
+      "The harpsichord",
+      "The accordion"
+    ],
+    "explanation": "Piano hammers strike strings when keys are pressed."
+  },
+  "391": {
+    "text": "Which keyboard instrument produces sound by plucking its strings?",
+    "options": [
+      "The harpsichord",
+      "The piano",
+      "The organ",
+      "The celesta"
+    ],
+    "explanation": "Harpsichord strings are plucked by plectra."
+  },
+  "392": {
+    "text": "What is the speed at which a piece is performed called?",
+    "options": [
+      "Tempo",
+      "Timbre",
+      "Key",
+      "Range"
+    ],
+    "explanation": "Tempo indicates the speed of the musical beat."
+  },
+  "393": {
+    "text": "What does “crescendo” mean in music?",
+    "options": [
+      "Gradually louder",
+      "Gradually slower",
+      "Gradually higher in pitch",
+      "Gradually shorter"
+    ],
+    "explanation": "A crescendo gradually increases loudness."
+  },
+  "394": {
+    "text": "Which of these is the highest female voice category?",
+    "options": [
+      "Soprano",
+      "Contralto",
+      "Baritone",
+      "Bass"
+    ],
+    "explanation": "Soprano is the highest female category among these voices."
+  },
+  "395": {
+    "text": "Which musical sign raises a note by one semitone?",
+    "options": [
+      "A sharp",
+      "A flat",
+      "Always a natural",
+      "A fermata"
+    ],
+    "explanation": "A sharp raises a note by one semitone."
+  },
+  "396": {
+    "text": "How many lines are on a standard musical staff?",
+    "options": [
+      "5",
+      "4",
+      "6",
+      "7"
+    ],
+    "explanation": "A standard staff has five lines and four spaces."
+  },
+  "397": {
+    "text": "In 4/4 time, how many quarter notes fill one bar?",
+    "options": [
+      "4",
+      "2",
+      "8",
+      "3"
+    ],
+    "explanation": "The upper 4 indicates four beats, each worth a quarter note."
+  },
+  "398": {
+    "text": "Which term describes singing without instrumental accompaniment?",
+    "options": [
+      "A cappella",
+      "Pizzicato",
+      "Staccato",
+      "Glissando"
+    ],
+    "explanation": "A cappella describes a vocal-only performance."
+  },
+  "399": {
+    "text": "Who directed Citizen Kane?",
+    "options": [
+      "Orson Welles",
+      "Alfred Hitchcock",
+      "John Ford",
+      "Billy Wilder"
+    ],
+    "explanation": "Citizen Kane was directed by Orson Welles, who also starred in it."
+  },
+  "400": {
+    "text": "Who directed Seven Samurai?",
+    "options": [
+      "Akira Kurosawa",
+      "Yasujirō Ozu",
+      "Hayao Miyazaki",
+      "Kenji Mizoguchi"
+    ],
+    "explanation": "Seven Samurai is a film by Akira Kurosawa."
+  },
+  "401": {
+    "text": "Who directed Psycho in 1960?",
+    "options": [
+      "Alfred Hitchcock",
+      "Stanley Kubrick",
+      "Orson Welles",
+      "Fritz Lang"
+    ],
+    "explanation": "Psycho is a thriller directed by Alfred Hitchcock."
+  },
+  "402": {
+    "text": "Who directed 2001: A Space Odyssey?",
+    "options": [
+      "Stanley Kubrick",
+      "Ridley Scott",
+      "Steven Spielberg",
+      "George Lucas"
+    ],
+    "explanation": "Stanley Kubrick directed this science-fiction film released in 1968."
+  },
+  "403": {
+    "text": "Who directed Spirited Away?",
+    "options": [
+      "Hayao Miyazaki",
+      "Isao Takahata",
+      "Satoshi Kon",
+      "Mamoru Hosoda"
+    ],
+    "explanation": "Spirited Away was directed by Hayao Miyazaki at Studio Ghibli."
+  },
+  "404": {
+    "text": "Who directed The Godfather in 1972?",
+    "options": [
+      "Francis Ford Coppola",
+      "Martin Scorsese",
+      "Sergio Leone",
+      "Brian De Palma"
+    ],
+    "explanation": "Francis Ford Coppola directed the adaptation of Mario Puzo’s novel."
+  },
+  "405": {
+    "text": "Which technique applies pigments to plaster while it is still wet?",
+    "options": [
+      "Fresco",
+      "Woodcut",
+      "Collage",
+      "Mosaic"
+    ],
+    "explanation": "Fresco fixes pigments into fresh plaster."
+  },
+  "406": {
+    "text": "Which technique assembles small coloured pieces into an image?",
+    "options": [
+      "Mosaic",
+      "Lithography",
+      "Watercolour",
+      "Screen printing"
+    ],
+    "explanation": "The pieces in a mosaic are called tesserae."
+  },
+  "407": {
+    "text": "Which art movement is associated with Henri Matisse and intense colours?",
+    "options": [
+      "Fauvism",
+      "Neoclassicism",
+      "Socialist realism",
+      "Minimalism"
+    ],
+    "explanation": "Fauvism notably uses vivid, expressive colours."
+  },
+  "408": {
+    "text": "Which movement breaks forms into geometric volumes in works by Picasso and Braque?",
+    "options": [
+      "Cubism",
+      "Romanticism",
+      "Rococo",
+      "Impressionism"
+    ],
+    "explanation": "Picasso and Braque were founding figures of Cubism."
+  },
+  "409": {
+    "text": "Which art movement explores dreams and the unconscious?",
+    "options": [
+      "Surrealism",
+      "Neoclassicism",
+      "Academic realism",
+      "Only Constructivism"
+    ],
+    "explanation": "Surrealism explores free association and the world of dreams."
+  },
+  "410": {
+    "text": "Which architect designed Fallingwater, a house above a waterfall?",
+    "options": [
+      "Frank Lloyd Wright",
+      "Le Corbusier",
+      "Ludwig Mies van der Rohe",
+      "Walter Gropius"
+    ],
+    "explanation": "Fallingwater is a work by Frank Lloyd Wright in Pennsylvania."
+  },
+  "411": {
+    "text": "Which medieval architectural style is associated with pointed arches and flying buttresses?",
+    "options": [
+      "Gothic",
+      "Romanesque",
+      "Baroque",
+      "Neoclassical"
+    ],
+    "explanation": "These features are characteristic of Gothic architecture."
+  },
+  "412": {
+    "text": "What is a sculpture that projects only slightly from its background called?",
+    "options": [
+      "A low relief",
+      "A sculpture in the round",
+      "A fresco",
+      "A stained-glass window"
+    ],
+    "explanation": "Low relief remains attached to its background with little projection."
+  },
+  "413": {
+    "text": "How many bits are in an IPv4 address?",
+    "options": [
+      "32",
+      "16",
+      "64",
+      "128"
+    ],
+    "explanation": "An IPv4 address contains four bytes, or 32 bits."
+  },
+  "414": {
+    "text": "How many bits are in an IPv6 address?",
+    "options": [
+      "128",
+      "32",
+      "64",
+      "256"
+    ],
+    "explanation": "IPv6 uses 128-bit addresses."
+  },
+  "415": {
+    "text": "Which port does HTTPS use by default?",
+    "options": [
+      "443",
+      "80",
+      "22",
+      "25"
+    ],
+    "explanation": "HTTPS uses port 443 by default."
+  },
+  "416": {
+    "text": "Which protocol is used to send email between servers?",
+    "options": [
+      "SMTP",
+      "IMAP",
+      "DNS",
+      "DHCP"
+    ],
+    "explanation": "SMTP transports email between mail servers."
+  },
+  "417": {
+    "text": "Which protocol commonly synchronises a mailbox with a server?",
+    "options": [
+      "IMAP",
+      "SMTP",
+      "ARP",
+      "NTP"
+    ],
+    "explanation": "IMAP lets clients read and manage messages stored on the server."
+  },
+  "418": {
+    "text": "Which protocol automatically assigns IP configuration on a network?",
+    "options": [
+      "DHCP",
+      "FTP",
+      "SSH",
+      "HTTP"
+    ],
+    "explanation": "DHCP provides an IP address and other network settings."
+  },
+  "419": {
+    "text": "Which protocol is designed to synchronise clocks over a network?",
+    "options": [
+      "NTP",
+      "DNS",
+      "SMTP",
+      "FTP"
+    ],
+    "explanation": "NTP stands for Network Time Protocol."
+  },
+  "420": {
+    "text": "Which device connects different IP networks?",
+    "options": [
+      "A router",
+      "A keyboard",
+      "A monitor",
+      "A RAM module"
+    ],
+    "explanation": "A router forwards packets between networks."
+  },
+  "421": {
+    "text": "Which HTTP status code indicates that a resource was created?",
+    "options": [
+      "201",
+      "301",
+      "401",
+      "500"
+    ],
+    "explanation": "201 Created indicates successful creation of a resource."
+  },
+  "422": {
+    "text": "Which HTTP status code represents a standard permanent redirect?",
+    "options": [
+      "301",
+      "200",
+      "404",
+      "503"
+    ],
+    "explanation": "301 Moved Permanently indicates a new permanent address."
+  },
+  "423": {
+    "text": "Which HTTP status code indicates an internal server error?",
+    "options": [
+      "500",
+      "204",
+      "302",
+      "403"
+    ],
+    "explanation": "500 Internal Server Error indicates an unexpected server error."
+  },
+  "424": {
+    "text": "Which language structures a web page’s content?",
+    "options": [
+      "HTML",
+      "CSS",
+      "SQL",
+      "Bash"
+    ],
+    "explanation": "HTML describes the structure and semantics of web content."
+  },
+  "425": {
+    "text": "On a web page, what does the DOM represent?",
+    "options": [
+      "A tree representation of the document",
+      "An IP address",
+      "An encryption protocol",
+      "A storage unit"
+    ],
+    "explanation": "The Document Object Model represents elements and their organisation."
+  },
+  "426": {
+    "text": "Which data format uses objects, arrays and textual or numeric values?",
+    "options": [
+      "JSON",
+      "JPEG",
+      "MP3",
+      "ZIP"
+    ],
+    "explanation": "JSON is a text format for representing structured data."
+  },
+  "427": {
+    "text": "Which SQL statement is mainly used to read data?",
+    "options": [
+      "SELECT",
+      "INSERT",
+      "UPDATE",
+      "DELETE"
+    ],
+    "explanation": "SELECT retrieves data from a relational database."
+  },
+  "428": {
+    "text": "Which SQL clause filters rows before grouping?",
+    "options": [
+      "WHERE",
+      "ORDER BY",
+      "LIMIT",
+      "HAVING"
+    ],
+    "explanation": "WHERE filters rows; HAVING filters groups."
+  },
+  "429": {
+    "text": "Which SQL clause sorts query results?",
+    "options": [
+      "ORDER BY",
+      "GROUP BY",
+      "WHERE",
+      "JOIN"
+    ],
+    "explanation": "ORDER BY defines the order of returned rows."
+  },
+  "430": {
+    "text": "What is the role of a primary key in a relational table?",
+    "options": [
+      "Uniquely identify each row",
+      "Compress all columns",
+      "Always sort by date",
+      "Encrypt the disk"
+    ],
+    "explanation": "A primary key is unique and cannot be null."
+  },
+  "431": {
+    "text": "What is a foreign key mainly used for?",
+    "options": [
+      "Maintain a reference to a table’s key",
+      "Increase CPU frequency",
+      "Replace all joins",
+      "Automatically back up the server"
+    ],
+    "explanation": "A foreign key enforces consistency between related data."
+  },
+  "432": {
+    "text": "What does transaction atomicity guarantee?",
+    "options": [
+      "All its operations succeed together or are rolled back",
+      "Every row is public",
+      "Data is always compressed",
+      "All queries are instant"
+    ],
+    "explanation": "Atomicity prevents a partially applied transaction from being retained."
+  },
+  "433": {
+    "text": "Which term describes concurrent operations whose outcome depends on their execution order?",
+    "options": [
+      "A race condition",
+      "Lossless compression",
+      "A type conversion",
+      "A binary search"
+    ],
+    "explanation": "A race condition occurs when timing changes the expected outcome."
+  },
+  "434": {
+    "text": "Which tool can temporarily prevent concurrent access to a shared resource?",
+    "options": [
+      "A lock",
+      "A keyboard shortcut",
+      "A pixel",
+      "An audio codec"
+    ],
+    "explanation": "A lock coordinates access by concurrent operations."
+  },
+  "435": {
+    "text": "In Git, what is a commit?",
+    "options": [
+      "A record of a project state",
+      "A mandatory deletion of history",
+      "A network password",
+      "A web server"
+    ],
+    "explanation": "A commit records a project state with metadata."
+  },
+  "436": {
+    "text": "In Git, what does a branch enable?",
+    "options": [
+      "Develop a separate line of work",
+      "Increase RAM",
+      "Encrypt an image",
+      "Install a processor"
+    ],
+    "explanation": "A branch allows a line of development to evolve separately."
+  },
+  "437": {
+    "text": "Which Git file specifies files that should not be tracked automatically?",
+    "options": [
+      ".gitignore",
+      "package.json",
+      "index.html",
+      "README.md"
+    ],
+    "explanation": ".gitignore defines patterns for untracked files to ignore."
+  },
+  "438": {
+    "text": "What is the result of “true XOR true”?",
+    "options": [
+      "False",
+      "True",
+      "Always null",
+      "Undefined"
+    ],
+    "explanation": "Exclusive OR is true when exactly one input is true."
+  },
+  "439": {
+    "text": "What is hexadecimal FF in decimal?",
+    "options": [
+      "255",
+      "256",
+      "128",
+      "240"
+    ],
+    "explanation": "F is 15; FF equals 15 × 16 + 15 = 255."
+  },
+  "440": {
+    "text": "How many bytes are in one kibibyte (KiB)?",
+    "options": [
+      "1024",
+      "1000",
+      "8",
+      "256"
+    ],
+    "explanation": "The prefix kibi means 2¹⁰, or 1024."
+  },
+  "441": {
+    "text": "Which numeral system uses only 0 and 1?",
+    "options": [
+      "Binary",
+      "Octal",
+      "Hexadecimal",
+      "Decimal"
+    ],
+    "explanation": "The binary system uses base 2."
+  },
+  "442": {
+    "text": "Which image type can be enlarged without pixelating its geometric shapes?",
+    "options": [
+      "A vector image",
+      "A JPEG photograph",
+      "A raster PNG screenshot",
+      "A low-resolution bitmap"
+    ],
+    "explanation": "Vector images describe shapes rather than a fixed grid of pixels."
+  },
+  "443": {
+    "text": "Which format is designed to describe vector graphics on the web?",
+    "options": [
+      "SVG",
+      "JPEG",
+      "MP3",
+      "WAV"
+    ],
+    "explanation": "SVG stands for Scalable Vector Graphics."
+  },
+  "444": {
+    "text": "Lossless compression allows you to…",
+    "options": [
+      "Recover the exact original data",
+      "Permanently remove fine details",
+      "Double the original quality",
+      "Automatically encrypt the data"
+    ],
+    "explanation": "Decompression restores the original data exactly."
+  },
+  "445": {
+    "text": "Which function turns data into a fixed-size digest?",
+    "options": [
+      "A hash function",
+      "A sorting function",
+      "A video decoder",
+      "A router"
+    ],
+    "explanation": "A hash function produces a digest from input data."
+  },
+  "446": {
+    "text": "Which principle recommends granting only the permissions needed for a task?",
+    "options": [
+      "Least privilege",
+      "Maximum duplication",
+      "Universal access",
+      "Adaptive compression"
+    ],
+    "explanation": "Least privilege limits permissions to actual needs."
+  },
+  "447": {
+    "text": "Which term describes a deceptive message intended to steal login details?",
+    "options": [
+      "Phishing",
+      "Defragmentation",
+      "Virtualisation",
+      "Rendering"
+    ],
+    "explanation": "Phishing often impersonates a trusted service to deceive a victim."
+  },
+  "448": {
+    "text": "Which mechanism limits the number of requests accepted over a period?",
+    "options": [
+      "Rate limiting",
+      "Quicksort",
+      "Image rotation",
+      "Vector rendering"
+    ],
+    "explanation": "Rate limiting controls request frequency."
+  },
+  "449": {
+    "text": "What is a computing cache?",
+    "options": [
+      "A copy of data kept to speed up access",
+      "A type of cable",
+      "A syntax error",
+      "A programming language"
+    ],
+    "explanation": "A cache avoids recomputing or reloading some data."
+  },
+  "450": {
+    "text": "What does O(n) complexity mean for a loop scanning a list?",
+    "options": [
+      "Work grows in proportion to the number of elements",
+      "Work is always constant",
+      "Work grows with n squared",
+      "The list must be empty"
+    ],
+    "explanation": "O(n) describes work growing linearly with input size."
+  },
+  "451": {
+    "text": "In a graph, what does an edge connect?",
+    "options": [
+      "Two vertices",
+      "Necessarily two pixels",
+      "Only two files",
+      "Only two bytes"
+    ],
+    "explanation": "Edges represent relationships between vertices."
+  },
+  "452": {
+    "text": "Which algorithm explores a vertex’s immediate neighbours first?",
+    "options": [
+      "Breadth-first search",
+      "Insertion sort",
+      "Binary search",
+      "Merge sort"
+    ],
+    "explanation": "Breadth-first search explores a graph level by level."
+  },
+  "453": {
+    "text": "What does a “return” statement do in a conventional function?",
+    "options": [
+      "It ends the call, optionally returning a value",
+      "It restarts the computer",
+      "It always repeats the loop",
+      "It erases the program"
+    ],
+    "explanation": "Return gives control back to the calling code."
+  },
+  "454": {
+    "text": "Which operation checks whether two values are equal without changing them?",
+    "options": [
+      "A comparison",
+      "An assignment",
+      "Concatenation",
+      "Incrementing"
+    ],
+    "explanation": "A comparison evaluates a relationship between values."
+  },
+  "455": {
+    "text": "What is an exception in programming?",
+    "options": [
+      "A signal interrupting normal flow that can be handled",
+      "A variable always equal to zero",
+      "A vector image",
+      "A mandatory sorting instruction"
+    ],
+    "explanation": "Exceptions signal and handle unusual situations or errors."
+  },
+  "456": {
+    "text": "What is the role of an operating system?",
+    "options": [
+      "Manage hardware resources and program execution",
+      "Physically replace the CPU",
+      "Guarantee the absence of every bug",
+      "Only produce images"
+    ],
+    "explanation": "The operating system coordinates memory, processes and devices."
+  },
+  "457": {
+    "text": "Which planet is closest to the Sun?",
+    "options": [
+      "Mercury",
+      "Venus",
+      "Earth",
+      "Mars"
+    ],
+    "explanation": "Mercury has the closest planetary orbit to the Sun."
+  },
+  "458": {
+    "text": "Which planet has the highest average surface temperature?",
+    "options": [
+      "Venus",
+      "Mercury",
+      "Mars",
+      "Jupiter"
+    ],
+    "explanation": "Venus’s thick atmosphere produces a strong greenhouse effect."
+  },
+  "459": {
+    "text": "Which planet rotates with a highly tilted axis, as if lying on its side?",
+    "options": [
+      "Uranus",
+      "Mars",
+      "Mercury",
+      "Jupiter"
+    ],
+    "explanation": "Uranus’s rotation axis is tilted by about 98 degrees."
+  },
+  "460": {
+    "text": "Which planet has the moon Triton?",
+    "options": [
+      "Neptune",
+      "Saturn",
+      "Mars",
+      "Uranus"
+    ],
+    "explanation": "Triton is Neptune’s largest natural satellite."
+  },
+  "461": {
+    "text": "Between which planets is the main asteroid belt?",
+    "options": [
+      "Mars and Jupiter",
+      "Earth and Mars",
+      "Jupiter and Saturn",
+      "Venus and Earth"
+    ],
+    "explanation": "The main asteroid belt occupies the region between Mars and Jupiter."
+  },
+  "462": {
+    "text": "What is our galaxy called?",
+    "options": [
+      "The Milky Way",
+      "Andromeda",
+      "The Large Magellanic Cloud",
+      "The Triangulum Galaxy"
+    ],
+    "explanation": "The Solar System belongs to the Milky Way."
+  },
+  "463": {
+    "text": "Which neighbouring spiral galaxy is known as M31?",
+    "options": [
+      "Andromeda",
+      "The Milky Way",
+      "The Small Magellanic Cloud",
+      "The Sombrero Galaxy"
+    ],
+    "explanation": "M31 designates the Andromeda Galaxy."
+  },
+  "464": {
+    "text": "Which body causes a solar eclipse as seen from Earth?",
+    "options": [
+      "The Moon passing in front of the Sun",
+      "Mars passing in front of the Moon",
+      "Jupiter passing in front of Earth",
+      "The Sun passing in front of Saturn"
+    ],
+    "explanation": "During a solar eclipse, the Moon lies between Earth and the Sun."
+  },
+  "465": {
+    "text": "What primarily explains Earth’s seasons?",
+    "options": [
+      "The tilt of Earth’s axis",
+      "Daily changes in the Sun’s mass",
+      "The Moon’s phases",
+      "An annual halt in rotation"
+    ],
+    "explanation": "Earth’s axial tilt changes the sunlight received throughout the year."
+  },
+  "466": {
+    "text": "Which phenomenon produces polar auroras?",
+    "options": [
+      "Charged particles interacting with the atmosphere",
+      "Cities reflecting off the Moon",
+      "Clouds burning",
+      "Stars melting"
+    ],
+    "explanation": "Particles guided by the magnetic field excite atmospheric gases."
+  },
+  "467": {
+    "text": "What is a space rock that reaches Earth’s surface called?",
+    "options": [
+      "A meteorite",
+      "Only a meteor",
+      "A nebula",
+      "A constellation"
+    ],
+    "explanation": "A meteorite is a fragment that survives passage through the atmosphere."
+  },
+  "468": {
+    "text": "What is a vast cloud of gas and dust in space called?",
+    "options": [
+      "A nebula",
+      "A tide",
+      "A tectonic plate",
+      "An eclipse"
+    ],
+    "explanation": "Some nebulae are regions where stars form."
+  },
+  "469": {
+    "text": "What is the boundary beyond which nothing can escape a black hole called?",
+    "options": [
+      "The event horizon",
+      "The photosphere",
+      "The Kuiper belt",
+      "The magnetopause"
+    ],
+    "explanation": "The event horizon bounds the region from which even light cannot return."
+  },
+  "470": {
+    "text": "Which mission enabled Neil Armstrong to walk on the Moon?",
+    "options": [
+      "Apollo 11",
+      "Apollo 8",
+      "Gemini 4",
+      "Voyager 1"
+    ],
+    "explanation": "Apollo 11 achieved the first crewed Moon landing in 1969."
+  },
+  "471": {
+    "text": "Which organelle produces much of the ATP during cellular respiration?",
+    "options": [
+      "The mitochondrion",
+      "The nucleus",
+      "The Golgi apparatus",
+      "The lysosome"
+    ],
+    "explanation": "Mitochondria help produce ATP through respiration."
+  },
+  "472": {
+    "text": "Which cellular structure assembles proteins from amino acids?",
+    "options": [
+      "The ribosome",
+      "The chloroplast",
+      "The nuclear membrane",
+      "The vacuole"
+    ],
+    "explanation": "Ribosomes translate messenger RNA."
+  },
+  "473": {
+    "text": "In DNA, which base normally pairs with adenine?",
+    "options": [
+      "Thymine",
+      "Guanine",
+      "Cytosine",
+      "Uracil"
+    ],
+    "explanation": "In DNA, A pairs with T and C with G."
+  },
+  "474": {
+    "text": "What is a change in a DNA sequence called?",
+    "options": [
+      "A mutation",
+      "Digestion",
+      "Evaporation",
+      "Pollination"
+    ],
+    "explanation": "A mutation changes the information carried by a DNA sequence."
+  },
+  "475": {
+    "text": "Which structure usually contains most of an animal cell’s DNA?",
+    "options": [
+      "The nucleus",
+      "The ribosome",
+      "The cell membrane",
+      "The lysosome"
+    ],
+    "explanation": "The nucleus contains the animal cell’s chromosomes."
+  },
+  "476": {
+    "text": "Which group includes animals with an internal skeleton and backbone?",
+    "options": [
+      "Vertebrates",
+      "Arthropods",
+      "Molluscs",
+      "Annelids"
+    ],
+    "explanation": "Vertebrates have a backbone."
+  },
+  "477": {
+    "text": "How many legs does a typical adult insect have?",
+    "options": [
+      "6",
+      "8",
+      "10",
+      "4"
+    ],
+    "explanation": "Insects have three pairs of legs."
+  },
+  "478": {
+    "text": "Which group does a spider belong to?",
+    "options": [
+      "Arachnids",
+      "Insects",
+      "Crustaceans",
+      "Molluscs"
+    ],
+    "explanation": "Spiders are arachnids with four pairs of legs."
+  },
+  "479": {
+    "text": "Which animal is a cephalopod?",
+    "options": [
+      "The octopus",
+      "The jellyfish",
+      "The starfish",
+      "The crab"
+    ],
+    "explanation": "Cephalopods include octopuses, squid and cuttlefish."
+  },
+  "480": {
+    "text": "Which animal class includes frogs and salamanders?",
+    "options": [
+      "Amphibians",
+      "Reptiles",
+      "Mammals",
+      "Cartilaginous fish"
+    ],
+    "explanation": "Frogs and salamanders belong to the amphibians."
+  },
+  "481": {
+    "text": "Which process transfers pollen to the female part of a flower?",
+    "options": [
+      "Pollination",
+      "Germination",
+      "Transpiration",
+      "Fermentation"
+    ],
+    "explanation": "Pollination can be carried out by wind or animals."
+  },
+  "482": {
+    "text": "Which plant tissue mainly transports water from roots to leaves?",
+    "options": [
+      "Xylem",
+      "Phloem",
+      "Only the epidermis",
+      "Cork"
+    ],
+    "explanation": "Xylem transports water and dissolved minerals."
+  },
+  "483": {
+    "text": "What are the small leaf pores that allow gas exchange called?",
+    "options": [
+      "Stomata",
+      "Neurons",
+      "Alveoli",
+      "Villi"
+    ],
+    "explanation": "Stomata regulate gas exchange and some water loss."
+  },
+  "484": {
+    "text": "Which gas is absorbed by a plant during photosynthetic carbon fixation?",
+    "options": [
+      "Carbon dioxide",
+      "Helium",
+      "Methane",
+      "Neon"
+    ],
+    "explanation": "The carbon in the organic matter produced comes from CO₂."
+  },
+  "485": {
+    "text": "What term describes living organisms and their environment interacting together?",
+    "options": [
+      "An ecosystem",
+      "An organ",
+      "A chromosome",
+      "Only a species"
+    ],
+    "explanation": "An ecosystem combines a living community and its environment."
+  },
+  "486": {
+    "text": "In a food chain, which organism is a primary producer?",
+    "options": [
+      "A photosynthetic alga",
+      "A wolf",
+      "A decomposer fungus",
+      "An earthworm"
+    ],
+    "explanation": "Primary producers make organic matter from inorganic substances."
+  },
+  "487": {
+    "text": "Which term describes a relationship in which an organism benefits at its host’s expense?",
+    "options": [
+      "Parasitism",
+      "Mutualism",
+      "Cooperation",
+      "Only pollination"
+    ],
+    "explanation": "The parasite benefits while the host incurs a cost."
+  },
+  "488": {
+    "text": "Which mechanism favours inherited traits that improve reproduction in an environment?",
+    "options": [
+      "Natural selection",
+      "Sublimation",
+      "Refraction",
+      "Crystallisation"
+    ],
+    "explanation": "Traits that improve reproductive success can become more common."
+  },
+  "489": {
+    "text": "Which rock mainly forms from the accumulation and consolidation of sand grains?",
+    "options": [
+      "Sandstone",
+      "Granite",
+      "Basalt",
+      "Marble"
+    ],
+    "explanation": "Sandstone is a sedimentary rock made of cemented sand grains."
+  },
+  "490": {
+    "text": "Marble generally results from the metamorphism of which rock?",
+    "options": [
+      "Limestone",
+      "Granite",
+      "Basalt",
+      "Obsidian"
+    ],
+    "explanation": "Limestone recrystallises under heat and pressure."
+  },
+  "491": {
+    "text": "Which volcanic rock is often black and glassy?",
+    "options": [
+      "Obsidian",
+      "Chalk",
+      "Sandstone",
+      "Marble"
+    ],
+    "explanation": "Obsidian is volcanic glass formed by rapid cooling."
+  },
+  "492": {
+    "text": "Which mineral defines hardness 10 on the Mohs scale?",
+    "options": [
+      "Diamond",
+      "Quartz",
+      "Talc",
+      "Calcite"
+    ],
+    "explanation": "Diamond is the hardest reference mineral on this scale."
+  },
+  "493": {
+    "text": "What is the sinking of one tectonic plate beneath another called?",
+    "options": [
+      "Subduction",
+      "Sedimentation",
+      "Sublimation",
+      "Condensation"
+    ],
+    "explanation": "Subduction occurs at some convergent plate boundaries."
+  },
+  "494": {
+    "text": "What is the point on the surface directly above an earthquake’s focus called?",
+    "options": [
+      "The epicentre",
+      "Magma",
+      "The ridge",
+      "The mantle"
+    ],
+    "explanation": "The epicentre is the surface projection of the earthquake’s focus."
+  },
+  "495": {
+    "text": "Which layer of Earth is mainly composed of iron and nickel?",
+    "options": [
+      "The core",
+      "The continental crust",
+      "The atmosphere",
+      "The hydrosphere"
+    ],
+    "explanation": "Earth’s core is mainly metallic."
+  },
+  "496": {
+    "text": "In which atmospheric layer does most weather occur?",
+    "options": [
+      "The troposphere",
+      "The stratosphere",
+      "The mesosphere",
+      "The exosphere"
+    ],
+    "explanation": "The troposphere is the lowest layer and contains most atmospheric water vapour."
+  },
+  "497": {
+    "text": "Which instrument measures wind speed?",
+    "options": [
+      "An anemometer",
+      "A barometer",
+      "A seismograph",
+      "A rain gauge"
+    ],
+    "explanation": "An anemometer measures wind speed."
+  },
+  "498": {
+    "text": "Which instrument measures the amount of rainfall?",
+    "options": [
+      "A rain gauge",
+      "A hygrometer",
+      "A thermometer",
+      "An altimeter"
+    ],
+    "explanation": "A rain gauge collects precipitation to measure its depth."
+  },
+  "499": {
+    "text": "In the water cycle, what is the change from water vapour to droplets called?",
+    "options": [
+      "Condensation",
+      "Evaporation",
+      "Melting",
+      "Infiltration"
+    ],
+    "explanation": "Condensation forms liquid droplets from vapour."
+  },
+  "500": {
+    "text": "Which warm ocean current follows the eastern US coast before crossing the North Atlantic?",
+    "options": [
+      "The Gulf Stream",
+      "The Humboldt Current",
+      "The Benguela Current",
+      "The Labrador Current"
+    ],
+    "explanation": "The Gulf Stream carries warm water towards the North Atlantic."
   }
 };

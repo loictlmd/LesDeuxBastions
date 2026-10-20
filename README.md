@@ -1,110 +1,115 @@
-# Les Deux Bastions — V1
+# 🏰 Les Deux Bastions — V1
 
-Un jeu de quiz et de stratégie à jouer en équipe, depuis un ordinateur ou un téléphone. Deux équipes défendent leur château, répondent aux mêmes questions et utilisent leurs pièces pour attaquer ou se protéger.
+**Deux équipes, deux châteaux, une bataille d’idées.** Les Deux Bastions est un jeu de quiz et de stratégie multijoueur, accessible depuis un ordinateur ou un téléphone. La culture générale rapporte des pièces ; les décisions collectives permettent de défendre son château et d’attaquer celui de l’adversaire.
 
-## Fonctionnement
+## 💡 Pourquoi ce projet ?
 
-- Créez une partie, donnez un nom à votre équipe et partagez le lien ou le code à six caractères.
-- La seconde équipe rejoint le camp. Chacune choisit sa couleur et confirme qu’elle est prête.
-- L’hôte lance la partie, puis les deux équipes valident le rappel des règles.
-- Une bonne réponse rapporte de 3 à 6 pièces : répondre rapidement rapporte davantage. Lorsque les deux équipes ont répondu, la question suivante arrive après l’affichage du résultat.
-- Débloquez vos attaques, attendez leur construction, puis lancez-les. Le prix des tirs augmente à chaque achat. Les défenses permettent de protéger ou réparer votre château.
-- Chaque équipe peut mettre la partie en pause. Les deux doivent accepter de reprendre.
-- Une partie dure au maximum 15 minutes de jeu effectif. Une destruction ou un forfait peut la terminer plus tôt. À la limite de temps, le château avec le plus de points de vie gagne.
-- Le mode « Jouer contre l’IA » permet de jouer seul. Les spectateurs rejoignent avec le code et regardent sans intervenir.
-- L’interface et les questions sont disponibles en français et en anglais.
+Ce projet a été créé en **une journée** pour développer nos compétences **AGILE avec SCRUM**, en appliquant ces méthodes à un jeu concret et jouable.
 
-## Hébergement Vercel + Neon
+Le principe : définir un objectif commun, découper le travail en petites fonctionnalités, les prioriser dans un backlog et avancer par courtes étapes. Des échanges réguliers permettent de partager l’avancement, de repérer les blocages et d’ajuster les priorités. À la fin d’une étape, on regarde ce qui fonctionne et ce qui mérite d’être amélioré.
 
-Vercel héberge les pages et l’API. Neon stocke temporairement les parties dans PostgreSQL. Votre ordinateur peut rester éteint une fois le site déployé. Aucun tunnel ngrok ni serveur Render n’est nécessaire pour cette version en ligne.
+Le jeu met lui-même la collaboration au centre : discuter d’une réponse, choisir une stratégie et prendre une décision ensemble comptent autant que les connaissances individuelles.
 
-Les transactions en base protègent les réponses et les achats simultanés. Le moteur calcule les échéances à partir de l’heure serveur à chaque requête, sans processus permanent. Les joueurs et spectateurs reçoivent les mises à jour par interrogation régulière de l’API.
+## 🎮 Préparer une partie
 
-Il n’y a pas d’historique de parties dans l’application. Une partie terminée reste accessible 30 minutes pour consulter le résultat ou demander une revanche. Une partie sans activité des joueurs expire après deux heures. Les spectateurs ne prolongent pas ces délais. Les données expirées deviennent immédiatement inaccessibles ; leur suppression physique a lieu à la création d’une partie ou lors du nettoyage quotidien. Le cron doit être actif pour nettoyer aussi un site sans visiteurs. Les éventuelles sauvegardes techniques suivent la politique de rétention de Neon.
+1. **Créez votre camp** et choisissez un nom d’équipe.
+2. **Invitez l’autre équipe** avec le lien, le QR code ou le code à six caractères.
+3. Chaque équipe choisit la **couleur de son château**, puis indique qu’elle est prête.
+4. L’équipe qui a créé le camp lance la partie. Les deux équipes valident le rappel des règles avant que le chronomètre démarre.
 
-### 1. Préparer Neon
+Un téléphone ou un ordinateur par équipe suffit : une personne sélectionne les réponses et les actions pendant que les autres conseillent. Vous pouvez changer de porte-parole au fil des questions.
 
-1. Créez un compte sur [Neon](https://neon.com/) et un projet `les-deux-bastions` avec l’offre Free.
-2. Choisissez une région proche de Francfort, la région configurée pour les fonctions Vercel (`fra1`).
-3. Dans **SQL Editor**, sélectionnez votre base et exécutez le contenu de [`sql/schema.sql`](sql/schema.sql). Cela crée la table et son index ; le script peut être relancé sans effacer les parties.
-4. Cliquez sur **Connect**, activez **Connection pooling**, puis copiez la chaîne PostgreSQL complète. Conservez les paramètres SSL fournis par Neon. Le nom d’hôte contient normalement `-pooler`.
-5. Gardez cette chaîne privée : elle sera la variable `DATABASE_URL` dans Vercel. Ne la mettez ni dans GitHub ni dans un fichier public.
+## ⚔️ Comment jouer ?
 
-### 2. Importer le dépôt dans Vercel
+### Répondre pour gagner des pièces
 
-1. Connectez-vous à [Vercel](https://vercel.com/) avec GitHub.
-2. Choisissez **Add New → Project**, puis importez `loictlmd/LesDeuxBastions`, branche `main`.
-3. Laissez **Root Directory** à la racine du dépôt (`./`).
-4. Choisissez **Framework Preset : Other**. Le fichier `vercel.json` définit les réglages :
+Les deux équipes reçoivent la même question parmi une banque de **500 questions**, réparties en huit thèmes : géographie, histoire, physique et chimie, mathématiques et logique, littérature et langues, arts et musique, informatique et techniques, nature et astronomie.
 
-   | Réglage | Valeur |
-   | --- | --- |
-   | Node.js | 22.x |
-   | Install Command | `npm ci` |
-   | Build Command | `npm run build` |
-   | Output Directory | `public` |
-   | Région des fonctions | Francfort (`fra1`) |
+Chaque question propose quatre réponses. Vous disposez de **25 secondes** pour choisir. Une bonne réponse rapporte **3 à 6 pièces** : plus vous répondez vite, plus vous gagnez. Une mauvaise réponse ne rapporte rien. Les gains et l’explication apparaissent après votre réponse.
 
-5. Si un ancien projet Vercel existe déjà, retirez les anciens réglages de build et la variable `GAME_SERVER_URL`. `ALLOWED_ORIGINS` n’est pas nécessaire : les pages et l’API utilisent la même adresse.
+Lorsque les deux équipes ont répondu, le jeu laisse un court temps pour lire le résultat, puis passe à la question suivante. Les questions sont mélangées et ne se répètent pas avant l’épuisement de la banque. Chaque nouvelle manche apporte aussi une pièce de ravitaillement.
 
-### 3. Ajouter les variables privées
+### Construire sa stratégie
 
-Avant de cliquer sur **Deploy**, ajoutez ces variables pour l’environnement **Production** :
+Chaque château commence avec **300 points de vie** et chaque équipe avec **12 pièces**.
 
-| Variable | Valeur |
-| --- | --- |
-| `DATABASE_URL` | La chaîne de connexion avec pooling copiée depuis Neon. |
-| `CRON_SECRET` | Une valeur aléatoire privée d’au moins 32 caractères. Elle protège le nettoyage automatique. |
-| `PUBLIC_URL` | Facultatif : l’adresse HTTPS principale du site, une fois connue. Sans cette variable, le QR utilise l’adresse du site visité. |
+- **Attaques :** débloquez une arme, attendez sa construction, puis achetez vos tirs. Flèches, catapulte, éclair et sabotage ont des effets différents. Le prix d’une attaque augmente à chaque nouvelle utilisation achetée par votre équipe.
+- **Défenses :** protégez-vous avec un bouclier, réparez votre château ou utilisez un miroir pour renvoyer une partie des dégâts.
+- **Observation :** les constructions adverses sont visibles. Les cadres rouges indiquent les attaques verrouillées, orange celles en construction et verts celles débloquées.
+- **Timing :** les tirs ont un temps de trajet et les équipements un délai avant réutilisation. Gardez quelques pièces pour réagir aux décisions adverses.
 
-Pour générer `CRON_SECRET` dans un terminal avec Node.js :
+Au bout de huit minutes, le siège renforce les nouvelles attaques. Après neuf minutes, la tempête empêche les réparations et commence à endommager les deux châteaux : attendre indéfiniment devient risqué !
 
-```sh
-node -e "console.log(require('node:crypto').randomBytes(32).toString('hex'))"
-```
+### Pause, victoire et revanche
 
-N’ajoutez pas la base de production à **Preview** si vous ne souhaitez pas que les versions de prévisualisation partagent les mêmes parties. Pour utiliser les previews, créez une branche Neon séparée, exécutez le schéma dessus et configurez sa propre `DATABASE_URL` pour Preview.
+Les deux équipes disposent d’un bouton **Pause**. Le temps de jeu et les effets en cours sont suspendus ; les deux camps doivent accepter de reprendre.
 
-### 4. Déployer et ouvrir le jeu
+La partie dure **15 minutes de jeu effectif au maximum**, pauses exclues. Détruire le château adverse permet de gagner plus tôt. À la limite de temps, le château avec le plus de points de vie remporte la partie ; une égalité reste possible. Un départ ou une déconnexion prolongée peut entraîner un forfait.
 
-1. Cliquez sur **Deploy**. Vercel installe les dépendances et publie les pages ainsi que l’API.
-2. Ouvrez l’adresse de production en `https://…vercel.app`.
-3. Créez une partie et rejoignez-la dans un autre navigateur ou sur un téléphone. Vérifiez également le mode spectateur et le bouton de langue.
-4. Dans Vercel, vérifiez que **Cron Jobs** contient `/api/cleanup`, programmé une fois par jour, et consultez **Logs** après son exécution. Vercel transmet automatiquement le secret au cron.
-5. Le QR du camp est généré automatiquement et mène à l’accueil du site. Il n’est plus nécessaire de remplacer une image après un changement de domaine.
-6. Les prochains commits sur `main` déclencheront les mises à jour Vercel. Après une modification des variables d’environnement, effectuez un **Redeploy**.
+Après le résultat, les deux équipes peuvent demander une revanche. Les ressources sont réinitialisées et les couleurs sont conservées.
 
-Les offres gratuites ont des quotas : le trafic et les appels réguliers du jeu consomment des ressources Vercel et Neon. Vercel Hobby est destiné à un usage personnel non commercial. La disponibilité du site ne dépend plus de votre ordinateur, mais reste soumise aux limites et incidents des hébergeurs. Le premier accès après une période d’inactivité peut attendre le réveil de Neon.
+## 🤖 IA, spectateurs et langues
 
-Références : [Vercel Hobby](https://vercel.com/docs/plans/hobby), [cron quotidien sur Hobby](https://vercel.com/docs/cron-jobs/usage-and-pricing), [connexion Neon](https://neon.com/docs/connect/connect-from-any-app).
+- **Jouer contre l’IA :** créez votre équipe depuis l’accueil et choisissez ce mode pour affronter une équipe automatique. Le camp conserve son code pour accueillir des spectateurs, sans afficher le bloc d’invitation d’une seconde équipe.
+- **Regarder une partie :** choisissez le mode spectateur depuis l’accueil et saisissez le code. Vous suivez les châteaux, les attaques et les questions sans pouvoir intervenir. Les réponses correctes restent cachées jusqu’à la clôture de la question.
+- **Français / English :** le bouton du header change la langue de l’interface, des questions, des choix et des explications. Chaque personne peut choisir sa langue tout en jouant la même partie.
 
-### En cas de problème
+## 💻 Jouer en local
 
-- **Page visible, mais création impossible :** vérifier `DATABASE_URL`, le schéma SQL et les logs de la fonction Vercel.
-- **Erreur « relation bastion_rooms does not exist » :** exécuter `sql/schema.sql` sur la même branche et la même base que celles de `DATABASE_URL`.
-- **Cron refusé :** vérifier `CRON_SECRET` dans Production, puis redéployer.
-- **QR vers une ancienne adresse :** corriger ou supprimer `PUBLIC_URL`, puis redéployer.
-- **Ancien build demandant `GAME_SERVER_URL` :** vérifier que Vercel utilise la dernière version de `main` et la commande `npm run build`.
+### Installation
 
-## Utilisation locale
+Installez **Node.js 22** depuis [nodejs.org](https://nodejs.org/), puis récupérez le projet. Dans PowerShell, placez-vous dans son dossier :
 
-Installez Node.js 22, puis ouvrez un terminal dans le dossier du projet :
-
-```sh
+```powershell
+cd "C:\Users\lotou\Desktop\Projet Dev\LesDeuxBastions"
 npm ci
 npm start
 ```
 
-Ouvrez `http://localhost:3000`. En local, les parties sont conservées en mémoire et disparaissent à l’arrêt du serveur. Aucune base Neon n’est nécessaire pour ce mode.
+`npm ci` installe les dépendances du projet. Cette commande est nécessaire à la première installation et après une mise à jour qui modifie les dépendances.
 
-Les lanceurs Windows et macOS sont conservés. Sur Windows, `Lancer le jeu.bat` lance également ngrok s’il est installé et configuré. Pour un accès temporaire depuis Internet, installez ngrok, configurez votre jeton avec `ngrok config add-authtoken VOTRE_JETON`, puis utilisez `npm run share`. Votre ordinateur doit rester allumé pour ce mode local.
+Ouvrez ensuite **http://localhost:3000** dans votre navigateur. Gardez le terminal ouvert pendant la partie ; **Ctrl+C** arrête le serveur. En local, aucune base de données n’est nécessaire : les parties restent en mémoire et disparaissent à l’arrêt du serveur.
 
-## Organisation
+### Jouer à plusieurs
+
+Pour jouer sur le même ordinateur, ouvrez le jeu dans deux navigateurs différents ou dans une fenêtre privée pour créer deux sessions indépendantes.
+
+Sur plusieurs appareils, connectez-les au même réseau local. Le terminal affiche les adresses disponibles, par exemple `http://192.168.1.20:3000`. Les autres appareils ouvrent cette adresse, puis rejoignent avec le code de la partie. `localhost` désigne toujours l’appareil sur lequel le navigateur est ouvert : utilisez donc l’adresse de l’ordinateur qui héberge le jeu.
+
+Le réseau doit autoriser les communications entre appareils. Certains réseaux invités ou scolaires les bloquent. Si Windows demande une autorisation pour Node.js, autorisez l’accès sur votre réseau privé.
+
+### Lanceurs et lien Internet temporaire
+
+- **Windows :** double-cliquez sur `Lancer le jeu.bat`. Le lanceur démarre le jeu et tente d’ouvrir un tunnel ngrok s’il est installé et configuré. Si ngrok n’est pas disponible, le jeu reste accessible en local.
+- **macOS :** utilisez `Lancer le jeu.command`, ou lancez `npm start` depuis le terminal.
+- **Terminal :** `npm start` démarre uniquement le serveur local ; `npm run share` démarre le serveur et le tunnel ngrok.
+
+Pour utiliser ngrok, installez-le depuis [ngrok.com](https://ngrok.com/), configurez votre jeton personnel, puis démarrez le partage :
+
+```sh
+ngrok config add-authtoken VOTRE_JETON
+npm run share
+```
+
+Partagez l’adresse HTTPS affichée par le lanceur. Votre ordinateur et le terminal doivent rester allumés ; le QR du camp utilise l’adresse publique détectée. Gardez votre jeton privé.
+
+Si le port 3000 est déjà occupé, fermez l’autre serveur ou choisissez un autre port dans PowerShell :
+
+```powershell
+$env:PORT = "3001"
+npm start
+```
+
+Ouvrez alors `http://localhost:3001`.
+
+## 🛠️ Structure du projet
+
+Le jeu utilise JavaScript, HTML et CSS, avec un serveur Node.js. Son interface s’adapte aux ordinateurs et aux téléphones.
 
 - `public/` : interface, traductions et illustrations.
-- `src/` : moteur de jeu, questions et stockage PostgreSQL.
-- `api/` : point d’entrée Vercel.
-- `sql/schema.sql` : création de la table temporaire des parties.
-- `server.mjs` : traitement HTTP commun et serveur local.
-- `vercel.json` : routes, région, sécurité et nettoyage quotidien.
-- `.env.example` : noms des variables à configurer, sans identifiants réels.
+- `src/` : moteur de jeu, questions bilingues et stockage des parties.
+- `server.mjs` : serveur local et traitement des requêtes.
+- `scripts/` : lancement et préparation des fichiers.
+- `api/` et `sql/` : accès serveur et stockage pour la version en ligne.
+
+L’application ne propose pas d’historique permanent : les parties en ligne terminées restent accessibles temporairement pour afficher le résultat et permettre une revanche.
