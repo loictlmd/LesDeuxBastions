@@ -2,7 +2,7 @@
 
 ## État de vérification au 20 octobre 2026
 
-**41 tests automatisés** passent dans l’environnement Linux de développement : 37 tests du moteur et du contenu, un parcours HTTP réel et trois tests du lanceur avec un faux exécutable ngrok. Commande : `npm test`. Les trois tests de processus utilisant un exécutable Unix simulé sont ignorés sous Windows ; le double-clic réel du `.bat` reste à vérifier sur le PC.
+**43 tests ciblés** passent dans l’environnement Linux : 37 tests du moteur et du contenu, un parcours HTTP, trois contrôles de traduction et deux contrôles de déploiement. Les trois tests du lanceur ngrok, réussis dans la version précédente, n’ont pas été relancés ; le lanceur n’a pas changé. Commande pour reproduire les vérifications de cette version : `node --test test/game.test.mjs test/http.test.mjs test/i18n.test.mjs test/deployment.test.mjs`.
 
 Les contrôles couvrent :
 
@@ -21,9 +21,11 @@ Les contrôles couvrent :
 - Le service HTTP du QR en SVG et les erreurs de code de partie.
 - Le lanceur ngrok : bon port, lien public, arrêt des processus, erreur ngrok et port occupé.
 
-**Parcours navigateur vérifié :** quatre sessions Chromium indépendantes, deux équipes et deux spectateurs, aux formats mobile 390 × 844 et ordinateur 1440 × 1000. QR sur l’accueil et dans le camp avec le code, accès spectateur par code et par lien, absence de commandes et de ressources privées, solution cachée après une seule réponse, affichage après les deux réponses, construction et tir, pause puis rechargement et reprise à deux, textes agrandis et descriptions d’attaque simplifiées, fin à quinze minutes puis revanche suivie automatiquement. Quitter la vue spectateur ne provoque pas de forfait. Un code inconnu affiche une erreur. Aucun débordement horizontal ni erreur JavaScript constaté. Les captures ont été inspectées.
+**Parcours navigateur de cette version :** deux équipes et un spectateur, PC 1440 × 1100 et mobile 390 × 844. Visuel à gauche, quiz à droite et arsenal dessous sur PC ; bandeau arrondi ; accueil et camp simplifiés ; bouton Jouer contre l’IA. Passage FR/EN sans perte de formulaire, d’équipe, de réponse ni de pause ; conservation après rechargement ; noms personnalisés inchangés ; correspondance des questions et des quatre propositions ; réponses en deux langues. Les captures ont été inspectées, sans débordement horizontal ni erreur JavaScript.
 
-**Destination du QR vérifiée :** le SVG et une capture du QR rendu dans Chromium ont été décodés avec un lecteur indépendant. Tous deux donnent exactement `https://mocker-hamper-prodigy.ngrok-free.dev/`. Le QR est généré à partir de l’adresse fournie, sans dépendance ajoutée au jeu.
+**Traduction et hébergement :** les 144 questions anglaises sont présentes et conservent la permutation des choix du moteur français. Les explications anglaises restent absentes des données spectateur avant révélation. Les messages de partie préservent les noms d’équipe. Le build Vercel est vérifié dans un dossier temporaire ; l’API accepte seulement l’origine de façade explicitement autorisée, en plus de son origine locale. Aucun déploiement réel sur Vercel/Render n’a été effectué.
+
+**Destination du QR vérifiée :** dans la version précédente, le SVG et une capture du QR rendu dans Chromium ont été décodés avec un lecteur indépendant. Tous deux donnent exactement `https://mocker-hamper-prodigy.ngrok-free.dev/`. Le QR est conservé dans le camp ; il a été retiré de l’accueil. Sa destination changera lorsque le domaine final sera communiqué.
 
 **Limites :** pas de recette physique iPhone/Android, d’essai sur le Wi-Fi du cours, ni d’ouverture d’un vrai tunnel avec le compte ngrok du groupe depuis cet environnement. Les contrôles du lanceur ne valident pas le double-clic Windows, les quotas ou les autorisations ngrok. La fin à quinze minutes du parcours navigateur a été accélérée avec l’horloge de test ; elle ne constitue pas une partie humaine de quinze minutes.
 
@@ -35,7 +37,7 @@ L’atelier coûte 20 pièces, restaure 8 PV et se recharge en 30 secondes. Le s
 
 ## Simulations reproductibles
 
-Commande : `npm run simulate`. Graine des décisions : 20261019. Neuf scénarios de 100 matchs, **900 au total**, avec des réponses après 2, 10 ou 20 secondes. Les agents décident toutes les 500 ms et alternent leur ordre d’action ; ils paient les constructions et les prix progressifs. Ils utilisent la solution connue pour simuler une probabilité de réussite. La politique variée compare le rendement courant des différentes attaques ; la politique flèches répète uniquement les flèches.
+Ces résultats proviennent de la version précédente : les règles de gains et de durée n’ont pas changé, les simulations n’ont donc pas été relancées pour la mise en page et la traduction. Commande : `npm run simulate`. Graine des décisions : 20261019. Neuf scénarios de 100 matchs, **900 au total**, avec des réponses après 2, 10 ou 20 secondes. Les agents décident toutes les 500 ms et alternent leur ordre d’action ; ils paient les constructions et les prix progressifs. Ils utilisent la solution connue pour simuler une probabilité de réussite. La politique variée compare le rendement courant des différentes attaques ; la politique flèches répète uniquement les flèches.
 
 | Stratégies A / B | Réussite A / B | Réponse après | Victoires A / B / égalités | Min. | Médiane | Max. |
 |---|---|---|---|---|---|---|
@@ -81,8 +83,10 @@ Ces mesures remplacent celles des règles précédentes. Elles ne reproduisent n
 | R19 | Mettre en pause avec chaque camp, recharger puis reprendre à deux | Tous les délais et états conservés ; reprise après deux accords | | Non testé |
 | R20 | Jouer trois parties chronométrées | Au plus 15 min hors pauses ; destruction ou résultat expliqué par les PV | | Non testé |
 | R16 | Double-cliquer sur le lanceur Windows avec ngrok configuré | Jeu et tunnel actifs, lien public accessible en 4G/5G | | Non testé |
-| R21 | Scanner le QR de l’accueil et du camp sur téléphone | Accueil public ouvert ; code visible pour rejoindre ou regarder | | Non testé |
+| R21 | Scanner le QR du camp sur téléphone | Accueil public ouvert ; code visible pour rejoindre ou regarder | | Non testé |
 | R22 | Regarder par code et par lien sur deux appareils, puis recharger | Partie suivie sans commande ni portefeuille ; pause et revanche conservées | | Non testé |
+| R23 | Passer de FR à EN avant et pendant une partie sur deux appareils | Champs et partie conservés ; questions équivalentes et réponses aux mêmes positions | | Non testé |
+| R24 | Déployer avec le guide Vercel + Render | Création, réponses, couleurs et spectateurs sur le domaine public | | Non testé |
 
 ## Fiche d’observation d’une partie
 

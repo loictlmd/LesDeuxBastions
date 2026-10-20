@@ -32,7 +32,7 @@ Le succès de la coopération est une hypothèse à mesurer avec des joueurs ; l
 
 ## Périmètre
 
-**Inclus dans le prototype :** création et rejoindre par code ; deux équipes ; villages à points de vie ; récapitulatif commun avant le départ ; questions aléatoires avec passage anticipé après deux réponses ; gains de 3 à 6 pièces selon la rapidité ; quatre attaques à débloquer avec constructions visibles et prix progressifs ; trois défenses ; effets visuels ; victoire, égalité, forfait et revanche ; démonstration contre une équipe automatique ; reprise après rechargement ; tunnel ngrok avec le lanceur Windows ; couleurs personnalisables par équipe ; pause commune ; spectateurs par code ou lien ; QR code d’accueil et de camp ; documentation.
+**Inclus dans le prototype :** création et rejoindre par code ; deux équipes ; villages à points de vie ; récapitulatif commun avant le départ ; questions aléatoires avec passage anticipé après deux réponses ; gains de 3 à 6 pièces selon la rapidité ; quatre attaques à débloquer avec constructions visibles et prix progressifs ; trois défenses ; effets visuels ; victoire, égalité, forfait et revanche ; démonstration contre une équipe automatique ; reprise après rechargement ; tunnel ngrok avec le lanceur Windows ; couleurs personnalisables par équipe ; pause commune ; spectateurs par code ou lien ; QR code dans le camp ; documentation.
 
 **Évolutions envisageables après retour utilisateur :** plus de questions, niveaux de difficulté, thèmes liés à l’entreprise, amélioration de l’accessibilité, hébergement Internet, configuration des règles pour l’animateur.
 

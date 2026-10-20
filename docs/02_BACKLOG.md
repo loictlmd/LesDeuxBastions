@@ -88,4 +88,12 @@ Ordre proposé à confirmer par le Product Owner. « Implémenté » signifie pr
 - Les spectateurs voient les bastions, les constructions, les projectiles, les questions, le journal et les résultats. Ils ne prennent aucune place dans les deux camps et ne peuvent ni répondre, ni acheter, ni mettre en pause, ni changer de couleur ou décider d’une revanche.
 - L’API publique de consultation ne transmet ni jeton, ni portefeuille, ni prix privés. La solution reste cachée jusqu’à la fermeture des réponses ou la fin du délai. Les consultations n’entretiennent pas la présence des joueurs et ne retardent pas leur forfait.
 - Le même onglet conserve le mode spectateur après rechargement et suit les revanches. Un code inconnu affiche une erreur compréhensible.
-- Un QR code est visible sur l’accueil et dans le camp à côté du code. Il encode `https://mocker-hamper-prodigy.ngrok-free.dev/`, l’accueil du site ; le participant saisit ensuite le code pour rejoindre ou regarder.
+- Un QR code est visible dans le camp à côté du code. Il encode `https://mocker-hamper-prodigy.ngrok-free.dev/`, l’accueil du site ; le participant saisit ensuite le code pour rejoindre ou regarder.
+
+## Interface et langue
+
+- À partir de 1001 px de large, le visuel et le quiz sont côte à côte, visuel à gauche ; l’arsenal occupe la rangée suivante. Le bandeau de manche est arrondi et utilise les couleurs du site.
+- Le header propose FR / EN sur toutes les vues. Le choix persiste après rechargement ; les champs déjà saisis, l’équipe, la réponse et la pause sont conservés.
+- Les 144 questions ont des traductions anglaises ; l’ordre des propositions reste identique entre les langues. Les explications ne sont révélées qu’aux moments prévus par les règles. Les noms personnalisés des équipes restent tels que saisis.
+- L’accueil propose « Jouer contre l’IA », sans QR, bloc de connexion ni note de durée. Le camp conserve son code, son QR et le bouton de copie d’invitation ; les liens visibles et les commandes de partage spectateur y sont supprimés.
+- Le QR pointe encore vers l’adresse ngrok fournie, jusqu’à communication du nouveau domaine public.

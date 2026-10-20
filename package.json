@@ -4,6 +4,6 @@
   "private": true,
   "type": "module",
   "description": "Jeu de team building multijoueur : quiz, stratégie et villages.",
-  "scripts": {"start": "node server.mjs", "share": "node scripts/launch.mjs", "test": "node --test", "simulate": "node scripts/simulate.mjs"},
+  "scripts": {"start": "node server.mjs", "share": "node scripts/launch.mjs", "test": "node --test", "simulate": "node scripts/simulate.mjs", "build:vercel": "node scripts/build-vercel.mjs"},
   "engines": {"node": ">=20"}
 }

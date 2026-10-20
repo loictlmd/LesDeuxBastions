@@ -36,14 +36,19 @@ Le projet est réalisé dans le cadre d’un **cours utilisant la méthode Agile
 - 📚 **144 nouvelles questions** de niveau intermédiaire à difficile dans huit thèmes : géographie, histoire, physique/chimie, mathématiques/logique, littérature/langues, arts/musique, informatique/techniques, nature/astronomie.
 - ⚔️ **Quatre attaques** et 🛡️ **trois défenses**.
 - 🎨 Villages illustrés, projectiles animés, boucliers et journal de bataille.
-- 📱 Interface adaptée aux téléphones et aux ordinateurs, avec des textes agrandis.
+- 📱 Interface adaptée aux téléphones et aux ordinateurs ; sur PC, les châteaux sont à gauche, le quiz à droite et l’arsenal dessous.
+- 🌍 Bouton **FR / EN** dans le header : interface, règles, questions et messages traduits ; choix mémorisé sur chaque navigateur.
 - 👀 Mode spectateur accessible par code ou lien, sans occuper une équipe.
-- 📷 QR code sur l’accueil et dans le camp, à côté du code de partie.
+- 📷 QR code dans le camp, à côté du code de partie.
 - 🔁 Reconnexion après rechargement et revanche avec l’accord des deux équipes.
-- 🤖 Mode **« Explorer une démo »** contre une équipe automatique.
+- 🤖 Mode **« Jouer contre l’IA »** contre une équipe automatique.
 - 🎨 Six couleurs de château au choix par équipe, visibles sur les deux écrans.
 - ⏸️ Pause disponible aux deux camps ; reprise après accord des deux équipes.
 - 🔊 Sons facultatifs, activables dans l’interface.
+
+## 🌐 Déployer gratuitement
+
+Le dépôt est préparé pour **Vercel (interface) + Render Free (serveur de jeu)**. Suivez [le guide pas à pas](docs/06_DEPLOIEMENT_VERCEL.md) : serveur Render, variable `GAME_SERVER_URL` sur Vercel, puis origine Vercel dans `ALLOWED_ORIGINS` sur Render. Les parties restent en mémoire sur un serveur unique ; le guide détaille le réveil du service gratuit et les redémarrages. Le QR du camp sera remplacé lorsque le domaine final sera connu.
 
 ## 💻 Avant de commencer
 
@@ -139,13 +144,13 @@ Utilisez `npm start`, puis ouvrez [http://localhost:3000](http://localhost:3000)
 
 ### 👀 Regarder une partie et partager le QR code
 
-Sur l’accueil, choisissez **Regarder**, saisissez le code de partie puis validez. Vous pouvez aussi partager le **Lien spectateur** depuis le camp ou la bataille : il ouvre directement la vue spectateur, y compris si la partie a déjà commencé. Les spectateurs suivent les deux bastions, les questions et le journal, sans pouvoir répondre, acheter, mettre en pause ou lancer une revanche. Les pièces des équipes restent privées ; la solution apparaît après les deux réponses ou la fermeture du temps de réponse. Le rechargement et les revanches conservent le mode spectateur.
+Sur l’accueil, choisissez **Regarder**, saisissez le code de partie puis validez. Vous pouvez aussi partager le **Lien spectateur** depuis la bataille : il ouvre directement la vue spectateur, y compris si la partie a déjà commencé. Les spectateurs suivent les deux bastions, les questions et le journal, sans pouvoir répondre, acheter, mettre en pause ou lancer une revanche. Les pièces des équipes restent privées ; la solution apparaît après les deux réponses ou la fermeture du temps de réponse. Le rechargement et les revanches conservent le mode spectateur.
 
-Le QR code affiché sur l’accueil et dans le camp mène à **https://mocker-hamper-prodigy.ngrok-free.dev/**. Après l’avoir scanné, saisissez le code affiché pour rejoindre ou regarder. Il s’agit d’une adresse fixe : si le domaine ngrok change, le QR code devra être remplacé.
+Le QR code affiché dans le camp mène à **https://mocker-hamper-prodigy.ngrok-free.dev/**. Après l’avoir scanné, saisissez le code affiché pour rejoindre ou regarder. Il s’agit d’une adresse fixe : si le domaine ngrok change, le QR code devra être remplacé.
 
 ### 🤖 Découvrir le jeu seul
 
-Ouvrez [http://localhost:3000](http://localhost:3000), puis cliquez sur **Explorer une démo**. Confirmez que votre équipe est prête, lancez la bataille puis validez le récapitulatif. Les Veilleurs, une équipe automatique, débloquent aussi leurs attaques.
+Ouvrez [http://localhost:3000](http://localhost:3000), puis cliquez sur **Jouer contre l’IA**. Confirmez que votre équipe est prête, lancez la bataille puis validez le récapitulatif. Les Veilleurs, une équipe automatique, débloquent aussi leurs attaques.
 
 Pour essayer le mode deux équipes sur un seul ordinateur, ouvrez le jeu dans deux nouveaux onglets distincts. Chaque onglet conserve sa propre équipe.
 
@@ -228,8 +233,8 @@ npm test
 npm run simulate
 ```
 
-- ✅ **41 tests automatisés** du moteur, du protocole HTTP et du lanceur passent dans l’environnement Linux de développement. Les trois tests utilisant un faux exécutable ngrok sont ignorés sous Windows ; le double-clic réel reste à vérifier sur le PC.
-- 📱 Un parcours a été vérifié dans quatre sessions Chromium indépendantes : deux équipes et deux spectateurs, sur mobile simulé et ordinateur. QR et code, cartes simplifiées, confidentialité, pause, rechargement, fin à quinze minutes et revanche ont été contrôlés, sans débordement horizontal ni erreur JavaScript. Le QR affiché dans le navigateur a été décodé vers l’adresse attendue.
+- ✅ **43 tests ciblés** ont été vérifiés pour cette version : moteur, HTTP, traduction et préparation Vercel. Les trois tests du lanceur ngrok, validés précédemment, n’ont pas été relancés pour ces changements d’interface.
+- 📱 Le nouveau parcours Chromium couvre deux équipes et un spectateur, les vues PC/mobile, les retraits de contenu, le bandeau arrondi, FR/EN avant et pendant la partie, les formulaires conservés, les questions communes, les réponses et la pause après rechargement. Aucun débordement horizontal ni erreur JavaScript constaté. Les 144 versions anglaises sont vérifiées pour leur correspondance et la confidentialité des explications.
 - 🎲 **900 matchs simulés** ont été utilisés pour étudier les stratégies et vérifier que les parties se terminent.
 - 👥 L’équilibrage est une première base : il reste à l’affiner avec les joueurs et à tester sur les vrais téléphones et le Wi-Fi du cours.
 
@@ -272,7 +277,7 @@ Les noms, dates et décisions du groupe sont à compléter avec vos informations
 
 Cette version tourne **sur l’ordinateur de l’animateur**, avec un seul serveur Node.js. Les équipes interrogent ce serveur toutes les 800 ms, les spectateurs toutes les 2 secondes ; il contrôle les réponses, les pièces et les dégâts.
 
-**GitHub héberge le code, pas la partie.** GitHub Pages seul ne peut pas exécuter ce serveur Node.js. Pour jouer depuis des réseaux différents, le lanceur Windows peut ouvrir un tunnel ngrok vers ce serveur local. Le PC doit rester allumé. Un hébergement Node.js permanent demeure une évolution distincte.
+**GitHub héberge le code, pas la partie.** GitHub Pages seul ne peut pas exécuter ce serveur Node.js. Pour jouer depuis des réseaux différents, le lanceur Windows peut ouvrir un tunnel ngrok vers ce serveur local. Le PC doit rester allumé. Le guide [Vercel + Render](docs/06_DEPLOIEMENT_VERCEL.md) permet de déplacer le serveur sur un hébergement gratuit ; le compte utilisateur et le déploiement restent à configurer.
 
 ---
 

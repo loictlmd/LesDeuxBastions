@@ -8,6 +8,7 @@ Documents préparés le **19 octobre 2026**. Ils servent de base à votre travai
 | [02 — Product Backlog](02_BACKLOG.md) | Besoins priorisés et critères d’acceptation |
 | [03 — Fiches de sprint](03_SPRINTS.md) | Préparation, suivi quotidien, review et rétrospective à remplir |
 | [05 — Tunnel Internet](05_TUNNEL_INTERNET.md) | Configuration ngrok et lancement Windows en un double-clic |
+| [06 — Déploiement Vercel + Render](06_DEPLOIEMENT_VERCEL.md) | Publication gratuite, variables et futur QR code |
 | [04 — Tests et équilibrage](04_TESTS_ET_EQUILIBRAGE.md) | Preuves techniques, simulations et recette sur téléphones |
 
 Le prototype est déjà développé et vérifié techniquement. Il n’est pas présenté comme un sprint réalisé par votre groupe : la recette, l’appropriation du code et les adaptations pédagogiques restent à organiser ensemble.

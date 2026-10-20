@@ -1,6 +1,9 @@
 import { randomBytes, randomInt } from 'node:crypto';
 import { RULES, ITEMS, TEAM_COLORS, itemPrice } from './catalog.mjs';
 import { QUESTIONS } from './questions.mjs';
+import { ENGLISH_QUESTIONS } from './questions-en.mjs';
+import { bilingual, translated, translate } from '../public/translate.js';
+const teamLabel = player => ({ fr: player.name, en: player.bot ? 'The Watchers' : player.name });
 
 export class GameError extends Error {
   constructor(message, status = 400) { super(message); this.status = status; }
@@ -20,7 +23,7 @@ function team(name, id, now, bot = false) {
 export class GameService {
   constructor({ now = () => Date.now() } = {}) { this.rooms = new Map(); this.now = now; }
   gameNow(room) { return (room.pausedAt ?? this.now()) - room.pausedMs; }
-  event(room, message, kind = 'info', at = this.gameNow(room)) { room.events.unshift({ id: ++room.eventId, message, kind, at }); room.events = room.events.slice(0, 24); }
+  event(room, message, kind = 'info', at = this.gameNow(room)) { room.events.unshift({ id: ++room.eventId, message: message.fr ?? message, messageEn: message.en ?? translate(message), kind, at }); room.events = room.events.slice(0, 24); }
   create(name, practice = false) {
     this.cleanup();
     fail(this.rooms.size >= 200, 'Le serveur accueille déjà beaucoup de parties. Réessayez plus tard.', 503);
@@ -30,7 +33,7 @@ export class GameService {
     const room = { code, host: 0, status: 'waiting', pausedAt: null, pausedMs: 0, pausedBy: null, createdAt: now, updatedAt: now, teams: [team(name, 0, now)], practice: !!practice, events: [], eventId: 0, projectiles: [], round: 0, startedAt: 0, roundStartedAt: 0, nextRoundAt: 0, answersClosed: false, siege: false, storm: false, winner: null, endReason: null, question: null, deck: [], lastStorm: 0 };
     if (practice) room.teams.push(team('Les Veilleurs', 1, now, true));
     this.rooms.set(code, room);
-    this.event(room, `${room.teams[0].name} a ouvert le camp.`);
+    this.event(room, bilingual`${teamLabel(room.teams[0])} a ouvert le camp.`);
     return { code, token: room.teams[0].token };
   }
   room(code) {
@@ -46,7 +49,7 @@ export class GameService {
     const player = team(name, room.teams[0]?.id === 0 ? 1 : 0, this.now());
     player.color = TEAM_COLORS.find(c => !room.teams.some(p => p.color === c.id)).id;
     room.teams.push(player); room.updatedAt = this.now();
-    this.event(room, `${player.name} a rejoint le camp.`);
+    this.event(room, bilingual`${teamLabel(player)} a rejoint le camp.`);
     return { code, token: player.token };
   }
   authorize(code, token) {
@@ -62,7 +65,7 @@ export class GameService {
     if (!room.deck.length) room.deck = shuffle(QUESTIONS);
     const source = room.deck.pop();
     const order = shuffle([0, 1, 2, 3]);
-    room.question = { ...source, options: order.map(i => source.options[i]), correct: order.indexOf(source.correct) };
+    room.question = { ...source, options: order.map(i => source.options[i]), correct: order.indexOf(source.correct), en: { ...ENGLISH_QUESTIONS[source.id], options: order.map(i => ENGLISH_QUESTIONS[source.id].options[i]) } };
     room.teams.forEach(p => { p.answer = null; });
   }
   start(room) {
@@ -102,7 +105,7 @@ export class GameService {
       fail(room.pausedAt !== null, 'La partie est déjà en pause.');
       room.pausedAt = now; room.pausedBy = player.id;
       room.teams.forEach(p => { p.resumeReady = p.bot; });
-      this.event(room, `${player.name} met la bataille en pause.`, 'pause');
+      this.event(room, bilingual`${teamLabel(player)} met la bataille en pause.`, 'pause');
     } else if (action.type === 'resume') {
       fail(room.status !== 'playing' || room.pausedAt === null, 'La partie n’est pas en pause.');
       player.resumeReady = true;
@@ -121,7 +124,7 @@ export class GameService {
         room.status = 'waiting'; room.teams.forEach(p => { p.ready = p.bot; p.briefed = p.bot; });
         room.teams = room.teams.filter(p => p.id !== player.id);
         if (!room.teams.length || room.practice) this.rooms.delete(code);
-        else { room.host = room.teams[0].id; this.event(room, `${player.name} a quitté le camp.`); }
+        else { room.host = room.teams[0].id; this.event(room, bilingual`${teamLabel(player)} a quitté le camp.`); }
       }
       return { left: true };
     } else throw new GameError('Cette action n’existe pas.');
@@ -157,7 +160,7 @@ export class GameService {
     player.coins -= item.unlockCost; player.stats.spent += item.unlockCost;
     player.nextAction = now + RULES.actionCooldownMs;
     player.unlocks[itemId] = { startedAt: now, readyAt: now + item.unlockMs };
-    this.event(room, `${player.name} construit : ${item.name} (${item.unlockMs / 1000} s).`, 'research');
+    this.event(room, bilingual`${teamLabel(player)} construit : ${translated(item.name)} (${item.unlockMs / 1000} s).`, 'research');
   }
   buy(room, player, itemId) {
     const now = this.gameNow(room);
@@ -181,12 +184,12 @@ export class GameService {
       player.purchases[item.id] = (player.purchases[item.id] || 0) + 1;
       const enemy = room.teams.find(p => p.id !== player.id);
       room.projectiles.push({ id: randomBytes(6).toString('hex'), item: item.id, from: player.id, to: enemy.id, launchAt: now, impactAt: now + item.flight, damage: Math.round(item.damage * (room.siege ? 1.5 : 1)) });
-      this.event(room, `${player.name} lance ${item.name.toLocaleLowerCase('fr')}.`, 'attack');
+      this.event(room, bilingual`${teamLabel(player)} lance ${translated(item.name.toLocaleLowerCase('fr'))}.`, 'attack');
     } else {
       if (item.shield) { player.shield = Math.min(36, player.shield + item.shield); player.shieldUntil = now + item.duration; }
       if (item.heal) player.hp = Math.min(RULES.hp, player.hp + item.heal);
       if (item.id === 'mirror') player.mirrorUntil = now + item.duration;
-      this.event(room, `${player.name} active ${item.name.toLocaleLowerCase('fr')}.`, 'defense');
+      this.event(room, bilingual`${teamLabel(player)} active ${translated(item.name.toLocaleLowerCase('fr'))}.`, 'defense');
     }
   }
   damage(player, amount, pierce = false) {
@@ -207,16 +210,16 @@ export class GameService {
     if (target.mirrorUntil > projectile.impactAt) {
       const reflected = Math.round(amount * 0.4); amount -= reflected; target.mirrorUntil = 0;
       target.stats.damage += this.damage(attacker, reflected);
-      this.event(room, `${target.name} renvoie ${reflected} dégâts avec son miroir !`, 'defense', projectile.impactAt);
+      this.event(room, bilingual`${teamLabel(target)} renvoie ${reflected} dégâts avec son miroir !`, 'defense', projectile.impactAt);
     }
     const dealt = this.damage(target, amount, item.pierce);
     attacker.stats.damage += dealt;
-    this.event(room, `${item.name} : ${target.name} perd ${dealt} PV${dealt === 0 ? ' · attaque absorbée' : ''}.`, 'impact', projectile.impactAt);
+    this.event(room, bilingual`${translated(item.name)} : ${teamLabel(target)} perd ${dealt} PV${translated(dealt === 0 ? ' · attaque absorbée' : '')}.`, 'impact', projectile.impactAt);
   }
   finish(room, winner, reason = 'destroyed', at = this.gameNow(room)) {
     room.status = 'finished'; room.winner = winner; room.endReason = reason; room.finishedAt = at; room.finishedWallAt = this.now(); room.projectiles = [];
     const name = room.teams.find(p => p.id === winner)?.name;
-    this.event(room, reason === 'time' ? (name ? `Quinze minutes écoulées : ${name} gagne aux points de vie !` : 'Quinze minutes écoulées : égalité de points de vie !') : name ? `${name} remporte la bataille !` : 'Les deux bastions tombent ensemble. Égalité !', 'finish', at);
+    this.event(room, reason === 'time' ? (name ? bilingual`Quinze minutes écoulées : ${teamLabel(room.teams.find(p => p.id === winner))} gagne aux points de vie !` : 'Quinze minutes écoulées : égalité de points de vie !') : name ? bilingual`${teamLabel(room.teams.find(p => p.id === winner))} remporte la bataille !` : 'Les deux bastions tombent ensemble. Égalité !', 'finish', at);
     room.pausedAt = null;
   }
   tryResume(room) {
@@ -294,7 +297,7 @@ export class GameService {
     const wallNow = this.now(), now = this.gameNow(room);
     const roundStart = room.roundStartedAt;
     const reveal = (player && player.answer !== null) || room.answersClosed || now >= roundStart + RULES.answerMs || room.status === 'finished';
-    const question = room.question ? { id: room.question.id, category: room.question.category, text: room.question.text, options: room.question.options, ...(reveal ? { correct: room.question.correct, explanation: room.question.explanation } : {}) } : null;
+    const question = room.question ? { id: room.question.id, category: room.question.category, text: room.question.text, options: room.question.options, en: { text: room.question.en.text, options: room.question.en.options, ...(reveal ? { explanation: room.question.en.explanation } : {}) }, ...(reveal ? { correct: room.question.correct, explanation: room.question.explanation } : {}) } : null;
     return { code: room.code, status: room.status, host: room.host, me: player?.id ?? null, spectator: !player, practice: room.practice, serverNow: wallNow, gameNow: now, paused: room.pausedAt !== null, pausedBy: room.pausedBy, matchEndsAt: room.startedAt + RULES.matchMs, colors: TEAM_COLORS, round: room.round, startedAt: room.startedAt, roundStartedAt: roundStart, answerUntil: roundStart + RULES.answerMs, nextRoundAt: room.nextRoundAt, answersClosed: room.answersClosed, siege: room.siege, storm: room.storm, winner: room.winner, endReason: room.endReason, finishedAt: room.finishedAt, question, answer: player?.answer ?? null, lastResult: player?.lastResult ?? null, rules: RULES, items: ITEMS, teams: room.teams.map(p => ({ id: p.id, name: p.name, hp: p.hp, shield: p.shield, shieldUntil: p.shieldUntil, mirrorUntil: p.mirrorUntil, ready: p.ready, briefed: p.briefed, unlocks: p.unlocks, online: p.bot || wallNow - p.lastSeen < 15_000, lastSeen: p.lastSeen, bot: p.bot, color: p.color, resumeReady: p.resumeReady, disconnectAt: p.lastActiveAt + RULES.disconnectMs, answered: !!p.answer, rematch: p.rematch, stats: p.stats, ...(p.id === player?.id ? { coins: p.coins, purchases: p.purchases, prices: Object.fromEntries(ITEMS.map(item => [item.id, itemPrice(item, p.purchases)])), cooldowns: p.cooldowns, nextAction: p.nextAction } : {}) })), projectiles: room.projectiles, events: room.events };
   }
   state(code, token) { const { room, player } = this.authorize(code, token); return this.snapshot(room, player); }

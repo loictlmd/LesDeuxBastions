@@ -8,7 +8,7 @@ import { TEAM_COLORS } from './src/catalog.mjs';
 import { GameService, GameError } from './src/game.mjs';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), 'public');
-export function createGameServer({ service = new GameService(), getPublicUrl = () => null } = {}) {
+export function createGameServer({ service = new GameService(), getPublicUrl = () => null, allowedOrigins = (process.env.ALLOWED_ORIGINS || '').split(',').map(value => value.trim()).filter(Boolean) } = {}) {
   const limits = new Map();
   const server = http.createServer(async (req, res) => {
     const send = (status, value) => { res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(value)); };
@@ -18,7 +18,7 @@ export function createGameServer({ service = new GameService(), getPublicUrl = (
     try {
       const url = new URL(req.url, 'http://localhost');
       if (url.pathname.startsWith('/api/')) {
-        if (req.headers.origin && new URL(req.headers.origin).host !== req.headers.host) throw new GameError('Origine non autorisée.', 403);
+        if (req.headers.origin && new URL(req.headers.origin).host !== req.headers.host && !allowedOrigins.includes(new URL(req.headers.origin).origin)) throw new GameError('Origine non autorisée.', 403);
         const ip = req.socket.remoteAddress;
         const budget = req.method === 'GET' ? (url.pathname === '/api/watch' ? 'watch' : 'read') : 'write';
         const key = `${ip}:${budget}`;

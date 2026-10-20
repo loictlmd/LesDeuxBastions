@@ -48,9 +48,9 @@ Le serveur et le tunnel utilisent automatiquement le même port. Le lien d’inv
 
 ## QR code et spectateurs
 
-Le QR code de l’accueil et du camp encode l’adresse fixe **https://mocker-hamper-prodigy.ngrok-free.dev/**. Il ouvre l’accueil ; les participants saisissent ensuite le code du camp pour rejoindre ou regarder. Contrairement aux liens d’invitation et de spectateur, ce QR ne change pas automatiquement avec le tunnel. Si le domaine change, remplacez `public/assets/home-qr.svg` et la constante `HOME_URL` de `public/app.js`.
+Le QR code du camp encode l’adresse fixe **https://mocker-hamper-prodigy.ngrok-free.dev/**. Il ouvre l’accueil ; les participants saisissent ensuite le code du camp pour rejoindre ou regarder. Contrairement aux liens d’invitation et de spectateur, ce QR ne change pas automatiquement avec le tunnel. Si le domaine change, remplacez `public/assets/home-qr.svg` et la constante `HOME_URL` de `public/app.js`.
 
-Le **Lien spectateur** partagé depuis le camp ou la bataille utilise l’adresse publique connue et le paramètre `?watch=CODE`. Les spectateurs consultent la partie toutes les deux secondes sans disposer des commandes des équipes.
+Le **Lien spectateur** partagé depuis la bataille utilise l’adresse publique connue et le paramètre `?watch=CODE`. Les spectateurs consultent la partie toutes les deux secondes sans disposer des commandes des équipes.
 
 ## En cas de problème
 
