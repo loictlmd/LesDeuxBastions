@@ -1,4 +1,4 @@
-# 🏰 Les Deux Bastions — V1
+# 🏰 Les Deux Bastions - SCRUM Day
 
 **Deux équipes, deux châteaux, une bataille d’idées.** Les Deux Bastions est un jeu de quiz et de stratégie multijoueur, accessible depuis un ordinateur ou un téléphone. La culture générale rapporte des pièces ; les décisions collectives permettent de défendre son château et d’attaquer celui de l’adversaire.
 
