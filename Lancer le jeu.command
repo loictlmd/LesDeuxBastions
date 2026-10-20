@@ -12,5 +12,8 @@ if [[ -z "$BASTIONS_NODE_BIN" ]]; then
   read '?Appuyez sur Entrée pour fermer.'
   exit 1
 fi
+if [[ ! -d node_modules/qrcode ]]; then
+  "$(dirname "$BASTIONS_NODE_BIN")/npm" ci || exit 1
+fi
 "$BASTIONS_NODE_BIN" server.mjs --open
 if [[ $? -ne 0 ]]; then read '?Appuyez sur Entrée pour fermer.'; fi

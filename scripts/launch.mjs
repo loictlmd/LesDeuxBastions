@@ -36,7 +36,7 @@ function localFallback(message) {
   if (stopping) return;
   publicUrl = null;
   console.error(`\n${message}\nLe jeu reste disponible localement : http://localhost:${server.address().port}`);
-  console.log('Installation et configuration ngrok : docs/05_TUNNEL_INTERNET.md');
+  console.log('Installation et configuration ngrok : README.md');
   openBrowser(`http://localhost:${server.address().port}`);
 }
 function stop(code = 0) {

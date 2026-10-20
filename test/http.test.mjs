@@ -55,7 +55,7 @@ test('real HTTP server: two players join, answer, attack and resume', async t =>
   assert.equal(watched.value.question.correct, undefined); assert.ok(watched.value.teams.every(p => !('token' in p) && !('coins' in p)));
   assert.equal((await request('/api/action', { code: a.code, type: 'pause', spectator: true })).status, 401);
   assert.equal((await request('/api/watch?code=ZZZZZZ')).status, 404);
-  const qr = await fetch(base + '/assets/home-qr.svg'); assert.equal(qr.status, 200); assert.match(qr.headers.get('content-type'), /image\/svg\+xml/);
+  const qr = await fetch(base + '/api/home-qr'); assert.equal(qr.status, 200); assert.match(qr.headers.get('content-type'), /image\/svg\+xml/);
   const invalid = await fetch(base + '/api/rooms', { method: 'POST', body: '{broken' }); assert.equal(invalid.status, 400);
   const crossOrigin = await fetch(base + '/api/rooms', { method: 'POST', headers: { Origin: 'https://other.example' }, body: '{}' }); assert.equal(crossOrigin.status, 403);
   await action(b, 'leave'); const result = (await request('/api/state?code=' + a.code, null, a.token)).value;

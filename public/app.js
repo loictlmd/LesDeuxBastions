@@ -1,7 +1,7 @@
 import { t, tr, getLanguage, setLanguage, localizeState, registerStaticTranslations, updateStaticTranslations } from './i18n.js';
 const $ = selector => document.querySelector(selector);
 const app = $('#app');
-const HOME_URL = 'https://mocker-hamper-prodigy.ngrok-free.dev/';
+const homeUrl = () => `${baseUrl()}/`;
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const icons = {
  arrows: '<path d="m6 25 20-20m-9 0h9v9M5 17v9h9M10 29 29 10m-6 0h6v6"/>',
@@ -85,7 +85,7 @@ async function copy(value) {
   catch { toast(t('Copie indisponible : sélectionnez et copiez le lien affiché.')); }
 }
 function qrInvite(code = '') {
-  return tr`<section class="qr-invite" aria-label="QR code vers l’accueil du jeu"><a href="${HOME_URL}" target="_blank" rel="noopener"><img src="/assets/home-qr.svg" width="180" height="180" alt="QR code : ouvrir l’accueil des Deux Bastions"></a><div><strong>Scannez pour ouvrir le jeu</strong><p>${code ? tr`Puis saisissez le code <b>${escapeHtml(code)}</b> pour rejoindre ou regarder la partie.` : t('Créez votre équipe, rejoignez vos adversaires ou regardez une partie.')}</p><a class="qr-home-link" href="${HOME_URL}" target="_blank" rel="noopener">Ouvrir l’accueil ↗</a></div></section>`;
+  return tr`<section class="qr-invite" aria-label="QR code vers l’accueil du jeu"><a href="${homeUrl()}" target="_blank" rel="noopener"><img src="/api/home-qr" width="180" height="180" alt="QR code : ouvrir l’accueil des Deux Bastions"></a><div><strong>Scannez pour ouvrir le jeu</strong><p>${code ? tr`Puis saisissez le code <b>${escapeHtml(code)}</b> pour rejoindre ou regarder la partie.` : t('Créez votre équipe, rejoignez vos adversaires ou regardez une partie.')}</p><a class="qr-home-link" href="${homeUrl()}" target="_blank" rel="noopener">Ouvrir l’accueil ↗</a></div></section>`;
 }
 function watchUrl() { return `${baseUrl()}/?watch=${state.code}`; }
 function landing() {

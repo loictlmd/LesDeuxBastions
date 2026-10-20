@@ -14,5 +14,12 @@ if errorlevel 1 (
   pause
   exit /b 1
 )
+if not exist node_modules\qrcode (
+  call npm ci
+  if errorlevel 1 (
+    pause
+    exit /b 1
+  )
+)
 node scripts\launch.mjs
 pause

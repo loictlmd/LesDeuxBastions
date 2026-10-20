@@ -4,13 +4,14 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import os from 'node:os';
 import { spawn } from 'node:child_process';
+import QRCode from 'qrcode';
 import { TEAM_COLORS } from './src/catalog.mjs';
 import { GameService, GameError } from './src/game.mjs';
 
 const root = path.join(path.dirname(fileURLToPath(import.meta.url)), 'public');
-export function createGameServer({ service = new GameService(), getPublicUrl = () => null, allowedOrigins = (process.env.ALLOWED_ORIGINS || '').split(',').map(value => value.trim()).filter(Boolean) } = {}) {
+export function createRequestHandler({ service = new GameService(), getPublicUrl = () => null, allowedOrigins = (process.env.ALLOWED_ORIGINS || '').split(',').map(value => value.trim()).filter(Boolean), getPort = () => 3000 } = {}) {
   const limits = new Map();
-  const server = http.createServer(async (req, res) => {
+  return async (req, res) => {
     const send = (status, value) => { res.writeHead(status, { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store' }); res.end(JSON.stringify(value)); };
     res.setHeader('X-Content-Type-Options', 'nosniff');
     res.setHeader('Referrer-Policy', 'same-origin');
@@ -19,7 +20,8 @@ export function createGameServer({ service = new GameService(), getPublicUrl = (
       const url = new URL(req.url, 'http://localhost');
       if (url.pathname.startsWith('/api/')) {
         if (req.headers.origin && new URL(req.headers.origin).host !== req.headers.host && !allowedOrigins.includes(new URL(req.headers.origin).origin)) throw new GameError('Origine non autorisée.', 403);
-        const ip = req.socket.remoteAddress;
+        const ip = process.env.VERCEL ? req.headers['x-real-ip'] || req.socket?.remoteAddress : req.socket.remoteAddress;
+        if (limits.size > 10000) for (const [key, value] of limits) if (Date.now() - value.at > 60_000) limits.delete(key);
         const budget = req.method === 'GET' ? (url.pathname === '/api/watch' ? 'watch' : 'read') : 'write';
         const key = `${ip}:${budget}`;
         const now = Date.now(); const limit = limits.get(key) || { at: now, count: 0 };
@@ -27,21 +29,38 @@ export function createGameServer({ service = new GameService(), getPublicUrl = (
         limit.count++; limits.set(key, limit);
         if (limit.count > ({ watch: 3000, read: 1200, write: 240 }[budget])) throw new GameError('Trop de demandes. Patientez une minute.', 429);
         if (req.method === 'GET' && url.pathname === '/api/network') {
-          const port = server.address().port;
-          const addresses = Object.values(os.networkInterfaces()).flat().filter(n => n.family === 'IPv4' && !n.internal).map(n => `http://${n.address}:${port}`);
+          const port = getPort();
+          const addresses = process.env.VERCEL ? [] : Object.values(os.networkInterfaces()).flat().filter(n => n.family === 'IPv4' && !n.internal).map(n => `http://${n.address}:${port}`);
           return send(200, { addresses, publicUrl: getPublicUrl() });
         }
+        if (req.method === 'GET' && url.pathname === '/api/home-qr') {
+          const target = getPublicUrl() || `${process.env.VERCEL ? 'https' : 'http'}://${req.headers.host}`;
+          const svg = await QRCode.toString(new URL('/', target).href, { type: 'svg', margin: 4, errorCorrectionLevel: 'M' });
+          res.writeHead(200, { 'Content-Type': 'image/svg+xml', 'Cache-Control': 'no-cache' });
+          return res.end(svg);
+        }
+        if (url.pathname === '/api/cleanup') {
+          if (req.method !== 'GET' || !process.env.CRON_SECRET || req.headers.authorization !== `Bearer ${process.env.CRON_SECRET}`) throw new GameError('Accès refusé.', 403);
+          await service.cleanup();
+          return send(200, { ok: true });
+        }
         const token = req.headers.authorization?.startsWith('Bearer ') ? req.headers.authorization.slice(7) : '';
-        if (req.method === 'GET' && url.pathname === '/api/watch') return send(200, service.watch(url.searchParams.get('code')));
-        if (req.method === 'GET' && url.pathname === '/api/state') return send(200, service.state(url.searchParams.get('code'), token));
+        if (req.method === 'GET' && url.pathname === '/api/watch') return send(200, await service.watch(url.searchParams.get('code')));
+        if (req.method === 'GET' && url.pathname === '/api/state') return send(200, await service.state(url.searchParams.get('code'), token));
         if (req.method !== 'POST') throw new GameError('Route introuvable.', 404);
-        const chunks = []; let size = 0;
-        for await (const chunk of req) { size += chunk.length; if (size > 4096) throw new GameError('Requête trop volumineuse.', 413); chunks.push(chunk); }
-        let body; try { body = JSON.parse(Buffer.concat(chunks).toString('utf8')); } catch { throw new GameError('Requête JSON invalide.'); }
+        let raw;
+        if (req.body !== undefined) raw = typeof req.body === 'string' || Buffer.isBuffer(req.body) ? req.body : JSON.stringify(req.body);
+        else {
+          const chunks = []; let size = 0;
+          for await (const chunk of req) { size += chunk.length; if (size > 4096) throw new GameError('Requête trop volumineuse.', 413); chunks.push(chunk); }
+          raw = Buffer.concat(chunks);
+        }
+        if (Buffer.byteLength(raw) > 4096) throw new GameError('Requête trop volumineuse.', 413);
+        let body; try { body = JSON.parse(raw.toString()); } catch { throw new GameError('Requête JSON invalide.'); }
         if (!body || typeof body !== 'object' || Array.isArray(body)) throw new GameError('Requête invalide.');
-        if (url.pathname === '/api/rooms') return send(201, service.create(body.name, body.practice === true));
-        if (url.pathname === '/api/join') return send(200, service.join(body.code, body.name));
-        if (url.pathname === '/api/action') return send(200, service.action(body.code, token, body));
+        if (url.pathname === '/api/rooms') return send(201, await service.create(body.name, body.practice === true));
+        if (url.pathname === '/api/join') return send(200, await service.join(body.code, body.name));
+        if (url.pathname === '/api/action') return send(200, await service.action(body.code, token, body));
         throw new GameError('Route introuvable.', 404);
       }
       if (req.method !== 'GET' && req.method !== 'HEAD') throw new GameError('Méthode non autorisée.', 405);
@@ -64,10 +83,14 @@ export function createGameServer({ service = new GameService(), getPublicUrl = (
       res.writeHead(200, { 'Content-Type': `${mime}; charset=utf-8`, 'Cache-Control': 'no-cache' });
       res.end(req.method === 'HEAD' ? undefined : content);
     } catch (error) { if (!(error instanceof GameError)) console.error(error); if (!res.headersSent) send(error.status || 500, { error: error instanceof GameError ? error.message : 'Le serveur rencontre un problème. Réessayez.' }); else res.end(); }
-  });
+  };
+}
+
+export function createGameServer({ service = new GameService(), ...options } = {}) {
+  const server = http.createServer(createRequestHandler({ service, ...options, getPort: () => server.address().port }));
   server.requestTimeout = 10_000;
   const tick = setInterval(() => service.tickAll(), 100); tick.unref();
-  const cleanup = setInterval(() => { service.cleanup(); for (const [key, value] of limits) if (Date.now() - value.at > 60_000) limits.delete(key); }, 60_000); cleanup.unref();
+  const cleanup = setInterval(() => { service.cleanup(); }, 60_000); cleanup.unref();
   server.on('close', () => { clearInterval(tick); clearInterval(cleanup); });
   return server;
 }
