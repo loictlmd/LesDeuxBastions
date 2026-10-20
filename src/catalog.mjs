@@ -1,4 +1,4 @@
-export const RULES = Object.freeze({ hp: 300, startingCoins: 12, minReward: 2, maxReward: 5, rewardStepMs: 6000, resultMs: 3000, supply: 1, roundMs: 30_000, answerMs: 25_000, actionCooldownMs: 2000, siegeMs: 480_000, stormMs: 540_000, matchMs: 600_000, stormIntervalMs: 10_000, stormDamage: 8, disconnectMs: 90_000 });
+export const RULES = Object.freeze({ hp: 300, startingCoins: 12, minReward: 3, maxReward: 6, rewardStepMs: 6000, resultMs: 3000, supply: 1, roundMs: 30_000, answerMs: 25_000, actionCooldownMs: 2000, siegeMs: 480_000, stormMs: 540_000, matchMs: 900_000, stormIntervalMs: 10_000, stormDamage: 8, disconnectMs: 90_000 });
 
 export const ITEMS = Object.freeze([
   { id: 'arrows', costStep: 8, unlockCost: 6, unlockMs: 5000, name: 'Volée de flèches', kind: 'attack', icon: 'arrows', cost: 8, damage: 12, flight: 4000, tagline: 'Rapide et précise', description: '12 dégâts · impact dans 4 s', cooldown: 4000 },

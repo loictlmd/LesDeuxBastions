@@ -27,12 +27,12 @@ Le succès de la coopération est une hypothèse à mesurer avec des joueurs ; l
 - Deux équipes, idéalement de 2 à 5 participants pour les premiers essais ; cette taille est une hypothèse d’organisation.
 - Un téléphone et un porte-parole par équipe ; passage du téléphone toutes les deux manches.
 - Un animateur présente les règles, vérifie le Wi-Fi et conduit le débrief.
-- Prévoir environ 2 minutes d’explication, environ 10 minutes de jeu effectif selon les choix, puis 2 minutes de débrief.
+- Prévoir environ 2 minutes d’explication, jusqu’à 15 minutes de jeu effectif selon les choix, puis 2 minutes de débrief.
 - Aucune connaissance de Scrum n’est requise pour jouer : Scrum sert à organiser le projet de réalisation.
 
 ## Périmètre
 
-**Inclus dans le prototype :** création et rejoindre par code ; deux équipes ; villages à points de vie ; récapitulatif commun avant le départ ; questions aléatoires avec passage anticipé après deux réponses ; gains réduits de 2 à 5 pièces selon la rapidité ; quatre attaques à débloquer avec constructions visibles et prix progressifs ; trois défenses ; effets visuels ; victoire, égalité, forfait et revanche ; démonstration contre une équipe automatique ; reprise après rechargement ; tunnel ngrok avec le lanceur Windows ; couleurs personnalisables par équipe ; pause commune ; documentation.
+**Inclus dans le prototype :** création et rejoindre par code ; deux équipes ; villages à points de vie ; récapitulatif commun avant le départ ; questions aléatoires avec passage anticipé après deux réponses ; gains de 3 à 6 pièces selon la rapidité ; quatre attaques à débloquer avec constructions visibles et prix progressifs ; trois défenses ; effets visuels ; victoire, égalité, forfait et revanche ; démonstration contre une équipe automatique ; reprise après rechargement ; tunnel ngrok avec le lanceur Windows ; couleurs personnalisables par équipe ; pause commune ; spectateurs par code ou lien ; QR code d’accueil et de camp ; documentation.
 
 **Évolutions envisageables après retour utilisateur :** plus de questions, niveaux de difficulté, thèmes liés à l’entreprise, amélioration de l’accessibilité, hébergement Internet, configuration des règles pour l’animateur.
 
@@ -60,7 +60,7 @@ Ces valeurs sont des objectifs de travail, pas des résultats déjà obtenus.
 | Écart de culture générale | Une équipe domine | Mélanger les thèmes, composer des équipes variées, observer puis ajuster la difficulté |
 | Une seule personne décide | Objectif collectif non atteint | Rotation du porte-parole et débrief sur les décisions |
 | Achats peu lisibles | Frustration et erreurs | Tester les libellés et le contraste sur de vrais petits écrans |
-| Défense systématique | Partie trop longue | Siège puis tempête ; fin au plus tard après 10 minutes de jeu effectif |
+| Défense systématique | Partie trop longue | Siège puis tempête ; fin au plus tard après 15 minutes de jeu effectif |
 | Décalage avec les consignes de l’enseignant | Livrable mal évalué | Récupérer les fiches officielles et transférer les informations dans leur format |
 
 ## Definition of Done proposée pour les futurs éléments

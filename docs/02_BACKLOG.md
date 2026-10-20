@@ -18,6 +18,8 @@ Ordre proposé à confirmer par le Product Owner. « Implémenté » signifie pr
 | 12 · US12 | En tant que joueur, je veux des textes et commandes lisibles sur mon téléphone pour agir facilement. | 3 | Interface adaptée ; recette iOS/Android à faire |
 | 13 · US13 | En tant qu’animateur, je veux choisir la difficulté ou les thèmes pour adapter le jeu au public. | À estimer | Évolution non implémentée |
 | 14 · US14 | En tant qu’animateur, je veux faire jouer des équipes sur des réseaux différents. | À estimer | Tunnel ngrok intégré au lanceur ; connexion réelle à valider, hébergement permanent non réalisé |
+| 15 · US15 | En tant que spectateur, je veux regarder une partie par code ou lien sans occuper une équipe. | 3 | Implémenté, à valider sur vrais mobiles |
+| 16 · US16 | En tant que participant, je veux scanner un QR code pour ouvrir l’accueil et saisir le code de partie. | 2 | Implémenté, destination décodée et vérifiée |
 
 ## Critères d’acceptation
 
@@ -38,7 +40,7 @@ Ordre proposé à confirmer par le Product Owner. « Implémenté » signifie pr
 
 - Les deux équipes voient la même question et les mêmes propositions dans chaque manche.
 - Répondre est possible pendant 25 secondes. Après deux réponses, le résultat dure 3 secondes puis la question suivante arrive ; sinon la manche dure 30 secondes.
-- Une bonne réponse donne entre 2 et 5 pièces selon le temps serveur, une seule fois, avec une animation du gain ; une mauvaise réponse n’en donne aucune.
+- Une bonne réponse donne entre 3 et 6 pièces selon le temps serveur, une seule fois, avec une animation du gain ; une mauvaise réponse n’en donne aucune.
 - Une réponse en retard, répétée ou destinée à l’ancienne manche est refusée.
 - Le ravitaillement de 1 pièce arrive une seule fois par nouvelle manche.
 
@@ -51,7 +53,8 @@ Ordre proposé à confirmer par le Product Owner. « Implémenté » signifie pr
 
 ### US06 / US12 — Lisibilité
 
-- Pas de défilement horizontal à 390 px de large ; noms et propositions restent lisibles.
+- Pas de défilement horizontal à 390 px de large ; noms et propositions restent lisibles avec les textes agrandis.
+- Les descriptions d’attaque indiquent les dégâts et le délai d’impact ; le prix actuel reste sur le bouton, avec l’état verrouillé, en construction ou débloqué.
 - Le solde, le compte à rebours et les attaques entrantes restent accessibles pendant les achats.
 - La bonne réponse et les états d’attente utilisent aussi un texte ou un symbole, pas uniquement une couleur.
 - Les commandes principales fonctionnent au clavier et au toucher ; tests physiques à consigner.
@@ -76,5 +79,13 @@ Ordre proposé à confirmer par le Product Owner. « Implémenté » signifie pr
 - Les deux camps disposent du bouton Pause. Tous les délais de jeu et le forfait pour absence sont gelés pendant la pause. La reprise nécessite l’accord des deux camps connectés ; le bot confirme automatiquement.
 - Un rechargement conserve la pause, les couleurs, les prix et les ressources. Aucune réponse ni dépense pendant la pause.
 - Les bastions commencent avec 300 PV. Le siège commence à 8 min, les réparations ferment à 9 min, la tempête frappe à partir de 9 min 10 s.
-- La limite est fixée à 10 minutes de jeu effectif, hors pauses. Un bastion détruit perd avant cette limite ; sinon le plus grand nombre de PV détermine le gagnant. PV égaux : égalité.
+- La limite est fixée à 15 minutes de jeu effectif, hors pauses. Un bastion détruit perd avant cette limite ; sinon le plus grand nombre de PV détermine le gagnant. PV égaux : égalité.
 - L’atelier coûte 20 pièces et restaure 8 PV, avec une recharge de 30 s, afin de limiter la domination d’une stratégie reposant uniquement sur les réparations.
+
+## Spectateurs et QR code
+
+- L’onglet Regarder accepte un code valide, sans nom d’équipe. Un lien `/?watch=CODE` ouvre directement la vue spectateur, dans le camp ou pendant la partie.
+- Les spectateurs voient les bastions, les constructions, les projectiles, les questions, le journal et les résultats. Ils ne prennent aucune place dans les deux camps et ne peuvent ni répondre, ni acheter, ni mettre en pause, ni changer de couleur ou décider d’une revanche.
+- L’API publique de consultation ne transmet ni jeton, ni portefeuille, ni prix privés. La solution reste cachée jusqu’à la fermeture des réponses ou la fin du délai. Les consultations n’entretiennent pas la présence des joueurs et ne retardent pas leur forfait.
+- Le même onglet conserve le mode spectateur après rechargement et suit les revanches. Un code inconnu affiche une erreur compréhensible.
+- Un QR code est visible sur l’accueil et dans le camp à côté du code. Il encode `https://mocker-hamper-prodigy.ngrok-free.dev/`, l’accueil du site ; le participant saisit ensuite le code pour rejoindre ou regarder.

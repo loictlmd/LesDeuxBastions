@@ -216,7 +216,7 @@ export class GameService {
   finish(room, winner, reason = 'destroyed', at = this.gameNow(room)) {
     room.status = 'finished'; room.winner = winner; room.endReason = reason; room.finishedAt = at; room.finishedWallAt = this.now(); room.projectiles = [];
     const name = room.teams.find(p => p.id === winner)?.name;
-    this.event(room, reason === 'time' ? (name ? `Dix minutes écoulées : ${name} gagne aux points de vie !` : 'Dix minutes écoulées : égalité de points de vie !') : name ? `${name} remporte la bataille !` : 'Les deux bastions tombent ensemble. Égalité !', 'finish', at);
+    this.event(room, reason === 'time' ? (name ? `Quinze minutes écoulées : ${name} gagne aux points de vie !` : 'Quinze minutes écoulées : égalité de points de vie !') : name ? `${name} remporte la bataille !` : 'Les deux bastions tombent ensemble. Égalité !', 'finish', at);
     room.pausedAt = null;
   }
   tryResume(room) {
@@ -285,12 +285,17 @@ export class GameService {
       }
     }
   }
+  watch(code) {
+    const room = this.room(code);
+    this.tick(room);
+    return this.snapshot(room, null);
+  }
   snapshot(room, player) {
     const wallNow = this.now(), now = this.gameNow(room);
     const roundStart = room.roundStartedAt;
-    const reveal = player.answer !== null || now >= roundStart + RULES.answerMs || room.status === 'finished';
+    const reveal = (player && player.answer !== null) || room.answersClosed || now >= roundStart + RULES.answerMs || room.status === 'finished';
     const question = room.question ? { id: room.question.id, category: room.question.category, text: room.question.text, options: room.question.options, ...(reveal ? { correct: room.question.correct, explanation: room.question.explanation } : {}) } : null;
-    return { code: room.code, status: room.status, host: room.host, me: player.id, practice: room.practice, serverNow: wallNow, gameNow: now, paused: room.pausedAt !== null, pausedBy: room.pausedBy, matchEndsAt: room.startedAt + RULES.matchMs, colors: TEAM_COLORS, round: room.round, startedAt: room.startedAt, roundStartedAt: roundStart, answerUntil: roundStart + RULES.answerMs, nextRoundAt: room.nextRoundAt, answersClosed: room.answersClosed, siege: room.siege, storm: room.storm, winner: room.winner, endReason: room.endReason, finishedAt: room.finishedAt, question, answer: player.answer, lastResult: player.lastResult, rules: RULES, items: ITEMS, teams: room.teams.map(p => ({ id: p.id, name: p.name, hp: p.hp, shield: p.shield, shieldUntil: p.shieldUntil, mirrorUntil: p.mirrorUntil, ready: p.ready, briefed: p.briefed, unlocks: p.unlocks, online: p.bot || wallNow - p.lastSeen < 15_000, lastSeen: p.lastSeen, bot: p.bot, color: p.color, resumeReady: p.resumeReady, disconnectAt: p.lastActiveAt + RULES.disconnectMs, answered: !!p.answer, rematch: p.rematch, stats: p.stats, ...(p.id === player.id ? { coins: p.coins, purchases: p.purchases, prices: Object.fromEntries(ITEMS.map(item => [item.id, itemPrice(item, p.purchases)])), cooldowns: p.cooldowns, nextAction: p.nextAction } : {}) })), projectiles: room.projectiles, events: room.events };
+    return { code: room.code, status: room.status, host: room.host, me: player?.id ?? null, spectator: !player, practice: room.practice, serverNow: wallNow, gameNow: now, paused: room.pausedAt !== null, pausedBy: room.pausedBy, matchEndsAt: room.startedAt + RULES.matchMs, colors: TEAM_COLORS, round: room.round, startedAt: room.startedAt, roundStartedAt: roundStart, answerUntil: roundStart + RULES.answerMs, nextRoundAt: room.nextRoundAt, answersClosed: room.answersClosed, siege: room.siege, storm: room.storm, winner: room.winner, endReason: room.endReason, finishedAt: room.finishedAt, question, answer: player?.answer ?? null, lastResult: player?.lastResult ?? null, rules: RULES, items: ITEMS, teams: room.teams.map(p => ({ id: p.id, name: p.name, hp: p.hp, shield: p.shield, shieldUntil: p.shieldUntil, mirrorUntil: p.mirrorUntil, ready: p.ready, briefed: p.briefed, unlocks: p.unlocks, online: p.bot || wallNow - p.lastSeen < 15_000, lastSeen: p.lastSeen, bot: p.bot, color: p.color, resumeReady: p.resumeReady, disconnectAt: p.lastActiveAt + RULES.disconnectMs, answered: !!p.answer, rematch: p.rematch, stats: p.stats, ...(p.id === player?.id ? { coins: p.coins, purchases: p.purchases, prices: Object.fromEntries(ITEMS.map(item => [item.id, itemPrice(item, p.purchases)])), cooldowns: p.cooldowns, nextAction: p.nextAction } : {}) })), projectiles: room.projectiles, events: room.events };
   }
   state(code, token) { const { room, player } = this.authorize(code, token); return this.snapshot(room, player); }
   tickAll() { for (const room of this.rooms.values()) this.tick(room); }

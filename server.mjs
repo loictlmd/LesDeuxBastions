@@ -20,17 +20,19 @@ export function createGameServer({ service = new GameService(), getPublicUrl = (
       if (url.pathname.startsWith('/api/')) {
         if (req.headers.origin && new URL(req.headers.origin).host !== req.headers.host) throw new GameError('Origine non autorisée.', 403);
         const ip = req.socket.remoteAddress;
-        const key = `${ip}:${req.method === 'GET' ? 'read' : 'write'}`;
+        const budget = req.method === 'GET' ? (url.pathname === '/api/watch' ? 'watch' : 'read') : 'write';
+        const key = `${ip}:${budget}`;
         const now = Date.now(); const limit = limits.get(key) || { at: now, count: 0 };
         if (now - limit.at > 60_000) { limit.at = now; limit.count = 0; }
         limit.count++; limits.set(key, limit);
-        if (limit.count > (req.method === 'GET' ? 1200 : 240)) throw new GameError('Trop de demandes. Patientez une minute.', 429);
+        if (limit.count > ({ watch: 3000, read: 1200, write: 240 }[budget])) throw new GameError('Trop de demandes. Patientez une minute.', 429);
         if (req.method === 'GET' && url.pathname === '/api/network') {
           const port = server.address().port;
           const addresses = Object.values(os.networkInterfaces()).flat().filter(n => n.family === 'IPv4' && !n.internal).map(n => `http://${n.address}:${port}`);
           return send(200, { addresses, publicUrl: getPublicUrl() });
         }
         const token = req.headers.authorization?.startsWith('Bearer ') ? req.headers.authorization.slice(7) : '';
+        if (req.method === 'GET' && url.pathname === '/api/watch') return send(200, service.watch(url.searchParams.get('code')));
         if (req.method === 'GET' && url.pathname === '/api/state') return send(200, service.state(url.searchParams.get('code'), token));
         if (req.method !== 'POST') throw new GameError('Route introuvable.', 404);
         const chunks = []; let size = 0;

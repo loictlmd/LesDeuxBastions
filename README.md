@@ -8,15 +8,15 @@
 
 ## 🎯 Le but du jeu
 
-**Détruire le bastion adverse, ou conserver plus de points de vie que lui après dix minutes de jeu effectif.**
+**Détruire le bastion adverse, ou conserver plus de points de vie que lui après quinze minutes de jeu effectif.**
 
 Chaque équipe commence avec **300 points de vie ❤️** et **12 pièces 🪙**. Un **récapitulatif des règles** s’ouvre au lancement et à chaque revanche : le chronomètre attend l’accord des deux équipes. Elles reçoivent ensuite la même question aléatoire et disposent de **25 secondes** pour discuter et valider une seule réponse. Quand les deux ont répondu, le résultat reste affiché **3 secondes**, puis la question suivante commence. Sinon, la manche dure 30 secondes.
 
-- ✅ Bonne réponse : **+2 à +5 pièces selon la rapidité** : 5 au départ, puis une pièce de moins toutes les 6 secondes, jusqu’à 2. Une animation indique le gain, y compris 0 après une erreur ou une absence de réponse.
+- ✅ Bonne réponse : **+3 à +6 pièces selon la rapidité** : 6 au départ, puis une pièce de moins toutes les 6 secondes, jusqu’à 3. Une animation indique le gain, y compris 0 après une erreur ou une absence de réponse.
 - ❌ Mauvaise réponse ou absence de réponse : aucun gain, aucune pénalité.
 - 📦 Nouvelle manche : **+1 pièce** de ravitaillement.
 - ⚔️ Payez une fois le **déblocage** d’une attaque, attendez sa construction, puis payez chaque tir, de plus en plus cher à chaque utilisation. Les constructions et les attaques débloquées sont visibles sous les deux bastions. Les défenses sont disponibles dès le départ.
-- 🏆 Un bastion détruit perd immédiatement. À **10 minutes de jeu effectif**, le bastion avec le plus de PV gagne ; une égalité de PV ou une destruction simultanée donne une égalité.
+- 🏆 Un bastion détruit perd immédiatement. À **15 minutes de jeu effectif**, le bastion avec le plus de PV gagne ; une égalité de PV ou une destruction simultanée donne une égalité.
 
 Les projectiles mettent **4 à 7 secondes** à arriver : surveillez les attaques et défendez-vous à temps. Les achats restent possibles pendant le quiz.
 
@@ -25,7 +25,7 @@ Les projectiles mettent **4 à 7 secondes** à arriver : surveillez les attaques
 - 👥 **Deux équipes**, avec **un téléphone par équipe**.
 - 💬 Les joueurs discutent des réponses et prennent leurs décisions ensemble.
 - 🔄 Changez de porte-parole toutes les deux questions pour faire participer chacun.
-- ⏳ Comptez environ **10 minutes de jeu effectif** de jeu, puis un court débrief.
+- ⏳ Prévoyez jusqu’à **15 minutes de jeu effectif**, puis un court débrief.
 - 💡 Après la partie : « Quelle idée d’un coéquipier a changé notre stratégie ? »
 
 Le projet est réalisé dans le cadre d’un **cours utilisant la méthode Agile avec Scrum**. Les documents de démarrage et de suivi sont disponibles dans le dossier [`docs/`](docs/README.md).
@@ -36,7 +36,9 @@ Le projet est réalisé dans le cadre d’un **cours utilisant la méthode Agile
 - 📚 **144 nouvelles questions** de niveau intermédiaire à difficile dans huit thèmes : géographie, histoire, physique/chimie, mathématiques/logique, littérature/langues, arts/musique, informatique/techniques, nature/astronomie.
 - ⚔️ **Quatre attaques** et 🛡️ **trois défenses**.
 - 🎨 Villages illustrés, projectiles animés, boucliers et journal de bataille.
-- 📱 Interface adaptée aux téléphones et aux ordinateurs.
+- 📱 Interface adaptée aux téléphones et aux ordinateurs, avec des textes agrandis.
+- 👀 Mode spectateur accessible par code ou lien, sans occuper une équipe.
+- 📷 QR code sur l’accueil et dans le camp, à côté du code de partie.
 - 🔁 Reconnexion après rechargement et revanche avec l’accord des deux équipes.
 - 🤖 Mode **« Explorer une démo »** contre une équipe automatique.
 - 🎨 Six couleurs de château au choix par équipe, visibles sur les deux écrans.
@@ -135,6 +137,12 @@ Utilisez `npm start`, puis ouvrez [http://localhost:3000](http://localhost:3000)
 
 > 🔌 Gardez l’ordinateur allumé, sans veille, et la fenêtre du serveur ouverte. Gardez aussi les téléphones déverrouillés. Pour arrêter le serveur, appuyez sur **Ctrl+C**. L’arrêt efface les parties en cours, conservées en mémoire.
 
+### 👀 Regarder une partie et partager le QR code
+
+Sur l’accueil, choisissez **Regarder**, saisissez le code de partie puis validez. Vous pouvez aussi partager le **Lien spectateur** depuis le camp ou la bataille : il ouvre directement la vue spectateur, y compris si la partie a déjà commencé. Les spectateurs suivent les deux bastions, les questions et le journal, sans pouvoir répondre, acheter, mettre en pause ou lancer une revanche. Les pièces des équipes restent privées ; la solution apparaît après les deux réponses ou la fermeture du temps de réponse. Le rechargement et les revanches conservent le mode spectateur.
+
+Le QR code affiché sur l’accueil et dans le camp mène à **https://mocker-hamper-prodigy.ngrok-free.dev/**. Après l’avoir scanné, saisissez le code affiché pour rejoindre ou regarder. Il s’agit d’une adresse fixe : si le domaine ngrok change, le QR code devra être remplacé.
+
 ### 🤖 Découvrir le jeu seul
 
 Ouvrez [http://localhost:3000](http://localhost:3000), puis cliquez sur **Explorer une démo**. Confirmez que votre équipe est prête, lancez la bataille puis validez le récapitulatif. Les Veilleurs, une équipe automatique, débloquent aussi leurs attaques.
@@ -155,6 +163,8 @@ Pour essayer le mode deux équipes sur un seul ordinateur, ouvrez le jeu dans de
 
 Le prix augmente seulement après un tir réussi à l’achat, indépendamment pour chaque attaque et chaque équipe. Un clic refusé ne change pas le prix. Chaque carte affiche son état : **rouge / verrouillée**, **orange / en construction**, **vert / débloquée**, avec un texte en complément de la couleur.
 
+Les cartes affichent des descriptions courtes : dégâts et délai d’impact pour les attaques. Le bouton affiche le prix actuel et l’état de disponibilité.
+
 Les déblocages restent acquis jusqu’à la fin de la partie, y compris après rechargement. Une revanche remet les constructions et les prix à zéro, tout en conservant la couleur choisie.
 
 ⏱️ Deux achats, déblocages compris, doivent être espacés d’au moins **2 secondes**. Chaque équipement a également sa propre recharge.
@@ -169,17 +179,17 @@ Choisissez votre couleur dans le camp, ou ouvrez **Couleurs du château** pendan
 
 Chaque équipe peut demander **Pause**, y compris depuis le raccourci mobile. Questions, récompenses, constructions, projectiles, protections, recharges, siège et tempête cessent d’avancer. Les deux équipes doivent cliquer sur **Reprendre** ; en démo, l’adversaire automatique est déjà d’accord. Une pause se conserve après rechargement. Les achats et réponses sont refusés pendant la pause.
 
-### 🌩️ Une partie de dix minutes au maximum
+### 🌩️ Une partie de quinze minutes au maximum
 
 Le chronomètre de partie exclut les pauses et commence après le récapitulatif.
 
 - À **8 minutes**, le siège commence : les nouvelles attaques infligent **50 % de dégâts supplémentaires**.
 - À **9 minutes**, les réparations ferment.
 - Dès **9 min 10 s**, puis toutes les 10 secondes, chaque village perd **8 PV**, à travers les boucliers.
-- À **10 minutes**, la partie s’arrête : l’équipe avec le plus de PV gagne, ou égalité si les PV sont égaux. Les impacts exactement à la limite sont résolus avant le classement.
+- À **15 minutes**, la partie s’arrête : l’équipe avec le plus de PV gagne, ou égalité si les PV sont égaux. Les impacts exactement à la limite sont résolus avant le classement.
 - Une destruction, un abandon ou un forfait peut terminer la partie plus tôt.
 
-Les simulations des règles actuelles durent entre **9 min 03 s et 10 min**. Il reste à confirmer le ressenti et les stratégies avec de vrais joueurs.
+Les simulations des règles actuelles durent entre **7 min 49 s et 14 min 10 s**. Il reste à confirmer le ressenti et les stratégies avec de vrais joueurs.
 
 ## 🛠️ Un problème de connexion ?
 
@@ -218,8 +228,8 @@ npm test
 npm run simulate
 ```
 
-- ✅ **38 tests automatisés** du moteur, du protocole HTTP et du lanceur passent dans l’environnement Linux de développement. Les trois tests utilisant un faux exécutable ngrok sont ignorés sous Windows ; le double-clic réel reste à vérifier sur le PC.
-- 📱 Un parcours a été vérifié dans deux sessions Chromium indépendantes, mobile simulé et ordinateur : récapitulatif commun, couleurs synchronisées, cadres rouge/vert, prix progressifs, pauses et reprise à deux, rechargement pendant une pause, fin à dix minutes et revanche.
+- ✅ **41 tests automatisés** du moteur, du protocole HTTP et du lanceur passent dans l’environnement Linux de développement. Les trois tests utilisant un faux exécutable ngrok sont ignorés sous Windows ; le double-clic réel reste à vérifier sur le PC.
+- 📱 Un parcours a été vérifié dans quatre sessions Chromium indépendantes : deux équipes et deux spectateurs, sur mobile simulé et ordinateur. QR et code, cartes simplifiées, confidentialité, pause, rechargement, fin à quinze minutes et revanche ont été contrôlés, sans débordement horizontal ni erreur JavaScript. Le QR affiché dans le navigateur a été décodé vers l’adresse attendue.
 - 🎲 **900 matchs simulés** ont été utilisés pour étudier les stratégies et vérifier que les parties se terminent.
 - 👥 L’équilibrage est une première base : il reste à l’affiner avec les joueurs et à tester sur les vrais téléphones et le Wi-Fi du cours.
 
@@ -260,7 +270,7 @@ Les noms, dates et décisions du groupe sont à compléter avec vos informations
 
 ## 🌐 Hébergement
 
-Cette version tourne **sur l’ordinateur de l’animateur**, avec un seul serveur Node.js. Les téléphones interrogent ce serveur toutes les 800 ms ; il contrôle les réponses, les pièces et les dégâts.
+Cette version tourne **sur l’ordinateur de l’animateur**, avec un seul serveur Node.js. Les équipes interrogent ce serveur toutes les 800 ms, les spectateurs toutes les 2 secondes ; il contrôle les réponses, les pièces et les dégâts.
 
 **GitHub héberge le code, pas la partie.** GitHub Pages seul ne peut pas exécuter ce serveur Node.js. Pour jouer depuis des réseaux différents, le lanceur Windows peut ouvrir un tunnel ngrok vers ce serveur local. Le PC doit rester allumé. Un hébergement Node.js permanent demeure une évolution distincte.
 

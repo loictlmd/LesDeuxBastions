@@ -277,7 +277,7 @@ test('pause preserves the result interval, prevents disconnect forfeits and rest
   s.act(s.b, 'resume'); s.act(s.a, 'resume'); s.advance(1999); assert.equal(s.room.round, 1);
   s.advance(1); assert.equal(s.room.round, 2);
 });
-test('pause also freezes temporary defenses, bot actions, siege and the ten-minute deadline', () => {
+test('pause also freezes temporary defenses, bot actions, siege and the fifteen-minute deadline', () => {
   const s = setup(); s.advance(RULES.siegeMs - 1000);
   s.room.teams[0].coins = 100; s.act(s.a, 'buy', { item: 'shield' }); s.act(s.b, 'buy', { item: 'mirror' });
   s.act(s.a, 'pause'); s.advance(RULES.matchMs);
@@ -296,12 +296,12 @@ test('practice allows pause and resumes without waiting for an impossible bot cl
   assert.equal(room.teams[1].answer, null); assert.deepEqual(room.teams[1].unlocks, initialUnlocks);
   assert.equal(act('resume').paused, false);
 });
-test('the match ends at exactly ten active minutes and compares remaining HP', () => {
+test('the match ends at exactly fifteen active minutes and compares remaining HP', () => {
   for (const leading of [0,1,null]) {
     const s = setup(); if (leading !== null) s.room.teams[1-leading].hp -= 10;
     s.advance(RULES.matchMs + 10000);
     assert.equal(s.room.status, 'finished'); assert.equal(s.room.endReason, 'time'); assert.equal(s.room.winner, leading);
-    assert.equal(s.room.finishedAt - s.room.startedAt, 600000);
+    assert.equal(s.room.finishedAt - s.room.startedAt, RULES.matchMs);
     assert.throws(() => s.act(s.a, 'pause'), /pas en cours/);
     assert.throws(() => s.act(s.a, 'buy', { item: 'arrows' }), /pas en cours/);
   }
@@ -332,4 +332,48 @@ test('new teams get an available color even after the old host leaves', () => {
   const c = service.join(a.code, 'Charlie');
   const teams = service.state(c.code, c.token).teams;
   assert.notEqual(teams[0].color, teams[1].color);
+});
+
+test('spectators are read-only, do not occupy a team and cannot see private resources or early solutions', () => {
+  const s = setup(); const publicState = s.service.watch(s.a.code);
+  assert.equal(publicState.me, null); assert.equal(publicState.spectator, true);
+  assert.equal(publicState.answer, null); assert.equal(publicState.lastResult, null);
+  assert.equal(publicState.question.correct, undefined); assert.equal(publicState.question.explanation, undefined);
+  for (const p of publicState.teams) for (const key of ['token','answer','coins','purchases','prices','cooldowns','nextAction']) assert.equal(key in p, false);
+  s.act(s.a, 'answer', { round: 1, choice: s.room.question.correct });
+  assert.equal(s.service.watch(s.a.code).question.correct, undefined);
+  s.act(s.b, 'answer', { round: 1, choice: (s.room.question.correct + 1) % 4 });
+  const reveal = s.service.watch(s.a.code);
+  assert.equal(reveal.question.correct, s.room.question.correct); assert.ok(reveal.question.explanation);
+  for (const token of [s.a.token,s.b.token]) assert.equal(JSON.stringify(reveal).includes(token), false);
+  s.advance(RULES.resultMs); assert.equal(s.service.watch(s.a.code).question.correct, undefined);
+  for (const type of ['answer','buy','unlock','pause','resume','color','leave','rematch']) assert.throws(() => s.service.action(s.a.code, 'spectator', { type }), /accès/);
+  const other = new GameService(); const a = other.create('Alpha');
+  other.watch(a.code); other.watch(a.code); other.join(a.code, 'Bravo');
+  assert.equal(other.watch(a.code).teams.length, 2);
+});
+test('spectator polling cannot prevent a disconnect forfeit or extend the room lifetime', () => {
+  const s = setup(), initial = s.room.updatedAt;
+  s.advance(89999, false); s.service.watch(s.a.code);
+  assert.equal(s.room.updatedAt, initial);
+  assert.equal(s.room.teams[0].lastSeen, s.room.startedAt);
+  s.service.state(s.a.code, s.a.token); s.advance(1, false);
+  assert.equal(s.service.watch(s.a.code).endReason, 'disconnect');
+  assert.equal(s.room.winner, 0);
+  assert.throws(() => s.service.watch('123'), /6 lettres/);
+  assert.throws(() => s.service.watch('AAAAAA'), /introuvable/);
+});
+test('spectators follow timeouts, pauses, results and rematches without receiving player rights', () => {
+  const s = setup(); s.advance(25000);
+  assert.equal(s.service.watch(s.a.code).question.correct, s.room.question.correct);
+  const paused = s.act(s.a, 'pause'); s.advance(120000, false);
+  const watched = s.service.watch(s.a.code);
+  assert.equal(watched.paused, true); assert.equal(watched.gameNow, paused.gameNow);
+  assert.equal(watched.lastResult, null); assert.equal(watched.spectator, true);
+  s.act(s.a, 'resume'); s.act(s.b, 'resume');
+  s.act(s.a, 'leave'); const final = s.service.watch(s.a.code);
+  assert.equal(final.status, 'finished'); assert.equal(final.question.correct, s.room.question.correct);
+  s.act(s.a, 'rematch'); s.act(s.b, 'rematch');
+  const briefing = s.service.watch(s.a.code);
+  assert.equal(briefing.status, 'briefing'); assert.equal(briefing.question, null); assert.equal(briefing.spectator, true);
 });

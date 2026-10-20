@@ -1,5 +1,6 @@
 const $ = selector => document.querySelector(selector);
 const app = $('#app');
+const HOME_URL = 'https://mocker-hamper-prodigy.ngrok-free.dev/';
 const escapeHtml = value => String(value ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const icons = {
  arrows: '<path d="m6 25 20-20m-9 0h9v9M5 17v9h9M10 29 29 10m-6 0h6v6"/>',
@@ -22,7 +23,9 @@ function icon(name, cls = '') { return `<svg class="icon ${cls}" viewBox="0 0 32
 let session = null;
 try { session = JSON.parse(sessionStorage.getItem('bastions-session')); } catch { /* Private browsing can disable storage. */ }
 const invited = new URL(location.href).searchParams.get('code')?.toUpperCase().replace(/[^A-Z2-9]/g, '').slice(0, 6) || '';
-if (session && invited && session.code !== invited) session = null;
+const watched = new URL(location.href).searchParams.get('watch')?.toUpperCase().replace(/[^A-Z2-9]/g, '').slice(0, 6) || '';
+if (watched) session = { code: watched, spectator: true };
+if (session && !watched && invited && session.code !== invited) session = null;
 let state = null, view = '', offset = 0, busy = false, pollBusy = false, toastTimeout, networkAddresses = [], networkPublicUrl = null, sound = false, audioContext, previousRound = 0, previousEvent = 0, questionKey = '';
 let rewardKey = '', rewardTimeout;
 try { rewardKey = sessionStorage.getItem('bastions-last-reward') || ''; } catch { /* Storage is optional. */ }
@@ -38,7 +41,7 @@ function beep(kind = 'answer') {
   try { audioContext ||= new (window.AudioContext || window.webkitAudioContext)(); audioContext.resume(); const oscillator = audioContext.createOscillator(), gain = audioContext.createGain(); oscillator.connect(gain); gain.connect(audioContext.destination); oscillator.type = 'sine'; oscillator.frequency.setValueAtTime(kind === 'impact' ? 150 : 590, audioContext.currentTime); oscillator.frequency.exponentialRampToValueAtTime(kind === 'impact' ? 65 : 880, audioContext.currentTime + .15); gain.gain.setValueAtTime(.07, audioContext.currentTime); gain.gain.exponentialRampToValueAtTime(.001, audioContext.currentTime + .25); oscillator.start(); oscillator.stop(audioContext.currentTime + .25); } catch { /* Sound is optional. */ }
 }
 async function api(path, data) {
-  const response = await fetch(path, { method: data ? 'POST' : 'GET', headers: { ...(data ? { 'Content-Type': 'application/json' } : {}), ...(session ? { Authorization: `Bearer ${session.token}` } : {}) }, body: data ? JSON.stringify(data) : undefined, signal: AbortSignal.timeout(6500) });
+  const response = await fetch(path, { method: data ? 'POST' : 'GET', headers: { ...(data ? { 'Content-Type': 'application/json' } : {}), ...(session?.token ? { Authorization: `Bearer ${session.token}` } : {}) }, body: data ? JSON.stringify(data) : undefined, signal: AbortSignal.timeout(6500) });
   const result = await response.json();
   if (!response.ok) { const error = new Error(result.error || 'Une erreur est survenue.'); error.status = response.status; throw error; }
   return result;
@@ -57,7 +60,7 @@ async function poll() {
   if (!session || pollBusy) return;
   pollBusy = true;
   const active = session;
-  try { const result = await api(`/api/state?code=${session.code}`); if (session === active) accept(result); }
+  try { const result = await api(`/api/${session.spectator ? 'watch' : 'state'}?code=${session.code}`); if (session === active) accept(result); }
   catch (error) {
     if (session !== active) return;
     if ([401, 404].includes(error.status)) { reset(); toast(error.message); }
@@ -65,7 +68,7 @@ async function poll() {
   } finally { pollBusy = false; }
 }
 async function action(type, details = {}) {
-  if (busy || !session) return;
+  if (busy || !session || session.spectator) return;
   busy = true; updateClock();
   try {
     const result = await api('/api/action', { code: session.code, type, ...details });
@@ -80,17 +83,36 @@ async function copy(value) {
   try { if (navigator.clipboard && window.isSecureContext) await navigator.clipboard.writeText(value); else { const input = document.createElement('textarea'); input.value = value; input.style.position = 'fixed'; input.style.opacity = '0'; document.body.append(input); input.select(); const ok = document.execCommand('copy'); input.remove(); if (!ok) throw new Error(); } toast('Lien copié. Envoyez-le à l’autre équipe !'); }
   catch { toast('Copie indisponible : sélectionnez et copiez le lien affiché.'); }
 }
+function qrInvite(code = '') {
+  return `<section class="qr-invite" aria-label="QR code vers l’accueil du jeu"><a href="${HOME_URL}" target="_blank" rel="noopener"><img src="/assets/home-qr.svg" width="180" height="180" alt="QR code : ouvrir l’accueil des Deux Bastions"></a><div><strong>Scannez pour ouvrir le jeu</strong><p>${code ? `Puis saisissez le code <b>${escapeHtml(code)}</b> pour rejoindre ou regarder la partie.` : 'Créez votre équipe, rejoignez vos adversaires ou regardez une partie.'}</p><a class="qr-home-link" href="${HOME_URL}" target="_blank" rel="noopener">Ouvrir l’accueil ↗</a></div></section>`;
+}
+function watchUrl() { return `${baseUrl()}/?watch=${state.code}`; }
 function landing() {
-  app.innerHTML = `<div class="landing"><section class="hero-copy"><p class="eyebrow"><span class="live-dot"></span> LE QUIZ QUI FAIT ÉQUIPE</p><h1>Des idées.<br>Des alliés.<br><em>Un bastion.</em></h1><p class="hero-description">Votre meilleure arme ? <strong>La matière grise.</strong><br>Réunissez votre équipe, défendez votre village<br class="desktop-break"> et faites tomber le bastion adverse.</p><div class="hero-meta"><span>${icon('people')} 2 équipes</span><span>${icon('clock')} ≈ 10 min*</span><span>${icon('flag')} 1 téléphone / équipe</span></div><div class="hero-scene"><img src="/assets/arena.svg" alt="Deux villages fortifiés, l’un aux toits de sauge, l’autre aux toits corail, se font face sur deux îles."><div class="scene-caption"><span><i class="dot sage"></i> L’UNION FAIT LA FORCE</span><span>LA STRATÉGIE FAIT LE RESTE <i class="dot coral"></i></span></div></div></section>
-  <aside class="join-card"><div class="card-kicker">LE RENDEZ-VOUS DES ÉQUIPES</div><h2>Entrez dans<br>la bataille.</h2><p>Un code, deux équipes. À vous de jouer.</p><div class="mode-tabs" role="group" aria-label="Mode de connexion"><button id="create-tab" class="selected" aria-pressed="true">Créer une partie</button><button id="join-tab" aria-pressed="false">Rejoindre</button></div><form id="entry-form"><label for="team-name">Le nom de votre équipe</label><input id="team-name" name="name" minlength="2" maxlength="24" placeholder="Les Incollables" required autocomplete="off"><div id="code-field" hidden><label for="room-code">Le code de la partie</label><input id="room-code" name="code" maxlength="6" pattern="[A-Za-z2-9]{6}" placeholder="Ex. BAST23" autocapitalize="characters" autocomplete="off" spellcheck="false" value="${escapeHtml(invited)}"></div><p class="form-hint" id="entry-hint">Créez votre camp, puis partagez son code à l’autre équipe.</p><p id="entry-error" class="form-error" role="alert"></p><button type="submit" class="button primary wide" id="enter-button">Créer notre camp <span>→</span></button></form><div class="card-divider"><span>ENVIE DE VOIR ?</span></div><button class="demo-button" id="practice-button">Explorer une démo <span>↗</span></button><p class="tiny">Une équipe automatique, pour découvrir le jeu.</p><div class="connection-note"><span class="wifi-symbol">◉</span><div><b>Un même lien pour les deux équipes</b><span>Partagez le lien Internet du tunnel, ou l’adresse locale sur le même Wi-Fi. Gardez l’ordinateur allumé.</span><a id="network-link" href="${baseUrl()}">${escapeHtml(baseUrl())}</a></div></div></aside></div>
-  <section class="how-it-works" aria-label="Comment jouer"><article><span class="step-num">01</span><div><h3>Cogitez ensemble.</h3><p>25 secondes maximum pour répondre.<br>De 2 à 5 pièces : la rapidité compte.</p></div>${icon('book')}</article><article><span class="step-num">02</span><div><h3>Jouez collectif.</h3><p>Attaquer, protéger ou réparer ?<br>Votre équipe, votre stratégie.</p></div>${icon('shield')}</article><article><span class="step-num">03</span><div><h3>Visez la victoire.</h3><p>Faites tomber le village adverse.<br>Puis prenez le temps de débriefer.</p></div>${icon('crown')}</article></section><p class="duration-note">* Durée indicative, à confirmer pendant vos tests. Dix minutes de jeu effectif au maximum, pauses exclues. Une destruction ou un forfait peut terminer la partie plus tôt.</p>`;
-  let mode = invited ? 'join' : 'create';
-  const setMode = value => { mode = value; $('#create-tab').classList.toggle('selected', value === 'create'); $('#join-tab').classList.toggle('selected', value === 'join'); $('#create-tab').setAttribute('aria-pressed', String(value === 'create')); $('#join-tab').setAttribute('aria-pressed', String(value === 'join')); $('#code-field').hidden = value !== 'join'; $('#room-code').required = value === 'join'; $('#entry-hint').textContent = value === 'join' ? 'Demandez le code à l’équipe qui a créé le camp.' : 'Créez votre camp, puis partagez son code à l’autre équipe.'; $('#enter-button').innerHTML = `${value === 'join' ? 'Rejoindre la partie' : 'Créer notre camp'} <span>→</span>`; $('#entry-error').textContent = ''; };
-  $('#create-tab').onclick = () => setMode('create'); $('#join-tab').onclick = () => setMode('join'); setMode(mode);
+  app.innerHTML = `<div class="landing"><section class="hero-copy"><p class="eyebrow"><span class="live-dot"></span> LE QUIZ QUI FAIT ÉQUIPE</p><h1>Des idées.<br>Des alliés.<br><em>Un bastion.</em></h1><p class="hero-description">Votre meilleure arme ? <strong>La matière grise.</strong><br>Réunissez votre équipe, défendez votre village<br class="desktop-break"> et faites tomber le bastion adverse.</p><div class="hero-meta"><span>${icon('people')} 2 équipes</span><span>${icon('clock')} 15 min max.*</span><span>${icon('flag')} 1 téléphone / équipe</span></div><div class="hero-scene"><img src="/assets/arena.svg" alt="Deux villages fortifiés, l’un aux toits de sauge, l’autre aux toits corail, se font face sur deux îles."><div class="scene-caption"><span><i class="dot sage"></i> L’UNION FAIT LA FORCE</span><span>LA STRATÉGIE FAIT LE RESTE <i class="dot coral"></i></span></div></div>${qrInvite()}</section>
+  <aside class="join-card"><div class="card-kicker">LE RENDEZ-VOUS DES ÉQUIPES</div><h2>Entrez dans<br>la bataille.</h2><p>Un code, deux équipes. À vous de jouer.</p><div class="mode-tabs" role="group" aria-label="Mode de connexion"><button id="create-tab" class="selected" aria-pressed="true">Créer une partie</button><button id="join-tab" aria-pressed="false">Rejoindre</button><button id="watch-tab" aria-pressed="false">Regarder</button></div><form id="entry-form"><label for="team-name">Le nom de votre équipe</label><input id="team-name" name="name" minlength="2" maxlength="24" placeholder="Les Incollables" required autocomplete="off"><div id="code-field" hidden><label for="room-code">Le code de la partie</label><input id="room-code" name="code" maxlength="6" pattern="[A-Za-z2-9]{6}" placeholder="Ex. BAST23" autocapitalize="characters" autocomplete="off" spellcheck="false" value="${escapeHtml(watched || invited)}"></div><p class="form-hint" id="entry-hint">Créez votre camp, puis partagez son code à l’autre équipe.</p><p id="entry-error" class="form-error" role="alert"></p><button type="submit" class="button primary wide" id="enter-button">Créer notre camp <span>→</span></button></form><div class="card-divider"><span>ENVIE DE VOIR ?</span></div><button class="demo-button" id="practice-button">Explorer une démo <span>↗</span></button><p class="tiny">Une équipe automatique, pour découvrir le jeu.</p><div class="connection-note"><span class="wifi-symbol">◉</span><div><b>Un même lien pour les deux équipes</b><span>Partagez le lien Internet du tunnel, ou l’adresse locale sur le même Wi-Fi. Gardez l’ordinateur allumé.</span><a id="network-link" href="${baseUrl()}">${escapeHtml(baseUrl())}</a></div></div></aside></div>
+  <section class="how-it-works" aria-label="Comment jouer"><article><span class="step-num">01</span><div><h3>Cogitez ensemble.</h3><p>25 secondes maximum pour répondre.<br>De 3 à 6 pièces : la rapidité compte.</p></div>${icon('book')}</article><article><span class="step-num">02</span><div><h3>Jouez collectif.</h3><p>Attaquer, protéger ou réparer ?<br>Votre équipe, votre stratégie.</p></div>${icon('shield')}</article><article><span class="step-num">03</span><div><h3>Visez la victoire.</h3><p>Faites tomber le village adverse.<br>Puis prenez le temps de débriefer.</p></div>${icon('crown')}</article></section><p class="duration-note">* Durée indicative, à confirmer pendant vos tests. Quinze minutes de jeu effectif au maximum, pauses exclues. Une destruction ou un forfait peut terminer la partie plus tôt.</p>`;
+  let mode = watched ? 'watch' : invited ? 'join' : 'create';
+  const setMode = value => {
+    mode = value;
+    for (const name of ['create', 'join', 'watch']) { $(`#${name}-tab`).classList.toggle('selected', value === name); $(`#${name}-tab`).setAttribute('aria-pressed', String(value === name)); }
+    const watching = value === 'watch';
+    $('#team-name').hidden = watching; $('#team-name').required = !watching; $('label[for="team-name"]').hidden = watching;
+    $('#code-field').hidden = value === 'create'; $('#room-code').required = value !== 'create';
+    $('#entry-hint').textContent = watching ? 'Entrez le code d’une partie pour la regarder, sans prendre la place d’une équipe.' : value === 'join' ? 'Demandez le code à l’équipe qui a créé le camp.' : 'Créez votre camp, puis partagez son code à l’autre équipe.';
+    $('#enter-button').innerHTML = `${watching ? 'Regarder la partie' : value === 'join' ? 'Rejoindre la partie' : 'Créer notre camp'} <span>→</span>`;
+    $('#entry-error').textContent = '';
+  };
+  $('#create-tab').onclick = () => setMode('create'); $('#join-tab').onclick = () => setMode('join'); $('#watch-tab').onclick = () => setMode('watch'); setMode(mode);
   const enter = async (practice = false) => {
     if (busy) return;
     busy = true; $('#enter-button').disabled = true; $('#practice-button').disabled = true; $('#entry-error').textContent = '';
-    try { const result = await api(mode === 'join' && !practice ? '/api/join' : '/api/rooms', { name: $('#team-name').value.trim() || (practice ? 'Les Explorateurs' : ''), code: $('#room-code').value.toUpperCase().trim(), practice }); saveSession(result); history.replaceState({}, '', `/?code=${result.code}`); state = null; view = ''; await poll(); }
+    try {
+      if (mode === 'watch' && !practice) {
+        const code = $('#room-code').value.toUpperCase().trim();
+        const result = await api(`/api/watch?code=${encodeURIComponent(code)}`);
+        saveSession({ code, spectator: true }); history.replaceState({}, '', `/?watch=${code}`); state = null; view = ''; accept(result); return;
+      }
+      const result = await api(mode === 'join' && !practice ? '/api/join' : '/api/rooms', { name: $('#team-name').value.trim() || (practice ? 'Les Explorateurs' : ''), code: $('#room-code').value.toUpperCase().trim(), practice }); saveSession(result); history.replaceState({}, '', `/?code=${result.code}`); state = null; view = ''; await poll(); }
     catch (error) { if ($('#entry-error')) $('#entry-error').textContent = error.message || 'Impossible de joindre le serveur.'; }
     finally { busy = false; if ($('#enter-button')) $('#enter-button').disabled = false; if ($('#practice-button')) $('#practice-button').disabled = false; }
   };
@@ -98,8 +120,9 @@ function landing() {
   $('#practice-button').onclick = () => enter(true);
 }
 function waiting() {
-  app.innerHTML = `<section class="lobby"><div class="lobby-heading"><p class="eyebrow">${state.practice ? 'MODE DÉCOUVERTE' : 'LE CAMP DE BASE'}</p><h1>Rassemblons<br><em>les bonnes idées.</em></h1><p>Préparez vos équipes. La bataille commence quand tout le monde est prêt.</p></div><div class="lobby-grid"><div class="lobby-world"><img class="team-arena" src="/assets/arena.svg" alt="Les deux bastions attendent leurs équipes."><div class="lobby-teams" id="lobby-teams"></div><div class="note dark-note"><strong>Un rôle pour chacun</strong><p>Un porte-parole tient le téléphone. Les autres débattent et conseillent. Changez de porte-parole toutes les deux questions !</p></div></div><aside class="join-card lobby-card"><p class="eyebrow">${state.practice ? 'VOTRE PARTIE DE DÉCOUVERTE' : 'INVITEZ L’AUTRE ÉQUIPE'}</p><label class="code-label">Code de la partie</label><div class="room-code">${state.code}</div><p class="small">${state.practice ? 'Les Veilleurs sont une équipe automatique. Préparez-vous, puis lancez la démo.' : 'L’autre équipe ouvre cette adresse sur son téléphone, puis rejoint avec ce code.'}</p><a class="share-address" id="share-address" href="${baseUrl()}/?code=${state.code}">${escapeHtml(baseUrl())}/?code=${state.code}</a><button class="button secondary wide" id="copy-link">Copier le lien d’invitation ${icon('flag')}</button><div class="lobby-divider"></div><label>Les couleurs de votre château</label><div id="lobby-colors" class="color-picker"></div><p class="tiny">La couleur adverse est réservée à son équipe.</p><button class="button primary wide" id="ready-button"></button><button class="button launch wide" id="start-button">Lancer la bataille →</button><p id="waiting-hint" class="form-hint center" aria-live="polite"></p><button class="text-button leave-link" id="leave-button">Quitter le camp</button></aside></div></section>`;
+  app.innerHTML = `<section class="lobby"><div class="lobby-heading"><p class="eyebrow">${state.practice ? 'MODE DÉCOUVERTE' : 'LE CAMP DE BASE'}</p><h1>Rassemblons<br><em>les bonnes idées.</em></h1><p>Préparez vos équipes. La bataille commence quand tout le monde est prêt.</p></div><div class="lobby-grid"><div class="lobby-world"><img class="team-arena" src="/assets/arena.svg" alt="Les deux bastions attendent leurs équipes."><div class="lobby-teams" id="lobby-teams"></div><div class="note dark-note"><strong>Un rôle pour chacun</strong><p>Un porte-parole tient le téléphone. Les autres débattent et conseillent. Changez de porte-parole toutes les deux questions !</p></div></div><aside class="join-card lobby-card"><p class="eyebrow">${state.practice ? 'VOTRE PARTIE DE DÉCOUVERTE' : 'INVITEZ L’AUTRE ÉQUIPE'}</p><label class="code-label">Code de la partie</label><div class="room-code">${state.code}</div><p class="small">${state.practice ? 'Les Veilleurs sont une équipe automatique. Préparez-vous, puis lancez la démo.' : 'L’autre équipe ouvre cette adresse sur son téléphone, puis rejoint avec ce code.'}</p><a class="share-address" id="share-address" href="${baseUrl()}/?code=${state.code}">${escapeHtml(baseUrl())}/?code=${state.code}</a><button class="button secondary wide" id="copy-link">Copier le lien d’invitation ${icon('flag')}</button>${qrInvite(state.code)}<a class="spectator-link" id="spectator-link" href="${watchUrl()}" target="_blank" rel="noopener">Ouvrir la vue spectateur ↗</a><button class="text-button spectator-copy" id="copy-watch-link">Copier le lien spectateur</button><div class="lobby-divider"></div><label>Les couleurs de votre château</label><div id="lobby-colors" class="color-picker"></div><p class="tiny">La couleur adverse est réservée à son équipe.</p><button class="button primary wide" id="ready-button"></button><button class="button launch wide" id="start-button">Lancer la bataille →</button><p id="waiting-hint" class="form-hint center" aria-live="polite"></p><button class="text-button leave-link" id="leave-button">Quitter le camp</button></aside></div></section>`;
   $('#copy-link').onclick = () => copy(`${baseUrl()}/?code=${state.code}`);
+  $('#copy-watch-link').onclick = () => copy(watchUrl());
   $('#ready-button').onclick = () => action('ready'); $('#start-button').onclick = () => action('start'); $('#leave-button').onclick = showLeave;
 }
 function updateWaiting() {
@@ -115,7 +138,7 @@ function colorOf(team) { return state.colors.find(c => c.id === team.color); }
 function updateColors() {
   const me = myself(), enemy = opponent();
   for (const id of ['lobby-colors', 'dialog-colors']) {
-    if (!document.getElementById(id)) continue;
+    if (!me || !document.getElementById(id)) continue;
     html(id, state.colors.map(c => `<button type="button" class="color-swatch ${me.color === c.id ? 'selected' : ''}" data-color="${c.id}" style="--swatch:${c.roof}" aria-label="${c.name}${enemy?.color === c.id ? ', couleur adverse' : ''}" aria-pressed="${me.color === c.id}" ${busy || enemy?.color === c.id ? 'disabled' : ''}><span aria-hidden="true">${me.color === c.id ? '✓' : enemy?.color === c.id ? '×' : ''}</span><small>${c.name}</small></button>`).join(''));
   }
   document.querySelectorAll('[data-color]').forEach(button => { button.onclick = () => action('color', { color: button.dataset.color }); });
@@ -147,7 +170,7 @@ function updateBriefing() {
 }
 function showReward() {
   const result = state?.lastResult;
-  if (!result || state.status !== 'playing') return;
+  if (!result || state.spectator || state.status !== 'playing') return;
   const key = `${state.code}:${state.startedAt}:${result.round}`;
   if (rewardKey === key) return;
   rewardKey = key;
@@ -162,13 +185,17 @@ function showReward() {
   rewardTimeout = setTimeout(() => { node.hidden = true; }, state.rules.resultMs);
 }
 function teamHealth(p, side) {
-  return `<div class="village-status ${side}"><div class="village-heading"><span><i id="team-dot-${p.id}" class="dot"></i><b>${escapeHtml(p.name)}</b><small>${p.id === state.me ? 'VOTRE VILLAGE' : 'ADVERSAIRE'}</small></span><strong id="hp-${p.id}">${state.rules.hp}<small>/${state.rules.hp}</small></strong></div><div class="hp-track" role="progressbar" aria-label="Points de vie de ${escapeHtml(p.name)}" aria-valuemin="0" aria-valuemax="${state.rules.hp}" id="hpbar-${p.id}"><span id="hpfill-${p.id}"></span></div><div class="village-effects" id="effects-${p.id}"></div><div class="bastion-buildings" id="buildings-${p.id}" aria-label="Attaques de ${escapeHtml(p.name)}"></div></div>`;
+  return `<div class="village-status ${side}"><div class="village-heading"><span><i id="team-dot-${p.id}" class="dot"></i><b>${escapeHtml(p.name)}</b><small>${state.spectator ? `ÉQUIPE ${p.id === 0 ? 'A' : 'B'}` : p.id === state.me ? 'VOTRE VILLAGE' : 'ADVERSAIRE'}</small></span><strong id="hp-${p.id}">${state.rules.hp}<small>/${state.rules.hp}</small></strong></div><div class="hp-track" role="progressbar" aria-label="Points de vie de ${escapeHtml(p.name)}" aria-valuemin="0" aria-valuemax="${state.rules.hp}" id="hpbar-${p.id}"><span id="hpfill-${p.id}"></span></div><div class="village-effects" id="effects-${p.id}"></div><div class="bastion-buildings" id="buildings-${p.id}" aria-label="Attaques de ${escapeHtml(p.name)}"></div></div>`;
+}
+function battleContent(teams) {
+  return `<section id="battlefield" class="battlefield" aria-label="Le champ de bataille"><div class="health-row">${teams.map((p, i) => teamHealth(p, i ? 'right' : 'left')).join('')}</div><div class="battle-art"><img class="team-arena" src="/assets/arena.svg" alt="Les deux châteaux aux couleurs de leurs équipes se font face."><div class="dome left-dome" id="dome-0"></div><div class="dome right-dome" id="dome-1"></div><div id="projectiles" class="projectiles"></div><div class="vs-medallion">VS</div><div id="battle-phase" class="battle-phase">DÉBATTEZ. DÉCIDEZ. DÉFENDEZ.</div></div></section><section class="question-card" id="question-card" aria-labelledby="question-text"><div class="question-top"><span class="category-pill" id="question-category"></span><span class="answer-clock" id="answer-timer"></span></div><h2 id="question-text"></h2><p class="question-helper">${state.spectator ? 'Observez les équipes. La solution sera révélée à la fin de la question.' : 'Un avis, une idée ? Consultez votre équipe avant de choisir.'}</p><div class="answers" id="answers"></div><div class="answer-feedback" id="answer-feedback" role="status"></div><div class="question-bottom"><span id="opponent-answer"></span><span>Bonne réponse <b id="reward-preview">+3–6 ${icon('coin')}</b></span></div><div class="question-progress"><span id="question-progress"></span></div></section>`;
 }
 function playing() {
   questionKey = '';
   const teams = [...state.teams].sort((a, b) => a.id - b.id);
-  app.innerHTML = `<section class="game"><div class="game-hud"><div class="round-info"><span class="eyebrow" id="phase-title">LA BATAILLE DES IDÉES</span><h2>Manche <span id="round-number">1</span><span class="game-code">${state.practice ? 'DÉMO' : state.code}</span></h2></div><div class="hud-right"><div class="round-countdown">${icon('clock')}<strong id="hud-timer">0:30</strong><span>prochaine<br>question</span></div><div class="wallet">${icon('coin')}<strong id="coin-count">12</strong><span>pièces</span></div><button class="icon-button" id="leave-button" aria-label="Quitter la partie" title="Quitter la partie">↗</button></div></div><div class="battle-controls"><span class="match-time">Fin dans <strong id="match-timer">10:00</strong></span><button id="colors-button" class="control-button">Couleurs du château</button><button id="pause-button" class="control-button">Pause</button></div><section id="pause-panel" class="pause-panel" role="status" hidden><div><strong id="pause-title">Partie en pause</strong><p id="pause-status"></p></div><button id="resume-button" class="button primary">Notre équipe est prête à reprendre</button></section><nav class="mobile-shortcuts" aria-label="Navigation de partie"><button data-jump="question-card">${icon('book')} Le quiz</button><button data-jump="arsenal">${icon('shield')} L’arsenal</button><button id="mobile-pause">Pause</button></nav><div id="incoming-notice" class="incoming-notice" role="status" hidden></div><div id="opponent-status" class="opponent-status" role="status" hidden></div><div class="game-grid"><div class="battle-column"><section class="battlefield" aria-label="Le champ de bataille"><div class="health-row">${teams.map((p, i) => teamHealth(p, i ? 'right' : 'left')).join('')}</div><div class="battle-art"><img class="team-arena" src="/assets/arena.svg" alt="Les deux châteaux aux couleurs de leurs équipes se font face."><div class="dome left-dome" id="dome-0"></div><div class="dome right-dome" id="dome-1"></div><div id="projectiles" class="projectiles"></div><div class="vs-medallion">VS</div><div id="battle-phase" class="battle-phase">DÉBATTEZ. DÉCIDEZ. DÉFENDEZ.</div></div></section><section class="question-card" id="question-card" aria-labelledby="question-text"><div class="question-top"><span class="category-pill" id="question-category"></span><span class="answer-clock" id="answer-timer"></span></div><h2 id="question-text"></h2><p class="question-helper">Un avis, une idée ? Consultez votre équipe avant de choisir.</p><div class="answers" id="answers"></div><div class="answer-feedback" id="answer-feedback" role="status"></div><div class="question-bottom"><span id="opponent-answer"></span><span>Bonne réponse <b id="reward-preview">+2–5 ${icon('coin')}</b></span></div><div class="question-progress"><span id="question-progress"></span></div></section></div><aside class="arsenal" id="arsenal"><div class="section-heading"><div><p class="eyebrow">VOTRE STRATÉGIE COMMENCE ICI</p><h2>L’arsenal</h2></div><span class="arsenal-tip">À vous de choisir.</span></div><div class="arsenal-group-title"><span>PASSER À L’OFFENSIVE</span><i></i><span>04</span></div><div class="shop-grid">${state.items.filter(i => i.kind === 'attack').map(itemCard).join('')}</div><div class="arsenal-group-title defense-title"><span>PROTÉGER LE VILLAGE</span><i></i><span>03</span></div><div class="shop-grid defense-grid">${state.items.filter(i => i.kind === 'defense').map(itemCard).join('')}</div><p class="shop-help">Débloquez chaque attaque une fois, attendez sa construction, puis payez chaque tir. Vos constructions sont visibles de l’adversaire.<br>Chaque tir augmente le prix du suivant pour cette attaque. Les cadres rouges indiquent les attaques verrouillées, les verts les attaques prêtes.</p></aside></div><section class="battle-journal"><div class="section-heading"><h3>Le journal de bataille</h3><span>Les dernières nouvelles du front</span></div><ol id="events"></ol></section></section>`;
+  app.innerHTML = `<section class="game"><div class="game-hud"><div class="round-info"><span class="eyebrow" id="phase-title">LA BATAILLE DES IDÉES</span><h2>Manche <span id="round-number">1</span><span class="game-code">${state.practice ? 'DÉMO' : state.code}</span></h2></div><div class="hud-right"><div class="round-countdown">${icon('clock')}<strong id="hud-timer">0:30</strong><span>prochaine<br>question</span></div><div class="wallet">${icon('coin')}<strong id="coin-count">12</strong><span>pièces</span></div><button class="icon-button" id="leave-button" aria-label="Quitter la partie" title="Quitter la partie">↗</button></div></div><div class="battle-controls"><span class="match-time">Fin dans <strong id="match-timer">15:00</strong></span><button id="colors-button" class="control-button">Couleurs du château</button><button id="pause-button" class="control-button">Pause</button><button id="share-watch-button" class="control-button">Lien spectateur</button></div><section id="pause-panel" class="pause-panel" role="status" hidden><div><strong id="pause-title">Partie en pause</strong><p id="pause-status"></p></div><button id="resume-button" class="button primary">Notre équipe est prête à reprendre</button></section><nav class="mobile-shortcuts" aria-label="Navigation de partie"><button data-jump="question-card">${icon('book')} Le quiz</button><button data-jump="arsenal">${icon('shield')} L’arsenal</button><button id="mobile-pause">Pause</button></nav><div id="incoming-notice" class="incoming-notice" role="status" hidden></div><div id="opponent-status" class="opponent-status" role="status" hidden></div><div class="game-grid"><div class="battle-column">${battleContent(teams)}</div><aside class="arsenal" id="arsenal"><div class="section-heading"><div><p class="eyebrow">VOTRE STRATÉGIE COMMENCE ICI</p><h2>L’arsenal</h2></div><span class="arsenal-tip">À vous de choisir.</span></div><div class="arsenal-group-title"><span>PASSER À L’OFFENSIVE</span><i></i><span>04</span></div><div class="shop-grid">${state.items.filter(i => i.kind === 'attack').map(itemCard).join('')}</div><div class="arsenal-group-title defense-title"><span>PROTÉGER LE VILLAGE</span><i></i><span>03</span></div><div class="shop-grid defense-grid">${state.items.filter(i => i.kind === 'defense').map(itemCard).join('')}</div><p class="shop-help">Cadre rouge : verrouillée · orange : construction · vert : débloquée. Le prix affiché est celui de votre prochaine action.</p></aside></div><section class="battle-journal"><div class="section-heading"><h3>Le journal de bataille</h3><span>Les dernières nouvelles du front</span></div><ol id="events"></ol></section></section>`;
   $('#leave-button').onclick = showLeave;
+  $('#share-watch-button').onclick = () => copy(watchUrl());
   $('#pause-button').onclick = () => action('pause');
   $('#mobile-pause').onclick = () => action(state.paused ? 'resume' : 'pause');
   $('#resume-button').onclick = () => action('resume');
@@ -176,22 +203,47 @@ function playing() {
   app.querySelectorAll('[data-jump]').forEach(button => { button.onclick = () => document.getElementById(button.dataset.jump).scrollIntoView({ behavior: 'instant', block: 'start' }); });
   app.querySelectorAll('[data-item]').forEach(button => { button.onclick = () => { const item = state.items.find(i => i.id === button.dataset.item); action(item.kind === 'attack' && !myself().unlocks[item.id] ? 'unlock' : 'buy', { item: item.id }); }; });
 }
+function watchingLobby() {
+  app.innerHTML = `<section class="lobby spectator-lobby"><p class="eyebrow">DANS LES TRIBUNES · ${state.code}</p><h1>La bataille<br><em>se prépare.</em></h1><p id="watching-status" role="status"></p><img class="team-arena spectator-scene" src="/assets/arena.svg" alt="Les deux bastions de la partie"><div id="watching-teams" class="scoreboards"></div><p>Vous regardez cette partie sans occuper de place dans une équipe.</p><button class="button secondary light" id="watch-exit">Retour à l’accueil</button></section>`;
+  $('#watch-exit').onclick = reset;
+}
+function updateWatchingLobby() {
+  updateColors();
+  text('watching-status', state.status === 'briefing' ? 'Les équipes lisent les règles. Le jeu démarrera après leurs confirmations.' : state.teams.length < 2 ? 'Une équipe attend son adversaire. Vous assisterez au lancement en direct.' : 'Les équipes se préparent à lancer la bataille.');
+  html('watching-teams', state.teams.map(p => `<article class="scoreboard"><span class="eyebrow">BASTION ${colorOf(p).name.toUpperCase()}</span><h2>${escapeHtml(p.name)}</h2><p>${state.status === 'briefing' ? p.briefed ? '✓ Règles comprises' : 'Lecture des règles…' : p.ready ? '✓ Équipe prête' : 'En préparation…'}</p></article>`).join(''));
+}
+function watching() {
+  questionKey = '';
+  const teams = [...state.teams].sort((a, b) => a.id - b.id);
+  app.innerHTML = `<section class="game spectator-game"><div class="game-hud"><div class="round-info"><span class="eyebrow">VUE SPECTATEUR · ${state.code}</span><h2>Manche <span id="round-number">1</span></h2></div><div class="hud-right"><div class="round-countdown">${icon('clock')}<strong id="hud-timer">0:30</strong></div><button class="control-button" id="watch-exit">Quitter les tribunes</button></div></div><div class="battle-controls"><span class="match-time">Fin dans <strong id="match-timer">15:00</strong></span><span class="spectator-badge">En direct · lecture seule</span></div><section id="pause-panel" class="pause-panel" role="status" hidden><div><strong id="pause-title"></strong><p id="pause-status"></p></div></section><nav class="mobile-shortcuts" aria-label="Navigation spectateur"><button data-jump="battlefield">${icon('shield')} Bataille</button><button data-jump="question-card">${icon('book')} Quiz</button></nav><div id="incoming-notice" hidden></div><div id="opponent-status" class="opponent-status" role="status" hidden></div><div class="game-grid"><div class="battle-column">${battleContent(teams)}</div><aside class="spectator-summary"><p class="eyebrow">LES DEUX CAMPS</p><h2>Le suivi de la bataille</h2><div id="watch-scores"></div><p class="spectator-note">Les pièces et les commandes restent privées aux équipes. La solution du quiz apparaît après leurs deux réponses ou à la fin du temps.</p></aside></div><section class="battle-journal"><div class="section-heading"><h3>Le journal de bataille</h3><span>Les dernières nouvelles du front</span></div><ol id="events"></ol></section></section>`;
+  $('#watch-exit').onclick = reset;
+  app.querySelectorAll('[data-jump]').forEach(button => { button.onclick = () => document.getElementById(button.dataset.jump).scrollIntoView({ behavior: 'instant', block: 'start' }); });
+}
+function updateWatchScores() {
+  html('watch-scores', state.teams.map(p => `<article class="scoreboard"><span class="eyebrow">BASTION ${colorOf(p).name.toUpperCase()}</span><h3>${escapeHtml(p.name)}</h3><div class="score-row"><span>Points de vie</span><b>${p.hp} / ${state.rules.hp}</b></div><div class="score-row"><span>Bonnes réponses</span><b>${p.stats.correct}</b></div><div class="score-row"><span>Dégâts infligés</span><b>${p.stats.damage}</b></div><p>${p.answered ? '✓ Réponse enregistrée' : 'Réflexion en cours…'}</p></article>`).join(''));
+}
 function itemCard(item) {
-  return `<button class="item-card ${item.kind}" data-item="${item.id}" aria-label="${escapeHtml(item.name)}, ${item.cost} pièces. ${escapeHtml(item.description)}"><div class="item-top"><span class="item-art ${item.id}">${icon(item.icon)}</span><span class="item-cost">${item.cost} ${icon('coin')}</span></div><h3>${item.name}</h3><p>${item.description}</p>${item.kind === 'attack' ? '<span class="attack-state"></span><small class="price-step"></small>' : ''}<div class="item-buy"><span class="buy-label">${item.kind === 'attack' ? 'Lancer l’attaque' : 'Activer'}</span><span class="buy-arrow">↗</span></div></button>`;
+  return `<button class="item-card ${item.kind}" data-item="${item.id}" aria-label="${escapeHtml(item.name)}, ${item.cost} pièces. ${escapeHtml(item.description)}"><div class="item-top"><span class="item-art ${item.id}">${icon(item.icon)}</span><span class="item-cost">${item.cost} ${icon('coin')}</span></div><h3>${item.name}</h3><p>${item.description}</p>${item.kind === 'attack' ? '<span class="attack-state"></span>' : ''}<div class="item-buy"><span class="buy-label">${item.kind === 'attack' ? 'Lancer l’attaque' : 'Activer'}</span><span class="buy-arrow">↗</span></div></button>`;
 }
 function updateGame() {
   const me = myself(), enemy = opponent();
   updateColors();
   document.body.classList.toggle('battle-paused', state.paused);
   $('#pause-panel').hidden = !state.paused;
-  $('#pause-button').disabled = busy || state.paused;
-  $('#resume-button').disabled = busy || myself().resumeReady;
-  $('#mobile-pause').disabled = busy || (state.paused && myself().resumeReady);
-  text('mobile-pause', state.paused ? myself().resumeReady ? '✓ Attente' : 'Reprendre' : 'Pause');
-  text('pause-title', `Pause demandée par ${state.teams.find(p => p.id === state.pausedBy)?.name || 'une équipe'}`);
-  text('pause-status', myself().resumeReady ? 'Votre équipe est prête. En attente de l’autre camp…' : 'Questions, constructions, attaques et recharges sont figées. Les deux équipes doivent confirmer la reprise.');
-  text('resume-button', myself().resumeReady ? '✓ Prêts à reprendre' : 'Notre équipe est prête à reprendre');
-  text('round-number', state.round); text('coin-count', me.coins); text('phase-title', state.storm ? 'LA TEMPÊTE · RÉPARATIONS FERMÉES' : state.siege ? 'LE SIÈGE · ATTAQUES +50 %' : 'LA BATAILLE DES IDÉES');
+  if (!state.spectator) {
+    $('#pause-button').disabled = busy || state.paused;
+    $('#resume-button').disabled = busy || myself().resumeReady;
+    $('#mobile-pause').disabled = busy || (state.paused && myself().resumeReady);
+    text('mobile-pause', state.paused ? myself().resumeReady ? '✓ Attente' : 'Reprendre' : 'Pause');
+    text('pause-title', `Pause demandée par ${state.teams.find(p => p.id === state.pausedBy)?.name || 'une équipe'}`);
+    text('pause-status', myself().resumeReady ? 'Votre équipe est prête. En attente de l’autre camp…' : 'Questions, constructions, attaques et recharges sont figées. Les deux équipes doivent confirmer la reprise.');
+    text('resume-button', myself().resumeReady ? '✓ Prêts à reprendre' : 'Notre équipe est prête à reprendre');
+  } else {
+    text('pause-title', 'La partie est en pause');
+    text('pause-status', 'Les deux équipes doivent confirmer la reprise.');
+    updateWatchScores();
+  }
+  text('round-number', state.round); text('coin-count', me?.coins ?? ''); text('phase-title', state.storm ? 'LA TEMPÊTE · RÉPARATIONS FERMÉES' : state.siege ? 'LE SIÈGE · ATTAQUES +50 %' : 'LA BATAILLE DES IDÉES');
   text('battle-phase', state.storm ? 'TEMPÊTE : −8 PV / 10 SECONDES' : state.siege ? 'LE SIÈGE : LES ATTAQUES GAGNENT 50 % DE DÉGÂTS' : 'DÉBATTEZ. DÉCIDEZ. DÉFENDEZ.');
   for (const p of state.teams) {
     html(`hp-${p.id}`, `${p.hp}<small>/${state.rules.hp}</small>`); $(`#hpfill-${p.id}`).style.width = `${p.hp / state.rules.hp * 100}%`; $(`#hpbar-${p.id}`).setAttribute('aria-valuenow', p.hp); $(`#hpbar-${p.id}`).classList.toggle('low', p.hp <= state.rules.hp * .3);
@@ -203,16 +255,16 @@ function updateGame() {
     html('answers', state.question.options.map((answer, i) => `<button class="answer-option" data-choice="${i}"><span class="answer-letter">${'ABCD'[i]}</span><span>${escapeHtml(answer)}</span><span class="answer-mark"></span></button>`).join(''));
     app.querySelectorAll('[data-choice]').forEach(button => { button.onclick = () => action('answer', { round: state.round, choice: Number(button.dataset.choice) }); });
   }
-  text('opponent-answer', enemy.answered ? '✓ L’autre équipe a répondu' : 'L’autre équipe réfléchit…');
+  text('opponent-answer', state.spectator ? `${state.teams.filter(p => p.answered).length} / 2 équipes ont répondu` : enemy.answered ? '✓ L’autre équipe a répondu' : 'L’autre équipe réfléchit…');
   html('events', state.events.slice(0, 8).map(event => `<li class="event-${event.kind}"><span class="event-dot"></span><time>${formatTime(Math.max(0, event.at - state.startedAt))}</time><span>${escapeHtml(event.message)}</span></li>`).join(''));
   const projectiles = state.projectiles.map(p => { const item = state.items.find(i => i.id === p.item); return `<div class="projectile ${p.from ? 'from-right' : ''}" id="projectile-${p.id}" title="${escapeHtml(item.name)}">${icon(item.icon)}<small>${Math.max(0, Math.ceil((p.impactAt - now()) / 1000))} s</small></div>`; }).join('');
   html('projectiles', projectiles);
-  $('#opponent-status').hidden = enemy.online;
+  $('#opponent-status').hidden = state.spectator ? state.teams.every(p => p.online) : enemy.online;
   updateClock();
 }
 function formatTime(ms) { const secs = Math.max(0, Math.ceil(ms / 1000)); return `${Math.floor(secs / 60)}:${String(secs % 60).padStart(2, '0')}`; }
 function updateClock() {
-  if (!state || state.status !== 'playing' || view !== 'playing') return;
+  if (!state || state.status !== 'playing' || !['playing', 'watching'].includes(view)) return;
   const time = now(), me = myself(), enemy = opponent(), expired = state.answersClosed || time >= state.answerUntil;
   text('match-timer', formatTime(state.matchEndsAt - time));
   text('hud-timer', formatTime(state.nextRoundAt - time));
@@ -222,7 +274,7 @@ function updateClock() {
   $('#question-progress').style.width = `${Math.max(0, Math.min(100, (state.answerUntil - time) / state.rules.answerMs * 100))}%`;
   for (const button of app.querySelectorAll('[data-choice]')) {
     const choice = Number(button.dataset.choice), reveal = state.question.correct !== undefined;
-    button.disabled = busy || state.paused || !!state.answer || expired;
+    button.disabled = state.spectator || busy || state.paused || !!state.answer || expired;
     button.classList.toggle('correct', reveal && choice === state.question.correct);
     button.classList.toggle('incorrect', !!state.answer && !state.answer.correct && choice === state.answer.choice);
     button.classList.toggle('chosen', !!state.answer && choice === state.answer.choice);
@@ -231,7 +283,7 @@ function updateClock() {
   const feedback = $('#answer-feedback');
   feedback.classList.toggle('success', !!state.answer?.correct);
   feedback.classList.toggle('wrong', (!!state.answer && !state.answer.correct) || (expired && !state.answer));
-  const feedbackText = state.answer ? `${state.answer.correct ? `Bien joué ! +${state.answer.reward} pièces.` : 'Pas cette fois. Rien n’est perdu !'} ${state.question.explanation || ''}` : expired ? `Temps écoulé. ${state.question.explanation || 'La solution arrive…'}` : 'Une seule réponse par équipe. Prenez le temps d’en discuter.';
+  const feedbackText = state.spectator ? (state.question.explanation || 'La solution apparaît après les deux réponses ou à la fin du temps de réponse.') : state.answer ? `${state.answer.correct ? `Bien joué ! +${state.answer.reward} pièces.` : 'Pas cette fois. Rien n’est perdu !'} ${state.question.explanation || ''}` : expired ? `Temps écoulé. ${state.question.explanation || 'La solution arrive…'}` : 'Une seule réponse par équipe. Prenez le temps d’en discuter.';
   text('answer-feedback', feedbackText);
   for (const button of app.querySelectorAll('[data-item]')) {
     const item = state.items.find(i => i.id === button.dataset.item);
@@ -239,7 +291,7 @@ function updateClock() {
     const building = research && research.readyAt > time;
     const price = locked ? item.unlockCost : me.prices[item.id];
     const effect = item.kind === 'attack' && state.siege ? item.description.replace(`${item.damage} dégâts`, `${Math.round(item.damage * 1.5)} dégâts`) : item.description;
-    const description = locked ? `Déblocage unique · ${item.unlockMs / 1000} s de construction. Premier tir : ${item.cost} pièces ; puis +${item.costStep} par utilisation. ${effect}` : effect;
+    const description = effect;
     button.querySelector('p').textContent = description;
     button.setAttribute('aria-label', `${locked ? 'Débloquer' : 'Utiliser'} ${item.name}, ${price} pièces. ${description}`);
     const cost = button.querySelector('.item-cost');
@@ -262,7 +314,6 @@ function updateClock() {
     button.classList.toggle('unlocked', item.kind === 'attack' && !!research && !building);
     if (item.kind === 'attack') {
       button.querySelector('.attack-state').textContent = locked ? '🔒 Non débloquée' : building ? '◷ En construction' : '✓ Débloquée';
-      button.querySelector('.price-step').textContent = locked ? `Déblocage unique · +${item.costStep} pièces par tir successif` : `${me.purchases[item.id] || 0} tir(s) acheté(s) · prochain : ${price} pièces · +${item.costStep} ensuite`;
     }
   }
   for (const p of state.teams) {
@@ -277,7 +328,8 @@ function updateClock() {
   const incoming = state.projectiles.filter(p => p.to === state.me).sort((a, b) => a.impactAt - b.impactAt);
   $('#incoming-notice').hidden = !incoming.length;
   if (incoming.length) { const item = state.items.find(i => i.id === incoming[0].item); html('incoming-notice', `${icon(item.icon)} <b>${item.name} en approche</b><span>Impact dans ${Math.max(0, Math.ceil((incoming[0].impactAt - time) / 1000))} s · protégez votre village !</span>`); }
-  if (!enemy.online) text('opponent-status', `L’autre équipe se reconnecte… Forfait dans ${Math.max(0, Math.ceil((enemy.disconnectAt - time) / 1000))} s.`);
+  if (state.spectator && state.teams.some(p => !p.online)) text('opponent-status', `${state.teams.filter(p => !p.online).map(p => p.name).join(', ')} : reconnexion en cours.`);
+  else if (!enemy.online) text('opponent-status', `L’autre équipe se reconnecte… Forfait dans ${Math.max(0, Math.ceil((enemy.disconnectAt - time) / 1000))} s.`);
   for (const p of state.projectiles) {
     const node = document.getElementById(`projectile-${p.id}`); if (!node) continue;
     const progress = Math.max(0, Math.min(1, (time - p.launchAt) / (p.impactAt - p.launchAt)));
@@ -289,28 +341,32 @@ function updateClock() {
 function finished() {
   const won = state.winner === state.me, tie = state.winner === null;
   const winningTeam = state.teams.find(p => p.id === state.winner);
-  app.innerHTML = `<section class="results"><p class="eyebrow">LA BATAILLE EST TERMINÉE</p><div class="victory-icon ${won ? '' : 'coral-victory'}">${icon(tie ? 'shield' : 'crown')}</div><h1>${tie ? 'Deux bastions.<br><em>Une égalité.</em>' : won ? 'La victoire<br><em>est collective.</em>' : 'Bien joué.<br><em>La revanche ?</em>'}</h1><p>${tie ? state.endReason === 'time' ? 'Dix minutes écoulées : les deux bastions ont autant de points de vie.' : 'Les deux villages sont tombés en même temps.' : `<strong>${escapeHtml(winningTeam.name)}</strong> remporte la bataille.`} ${state.endReason === 'time' ? (tie ? 'Aucune équipe ne l’emporte.' : 'Victoire au plus grand nombre de points de vie restants après dix minutes de jeu effectif.') : state.endReason === 'disconnect' ? 'L’autre équipe est restée déconnectée plus de 90 secondes.' : state.endReason === 'forfeit' ? 'L’adversaire a quitté la partie.' : 'Chaque idée a compté.'}</p><div class="result-meta"><span>${icon('clock')} ${formatTime(state.finishedAt - state.startedAt)}</span><span>${icon('book')} ${state.round} manche${state.round > 1 ? 's' : ''}</span></div><div class="scoreboards">${state.teams.map(p => `<article class="scoreboard ${p.id === state.winner ? 'winner' : ''}"><span class="eyebrow">${p.id === state.me ? 'VOTRE ÉQUIPE' : 'ÉQUIPE ADVERSE'} ${p.id === state.winner ? '· VICTOIRE' : ''}</span><h2>${escapeHtml(p.name)}</h2><div class="score-row"><span>Bonnes réponses</span><b>${p.stats.correct} / ${state.round}</b></div><div class="score-row"><span>Dégâts aux villages</span><b>${p.stats.damage}</b></div><div class="score-row"><span>Pièces investies</span><b>${p.stats.spent}</b></div><div class="score-row"><span>PV restants</span><b>${p.hp} / ${state.rules.hp}</b></div></article>`).join('')}</div><div class="debrief"><span>${icon('people')}</span><div><h3>Deux minutes pour faire équipe.</h3><p>Qu’est-ce qui vous a aidés à décider ensemble ?<br>Quelle idée d’un coéquipier a changé votre stratégie ?</p></div></div><div class="result-buttons"><button class="button primary" id="rematch-button">On prend notre revanche →</button><button class="button secondary light" id="home-button">Retour à l’accueil</button></div><p id="rematch-status" class="muted center" aria-live="polite"></p></section>`;
-  $('#rematch-button').onclick = () => action('rematch'); $('#home-button').onclick = reset;
+  app.innerHTML = `<section class="results"><p class="eyebrow">LA BATAILLE EST TERMINÉE</p><div class="victory-icon ${won ? '' : 'coral-victory'}">${icon(tie ? 'shield' : 'crown')}</div><h1>${tie ? 'Deux bastions.<br><em>Une égalité.</em>' : state.spectator ? 'La bataille<br><em>a son verdict.</em>' : won ? 'La victoire<br><em>est collective.</em>' : 'Bien joué.<br><em>La revanche ?</em>'}</h1><p>${tie ? state.endReason === 'time' ? 'Quinze minutes écoulées : les deux bastions ont autant de points de vie.' : 'Les deux villages sont tombés en même temps.' : `<strong>${escapeHtml(winningTeam.name)}</strong> remporte la bataille.`} ${state.endReason === 'time' ? (tie ? 'Aucune équipe ne l’emporte.' : 'Victoire au plus grand nombre de points de vie restants après quinze minutes de jeu effectif.') : state.endReason === 'disconnect' ? 'L’autre équipe est restée déconnectée plus de 90 secondes.' : state.endReason === 'forfeit' ? 'L’adversaire a quitté la partie.' : 'Chaque idée a compté.'}</p><div class="result-meta"><span>${icon('clock')} ${formatTime(state.finishedAt - state.startedAt)}</span><span>${icon('book')} ${state.round} manche${state.round > 1 ? 's' : ''}</span></div><div class="scoreboards">${state.teams.map(p => `<article class="scoreboard ${p.id === state.winner ? 'winner' : ''}"><span class="eyebrow">${state.spectator ? `ÉQUIPE ${p.id === 0 ? 'A' : 'B'}` : p.id === state.me ? 'VOTRE ÉQUIPE' : 'ÉQUIPE ADVERSE'} ${p.id === state.winner ? '· VICTOIRE' : ''}</span><h2>${escapeHtml(p.name)}</h2><div class="score-row"><span>Bonnes réponses</span><b>${p.stats.correct} / ${state.round}</b></div><div class="score-row"><span>Dégâts aux villages</span><b>${p.stats.damage}</b></div><div class="score-row"><span>Pièces investies</span><b>${p.stats.spent}</b></div><div class="score-row"><span>PV restants</span><b>${p.hp} / ${state.rules.hp}</b></div></article>`).join('')}</div><div class="debrief"><span>${icon('people')}</span><div><h3>Deux minutes pour faire équipe.</h3><p>Qu’est-ce qui vous a aidés à décider ensemble ?<br>Quelle idée d’un coéquipier a changé votre stratégie ?</p></div></div><div class="result-buttons">${state.spectator ? '' : '<button class="button primary" id="rematch-button">On prend notre revanche →</button>'}<button class="button secondary light" id="home-button">Retour à l’accueil</button></div><p id="rematch-status" class="muted center" aria-live="polite"></p></section>`;
+  if ($('#rematch-button')) $('#rematch-button').onclick = () => action('rematch'); $('#home-button').onclick = reset;
 }
 function showLeave() { $('#leave-description').textContent = state.status === 'playing' ? 'Quitter une partie en cours donne la victoire à l’autre équipe.' : 'Votre place sera libérée pour une autre équipe.'; $('#leave-dialog').showModal(); }
 function render() {
-  const nextView = state?.status || (session ? 'loading' : 'landing');
+  const nextView = state?.spectator ? (state.status === 'playing' ? 'watching' : state.status === 'finished' ? 'watching-finished' : 'watching-lobby') : state?.status || (session ? 'loading' : 'landing');
   if (view !== nextView) {
-    view = nextView; document.body.dataset.view = view;
+    view = nextView; document.body.dataset.view = state?.status === 'playing' ? 'playing' : view; document.body.dataset.role = state?.spectator ? 'spectator' : 'player';
     if (view !== 'briefing' && $('#briefing-dialog').open) $('#briefing-dialog').close();
     if (view !== 'playing') { document.body.classList.remove('battle-paused'); $('#colors-dialog').close(); clearTimeout(rewardTimeout); $('#reward-burst').hidden = true; }
     if (view === 'landing') landing();
     else if (view === 'waiting') waiting();
     else if (view === 'briefing') briefing();
     else if (view === 'playing') playing();
-    else if (view === 'finished') finished();
+    else if (view === 'finished' || view === 'watching-finished') finished();
+    else if (view === 'watching-lobby') watchingLobby();
+    else if (view === 'watching') watching();
     else app.innerHTML = '<section class="loading"><span class="loading-spinner"></span><h2>Retour au camp…</h2><p>Connexion à votre partie en cours.</p><button class="button secondary light" id="cancel-resume">Revenir à l’accueil</button></section>';
     if ($('#cancel-resume')) $('#cancel-resume').onclick = reset;
     window.scrollTo({ top: 0, behavior: 'instant' });
   }
   if (view === 'waiting') updateWaiting();
   if (view === 'briefing') updateBriefing();
-  if (view === 'playing') updateGame();
+  if (view === 'playing' || view === 'watching') updateGame();
+  if (view === 'watching-lobby') updateWatchingLobby();
+  if (view === 'watching-finished') text('rematch-status', 'Vous restez spectateur si les équipes lancent une revanche.');
   if (view === 'finished') { $('#rematch-button').disabled = busy || myself().rematch; text('rematch-button', myself().rematch ? '✓ Prêts pour la revanche' : 'On prend notre revanche →'); text('rematch-status', myself().rematch ? 'En attente de l’autre équipe…' : opponent().rematch ? 'L’autre équipe vous propose une revanche !' : 'La revanche démarre lorsque les deux équipes acceptent.'); }
 }
 $('#rules-button').onclick = () => $('#rules-dialog').showModal();
@@ -320,10 +376,12 @@ $('#briefing-dialog').addEventListener('cancel', event => event.preventDefault()
 document.querySelectorAll('dialog:not(#briefing-dialog)').forEach(dialog => { dialog.addEventListener('click', event => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } }); });
 $('#confirm-leave').onclick = () => { $('#leave-dialog').close(); action('leave'); };
 $('#sound-button').onclick = () => { sound = !sound; $('#sound-button').innerHTML = `♪ <span>${sound ? 'On' : 'Off'}</span>`; $('#sound-button').setAttribute('aria-label', sound ? 'Désactiver les sons' : 'Activer les sons'); beep(); };
+if (watched) saveSession(session);
 render(); if (session) poll();
-function refreshNetwork() { api('/api/network').then(result => { networkAddresses = result.addresses; networkPublicUrl = result.publicUrl || null; const link = $('#network-link'); if (link) { link.textContent = baseUrl(); link.href = baseUrl(); } const share = $('#share-address'); if (share && state) { share.textContent = `${baseUrl()}/?code=${state.code}`; share.href = share.textContent; } }).catch(() => {}); }
+function refreshNetwork() { api('/api/network').then(result => { networkAddresses = result.addresses; networkPublicUrl = result.publicUrl || null; const link = $('#network-link'); if (link) { link.textContent = baseUrl(); link.href = baseUrl(); } const share = $('#share-address'); if (share && state) { share.textContent = `${baseUrl()}/?code=${state.code}`; share.href = share.textContent; } const watch = $('#spectator-link'); if (watch && state) watch.href = watchUrl(); }).catch(() => {}); }
 refreshNetwork();
 setInterval(() => { if (['landing', 'waiting', 'briefing'].includes(view)) refreshNetwork(); }, 10000);
-setInterval(poll, 800); setInterval(updateClock, 200);
+setInterval(() => { if (!session?.spectator) poll(); }, 800);
+setInterval(() => { if (session?.spectator) poll(); }, 2000); setInterval(updateClock, 200);
 document.addEventListener('visibilitychange', () => { if (!document.hidden) poll(); });
 window.addEventListener('online', poll);

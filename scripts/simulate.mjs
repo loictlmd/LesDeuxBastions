@@ -11,7 +11,7 @@ function match(strategies, skill, responseMs = 10000) {
   game.action(a.code, a.token, { type: 'start' });
   for (const p of [a, b]) game.action(p.code, p.token, { type: 'briefed' });
   const room = game.room(a.code), started = time;
-  for (let step = 0; step < 1300 && room.status === 'playing'; step++) {
+  for (let step = 0; step < Math.ceil(RULES.matchMs / 500) + 2 && room.status === 'playing'; step++) {
     time += 500;
     room.teams.forEach(p => { p.lastSeen = time; p.lastActiveAt = time; });
     game.tickAll();
