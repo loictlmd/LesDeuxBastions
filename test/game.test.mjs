@@ -15,7 +15,7 @@ function setup({ unlocked = true } = {}) {
   if (unlocked) for (const p of room.teams) for (const item of ITEMS.filter(i => i.kind === 'attack')) p.unlocks[item.id] = { startedAt: clock - item.unlockMs, readyAt: clock };
   return { service, a, b, room, act, advance(ms, connected = true) { clock += ms; if (connected) room.teams.forEach(p => { p.lastSeen = clock; p.lastActiveAt = service.gameNow(room); }); service.tickAll(); }, get time() { return clock; } };
 }
-test('500 questions, four distinct options and a valid solution', () => { assert.equal(QUESTIONS.length, 500); for (const q of QUESTIONS) { assert.equal(q.options.length, 4); assert.equal(new Set(q.options).size, 4); assert.ok(q.correct >= 0 && q.correct < 4); assert.ok(q.explanation); } });
+test('1500 questions, four distinct options and a valid solution', () => { assert.equal(QUESTIONS.length, 1500); for (const q of QUESTIONS) { assert.equal(q.options.length, 4); assert.equal(new Set(q.options).size, 4); assert.ok(q.correct >= 0 && q.correct < 4); assert.ok(q.explanation); } });
 test('two authenticated teams, shared question, no early answer or token leaks', () => {
   const { service, a, b } = setup();
   assert.throws(() => service.state(a.code, 'wrong'), /accès/);
@@ -107,7 +107,7 @@ test('waiting host can leave, then a new team can join and the remaining team ho
   service.action(a.code, a.token, { type: 'leave' }); const c = service.join(a.code, 'Équipe C');
   const state = service.state(c.code, c.token); assert.equal(state.host, 1); assert.equal(state.me, 0); assert.equal(state.teams.length, 2);
 });
-test('500 rounds never repeat a question within the shuffled deck', () => {
+test('1500 rounds never repeat a question within the shuffled deck', () => {
   const s = setup(), ids = new Set(); s.room.deck = [];
   for (let i = 0; i < QUESTIONS.length; i++) { s.service.newQuestion(s.room); ids.add(s.room.question.id); }
   assert.equal(ids.size, QUESTIONS.length);
@@ -216,10 +216,10 @@ test('research and defense share the purchase cooldown', () => {
   assert.equal(s.room.teams[0].coins, 72); assert.equal(s.room.teams[0].shield, 18);
 });
 test('the question bank has unique prompts and eight balanced categories', () => {
-  assert.equal(new Set(QUESTIONS.map(q => q.text)).size, 500);
-  assert.equal(new Set(QUESTIONS.map(q => q.id)).size, 500);
+  assert.equal(new Set(QUESTIONS.map(q => q.text)).size, 1500);
+  assert.equal(new Set(QUESTIONS.map(q => q.id)).size, 1500);
   const counts = QUESTIONS.reduce((groups, q) => { (groups[q.category] ||= []).push(q); return groups; }, {});
-  assert.equal(Object.keys(counts).length, 8); assert.ok(Object.values(counts).every(qs => qs.length >= 62 && qs.length <= 63));
+  assert.equal(Object.keys(counts).length, 8); assert.ok(Object.values(counts).every(qs => qs.length >= 187 && qs.length <= 188));
 });
 
 test('repeated shots get more expensive per attack and per team, failed purchases do not increase price', () => {

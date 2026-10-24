@@ -1,6 +1,8 @@
+import { CAPITALS } from './capitals.mjs';
+import { PAIR_INDEXES } from './questions.mjs';
 // English versions keyed by the stable French question ID. Option order is identical.
 // Server only: explanations are never sent before the answer is revealed.
-export const ENGLISH_QUESTIONS = {
+const originalEnglish = {
   "1": {
     "text": "Which strait separates Europe from Africa between Spain and Morocco?",
     "options": [
@@ -5002,3 +5004,21 @@ export const ENGLISH_QUESTIONS = {
     "explanation": "The Gulf Stream carries warm water towards the North Atlantic."
   }
 };
+
+const additionalCapitals = Object.fromEntries(CAPITALS.map(([ , country, , city, region], index) => {
+  const peers = CAPITALS.filter((fact, i) => i !== index && fact[4] === region);
+  const choices = peers.length >= 3 ? peers : CAPITALS.filter((_, i) => i !== index);
+  const offsets = [0, Math.floor(choices.length / 3), Math.floor(2 * choices.length / 3)];
+  return [501 + index, { text: `Which of these cities is the capital of ${country}?`,
+    options: [city, ...offsets.map(offset => choices[(index + offset) % choices.length][3])],
+    explanation: `${city} is the capital of ${country}.` }];
+}));
+const additionalPairs = Object.fromEntries(PAIR_INDEXES.map(([first, second], index) => {
+  const a = originalEnglish[first + 1], b = originalEnglish[second + 1];
+  // The original bank stores its correct answer at index zero before shuffling.
+  const answerA = a.options[0], answerB = b.options[0], wrongA = a.options[1], wrongB = b.options[1];
+  return [626 + index, { text: `Two questions: 1) ${a.text} 2) ${b.text} Which answers go together, in that order?`,
+    options: [`1) ${answerA} · 2) ${answerB}`, `1) ${answerA} · 2) ${wrongB}`, `1) ${wrongA} · 2) ${answerB}`, `1) ${wrongA} · 2) ${wrongB}`],
+    explanation: `1) ${a.explanation} 2) ${b.explanation}` }];
+}));
+export const ENGLISH_QUESTIONS = { ...originalEnglish, ...additionalCapitals, ...additionalPairs };

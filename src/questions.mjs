@@ -1,3 +1,4 @@
+import { CAPITALS } from './capitals.mjs';
 // Banque de 500 questions intermédiaires et difficiles, réservée au serveur.
 // Les questions et les propositions sont mélangées par le moteur à chaque partie.
 const bank = [
@@ -502,4 +503,31 @@ const bank = [
   ["Nature & astronomie", "Dans le cycle de l’eau, comment se nomme le passage de vapeur d’eau en gouttelettes ?", ["La condensation", "L’évaporation", "La fusion", "L’infiltration"], 0, "La condensation forme des gouttelettes liquides à partir de vapeur."],
   ["Nature & astronomie", "Quel courant océanique chaud longe la côte est des États-Unis avant de traverser l’Atlantique Nord ?", ["Le Gulf Stream", "Le courant de Humboldt", "Le courant de Benguela", "Le courant du Labrador"], 0, "Le Gulf Stream transporte de l’eau chaude vers l’Atlantique Nord."]
 ];
-export const QUESTIONS = bank.map(([category, text, options, correct, explanation], i) => ({ id: i + 1, category, text, options, correct, explanation }));
+const original = bank.map(([category, text, options, correct, explanation], i) => ({ id: i + 1, category, text, options, correct, explanation }));
+const capitals = CAPITALS.map(([country, , city, , region], index) => {
+  const peers = CAPITALS.filter((fact, i) => i !== index && fact[4] === region);
+  const choices = peers.length >= 3 ? peers : CAPITALS.filter((_, i) => i !== index);
+  const offsets = [0, Math.floor(choices.length / 3), Math.floor(2 * choices.length / 3)];
+  const options = [city, ...offsets.map(offset => choices[(index + offset) % choices.length][2])];
+  return { id: 501 + index, category: 'Géographie', text: `Quelle ville est la capitale du pays « ${country} » ?`, options, correct: 0, explanation: `${city} est la capitale de ${country}.` };
+});
+const pairIndexes = [];
+for (const category of [...new Set(original.map(question => question.category))].filter(category => category !== 'Géographie')) {
+  const indices = original.map((question, index) => question.category === category ? index : -1).filter(index => index !== -1);
+  for (let number = 0; number < 125; number++) {
+    const first = number % indices.length;
+    const shift = Math.floor(number / indices.length) + 1;
+    pairIndexes.push([indices[first], indices[(first + shift) % indices.length]]);
+  }
+}
+export const PAIR_INDEXES = pairIndexes;
+const paired = pairIndexes.map(([first, second], index) => {
+  const a = original[first], b = original[second];
+  const answerA = a.options[a.correct], answerB = b.options[b.correct];
+  const wrongA = a.options[(a.correct + 1) % 4], wrongB = b.options[(b.correct + 1) % 4];
+  return { id: 626 + index, category: a.category,
+    text: `Deux questions : 1) ${a.text} 2) ${b.text} Quelles réponses vont ensemble, dans cet ordre ?`,
+    options: [`1) ${answerA} · 2) ${answerB}`, `1) ${answerA} · 2) ${wrongB}`, `1) ${wrongA} · 2) ${answerB}`, `1) ${wrongA} · 2) ${wrongB}`],
+    correct: 0, explanation: `1) ${a.explanation} 2) ${b.explanation}` };
+});
+export const QUESTIONS = [...original, ...capitals, ...paired];
