@@ -348,6 +348,26 @@ function finished() {
   if ($('#rematch-button')) $('#rematch-button').onclick = () => action('rematch'); $('#home-button').onclick = reset;
 }
 function showLeave() { $('#leave-description').textContent = state.status === 'playing' ? t('Quitter une partie en cours donne la victoire à l’autre équipe.') : t('Votre place sera libérée pour une autre équipe.'); $('#leave-dialog').showModal(); }
+let stickyHud = null, stickyPause = null;
+const stickyObserver = new ResizeObserver(updateStickyOffsets);
+function updateStickyOffsets() {
+  if (!stickyHud?.isConnected) return;
+  const game = stickyHud.closest('.game');
+  const hudBottom = (parseFloat(getComputedStyle(stickyHud).top) || 0) + stickyHud.getBoundingClientRect().height + 10;
+  const pauseHeight = stickyPause && !stickyPause.hidden ? stickyPause.getBoundingClientRect().height + 10 : 0;
+  game.style.setProperty('--hud-bottom', `${hudBottom}px`);
+  game.style.setProperty('--sticky-stack-bottom', `${hudBottom + pauseHeight}px`);
+}
+function observeStickyPanels() {
+  const hud = $('.game-hud'), pause = $('#pause-panel');
+  if (hud !== stickyHud || pause !== stickyPause) {
+    stickyObserver.disconnect(); stickyHud = hud; stickyPause = pause;
+    if (hud) stickyObserver.observe(hud);
+    if (pause) stickyObserver.observe(pause);
+  }
+  updateStickyOffsets();
+}
+window.addEventListener('resize', updateStickyOffsets);
 function render() {
   const nextView = state?.spectator ? (state.status === 'playing' ? 'watching' : state.status === 'finished' ? 'watching-finished' : 'watching-lobby') : state?.status || (session ? 'loading' : 'landing');
   if (view !== nextView) {
@@ -368,6 +388,7 @@ function render() {
   if (view === 'waiting') updateWaiting();
   if (view === 'briefing') updateBriefing();
   if (view === 'playing' || view === 'watching') updateGame();
+  observeStickyPanels();
   if (view === 'watching-lobby') updateWatchingLobby();
   if (view === 'watching-finished') text('rematch-status', t('Vous restez spectateur si les équipes lancent une revanche.'));
   if (view === 'finished') { $('#rematch-button').disabled = busy || myself().rematch; text('rematch-button', myself().rematch ? t('✓ Prêts pour la revanche') : t('On prend notre revanche →')); text('rematch-status', myself().rematch ? t('En attente de l’autre équipe…') : opponent().rematch ? t('L’autre équipe vous propose une revanche !') : t('La revanche démarre lorsque les deux équipes acceptent.')); }

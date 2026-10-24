@@ -61,3 +61,8 @@ body{font-size:16px}.hero-description{font-size:17px}.hero-meta span{font-size:1
  .battle-actions .icon{width:24px;height:24px}
  #question-card,#arsenal,#battlefield{scroll-margin-top:140px}
 }
+
+/* Empiler les messages sous la hauteur réelle du bandeau, même après traduction. */
+.game .pause-panel{top:var(--hud-bottom,140px)}
+.game .incoming-notice{top:var(--sticky-stack-bottom,140px)}
+.game #question-card,.game #arsenal,.game #battlefield{scroll-margin-top:calc(var(--sticky-stack-bottom,140px) + 12px)}
