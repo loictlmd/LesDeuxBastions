@@ -5,10 +5,10 @@ import { ENGLISH_QUESTIONS } from '../src/questions-en.mjs';
 import { GameService } from '../src/game.mjs';
 import { bilingual, translate } from '../public/translate.js';
 
-test('all 1500 questions have English prompts, four corresponding choices and explanations', () => {
-  assert.equal(Object.keys(ENGLISH_QUESTIONS).length, 1500);
-  assert.equal(new Set(Object.values(ENGLISH_QUESTIONS).map(q => q.text.trim().toLowerCase())).size, 1500);
-  assert.deepEqual(QUESTIONS.map(q => q.id), Array.from({ length: 1500 }, (_, i) => i + 1));
+test('all 2000 questions have English prompts, four corresponding choices and explanations', () => {
+  assert.equal(Object.keys(ENGLISH_QUESTIONS).length, 2000);
+  assert.equal(new Set(Object.values(ENGLISH_QUESTIONS).map(q => q.text.trim().toLowerCase())).size, 2000);
+  assert.deepEqual(QUESTIONS.map(q => q.id), Array.from({ length: 2000 }, (_, i) => i + 1));
   for (const source of QUESTIONS) {
     const english = ENGLISH_QUESTIONS[source.id];
     assert.ok(english.text && english.explanation, `Question ${source.id}`);
@@ -45,4 +45,14 @@ test('translation preserves user names and translates event fragments without al
   assert.equal(translate('Vous n’avez pas assez de pièces.'), 'You do not have enough coins.');
   const service = new GameService(); const a = service.create(name);
   assert.equal(service.watch(a.code).events[0].messageEn, 'Les règles opened the camp.');
+});
+
+test('all questions ask one question and never combine two answer sets', () => {
+  for (const source of QUESTIONS) {
+    for (const question of [source, ENGLISH_QUESTIONS[source.id]]) {
+      assert.ok((question.text.match(/\?/g) || []).length <= 1, `Multiple prompts: ${source.id}`);
+      assert.doesNotMatch(question.text, /Deux questions|Two questions|1\).*2\)/, `Combined prompt: ${source.id}`);
+      for (const option of question.options) assert.doesNotMatch(option, /1\).*2\)/, `Combined answers: ${source.id}`);
+    }
+  }
 });

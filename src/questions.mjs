@@ -1,3 +1,4 @@
+import { EXTRA_QUESTIONS } from './questions-extra.mjs';
 import { CAPITALS } from './capitals.mjs';
 // Banque de 500 questions intermédiaires et difficiles, réservée au serveur.
 // Les questions et les propositions sont mélangées par le moteur à chaque partie.
@@ -511,23 +512,4 @@ const capitals = CAPITALS.map(([country, , city, , region], index) => {
   const options = [city, ...offsets.map(offset => choices[(index + offset) % choices.length][2])];
   return { id: 501 + index, category: 'Géographie', text: `Quelle ville est la capitale du pays « ${country} » ?`, options, correct: 0, explanation: `${city} est la capitale de ${country}.` };
 });
-const pairIndexes = [];
-for (const category of [...new Set(original.map(question => question.category))].filter(category => category !== 'Géographie')) {
-  const indices = original.map((question, index) => question.category === category ? index : -1).filter(index => index !== -1);
-  for (let number = 0; number < 125; number++) {
-    const first = number % indices.length;
-    const shift = Math.floor(number / indices.length) + 1;
-    pairIndexes.push([indices[first], indices[(first + shift) % indices.length]]);
-  }
-}
-export const PAIR_INDEXES = pairIndexes;
-const paired = pairIndexes.map(([first, second], index) => {
-  const a = original[first], b = original[second];
-  const answerA = a.options[a.correct], answerB = b.options[b.correct];
-  const wrongA = a.options[(a.correct + 1) % 4], wrongB = b.options[(b.correct + 1) % 4];
-  return { id: 626 + index, category: a.category,
-    text: `Deux questions : 1) ${a.text} 2) ${b.text} Quelles réponses vont ensemble, dans cet ordre ?`,
-    options: [`1) ${answerA} · 2) ${answerB}`, `1) ${answerA} · 2) ${wrongB}`, `1) ${wrongA} · 2) ${answerB}`, `1) ${wrongA} · 2) ${wrongB}`],
-    correct: 0, explanation: `1) ${a.explanation} 2) ${b.explanation}` };
-});
-export const QUESTIONS = [...original, ...capitals, ...paired];
+export const QUESTIONS = [...original, ...capitals, ...EXTRA_QUESTIONS.map(({ id, category, fr, correct }) => ({ id, category, ...fr, correct }))];

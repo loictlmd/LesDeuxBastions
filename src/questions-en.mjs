@@ -1,5 +1,5 @@
 import { CAPITALS } from './capitals.mjs';
-import { PAIR_INDEXES } from './questions.mjs';
+import { EXTRA_QUESTIONS } from './questions-extra.mjs';
 // English versions keyed by the stable French question ID. Option order is identical.
 // Server only: explanations are never sent before the answer is revealed.
 const originalEnglish = {
@@ -5013,12 +5013,4 @@ const additionalCapitals = Object.fromEntries(CAPITALS.map(([ , country, , city,
     options: [city, ...offsets.map(offset => choices[(index + offset) % choices.length][3])],
     explanation: `${city} is the capital of ${country}.` }];
 }));
-const additionalPairs = Object.fromEntries(PAIR_INDEXES.map(([first, second], index) => {
-  const a = originalEnglish[first + 1], b = originalEnglish[second + 1];
-  // The original bank stores its correct answer at index zero before shuffling.
-  const answerA = a.options[0], answerB = b.options[0], wrongA = a.options[1], wrongB = b.options[1];
-  return [626 + index, { text: `Two questions: 1) ${a.text} 2) ${b.text} Which answers go together, in that order?`,
-    options: [`1) ${answerA} · 2) ${answerB}`, `1) ${answerA} · 2) ${wrongB}`, `1) ${wrongA} · 2) ${answerB}`, `1) ${wrongA} · 2) ${wrongB}`],
-    explanation: `1) ${a.explanation} 2) ${b.explanation}` }];
-}));
-export const ENGLISH_QUESTIONS = { ...originalEnglish, ...additionalCapitals, ...additionalPairs };
+export const ENGLISH_QUESTIONS = { ...originalEnglish, ...additionalCapitals, ...Object.fromEntries(EXTRA_QUESTIONS.map(({ id, en }) => [id, en])) };
