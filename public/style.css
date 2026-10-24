@@ -33,3 +33,31 @@ body{font-size:16px}.hero-description{font-size:17px}.hero-meta span{font-size:1
 @media(max-width:760px){.game-hud{padding:18px 17px;margin-top:18px;border-radius:17px;gap:10px}.game-hud h2{font-size:23px}.game-hud .eyebrow{font-size:9px;letter-spacing:1px}.game-hud .round-countdown strong{font-size:21px}.game-hud .hud-right{gap:9px}.game-hud .wallet{padding:9px}.game-grid,.spectator-game .game-grid{gap:20px}.arsenal{padding:17px 12px;border-radius:17px}.arsenal .shop-grid,.arsenal .defense-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.arsenal .defense-grid .item-card:last-child{padding:16px 12px 0;grid-column:1/-1}.arsenal .defense-grid .item-card:last-child .item-top{display:flex}.spectator-summary #watch-scores{grid-template-columns:1fr;gap:12px}.header-right{gap:10px}.language-toggle{padding:8px;font-size:11px;gap:5px}.site-header .brand{gap:7px}.site-header .brand img{width:36px;height:36px}.site-header .brand strong{font-size:13px}.site-header .brand{font-size:9px;letter-spacing:1px}.header-right .text-button{font-size:12px}.header-right .text-button span{display:none}.sound-toggle{padding:7px}.sound-toggle span{display:none}.question-card{padding:20px}.game-hud .game-code{display:none}}
 
 .arsenal .defense-grid .item-card:last-child .item-top{flex-direction:row;justify-content:space-between;margin:0 0 12px;gap:10px}.arsenal .defense-grid .item-card:last-child h3{align-self:stretch;text-align:left}.arsenal .defense-grid .item-card:last-child p{text-align:left;margin-bottom:14px}.arsenal .defense-grid .item-card:last-child .item-buy{align-self:stretch;justify-content:space-between;text-align:left}.arsenal .defense-grid .item-card:last-child .item-cost{font-size:18px}
+
+/* Le solde reste visible pendant le défilement du quiz et de l’arsenal. */
+.game-hud{position:sticky;top:8px;z-index:20;box-shadow:0 8px 25px #061b2166}
+.game-hud .leave-game-button{display:inline-flex;align-items:center;justify-content:center;gap:8px;width:auto;min-height:42px;height:auto;padding:9px 12px;font-size:13px;color:#e4ecdf;background:#ffffff08;border-color:#a9c1b640;white-space:nowrap}
+.leave-game-button:hover{background:#ffffff15;border-color:#d7b59c}
+.battle-controls{justify-content:space-between;gap:16px}
+.battle-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.battle-actions .control-button{display:flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:10px 16px;border:1px solid #a2c8b34d;border-radius:13px;background:linear-gradient(145deg,#2d5049,#203d3f);box-shadow:0 3px 8px #071e2426;color:#e3eddd;font-weight:600;transition:background .15s,border-color .15s,transform .15s}
+.battle-actions .icon{width:22px;height:22px;flex-shrink:0;color:#b5dec2}
+.battle-actions #pause-button .icon{color:#f0d291}
+.battle-actions #share-watch-button .icon{color:#a7cfe4}
+.battle-actions .control-button:hover:not(:disabled){background:#345b50;border-color:#add9ba;transform:translateY(-1px)}
+.battle-actions .control-button:focus-visible,.leave-game-button:focus-visible{outline:2px solid #f0d291;outline-offset:3px}
+#question-card,#arsenal,#battlefield{scroll-margin-top:130px}
+@media(max-width:760px){
+ .game-hud{top:6px;display:grid;grid-template-columns:minmax(0,1fr);gap:10px;padding:12px 14px}
+ .game-hud .round-info{display:flex;align-items:center;justify-content:space-between;gap:12px}
+ .game-hud .round-info .eyebrow{margin:0;max-width:55%;font-size:8px}
+ .game-hud h2{font-size:20px;white-space:nowrap}
+ .game-hud .hud-right{width:100%;justify-content:space-between;gap:8px}
+ .game-hud .wallet{padding:7px 12px;min-width:85px;justify-content:center}
+ .game-hud .leave-game-button{padding:8px 10px;min-height:40px;font-size:12px}
+ .battle-controls{display:grid;grid-template-columns:minmax(0,1fr);gap:10px}
+ .battle-actions{width:100%;gap:8px}
+ .battle-actions .control-button{flex-direction:column;gap:6px;padding:10px 5px;min-width:0;min-height:68px;font-size:12px;line-height:1.2}
+ .battle-actions .icon{width:24px;height:24px}
+ #question-card,#arsenal,#battlefield{scroll-margin-top:140px}
+}

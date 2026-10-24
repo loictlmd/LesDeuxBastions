@@ -1,5 +1,8 @@
 // English interface and server-message catalogue. Game questions stay on the server.
 export const messages = {
+  "Quitter": "Leave",
+  "Couleurs": "Colours",
+  "Spectateur": "Spectator",
   "Le projet ↗": "The project ↗",
   "LES DEUX BASTIONS · V1": "LES DEUX BASTIONS · V1",
   "Une bataille à partager": "A battle to share",
