@@ -1,3 +1,4 @@
+import { MORE_QUESTIONS } from './questions-more.mjs';
 import { CAPITALS } from './capitals.mjs';
 import { EXTRA_QUESTIONS } from './questions-extra.mjs';
 // English versions keyed by the stable French question ID. Option order is identical.
@@ -5013,4 +5014,4 @@ const additionalCapitals = Object.fromEntries(CAPITALS.map(([ , country, , city,
     options: [city, ...offsets.map(offset => choices[(index + offset) % choices.length][3])],
     explanation: `${city} is the capital of ${country}.` }];
 }));
-export const ENGLISH_QUESTIONS = { ...originalEnglish, ...additionalCapitals, ...Object.fromEntries(EXTRA_QUESTIONS.map(({ id, en }) => [id, en])) };
+export const ENGLISH_QUESTIONS = { ...originalEnglish, ...additionalCapitals, ...Object.fromEntries(EXTRA_QUESTIONS.map(({ id, en }) => [id, en])), ...Object.fromEntries(MORE_QUESTIONS.map(({ id, en }) => [id, en])) };

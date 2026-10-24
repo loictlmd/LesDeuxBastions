@@ -5,10 +5,10 @@ import { ENGLISH_QUESTIONS } from '../src/questions-en.mjs';
 import { GameService } from '../src/game.mjs';
 import { bilingual, translate } from '../public/translate.js';
 
-test('all 2000 questions have English prompts, four corresponding choices and explanations', () => {
-  assert.equal(Object.keys(ENGLISH_QUESTIONS).length, 2000);
-  assert.equal(new Set(Object.values(ENGLISH_QUESTIONS).map(q => q.text.trim().toLowerCase())).size, 2000);
-  assert.deepEqual(QUESTIONS.map(q => q.id), Array.from({ length: 2000 }, (_, i) => i + 1));
+test('all 3000 questions have English prompts, four corresponding choices and explanations', () => {
+  assert.equal(Object.keys(ENGLISH_QUESTIONS).length, 3000);
+  assert.equal(new Set(Object.values(ENGLISH_QUESTIONS).map(q => q.text.trim().toLowerCase())).size, 3000);
+  assert.deepEqual(QUESTIONS.map(q => q.id), Array.from({ length: 3000 }, (_, i) => i + 1));
   for (const source of QUESTIONS) {
     const english = ENGLISH_QUESTIONS[source.id];
     assert.ok(english.text && english.explanation, `Question ${source.id}`);

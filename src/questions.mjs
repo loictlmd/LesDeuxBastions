@@ -1,3 +1,4 @@
+import { MORE_QUESTIONS } from './questions-more.mjs';
 import { EXTRA_QUESTIONS } from './questions-extra.mjs';
 import { CAPITALS } from './capitals.mjs';
 // Banque de 500 questions intermédiaires et difficiles, réservée au serveur.
@@ -512,4 +513,4 @@ const capitals = CAPITALS.map(([country, , city, , region], index) => {
   const options = [city, ...offsets.map(offset => choices[(index + offset) % choices.length][2])];
   return { id: 501 + index, category: 'Géographie', text: `Quelle ville est la capitale du pays « ${country} » ?`, options, correct: 0, explanation: `${city} est la capitale de ${country}.` };
 });
-export const QUESTIONS = [...original, ...capitals, ...EXTRA_QUESTIONS.map(({ id, category, fr, correct }) => ({ id, category, ...fr, correct }))];
+export const QUESTIONS = [...original, ...capitals, ...EXTRA_QUESTIONS.map(({ id, category, fr, correct }) => ({ id, category, ...fr, correct })), ...MORE_QUESTIONS.map(({ id, category, fr, correct }) => ({ id, category, ...fr, correct }))];
