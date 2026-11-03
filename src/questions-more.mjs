@@ -1,4 +1,4 @@
-// One-prompt bilingual questions; IDs 2001–3000.
+// One-prompt bilingual questions; IDs 2001–3000. French and English options share the same order.
 export const MORE_QUESTIONS = [
   {
     "category": "Géographie",
@@ -3126,3128 +3126,3128 @@ export const MORE_QUESTIONS = [
     "id": 2125
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la Première Guerre mondiale, Couronnement de Charlemagne, Bataille d’Azincourt, Fondation de Québec par Champlain ?",
+      "text": "À quelle période historique appartient l’événement « Début de la guerre de Trente Ans » ?",
       "options": [
-        "Début de la Première Guerre mondiale",
-        "Couronnement de Charlemagne",
-        "Bataille d’Azincourt",
-        "Fondation de Québec par Champlain"
+        "Époque moderne",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque contemporaine"
       ],
-      "explanation": "Début de la Première Guerre mondiale : 1914; Fondation de Québec par Champlain : 1608; Bataille d’Azincourt : 1415; Couronnement de Charlemagne : 800"
+      "explanation": "Cet événement date de 1618 et appartient à la période : Époque moderne."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the First World War, Coronation of Charlemagne, Battle of Agincourt, Champlain founds Quebec City?",
+      "text": "Which historical period includes the event “Beginning of the Thirty Years’ War”?",
       "options": [
-        "Beginning of the First World War",
-        "Coronation of Charlemagne",
-        "Battle of Agincourt",
-        "Champlain founds Quebec City"
+        "Early Modern period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Contemporary period"
       ],
-      "explanation": "Beginning of the First World War: 1914; Champlain founds Quebec City: 1608; Battle of Agincourt: 1415; Coronation of Charlemagne: 800"
+      "explanation": "This event took place in 1618, during the Early Modern period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2126
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Signature du traité de Versailles, Attaque de Pearl Harbor, Proclamation de la Deuxième République française, Signature de la Magna Carta ?",
+      "text": "Quel événement historique a eu lieu en 1648 ?",
       "options": [
-        "Attaque de Pearl Harbor",
-        "Signature du traité de Versailles",
-        "Proclamation de la Deuxième République française",
-        "Signature de la Magna Carta"
+        "Traités de Westphalie",
+        "Grand incendie de Londres",
+        "Début de la guerre de Trente Ans",
+        "Révocation de l’édit de Nantes"
       ],
-      "explanation": "Attaque de Pearl Harbor : 1941; Signature du traité de Versailles : 1919; Proclamation de la Deuxième République française : 1848; Signature de la Magna Carta : 1215"
+      "explanation": "En 1648 a eu lieu : Traités de Westphalie."
     },
     "en": {
-      "text": "Which event is the most recent among: Signing of the Treaty of Versailles, Attack on Pearl Harbor, Proclamation of the Second French Republic, Signing of Magna Carta?",
+      "text": "Which historical event took place in 1648?",
       "options": [
-        "Attack on Pearl Harbor",
-        "Signing of the Treaty of Versailles",
-        "Proclamation of the Second French Republic",
-        "Signing of Magna Carta"
+        "Peace of Westphalia",
+        "Great Fire of London",
+        "Beginning of the Thirty Years’ War",
+        "Revocation of the Edict of Nantes"
       ],
-      "explanation": "Attack on Pearl Harbor: 1941; Signing of the Treaty of Versailles: 1919; Proclamation of the Second French Republic: 1848; Signing of Magna Carta: 1215"
+      "explanation": "In 1648, the following event took place: Peace of Westphalia."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2127
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Chute de Constantinople, Krach de Wall Street, Traités de Westphalie, Libération d’Orléans par Jeanne d’Arc ?",
+      "text": "Dans quelle décennie se situe l’événement « Traités de Westphalie » ?",
       "options": [
-        "Krach de Wall Street",
-        "Chute de Constantinople",
-        "Traités de Westphalie",
-        "Libération d’Orléans par Jeanne d’Arc"
+        "1640–1649",
+        "1630–1639",
+        "1650–1659",
+        "1660–1669"
       ],
-      "explanation": "Krach de Wall Street : 1929; Traités de Westphalie : 1648; Chute de Constantinople : 1453; Libération d’Orléans par Jeanne d’Arc : 1429"
+      "explanation": "Cet événement date de 1648, soit de la décennie 1640–1649."
     },
     "en": {
-      "text": "Which event is the most recent among: Fall of Constantinople, Wall Street Crash, Peace of Westphalia, Relief of Orléans by Joan of Arc?",
+      "text": "In which decade did the event “Peace of Westphalia” take place?",
       "options": [
-        "Wall Street Crash",
-        "Fall of Constantinople",
-        "Peace of Westphalia",
-        "Relief of Orléans by Joan of Arc"
+        "1640–1649",
+        "1630–1639",
+        "1650–1659",
+        "1660–1669"
       ],
-      "explanation": "Wall Street Crash: 1929; Peace of Westphalia: 1648; Fall of Constantinople: 1453; Relief of Orléans by Joan of Arc: 1429"
+      "explanation": "This event took place in 1648, in the decade 1640–1649."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2128
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Bataille de Waterloo, Achèvement du premier tour du monde par Elcano, Déclaration d’indépendance américaine, Défaite de l’Invincible Armada ?",
+      "text": "À quelle période historique appartient l’événement « Traités de Westphalie » ?",
       "options": [
-        "Bataille de Waterloo",
-        "Achèvement du premier tour du monde par Elcano",
-        "Déclaration d’indépendance américaine",
-        "Défaite de l’Invincible Armada"
+        "Époque moderne",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque contemporaine"
       ],
-      "explanation": "Bataille de Waterloo : 1815; Déclaration d’indépendance américaine : 1776; Défaite de l’Invincible Armada : 1588; Achèvement du premier tour du monde par Elcano : 1522"
+      "explanation": "Cet événement date de 1648 et appartient à la période : Époque moderne."
     },
     "en": {
-      "text": "Which event is the most recent among: Battle of Waterloo, Elcano completes the first circumnavigation, American Declaration of Independence, Defeat of the Spanish Armada?",
+      "text": "Which historical period includes the event “Peace of Westphalia”?",
       "options": [
-        "Battle of Waterloo",
-        "Elcano completes the first circumnavigation",
-        "American Declaration of Independence",
-        "Defeat of the Spanish Armada"
+        "Early Modern period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Contemporary period"
       ],
-      "explanation": "Battle of Waterloo: 1815; American Declaration of Independence: 1776; Defeat of the Spanish Armada: 1588; Elcano completes the first circumnavigation: 1522"
+      "explanation": "This event took place in 1648, during the Early Modern period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2129
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Bataille de Hastings, Massacre de la Saint-Barthélemy, Couronnement de Charlemagne, Coup d’État du 18 Brumaire ?",
+      "text": "Quel événement historique a eu lieu en 1666 ?",
       "options": [
-        "Coup d’État du 18 Brumaire",
-        "Bataille de Hastings",
-        "Massacre de la Saint-Barthélemy",
-        "Couronnement de Charlemagne"
+        "Grand incendie de Londres",
+        "Traités de Westphalie",
+        "Révocation de l’édit de Nantes",
+        "Début de la guerre de Trente Ans"
       ],
-      "explanation": "Coup d’État du 18 Brumaire : 1799; Massacre de la Saint-Barthélemy : 1572; Bataille de Hastings : 1066; Couronnement de Charlemagne : 800"
+      "explanation": "En 1666 a eu lieu : Grand incendie de Londres."
     },
     "en": {
-      "text": "Which event is the most recent among: Battle of Hastings, St Bartholomew’s Day massacre, Coronation of Charlemagne, Coup of 18 Brumaire?",
+      "text": "Which historical event took place in 1666?",
       "options": [
-        "Coup of 18 Brumaire",
-        "Battle of Hastings",
-        "St Bartholomew’s Day massacre",
-        "Coronation of Charlemagne"
+        "Great Fire of London",
+        "Peace of Westphalia",
+        "Revocation of the Edict of Nantes",
+        "Beginning of the Thirty Years’ War"
       ],
-      "explanation": "Coup of 18 Brumaire: 1799; St Bartholomew’s Day massacre: 1572; Battle of Hastings: 1066; Coronation of Charlemagne: 800"
+      "explanation": "In 1666, the following event took place: Great Fire of London."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2130
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Dissolution de l’URSS, Bataille de Marignan, Achèvement du premier tour du monde par Elcano, Création de l’ONU ?",
+      "text": "Dans quelle décennie se situe l’événement « Grand incendie de Londres » ?",
       "options": [
-        "Dissolution de l’URSS",
-        "Bataille de Marignan",
-        "Achèvement du premier tour du monde par Elcano",
-        "Création de l’ONU"
+        "1660–1669",
+        "1650–1659",
+        "1670–1679",
+        "1680–1689"
       ],
-      "explanation": "Dissolution de l’URSS : 1991; Création de l’ONU : 1945; Achèvement du premier tour du monde par Elcano : 1522; Bataille de Marignan : 1515"
+      "explanation": "Cet événement date de 1666, soit de la décennie 1660–1669."
     },
     "en": {
-      "text": "Which event is the most recent among: Dissolution of the USSR, Battle of Marignano, Elcano completes the first circumnavigation, Founding of the UN?",
+      "text": "In which decade did the event “Great Fire of London” take place?",
       "options": [
-        "Dissolution of the USSR",
-        "Battle of Marignano",
-        "Elcano completes the first circumnavigation",
-        "Founding of the UN"
+        "1660–1669",
+        "1650–1659",
+        "1670–1679",
+        "1680–1689"
       ],
-      "explanation": "Dissolution of the USSR: 1991; Founding of the UN: 1945; Elcano completes the first circumnavigation: 1522; Battle of Marignano: 1515"
+      "explanation": "This event took place in 1666, in the decade 1660–1669."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2131
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Couronnement d’Hugues Capet, Signature du traité de Rome, Bataille de Marignan, Signature de la Magna Carta ?",
+      "text": "À quelle période historique appartient l’événement « Grand incendie de Londres » ?",
       "options": [
-        "Signature du traité de Rome",
-        "Couronnement d’Hugues Capet",
-        "Bataille de Marignan",
-        "Signature de la Magna Carta"
+        "Époque moderne",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque contemporaine"
       ],
-      "explanation": "Signature du traité de Rome : 1957; Bataille de Marignan : 1515; Signature de la Magna Carta : 1215; Couronnement d’Hugues Capet : 987"
+      "explanation": "Cet événement date de 1666 et appartient à la période : Époque moderne."
     },
     "en": {
-      "text": "Which event is the most recent among: Coronation of Hugh Capet, Signing of the Treaty of Rome, Battle of Marignano, Signing of Magna Carta?",
+      "text": "Which historical period includes the event “Great Fire of London”?",
       "options": [
-        "Signing of the Treaty of Rome",
-        "Coronation of Hugh Capet",
-        "Battle of Marignano",
-        "Signing of Magna Carta"
+        "Early Modern period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Contemporary period"
       ],
-      "explanation": "Signing of the Treaty of Rome: 1957; Battle of Marignano: 1515; Signing of Magna Carta: 1215; Coronation of Hugh Capet: 987"
+      "explanation": "This event took place in 1666, during the Early Modern period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2132
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Libération d’Orléans par Jeanne d’Arc, Bataille de Marignan, Armistice de la Première Guerre mondiale, Sacre de Napoléon Ier ?",
+      "text": "Quel événement historique a eu lieu en 1685 ?",
       "options": [
-        "Armistice de la Première Guerre mondiale",
-        "Libération d’Orléans par Jeanne d’Arc",
-        "Bataille de Marignan",
-        "Sacre de Napoléon Ier"
+        "Révocation de l’édit de Nantes",
+        "Grand incendie de Londres",
+        "Traités de Westphalie",
+        "Début de la guerre de Trente Ans"
       ],
-      "explanation": "Armistice de la Première Guerre mondiale : 1918; Sacre de Napoléon Ier : 1804; Bataille de Marignan : 1515; Libération d’Orléans par Jeanne d’Arc : 1429"
+      "explanation": "En 1685 a eu lieu : Révocation de l’édit de Nantes."
     },
     "en": {
-      "text": "Which event is the most recent among: Relief of Orléans by Joan of Arc, Battle of Marignano, First World War armistice, Coronation of Napoleon I?",
+      "text": "Which historical event took place in 1685?",
       "options": [
-        "First World War armistice",
-        "Relief of Orléans by Joan of Arc",
-        "Battle of Marignano",
-        "Coronation of Napoleon I"
+        "Revocation of the Edict of Nantes",
+        "Great Fire of London",
+        "Peace of Westphalia",
+        "Beginning of the Thirty Years’ War"
       ],
-      "explanation": "First World War armistice: 1918; Coronation of Napoleon I: 1804; Battle of Marignano: 1515; Relief of Orléans by Joan of Arc: 1429"
+      "explanation": "In 1685, the following event took place: Revocation of the Edict of Nantes."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2133
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Crise du canal de Suez, Libération d’Orléans par Jeanne d’Arc, Défaite de l’Invincible Armada, Création de l’OTAN ?",
+      "text": "Dans quelle décennie se situe l’événement « Révocation de l’édit de Nantes » ?",
       "options": [
-        "Crise du canal de Suez",
-        "Libération d’Orléans par Jeanne d’Arc",
-        "Défaite de l’Invincible Armada",
-        "Création de l’OTAN"
+        "1680–1689",
+        "1670–1679",
+        "1690–1699",
+        "1700–1709"
       ],
-      "explanation": "Crise du canal de Suez : 1956; Création de l’OTAN : 1949; Défaite de l’Invincible Armada : 1588; Libération d’Orléans par Jeanne d’Arc : 1429"
+      "explanation": "Cet événement date de 1685, soit de la décennie 1680–1689."
     },
     "en": {
-      "text": "Which event is the most recent among: Suez Crisis, Relief of Orléans by Joan of Arc, Defeat of the Spanish Armada, Founding of NATO?",
+      "text": "In which decade did the event “Revocation of the Edict of Nantes” take place?",
       "options": [
-        "Suez Crisis",
-        "Relief of Orléans by Joan of Arc",
-        "Defeat of the Spanish Armada",
-        "Founding of NATO"
+        "1680–1689",
+        "1670–1679",
+        "1690–1699",
+        "1700–1709"
       ],
-      "explanation": "Suez Crisis: 1956; Founding of NATO: 1949; Defeat of the Spanish Armada: 1588; Relief of Orléans by Joan of Arc: 1429"
+      "explanation": "This event took place in 1685, in the decade 1680–1689."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2134
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Prise de Jérusalem par la première croisade, Coup d’État du 18 Brumaire, Commune de Paris, Début de la guerre de Corée ?",
+      "text": "À quelle période historique appartient l’événement « Révocation de l’édit de Nantes » ?",
       "options": [
-        "Début de la guerre de Corée",
-        "Prise de Jérusalem par la première croisade",
-        "Coup d’État du 18 Brumaire",
-        "Commune de Paris"
+        "Époque moderne",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque contemporaine"
       ],
-      "explanation": "Début de la guerre de Corée : 1950; Commune de Paris : 1871; Coup d’État du 18 Brumaire : 1799; Prise de Jérusalem par la première croisade : 1099"
+      "explanation": "Cet événement date de 1685 et appartient à la période : Époque moderne."
     },
     "en": {
-      "text": "Which event is the most recent among: Capture of Jerusalem by the First Crusade, Coup of 18 Brumaire, Paris Commune, Beginning of the Korean War?",
+      "text": "Which historical period includes the event “Revocation of the Edict of Nantes”?",
       "options": [
-        "Beginning of the Korean War",
-        "Capture of Jerusalem by the First Crusade",
-        "Coup of 18 Brumaire",
-        "Paris Commune"
+        "Early Modern period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Contemporary period"
       ],
-      "explanation": "Beginning of the Korean War: 1950; Paris Commune: 1871; Coup of 18 Brumaire: 1799; Capture of Jerusalem by the First Crusade: 1099"
+      "explanation": "This event took place in 1685, during the Early Modern period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2135
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Déclaration d’indépendance américaine, Traité de Tordesillas, Proclamation de la Deuxième République française, Bataille de Marignan ?",
+      "text": "Quel événement historique a eu lieu en 1776 ?",
       "options": [
-        "Proclamation de la Deuxième République française",
         "Déclaration d’indépendance américaine",
-        "Traité de Tordesillas",
-        "Bataille de Marignan"
+        "Prise de la Bastille",
+        "Proclamation de la Première République française",
+        "Coup d’État du 18 Brumaire"
       ],
-      "explanation": "Proclamation de la Deuxième République française : 1848; Déclaration d’indépendance américaine : 1776; Bataille de Marignan : 1515; Traité de Tordesillas : 1494"
+      "explanation": "En 1776 a eu lieu : Déclaration d’indépendance américaine."
     },
     "en": {
-      "text": "Which event is the most recent among: American Declaration of Independence, Treaty of Tordesillas, Proclamation of the Second French Republic, Battle of Marignano?",
+      "text": "Which historical event took place in 1776?",
       "options": [
-        "Proclamation of the Second French Republic",
         "American Declaration of Independence",
-        "Treaty of Tordesillas",
-        "Battle of Marignano"
+        "Storming of the Bastille",
+        "Proclamation of the First French Republic",
+        "Coup of 18 Brumaire"
       ],
-      "explanation": "Proclamation of the Second French Republic: 1848; American Declaration of Independence: 1776; Battle of Marignano: 1515; Treaty of Tordesillas: 1494"
+      "explanation": "In 1776, the following event took place: American Declaration of Independence."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2136
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Couronnement d’Hugues Capet, Proclamation de la Première République française, Révolution de Juillet en France, Massacre de la Saint-Barthélemy ?",
+      "text": "Dans quelle décennie se situe l’événement « Déclaration d’indépendance américaine » ?",
       "options": [
-        "Révolution de Juillet en France",
-        "Couronnement d’Hugues Capet",
-        "Proclamation de la Première République française",
-        "Massacre de la Saint-Barthélemy"
+        "1770–1779",
+        "1760–1769",
+        "1780–1789",
+        "1790–1799"
       ],
-      "explanation": "Révolution de Juillet en France : 1830; Proclamation de la Première République française : 1792; Massacre de la Saint-Barthélemy : 1572; Couronnement d’Hugues Capet : 987"
+      "explanation": "Cet événement date de 1776, soit de la décennie 1770–1779."
     },
     "en": {
-      "text": "Which event is the most recent among: Coronation of Hugh Capet, Proclamation of the First French Republic, July Revolution in France, St Bartholomew’s Day massacre?",
+      "text": "In which decade did the event “American Declaration of Independence” take place?",
       "options": [
-        "July Revolution in France",
-        "Coronation of Hugh Capet",
-        "Proclamation of the First French Republic",
-        "St Bartholomew’s Day massacre"
+        "1770–1779",
+        "1760–1769",
+        "1780–1789",
+        "1790–1799"
       ],
-      "explanation": "July Revolution in France: 1830; Proclamation of the First French Republic: 1792; St Bartholomew’s Day massacre: 1572; Coronation of Hugh Capet: 987"
+      "explanation": "This event took place in 1776, in the decade 1770–1779."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2137
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Chute de l’Empire romain d’Occident, Proclamation de la Première République française, Indépendance de l’Inde, Révolution de Juillet en France ?",
+      "text": "À quelle période historique appartient l’événement « Déclaration d’indépendance américaine » ?",
       "options": [
-        "Indépendance de l’Inde",
-        "Chute de l’Empire romain d’Occident",
-        "Proclamation de la Première République française",
-        "Révolution de Juillet en France"
+        "Époque moderne",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque contemporaine"
       ],
-      "explanation": "Indépendance de l’Inde : 1947; Révolution de Juillet en France : 1830; Proclamation de la Première République française : 1792; Chute de l’Empire romain d’Occident : 476"
+      "explanation": "Cet événement date de 1776 et appartient à la période : Époque moderne."
     },
     "en": {
-      "text": "Which event is the most recent among: Fall of the Western Roman Empire, Proclamation of the First French Republic, Indian independence, July Revolution in France?",
+      "text": "Which historical period includes the event “American Declaration of Independence”?",
       "options": [
-        "Indian independence",
-        "Fall of the Western Roman Empire",
-        "Proclamation of the First French Republic",
-        "July Revolution in France"
+        "Early Modern period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Contemporary period"
       ],
-      "explanation": "Indian independence: 1947; July Revolution in France: 1830; Proclamation of the First French Republic: 1792; Fall of the Western Roman Empire: 476"
+      "explanation": "This event took place in 1776, during the Early Modern period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2138
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Prise de Jérusalem par la première croisade, Début de la guerre de Cent Ans, Signature de l’édit de Nantes, Construction du mur de Berlin ?",
+      "text": "Quel événement historique a eu lieu en 1789 ?",
       "options": [
-        "Construction du mur de Berlin",
-        "Prise de Jérusalem par la première croisade",
-        "Début de la guerre de Cent Ans",
-        "Signature de l’édit de Nantes"
+        "Prise de la Bastille",
+        "Proclamation de la Première République française",
+        "Coup d’État du 18 Brumaire",
+        "Déclaration d’indépendance américaine"
       ],
-      "explanation": "Construction du mur de Berlin : 1961; Signature de l’édit de Nantes : 1598; Début de la guerre de Cent Ans : 1337; Prise de Jérusalem par la première croisade : 1099"
+      "explanation": "En 1789 a eu lieu : Prise de la Bastille."
     },
     "en": {
-      "text": "Which event is the most recent among: Capture of Jerusalem by the First Crusade, Beginning of the Hundred Years’ War, Signing of the Edict of Nantes, Construction of the Berlin Wall?",
+      "text": "Which historical event took place in 1789?",
       "options": [
-        "Construction of the Berlin Wall",
-        "Capture of Jerusalem by the First Crusade",
-        "Beginning of the Hundred Years’ War",
-        "Signing of the Edict of Nantes"
+        "Storming of the Bastille",
+        "Proclamation of the First French Republic",
+        "Coup of 18 Brumaire",
+        "American Declaration of Independence"
       ],
-      "explanation": "Construction of the Berlin Wall: 1961; Signing of the Edict of Nantes: 1598; Beginning of the Hundred Years’ War: 1337; Capture of Jerusalem by the First Crusade: 1099"
+      "explanation": "In 1789, the following event took place: Storming of the Bastille."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2139
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Krach de Wall Street, Défaite de l’Invincible Armada, Proclamation de la Première République française, Signature de l’édit de Nantes ?",
+      "text": "Dans quelle décennie se situe l’événement « Prise de la Bastille » ?",
       "options": [
-        "Krach de Wall Street",
-        "Défaite de l’Invincible Armada",
-        "Proclamation de la Première République française",
-        "Signature de l’édit de Nantes"
+        "1780–1789",
+        "1770–1779",
+        "1790–1799",
+        "1800–1809"
       ],
-      "explanation": "Krach de Wall Street : 1929; Proclamation de la Première République française : 1792; Signature de l’édit de Nantes : 1598; Défaite de l’Invincible Armada : 1588"
+      "explanation": "Cet événement date de 1789, soit de la décennie 1780–1789."
     },
     "en": {
-      "text": "Which event is the most recent among: Wall Street Crash, Defeat of the Spanish Armada, Proclamation of the First French Republic, Signing of the Edict of Nantes?",
+      "text": "In which decade did the event “Storming of the Bastille” take place?",
       "options": [
-        "Wall Street Crash",
-        "Defeat of the Spanish Armada",
-        "Proclamation of the First French Republic",
-        "Signing of the Edict of Nantes"
+        "1780–1789",
+        "1770–1779",
+        "1790–1799",
+        "1800–1809"
       ],
-      "explanation": "Wall Street Crash: 1929; Proclamation of the First French Republic: 1792; Signing of the Edict of Nantes: 1598; Defeat of the Spanish Armada: 1588"
+      "explanation": "This event took place in 1789, in the decade 1780–1789."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2140
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Traité de Verdun, Début de la guerre de Corée, Début de la guerre civile espagnole, Signature du traité de Maastricht ?",
+      "text": "À quelle période historique appartient l’événement « Prise de la Bastille » ?",
       "options": [
-        "Signature du traité de Maastricht",
-        "Traité de Verdun",
-        "Début de la guerre de Corée",
-        "Début de la guerre civile espagnole"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Signature du traité de Maastricht : 1992; Début de la guerre de Corée : 1950; Début de la guerre civile espagnole : 1936; Traité de Verdun : 843"
+      "explanation": "Cet événement date de 1789 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Treaty of Verdun, Beginning of the Korean War, Beginning of the Spanish Civil War, Signing of the Maastricht Treaty?",
+      "text": "Which historical period includes the event “Storming of the Bastille”?",
       "options": [
-        "Signing of the Maastricht Treaty",
-        "Treaty of Verdun",
-        "Beginning of the Korean War",
-        "Beginning of the Spanish Civil War"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Signing of the Maastricht Treaty: 1992; Beginning of the Korean War: 1950; Beginning of the Spanish Civil War: 1936; Treaty of Verdun: 843"
+      "explanation": "This event took place in 1789, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2141
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Chute de l’Empire romain d’Occident, Chute de Constantinople, Bataille d’Austerlitz, Signature de la Magna Carta ?",
+      "text": "Quel événement historique a eu lieu en 1792 ?",
       "options": [
-        "Bataille d’Austerlitz",
-        "Chute de l’Empire romain d’Occident",
-        "Chute de Constantinople",
-        "Signature de la Magna Carta"
+        "Proclamation de la Première République française",
+        "Prise de la Bastille",
+        "Coup d’État du 18 Brumaire",
+        "Sacre de Napoléon Ier"
       ],
-      "explanation": "Bataille d’Austerlitz : 1805; Chute de Constantinople : 1453; Signature de la Magna Carta : 1215; Chute de l’Empire romain d’Occident : 476"
+      "explanation": "En 1792 a eu lieu : Proclamation de la Première République française."
     },
     "en": {
-      "text": "Which event is the most recent among: Fall of the Western Roman Empire, Fall of Constantinople, Battle of Austerlitz, Signing of Magna Carta?",
+      "text": "Which historical event took place in 1792?",
       "options": [
-        "Battle of Austerlitz",
-        "Fall of the Western Roman Empire",
-        "Fall of Constantinople",
-        "Signing of Magna Carta"
+        "Proclamation of the First French Republic",
+        "Storming of the Bastille",
+        "Coup of 18 Brumaire",
+        "Coronation of Napoleon I"
       ],
-      "explanation": "Battle of Austerlitz: 1805; Fall of Constantinople: 1453; Signing of Magna Carta: 1215; Fall of the Western Roman Empire: 476"
+      "explanation": "In 1792, the following event took place: Proclamation of the First French Republic."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2142
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Prise de la Bastille, Début de la guerre de Sécession, Déclaration d’indépendance américaine, Bataille de Bouvines ?",
+      "text": "Dans quelle décennie se situe l’événement « Proclamation de la Première République française » ?",
       "options": [
-        "Début de la guerre de Sécession",
-        "Prise de la Bastille",
-        "Déclaration d’indépendance américaine",
-        "Bataille de Bouvines"
+        "1790–1799",
+        "1780–1789",
+        "1800–1809",
+        "1810–1819"
       ],
-      "explanation": "Début de la guerre de Sécession : 1861; Prise de la Bastille : 1789; Déclaration d’indépendance américaine : 1776; Bataille de Bouvines : 1214"
+      "explanation": "Cet événement date de 1792, soit de la décennie 1790–1799."
     },
     "en": {
-      "text": "Which event is the most recent among: Storming of the Bastille, Beginning of the American Civil War, American Declaration of Independence, Battle of Bouvines?",
+      "text": "In which decade did the event “Proclamation of the First French Republic” take place?",
       "options": [
-        "Beginning of the American Civil War",
-        "Storming of the Bastille",
-        "American Declaration of Independence",
-        "Battle of Bouvines"
+        "1790–1799",
+        "1780–1789",
+        "1800–1809",
+        "1810–1819"
       ],
-      "explanation": "Beginning of the American Civil War: 1861; Storming of the Bastille: 1789; American Declaration of Independence: 1776; Battle of Bouvines: 1214"
+      "explanation": "This event took place in 1792, in the decade 1790–1799."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2143
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Prise de Jérusalem par la première croisade, Bataille de Hastings, Premier alunissage humain, Commune de Paris ?",
+      "text": "À quelle période historique appartient l’événement « Proclamation de la Première République française » ?",
       "options": [
-        "Premier alunissage humain",
-        "Prise de Jérusalem par la première croisade",
-        "Bataille de Hastings",
-        "Commune de Paris"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Premier alunissage humain : 1969; Commune de Paris : 1871; Prise de Jérusalem par la première croisade : 1099; Bataille de Hastings : 1066"
+      "explanation": "Cet événement date de 1792 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Capture of Jerusalem by the First Crusade, Battle of Hastings, First crewed Moon landing, Paris Commune?",
+      "text": "Which historical period includes the event “Proclamation of the First French Republic”?",
       "options": [
-        "First crewed Moon landing",
-        "Capture of Jerusalem by the First Crusade",
-        "Battle of Hastings",
-        "Paris Commune"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "First crewed Moon landing: 1969; Paris Commune: 1871; Capture of Jerusalem by the First Crusade: 1099; Battle of Hastings: 1066"
+      "explanation": "This event took place in 1792, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2144
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Signature du traité de Maastricht, Dissolution de l’URSS, Arrivée de Vasco de Gama en Inde, Armistice de la Première Guerre mondiale ?",
+      "text": "Quel événement historique a eu lieu en 1799 ?",
       "options": [
-        "Signature du traité de Maastricht",
-        "Dissolution de l’URSS",
-        "Arrivée de Vasco de Gama en Inde",
-        "Armistice de la Première Guerre mondiale"
+        "Coup d’État du 18 Brumaire",
+        "Sacre de Napoléon Ier",
+        "Bataille d’Austerlitz",
+        "Proclamation de la Première République française"
       ],
-      "explanation": "Signature du traité de Maastricht : 1992; Dissolution de l’URSS : 1991; Armistice de la Première Guerre mondiale : 1918; Arrivée de Vasco de Gama en Inde : 1498"
+      "explanation": "En 1799 a eu lieu : Coup d’État du 18 Brumaire."
     },
     "en": {
-      "text": "Which event is the most recent among: Signing of the Maastricht Treaty, Dissolution of the USSR, Vasco da Gama reaches India, First World War armistice?",
+      "text": "Which historical event took place in 1799?",
       "options": [
-        "Signing of the Maastricht Treaty",
-        "Dissolution of the USSR",
-        "Vasco da Gama reaches India",
-        "First World War armistice"
+        "Coup of 18 Brumaire",
+        "Coronation of Napoleon I",
+        "Battle of Austerlitz",
+        "Proclamation of the First French Republic"
       ],
-      "explanation": "Signing of the Maastricht Treaty: 1992; Dissolution of the USSR: 1991; First World War armistice: 1918; Vasco da Gama reaches India: 1498"
+      "explanation": "In 1799, the following event took place: Coup of 18 Brumaire."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2145
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Révolution de Juillet en France, Signature du traité de Maastricht, Armistice de la Première Guerre mondiale, Déclaration d’indépendance américaine ?",
+      "text": "Dans quelle décennie se situe l’événement « Coup d’État du 18 Brumaire » ?",
       "options": [
-        "Signature du traité de Maastricht",
-        "Révolution de Juillet en France",
-        "Armistice de la Première Guerre mondiale",
-        "Déclaration d’indépendance américaine"
+        "1790–1799",
+        "1780–1789",
+        "1800–1809",
+        "1810–1819"
       ],
-      "explanation": "Signature du traité de Maastricht : 1992; Armistice de la Première Guerre mondiale : 1918; Révolution de Juillet en France : 1830; Déclaration d’indépendance américaine : 1776"
+      "explanation": "Cet événement date de 1799, soit de la décennie 1790–1799."
     },
     "en": {
-      "text": "Which event is the most recent among: July Revolution in France, Signing of the Maastricht Treaty, First World War armistice, American Declaration of Independence?",
+      "text": "In which decade did the event “Coup of 18 Brumaire” take place?",
       "options": [
-        "Signing of the Maastricht Treaty",
-        "July Revolution in France",
-        "First World War armistice",
-        "American Declaration of Independence"
+        "1790–1799",
+        "1780–1789",
+        "1800–1809",
+        "1810–1819"
       ],
-      "explanation": "Signing of the Maastricht Treaty: 1992; First World War armistice: 1918; July Revolution in France: 1830; American Declaration of Independence: 1776"
+      "explanation": "This event took place in 1799, in the decade 1790–1799."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2146
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Prise de Jérusalem par la première croisade, Chute du mur de Berlin, Achèvement du premier tour du monde par Elcano, Chute de Constantinople ?",
+      "text": "À quelle période historique appartient l’événement « Coup d’État du 18 Brumaire » ?",
       "options": [
-        "Chute du mur de Berlin",
-        "Prise de Jérusalem par la première croisade",
-        "Achèvement du premier tour du monde par Elcano",
-        "Chute de Constantinople"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Chute du mur de Berlin : 1989; Achèvement du premier tour du monde par Elcano : 1522; Chute de Constantinople : 1453; Prise de Jérusalem par la première croisade : 1099"
+      "explanation": "Cet événement date de 1799 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Capture of Jerusalem by the First Crusade, Fall of the Berlin Wall, Elcano completes the first circumnavigation, Fall of Constantinople?",
+      "text": "Which historical period includes the event “Coup of 18 Brumaire”?",
       "options": [
-        "Fall of the Berlin Wall",
-        "Capture of Jerusalem by the First Crusade",
-        "Elcano completes the first circumnavigation",
-        "Fall of Constantinople"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Fall of the Berlin Wall: 1989; Elcano completes the first circumnavigation: 1522; Fall of Constantinople: 1453; Capture of Jerusalem by the First Crusade: 1099"
+      "explanation": "This event took place in 1799, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2147
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Dissolution de l’URSS, Crise des missiles de Cuba, Révolution russe d’Octobre, Commune de Paris ?",
+      "text": "Quel événement historique a eu lieu en 1804 ?",
       "options": [
-        "Dissolution de l’URSS",
-        "Crise des missiles de Cuba",
-        "Révolution russe d’Octobre",
-        "Commune de Paris"
+        "Sacre de Napoléon Ier",
+        "Bataille d’Austerlitz",
+        "Coup d’État du 18 Brumaire",
+        "Bataille de Waterloo"
       ],
-      "explanation": "Dissolution de l’URSS : 1991; Crise des missiles de Cuba : 1962; Révolution russe d’Octobre : 1917; Commune de Paris : 1871"
+      "explanation": "En 1804 a eu lieu : Sacre de Napoléon Ier."
     },
     "en": {
-      "text": "Which event is the most recent among: Dissolution of the USSR, Cuban Missile Crisis, Russian October Revolution, Paris Commune?",
+      "text": "Which historical event took place in 1804?",
       "options": [
-        "Dissolution of the USSR",
-        "Cuban Missile Crisis",
-        "Russian October Revolution",
-        "Paris Commune"
+        "Coronation of Napoleon I",
+        "Battle of Austerlitz",
+        "Coup of 18 Brumaire",
+        "Battle of Waterloo"
       ],
-      "explanation": "Dissolution of the USSR: 1991; Cuban Missile Crisis: 1962; Russian October Revolution: 1917; Paris Commune: 1871"
+      "explanation": "In 1804, the following event took place: Coronation of Napoleon I."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2148
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Signature du traité de Versailles, Traité de Verdun, Signature du traité de Maastricht, Ouverture du canal de Suez ?",
+      "text": "Dans quelle décennie se situe l’événement « Sacre de Napoléon Ier » ?",
       "options": [
-        "Signature du traité de Maastricht",
-        "Signature du traité de Versailles",
-        "Traité de Verdun",
-        "Ouverture du canal de Suez"
+        "1800–1809",
+        "1790–1799",
+        "1810–1819",
+        "1820–1829"
       ],
-      "explanation": "Signature du traité de Maastricht : 1992; Signature du traité de Versailles : 1919; Ouverture du canal de Suez : 1869; Traité de Verdun : 843"
+      "explanation": "Cet événement date de 1804, soit de la décennie 1800–1809."
     },
     "en": {
-      "text": "Which event is the most recent among: Signing of the Treaty of Versailles, Treaty of Verdun, Signing of the Maastricht Treaty, Opening of the Suez Canal?",
+      "text": "In which decade did the event “Coronation of Napoleon I” take place?",
       "options": [
-        "Signing of the Maastricht Treaty",
-        "Signing of the Treaty of Versailles",
-        "Treaty of Verdun",
-        "Opening of the Suez Canal"
+        "1800–1809",
+        "1790–1799",
+        "1810–1819",
+        "1820–1829"
       ],
-      "explanation": "Signing of the Maastricht Treaty: 1992; Signing of the Treaty of Versailles: 1919; Opening of the Suez Canal: 1869; Treaty of Verdun: 843"
+      "explanation": "This event took place in 1804, in the decade 1800–1809."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2149
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Signature du traité de Versailles, Achèvement du premier tour du monde par Elcano, Traité de Tordesillas, Proclamation de la Première République française ?",
+      "text": "À quelle période historique appartient l’événement « Sacre de Napoléon Ier » ?",
       "options": [
-        "Signature du traité de Versailles",
-        "Achèvement du premier tour du monde par Elcano",
-        "Traité de Tordesillas",
-        "Proclamation de la Première République française"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Signature du traité de Versailles : 1919; Proclamation de la Première République française : 1792; Achèvement du premier tour du monde par Elcano : 1522; Traité de Tordesillas : 1494"
+      "explanation": "Cet événement date de 1804 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Signing of the Treaty of Versailles, Elcano completes the first circumnavigation, Treaty of Tordesillas, Proclamation of the First French Republic?",
+      "text": "Which historical period includes the event “Coronation of Napoleon I”?",
       "options": [
-        "Signing of the Treaty of Versailles",
-        "Elcano completes the first circumnavigation",
-        "Treaty of Tordesillas",
-        "Proclamation of the First French Republic"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Signing of the Treaty of Versailles: 1919; Proclamation of the First French Republic: 1792; Elcano completes the first circumnavigation: 1522; Treaty of Tordesillas: 1494"
+      "explanation": "This event took place in 1804, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2150
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Fondation de Québec par Champlain, Bataille de Waterloo, Publication des 95 thèses de Luther, Premier alunissage humain ?",
+      "text": "Quel événement historique a eu lieu en 1805 ?",
       "options": [
-        "Premier alunissage humain",
-        "Fondation de Québec par Champlain",
-        "Bataille de Waterloo",
-        "Publication des 95 thèses de Luther"
+        "Bataille d’Austerlitz",
+        "Sacre de Napoléon Ier",
+        "Coup d’État du 18 Brumaire",
+        "Bataille de Waterloo"
       ],
-      "explanation": "Premier alunissage humain : 1969; Bataille de Waterloo : 1815; Fondation de Québec par Champlain : 1608; Publication des 95 thèses de Luther : 1517"
+      "explanation": "En 1805 a eu lieu : Bataille d’Austerlitz."
     },
     "en": {
-      "text": "Which event is the most recent among: Champlain founds Quebec City, Battle of Waterloo, Publication of Luther’s 95 Theses, First crewed Moon landing?",
+      "text": "Which historical event took place in 1805?",
       "options": [
-        "First crewed Moon landing",
-        "Champlain founds Quebec City",
-        "Battle of Waterloo",
-        "Publication of Luther’s 95 Theses"
+        "Battle of Austerlitz",
+        "Coronation of Napoleon I",
+        "Coup of 18 Brumaire",
+        "Battle of Waterloo"
       ],
-      "explanation": "First crewed Moon landing: 1969; Battle of Waterloo: 1815; Champlain founds Quebec City: 1608; Publication of Luther’s 95 Theses: 1517"
+      "explanation": "In 1805, the following event took place: Battle of Austerlitz."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2151
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Fondation de Québec par Champlain, Chute de l’Empire romain d’Occident, Traités de Westphalie, Traité de Tordesillas ?",
+      "text": "Dans quelle décennie se situe l’événement « Bataille d’Austerlitz » ?",
       "options": [
-        "Traités de Westphalie",
-        "Fondation de Québec par Champlain",
-        "Chute de l’Empire romain d’Occident",
-        "Traité de Tordesillas"
+        "1800–1809",
+        "1790–1799",
+        "1810–1819",
+        "1820–1829"
       ],
-      "explanation": "Traités de Westphalie : 1648; Fondation de Québec par Champlain : 1608; Traité de Tordesillas : 1494; Chute de l’Empire romain d’Occident : 476"
+      "explanation": "Cet événement date de 1805, soit de la décennie 1800–1809."
     },
     "en": {
-      "text": "Which event is the most recent among: Champlain founds Quebec City, Fall of the Western Roman Empire, Peace of Westphalia, Treaty of Tordesillas?",
+      "text": "In which decade did the event “Battle of Austerlitz” take place?",
       "options": [
-        "Peace of Westphalia",
-        "Champlain founds Quebec City",
-        "Fall of the Western Roman Empire",
-        "Treaty of Tordesillas"
+        "1800–1809",
+        "1790–1799",
+        "1810–1819",
+        "1820–1829"
       ],
-      "explanation": "Peace of Westphalia: 1648; Champlain founds Quebec City: 1608; Treaty of Tordesillas: 1494; Fall of the Western Roman Empire: 476"
+      "explanation": "This event took place in 1805, in the decade 1800–1809."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2152
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Signature du traité de Rome, Début de la guerre civile espagnole, Coup d’État du 18 Brumaire, Bataille de Marignan ?",
+      "text": "À quelle période historique appartient l’événement « Bataille d’Austerlitz » ?",
       "options": [
-        "Signature du traité de Rome",
-        "Début de la guerre civile espagnole",
-        "Coup d’État du 18 Brumaire",
-        "Bataille de Marignan"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Signature du traité de Rome : 1957; Début de la guerre civile espagnole : 1936; Coup d’État du 18 Brumaire : 1799; Bataille de Marignan : 1515"
+      "explanation": "Cet événement date de 1805 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Signing of the Treaty of Rome, Beginning of the Spanish Civil War, Coup of 18 Brumaire, Battle of Marignano?",
+      "text": "Which historical period includes the event “Battle of Austerlitz”?",
       "options": [
-        "Signing of the Treaty of Rome",
-        "Beginning of the Spanish Civil War",
-        "Coup of 18 Brumaire",
-        "Battle of Marignano"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Signing of the Treaty of Rome: 1957; Beginning of the Spanish Civil War: 1936; Coup of 18 Brumaire: 1799; Battle of Marignano: 1515"
+      "explanation": "This event took place in 1805, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2153
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Proclamation de la Deuxième République française, Publication des 95 thèses de Luther, Révolution de Juillet en France, Révolution russe d’Octobre ?",
+      "text": "Quel événement historique a eu lieu en 1815 ?",
       "options": [
-        "Révolution russe d’Octobre",
-        "Proclamation de la Deuxième République française",
-        "Publication des 95 thèses de Luther",
+        "Bataille de Waterloo",
+        "Bataille d’Austerlitz",
+        "Sacre de Napoléon Ier",
         "Révolution de Juillet en France"
       ],
-      "explanation": "Révolution russe d’Octobre : 1917; Proclamation de la Deuxième République française : 1848; Révolution de Juillet en France : 1830; Publication des 95 thèses de Luther : 1517"
+      "explanation": "En 1815 a eu lieu : Bataille de Waterloo."
     },
     "en": {
-      "text": "Which event is the most recent among: Proclamation of the Second French Republic, Publication of Luther’s 95 Theses, July Revolution in France, Russian October Revolution?",
+      "text": "Which historical event took place in 1815?",
       "options": [
-        "Russian October Revolution",
-        "Proclamation of the Second French Republic",
-        "Publication of Luther’s 95 Theses",
+        "Battle of Waterloo",
+        "Battle of Austerlitz",
+        "Coronation of Napoleon I",
         "July Revolution in France"
       ],
-      "explanation": "Russian October Revolution: 1917; Proclamation of the Second French Republic: 1848; July Revolution in France: 1830; Publication of Luther’s 95 Theses: 1517"
+      "explanation": "In 1815, the following event took place: Battle of Waterloo."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2154
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Proclamation de la Première République française, Coup d’État du 18 Brumaire, Crise du canal de Suez, Signature du traité de Rome ?",
+      "text": "Dans quelle décennie se situe l’événement « Bataille de Waterloo » ?",
       "options": [
-        "Signature du traité de Rome",
-        "Proclamation de la Première République française",
-        "Coup d’État du 18 Brumaire",
-        "Crise du canal de Suez"
+        "1810–1819",
+        "1800–1809",
+        "1820–1829",
+        "1830–1839"
       ],
-      "explanation": "Signature du traité de Rome : 1957; Crise du canal de Suez : 1956; Coup d’État du 18 Brumaire : 1799; Proclamation de la Première République française : 1792"
+      "explanation": "Cet événement date de 1815, soit de la décennie 1810–1819."
     },
     "en": {
-      "text": "Which event is the most recent among: Proclamation of the First French Republic, Coup of 18 Brumaire, Suez Crisis, Signing of the Treaty of Rome?",
+      "text": "In which decade did the event “Battle of Waterloo” take place?",
       "options": [
-        "Signing of the Treaty of Rome",
-        "Proclamation of the First French Republic",
-        "Coup of 18 Brumaire",
-        "Suez Crisis"
+        "1810–1819",
+        "1800–1809",
+        "1820–1829",
+        "1830–1839"
       ],
-      "explanation": "Signing of the Treaty of Rome: 1957; Suez Crisis: 1956; Coup of 18 Brumaire: 1799; Proclamation of the First French Republic: 1792"
+      "explanation": "This event took place in 1815, in the decade 1810–1819."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2155
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Premier alunissage humain, Bataille de Marignan, Chute de l’Empire romain d’Occident, Début de la guerre civile espagnole ?",
+      "text": "À quelle période historique appartient l’événement « Bataille de Waterloo » ?",
       "options": [
-        "Premier alunissage humain",
-        "Bataille de Marignan",
-        "Chute de l’Empire romain d’Occident",
-        "Début de la guerre civile espagnole"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Premier alunissage humain : 1969; Début de la guerre civile espagnole : 1936; Bataille de Marignan : 1515; Chute de l’Empire romain d’Occident : 476"
+      "explanation": "Cet événement date de 1815 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: First crewed Moon landing, Battle of Marignano, Fall of the Western Roman Empire, Beginning of the Spanish Civil War?",
+      "text": "Which historical period includes the event “Battle of Waterloo”?",
       "options": [
-        "First crewed Moon landing",
-        "Battle of Marignano",
-        "Fall of the Western Roman Empire",
-        "Beginning of the Spanish Civil War"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "First crewed Moon landing: 1969; Beginning of the Spanish Civil War: 1936; Battle of Marignano: 1515; Fall of the Western Roman Empire: 476"
+      "explanation": "This event took place in 1815, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2156
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la guerre civile espagnole, Signature du traité de Versailles, Massacre de la Saint-Barthélemy, Bataille de Marignan ?",
+      "text": "Quel événement historique a eu lieu en 1830 ?",
       "options": [
-        "Début de la guerre civile espagnole",
-        "Signature du traité de Versailles",
-        "Massacre de la Saint-Barthélemy",
-        "Bataille de Marignan"
+        "Révolution de Juillet en France",
+        "Bataille de Waterloo",
+        "Proclamation de la Deuxième République française",
+        "Bataille d’Austerlitz"
       ],
-      "explanation": "Début de la guerre civile espagnole : 1936; Signature du traité de Versailles : 1919; Massacre de la Saint-Barthélemy : 1572; Bataille de Marignan : 1515"
+      "explanation": "En 1830 a eu lieu : Révolution de Juillet en France."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the Spanish Civil War, Signing of the Treaty of Versailles, St Bartholomew’s Day massacre, Battle of Marignano?",
+      "text": "Which historical event took place in 1830?",
       "options": [
-        "Beginning of the Spanish Civil War",
-        "Signing of the Treaty of Versailles",
-        "St Bartholomew’s Day massacre",
-        "Battle of Marignano"
+        "July Revolution in France",
+        "Battle of Waterloo",
+        "Proclamation of the Second French Republic",
+        "Battle of Austerlitz"
       ],
-      "explanation": "Beginning of the Spanish Civil War: 1936; Signing of the Treaty of Versailles: 1919; St Bartholomew’s Day massacre: 1572; Battle of Marignano: 1515"
+      "explanation": "In 1830, the following event took place: July Revolution in France."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2157
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Signature du traité de Rome, Indépendance de l’Inde, Massacre de la Saint-Barthélemy, Début de la guerre de Trente Ans ?",
+      "text": "Dans quelle décennie se situe l’événement « Révolution de Juillet en France » ?",
       "options": [
-        "Signature du traité de Rome",
-        "Indépendance de l’Inde",
-        "Massacre de la Saint-Barthélemy",
-        "Début de la guerre de Trente Ans"
+        "1830–1839",
+        "1820–1829",
+        "1840–1849",
+        "1850–1859"
       ],
-      "explanation": "Signature du traité de Rome : 1957; Indépendance de l’Inde : 1947; Début de la guerre de Trente Ans : 1618; Massacre de la Saint-Barthélemy : 1572"
+      "explanation": "Cet événement date de 1830, soit de la décennie 1830–1839."
     },
     "en": {
-      "text": "Which event is the most recent among: Signing of the Treaty of Rome, Indian independence, St Bartholomew’s Day massacre, Beginning of the Thirty Years’ War?",
+      "text": "In which decade did the event “July Revolution in France” take place?",
       "options": [
-        "Signing of the Treaty of Rome",
-        "Indian independence",
-        "St Bartholomew’s Day massacre",
-        "Beginning of the Thirty Years’ War"
+        "1830–1839",
+        "1820–1829",
+        "1840–1849",
+        "1850–1859"
       ],
-      "explanation": "Signing of the Treaty of Rome: 1957; Indian independence: 1947; Beginning of the Thirty Years’ War: 1618; St Bartholomew’s Day massacre: 1572"
+      "explanation": "This event took place in 1830, in the decade 1830–1839."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2158
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Traité de Verdun, Déclaration d’indépendance américaine, Dissolution de l’URSS, Armistice de la Première Guerre mondiale ?",
+      "text": "À quelle période historique appartient l’événement « Révolution de Juillet en France » ?",
       "options": [
-        "Dissolution de l’URSS",
-        "Traité de Verdun",
-        "Déclaration d’indépendance américaine",
-        "Armistice de la Première Guerre mondiale"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Dissolution de l’URSS : 1991; Armistice de la Première Guerre mondiale : 1918; Déclaration d’indépendance américaine : 1776; Traité de Verdun : 843"
+      "explanation": "Cet événement date de 1830 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Treaty of Verdun, American Declaration of Independence, Dissolution of the USSR, First World War armistice?",
+      "text": "Which historical period includes the event “July Revolution in France”?",
       "options": [
-        "Dissolution of the USSR",
-        "Treaty of Verdun",
-        "American Declaration of Independence",
-        "First World War armistice"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Dissolution of the USSR: 1991; First World War armistice: 1918; American Declaration of Independence: 1776; Treaty of Verdun: 843"
+      "explanation": "This event took place in 1830, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2159
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la guerre civile espagnole, Arrivée de Vasco de Gama en Inde, Crise des missiles de Cuba, Début de la guerre de Corée ?",
+      "text": "Quel événement historique a eu lieu en 1848 ?",
       "options": [
-        "Crise des missiles de Cuba",
-        "Début de la guerre civile espagnole",
-        "Arrivée de Vasco de Gama en Inde",
-        "Début de la guerre de Corée"
+        "Proclamation de la Deuxième République française",
+        "Début de la guerre de Sécession",
+        "Révolution de Juillet en France",
+        "Ouverture du canal de Suez"
       ],
-      "explanation": "Crise des missiles de Cuba : 1962; Début de la guerre de Corée : 1950; Début de la guerre civile espagnole : 1936; Arrivée de Vasco de Gama en Inde : 1498"
+      "explanation": "En 1848 a eu lieu : Proclamation de la Deuxième République française."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the Spanish Civil War, Vasco da Gama reaches India, Cuban Missile Crisis, Beginning of the Korean War?",
+      "text": "Which historical event took place in 1848?",
       "options": [
-        "Cuban Missile Crisis",
-        "Beginning of the Spanish Civil War",
-        "Vasco da Gama reaches India",
-        "Beginning of the Korean War"
+        "Proclamation of the Second French Republic",
+        "Beginning of the American Civil War",
+        "July Revolution in France",
+        "Opening of the Suez Canal"
       ],
-      "explanation": "Cuban Missile Crisis: 1962; Beginning of the Korean War: 1950; Beginning of the Spanish Civil War: 1936; Vasco da Gama reaches India: 1498"
+      "explanation": "In 1848, the following event took place: Proclamation of the Second French Republic."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2160
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la Seconde Guerre mondiale en Europe, Sacre de Napoléon Ier, Révolution russe d’Octobre, Massacre de la Saint-Barthélemy ?",
+      "text": "Dans quelle décennie se situe l’événement « Proclamation de la Deuxième République française » ?",
       "options": [
-        "Début de la Seconde Guerre mondiale en Europe",
-        "Sacre de Napoléon Ier",
-        "Révolution russe d’Octobre",
-        "Massacre de la Saint-Barthélemy"
+        "1840–1849",
+        "1830–1839",
+        "1850–1859",
+        "1860–1869"
       ],
-      "explanation": "Début de la Seconde Guerre mondiale en Europe : 1939; Révolution russe d’Octobre : 1917; Sacre de Napoléon Ier : 1804; Massacre de la Saint-Barthélemy : 1572"
+      "explanation": "Cet événement date de 1848, soit de la décennie 1840–1849."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the Second World War in Europe, Coronation of Napoleon I, Russian October Revolution, St Bartholomew’s Day massacre?",
+      "text": "In which decade did the event “Proclamation of the Second French Republic” take place?",
       "options": [
-        "Beginning of the Second World War in Europe",
-        "Coronation of Napoleon I",
-        "Russian October Revolution",
-        "St Bartholomew’s Day massacre"
+        "1840–1849",
+        "1830–1839",
+        "1850–1859",
+        "1860–1869"
       ],
-      "explanation": "Beginning of the Second World War in Europe: 1939; Russian October Revolution: 1917; Coronation of Napoleon I: 1804; St Bartholomew’s Day massacre: 1572"
+      "explanation": "This event took place in 1848, in the decade 1840–1849."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2161
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Défaite de l’Invincible Armada, Krach de Wall Street, Création de l’ONU, Signature du traité de Rome ?",
+      "text": "À quelle période historique appartient l’événement « Proclamation de la Deuxième République française » ?",
       "options": [
-        "Signature du traité de Rome",
-        "Défaite de l’Invincible Armada",
-        "Krach de Wall Street",
-        "Création de l’ONU"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Signature du traité de Rome : 1957; Création de l’ONU : 1945; Krach de Wall Street : 1929; Défaite de l’Invincible Armada : 1588"
+      "explanation": "Cet événement date de 1848 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Defeat of the Spanish Armada, Wall Street Crash, Founding of the UN, Signing of the Treaty of Rome?",
+      "text": "Which historical period includes the event “Proclamation of the Second French Republic”?",
       "options": [
-        "Signing of the Treaty of Rome",
-        "Defeat of the Spanish Armada",
-        "Wall Street Crash",
-        "Founding of the UN"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Signing of the Treaty of Rome: 1957; Founding of the UN: 1945; Wall Street Crash: 1929; Defeat of the Spanish Armada: 1588"
+      "explanation": "This event took place in 1848, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2162
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la Première Guerre mondiale, Bataille d’Azincourt, Ouverture du canal de Suez, Bataille de Marignan ?",
+      "text": "Quel événement historique a eu lieu en 1861 ?",
       "options": [
-        "Début de la Première Guerre mondiale",
-        "Bataille d’Azincourt",
+        "Début de la guerre de Sécession",
         "Ouverture du canal de Suez",
-        "Bataille de Marignan"
+        "Commune de Paris",
+        "Proclamation de la Deuxième République française"
       ],
-      "explanation": "Début de la Première Guerre mondiale : 1914; Ouverture du canal de Suez : 1869; Bataille de Marignan : 1515; Bataille d’Azincourt : 1415"
+      "explanation": "En 1861 a eu lieu : Début de la guerre de Sécession."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the First World War, Battle of Agincourt, Opening of the Suez Canal, Battle of Marignano?",
+      "text": "Which historical event took place in 1861?",
       "options": [
-        "Beginning of the First World War",
-        "Battle of Agincourt",
+        "Beginning of the American Civil War",
         "Opening of the Suez Canal",
-        "Battle of Marignano"
+        "Paris Commune",
+        "Proclamation of the Second French Republic"
       ],
-      "explanation": "Beginning of the First World War: 1914; Opening of the Suez Canal: 1869; Battle of Marignano: 1515; Battle of Agincourt: 1415"
+      "explanation": "In 1861, the following event took place: Beginning of the American Civil War."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2163
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Bataille de Waterloo, Sacre de Napoléon Ier, Arrivée de Vasco de Gama en Inde, Bataille d’Austerlitz ?",
+      "text": "Dans quelle décennie se situe l’événement « Début de la guerre de Sécession » ?",
       "options": [
-        "Bataille de Waterloo",
-        "Sacre de Napoléon Ier",
-        "Arrivée de Vasco de Gama en Inde",
-        "Bataille d’Austerlitz"
+        "1860–1869",
+        "1850–1859",
+        "1870–1879",
+        "1880–1889"
       ],
-      "explanation": "Bataille de Waterloo : 1815; Bataille d’Austerlitz : 1805; Sacre de Napoléon Ier : 1804; Arrivée de Vasco de Gama en Inde : 1498"
+      "explanation": "Cet événement date de 1861, soit de la décennie 1860–1869."
     },
     "en": {
-      "text": "Which event is the most recent among: Battle of Waterloo, Coronation of Napoleon I, Vasco da Gama reaches India, Battle of Austerlitz?",
+      "text": "In which decade did the event “Beginning of the American Civil War” take place?",
       "options": [
-        "Battle of Waterloo",
-        "Coronation of Napoleon I",
-        "Vasco da Gama reaches India",
-        "Battle of Austerlitz"
+        "1860–1869",
+        "1850–1859",
+        "1870–1879",
+        "1880–1889"
       ],
-      "explanation": "Battle of Waterloo: 1815; Battle of Austerlitz: 1805; Coronation of Napoleon I: 1804; Vasco da Gama reaches India: 1498"
+      "explanation": "This event took place in 1861, in the decade 1860–1869."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2164
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Traités de Westphalie, Indépendance de l’Inde, Grand incendie de Londres, Défaite de l’Invincible Armada ?",
+      "text": "À quelle période historique appartient l’événement « Début de la guerre de Sécession » ?",
       "options": [
-        "Indépendance de l’Inde",
-        "Traités de Westphalie",
-        "Grand incendie de Londres",
-        "Défaite de l’Invincible Armada"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Indépendance de l’Inde : 1947; Grand incendie de Londres : 1666; Traités de Westphalie : 1648; Défaite de l’Invincible Armada : 1588"
+      "explanation": "Cet événement date de 1861 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Peace of Westphalia, Indian independence, Great Fire of London, Defeat of the Spanish Armada?",
+      "text": "Which historical period includes the event “Beginning of the American Civil War”?",
       "options": [
-        "Indian independence",
-        "Peace of Westphalia",
-        "Great Fire of London",
-        "Defeat of the Spanish Armada"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Indian independence: 1947; Great Fire of London: 1666; Peace of Westphalia: 1648; Defeat of the Spanish Armada: 1588"
+      "explanation": "This event took place in 1861, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2165
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Traité de Tordesillas, Bataille de Bouvines, Bataille d’Azincourt, Début de la Première Guerre mondiale ?",
+      "text": "Quel événement historique a eu lieu en 1869 ?",
       "options": [
-        "Début de la Première Guerre mondiale",
-        "Traité de Tordesillas",
-        "Bataille de Bouvines",
-        "Bataille d’Azincourt"
+        "Ouverture du canal de Suez",
+        "Commune de Paris",
+        "Début de la guerre de Sécession",
+        "Inauguration de la statue de la Liberté"
       ],
-      "explanation": "Début de la Première Guerre mondiale : 1914; Traité de Tordesillas : 1494; Bataille d’Azincourt : 1415; Bataille de Bouvines : 1214"
+      "explanation": "En 1869 a eu lieu : Ouverture du canal de Suez."
     },
     "en": {
-      "text": "Which event is the most recent among: Treaty of Tordesillas, Battle of Bouvines, Battle of Agincourt, Beginning of the First World War?",
+      "text": "Which historical event took place in 1869?",
       "options": [
-        "Beginning of the First World War",
-        "Treaty of Tordesillas",
-        "Battle of Bouvines",
-        "Battle of Agincourt"
+        "Opening of the Suez Canal",
+        "Paris Commune",
+        "Beginning of the American Civil War",
+        "Dedication of the Statue of Liberty"
       ],
-      "explanation": "Beginning of the First World War: 1914; Treaty of Tordesillas: 1494; Battle of Agincourt: 1415; Battle of Bouvines: 1214"
+      "explanation": "In 1869, the following event took place: Opening of the Suez Canal."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2166
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Signature du traité de Versailles, Déclaration d’indépendance américaine, Achèvement du premier tour du monde par Elcano, Chute de Constantinople ?",
+      "text": "Dans quelle décennie se situe l’événement « Ouverture du canal de Suez » ?",
       "options": [
-        "Signature du traité de Versailles",
-        "Déclaration d’indépendance américaine",
-        "Achèvement du premier tour du monde par Elcano",
-        "Chute de Constantinople"
+        "1860–1869",
+        "1850–1859",
+        "1870–1879",
+        "1880–1889"
       ],
-      "explanation": "Signature du traité de Versailles : 1919; Déclaration d’indépendance américaine : 1776; Achèvement du premier tour du monde par Elcano : 1522; Chute de Constantinople : 1453"
+      "explanation": "Cet événement date de 1869, soit de la décennie 1860–1869."
     },
     "en": {
-      "text": "Which event is the most recent among: Signing of the Treaty of Versailles, American Declaration of Independence, Elcano completes the first circumnavigation, Fall of Constantinople?",
+      "text": "In which decade did the event “Opening of the Suez Canal” take place?",
       "options": [
-        "Signing of the Treaty of Versailles",
-        "American Declaration of Independence",
-        "Elcano completes the first circumnavigation",
-        "Fall of Constantinople"
+        "1860–1869",
+        "1850–1859",
+        "1870–1879",
+        "1880–1889"
       ],
-      "explanation": "Signing of the Treaty of Versailles: 1919; American Declaration of Independence: 1776; Elcano completes the first circumnavigation: 1522; Fall of Constantinople: 1453"
+      "explanation": "This event took place in 1869, in the decade 1860–1869."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2167
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Commune de Paris, Ouverture du canal de Suez, Début de la guerre de Trente Ans, Début de la Seconde Guerre mondiale en Europe ?",
+      "text": "À quelle période historique appartient l’événement « Ouverture du canal de Suez » ?",
       "options": [
-        "Début de la Seconde Guerre mondiale en Europe",
-        "Commune de Paris",
-        "Ouverture du canal de Suez",
-        "Début de la guerre de Trente Ans"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Début de la Seconde Guerre mondiale en Europe : 1939; Commune de Paris : 1871; Ouverture du canal de Suez : 1869; Début de la guerre de Trente Ans : 1618"
+      "explanation": "Cet événement date de 1869 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Paris Commune, Opening of the Suez Canal, Beginning of the Thirty Years’ War, Beginning of the Second World War in Europe?",
+      "text": "Which historical period includes the event “Opening of the Suez Canal”?",
       "options": [
-        "Beginning of the Second World War in Europe",
-        "Paris Commune",
-        "Opening of the Suez Canal",
-        "Beginning of the Thirty Years’ War"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Beginning of the Second World War in Europe: 1939; Paris Commune: 1871; Opening of the Suez Canal: 1869; Beginning of the Thirty Years’ War: 1618"
+      "explanation": "This event took place in 1869, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2168
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Révocation de l’édit de Nantes, Construction du mur de Berlin, Signature de l’édit de Nantes, Fondation de Québec par Champlain ?",
+      "text": "Quel événement historique a eu lieu en 1871 ?",
       "options": [
-        "Construction du mur de Berlin",
-        "Révocation de l’édit de Nantes",
-        "Signature de l’édit de Nantes",
-        "Fondation de Québec par Champlain"
+        "Commune de Paris",
+        "Ouverture du canal de Suez",
+        "Début de la guerre de Sécession",
+        "Inauguration de la statue de la Liberté"
       ],
-      "explanation": "Construction du mur de Berlin : 1961; Révocation de l’édit de Nantes : 1685; Fondation de Québec par Champlain : 1608; Signature de l’édit de Nantes : 1598"
+      "explanation": "En 1871 a eu lieu : Commune de Paris."
     },
     "en": {
-      "text": "Which event is the most recent among: Revocation of the Edict of Nantes, Construction of the Berlin Wall, Signing of the Edict of Nantes, Champlain founds Quebec City?",
+      "text": "Which historical event took place in 1871?",
       "options": [
-        "Construction of the Berlin Wall",
-        "Revocation of the Edict of Nantes",
-        "Signing of the Edict of Nantes",
-        "Champlain founds Quebec City"
+        "Paris Commune",
+        "Opening of the Suez Canal",
+        "Beginning of the American Civil War",
+        "Dedication of the Statue of Liberty"
       ],
-      "explanation": "Construction of the Berlin Wall: 1961; Revocation of the Edict of Nantes: 1685; Champlain founds Quebec City: 1608; Signing of the Edict of Nantes: 1598"
+      "explanation": "In 1871, the following event took place: Paris Commune."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2169
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Bataille de Waterloo, Chute de Constantinople, Armistice de la Première Guerre mondiale, Prise de la Bastille ?",
+      "text": "Dans quelle décennie se situe l’événement « Commune de Paris » ?",
       "options": [
-        "Armistice de la Première Guerre mondiale",
-        "Bataille de Waterloo",
-        "Chute de Constantinople",
-        "Prise de la Bastille"
+        "1870–1879",
+        "1860–1869",
+        "1880–1889",
+        "1890–1899"
       ],
-      "explanation": "Armistice de la Première Guerre mondiale : 1918; Bataille de Waterloo : 1815; Prise de la Bastille : 1789; Chute de Constantinople : 1453"
+      "explanation": "Cet événement date de 1871, soit de la décennie 1870–1879."
     },
     "en": {
-      "text": "Which event is the most recent among: Battle of Waterloo, Fall of Constantinople, First World War armistice, Storming of the Bastille?",
+      "text": "In which decade did the event “Paris Commune” take place?",
       "options": [
-        "First World War armistice",
-        "Battle of Waterloo",
-        "Fall of Constantinople",
-        "Storming of the Bastille"
+        "1870–1879",
+        "1860–1869",
+        "1880–1889",
+        "1890–1899"
       ],
-      "explanation": "First World War armistice: 1918; Battle of Waterloo: 1815; Storming of the Bastille: 1789; Fall of Constantinople: 1453"
+      "explanation": "This event took place in 1871, in the decade 1870–1879."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2170
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Bataille d’Azincourt, Début de la guerre de Sécession, Crise des missiles de Cuba, Crise du canal de Suez ?",
+      "text": "À quelle période historique appartient l’événement « Commune de Paris » ?",
       "options": [
-        "Crise des missiles de Cuba",
-        "Bataille d’Azincourt",
-        "Début de la guerre de Sécession",
-        "Crise du canal de Suez"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Crise des missiles de Cuba : 1962; Crise du canal de Suez : 1956; Début de la guerre de Sécession : 1861; Bataille d’Azincourt : 1415"
+      "explanation": "Cet événement date de 1871 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Battle of Agincourt, Beginning of the American Civil War, Cuban Missile Crisis, Suez Crisis?",
+      "text": "Which historical period includes the event “Paris Commune”?",
       "options": [
-        "Cuban Missile Crisis",
-        "Battle of Agincourt",
-        "Beginning of the American Civil War",
-        "Suez Crisis"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Cuban Missile Crisis: 1962; Suez Crisis: 1956; Beginning of the American Civil War: 1861; Battle of Agincourt: 1415"
+      "explanation": "This event took place in 1871, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2171
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Révocation de l’édit de Nantes, Début de la guerre de Sécession, Début de la guerre de Corée, Début de la guerre de Trente Ans ?",
+      "text": "Quel événement historique a eu lieu en 1886 ?",
       "options": [
-        "Début de la guerre de Corée",
-        "Révocation de l’édit de Nantes",
-        "Début de la guerre de Sécession",
-        "Début de la guerre de Trente Ans"
+        "Inauguration de la statue de la Liberté",
+        "Commune de Paris",
+        "Ouverture du canal de Suez",
+        "Début de la guerre de Sécession"
       ],
-      "explanation": "Début de la guerre de Corée : 1950; Début de la guerre de Sécession : 1861; Révocation de l’édit de Nantes : 1685; Début de la guerre de Trente Ans : 1618"
+      "explanation": "En 1886 a eu lieu : Inauguration de la statue de la Liberté."
     },
     "en": {
-      "text": "Which event is the most recent among: Revocation of the Edict of Nantes, Beginning of the American Civil War, Beginning of the Korean War, Beginning of the Thirty Years’ War?",
+      "text": "Which historical event took place in 1886?",
       "options": [
-        "Beginning of the Korean War",
-        "Revocation of the Edict of Nantes",
-        "Beginning of the American Civil War",
-        "Beginning of the Thirty Years’ War"
+        "Dedication of the Statue of Liberty",
+        "Paris Commune",
+        "Opening of the Suez Canal",
+        "Beginning of the American Civil War"
       ],
-      "explanation": "Beginning of the Korean War: 1950; Beginning of the American Civil War: 1861; Revocation of the Edict of Nantes: 1685; Beginning of the Thirty Years’ War: 1618"
+      "explanation": "In 1886, the following event took place: Dedication of the Statue of Liberty."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2172
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Arrivée de Colomb aux Caraïbes, Crise des missiles de Cuba, Début de la guerre civile espagnole, Ouverture du canal de Suez ?",
+      "text": "Dans quelle décennie se situe l’événement « Inauguration de la statue de la Liberté » ?",
       "options": [
-        "Crise des missiles de Cuba",
-        "Arrivée de Colomb aux Caraïbes",
-        "Début de la guerre civile espagnole",
-        "Ouverture du canal de Suez"
+        "1880–1889",
+        "1870–1879",
+        "1890–1899",
+        "1900–1909"
       ],
-      "explanation": "Crise des missiles de Cuba : 1962; Début de la guerre civile espagnole : 1936; Ouverture du canal de Suez : 1869; Arrivée de Colomb aux Caraïbes : 1492"
+      "explanation": "Cet événement date de 1886, soit de la décennie 1880–1889."
     },
     "en": {
-      "text": "Which event is the most recent among: Columbus reaches the Caribbean, Cuban Missile Crisis, Beginning of the Spanish Civil War, Opening of the Suez Canal?",
+      "text": "In which decade did the event “Dedication of the Statue of Liberty” take place?",
       "options": [
-        "Cuban Missile Crisis",
-        "Columbus reaches the Caribbean",
-        "Beginning of the Spanish Civil War",
-        "Opening of the Suez Canal"
+        "1880–1889",
+        "1870–1879",
+        "1890–1899",
+        "1900–1909"
       ],
-      "explanation": "Cuban Missile Crisis: 1962; Beginning of the Spanish Civil War: 1936; Opening of the Suez Canal: 1869; Columbus reaches the Caribbean: 1492"
+      "explanation": "This event took place in 1886, in the decade 1880–1889."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2173
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Bataille d’Azincourt, Prise de Jérusalem par la première croisade, Prise de la Bastille, Coup d’État du 18 Brumaire ?",
+      "text": "À quelle période historique appartient l’événement « Inauguration de la statue de la Liberté » ?",
       "options": [
-        "Coup d’État du 18 Brumaire",
-        "Bataille d’Azincourt",
-        "Prise de Jérusalem par la première croisade",
-        "Prise de la Bastille"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Coup d’État du 18 Brumaire : 1799; Prise de la Bastille : 1789; Bataille d’Azincourt : 1415; Prise de Jérusalem par la première croisade : 1099"
+      "explanation": "Cet événement date de 1886 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Battle of Agincourt, Capture of Jerusalem by the First Crusade, Storming of the Bastille, Coup of 18 Brumaire?",
+      "text": "Which historical period includes the event “Dedication of the Statue of Liberty”?",
       "options": [
-        "Coup of 18 Brumaire",
-        "Battle of Agincourt",
-        "Capture of Jerusalem by the First Crusade",
-        "Storming of the Bastille"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Coup of 18 Brumaire: 1799; Storming of the Bastille: 1789; Battle of Agincourt: 1415; Capture of Jerusalem by the First Crusade: 1099"
+      "explanation": "This event took place in 1886, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2174
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Grand incendie de Londres, Commune de Paris, Traité de Verdun, Sacre de Napoléon Ier ?",
+      "text": "Quel événement historique a eu lieu en 1914 ?",
       "options": [
-        "Commune de Paris",
-        "Grand incendie de Londres",
-        "Traité de Verdun",
-        "Sacre de Napoléon Ier"
+        "Début de la Première Guerre mondiale",
+        "Révolution russe d’Octobre",
+        "Armistice de la Première Guerre mondiale",
+        "Signature du traité de Versailles"
       ],
-      "explanation": "Commune de Paris : 1871; Sacre de Napoléon Ier : 1804; Grand incendie de Londres : 1666; Traité de Verdun : 843"
+      "explanation": "En 1914 a eu lieu : Début de la Première Guerre mondiale."
     },
     "en": {
-      "text": "Which event is the most recent among: Great Fire of London, Paris Commune, Treaty of Verdun, Coronation of Napoleon I?",
+      "text": "Which historical event took place in 1914?",
       "options": [
-        "Paris Commune",
-        "Great Fire of London",
-        "Treaty of Verdun",
-        "Coronation of Napoleon I"
+        "Beginning of the First World War",
+        "Russian October Revolution",
+        "First World War armistice",
+        "Signing of the Treaty of Versailles"
       ],
-      "explanation": "Paris Commune: 1871; Coronation of Napoleon I: 1804; Great Fire of London: 1666; Treaty of Verdun: 843"
+      "explanation": "In 1914, the following event took place: Beginning of the First World War."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2175
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Proclamation de la Première République française, Début de la guerre de Cent Ans, Révolution russe d’Octobre, Défaite de l’Invincible Armada ?",
+      "text": "Dans quelle décennie se situe l’événement « Début de la Première Guerre mondiale » ?",
       "options": [
-        "Révolution russe d’Octobre",
-        "Proclamation de la Première République française",
-        "Début de la guerre de Cent Ans",
-        "Défaite de l’Invincible Armada"
+        "1910–1919",
+        "1900–1909",
+        "1920–1929",
+        "1930–1939"
       ],
-      "explanation": "Révolution russe d’Octobre : 1917; Proclamation de la Première République française : 1792; Défaite de l’Invincible Armada : 1588; Début de la guerre de Cent Ans : 1337"
+      "explanation": "Cet événement date de 1914, soit de la décennie 1910–1919."
     },
     "en": {
-      "text": "Which event is the most recent among: Proclamation of the First French Republic, Beginning of the Hundred Years’ War, Russian October Revolution, Defeat of the Spanish Armada?",
+      "text": "In which decade did the event “Beginning of the First World War” take place?",
       "options": [
-        "Russian October Revolution",
-        "Proclamation of the First French Republic",
-        "Beginning of the Hundred Years’ War",
-        "Defeat of the Spanish Armada"
+        "1910–1919",
+        "1900–1909",
+        "1920–1929",
+        "1930–1939"
       ],
-      "explanation": "Russian October Revolution: 1917; Proclamation of the First French Republic: 1792; Defeat of the Spanish Armada: 1588; Beginning of the Hundred Years’ War: 1337"
+      "explanation": "This event took place in 1914, in the decade 1910–1919."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2176
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Bataille de Hastings, Achèvement du premier tour du monde par Elcano, Traité de Verdun, Début de la guerre de Cent Ans ?",
+      "text": "À quelle période historique appartient l’événement « Début de la Première Guerre mondiale » ?",
       "options": [
-        "Achèvement du premier tour du monde par Elcano",
-        "Bataille de Hastings",
-        "Traité de Verdun",
-        "Début de la guerre de Cent Ans"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Achèvement du premier tour du monde par Elcano : 1522; Début de la guerre de Cent Ans : 1337; Bataille de Hastings : 1066; Traité de Verdun : 843"
+      "explanation": "Cet événement date de 1914 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Battle of Hastings, Elcano completes the first circumnavigation, Treaty of Verdun, Beginning of the Hundred Years’ War?",
+      "text": "Which historical period includes the event “Beginning of the First World War”?",
       "options": [
-        "Elcano completes the first circumnavigation",
-        "Battle of Hastings",
-        "Treaty of Verdun",
-        "Beginning of the Hundred Years’ War"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Elcano completes the first circumnavigation: 1522; Beginning of the Hundred Years’ War: 1337; Battle of Hastings: 1066; Treaty of Verdun: 843"
+      "explanation": "This event took place in 1914, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2177
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Prise de Jérusalem par la première croisade, Armistice de la Première Guerre mondiale, Début de la guerre de Cent Ans, Premier alunissage humain ?",
+      "text": "Quel événement historique a eu lieu en 1917 ?",
       "options": [
-        "Premier alunissage humain",
-        "Prise de Jérusalem par la première croisade",
+        "Révolution russe d’Octobre",
         "Armistice de la Première Guerre mondiale",
-        "Début de la guerre de Cent Ans"
+        "Signature du traité de Versailles",
+        "Début de la Première Guerre mondiale"
       ],
-      "explanation": "Premier alunissage humain : 1969; Armistice de la Première Guerre mondiale : 1918; Début de la guerre de Cent Ans : 1337; Prise de Jérusalem par la première croisade : 1099"
+      "explanation": "En 1917 a eu lieu : Révolution russe d’Octobre."
     },
     "en": {
-      "text": "Which event is the most recent among: Capture of Jerusalem by the First Crusade, First World War armistice, Beginning of the Hundred Years’ War, First crewed Moon landing?",
+      "text": "Which historical event took place in 1917?",
       "options": [
-        "First crewed Moon landing",
-        "Capture of Jerusalem by the First Crusade",
+        "Russian October Revolution",
         "First World War armistice",
-        "Beginning of the Hundred Years’ War"
+        "Signing of the Treaty of Versailles",
+        "Beginning of the First World War"
       ],
-      "explanation": "First crewed Moon landing: 1969; First World War armistice: 1918; Beginning of the Hundred Years’ War: 1337; Capture of Jerusalem by the First Crusade: 1099"
+      "explanation": "In 1917, the following event took place: Russian October Revolution."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2178
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Chute du mur de Berlin, Fondation de Québec par Champlain, Révocation de l’édit de Nantes, Massacre de la Saint-Barthélemy ?",
+      "text": "Dans quelle décennie se situe l’événement « Révolution russe d’Octobre » ?",
       "options": [
-        "Chute du mur de Berlin",
-        "Fondation de Québec par Champlain",
-        "Révocation de l’édit de Nantes",
-        "Massacre de la Saint-Barthélemy"
+        "1910–1919",
+        "1900–1909",
+        "1920–1929",
+        "1930–1939"
       ],
-      "explanation": "Chute du mur de Berlin : 1989; Révocation de l’édit de Nantes : 1685; Fondation de Québec par Champlain : 1608; Massacre de la Saint-Barthélemy : 1572"
+      "explanation": "Cet événement date de 1917, soit de la décennie 1910–1919."
     },
     "en": {
-      "text": "Which event is the most recent among: Fall of the Berlin Wall, Champlain founds Quebec City, Revocation of the Edict of Nantes, St Bartholomew’s Day massacre?",
+      "text": "In which decade did the event “Russian October Revolution” take place?",
       "options": [
-        "Fall of the Berlin Wall",
-        "Champlain founds Quebec City",
-        "Revocation of the Edict of Nantes",
-        "St Bartholomew’s Day massacre"
+        "1910–1919",
+        "1900–1909",
+        "1920–1929",
+        "1930–1939"
       ],
-      "explanation": "Fall of the Berlin Wall: 1989; Revocation of the Edict of Nantes: 1685; Champlain founds Quebec City: 1608; St Bartholomew’s Day massacre: 1572"
+      "explanation": "This event took place in 1917, in the decade 1910–1919."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2179
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Libération d’Orléans par Jeanne d’Arc, Achèvement du premier tour du monde par Elcano, Début de la guerre de Corée, Bataille de Bouvines ?",
+      "text": "À quelle période historique appartient l’événement « Révolution russe d’Octobre » ?",
       "options": [
-        "Début de la guerre de Corée",
-        "Libération d’Orléans par Jeanne d’Arc",
-        "Achèvement du premier tour du monde par Elcano",
-        "Bataille de Bouvines"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Début de la guerre de Corée : 1950; Achèvement du premier tour du monde par Elcano : 1522; Libération d’Orléans par Jeanne d’Arc : 1429; Bataille de Bouvines : 1214"
+      "explanation": "Cet événement date de 1917 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Relief of Orléans by Joan of Arc, Elcano completes the first circumnavigation, Beginning of the Korean War, Battle of Bouvines?",
+      "text": "Which historical period includes the event “Russian October Revolution”?",
       "options": [
-        "Beginning of the Korean War",
-        "Relief of Orléans by Joan of Arc",
-        "Elcano completes the first circumnavigation",
-        "Battle of Bouvines"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Beginning of the Korean War: 1950; Elcano completes the first circumnavigation: 1522; Relief of Orléans by Joan of Arc: 1429; Battle of Bouvines: 1214"
+      "explanation": "This event took place in 1917, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2180
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Grand incendie de Londres, Proclamation de la Première République française, Débarquement de Normandie, Traité de Tordesillas ?",
+      "text": "Quel événement historique a eu lieu en 1918 ?",
       "options": [
-        "Débarquement de Normandie",
-        "Grand incendie de Londres",
-        "Proclamation de la Première République française",
-        "Traité de Tordesillas"
+        "Armistice de la Première Guerre mondiale",
+        "Révolution russe d’Octobre",
+        "Signature du traité de Versailles",
+        "Début de la Première Guerre mondiale"
       ],
-      "explanation": "Débarquement de Normandie : 1944; Proclamation de la Première République française : 1792; Grand incendie de Londres : 1666; Traité de Tordesillas : 1494"
+      "explanation": "En 1918 a eu lieu : Armistice de la Première Guerre mondiale."
     },
     "en": {
-      "text": "Which event is the most recent among: Great Fire of London, Proclamation of the First French Republic, Normandy landings, Treaty of Tordesillas?",
+      "text": "Which historical event took place in 1918?",
       "options": [
-        "Normandy landings",
-        "Great Fire of London",
-        "Proclamation of the First French Republic",
-        "Treaty of Tordesillas"
+        "First World War armistice",
+        "Russian October Revolution",
+        "Signing of the Treaty of Versailles",
+        "Beginning of the First World War"
       ],
-      "explanation": "Normandy landings: 1944; Proclamation of the First French Republic: 1792; Great Fire of London: 1666; Treaty of Tordesillas: 1494"
+      "explanation": "In 1918, the following event took place: First World War armistice."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2181
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Bataille d’Austerlitz, Dissolution de l’URSS, Arrivée de Colomb aux Caraïbes, Bataille de Waterloo ?",
+      "text": "Dans quelle décennie se situe l’événement « Armistice de la Première Guerre mondiale » ?",
       "options": [
-        "Dissolution de l’URSS",
-        "Bataille d’Austerlitz",
-        "Arrivée de Colomb aux Caraïbes",
-        "Bataille de Waterloo"
+        "1910–1919",
+        "1900–1909",
+        "1920–1929",
+        "1930–1939"
       ],
-      "explanation": "Dissolution de l’URSS : 1991; Bataille de Waterloo : 1815; Bataille d’Austerlitz : 1805; Arrivée de Colomb aux Caraïbes : 1492"
+      "explanation": "Cet événement date de 1918, soit de la décennie 1910–1919."
     },
     "en": {
-      "text": "Which event is the most recent among: Battle of Austerlitz, Dissolution of the USSR, Columbus reaches the Caribbean, Battle of Waterloo?",
+      "text": "In which decade did the event “First World War armistice” take place?",
       "options": [
-        "Dissolution of the USSR",
-        "Battle of Austerlitz",
-        "Columbus reaches the Caribbean",
-        "Battle of Waterloo"
+        "1910–1919",
+        "1900–1909",
+        "1920–1929",
+        "1930–1939"
       ],
-      "explanation": "Dissolution of the USSR: 1991; Battle of Waterloo: 1815; Battle of Austerlitz: 1805; Columbus reaches the Caribbean: 1492"
+      "explanation": "This event took place in 1918, in the decade 1910–1919."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2182
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Déclaration d’indépendance américaine, Publication des 95 thèses de Luther, Bataille de Bouvines, Armistice de la Première Guerre mondiale ?",
+      "text": "À quelle période historique appartient l’événement « Armistice de la Première Guerre mondiale » ?",
       "options": [
-        "Armistice de la Première Guerre mondiale",
-        "Déclaration d’indépendance américaine",
-        "Publication des 95 thèses de Luther",
-        "Bataille de Bouvines"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Armistice de la Première Guerre mondiale : 1918; Déclaration d’indépendance américaine : 1776; Publication des 95 thèses de Luther : 1517; Bataille de Bouvines : 1214"
+      "explanation": "Cet événement date de 1918 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: American Declaration of Independence, Publication of Luther’s 95 Theses, Battle of Bouvines, First World War armistice?",
+      "text": "Which historical period includes the event “First World War armistice”?",
       "options": [
-        "First World War armistice",
-        "American Declaration of Independence",
-        "Publication of Luther’s 95 Theses",
-        "Battle of Bouvines"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "First World War armistice: 1918; American Declaration of Independence: 1776; Publication of Luther’s 95 Theses: 1517; Battle of Bouvines: 1214"
+      "explanation": "This event took place in 1918, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2183
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Krach de Wall Street, Achèvement du premier tour du monde par Elcano, Signature de l’édit de Nantes, Proclamation de la Deuxième République française ?",
+      "text": "Quel événement historique a eu lieu en 1919 ?",
       "options": [
-        "Krach de Wall Street",
-        "Achèvement du premier tour du monde par Elcano",
-        "Signature de l’édit de Nantes",
-        "Proclamation de la Deuxième République française"
+        "Signature du traité de Versailles",
+        "Armistice de la Première Guerre mondiale",
+        "Révolution russe d’Octobre",
+        "Début de la Première Guerre mondiale"
       ],
-      "explanation": "Krach de Wall Street : 1929; Proclamation de la Deuxième République française : 1848; Signature de l’édit de Nantes : 1598; Achèvement du premier tour du monde par Elcano : 1522"
+      "explanation": "En 1919 a eu lieu : Signature du traité de Versailles."
     },
     "en": {
-      "text": "Which event is the most recent among: Wall Street Crash, Elcano completes the first circumnavigation, Signing of the Edict of Nantes, Proclamation of the Second French Republic?",
+      "text": "Which historical event took place in 1919?",
       "options": [
-        "Wall Street Crash",
-        "Elcano completes the first circumnavigation",
-        "Signing of the Edict of Nantes",
-        "Proclamation of the Second French Republic"
+        "Signing of the Treaty of Versailles",
+        "First World War armistice",
+        "Russian October Revolution",
+        "Beginning of the First World War"
       ],
-      "explanation": "Wall Street Crash: 1929; Proclamation of the Second French Republic: 1848; Signing of the Edict of Nantes: 1598; Elcano completes the first circumnavigation: 1522"
+      "explanation": "In 1919, the following event took place: Signing of the Treaty of Versailles."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2184
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Création de l’OTAN, Crise du canal de Suez, Signature de la Magna Carta, Krach de Wall Street ?",
+      "text": "Dans quelle décennie se situe l’événement « Signature du traité de Versailles » ?",
       "options": [
-        "Crise du canal de Suez",
-        "Création de l’OTAN",
-        "Signature de la Magna Carta",
-        "Krach de Wall Street"
+        "1910–1919",
+        "1900–1909",
+        "1920–1929",
+        "1930–1939"
       ],
-      "explanation": "Crise du canal de Suez : 1956; Création de l’OTAN : 1949; Krach de Wall Street : 1929; Signature de la Magna Carta : 1215"
+      "explanation": "Cet événement date de 1919, soit de la décennie 1910–1919."
     },
     "en": {
-      "text": "Which event is the most recent among: Founding of NATO, Suez Crisis, Signing of Magna Carta, Wall Street Crash?",
+      "text": "In which decade did the event “Signing of the Treaty of Versailles” take place?",
       "options": [
-        "Suez Crisis",
-        "Founding of NATO",
-        "Signing of Magna Carta",
-        "Wall Street Crash"
+        "1910–1919",
+        "1900–1909",
+        "1920–1929",
+        "1930–1939"
       ],
-      "explanation": "Suez Crisis: 1956; Founding of NATO: 1949; Wall Street Crash: 1929; Signing of Magna Carta: 1215"
+      "explanation": "This event took place in 1919, in the decade 1910–1919."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2185
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la Première Guerre mondiale, Libération d’Orléans par Jeanne d’Arc, Début de la Seconde Guerre mondiale en Europe, Armistice de la Première Guerre mondiale ?",
+      "text": "À quelle période historique appartient l’événement « Signature du traité de Versailles » ?",
       "options": [
-        "Début de la Seconde Guerre mondiale en Europe",
-        "Début de la Première Guerre mondiale",
-        "Libération d’Orléans par Jeanne d’Arc",
-        "Armistice de la Première Guerre mondiale"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Début de la Seconde Guerre mondiale en Europe : 1939; Armistice de la Première Guerre mondiale : 1918; Début de la Première Guerre mondiale : 1914; Libération d’Orléans par Jeanne d’Arc : 1429"
+      "explanation": "Cet événement date de 1919 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the First World War, Relief of Orléans by Joan of Arc, Beginning of the Second World War in Europe, First World War armistice?",
+      "text": "Which historical period includes the event “Signing of the Treaty of Versailles”?",
       "options": [
-        "Beginning of the Second World War in Europe",
-        "Beginning of the First World War",
-        "Relief of Orléans by Joan of Arc",
-        "First World War armistice"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Beginning of the Second World War in Europe: 1939; First World War armistice: 1918; Beginning of the First World War: 1914; Relief of Orléans by Joan of Arc: 1429"
+      "explanation": "This event took place in 1919, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2186
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Chute de Constantinople, Premier alunissage humain, Sacre de Napoléon Ier, Traité de Verdun ?",
+      "text": "Quel événement historique a eu lieu en 1929 ?",
       "options": [
-        "Premier alunissage humain",
-        "Chute de Constantinople",
-        "Sacre de Napoléon Ier",
-        "Traité de Verdun"
+        "Krach de Wall Street",
+        "Début de la guerre civile espagnole",
+        "Signature du traité de Versailles",
+        "Début de la Seconde Guerre mondiale en Europe"
       ],
-      "explanation": "Premier alunissage humain : 1969; Sacre de Napoléon Ier : 1804; Chute de Constantinople : 1453; Traité de Verdun : 843"
+      "explanation": "En 1929 a eu lieu : Krach de Wall Street."
     },
     "en": {
-      "text": "Which event is the most recent among: Fall of Constantinople, First crewed Moon landing, Coronation of Napoleon I, Treaty of Verdun?",
+      "text": "Which historical event took place in 1929?",
       "options": [
-        "First crewed Moon landing",
-        "Fall of Constantinople",
-        "Coronation of Napoleon I",
-        "Treaty of Verdun"
+        "Wall Street Crash",
+        "Beginning of the Spanish Civil War",
+        "Signing of the Treaty of Versailles",
+        "Beginning of the Second World War in Europe"
       ],
-      "explanation": "First crewed Moon landing: 1969; Coronation of Napoleon I: 1804; Fall of Constantinople: 1453; Treaty of Verdun: 843"
+      "explanation": "In 1929, the following event took place: Wall Street Crash."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2187
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Crise des missiles de Cuba, Couronnement d’Hugues Capet, Début de la guerre de Corée, Chute du mur de Berlin ?",
+      "text": "Dans quelle décennie se situe l’événement « Krach de Wall Street » ?",
       "options": [
-        "Chute du mur de Berlin",
-        "Crise des missiles de Cuba",
-        "Couronnement d’Hugues Capet",
-        "Début de la guerre de Corée"
+        "1920–1929",
+        "1910–1919",
+        "1930–1939",
+        "1940–1949"
       ],
-      "explanation": "Chute du mur de Berlin : 1989; Crise des missiles de Cuba : 1962; Début de la guerre de Corée : 1950; Couronnement d’Hugues Capet : 987"
+      "explanation": "Cet événement date de 1929, soit de la décennie 1920–1929."
     },
     "en": {
-      "text": "Which event is the most recent among: Cuban Missile Crisis, Coronation of Hugh Capet, Beginning of the Korean War, Fall of the Berlin Wall?",
+      "text": "In which decade did the event “Wall Street Crash” take place?",
       "options": [
-        "Fall of the Berlin Wall",
-        "Cuban Missile Crisis",
-        "Coronation of Hugh Capet",
-        "Beginning of the Korean War"
+        "1920–1929",
+        "1910–1919",
+        "1930–1939",
+        "1940–1949"
       ],
-      "explanation": "Fall of the Berlin Wall: 1989; Cuban Missile Crisis: 1962; Beginning of the Korean War: 1950; Coronation of Hugh Capet: 987"
+      "explanation": "This event took place in 1929, in the decade 1920–1929."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2188
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la guerre de Cent Ans, Déclaration d’indépendance américaine, Défaite de l’Invincible Armada, Traité de Tordesillas ?",
+      "text": "À quelle période historique appartient l’événement « Krach de Wall Street » ?",
       "options": [
-        "Déclaration d’indépendance américaine",
-        "Début de la guerre de Cent Ans",
-        "Défaite de l’Invincible Armada",
-        "Traité de Tordesillas"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Déclaration d’indépendance américaine : 1776; Défaite de l’Invincible Armada : 1588; Traité de Tordesillas : 1494; Début de la guerre de Cent Ans : 1337"
+      "explanation": "Cet événement date de 1929 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the Hundred Years’ War, American Declaration of Independence, Defeat of the Spanish Armada, Treaty of Tordesillas?",
+      "text": "Which historical period includes the event “Wall Street Crash”?",
       "options": [
-        "American Declaration of Independence",
-        "Beginning of the Hundred Years’ War",
-        "Defeat of the Spanish Armada",
-        "Treaty of Tordesillas"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "American Declaration of Independence: 1776; Defeat of the Spanish Armada: 1588; Treaty of Tordesillas: 1494; Beginning of the Hundred Years’ War: 1337"
+      "explanation": "This event took place in 1929, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2189
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Coup d’État du 18 Brumaire, Fondation de Québec par Champlain, Crise des missiles de Cuba, Ouverture du canal de Suez ?",
+      "text": "Quel événement historique a eu lieu en 1936 ?",
       "options": [
-        "Crise des missiles de Cuba",
-        "Coup d’État du 18 Brumaire",
-        "Fondation de Québec par Champlain",
-        "Ouverture du canal de Suez"
+        "Début de la guerre civile espagnole",
+        "Début de la Seconde Guerre mondiale en Europe",
+        "Attaque de Pearl Harbor",
+        "Krach de Wall Street"
       ],
-      "explanation": "Crise des missiles de Cuba : 1962; Ouverture du canal de Suez : 1869; Coup d’État du 18 Brumaire : 1799; Fondation de Québec par Champlain : 1608"
+      "explanation": "En 1936 a eu lieu : Début de la guerre civile espagnole."
     },
     "en": {
-      "text": "Which event is the most recent among: Coup of 18 Brumaire, Champlain founds Quebec City, Cuban Missile Crisis, Opening of the Suez Canal?",
+      "text": "Which historical event took place in 1936?",
       "options": [
-        "Cuban Missile Crisis",
-        "Coup of 18 Brumaire",
-        "Champlain founds Quebec City",
-        "Opening of the Suez Canal"
+        "Beginning of the Spanish Civil War",
+        "Beginning of the Second World War in Europe",
+        "Attack on Pearl Harbor",
+        "Wall Street Crash"
       ],
-      "explanation": "Cuban Missile Crisis: 1962; Opening of the Suez Canal: 1869; Coup of 18 Brumaire: 1799; Champlain founds Quebec City: 1608"
+      "explanation": "In 1936, the following event took place: Beginning of the Spanish Civil War."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2190
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Coup d’État du 18 Brumaire, Chute du mur de Berlin, Inauguration de la statue de la Liberté, Arrivée de Vasco de Gama en Inde ?",
+      "text": "Dans quelle décennie se situe l’événement « Début de la guerre civile espagnole » ?",
       "options": [
-        "Chute du mur de Berlin",
-        "Coup d’État du 18 Brumaire",
-        "Inauguration de la statue de la Liberté",
-        "Arrivée de Vasco de Gama en Inde"
+        "1930–1939",
+        "1920–1929",
+        "1940–1949",
+        "1950–1959"
       ],
-      "explanation": "Chute du mur de Berlin : 1989; Inauguration de la statue de la Liberté : 1886; Coup d’État du 18 Brumaire : 1799; Arrivée de Vasco de Gama en Inde : 1498"
+      "explanation": "Cet événement date de 1936, soit de la décennie 1930–1939."
     },
     "en": {
-      "text": "Which event is the most recent among: Coup of 18 Brumaire, Fall of the Berlin Wall, Dedication of the Statue of Liberty, Vasco da Gama reaches India?",
+      "text": "In which decade did the event “Beginning of the Spanish Civil War” take place?",
       "options": [
-        "Fall of the Berlin Wall",
-        "Coup of 18 Brumaire",
-        "Dedication of the Statue of Liberty",
-        "Vasco da Gama reaches India"
+        "1930–1939",
+        "1920–1929",
+        "1940–1949",
+        "1950–1959"
       ],
-      "explanation": "Fall of the Berlin Wall: 1989; Dedication of the Statue of Liberty: 1886; Coup of 18 Brumaire: 1799; Vasco da Gama reaches India: 1498"
+      "explanation": "This event took place in 1936, in the decade 1930–1939."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2191
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Révolution russe d’Octobre, Début de la guerre de Trente Ans, Déclaration d’indépendance américaine, Ouverture du canal de Suez ?",
+      "text": "À quelle période historique appartient l’événement « Début de la guerre civile espagnole » ?",
       "options": [
-        "Révolution russe d’Octobre",
-        "Début de la guerre de Trente Ans",
-        "Déclaration d’indépendance américaine",
-        "Ouverture du canal de Suez"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Révolution russe d’Octobre : 1917; Ouverture du canal de Suez : 1869; Déclaration d’indépendance américaine : 1776; Début de la guerre de Trente Ans : 1618"
+      "explanation": "Cet événement date de 1936 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Russian October Revolution, Beginning of the Thirty Years’ War, American Declaration of Independence, Opening of the Suez Canal?",
+      "text": "Which historical period includes the event “Beginning of the Spanish Civil War”?",
       "options": [
-        "Russian October Revolution",
-        "Beginning of the Thirty Years’ War",
-        "American Declaration of Independence",
-        "Opening of the Suez Canal"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Russian October Revolution: 1917; Opening of the Suez Canal: 1869; American Declaration of Independence: 1776; Beginning of the Thirty Years’ War: 1618"
+      "explanation": "This event took place in 1936, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2192
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Chute du mur de Berlin, Signature de l’édit de Nantes, Déclaration d’indépendance américaine, Début de la guerre de Sécession ?",
+      "text": "Quel événement historique a eu lieu en 1939 ?",
       "options": [
-        "Chute du mur de Berlin",
-        "Signature de l’édit de Nantes",
-        "Déclaration d’indépendance américaine",
-        "Début de la guerre de Sécession"
+        "Début de la Seconde Guerre mondiale en Europe",
+        "Attaque de Pearl Harbor",
+        "Début de la guerre civile espagnole",
+        "Débarquement de Normandie"
       ],
-      "explanation": "Chute du mur de Berlin : 1989; Début de la guerre de Sécession : 1861; Déclaration d’indépendance américaine : 1776; Signature de l’édit de Nantes : 1598"
+      "explanation": "En 1939 a eu lieu : Début de la Seconde Guerre mondiale en Europe."
     },
     "en": {
-      "text": "Which event is the most recent among: Fall of the Berlin Wall, Signing of the Edict of Nantes, American Declaration of Independence, Beginning of the American Civil War?",
+      "text": "Which historical event took place in 1939?",
       "options": [
-        "Fall of the Berlin Wall",
-        "Signing of the Edict of Nantes",
-        "American Declaration of Independence",
-        "Beginning of the American Civil War"
+        "Beginning of the Second World War in Europe",
+        "Attack on Pearl Harbor",
+        "Beginning of the Spanish Civil War",
+        "Normandy landings"
       ],
-      "explanation": "Fall of the Berlin Wall: 1989; Beginning of the American Civil War: 1861; American Declaration of Independence: 1776; Signing of the Edict of Nantes: 1598"
+      "explanation": "In 1939, the following event took place: Beginning of the Second World War in Europe."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2193
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Signature du traité de Versailles, Bataille de Hastings, Traités de Westphalie, Début de la Première Guerre mondiale ?",
+      "text": "Dans quelle décennie se situe l’événement « Début de la Seconde Guerre mondiale en Europe » ?",
       "options": [
-        "Signature du traité de Versailles",
-        "Bataille de Hastings",
-        "Traités de Westphalie",
-        "Début de la Première Guerre mondiale"
+        "1930–1939",
+        "1920–1929",
+        "1940–1949",
+        "1950–1959"
       ],
-      "explanation": "Signature du traité de Versailles : 1919; Début de la Première Guerre mondiale : 1914; Traités de Westphalie : 1648; Bataille de Hastings : 1066"
+      "explanation": "Cet événement date de 1939, soit de la décennie 1930–1939."
     },
     "en": {
-      "text": "Which event is the most recent among: Signing of the Treaty of Versailles, Battle of Hastings, Peace of Westphalia, Beginning of the First World War?",
+      "text": "In which decade did the event “Beginning of the Second World War in Europe” take place?",
       "options": [
-        "Signing of the Treaty of Versailles",
-        "Battle of Hastings",
-        "Peace of Westphalia",
-        "Beginning of the First World War"
+        "1930–1939",
+        "1920–1929",
+        "1940–1949",
+        "1950–1959"
       ],
-      "explanation": "Signing of the Treaty of Versailles: 1919; Beginning of the First World War: 1914; Peace of Westphalia: 1648; Battle of Hastings: 1066"
+      "explanation": "This event took place in 1939, in the decade 1930–1939."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2194
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Création de l’ONU, Signature du traité de Versailles, Chute du mur de Berlin, Début de la guerre de Sécession ?",
+      "text": "À quelle période historique appartient l’événement « Début de la Seconde Guerre mondiale en Europe » ?",
       "options": [
-        "Chute du mur de Berlin",
-        "Création de l’ONU",
-        "Signature du traité de Versailles",
-        "Début de la guerre de Sécession"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Chute du mur de Berlin : 1989; Création de l’ONU : 1945; Signature du traité de Versailles : 1919; Début de la guerre de Sécession : 1861"
+      "explanation": "Cet événement date de 1939 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Founding of the UN, Signing of the Treaty of Versailles, Fall of the Berlin Wall, Beginning of the American Civil War?",
+      "text": "Which historical period includes the event “Beginning of the Second World War in Europe”?",
       "options": [
-        "Fall of the Berlin Wall",
-        "Founding of the UN",
-        "Signing of the Treaty of Versailles",
-        "Beginning of the American Civil War"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Fall of the Berlin Wall: 1989; Founding of the UN: 1945; Signing of the Treaty of Versailles: 1919; Beginning of the American Civil War: 1861"
+      "explanation": "This event took place in 1939, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2195
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Création de l’ONU, Début de la guerre civile espagnole, Prise de Jérusalem par la première croisade, Armistice de la Première Guerre mondiale ?",
+      "text": "Quel événement historique a eu lieu en 1941 ?",
       "options": [
-        "Création de l’ONU",
-        "Début de la guerre civile espagnole",
-        "Prise de Jérusalem par la première croisade",
-        "Armistice de la Première Guerre mondiale"
+        "Attaque de Pearl Harbor",
+        "Début de la Seconde Guerre mondiale en Europe",
+        "Débarquement de Normandie",
+        "Création de l’ONU"
       ],
-      "explanation": "Création de l’ONU : 1945; Début de la guerre civile espagnole : 1936; Armistice de la Première Guerre mondiale : 1918; Prise de Jérusalem par la première croisade : 1099"
+      "explanation": "En 1941 a eu lieu : Attaque de Pearl Harbor."
     },
     "en": {
-      "text": "Which event is the most recent among: Founding of the UN, Beginning of the Spanish Civil War, Capture of Jerusalem by the First Crusade, First World War armistice?",
+      "text": "Which historical event took place in 1941?",
       "options": [
-        "Founding of the UN",
-        "Beginning of the Spanish Civil War",
-        "Capture of Jerusalem by the First Crusade",
-        "First World War armistice"
+        "Attack on Pearl Harbor",
+        "Beginning of the Second World War in Europe",
+        "Normandy landings",
+        "Founding of the UN"
       ],
-      "explanation": "Founding of the UN: 1945; Beginning of the Spanish Civil War: 1936; First World War armistice: 1918; Capture of Jerusalem by the First Crusade: 1099"
+      "explanation": "In 1941, the following event took place: Attack on Pearl Harbor."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2196
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Prise de Jérusalem par la première croisade, Création de l’OTAN, Bataille de Marignan, Couronnement de Charlemagne ?",
+      "text": "Dans quelle décennie se situe l’événement « Attaque de Pearl Harbor » ?",
       "options": [
-        "Création de l’OTAN",
-        "Prise de Jérusalem par la première croisade",
-        "Bataille de Marignan",
-        "Couronnement de Charlemagne"
+        "1940–1949",
+        "1930–1939",
+        "1950–1959",
+        "1960–1969"
       ],
-      "explanation": "Création de l’OTAN : 1949; Bataille de Marignan : 1515; Prise de Jérusalem par la première croisade : 1099; Couronnement de Charlemagne : 800"
+      "explanation": "Cet événement date de 1941, soit de la décennie 1940–1949."
     },
     "en": {
-      "text": "Which event is the most recent among: Capture of Jerusalem by the First Crusade, Founding of NATO, Battle of Marignano, Coronation of Charlemagne?",
+      "text": "In which decade did the event “Attack on Pearl Harbor” take place?",
       "options": [
-        "Founding of NATO",
-        "Capture of Jerusalem by the First Crusade",
-        "Battle of Marignano",
-        "Coronation of Charlemagne"
+        "1940–1949",
+        "1930–1939",
+        "1950–1959",
+        "1960–1969"
       ],
-      "explanation": "Founding of NATO: 1949; Battle of Marignano: 1515; Capture of Jerusalem by the First Crusade: 1099; Coronation of Charlemagne: 800"
+      "explanation": "This event took place in 1941, in the decade 1940–1949."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2197
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Prise de la Bastille, Crise du canal de Suez, Libération d’Orléans par Jeanne d’Arc, Indépendance de l’Inde ?",
+      "text": "À quelle période historique appartient l’événement « Attaque de Pearl Harbor » ?",
       "options": [
-        "Crise du canal de Suez",
-        "Prise de la Bastille",
-        "Libération d’Orléans par Jeanne d’Arc",
-        "Indépendance de l’Inde"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Crise du canal de Suez : 1956; Indépendance de l’Inde : 1947; Prise de la Bastille : 1789; Libération d’Orléans par Jeanne d’Arc : 1429"
+      "explanation": "Cet événement date de 1941 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Storming of the Bastille, Suez Crisis, Relief of Orléans by Joan of Arc, Indian independence?",
+      "text": "Which historical period includes the event “Attack on Pearl Harbor”?",
       "options": [
-        "Suez Crisis",
-        "Storming of the Bastille",
-        "Relief of Orléans by Joan of Arc",
-        "Indian independence"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Suez Crisis: 1956; Indian independence: 1947; Storming of the Bastille: 1789; Relief of Orléans by Joan of Arc: 1429"
+      "explanation": "This event took place in 1941, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2198
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la guerre de Sécession, Début de la guerre de Trente Ans, Crise des missiles de Cuba, Création de l’ONU ?",
+      "text": "Quel événement historique a eu lieu en 1944 ?",
       "options": [
-        "Crise des missiles de Cuba",
-        "Début de la guerre de Sécession",
-        "Début de la guerre de Trente Ans",
-        "Création de l’ONU"
+        "Débarquement de Normandie",
+        "Création de l’ONU",
+        "Attaque de Pearl Harbor",
+        "Indépendance de l’Inde"
       ],
-      "explanation": "Crise des missiles de Cuba : 1962; Création de l’ONU : 1945; Début de la guerre de Sécession : 1861; Début de la guerre de Trente Ans : 1618"
+      "explanation": "En 1944 a eu lieu : Débarquement de Normandie."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the American Civil War, Beginning of the Thirty Years’ War, Cuban Missile Crisis, Founding of the UN?",
+      "text": "Which historical event took place in 1944?",
       "options": [
-        "Cuban Missile Crisis",
-        "Beginning of the American Civil War",
-        "Beginning of the Thirty Years’ War",
-        "Founding of the UN"
+        "Normandy landings",
+        "Founding of the UN",
+        "Attack on Pearl Harbor",
+        "Indian independence"
       ],
-      "explanation": "Cuban Missile Crisis: 1962; Founding of the UN: 1945; Beginning of the American Civil War: 1861; Beginning of the Thirty Years’ War: 1618"
+      "explanation": "In 1944, the following event took place: Normandy landings."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2199
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la guerre de Sécession, Défaite de l’Invincible Armada, Signature du traité de Rome, Signature du traité de Versailles ?",
+      "text": "Dans quelle décennie se situe l’événement « Débarquement de Normandie » ?",
       "options": [
-        "Signature du traité de Rome",
-        "Début de la guerre de Sécession",
-        "Défaite de l’Invincible Armada",
-        "Signature du traité de Versailles"
+        "1940–1949",
+        "1930–1939",
+        "1950–1959",
+        "1960–1969"
       ],
-      "explanation": "Signature du traité de Rome : 1957; Signature du traité de Versailles : 1919; Début de la guerre de Sécession : 1861; Défaite de l’Invincible Armada : 1588"
+      "explanation": "Cet événement date de 1944, soit de la décennie 1940–1949."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the American Civil War, Defeat of the Spanish Armada, Signing of the Treaty of Rome, Signing of the Treaty of Versailles?",
+      "text": "In which decade did the event “Normandy landings” take place?",
       "options": [
-        "Signing of the Treaty of Rome",
-        "Beginning of the American Civil War",
-        "Defeat of the Spanish Armada",
-        "Signing of the Treaty of Versailles"
+        "1940–1949",
+        "1930–1939",
+        "1950–1959",
+        "1960–1969"
       ],
-      "explanation": "Signing of the Treaty of Rome: 1957; Signing of the Treaty of Versailles: 1919; Beginning of the American Civil War: 1861; Defeat of the Spanish Armada: 1588"
+      "explanation": "This event took place in 1944, in the decade 1940–1949."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2200
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Proclamation de la Première République française, Krach de Wall Street, Sacre de Napoléon Ier, Révolution de Juillet en France ?",
+      "text": "À quelle période historique appartient l’événement « Débarquement de Normandie » ?",
       "options": [
-        "Krach de Wall Street",
-        "Proclamation de la Première République française",
-        "Sacre de Napoléon Ier",
-        "Révolution de Juillet en France"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Krach de Wall Street : 1929; Révolution de Juillet en France : 1830; Sacre de Napoléon Ier : 1804; Proclamation de la Première République française : 1792"
+      "explanation": "Cet événement date de 1944 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Proclamation of the First French Republic, Wall Street Crash, Coronation of Napoleon I, July Revolution in France?",
+      "text": "Which historical period includes the event “Normandy landings”?",
       "options": [
-        "Wall Street Crash",
-        "Proclamation of the First French Republic",
-        "Coronation of Napoleon I",
-        "July Revolution in France"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Wall Street Crash: 1929; July Revolution in France: 1830; Coronation of Napoleon I: 1804; Proclamation of the First French Republic: 1792"
+      "explanation": "This event took place in 1944, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2201
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Crise des missiles de Cuba, Bataille d’Azincourt, Inauguration de la statue de la Liberté, Arrivée de Vasco de Gama en Inde ?",
+      "text": "Quel événement historique a eu lieu en 1945 ?",
       "options": [
-        "Crise des missiles de Cuba",
-        "Bataille d’Azincourt",
-        "Inauguration de la statue de la Liberté",
-        "Arrivée de Vasco de Gama en Inde"
+        "Création de l’ONU",
+        "Débarquement de Normandie",
+        "Indépendance de l’Inde",
+        "Attaque de Pearl Harbor"
       ],
-      "explanation": "Crise des missiles de Cuba : 1962; Inauguration de la statue de la Liberté : 1886; Arrivée de Vasco de Gama en Inde : 1498; Bataille d’Azincourt : 1415"
+      "explanation": "En 1945 a eu lieu : Création de l’ONU."
     },
     "en": {
-      "text": "Which event is the most recent among: Cuban Missile Crisis, Battle of Agincourt, Dedication of the Statue of Liberty, Vasco da Gama reaches India?",
+      "text": "Which historical event took place in 1945?",
       "options": [
-        "Cuban Missile Crisis",
-        "Battle of Agincourt",
-        "Dedication of the Statue of Liberty",
-        "Vasco da Gama reaches India"
+        "Founding of the UN",
+        "Normandy landings",
+        "Indian independence",
+        "Attack on Pearl Harbor"
       ],
-      "explanation": "Cuban Missile Crisis: 1962; Dedication of the Statue of Liberty: 1886; Vasco da Gama reaches India: 1498; Battle of Agincourt: 1415"
+      "explanation": "In 1945, the following event took place: Founding of the UN."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2202
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Coup d’État du 18 Brumaire, Couronnement d’Hugues Capet, Crise des missiles de Cuba, Révolution de Juillet en France ?",
+      "text": "Dans quelle décennie se situe l’événement « Création de l’ONU » ?",
       "options": [
-        "Crise des missiles de Cuba",
-        "Coup d’État du 18 Brumaire",
-        "Couronnement d’Hugues Capet",
-        "Révolution de Juillet en France"
+        "1940–1949",
+        "1930–1939",
+        "1950–1959",
+        "1960–1969"
       ],
-      "explanation": "Crise des missiles de Cuba : 1962; Révolution de Juillet en France : 1830; Coup d’État du 18 Brumaire : 1799; Couronnement d’Hugues Capet : 987"
+      "explanation": "Cet événement date de 1945, soit de la décennie 1940–1949."
     },
     "en": {
-      "text": "Which event is the most recent among: Coup of 18 Brumaire, Coronation of Hugh Capet, Cuban Missile Crisis, July Revolution in France?",
+      "text": "In which decade did the event “Founding of the UN” take place?",
       "options": [
-        "Cuban Missile Crisis",
-        "Coup of 18 Brumaire",
-        "Coronation of Hugh Capet",
-        "July Revolution in France"
+        "1940–1949",
+        "1930–1939",
+        "1950–1959",
+        "1960–1969"
       ],
-      "explanation": "Cuban Missile Crisis: 1962; July Revolution in France: 1830; Coup of 18 Brumaire: 1799; Coronation of Hugh Capet: 987"
+      "explanation": "This event took place in 1945, in the decade 1940–1949."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2203
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Massacre de la Saint-Barthélemy, Prise de la Bastille, Arrivée de Vasco de Gama en Inde, Premier alunissage humain ?",
+      "text": "À quelle période historique appartient l’événement « Création de l’ONU » ?",
       "options": [
-        "Premier alunissage humain",
-        "Massacre de la Saint-Barthélemy",
-        "Prise de la Bastille",
-        "Arrivée de Vasco de Gama en Inde"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Premier alunissage humain : 1969; Prise de la Bastille : 1789; Massacre de la Saint-Barthélemy : 1572; Arrivée de Vasco de Gama en Inde : 1498"
+      "explanation": "Cet événement date de 1945 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: St Bartholomew’s Day massacre, Storming of the Bastille, Vasco da Gama reaches India, First crewed Moon landing?",
+      "text": "Which historical period includes the event “Founding of the UN”?",
       "options": [
-        "First crewed Moon landing",
-        "St Bartholomew’s Day massacre",
-        "Storming of the Bastille",
-        "Vasco da Gama reaches India"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "First crewed Moon landing: 1969; Storming of the Bastille: 1789; St Bartholomew’s Day massacre: 1572; Vasco da Gama reaches India: 1498"
+      "explanation": "This event took place in 1945, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2204
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Proclamation de la Première République française, Défaite de l’Invincible Armada, Signature du traité de Rome, Début de la guerre de Cent Ans ?",
+      "text": "Quel événement historique a eu lieu en 1947 ?",
       "options": [
-        "Signature du traité de Rome",
-        "Proclamation de la Première République française",
-        "Défaite de l’Invincible Armada",
-        "Début de la guerre de Cent Ans"
+        "Indépendance de l’Inde",
+        "Création de l’ONU",
+        "Création de l’OTAN",
+        "Débarquement de Normandie"
       ],
-      "explanation": "Signature du traité de Rome : 1957; Proclamation de la Première République française : 1792; Défaite de l’Invincible Armada : 1588; Début de la guerre de Cent Ans : 1337"
+      "explanation": "En 1947 a eu lieu : Indépendance de l’Inde."
     },
     "en": {
-      "text": "Which event is the most recent among: Proclamation of the First French Republic, Defeat of the Spanish Armada, Signing of the Treaty of Rome, Beginning of the Hundred Years’ War?",
+      "text": "Which historical event took place in 1947?",
       "options": [
-        "Signing of the Treaty of Rome",
-        "Proclamation of the First French Republic",
-        "Defeat of the Spanish Armada",
-        "Beginning of the Hundred Years’ War"
+        "Indian independence",
+        "Founding of the UN",
+        "Founding of NATO",
+        "Normandy landings"
       ],
-      "explanation": "Signing of the Treaty of Rome: 1957; Proclamation of the First French Republic: 1792; Defeat of the Spanish Armada: 1588; Beginning of the Hundred Years’ War: 1337"
+      "explanation": "In 1947, the following event took place: Indian independence."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2205
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Signature du traité de Maastricht, Sacre de Napoléon Ier, Fondation de Québec par Champlain, Ouverture du canal de Suez ?",
+      "text": "Dans quelle décennie se situe l’événement « Indépendance de l’Inde » ?",
       "options": [
-        "Signature du traité de Maastricht",
-        "Sacre de Napoléon Ier",
-        "Fondation de Québec par Champlain",
-        "Ouverture du canal de Suez"
+        "1940–1949",
+        "1930–1939",
+        "1950–1959",
+        "1960–1969"
       ],
-      "explanation": "Signature du traité de Maastricht : 1992; Ouverture du canal de Suez : 1869; Sacre de Napoléon Ier : 1804; Fondation de Québec par Champlain : 1608"
+      "explanation": "Cet événement date de 1947, soit de la décennie 1940–1949."
     },
     "en": {
-      "text": "Which event is the most recent among: Signing of the Maastricht Treaty, Coronation of Napoleon I, Champlain founds Quebec City, Opening of the Suez Canal?",
+      "text": "In which decade did the event “Indian independence” take place?",
       "options": [
-        "Signing of the Maastricht Treaty",
-        "Coronation of Napoleon I",
-        "Champlain founds Quebec City",
-        "Opening of the Suez Canal"
+        "1940–1949",
+        "1930–1939",
+        "1950–1959",
+        "1960–1969"
       ],
-      "explanation": "Signing of the Maastricht Treaty: 1992; Opening of the Suez Canal: 1869; Coronation of Napoleon I: 1804; Champlain founds Quebec City: 1608"
+      "explanation": "This event took place in 1947, in the decade 1940–1949."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2206
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Proclamation de la Deuxième République française, Déclaration d’indépendance américaine, Grand incendie de Londres, Début de la guerre de Corée ?",
+      "text": "À quelle période historique appartient l’événement « Indépendance de l’Inde » ?",
       "options": [
-        "Début de la guerre de Corée",
-        "Proclamation de la Deuxième République française",
-        "Déclaration d’indépendance américaine",
-        "Grand incendie de Londres"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Début de la guerre de Corée : 1950; Proclamation de la Deuxième République française : 1848; Déclaration d’indépendance américaine : 1776; Grand incendie de Londres : 1666"
+      "explanation": "Cet événement date de 1947 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Proclamation of the Second French Republic, American Declaration of Independence, Great Fire of London, Beginning of the Korean War?",
+      "text": "Which historical period includes the event “Indian independence”?",
       "options": [
-        "Beginning of the Korean War",
-        "Proclamation of the Second French Republic",
-        "American Declaration of Independence",
-        "Great Fire of London"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Beginning of the Korean War: 1950; Proclamation of the Second French Republic: 1848; American Declaration of Independence: 1776; Great Fire of London: 1666"
+      "explanation": "This event took place in 1947, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2207
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Traités de Westphalie, Fondation de Québec par Champlain, Révolution russe d’Octobre, Signature du traité de Versailles ?",
+      "text": "Quel événement historique a eu lieu en 1949 ?",
       "options": [
-        "Signature du traité de Versailles",
-        "Traités de Westphalie",
-        "Fondation de Québec par Champlain",
-        "Révolution russe d’Octobre"
+        "Création de l’OTAN",
+        "Début de la guerre de Corée",
+        "Indépendance de l’Inde",
+        "Création de l’ONU"
       ],
-      "explanation": "Signature du traité de Versailles : 1919; Révolution russe d’Octobre : 1917; Traités de Westphalie : 1648; Fondation de Québec par Champlain : 1608"
+      "explanation": "En 1949 a eu lieu : Création de l’OTAN."
     },
     "en": {
-      "text": "Which event is the most recent among: Peace of Westphalia, Champlain founds Quebec City, Russian October Revolution, Signing of the Treaty of Versailles?",
+      "text": "Which historical event took place in 1949?",
       "options": [
-        "Signing of the Treaty of Versailles",
-        "Peace of Westphalia",
-        "Champlain founds Quebec City",
-        "Russian October Revolution"
+        "Founding of NATO",
+        "Beginning of the Korean War",
+        "Indian independence",
+        "Founding of the UN"
       ],
-      "explanation": "Signing of the Treaty of Versailles: 1919; Russian October Revolution: 1917; Peace of Westphalia: 1648; Champlain founds Quebec City: 1608"
+      "explanation": "In 1949, the following event took place: Founding of NATO."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2208
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Massacre de la Saint-Barthélemy, Révocation de l’édit de Nantes, Prise de Jérusalem par la première croisade, Bataille de Waterloo ?",
+      "text": "Dans quelle décennie se situe l’événement « Création de l’OTAN » ?",
       "options": [
-        "Bataille de Waterloo",
-        "Massacre de la Saint-Barthélemy",
-        "Révocation de l’édit de Nantes",
-        "Prise de Jérusalem par la première croisade"
+        "1940–1949",
+        "1930–1939",
+        "1950–1959",
+        "1960–1969"
       ],
-      "explanation": "Bataille de Waterloo : 1815; Révocation de l’édit de Nantes : 1685; Massacre de la Saint-Barthélemy : 1572; Prise de Jérusalem par la première croisade : 1099"
+      "explanation": "Cet événement date de 1949, soit de la décennie 1940–1949."
     },
     "en": {
-      "text": "Which event is the most recent among: St Bartholomew’s Day massacre, Revocation of the Edict of Nantes, Capture of Jerusalem by the First Crusade, Battle of Waterloo?",
+      "text": "In which decade did the event “Founding of NATO” take place?",
       "options": [
-        "Battle of Waterloo",
-        "St Bartholomew’s Day massacre",
-        "Revocation of the Edict of Nantes",
-        "Capture of Jerusalem by the First Crusade"
+        "1940–1949",
+        "1930–1939",
+        "1950–1959",
+        "1960–1969"
       ],
-      "explanation": "Battle of Waterloo: 1815; Revocation of the Edict of Nantes: 1685; St Bartholomew’s Day massacre: 1572; Capture of Jerusalem by the First Crusade: 1099"
+      "explanation": "This event took place in 1949, in the decade 1940–1949."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2209
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Attaque de Pearl Harbor, Proclamation de la Première République française, Début de la guerre de Sécession, Ouverture du canal de Suez ?",
+      "text": "À quelle période historique appartient l’événement « Création de l’OTAN » ?",
       "options": [
-        "Attaque de Pearl Harbor",
-        "Proclamation de la Première République française",
-        "Début de la guerre de Sécession",
-        "Ouverture du canal de Suez"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Attaque de Pearl Harbor : 1941; Ouverture du canal de Suez : 1869; Début de la guerre de Sécession : 1861; Proclamation de la Première République française : 1792"
+      "explanation": "Cet événement date de 1949 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Attack on Pearl Harbor, Proclamation of the First French Republic, Beginning of the American Civil War, Opening of the Suez Canal?",
+      "text": "Which historical period includes the event “Founding of NATO”?",
       "options": [
-        "Attack on Pearl Harbor",
-        "Proclamation of the First French Republic",
-        "Beginning of the American Civil War",
-        "Opening of the Suez Canal"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Attack on Pearl Harbor: 1941; Opening of the Suez Canal: 1869; Beginning of the American Civil War: 1861; Proclamation of the First French Republic: 1792"
+      "explanation": "This event took place in 1949, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2210
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Défaite de l’Invincible Armada, Fondation de Québec par Champlain, Signature de la Magna Carta, Sacre de Napoléon Ier ?",
+      "text": "Quel événement historique a eu lieu en 1950 ?",
       "options": [
-        "Sacre de Napoléon Ier",
-        "Défaite de l’Invincible Armada",
-        "Fondation de Québec par Champlain",
-        "Signature de la Magna Carta"
+        "Début de la guerre de Corée",
+        "Création de l’OTAN",
+        "Indépendance de l’Inde",
+        "Création de l’ONU"
       ],
-      "explanation": "Sacre de Napoléon Ier : 1804; Fondation de Québec par Champlain : 1608; Défaite de l’Invincible Armada : 1588; Signature de la Magna Carta : 1215"
+      "explanation": "En 1950 a eu lieu : Début de la guerre de Corée."
     },
     "en": {
-      "text": "Which event is the most recent among: Defeat of the Spanish Armada, Champlain founds Quebec City, Signing of Magna Carta, Coronation of Napoleon I?",
+      "text": "Which historical event took place in 1950?",
       "options": [
-        "Coronation of Napoleon I",
-        "Defeat of the Spanish Armada",
-        "Champlain founds Quebec City",
-        "Signing of Magna Carta"
+        "Beginning of the Korean War",
+        "Founding of NATO",
+        "Indian independence",
+        "Founding of the UN"
       ],
-      "explanation": "Coronation of Napoleon I: 1804; Champlain founds Quebec City: 1608; Defeat of the Spanish Armada: 1588; Signing of Magna Carta: 1215"
+      "explanation": "In 1950, the following event took place: Beginning of the Korean War."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2211
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Déclaration d’indépendance américaine, Signature de la Magna Carta, Bataille de Waterloo, Bataille d’Austerlitz ?",
+      "text": "Dans quelle décennie se situe l’événement « Début de la guerre de Corée » ?",
       "options": [
-        "Bataille de Waterloo",
-        "Déclaration d’indépendance américaine",
-        "Signature de la Magna Carta",
-        "Bataille d’Austerlitz"
+        "1950–1959",
+        "1940–1949",
+        "1960–1969",
+        "1970–1979"
       ],
-      "explanation": "Bataille de Waterloo : 1815; Bataille d’Austerlitz : 1805; Déclaration d’indépendance américaine : 1776; Signature de la Magna Carta : 1215"
+      "explanation": "Cet événement date de 1950, soit de la décennie 1950–1959."
     },
     "en": {
-      "text": "Which event is the most recent among: American Declaration of Independence, Signing of Magna Carta, Battle of Waterloo, Battle of Austerlitz?",
+      "text": "In which decade did the event “Beginning of the Korean War” take place?",
       "options": [
-        "Battle of Waterloo",
-        "American Declaration of Independence",
-        "Signing of Magna Carta",
-        "Battle of Austerlitz"
+        "1950–1959",
+        "1940–1949",
+        "1960–1969",
+        "1970–1979"
       ],
-      "explanation": "Battle of Waterloo: 1815; Battle of Austerlitz: 1805; American Declaration of Independence: 1776; Signing of Magna Carta: 1215"
+      "explanation": "This event took place in 1950, in the decade 1950–1959."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2212
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Création de l’OTAN, Bataille de Waterloo, Création de l’ONU, Inauguration de la statue de la Liberté ?",
+      "text": "À quelle période historique appartient l’événement « Début de la guerre de Corée » ?",
       "options": [
-        "Création de l’OTAN",
-        "Bataille de Waterloo",
-        "Création de l’ONU",
-        "Inauguration de la statue de la Liberté"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Création de l’OTAN : 1949; Création de l’ONU : 1945; Inauguration de la statue de la Liberté : 1886; Bataille de Waterloo : 1815"
+      "explanation": "Cet événement date de 1950 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Founding of NATO, Battle of Waterloo, Founding of the UN, Dedication of the Statue of Liberty?",
+      "text": "Which historical period includes the event “Beginning of the Korean War”?",
       "options": [
-        "Founding of NATO",
-        "Battle of Waterloo",
-        "Founding of the UN",
-        "Dedication of the Statue of Liberty"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Founding of NATO: 1949; Founding of the UN: 1945; Dedication of the Statue of Liberty: 1886; Battle of Waterloo: 1815"
+      "explanation": "This event took place in 1950, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2213
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Traités de Westphalie, Début de la Première Guerre mondiale, Prise de Jérusalem par la première croisade, Début de la guerre de Cent Ans ?",
+      "text": "Quel événement historique a eu lieu en 1956 ?",
       "options": [
-        "Début de la Première Guerre mondiale",
-        "Traités de Westphalie",
-        "Prise de Jérusalem par la première croisade",
-        "Début de la guerre de Cent Ans"
+        "Crise du canal de Suez",
+        "Signature du traité de Rome",
+        "Construction du mur de Berlin",
+        "Début de la guerre de Corée"
       ],
-      "explanation": "Début de la Première Guerre mondiale : 1914; Traités de Westphalie : 1648; Début de la guerre de Cent Ans : 1337; Prise de Jérusalem par la première croisade : 1099"
+      "explanation": "En 1956 a eu lieu : Crise du canal de Suez."
     },
     "en": {
-      "text": "Which event is the most recent among: Peace of Westphalia, Beginning of the First World War, Capture of Jerusalem by the First Crusade, Beginning of the Hundred Years’ War?",
+      "text": "Which historical event took place in 1956?",
       "options": [
-        "Beginning of the First World War",
-        "Peace of Westphalia",
-        "Capture of Jerusalem by the First Crusade",
-        "Beginning of the Hundred Years’ War"
+        "Suez Crisis",
+        "Signing of the Treaty of Rome",
+        "Construction of the Berlin Wall",
+        "Beginning of the Korean War"
       ],
-      "explanation": "Beginning of the First World War: 1914; Peace of Westphalia: 1648; Beginning of the Hundred Years’ War: 1337; Capture of Jerusalem by the First Crusade: 1099"
+      "explanation": "In 1956, the following event took place: Suez Crisis."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2214
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Signature de l’édit de Nantes, Début de la Première Guerre mondiale, Bataille d’Azincourt, Bataille de Bouvines ?",
+      "text": "Dans quelle décennie se situe l’événement « Crise du canal de Suez » ?",
       "options": [
-        "Début de la Première Guerre mondiale",
-        "Signature de l’édit de Nantes",
-        "Bataille d’Azincourt",
-        "Bataille de Bouvines"
+        "1950–1959",
+        "1940–1949",
+        "1960–1969",
+        "1970–1979"
       ],
-      "explanation": "Début de la Première Guerre mondiale : 1914; Signature de l’édit de Nantes : 1598; Bataille d’Azincourt : 1415; Bataille de Bouvines : 1214"
+      "explanation": "Cet événement date de 1956, soit de la décennie 1950–1959."
     },
     "en": {
-      "text": "Which event is the most recent among: Signing of the Edict of Nantes, Beginning of the First World War, Battle of Agincourt, Battle of Bouvines?",
+      "text": "In which decade did the event “Suez Crisis” take place?",
       "options": [
-        "Beginning of the First World War",
-        "Signing of the Edict of Nantes",
-        "Battle of Agincourt",
-        "Battle of Bouvines"
+        "1950–1959",
+        "1940–1949",
+        "1960–1969",
+        "1970–1979"
       ],
-      "explanation": "Beginning of the First World War: 1914; Signing of the Edict of Nantes: 1598; Battle of Agincourt: 1415; Battle of Bouvines: 1214"
+      "explanation": "This event took place in 1956, in the decade 1950–1959."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2215
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Signature du traité de Maastricht, Début de la Première Guerre mondiale, Signature du traité de Rome, Proclamation de la Première République française ?",
+      "text": "À quelle période historique appartient l’événement « Crise du canal de Suez » ?",
       "options": [
-        "Signature du traité de Maastricht",
-        "Début de la Première Guerre mondiale",
-        "Signature du traité de Rome",
-        "Proclamation de la Première République française"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Signature du traité de Maastricht : 1992; Signature du traité de Rome : 1957; Début de la Première Guerre mondiale : 1914; Proclamation de la Première République française : 1792"
+      "explanation": "Cet événement date de 1956 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Signing of the Maastricht Treaty, Beginning of the First World War, Signing of the Treaty of Rome, Proclamation of the First French Republic?",
+      "text": "Which historical period includes the event “Suez Crisis”?",
       "options": [
-        "Signing of the Maastricht Treaty",
-        "Beginning of the First World War",
-        "Signing of the Treaty of Rome",
-        "Proclamation of the First French Republic"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Signing of the Maastricht Treaty: 1992; Signing of the Treaty of Rome: 1957; Beginning of the First World War: 1914; Proclamation of the First French Republic: 1792"
+      "explanation": "This event took place in 1956, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2216
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Sacre de Napoléon Ier, Crise des missiles de Cuba, Publication des 95 thèses de Luther, Traité de Verdun ?",
+      "text": "Quel événement historique a eu lieu en 1957 ?",
       "options": [
-        "Crise des missiles de Cuba",
-        "Sacre de Napoléon Ier",
-        "Publication des 95 thèses de Luther",
-        "Traité de Verdun"
+        "Signature du traité de Rome",
+        "Crise du canal de Suez",
+        "Construction du mur de Berlin",
+        "Crise des missiles de Cuba"
       ],
-      "explanation": "Crise des missiles de Cuba : 1962; Sacre de Napoléon Ier : 1804; Publication des 95 thèses de Luther : 1517; Traité de Verdun : 843"
+      "explanation": "En 1957 a eu lieu : Signature du traité de Rome."
     },
     "en": {
-      "text": "Which event is the most recent among: Coronation of Napoleon I, Cuban Missile Crisis, Publication of Luther’s 95 Theses, Treaty of Verdun?",
+      "text": "Which historical event took place in 1957?",
       "options": [
-        "Cuban Missile Crisis",
-        "Coronation of Napoleon I",
-        "Publication of Luther’s 95 Theses",
-        "Treaty of Verdun"
+        "Signing of the Treaty of Rome",
+        "Suez Crisis",
+        "Construction of the Berlin Wall",
+        "Cuban Missile Crisis"
       ],
-      "explanation": "Cuban Missile Crisis: 1962; Coronation of Napoleon I: 1804; Publication of Luther’s 95 Theses: 1517; Treaty of Verdun: 843"
+      "explanation": "In 1957, the following event took place: Signing of the Treaty of Rome."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2217
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Premier alunissage humain, Chute de l’Empire romain d’Occident, Signature de la Magna Carta, Traité de Tordesillas ?",
+      "text": "Dans quelle décennie se situe l’événement « Signature du traité de Rome » ?",
       "options": [
-        "Premier alunissage humain",
-        "Chute de l’Empire romain d’Occident",
-        "Signature de la Magna Carta",
-        "Traité de Tordesillas"
+        "1950–1959",
+        "1940–1949",
+        "1960–1969",
+        "1970–1979"
       ],
-      "explanation": "Premier alunissage humain : 1969; Traité de Tordesillas : 1494; Signature de la Magna Carta : 1215; Chute de l’Empire romain d’Occident : 476"
+      "explanation": "Cet événement date de 1957, soit de la décennie 1950–1959."
     },
     "en": {
-      "text": "Which event is the most recent among: First crewed Moon landing, Fall of the Western Roman Empire, Signing of Magna Carta, Treaty of Tordesillas?",
+      "text": "In which decade did the event “Signing of the Treaty of Rome” take place?",
       "options": [
-        "First crewed Moon landing",
-        "Fall of the Western Roman Empire",
-        "Signing of Magna Carta",
-        "Treaty of Tordesillas"
+        "1950–1959",
+        "1940–1949",
+        "1960–1969",
+        "1970–1979"
       ],
-      "explanation": "First crewed Moon landing: 1969; Treaty of Tordesillas: 1494; Signing of Magna Carta: 1215; Fall of the Western Roman Empire: 476"
+      "explanation": "This event took place in 1957, in the decade 1950–1959."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2218
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Arrivée de Vasco de Gama en Inde, Proclamation de la Deuxième République française, Bataille d’Austerlitz, Révolution russe d’Octobre ?",
+      "text": "À quelle période historique appartient l’événement « Signature du traité de Rome » ?",
       "options": [
-        "Révolution russe d’Octobre",
-        "Arrivée de Vasco de Gama en Inde",
-        "Proclamation de la Deuxième République française",
-        "Bataille d’Austerlitz"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Révolution russe d’Octobre : 1917; Proclamation de la Deuxième République française : 1848; Bataille d’Austerlitz : 1805; Arrivée de Vasco de Gama en Inde : 1498"
+      "explanation": "Cet événement date de 1957 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Vasco da Gama reaches India, Proclamation of the Second French Republic, Battle of Austerlitz, Russian October Revolution?",
+      "text": "Which historical period includes the event “Signing of the Treaty of Rome”?",
       "options": [
-        "Russian October Revolution",
-        "Vasco da Gama reaches India",
-        "Proclamation of the Second French Republic",
-        "Battle of Austerlitz"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Russian October Revolution: 1917; Proclamation of the Second French Republic: 1848; Battle of Austerlitz: 1805; Vasco da Gama reaches India: 1498"
+      "explanation": "This event took place in 1957, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2219
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Construction du mur de Berlin, Création de l’OTAN, Couronnement d’Hugues Capet, Début de la guerre de Sécession ?",
+      "text": "Quel événement historique a eu lieu en 1961 ?",
       "options": [
         "Construction du mur de Berlin",
-        "Création de l’OTAN",
-        "Couronnement d’Hugues Capet",
-        "Début de la guerre de Sécession"
+        "Crise des missiles de Cuba",
+        "Signature du traité de Rome",
+        "Crise du canal de Suez"
       ],
-      "explanation": "Construction du mur de Berlin : 1961; Création de l’OTAN : 1949; Début de la guerre de Sécession : 1861; Couronnement d’Hugues Capet : 987"
+      "explanation": "En 1961 a eu lieu : Construction du mur de Berlin."
     },
     "en": {
-      "text": "Which event is the most recent among: Construction of the Berlin Wall, Founding of NATO, Coronation of Hugh Capet, Beginning of the American Civil War?",
+      "text": "Which historical event took place in 1961?",
       "options": [
         "Construction of the Berlin Wall",
-        "Founding of NATO",
-        "Coronation of Hugh Capet",
-        "Beginning of the American Civil War"
+        "Cuban Missile Crisis",
+        "Signing of the Treaty of Rome",
+        "Suez Crisis"
       ],
-      "explanation": "Construction of the Berlin Wall: 1961; Founding of NATO: 1949; Beginning of the American Civil War: 1861; Coronation of Hugh Capet: 987"
+      "explanation": "In 1961, the following event took place: Construction of the Berlin Wall."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2220
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Krach de Wall Street, Révocation de l’édit de Nantes, Arrivée de Vasco de Gama en Inde, Proclamation de la Première République française ?",
+      "text": "Dans quelle décennie se situe l’événement « Construction du mur de Berlin » ?",
       "options": [
-        "Krach de Wall Street",
-        "Révocation de l’édit de Nantes",
-        "Arrivée de Vasco de Gama en Inde",
-        "Proclamation de la Première République française"
+        "1960–1969",
+        "1950–1959",
+        "1970–1979",
+        "1980–1989"
       ],
-      "explanation": "Krach de Wall Street : 1929; Proclamation de la Première République française : 1792; Révocation de l’édit de Nantes : 1685; Arrivée de Vasco de Gama en Inde : 1498"
+      "explanation": "Cet événement date de 1961, soit de la décennie 1960–1969."
     },
     "en": {
-      "text": "Which event is the most recent among: Wall Street Crash, Revocation of the Edict of Nantes, Vasco da Gama reaches India, Proclamation of the First French Republic?",
+      "text": "In which decade did the event “Construction of the Berlin Wall” take place?",
       "options": [
-        "Wall Street Crash",
-        "Revocation of the Edict of Nantes",
-        "Vasco da Gama reaches India",
-        "Proclamation of the First French Republic"
+        "1960–1969",
+        "1950–1959",
+        "1970–1979",
+        "1980–1989"
       ],
-      "explanation": "Wall Street Crash: 1929; Proclamation of the First French Republic: 1792; Revocation of the Edict of Nantes: 1685; Vasco da Gama reaches India: 1498"
+      "explanation": "This event took place in 1961, in the decade 1960–1969."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2221
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Libération d’Orléans par Jeanne d’Arc, Traité de Verdun, Bataille de Marignan, Bataille de Waterloo ?",
+      "text": "À quelle période historique appartient l’événement « Construction du mur de Berlin » ?",
       "options": [
-        "Bataille de Waterloo",
-        "Libération d’Orléans par Jeanne d’Arc",
-        "Traité de Verdun",
-        "Bataille de Marignan"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Bataille de Waterloo : 1815; Bataille de Marignan : 1515; Libération d’Orléans par Jeanne d’Arc : 1429; Traité de Verdun : 843"
+      "explanation": "Cet événement date de 1961 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Relief of Orléans by Joan of Arc, Treaty of Verdun, Battle of Marignano, Battle of Waterloo?",
+      "text": "Which historical period includes the event “Construction of the Berlin Wall”?",
       "options": [
-        "Battle of Waterloo",
-        "Relief of Orléans by Joan of Arc",
-        "Treaty of Verdun",
-        "Battle of Marignano"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Battle of Waterloo: 1815; Battle of Marignano: 1515; Relief of Orléans by Joan of Arc: 1429; Treaty of Verdun: 843"
+      "explanation": "This event took place in 1961, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2222
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Grand incendie de Londres, Premier alunissage humain, Dissolution de l’URSS, Publication des 95 thèses de Luther ?",
+      "text": "Quel événement historique a eu lieu en 1962 ?",
       "options": [
-        "Dissolution de l’URSS",
-        "Grand incendie de Londres",
-        "Premier alunissage humain",
-        "Publication des 95 thèses de Luther"
+        "Crise des missiles de Cuba",
+        "Construction du mur de Berlin",
+        "Signature du traité de Rome",
+        "Crise du canal de Suez"
       ],
-      "explanation": "Dissolution de l’URSS : 1991; Premier alunissage humain : 1969; Grand incendie de Londres : 1666; Publication des 95 thèses de Luther : 1517"
+      "explanation": "En 1962 a eu lieu : Crise des missiles de Cuba."
     },
     "en": {
-      "text": "Which event is the most recent among: Great Fire of London, First crewed Moon landing, Dissolution of the USSR, Publication of Luther’s 95 Theses?",
+      "text": "Which historical event took place in 1962?",
       "options": [
-        "Dissolution of the USSR",
-        "Great Fire of London",
-        "First crewed Moon landing",
-        "Publication of Luther’s 95 Theses"
+        "Cuban Missile Crisis",
+        "Construction of the Berlin Wall",
+        "Signing of the Treaty of Rome",
+        "Suez Crisis"
       ],
-      "explanation": "Dissolution of the USSR: 1991; First crewed Moon landing: 1969; Great Fire of London: 1666; Publication of Luther’s 95 Theses: 1517"
+      "explanation": "In 1962, the following event took place: Cuban Missile Crisis."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2223
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la guerre de Sécession, Création de l’OTAN, Proclamation de la Première République française, Inauguration de la statue de la Liberté ?",
+      "text": "Dans quelle décennie se situe l’événement « Crise des missiles de Cuba » ?",
       "options": [
-        "Création de l’OTAN",
-        "Début de la guerre de Sécession",
-        "Proclamation de la Première République française",
-        "Inauguration de la statue de la Liberté"
+        "1960–1969",
+        "1950–1959",
+        "1970–1979",
+        "1980–1989"
       ],
-      "explanation": "Création de l’OTAN : 1949; Inauguration de la statue de la Liberté : 1886; Début de la guerre de Sécession : 1861; Proclamation de la Première République française : 1792"
+      "explanation": "Cet événement date de 1962, soit de la décennie 1960–1969."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the American Civil War, Founding of NATO, Proclamation of the First French Republic, Dedication of the Statue of Liberty?",
+      "text": "In which decade did the event “Cuban Missile Crisis” take place?",
       "options": [
-        "Founding of NATO",
-        "Beginning of the American Civil War",
-        "Proclamation of the First French Republic",
-        "Dedication of the Statue of Liberty"
+        "1960–1969",
+        "1950–1959",
+        "1970–1979",
+        "1980–1989"
       ],
-      "explanation": "Founding of NATO: 1949; Dedication of the Statue of Liberty: 1886; Beginning of the American Civil War: 1861; Proclamation of the First French Republic: 1792"
+      "explanation": "This event took place in 1962, in the decade 1960–1969."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2224
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Révolution de Juillet en France, Création de l’OTAN, Bataille de Marignan, Signature de l’édit de Nantes ?",
+      "text": "À quelle période historique appartient l’événement « Crise des missiles de Cuba » ?",
       "options": [
-        "Création de l’OTAN",
-        "Révolution de Juillet en France",
-        "Bataille de Marignan",
-        "Signature de l’édit de Nantes"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Création de l’OTAN : 1949; Révolution de Juillet en France : 1830; Signature de l’édit de Nantes : 1598; Bataille de Marignan : 1515"
+      "explanation": "Cet événement date de 1962 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: July Revolution in France, Founding of NATO, Battle of Marignano, Signing of the Edict of Nantes?",
+      "text": "Which historical period includes the event “Cuban Missile Crisis”?",
       "options": [
-        "Founding of NATO",
-        "July Revolution in France",
-        "Battle of Marignano",
-        "Signing of the Edict of Nantes"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Founding of NATO: 1949; July Revolution in France: 1830; Signing of the Edict of Nantes: 1598; Battle of Marignano: 1515"
+      "explanation": "This event took place in 1962, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2225
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Crise des missiles de Cuba, Bataille de Marignan, Construction du mur de Berlin, Début de la guerre de Sécession ?",
+      "text": "Quel événement historique a eu lieu en 1969 ?",
       "options": [
+        "Premier alunissage humain",
         "Crise des missiles de Cuba",
-        "Bataille de Marignan",
         "Construction du mur de Berlin",
-        "Début de la guerre de Sécession"
+        "Signature du traité de Rome"
       ],
-      "explanation": "Crise des missiles de Cuba : 1962; Construction du mur de Berlin : 1961; Début de la guerre de Sécession : 1861; Bataille de Marignan : 1515"
+      "explanation": "En 1969 a eu lieu : Premier alunissage humain."
     },
     "en": {
-      "text": "Which event is the most recent among: Cuban Missile Crisis, Battle of Marignano, Construction of the Berlin Wall, Beginning of the American Civil War?",
+      "text": "Which historical event took place in 1969?",
       "options": [
+        "First crewed Moon landing",
         "Cuban Missile Crisis",
-        "Battle of Marignano",
         "Construction of the Berlin Wall",
-        "Beginning of the American Civil War"
+        "Signing of the Treaty of Rome"
       ],
-      "explanation": "Cuban Missile Crisis: 1962; Construction of the Berlin Wall: 1961; Beginning of the American Civil War: 1861; Battle of Marignano: 1515"
+      "explanation": "In 1969, the following event took place: First crewed Moon landing."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2226
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Premier alunissage humain, Déclaration d’indépendance américaine, Couronnement de Charlemagne, Grand incendie de Londres ?",
+      "text": "Dans quelle décennie se situe l’événement « Premier alunissage humain » ?",
       "options": [
-        "Premier alunissage humain",
-        "Déclaration d’indépendance américaine",
-        "Couronnement de Charlemagne",
-        "Grand incendie de Londres"
+        "1960–1969",
+        "1950–1959",
+        "1970–1979",
+        "1980–1989"
       ],
-      "explanation": "Premier alunissage humain : 1969; Déclaration d’indépendance américaine : 1776; Grand incendie de Londres : 1666; Couronnement de Charlemagne : 800"
+      "explanation": "Cet événement date de 1969, soit de la décennie 1960–1969."
     },
     "en": {
-      "text": "Which event is the most recent among: First crewed Moon landing, American Declaration of Independence, Coronation of Charlemagne, Great Fire of London?",
+      "text": "In which decade did the event “First crewed Moon landing” take place?",
       "options": [
-        "First crewed Moon landing",
-        "American Declaration of Independence",
-        "Coronation of Charlemagne",
-        "Great Fire of London"
+        "1960–1969",
+        "1950–1959",
+        "1970–1979",
+        "1980–1989"
       ],
-      "explanation": "First crewed Moon landing: 1969; American Declaration of Independence: 1776; Great Fire of London: 1666; Coronation of Charlemagne: 800"
+      "explanation": "This event took place in 1969, in the decade 1960–1969."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2227
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la Première Guerre mondiale, Signature du traité de Rome, Bataille d’Austerlitz, Armistice de la Première Guerre mondiale ?",
+      "text": "À quelle période historique appartient l’événement « Premier alunissage humain » ?",
       "options": [
-        "Signature du traité de Rome",
-        "Début de la Première Guerre mondiale",
-        "Bataille d’Austerlitz",
-        "Armistice de la Première Guerre mondiale"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Signature du traité de Rome : 1957; Armistice de la Première Guerre mondiale : 1918; Début de la Première Guerre mondiale : 1914; Bataille d’Austerlitz : 1805"
+      "explanation": "Cet événement date de 1969 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the First World War, Signing of the Treaty of Rome, Battle of Austerlitz, First World War armistice?",
+      "text": "Which historical period includes the event “First crewed Moon landing”?",
       "options": [
-        "Signing of the Treaty of Rome",
-        "Beginning of the First World War",
-        "Battle of Austerlitz",
-        "First World War armistice"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Signing of the Treaty of Rome: 1957; First World War armistice: 1918; Beginning of the First World War: 1914; Battle of Austerlitz: 1805"
+      "explanation": "This event took place in 1969, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2228
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Bataille d’Azincourt, Bataille de Waterloo, Crise des missiles de Cuba, Indépendance de l’Inde ?",
+      "text": "Quel événement historique a eu lieu en 1989 ?",
       "options": [
-        "Crise des missiles de Cuba",
-        "Bataille d’Azincourt",
-        "Bataille de Waterloo",
-        "Indépendance de l’Inde"
+        "Chute du mur de Berlin",
+        "Dissolution de l’URSS",
+        "Signature du traité de Maastricht",
+        "Premier alunissage humain"
       ],
-      "explanation": "Crise des missiles de Cuba : 1962; Indépendance de l’Inde : 1947; Bataille de Waterloo : 1815; Bataille d’Azincourt : 1415"
+      "explanation": "En 1989 a eu lieu : Chute du mur de Berlin."
     },
     "en": {
-      "text": "Which event is the most recent among: Battle of Agincourt, Battle of Waterloo, Cuban Missile Crisis, Indian independence?",
+      "text": "Which historical event took place in 1989?",
       "options": [
-        "Cuban Missile Crisis",
-        "Battle of Agincourt",
-        "Battle of Waterloo",
-        "Indian independence"
+        "Fall of the Berlin Wall",
+        "Dissolution of the USSR",
+        "Signing of the Maastricht Treaty",
+        "First crewed Moon landing"
       ],
-      "explanation": "Cuban Missile Crisis: 1962; Indian independence: 1947; Battle of Waterloo: 1815; Battle of Agincourt: 1415"
+      "explanation": "In 1989, the following event took place: Fall of the Berlin Wall."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2229
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Signature du traité de Maastricht, Début de la guerre civile espagnole, Début de la Première Guerre mondiale, Massacre de la Saint-Barthélemy ?",
+      "text": "Dans quelle décennie se situe l’événement « Chute du mur de Berlin » ?",
       "options": [
-        "Signature du traité de Maastricht",
-        "Début de la guerre civile espagnole",
-        "Début de la Première Guerre mondiale",
-        "Massacre de la Saint-Barthélemy"
+        "1980–1989",
+        "1970–1979",
+        "1990–1999",
+        "2000–2009"
       ],
-      "explanation": "Signature du traité de Maastricht : 1992; Début de la guerre civile espagnole : 1936; Début de la Première Guerre mondiale : 1914; Massacre de la Saint-Barthélemy : 1572"
+      "explanation": "Cet événement date de 1989, soit de la décennie 1980–1989."
     },
     "en": {
-      "text": "Which event is the most recent among: Signing of the Maastricht Treaty, Beginning of the Spanish Civil War, Beginning of the First World War, St Bartholomew’s Day massacre?",
+      "text": "In which decade did the event “Fall of the Berlin Wall” take place?",
       "options": [
-        "Signing of the Maastricht Treaty",
-        "Beginning of the Spanish Civil War",
-        "Beginning of the First World War",
-        "St Bartholomew’s Day massacre"
+        "1980–1989",
+        "1970–1979",
+        "1990–1999",
+        "2000–2009"
       ],
-      "explanation": "Signing of the Maastricht Treaty: 1992; Beginning of the Spanish Civil War: 1936; Beginning of the First World War: 1914; St Bartholomew’s Day massacre: 1572"
+      "explanation": "This event took place in 1989, in the decade 1980–1989."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2230
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Attaque de Pearl Harbor, Proclamation de la Première République française, Révolution de Juillet en France, Publication des 95 thèses de Luther ?",
+      "text": "À quelle période historique appartient l’événement « Chute du mur de Berlin » ?",
       "options": [
-        "Attaque de Pearl Harbor",
-        "Proclamation de la Première République française",
-        "Révolution de Juillet en France",
-        "Publication des 95 thèses de Luther"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Attaque de Pearl Harbor : 1941; Révolution de Juillet en France : 1830; Proclamation de la Première République française : 1792; Publication des 95 thèses de Luther : 1517"
+      "explanation": "Cet événement date de 1989 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Attack on Pearl Harbor, Proclamation of the First French Republic, July Revolution in France, Publication of Luther’s 95 Theses?",
+      "text": "Which historical period includes the event “Fall of the Berlin Wall”?",
       "options": [
-        "Attack on Pearl Harbor",
-        "Proclamation of the First French Republic",
-        "July Revolution in France",
-        "Publication of Luther’s 95 Theses"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Attack on Pearl Harbor: 1941; July Revolution in France: 1830; Proclamation of the First French Republic: 1792; Publication of Luther’s 95 Theses: 1517"
+      "explanation": "This event took place in 1989, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2231
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Publication des 95 thèses de Luther, Inauguration de la statue de la Liberté, Début de la guerre de Trente Ans, Début de la guerre civile espagnole ?",
+      "text": "Quel événement historique a eu lieu en 1991 ?",
       "options": [
-        "Début de la guerre civile espagnole",
-        "Publication des 95 thèses de Luther",
-        "Inauguration de la statue de la Liberté",
-        "Début de la guerre de Trente Ans"
+        "Dissolution de l’URSS",
+        "Signature du traité de Maastricht",
+        "Chute du mur de Berlin",
+        "Premier alunissage humain"
       ],
-      "explanation": "Début de la guerre civile espagnole : 1936; Inauguration de la statue de la Liberté : 1886; Début de la guerre de Trente Ans : 1618; Publication des 95 thèses de Luther : 1517"
+      "explanation": "En 1991 a eu lieu : Dissolution de l’URSS."
     },
     "en": {
-      "text": "Which event is the most recent among: Publication of Luther’s 95 Theses, Dedication of the Statue of Liberty, Beginning of the Thirty Years’ War, Beginning of the Spanish Civil War?",
+      "text": "Which historical event took place in 1991?",
       "options": [
-        "Beginning of the Spanish Civil War",
-        "Publication of Luther’s 95 Theses",
-        "Dedication of the Statue of Liberty",
-        "Beginning of the Thirty Years’ War"
+        "Dissolution of the USSR",
+        "Signing of the Maastricht Treaty",
+        "Fall of the Berlin Wall",
+        "First crewed Moon landing"
       ],
-      "explanation": "Beginning of the Spanish Civil War: 1936; Dedication of the Statue of Liberty: 1886; Beginning of the Thirty Years’ War: 1618; Publication of Luther’s 95 Theses: 1517"
+      "explanation": "In 1991, the following event took place: Dissolution of the USSR."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2232
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Chute du mur de Berlin, Ouverture du canal de Suez, Couronnement de Charlemagne, Révolution de Juillet en France ?",
+      "text": "Dans quelle décennie se situe l’événement « Dissolution de l’URSS » ?",
       "options": [
-        "Chute du mur de Berlin",
-        "Ouverture du canal de Suez",
-        "Couronnement de Charlemagne",
-        "Révolution de Juillet en France"
+        "1990–1999",
+        "1980–1989",
+        "2000–2009",
+        "2010–2019"
       ],
-      "explanation": "Chute du mur de Berlin : 1989; Ouverture du canal de Suez : 1869; Révolution de Juillet en France : 1830; Couronnement de Charlemagne : 800"
+      "explanation": "Cet événement date de 1991, soit de la décennie 1990–1999."
     },
     "en": {
-      "text": "Which event is the most recent among: Fall of the Berlin Wall, Opening of the Suez Canal, Coronation of Charlemagne, July Revolution in France?",
+      "text": "In which decade did the event “Dissolution of the USSR” take place?",
       "options": [
-        "Fall of the Berlin Wall",
-        "Opening of the Suez Canal",
-        "Coronation of Charlemagne",
-        "July Revolution in France"
+        "1990–1999",
+        "1980–1989",
+        "2000–2009",
+        "2010–2019"
       ],
-      "explanation": "Fall of the Berlin Wall: 1989; Opening of the Suez Canal: 1869; July Revolution in France: 1830; Coronation of Charlemagne: 800"
+      "explanation": "This event took place in 1991, in the decade 1990–1999."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2233
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Création de l’ONU, Bataille de Hastings, Dissolution de l’URSS, Couronnement d’Hugues Capet ?",
+      "text": "À quelle période historique appartient l’événement « Dissolution de l’URSS » ?",
       "options": [
-        "Dissolution de l’URSS",
-        "Création de l’ONU",
-        "Bataille de Hastings",
-        "Couronnement d’Hugues Capet"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Dissolution de l’URSS : 1991; Création de l’ONU : 1945; Bataille de Hastings : 1066; Couronnement d’Hugues Capet : 987"
+      "explanation": "Cet événement date de 1991 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Founding of the UN, Battle of Hastings, Dissolution of the USSR, Coronation of Hugh Capet?",
+      "text": "Which historical period includes the event “Dissolution of the USSR”?",
       "options": [
-        "Dissolution of the USSR",
-        "Founding of the UN",
-        "Battle of Hastings",
-        "Coronation of Hugh Capet"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Dissolution of the USSR: 1991; Founding of the UN: 1945; Battle of Hastings: 1066; Coronation of Hugh Capet: 987"
+      "explanation": "This event took place in 1991, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2234
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Révolution russe d’Octobre, Création de l’OTAN, Proclamation de la Première République française, Bataille d’Azincourt ?",
+      "text": "Quel événement historique a eu lieu en 1992 ?",
       "options": [
-        "Création de l’OTAN",
-        "Révolution russe d’Octobre",
-        "Proclamation de la Première République française",
-        "Bataille d’Azincourt"
+        "Signature du traité de Maastricht",
+        "Dissolution de l’URSS",
+        "Chute du mur de Berlin",
+        "Premier alunissage humain"
       ],
-      "explanation": "Création de l’OTAN : 1949; Révolution russe d’Octobre : 1917; Proclamation de la Première République française : 1792; Bataille d’Azincourt : 1415"
+      "explanation": "En 1992 a eu lieu : Signature du traité de Maastricht."
     },
     "en": {
-      "text": "Which event is the most recent among: Russian October Revolution, Founding of NATO, Proclamation of the First French Republic, Battle of Agincourt?",
+      "text": "Which historical event took place in 1992?",
       "options": [
-        "Founding of NATO",
-        "Russian October Revolution",
-        "Proclamation of the First French Republic",
-        "Battle of Agincourt"
+        "Signing of the Maastricht Treaty",
+        "Dissolution of the USSR",
+        "Fall of the Berlin Wall",
+        "First crewed Moon landing"
       ],
-      "explanation": "Founding of NATO: 1949; Russian October Revolution: 1917; Proclamation of the First French Republic: 1792; Battle of Agincourt: 1415"
+      "explanation": "In 1992, the following event took place: Signing of the Maastricht Treaty."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2235
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Traités de Westphalie, Commune de Paris, Achèvement du premier tour du monde par Elcano, Krach de Wall Street ?",
+      "text": "Dans quelle décennie se situe l’événement « Signature du traité de Maastricht » ?",
       "options": [
-        "Krach de Wall Street",
-        "Traités de Westphalie",
-        "Commune de Paris",
-        "Achèvement du premier tour du monde par Elcano"
+        "1990–1999",
+        "1980–1989",
+        "2000–2009",
+        "2010–2019"
       ],
-      "explanation": "Krach de Wall Street : 1929; Commune de Paris : 1871; Traités de Westphalie : 1648; Achèvement du premier tour du monde par Elcano : 1522"
+      "explanation": "Cet événement date de 1992, soit de la décennie 1990–1999."
     },
     "en": {
-      "text": "Which event is the most recent among: Peace of Westphalia, Paris Commune, Elcano completes the first circumnavigation, Wall Street Crash?",
+      "text": "In which decade did the event “Signing of the Maastricht Treaty” take place?",
       "options": [
-        "Wall Street Crash",
-        "Peace of Westphalia",
-        "Paris Commune",
-        "Elcano completes the first circumnavigation"
+        "1990–1999",
+        "1980–1989",
+        "2000–2009",
+        "2010–2019"
       ],
-      "explanation": "Wall Street Crash: 1929; Paris Commune: 1871; Peace of Westphalia: 1648; Elcano completes the first circumnavigation: 1522"
+      "explanation": "This event took place in 1992, in the decade 1990–1999."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2236
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Indépendance de l’Inde, Bataille de Bouvines, Signature de l’édit de Nantes, Prise de la Bastille ?",
+      "text": "À quelle période historique appartient l’événement « Signature du traité de Maastricht » ?",
       "options": [
-        "Indépendance de l’Inde",
-        "Bataille de Bouvines",
-        "Signature de l’édit de Nantes",
-        "Prise de la Bastille"
+        "Époque contemporaine",
+        "Antiquité tardive",
+        "Moyen Âge",
+        "Époque moderne"
       ],
-      "explanation": "Indépendance de l’Inde : 1947; Prise de la Bastille : 1789; Signature de l’édit de Nantes : 1598; Bataille de Bouvines : 1214"
+      "explanation": "Cet événement date de 1992 et appartient à la période : Époque contemporaine."
     },
     "en": {
-      "text": "Which event is the most recent among: Indian independence, Battle of Bouvines, Signing of the Edict of Nantes, Storming of the Bastille?",
+      "text": "Which historical period includes the event “Signing of the Maastricht Treaty”?",
       "options": [
-        "Indian independence",
-        "Battle of Bouvines",
-        "Signing of the Edict of Nantes",
-        "Storming of the Bastille"
+        "Contemporary period",
+        "Late Antiquity",
+        "Middle Ages",
+        "Early Modern period"
       ],
-      "explanation": "Indian independence: 1947; Storming of the Bastille: 1789; Signing of the Edict of Nantes: 1598; Battle of Bouvines: 1214"
+      "explanation": "This event took place in 1992, during the Contemporary period."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2237
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Révolution russe d’Octobre, Bataille d’Azincourt, Chute de Constantinople, Attaque de Pearl Harbor ?",
+      "text": "Quel événement du 8e siècle correspond à l'année 800 ?",
       "options": [
-        "Attaque de Pearl Harbor",
-        "Révolution russe d’Octobre",
-        "Bataille d’Azincourt",
-        "Chute de Constantinople"
+        "Couronnement de Charlemagne",
+        "Traité de Verdun",
+        "Couronnement d’Hugues Capet",
+        "Bataille de Hastings"
       ],
-      "explanation": "Attaque de Pearl Harbor : 1941; Révolution russe d’Octobre : 1917; Chute de Constantinople : 1453; Bataille d’Azincourt : 1415"
+      "explanation": "Il s'agit de Couronnement de Charlemagne, daté de 800."
     },
     "en": {
-      "text": "Which event is the most recent among: Russian October Revolution, Battle of Agincourt, Fall of Constantinople, Attack on Pearl Harbor?",
+      "text": "Which event of the 8th century occurred in 800?",
       "options": [
-        "Attack on Pearl Harbor",
-        "Russian October Revolution",
-        "Battle of Agincourt",
-        "Fall of Constantinople"
+        "Coronation of Charlemagne",
+        "Treaty of Verdun",
+        "Coronation of Hugh Capet",
+        "Battle of Hastings"
       ],
-      "explanation": "Attack on Pearl Harbor: 1941; Russian October Revolution: 1917; Fall of Constantinople: 1453; Battle of Agincourt: 1415"
+      "explanation": "It is Coronation of Charlemagne, dated 800."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2238
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Prise de la Bastille, Signature du traité de Versailles, Construction du mur de Berlin, Traité de Verdun ?",
+      "text": "Quel événement du 9e siècle correspond à l'année 843 ?",
       "options": [
-        "Construction du mur de Berlin",
-        "Prise de la Bastille",
-        "Signature du traité de Versailles",
-        "Traité de Verdun"
+        "Traité de Verdun",
+        "Couronnement de Charlemagne",
+        "Couronnement d’Hugues Capet",
+        "Bataille de Hastings"
       ],
-      "explanation": "Construction du mur de Berlin : 1961; Signature du traité de Versailles : 1919; Prise de la Bastille : 1789; Traité de Verdun : 843"
+      "explanation": "Il s'agit de Traité de Verdun, daté de 843."
     },
     "en": {
-      "text": "Which event is the most recent among: Storming of the Bastille, Signing of the Treaty of Versailles, Construction of the Berlin Wall, Treaty of Verdun?",
+      "text": "Which event of the 9th century occurred in 843?",
       "options": [
-        "Construction of the Berlin Wall",
-        "Storming of the Bastille",
-        "Signing of the Treaty of Versailles",
-        "Treaty of Verdun"
+        "Treaty of Verdun",
+        "Coronation of Charlemagne",
+        "Coronation of Hugh Capet",
+        "Battle of Hastings"
       ],
-      "explanation": "Construction of the Berlin Wall: 1961; Signing of the Treaty of Versailles: 1919; Storming of the Bastille: 1789; Treaty of Verdun: 843"
+      "explanation": "It is Treaty of Verdun, dated 843."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2239
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Traité de Verdun, Proclamation de la Première République française, Bataille de Hastings, Libération d’Orléans par Jeanne d’Arc ?",
+      "text": "Quel événement du 10e siècle correspond à l'année 987 ?",
       "options": [
-        "Proclamation de la Première République française",
-        "Traité de Verdun",
+        "Couronnement d’Hugues Capet",
         "Bataille de Hastings",
-        "Libération d’Orléans par Jeanne d’Arc"
+        "Prise de Jérusalem par la première croisade",
+        "Traité de Verdun"
       ],
-      "explanation": "Proclamation de la Première République française : 1792; Libération d’Orléans par Jeanne d’Arc : 1429; Bataille de Hastings : 1066; Traité de Verdun : 843"
+      "explanation": "Il s'agit de Couronnement d’Hugues Capet, daté de 987."
     },
     "en": {
-      "text": "Which event is the most recent among: Treaty of Verdun, Proclamation of the First French Republic, Battle of Hastings, Relief of Orléans by Joan of Arc?",
+      "text": "Which event of the 10th century occurred in 987?",
       "options": [
-        "Proclamation of the First French Republic",
-        "Treaty of Verdun",
+        "Coronation of Hugh Capet",
         "Battle of Hastings",
-        "Relief of Orléans by Joan of Arc"
+        "Capture of Jerusalem by the First Crusade",
+        "Treaty of Verdun"
       ],
-      "explanation": "Proclamation of the First French Republic: 1792; Relief of Orléans by Joan of Arc: 1429; Battle of Hastings: 1066; Treaty of Verdun: 843"
+      "explanation": "It is Coronation of Hugh Capet, dated 987."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2240
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Indépendance de l’Inde, Signature du traité de Maastricht, Construction du mur de Berlin, Massacre de la Saint-Barthélemy ?",
+      "text": "Quel événement du 11e siècle correspond à l'année 1066 ?",
       "options": [
-        "Signature du traité de Maastricht",
-        "Indépendance de l’Inde",
-        "Construction du mur de Berlin",
-        "Massacre de la Saint-Barthélemy"
+        "Bataille de Hastings",
+        "Prise de Jérusalem par la première croisade",
+        "Couronnement d’Hugues Capet",
+        "Bataille de Bouvines"
       ],
-      "explanation": "Signature du traité de Maastricht : 1992; Construction du mur de Berlin : 1961; Indépendance de l’Inde : 1947; Massacre de la Saint-Barthélemy : 1572"
+      "explanation": "Il s'agit de Bataille de Hastings, daté de 1066."
     },
     "en": {
-      "text": "Which event is the most recent among: Indian independence, Signing of the Maastricht Treaty, Construction of the Berlin Wall, St Bartholomew’s Day massacre?",
+      "text": "Which event of the 11th century occurred in 1066?",
       "options": [
-        "Signing of the Maastricht Treaty",
-        "Indian independence",
-        "Construction of the Berlin Wall",
-        "St Bartholomew’s Day massacre"
+        "Battle of Hastings",
+        "Capture of Jerusalem by the First Crusade",
+        "Coronation of Hugh Capet",
+        "Battle of Bouvines"
       ],
-      "explanation": "Signing of the Maastricht Treaty: 1992; Construction of the Berlin Wall: 1961; Indian independence: 1947; St Bartholomew’s Day massacre: 1572"
+      "explanation": "It is Battle of Hastings, dated 1066."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2241
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la guerre de Trente Ans, Libération d’Orléans par Jeanne d’Arc, Grand incendie de Londres, Débarquement de Normandie ?",
+      "text": "Quel événement du 11e siècle correspond à l'année 1099 ?",
       "options": [
-        "Débarquement de Normandie",
-        "Début de la guerre de Trente Ans",
-        "Libération d’Orléans par Jeanne d’Arc",
-        "Grand incendie de Londres"
+        "Prise de Jérusalem par la première croisade",
+        "Bataille de Hastings",
+        "Couronnement d’Hugues Capet",
+        "Bataille de Bouvines"
       ],
-      "explanation": "Débarquement de Normandie : 1944; Grand incendie de Londres : 1666; Début de la guerre de Trente Ans : 1618; Libération d’Orléans par Jeanne d’Arc : 1429"
+      "explanation": "Il s'agit de Prise de Jérusalem par la première croisade, daté de 1099."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the Thirty Years’ War, Relief of Orléans by Joan of Arc, Great Fire of London, Normandy landings?",
+      "text": "Which event of the 11th century occurred in 1099?",
       "options": [
-        "Normandy landings",
-        "Beginning of the Thirty Years’ War",
-        "Relief of Orléans by Joan of Arc",
-        "Great Fire of London"
+        "Capture of Jerusalem by the First Crusade",
+        "Battle of Hastings",
+        "Coronation of Hugh Capet",
+        "Battle of Bouvines"
       ],
-      "explanation": "Normandy landings: 1944; Great Fire of London: 1666; Beginning of the Thirty Years’ War: 1618; Relief of Orléans by Joan of Arc: 1429"
+      "explanation": "It is Capture of Jerusalem by the First Crusade, dated 1099."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2242
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la guerre de Trente Ans, Signature du traité de Versailles, Couronnement d’Hugues Capet, Traités de Westphalie ?",
+      "text": "Quel événement du 13e siècle correspond à l'année 1215 ?",
       "options": [
-        "Signature du traité de Versailles",
-        "Début de la guerre de Trente Ans",
-        "Couronnement d’Hugues Capet",
-        "Traités de Westphalie"
+        "Signature de la Magna Carta",
+        "Bataille de Bouvines",
+        "Prise de Jérusalem par la première croisade",
+        "Début de la guerre de Cent Ans"
       ],
-      "explanation": "Signature du traité de Versailles : 1919; Traités de Westphalie : 1648; Début de la guerre de Trente Ans : 1618; Couronnement d’Hugues Capet : 987"
+      "explanation": "Il s'agit de Signature de la Magna Carta, daté de 1215."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the Thirty Years’ War, Signing of the Treaty of Versailles, Coronation of Hugh Capet, Peace of Westphalia?",
+      "text": "Which event of the 13th century occurred in 1215?",
       "options": [
-        "Signing of the Treaty of Versailles",
-        "Beginning of the Thirty Years’ War",
-        "Coronation of Hugh Capet",
-        "Peace of Westphalia"
+        "Signing of Magna Carta",
+        "Battle of Bouvines",
+        "Capture of Jerusalem by the First Crusade",
+        "Beginning of the Hundred Years’ War"
       ],
-      "explanation": "Signing of the Treaty of Versailles: 1919; Peace of Westphalia: 1648; Beginning of the Thirty Years’ War: 1618; Coronation of Hugh Capet: 987"
+      "explanation": "It is Signing of Magna Carta, dated 1215."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2243
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Coup d’État du 18 Brumaire, Révolution russe d’Octobre, Traité de Verdun, Massacre de la Saint-Barthélemy ?",
+      "text": "Quel événement du 13e siècle correspond à l'année 1214 ?",
       "options": [
-        "Révolution russe d’Octobre",
-        "Coup d’État du 18 Brumaire",
-        "Traité de Verdun",
-        "Massacre de la Saint-Barthélemy"
+        "Bataille de Bouvines",
+        "Signature de la Magna Carta",
+        "Prise de Jérusalem par la première croisade",
+        "Début de la guerre de Cent Ans"
       ],
-      "explanation": "Révolution russe d’Octobre : 1917; Coup d’État du 18 Brumaire : 1799; Massacre de la Saint-Barthélemy : 1572; Traité de Verdun : 843"
+      "explanation": "Il s'agit de Bataille de Bouvines, daté de 1214."
     },
     "en": {
-      "text": "Which event is the most recent among: Coup of 18 Brumaire, Russian October Revolution, Treaty of Verdun, St Bartholomew’s Day massacre?",
+      "text": "Which event of the 13th century occurred in 1214?",
       "options": [
-        "Russian October Revolution",
-        "Coup of 18 Brumaire",
-        "Treaty of Verdun",
-        "St Bartholomew’s Day massacre"
+        "Battle of Bouvines",
+        "Signing of Magna Carta",
+        "Capture of Jerusalem by the First Crusade",
+        "Beginning of the Hundred Years’ War"
       ],
-      "explanation": "Russian October Revolution: 1917; Coup of 18 Brumaire: 1799; St Bartholomew’s Day massacre: 1572; Treaty of Verdun: 843"
+      "explanation": "It is Battle of Bouvines, dated 1214."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2244
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la guerre de Trente Ans, Débarquement de Normandie, Premier alunissage humain, Armistice de la Première Guerre mondiale ?",
+      "text": "Quel événement du 14e siècle correspond à l'année 1337 ?",
       "options": [
-        "Premier alunissage humain",
-        "Début de la guerre de Trente Ans",
-        "Débarquement de Normandie",
-        "Armistice de la Première Guerre mondiale"
+        "Début de la guerre de Cent Ans",
+        "Bataille d’Azincourt",
+        "Libération d’Orléans par Jeanne d’Arc",
+        "Chute de Constantinople"
       ],
-      "explanation": "Premier alunissage humain : 1969; Débarquement de Normandie : 1944; Armistice de la Première Guerre mondiale : 1918; Début de la guerre de Trente Ans : 1618"
+      "explanation": "Il s'agit de Début de la guerre de Cent Ans, daté de 1337."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the Thirty Years’ War, Normandy landings, First crewed Moon landing, First World War armistice?",
+      "text": "Which event of the 14th century occurred in 1337?",
       "options": [
-        "First crewed Moon landing",
-        "Beginning of the Thirty Years’ War",
-        "Normandy landings",
-        "First World War armistice"
+        "Beginning of the Hundred Years’ War",
+        "Battle of Agincourt",
+        "Relief of Orléans by Joan of Arc",
+        "Fall of Constantinople"
       ],
-      "explanation": "First crewed Moon landing: 1969; Normandy landings: 1944; First World War armistice: 1918; Beginning of the Thirty Years’ War: 1618"
+      "explanation": "It is Beginning of the Hundred Years’ War, dated 1337."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2245
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Début de la guerre de Trente Ans, Création de l’ONU, Signature du traité de Rome, Bataille de Marignan ?",
+      "text": "Quel événement du 15e siècle correspond à l'année 1415 ?",
       "options": [
-        "Signature du traité de Rome",
-        "Début de la guerre de Trente Ans",
-        "Création de l’ONU",
-        "Bataille de Marignan"
+        "Bataille d’Azincourt",
+        "Libération d’Orléans par Jeanne d’Arc",
+        "Chute de Constantinople",
+        "Arrivée de Colomb aux Caraïbes"
       ],
-      "explanation": "Signature du traité de Rome : 1957; Création de l’ONU : 1945; Début de la guerre de Trente Ans : 1618; Bataille de Marignan : 1515"
+      "explanation": "Il s'agit de Bataille d’Azincourt, daté de 1415."
     },
     "en": {
-      "text": "Which event is the most recent among: Beginning of the Thirty Years’ War, Founding of the UN, Signing of the Treaty of Rome, Battle of Marignano?",
+      "text": "Which event of the 15th century occurred in 1415?",
       "options": [
-        "Signing of the Treaty of Rome",
-        "Beginning of the Thirty Years’ War",
-        "Founding of the UN",
-        "Battle of Marignano"
+        "Battle of Agincourt",
+        "Relief of Orléans by Joan of Arc",
+        "Fall of Constantinople",
+        "Columbus reaches the Caribbean"
       ],
-      "explanation": "Signing of the Treaty of Rome: 1957; Founding of the UN: 1945; Beginning of the Thirty Years’ War: 1618; Battle of Marignano: 1515"
+      "explanation": "It is Battle of Agincourt, dated 1415."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2246
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Inauguration de la statue de la Liberté, Début de la Seconde Guerre mondiale en Europe, Attaque de Pearl Harbor, Construction du mur de Berlin ?",
+      "text": "Quel événement du 15e siècle correspond à l'année 1429 ?",
       "options": [
-        "Construction du mur de Berlin",
-        "Inauguration de la statue de la Liberté",
-        "Début de la Seconde Guerre mondiale en Europe",
-        "Attaque de Pearl Harbor"
+        "Libération d’Orléans par Jeanne d’Arc",
+        "Bataille d’Azincourt",
+        "Chute de Constantinople",
+        "Arrivée de Colomb aux Caraïbes"
       ],
-      "explanation": "Construction du mur de Berlin : 1961; Attaque de Pearl Harbor : 1941; Début de la Seconde Guerre mondiale en Europe : 1939; Inauguration de la statue de la Liberté : 1886"
+      "explanation": "Il s'agit de Libération d’Orléans par Jeanne d’Arc, daté de 1429."
     },
     "en": {
-      "text": "Which event is the most recent among: Dedication of the Statue of Liberty, Beginning of the Second World War in Europe, Attack on Pearl Harbor, Construction of the Berlin Wall?",
+      "text": "Which event of the 15th century occurred in 1429?",
       "options": [
-        "Construction of the Berlin Wall",
-        "Dedication of the Statue of Liberty",
-        "Beginning of the Second World War in Europe",
-        "Attack on Pearl Harbor"
+        "Relief of Orléans by Joan of Arc",
+        "Battle of Agincourt",
+        "Fall of Constantinople",
+        "Columbus reaches the Caribbean"
       ],
-      "explanation": "Construction of the Berlin Wall: 1961; Attack on Pearl Harbor: 1941; Beginning of the Second World War in Europe: 1939; Dedication of the Statue of Liberty: 1886"
+      "explanation": "It is Relief of Orléans by Joan of Arc, dated 1429."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2247
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Signature de l’édit de Nantes, Grand incendie de Londres, Révolution de Juillet en France, Indépendance de l’Inde ?",
+      "text": "Quel événement du 15e siècle correspond à l'année 1453 ?",
       "options": [
-        "Indépendance de l’Inde",
-        "Signature de l’édit de Nantes",
-        "Grand incendie de Londres",
-        "Révolution de Juillet en France"
+        "Chute de Constantinople",
+        "Libération d’Orléans par Jeanne d’Arc",
+        "Bataille d’Azincourt",
+        "Arrivée de Colomb aux Caraïbes"
       ],
-      "explanation": "Indépendance de l’Inde : 1947; Révolution de Juillet en France : 1830; Grand incendie de Londres : 1666; Signature de l’édit de Nantes : 1598"
+      "explanation": "Il s'agit de Chute de Constantinople, daté de 1453."
     },
     "en": {
-      "text": "Which event is the most recent among: Signing of the Edict of Nantes, Great Fire of London, July Revolution in France, Indian independence?",
+      "text": "Which event of the 15th century occurred in 1453?",
       "options": [
-        "Indian independence",
-        "Signing of the Edict of Nantes",
-        "Great Fire of London",
-        "July Revolution in France"
+        "Fall of Constantinople",
+        "Relief of Orléans by Joan of Arc",
+        "Battle of Agincourt",
+        "Columbus reaches the Caribbean"
       ],
-      "explanation": "Indian independence: 1947; July Revolution in France: 1830; Great Fire of London: 1666; Signing of the Edict of Nantes: 1598"
+      "explanation": "It is Fall of Constantinople, dated 1453."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2248
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Dissolution de l’URSS, Attaque de Pearl Harbor, Bataille d’Azincourt, Début de la guerre de Sécession ?",
+      "text": "Quel événement du 15e siècle correspond à l'année 1492 ?",
       "options": [
-        "Dissolution de l’URSS",
-        "Attaque de Pearl Harbor",
-        "Bataille d’Azincourt",
-        "Début de la guerre de Sécession"
+        "Arrivée de Colomb aux Caraïbes",
+        "Traité de Tordesillas",
+        "Arrivée de Vasco de Gama en Inde",
+        "Bataille de Marignan"
       ],
-      "explanation": "Dissolution de l’URSS : 1991; Attaque de Pearl Harbor : 1941; Début de la guerre de Sécession : 1861; Bataille d’Azincourt : 1415"
+      "explanation": "Il s'agit de Arrivée de Colomb aux Caraïbes, daté de 1492."
     },
     "en": {
-      "text": "Which event is the most recent among: Dissolution of the USSR, Attack on Pearl Harbor, Battle of Agincourt, Beginning of the American Civil War?",
+      "text": "Which event of the 15th century occurred in 1492?",
       "options": [
-        "Dissolution of the USSR",
-        "Attack on Pearl Harbor",
-        "Battle of Agincourt",
-        "Beginning of the American Civil War"
+        "Columbus reaches the Caribbean",
+        "Treaty of Tordesillas",
+        "Vasco da Gama reaches India",
+        "Battle of Marignano"
       ],
-      "explanation": "Dissolution of the USSR: 1991; Attack on Pearl Harbor: 1941; Beginning of the American Civil War: 1861; Battle of Agincourt: 1415"
+      "explanation": "It is Columbus reaches the Caribbean, dated 1492."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2249
   },
   {
-    "category": "Histoire",
     "fr": {
-      "text": "Quel événement est le plus récent parmi : Défaite de l’Invincible Armada, Arrivée de Vasco de Gama en Inde, Prise de Jérusalem par la première croisade, Début de la guerre de Sécession ?",
+      "text": "Quel événement du 15e siècle correspond à l'année 1494 ?",
       "options": [
-        "Début de la guerre de Sécession",
-        "Défaite de l’Invincible Armada",
+        "Traité de Tordesillas",
+        "Arrivée de Colomb aux Caraïbes",
         "Arrivée de Vasco de Gama en Inde",
-        "Prise de Jérusalem par la première croisade"
+        "Bataille de Marignan"
       ],
-      "explanation": "Début de la guerre de Sécession : 1861; Défaite de l’Invincible Armada : 1588; Arrivée de Vasco de Gama en Inde : 1498; Prise de Jérusalem par la première croisade : 1099"
+      "explanation": "Il s'agit de Traité de Tordesillas, daté de 1494."
     },
     "en": {
-      "text": "Which event is the most recent among: Defeat of the Spanish Armada, Vasco da Gama reaches India, Capture of Jerusalem by the First Crusade, Beginning of the American Civil War?",
+      "text": "Which event of the 15th century occurred in 1494?",
       "options": [
-        "Beginning of the American Civil War",
-        "Defeat of the Spanish Armada",
+        "Treaty of Tordesillas",
+        "Columbus reaches the Caribbean",
         "Vasco da Gama reaches India",
-        "Capture of Jerusalem by the First Crusade"
+        "Battle of Marignano"
       ],
-      "explanation": "Beginning of the American Civil War: 1861; Defeat of the Spanish Armada: 1588; Vasco da Gama reaches India: 1498; Capture of Jerusalem by the First Crusade: 1099"
+      "explanation": "It is Treaty of Tordesillas, dated 1494."
     },
     "correct": 0,
+    "category": "Histoire",
     "id": 2250
   },
   {
@@ -12501,6253 +12501,6253 @@ export const MORE_QUESTIONS = [
     "id": 2500
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Tour du monde en quatre-vingts jours, L’Assommoir, Salammbô, Rhinocéros ?",
+      "text": "Quelle œuvre de Guy de Maupassant date de 1883 ?",
       "options": [
-        "Le Tour du monde en quatre-vingts jours",
-        "L’Assommoir",
-        "Salammbô",
-        "Rhinocéros"
+        "Une vie",
+        "Germinal",
+        "Bel-Ami",
+        "Nana"
       ],
-      "explanation": "Salammbô : 1862; Le Tour du monde en quatre-vingts jours : 1873; L’Assommoir : 1877; Rhinocéros : 1959"
+      "explanation": "Il s'agit de « Une vie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Around the World in Eighty Days, L’Assommoir, Salammbô, Rhinoceros?",
+      "text": "Which work by Guy de Maupassant dates to 1883?",
       "options": [
-        "Around the World in Eighty Days",
-        "L’Assommoir",
-        "Salammbô",
-        "Rhinoceros"
+        "A Woman’s Life",
+        "Germinal",
+        "Bel-Ami",
+        "Nana"
       ],
-      "explanation": "Salammbô: 1862; Around the World in Eighty Days: 1873; L’Assommoir: 1877; Rhinoceros: 1959"
+      "explanation": "The work is “A Woman’s Life”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2501
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Rouge et le Noir, Madame Bovary, Le Vieil Homme et la Mer, Jane Eyre ?",
+      "text": "De quelle année date l’œuvre « Les Trois Mousquetaires » ?",
       "options": [
-        "Jane Eyre",
-        "Le Rouge et le Noir",
-        "Madame Bovary",
-        "Le Vieil Homme et la Mer"
+        "1844",
+        "1847",
+        "1839",
+        "1851"
       ],
-      "explanation": "Le Rouge et le Noir : 1830; Jane Eyre : 1847; Madame Bovary : 1857; Le Vieil Homme et la Mer : 1952"
+      "explanation": "« Les Trois Mousquetaires » date de 1844."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Red and the Black, Madame Bovary, The Old Man and the Sea, Jane Eyre?",
+      "text": "What year does the work “The Three Musketeers” date from?",
       "options": [
-        "Jane Eyre",
-        "The Red and the Black",
-        "Madame Bovary",
-        "The Old Man and the Sea"
+        "1844",
+        "1847",
+        "1839",
+        "1851"
       ],
-      "explanation": "The Red and the Black: 1830; Jane Eyre: 1847; Madame Bovary: 1857; The Old Man and the Sea: 1952"
+      "explanation": "“The Three Musketeers” dates to 1844."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2502
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Chartreuse de Parme, Le Père Goriot, L’Écume des jours, Dracula ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Les Trois Mousquetaires » ?",
       "options": [
-        "La Chartreuse de Parme",
-        "Le Père Goriot",
-        "L’Écume des jours",
-        "Dracula"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Le Père Goriot : 1835; La Chartreuse de Parme : 1839; Dracula : 1897; L’Écume des jours : 1947"
+      "explanation": "Alexandre Dumas, à l’origine de « Les Trois Mousquetaires », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Charterhouse of Parma, Father Goriot, Froth on the Daydream, Dracula?",
+      "text": "In which present-day country was the author behind “The Three Musketeers” born?",
       "options": [
-        "The Charterhouse of Parma",
-        "Father Goriot",
-        "Froth on the Daydream",
-        "Dracula"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "Father Goriot: 1835; The Charterhouse of Parma: 1839; Dracula: 1897; Froth on the Daydream: 1947"
+      "explanation": "Alexandre Dumas, who created “The Three Musketeers”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2503
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Notre-Dame de Paris, L’Étranger, L’Avare, Frankenstein ?",
+      "text": "Quelle œuvre de Alexandre Dumas date de 1844 ?",
       "options": [
-        "Frankenstein",
-        "Notre-Dame de Paris",
-        "L’Étranger",
-        "L’Avare"
+        "Les Trois Mousquetaires",
+        "Jane Eyre",
+        "Les Hauts de Hurlevent",
+        "La Chartreuse de Parme"
       ],
-      "explanation": "L’Avare : 1668; Frankenstein : 1818; Notre-Dame de Paris : 1831; L’Étranger : 1942"
+      "explanation": "Il s'agit de « Les Trois Mousquetaires »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Hunchback of Notre-Dame, The Stranger, The Miser, Frankenstein?",
+      "text": "Which work by Alexandre Dumas dates to 1844?",
       "options": [
-        "Frankenstein",
-        "The Hunchback of Notre-Dame",
-        "The Stranger",
-        "The Miser"
+        "The Three Musketeers",
+        "Jane Eyre",
+        "Wuthering Heights",
+        "The Charterhouse of Parma"
       ],
-      "explanation": "The Miser: 1668; Frankenstein: 1818; The Hunchback of Notre-Dame: 1831; The Stranger: 1942"
+      "explanation": "The work is “The Three Musketeers”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2504
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Hauts de Hurlevent, Fahrenheit 451, En attendant Godot, Gatsby le Magnifique ?",
+      "text": "De quelle année date l’œuvre « Vingt mille lieues sous les mers » ?",
       "options": [
-        "Gatsby le Magnifique",
-        "Les Hauts de Hurlevent",
-        "Fahrenheit 451",
-        "En attendant Godot"
+        "1870",
+        "1873",
+        "1864",
+        "1877"
       ],
-      "explanation": "Les Hauts de Hurlevent : 1847; Gatsby le Magnifique : 1925; En attendant Godot : 1952; Fahrenheit 451 : 1953"
+      "explanation": "« Vingt mille lieues sous les mers » date de 1870."
     },
     "en": {
-      "text": "Which work is the second oldest among: Wuthering Heights, Fahrenheit 451, Waiting for Godot, The Great Gatsby?",
+      "text": "What year does the work “Twenty Thousand Leagues Under the Seas” date from?",
       "options": [
-        "The Great Gatsby",
-        "Wuthering Heights",
-        "Fahrenheit 451",
-        "Waiting for Godot"
+        "1870",
+        "1873",
+        "1864",
+        "1877"
       ],
-      "explanation": "Wuthering Heights: 1847; The Great Gatsby: 1925; Waiting for Godot: 1952; Fahrenheit 451: 1953"
+      "explanation": "“Twenty Thousand Leagues Under the Seas” dates to 1870."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2505
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Andromaque, Dracula, Du contrat social, Vingt mille lieues sous les mers ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Vingt mille lieues sous les mers » ?",
       "options": [
-        "Du contrat social",
-        "Andromaque",
-        "Dracula",
-        "Vingt mille lieues sous les mers"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Andromaque : 1667; Du contrat social : 1762; Vingt mille lieues sous les mers : 1870; Dracula : 1897"
+      "explanation": "Jules Verne, à l’origine de « Vingt mille lieues sous les mers », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Andromaque, Dracula, The Social Contract, Twenty Thousand Leagues Under the Seas?",
+      "text": "In which present-day country was the author behind “Twenty Thousand Leagues Under the Seas” born?",
       "options": [
-        "The Social Contract",
-        "Andromaque",
-        "Dracula",
-        "Twenty Thousand Leagues Under the Seas"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "Andromaque: 1667; The Social Contract: 1762; Twenty Thousand Leagues Under the Seas: 1870; Dracula: 1897"
+      "explanation": "Jules Verne, who created “Twenty Thousand Leagues Under the Seas”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2506
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Frankenstein, 1984, Les Fleurs du mal, Orgueil et Préjugés ?",
+      "text": "Quelle œuvre de Jules Verne date de 1870 ?",
       "options": [
-        "Frankenstein",
-        "1984",
-        "Les Fleurs du mal",
-        "Orgueil et Préjugés"
+        "Vingt mille lieues sous les mers",
+        "Le Tour du monde en quatre-vingts jours",
+        "Voyage au centre de la Terre",
+        "L’Assommoir"
       ],
-      "explanation": "Orgueil et Préjugés : 1813; Frankenstein : 1818; Les Fleurs du mal : 1857; 1984 : 1949"
+      "explanation": "Il s'agit de « Vingt mille lieues sous les mers »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Frankenstein, Nineteen Eighty-Four, The Flowers of Evil, Pride and Prejudice?",
+      "text": "Which work by Jules Verne dates to 1870?",
       "options": [
-        "Frankenstein",
-        "Nineteen Eighty-Four",
-        "The Flowers of Evil",
-        "Pride and Prejudice"
+        "Twenty Thousand Leagues Under the Seas",
+        "Around the World in Eighty Days",
+        "Journey to the Centre of the Earth",
+        "L’Assommoir"
       ],
-      "explanation": "Pride and Prejudice: 1813; Frankenstein: 1818; The Flowers of Evil: 1857; Nineteen Eighty-Four: 1949"
+      "explanation": "The work is “Twenty Thousand Leagues Under the Seas”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2507
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Dracula, Notre-Dame de Paris, Le Portrait de Dorian Gray, Les Fleurs du mal ?",
+      "text": "De quelle année date l’œuvre « Le Tour du monde en quatre-vingts jours » ?",
       "options": [
-        "Les Fleurs du mal",
-        "Dracula",
-        "Notre-Dame de Paris",
-        "Le Portrait de Dorian Gray"
+        "1873",
+        "1870",
+        "1877",
+        "1880"
       ],
-      "explanation": "Notre-Dame de Paris : 1831; Les Fleurs du mal : 1857; Le Portrait de Dorian Gray : 1890; Dracula : 1897"
+      "explanation": "« Le Tour du monde en quatre-vingts jours » date de 1873."
     },
     "en": {
-      "text": "Which work is the second oldest among: Dracula, The Hunchback of Notre-Dame, The Picture of Dorian Gray, The Flowers of Evil?",
+      "text": "What year does the work “Around the World in Eighty Days” date from?",
       "options": [
-        "The Flowers of Evil",
-        "Dracula",
-        "The Hunchback of Notre-Dame",
-        "The Picture of Dorian Gray"
+        "1873",
+        "1870",
+        "1877",
+        "1880"
       ],
-      "explanation": "The Hunchback of Notre-Dame: 1831; The Flowers of Evil: 1857; The Picture of Dorian Gray: 1890; Dracula: 1897"
+      "explanation": "“Around the World in Eighty Days” dates to 1873."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2508
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Fahrenheit 451, Orgueil et Préjugés, Moby Dick, Le Portrait de Dorian Gray ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Le Tour du monde en quatre-vingts jours » ?",
       "options": [
-        "Moby Dick",
-        "Fahrenheit 451",
-        "Orgueil et Préjugés",
-        "Le Portrait de Dorian Gray"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Orgueil et Préjugés : 1813; Moby Dick : 1851; Le Portrait de Dorian Gray : 1890; Fahrenheit 451 : 1953"
+      "explanation": "Jules Verne, à l’origine de « Le Tour du monde en quatre-vingts jours », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Fahrenheit 451, Pride and Prejudice, Moby-Dick, The Picture of Dorian Gray?",
+      "text": "In which present-day country was the author behind “Around the World in Eighty Days” born?",
       "options": [
-        "Moby-Dick",
-        "Fahrenheit 451",
-        "Pride and Prejudice",
-        "The Picture of Dorian Gray"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "Pride and Prejudice: 1813; Moby-Dick: 1851; The Picture of Dorian Gray: 1890; Fahrenheit 451: 1953"
+      "explanation": "Jules Verne, who created “Around the World in Eighty Days”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2509
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Rhinocéros, Nana, Vingt mille lieues sous les mers, Orgueil et Préjugés ?",
+      "text": "Quelle œuvre de Jules Verne date de 1873 ?",
       "options": [
+        "Le Tour du monde en quatre-vingts jours",
         "Vingt mille lieues sous les mers",
-        "Rhinocéros",
-        "Nana",
-        "Orgueil et Préjugés"
+        "L’Assommoir",
+        "Nana"
       ],
-      "explanation": "Orgueil et Préjugés : 1813; Vingt mille lieues sous les mers : 1870; Nana : 1880; Rhinocéros : 1959"
+      "explanation": "Il s'agit de « Le Tour du monde en quatre-vingts jours »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Rhinoceros, Nana, Twenty Thousand Leagues Under the Seas, Pride and Prejudice?",
+      "text": "Which work by Jules Verne dates to 1873?",
       "options": [
+        "Around the World in Eighty Days",
         "Twenty Thousand Leagues Under the Seas",
-        "Rhinoceros",
-        "Nana",
-        "Pride and Prejudice"
+        "L’Assommoir",
+        "Nana"
       ],
-      "explanation": "Pride and Prejudice: 1813; Twenty Thousand Leagues Under the Seas: 1870; Nana: 1880; Rhinoceros: 1959"
+      "explanation": "The work is “Around the World in Eighty Days”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2510
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Contemplations, Nana, Les Châtiments, Gatsby le Magnifique ?",
+      "text": "De quelle année date l’œuvre « Voyage au centre de la Terre » ?",
       "options": [
-        "Les Contemplations",
-        "Nana",
-        "Les Châtiments",
-        "Gatsby le Magnifique"
+        "1864",
+        "1862",
+        "1870",
+        "1857"
       ],
-      "explanation": "Les Châtiments : 1853; Les Contemplations : 1856; Nana : 1880; Gatsby le Magnifique : 1925"
+      "explanation": "« Voyage au centre de la Terre » date de 1864."
     },
     "en": {
-      "text": "Which work is the second oldest among: Les Contemplations, Nana, Les Châtiments, The Great Gatsby?",
+      "text": "What year does the work “Journey to the Centre of the Earth” date from?",
       "options": [
-        "Les Contemplations",
-        "Nana",
-        "Les Châtiments",
-        "The Great Gatsby"
+        "1864",
+        "1862",
+        "1870",
+        "1857"
       ],
-      "explanation": "Les Châtiments: 1853; Les Contemplations: 1856; Nana: 1880; The Great Gatsby: 1925"
+      "explanation": "“Journey to the Centre of the Earth” dates to 1864."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2511
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Misanthrope, Voyage au centre de la Terre, Moby Dick, 1984 ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Voyage au centre de la Terre » ?",
       "options": [
-        "Moby Dick",
-        "Le Misanthrope",
-        "Voyage au centre de la Terre",
-        "1984"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Le Misanthrope : 1666; Moby Dick : 1851; Voyage au centre de la Terre : 1864; 1984 : 1949"
+      "explanation": "Jules Verne, à l’origine de « Voyage au centre de la Terre », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Misanthrope, Journey to the Centre of the Earth, Moby-Dick, Nineteen Eighty-Four?",
+      "text": "In which present-day country was the author behind “Journey to the Centre of the Earth” born?",
       "options": [
-        "Moby-Dick",
-        "The Misanthrope",
-        "Journey to the Centre of the Earth",
-        "Nineteen Eighty-Four"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "The Misanthrope: 1666; Moby-Dick: 1851; Journey to the Centre of the Earth: 1864; Nineteen Eighty-Four: 1949"
+      "explanation": "Jules Verne, who created “Journey to the Centre of the Earth”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2512
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Eugénie Grandet, Du contrat social, Les Contemplations, Les Trois Mousquetaires ?",
+      "text": "Quelle œuvre de Jules Verne date de 1864 ?",
       "options": [
-        "Eugénie Grandet",
-        "Du contrat social",
-        "Les Contemplations",
-        "Les Trois Mousquetaires"
+        "Voyage au centre de la Terre",
+        "Les Misérables",
+        "Salammbô",
+        "Vingt mille lieues sous les mers"
       ],
-      "explanation": "Du contrat social : 1762; Eugénie Grandet : 1833; Les Trois Mousquetaires : 1844; Les Contemplations : 1856"
+      "explanation": "Il s'agit de « Voyage au centre de la Terre »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Eugénie Grandet, The Social Contract, Les Contemplations, The Three Musketeers?",
+      "text": "Which work by Jules Verne dates to 1864?",
       "options": [
-        "Eugénie Grandet",
-        "The Social Contract",
-        "Les Contemplations",
-        "The Three Musketeers"
+        "Journey to the Centre of the Earth",
+        "Les Misérables",
+        "Salammbô",
+        "Twenty Thousand Leagues Under the Seas"
       ],
-      "explanation": "The Social Contract: 1762; Eugénie Grandet: 1833; The Three Musketeers: 1844; Les Contemplations: 1856"
+      "explanation": "The work is “Journey to the Centre of the Earth”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2513
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Dracula, Le Tour du monde en quatre-vingts jours, Vingt mille lieues sous les mers, Les Raisins de la colère ?",
+      "text": "De quelle année date l’œuvre « Le Petit Prince » ?",
       "options": [
-        "Le Tour du monde en quatre-vingts jours",
-        "Dracula",
-        "Vingt mille lieues sous les mers",
-        "Les Raisins de la colère"
+        "1943",
+        "1942",
+        "1939",
+        "1947"
       ],
-      "explanation": "Vingt mille lieues sous les mers : 1870; Le Tour du monde en quatre-vingts jours : 1873; Dracula : 1897; Les Raisins de la colère : 1939"
+      "explanation": "« Le Petit Prince » date de 1943."
     },
     "en": {
-      "text": "Which work is the second oldest among: Dracula, Around the World in Eighty Days, Twenty Thousand Leagues Under the Seas, The Grapes of Wrath?",
+      "text": "What year does the work “The Little Prince” date from?",
       "options": [
-        "Around the World in Eighty Days",
-        "Dracula",
-        "Twenty Thousand Leagues Under the Seas",
-        "The Grapes of Wrath"
+        "1943",
+        "1942",
+        "1939",
+        "1947"
       ],
-      "explanation": "Twenty Thousand Leagues Under the Seas: 1870; Around the World in Eighty Days: 1873; Dracula: 1897; The Grapes of Wrath: 1939"
+      "explanation": "“The Little Prince” dates to 1943."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2514
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Trois Mousquetaires, La Chartreuse de Parme, Moby Dick, 1984 ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Le Petit Prince » ?",
       "options": [
-        "Les Trois Mousquetaires",
-        "La Chartreuse de Parme",
-        "Moby Dick",
-        "1984"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "La Chartreuse de Parme : 1839; Les Trois Mousquetaires : 1844; Moby Dick : 1851; 1984 : 1949"
+      "explanation": "Antoine de Saint-Exupéry, à l’origine de « Le Petit Prince », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Three Musketeers, The Charterhouse of Parma, Moby-Dick, Nineteen Eighty-Four?",
+      "text": "In which present-day country was the author behind “The Little Prince” born?",
       "options": [
-        "The Three Musketeers",
-        "The Charterhouse of Parma",
-        "Moby-Dick",
-        "Nineteen Eighty-Four"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "The Charterhouse of Parma: 1839; The Three Musketeers: 1844; Moby-Dick: 1851; Nineteen Eighty-Four: 1949"
+      "explanation": "Antoine de Saint-Exupéry, who created “The Little Prince”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2515
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Petit Prince, Alcools, Le Rouge et le Noir, La Chartreuse de Parme ?",
+      "text": "Quelle œuvre de Antoine de Saint-Exupéry date de 1943 ?",
       "options": [
-        "La Chartreuse de Parme",
         "Le Petit Prince",
-        "Alcools",
-        "Le Rouge et le Noir"
+        "L’Étranger",
+        "La Peste",
+        "L’Écume des jours"
       ],
-      "explanation": "Le Rouge et le Noir : 1830; La Chartreuse de Parme : 1839; Alcools : 1913; Le Petit Prince : 1943"
+      "explanation": "Il s'agit de « Le Petit Prince »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Little Prince, Alcools, The Red and the Black, The Charterhouse of Parma?",
+      "text": "Which work by Antoine de Saint-Exupéry dates to 1943?",
       "options": [
-        "The Charterhouse of Parma",
         "The Little Prince",
-        "Alcools",
-        "The Red and the Black"
+        "The Stranger",
+        "The Plague",
+        "Froth on the Daydream"
       ],
-      "explanation": "The Red and the Black: 1830; The Charterhouse of Parma: 1839; Alcools: 1913; The Little Prince: 1943"
+      "explanation": "The work is “The Little Prince”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2516
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Chartreuse de Parme, L’Assommoir, Frankenstein, Les Raisins de la colère ?",
+      "text": "De quelle année date l’œuvre « La Peste » ?",
       "options": [
-        "La Chartreuse de Parme",
-        "L’Assommoir",
-        "Frankenstein",
-        "Les Raisins de la colère"
+        "1947",
+        "1949",
+        "1943",
+        "1942"
       ],
-      "explanation": "Frankenstein : 1818; La Chartreuse de Parme : 1839; L’Assommoir : 1877; Les Raisins de la colère : 1939"
+      "explanation": "« La Peste » date de 1947."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Charterhouse of Parma, L’Assommoir, Frankenstein, The Grapes of Wrath?",
+      "text": "What year does the work “The Plague” date from?",
       "options": [
-        "The Charterhouse of Parma",
-        "L’Assommoir",
-        "Frankenstein",
-        "The Grapes of Wrath"
+        "1947",
+        "1949",
+        "1943",
+        "1942"
       ],
-      "explanation": "Frankenstein: 1818; The Charterhouse of Parma: 1839; L’Assommoir: 1877; The Grapes of Wrath: 1939"
+      "explanation": "“The Plague” dates to 1947."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2517
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : 1984, Jane Eyre, Une vie, La Peste ?",
+      "text": "Dans quel pays actuel est né l’auteur de « La Peste » ?",
       "options": [
-        "Une vie",
-        "1984",
-        "Jane Eyre",
-        "La Peste"
+        "Algérie",
+        "France",
+        "Maroc",
+        "Tunisie"
       ],
-      "explanation": "Jane Eyre : 1847; Une vie : 1883; La Peste : 1947; 1984 : 1949"
+      "explanation": "Albert Camus, à l’origine de « La Peste », est né sur le territoire de l’actuel pays « Algérie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Nineteen Eighty-Four, Jane Eyre, A Woman’s Life, The Plague?",
+      "text": "In which present-day country was the author behind “The Plague” born?",
       "options": [
-        "A Woman’s Life",
-        "Nineteen Eighty-Four",
-        "Jane Eyre",
-        "The Plague"
+        "Algeria",
+        "France",
+        "Morocco",
+        "Tunisia"
       ],
-      "explanation": "Jane Eyre: 1847; A Woman’s Life: 1883; The Plague: 1947; Nineteen Eighty-Four: 1949"
+      "explanation": "Albert Camus, who created “The Plague”, was born in what is now Algeria."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2518
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Frankenstein, Phèdre, Les Hauts de Hurlevent, Alcools ?",
+      "text": "Quelle œuvre de Albert Camus date de 1947 ?",
       "options": [
-        "Frankenstein",
-        "Phèdre",
-        "Les Hauts de Hurlevent",
-        "Alcools"
+        "La Peste",
+        "L’Écume des jours",
+        "1984",
+        "L’Étranger"
       ],
-      "explanation": "Phèdre : 1677; Frankenstein : 1818; Les Hauts de Hurlevent : 1847; Alcools : 1913"
+      "explanation": "Il s'agit de « La Peste »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Frankenstein, Phèdre, Wuthering Heights, Alcools?",
+      "text": "Which work by Albert Camus dates to 1947?",
       "options": [
-        "Frankenstein",
-        "Phèdre",
-        "Wuthering Heights",
-        "Alcools"
+        "The Plague",
+        "Froth on the Daydream",
+        "Nineteen Eighty-Four",
+        "The Stranger"
       ],
-      "explanation": "Phèdre: 1677; Frankenstein: 1818; Wuthering Heights: 1847; Alcools: 1913"
+      "explanation": "The work is “The Plague”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2519
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Portrait de Dorian Gray, Le Petit Prince, Phèdre, Eugénie Grandet ?",
+      "text": "De quelle année date l’œuvre « L’Étranger » ?",
       "options": [
-        "Eugénie Grandet",
-        "Le Portrait de Dorian Gray",
-        "Le Petit Prince",
-        "Phèdre"
+        "1942",
+        "1943",
+        "1939",
+        "1947"
       ],
-      "explanation": "Phèdre : 1677; Eugénie Grandet : 1833; Le Portrait de Dorian Gray : 1890; Le Petit Prince : 1943"
+      "explanation": "« L’Étranger » date de 1942."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Picture of Dorian Gray, The Little Prince, Phèdre, Eugénie Grandet?",
+      "text": "What year does the work “The Stranger” date from?",
       "options": [
-        "Eugénie Grandet",
-        "The Picture of Dorian Gray",
-        "The Little Prince",
-        "Phèdre"
+        "1942",
+        "1943",
+        "1939",
+        "1947"
       ],
-      "explanation": "Phèdre: 1677; Eugénie Grandet: 1833; The Picture of Dorian Gray: 1890; The Little Prince: 1943"
+      "explanation": "“The Stranger” dates to 1942."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2520
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Malade imaginaire, Le Cid, De l’esprit des lois, Le Tour du monde en quatre-vingts jours ?",
+      "text": "Dans quel pays actuel est né l’auteur de « L’Étranger » ?",
       "options": [
-        "Le Malade imaginaire",
-        "Le Cid",
-        "De l’esprit des lois",
-        "Le Tour du monde en quatre-vingts jours"
+        "Algérie",
+        "France",
+        "Maroc",
+        "Tunisie"
       ],
-      "explanation": "Le Cid : 1637; Le Malade imaginaire : 1673; De l’esprit des lois : 1748; Le Tour du monde en quatre-vingts jours : 1873"
+      "explanation": "Albert Camus, à l’origine de « L’Étranger », est né sur le territoire de l’actuel pays « Algérie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Imaginary Invalid, Le Cid, The Spirit of the Laws, Around the World in Eighty Days?",
+      "text": "In which present-day country was the author behind “The Stranger” born?",
       "options": [
-        "The Imaginary Invalid",
-        "Le Cid",
-        "The Spirit of the Laws",
-        "Around the World in Eighty Days"
+        "Algeria",
+        "France",
+        "Morocco",
+        "Tunisia"
       ],
-      "explanation": "Le Cid: 1637; The Imaginary Invalid: 1673; The Spirit of the Laws: 1748; Around the World in Eighty Days: 1873"
+      "explanation": "Albert Camus, who created “The Stranger”, was born in what is now Algeria."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2521
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Andromaque, Les Raisins de la colère, Les Hauts de Hurlevent, Le Vieil Homme et la Mer ?",
+      "text": "Quelle œuvre de Albert Camus date de 1942 ?",
       "options": [
-        "Les Hauts de Hurlevent",
-        "Andromaque",
+        "L’Étranger",
         "Les Raisins de la colère",
-        "Le Vieil Homme et la Mer"
+        "La Peste",
+        "L’Écume des jours"
       ],
-      "explanation": "Andromaque : 1667; Les Hauts de Hurlevent : 1847; Les Raisins de la colère : 1939; Le Vieil Homme et la Mer : 1952"
+      "explanation": "Il s'agit de « L’Étranger »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Andromaque, The Grapes of Wrath, Wuthering Heights, The Old Man and the Sea?",
+      "text": "Which work by Albert Camus dates to 1942?",
       "options": [
-        "Wuthering Heights",
-        "Andromaque",
+        "The Stranger",
         "The Grapes of Wrath",
-        "The Old Man and the Sea"
+        "The Plague",
+        "Froth on the Daydream"
       ],
-      "explanation": "Andromaque: 1667; Wuthering Heights: 1847; The Grapes of Wrath: 1939; The Old Man and the Sea: 1952"
+      "explanation": "The work is “The Stranger”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2522
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Tour du monde en quatre-vingts jours, Germinal, Vingt mille lieues sous les mers, Le Père Goriot ?",
+      "text": "De quelle année date l’œuvre « L’Écume des jours » ?",
       "options": [
-        "Vingt mille lieues sous les mers",
-        "Le Tour du monde en quatre-vingts jours",
-        "Germinal",
-        "Le Père Goriot"
+        "1947",
+        "1949",
+        "1943",
+        "1942"
       ],
-      "explanation": "Le Père Goriot : 1835; Vingt mille lieues sous les mers : 1870; Le Tour du monde en quatre-vingts jours : 1873; Germinal : 1885"
+      "explanation": "« L’Écume des jours » date de 1947."
     },
     "en": {
-      "text": "Which work is the second oldest among: Around the World in Eighty Days, Germinal, Twenty Thousand Leagues Under the Seas, Father Goriot?",
+      "text": "What year does the work “Froth on the Daydream” date from?",
       "options": [
-        "Twenty Thousand Leagues Under the Seas",
-        "Around the World in Eighty Days",
-        "Germinal",
-        "Father Goriot"
+        "1947",
+        "1949",
+        "1943",
+        "1942"
       ],
-      "explanation": "Father Goriot: 1835; Twenty Thousand Leagues Under the Seas: 1870; Around the World in Eighty Days: 1873; Germinal: 1885"
+      "explanation": "“Froth on the Daydream” dates to 1947."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2523
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Moby Dick, Le Cid, Une vie, Germinal ?",
+      "text": "Dans quel pays actuel est né l’auteur de « L’Écume des jours » ?",
       "options": [
-        "Moby Dick",
-        "Le Cid",
-        "Une vie",
-        "Germinal"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Le Cid : 1637; Moby Dick : 1851; Une vie : 1883; Germinal : 1885"
+      "explanation": "Boris Vian, à l’origine de « L’Écume des jours », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Moby-Dick, Le Cid, A Woman’s Life, Germinal?",
+      "text": "In which present-day country was the author behind “Froth on the Daydream” born?",
       "options": [
-        "Moby-Dick",
-        "Le Cid",
-        "A Woman’s Life",
-        "Germinal"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "Le Cid: 1637; Moby-Dick: 1851; A Woman’s Life: 1883; Germinal: 1885"
+      "explanation": "Boris Vian, who created “Froth on the Daydream”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2524
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Tour du monde en quatre-vingts jours, Rhinocéros, Dracula, Madame Bovary ?",
+      "text": "Quelle œuvre de Boris Vian date de 1947 ?",
       "options": [
-        "Le Tour du monde en quatre-vingts jours",
-        "Rhinocéros",
-        "Dracula",
-        "Madame Bovary"
+        "L’Écume des jours",
+        "La Peste",
+        "1984",
+        "L’Étranger"
       ],
-      "explanation": "Madame Bovary : 1857; Le Tour du monde en quatre-vingts jours : 1873; Dracula : 1897; Rhinocéros : 1959"
+      "explanation": "Il s'agit de « L’Écume des jours »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Around the World in Eighty Days, Rhinoceros, Dracula, Madame Bovary?",
+      "text": "Which work by Boris Vian dates to 1947?",
       "options": [
-        "Around the World in Eighty Days",
-        "Rhinoceros",
-        "Dracula",
-        "Madame Bovary"
+        "Froth on the Daydream",
+        "The Plague",
+        "Nineteen Eighty-Four",
+        "The Stranger"
       ],
-      "explanation": "Madame Bovary: 1857; Around the World in Eighty Days: 1873; Dracula: 1897; Rhinoceros: 1959"
+      "explanation": "The work is “Froth on the Daydream”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2525
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Châtiments, Une vie, Frankenstein, Phèdre ?",
+      "text": "De quelle année date l’œuvre « 1984 » ?",
       "options": [
-        "Frankenstein",
-        "Les Châtiments",
-        "Une vie",
-        "Phèdre"
+        "1949",
+        "1947",
+        "1952",
+        "1953"
       ],
-      "explanation": "Phèdre : 1677; Frankenstein : 1818; Les Châtiments : 1853; Une vie : 1883"
+      "explanation": "« 1984 » date de 1949."
     },
     "en": {
-      "text": "Which work is the second oldest among: Les Châtiments, A Woman’s Life, Frankenstein, Phèdre?",
+      "text": "What year does the work “Nineteen Eighty-Four” date from?",
       "options": [
-        "Frankenstein",
-        "Les Châtiments",
-        "A Woman’s Life",
-        "Phèdre"
+        "1949",
+        "1947",
+        "1952",
+        "1953"
       ],
-      "explanation": "Phèdre: 1677; Frankenstein: 1818; Les Châtiments: 1853; A Woman’s Life: 1883"
+      "explanation": "“Nineteen Eighty-Four” dates to 1949."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2526
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Vieil Homme et la Mer, Le Malade imaginaire, De l’esprit des lois, Dracula ?",
+      "text": "Dans quel pays actuel est né l’auteur de « 1984 » ?",
       "options": [
-        "De l’esprit des lois",
-        "Le Vieil Homme et la Mer",
-        "Le Malade imaginaire",
-        "Dracula"
+        "Inde",
+        "Pakistan",
+        "Bangladesh",
+        "Royaume-Uni"
       ],
-      "explanation": "Le Malade imaginaire : 1673; De l’esprit des lois : 1748; Dracula : 1897; Le Vieil Homme et la Mer : 1952"
+      "explanation": "George Orwell, à l’origine de « 1984 », est né sur le territoire de l’actuel pays « Inde »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Old Man and the Sea, The Imaginary Invalid, The Spirit of the Laws, Dracula?",
+      "text": "In which present-day country was the author behind “Nineteen Eighty-Four” born?",
       "options": [
-        "The Spirit of the Laws",
-        "The Old Man and the Sea",
-        "The Imaginary Invalid",
-        "Dracula"
+        "India",
+        "Pakistan",
+        "Bangladesh",
+        "United Kingdom"
       ],
-      "explanation": "The Imaginary Invalid: 1673; The Spirit of the Laws: 1748; Dracula: 1897; The Old Man and the Sea: 1952"
+      "explanation": "George Orwell, who created “Nineteen Eighty-Four”, was born in what is now India."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2527
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : L’Assommoir, L’Écume des jours, Les Trois Mousquetaires, Vingt mille lieues sous les mers ?",
+      "text": "Quelle œuvre de George Orwell date de 1949 ?",
       "options": [
-        "Vingt mille lieues sous les mers",
-        "L’Assommoir",
+        "1984",
+        "La Peste",
         "L’Écume des jours",
-        "Les Trois Mousquetaires"
+        "Le Vieil Homme et la Mer"
       ],
-      "explanation": "Les Trois Mousquetaires : 1844; Vingt mille lieues sous les mers : 1870; L’Assommoir : 1877; L’Écume des jours : 1947"
+      "explanation": "Il s'agit de « 1984 »."
     },
     "en": {
-      "text": "Which work is the second oldest among: L’Assommoir, Froth on the Daydream, The Three Musketeers, Twenty Thousand Leagues Under the Seas?",
+      "text": "Which work by George Orwell dates to 1949?",
       "options": [
-        "Twenty Thousand Leagues Under the Seas",
-        "L’Assommoir",
+        "Nineteen Eighty-Four",
+        "The Plague",
         "Froth on the Daydream",
-        "The Three Musketeers"
+        "The Old Man and the Sea"
       ],
-      "explanation": "The Three Musketeers: 1844; Twenty Thousand Leagues Under the Seas: 1870; L’Assommoir: 1877; Froth on the Daydream: 1947"
+      "explanation": "The work is “Nineteen Eighty-Four”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2528
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Moby Dick, 1984, Le Nom de la rose, En attendant Godot ?",
+      "text": "De quelle année date l’œuvre « Le Meilleur des mondes » ?",
       "options": [
-        "1984",
-        "Moby Dick",
-        "Le Nom de la rose",
-        "En attendant Godot"
+        "1932",
+        "1925",
+        "1939",
+        "1942"
       ],
-      "explanation": "Moby Dick : 1851; 1984 : 1949; En attendant Godot : 1952; Le Nom de la rose : 1980"
+      "explanation": "« Le Meilleur des mondes » date de 1932."
     },
     "en": {
-      "text": "Which work is the second oldest among: Moby-Dick, Nineteen Eighty-Four, The Name of the Rose, Waiting for Godot?",
+      "text": "What year does the work “Brave New World” date from?",
       "options": [
-        "Nineteen Eighty-Four",
-        "Moby-Dick",
-        "The Name of the Rose",
-        "Waiting for Godot"
+        "1932",
+        "1925",
+        "1939",
+        "1942"
       ],
-      "explanation": "Moby-Dick: 1851; Nineteen Eighty-Four: 1949; Waiting for Godot: 1952; The Name of the Rose: 1980"
+      "explanation": "“Brave New World” dates to 1932."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2529
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Contemplations, La Peste, Orgueil et Préjugés, Les Fleurs du mal ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Le Meilleur des mondes » ?",
       "options": [
-        "Les Contemplations",
-        "La Peste",
-        "Orgueil et Préjugés",
-        "Les Fleurs du mal"
+        "Royaume-Uni",
+        "Irlande",
+        "France",
+        "États-Unis"
       ],
-      "explanation": "Orgueil et Préjugés : 1813; Les Contemplations : 1856; Les Fleurs du mal : 1857; La Peste : 1947"
+      "explanation": "Aldous Huxley, à l’origine de « Le Meilleur des mondes », est né sur le territoire de l’actuel pays « Royaume-Uni »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Les Contemplations, The Plague, Pride and Prejudice, The Flowers of Evil?",
+      "text": "In which present-day country was the author behind “Brave New World” born?",
       "options": [
-        "Les Contemplations",
-        "The Plague",
-        "Pride and Prejudice",
-        "The Flowers of Evil"
+        "United Kingdom",
+        "Ireland",
+        "France",
+        "United States"
       ],
-      "explanation": "Pride and Prejudice: 1813; Les Contemplations: 1856; The Flowers of Evil: 1857; The Plague: 1947"
+      "explanation": "Aldous Huxley, who created “Brave New World”, was born in what is now the United Kingdom."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2530
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Vingt mille lieues sous les mers, Du contrat social, Les Raisins de la colère, Rhinocéros ?",
+      "text": "Quelle œuvre de Aldous Huxley date de 1932 ?",
       "options": [
-        "Vingt mille lieues sous les mers",
-        "Du contrat social",
+        "Le Meilleur des mondes",
+        "Gatsby le Magnifique",
         "Les Raisins de la colère",
-        "Rhinocéros"
+        "L’Étranger"
       ],
-      "explanation": "Du contrat social : 1762; Vingt mille lieues sous les mers : 1870; Les Raisins de la colère : 1939; Rhinocéros : 1959"
+      "explanation": "Il s'agit de « Le Meilleur des mondes »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Twenty Thousand Leagues Under the Seas, The Social Contract, The Grapes of Wrath, Rhinoceros?",
+      "text": "Which work by Aldous Huxley dates to 1932?",
       "options": [
-        "Twenty Thousand Leagues Under the Seas",
-        "The Social Contract",
+        "Brave New World",
+        "The Great Gatsby",
         "The Grapes of Wrath",
-        "Rhinoceros"
+        "The Stranger"
       ],
-      "explanation": "The Social Contract: 1762; Twenty Thousand Leagues Under the Seas: 1870; The Grapes of Wrath: 1939; Rhinoceros: 1959"
+      "explanation": "The work is “Brave New World”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2531
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Germinal, Jane Eyre, Alcools, Nana ?",
+      "text": "De quelle année date l’œuvre « Fahrenheit 451 » ?",
       "options": [
-        "Nana",
-        "Germinal",
-        "Jane Eyre",
-        "Alcools"
+        "1953",
+        "1952",
+        "1949",
+        "1947"
       ],
-      "explanation": "Jane Eyre : 1847; Nana : 1880; Germinal : 1885; Alcools : 1913"
+      "explanation": "« Fahrenheit 451 » date de 1953."
     },
     "en": {
-      "text": "Which work is the second oldest among: Germinal, Jane Eyre, Alcools, Nana?",
+      "text": "What year does the work “Fahrenheit 451” date from?",
       "options": [
-        "Nana",
-        "Germinal",
-        "Jane Eyre",
-        "Alcools"
+        "1953",
+        "1952",
+        "1949",
+        "1947"
       ],
-      "explanation": "Jane Eyre: 1847; Nana: 1880; Germinal: 1885; Alcools: 1913"
+      "explanation": "“Fahrenheit 451” dates to 1953."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2532
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : L’Étranger, Salammbô, En attendant Godot, Voyage au centre de la Terre ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Fahrenheit 451 » ?",
       "options": [
-        "Voyage au centre de la Terre",
-        "L’Étranger",
-        "Salammbô",
-        "En attendant Godot"
+        "États-Unis",
+        "Canada",
+        "Royaume-Uni",
+        "Australie"
       ],
-      "explanation": "Salammbô : 1862; Voyage au centre de la Terre : 1864; L’Étranger : 1942; En attendant Godot : 1952"
+      "explanation": "Ray Bradbury, à l’origine de « Fahrenheit 451 », est né sur le territoire de l’actuel pays « États-Unis »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Stranger, Salammbô, Waiting for Godot, Journey to the Centre of the Earth?",
+      "text": "In which present-day country was the author behind “Fahrenheit 451” born?",
       "options": [
-        "Journey to the Centre of the Earth",
-        "The Stranger",
-        "Salammbô",
-        "Waiting for Godot"
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Australia"
       ],
-      "explanation": "Salammbô: 1862; Journey to the Centre of the Earth: 1864; The Stranger: 1942; Waiting for Godot: 1952"
+      "explanation": "Ray Bradbury, who created “Fahrenheit 451”, was born in what is now the United States."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2533
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Vingt mille lieues sous les mers, Orgueil et Préjugés, La Chartreuse de Parme, Bel-Ami ?",
+      "text": "Quelle œuvre de Ray Bradbury date de 1953 ?",
       "options": [
-        "La Chartreuse de Parme",
-        "Vingt mille lieues sous les mers",
-        "Orgueil et Préjugés",
-        "Bel-Ami"
+        "Fahrenheit 451",
+        "Le Vieil Homme et la Mer",
+        "1984",
+        "La Peste"
       ],
-      "explanation": "Orgueil et Préjugés : 1813; La Chartreuse de Parme : 1839; Vingt mille lieues sous les mers : 1870; Bel-Ami : 1885"
+      "explanation": "Il s'agit de « Fahrenheit 451 »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Twenty Thousand Leagues Under the Seas, Pride and Prejudice, The Charterhouse of Parma, Bel-Ami?",
+      "text": "Which work by Ray Bradbury dates to 1953?",
       "options": [
-        "The Charterhouse of Parma",
-        "Twenty Thousand Leagues Under the Seas",
-        "Pride and Prejudice",
-        "Bel-Ami"
+        "Fahrenheit 451",
+        "The Old Man and the Sea",
+        "Nineteen Eighty-Four",
+        "The Plague"
       ],
-      "explanation": "Pride and Prejudice: 1813; The Charterhouse of Parma: 1839; Twenty Thousand Leagues Under the Seas: 1870; Bel-Ami: 1885"
+      "explanation": "The work is “Fahrenheit 451”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2534
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Frankenstein, Rhinocéros, Orgueil et Préjugés, Les Fleurs du mal ?",
+      "text": "De quelle année date l’œuvre « Dracula » ?",
       "options": [
-        "Frankenstein",
-        "Rhinocéros",
-        "Orgueil et Préjugés",
-        "Les Fleurs du mal"
+        "1897",
+        "1890",
+        "1885",
+        "1883"
       ],
-      "explanation": "Orgueil et Préjugés : 1813; Frankenstein : 1818; Les Fleurs du mal : 1857; Rhinocéros : 1959"
+      "explanation": "« Dracula » date de 1897."
     },
     "en": {
-      "text": "Which work is the second oldest among: Frankenstein, Rhinoceros, Pride and Prejudice, The Flowers of Evil?",
+      "text": "What year does the work “Dracula” date from?",
       "options": [
-        "Frankenstein",
-        "Rhinoceros",
-        "Pride and Prejudice",
-        "The Flowers of Evil"
+        "1897",
+        "1890",
+        "1885",
+        "1883"
       ],
-      "explanation": "Pride and Prejudice: 1813; Frankenstein: 1818; The Flowers of Evil: 1857; Rhinoceros: 1959"
+      "explanation": "“Dracula” dates to 1897."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2535
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Portrait de Dorian Gray, De l’esprit des lois, Phèdre, L’Avare ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Dracula » ?",
       "options": [
-        "Phèdre",
-        "Le Portrait de Dorian Gray",
-        "De l’esprit des lois",
-        "L’Avare"
+        "Irlande",
+        "Royaume-Uni",
+        "France",
+        "États-Unis"
       ],
-      "explanation": "L’Avare : 1668; Phèdre : 1677; De l’esprit des lois : 1748; Le Portrait de Dorian Gray : 1890"
+      "explanation": "Bram Stoker, à l’origine de « Dracula », est né sur le territoire de l’actuel pays « Irlande »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Picture of Dorian Gray, The Spirit of the Laws, Phèdre, The Miser?",
+      "text": "In which present-day country was the author behind “Dracula” born?",
       "options": [
-        "Phèdre",
-        "The Picture of Dorian Gray",
-        "The Spirit of the Laws",
-        "The Miser"
+        "Ireland",
+        "United Kingdom",
+        "France",
+        "United States"
       ],
-      "explanation": "The Miser: 1668; Phèdre: 1677; The Spirit of the Laws: 1748; The Picture of Dorian Gray: 1890"
+      "explanation": "Bram Stoker, who created “Dracula”, was born in what is now Ireland."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2536
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Nom de la rose, Eugénie Grandet, Les Châtiments, Le Malade imaginaire ?",
+      "text": "Quelle œuvre de Bram Stoker date de 1897 ?",
       "options": [
-        "Eugénie Grandet",
-        "Le Nom de la rose",
-        "Les Châtiments",
-        "Le Malade imaginaire"
+        "Dracula",
+        "Le Portrait de Dorian Gray",
+        "Germinal",
+        "Bel-Ami"
       ],
-      "explanation": "Le Malade imaginaire : 1673; Eugénie Grandet : 1833; Les Châtiments : 1853; Le Nom de la rose : 1980"
+      "explanation": "Il s'agit de « Dracula »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Name of the Rose, Eugénie Grandet, Les Châtiments, The Imaginary Invalid?",
+      "text": "Which work by Bram Stoker dates to 1897?",
       "options": [
-        "Eugénie Grandet",
-        "The Name of the Rose",
-        "Les Châtiments",
-        "The Imaginary Invalid"
+        "Dracula",
+        "The Picture of Dorian Gray",
+        "Germinal",
+        "Bel-Ami"
       ],
-      "explanation": "The Imaginary Invalid: 1673; Eugénie Grandet: 1833; Les Châtiments: 1853; The Name of the Rose: 1980"
+      "explanation": "The work is “Dracula”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2537
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Phèdre, Les Châtiments, Le Portrait de Dorian Gray, Orgueil et Préjugés ?",
+      "text": "De quelle année date l’œuvre « Frankenstein » ?",
       "options": [
-        "Orgueil et Préjugés",
-        "Phèdre",
-        "Les Châtiments",
-        "Le Portrait de Dorian Gray"
+        "1818",
+        "1813",
+        "1830",
+        "1831"
       ],
-      "explanation": "Phèdre : 1677; Orgueil et Préjugés : 1813; Les Châtiments : 1853; Le Portrait de Dorian Gray : 1890"
+      "explanation": "« Frankenstein » date de 1818."
     },
     "en": {
-      "text": "Which work is the second oldest among: Phèdre, Les Châtiments, The Picture of Dorian Gray, Pride and Prejudice?",
+      "text": "What year does the work “Frankenstein” date from?",
       "options": [
-        "Pride and Prejudice",
-        "Phèdre",
-        "Les Châtiments",
-        "The Picture of Dorian Gray"
+        "1818",
+        "1813",
+        "1830",
+        "1831"
       ],
-      "explanation": "Phèdre: 1677; Pride and Prejudice: 1813; Les Châtiments: 1853; The Picture of Dorian Gray: 1890"
+      "explanation": "“Frankenstein” dates to 1818."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2538
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Nom de la rose, Les Misérables, La Chartreuse de Parme, La Peste ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Frankenstein » ?",
       "options": [
-        "Les Misérables",
-        "Le Nom de la rose",
-        "La Chartreuse de Parme",
-        "La Peste"
+        "Royaume-Uni",
+        "Irlande",
+        "France",
+        "États-Unis"
       ],
-      "explanation": "La Chartreuse de Parme : 1839; Les Misérables : 1862; La Peste : 1947; Le Nom de la rose : 1980"
+      "explanation": "Mary Shelley, à l’origine de « Frankenstein », est né sur le territoire de l’actuel pays « Royaume-Uni »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Name of the Rose, Les Misérables, The Charterhouse of Parma, The Plague?",
+      "text": "In which present-day country was the author behind “Frankenstein” born?",
       "options": [
-        "Les Misérables",
-        "The Name of the Rose",
-        "The Charterhouse of Parma",
-        "The Plague"
+        "United Kingdom",
+        "Ireland",
+        "France",
+        "United States"
       ],
-      "explanation": "The Charterhouse of Parma: 1839; Les Misérables: 1862; The Plague: 1947; The Name of the Rose: 1980"
+      "explanation": "Mary Shelley, who created “Frankenstein”, was born in what is now the United Kingdom."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2539
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Madame Bovary, En attendant Godot, Bel-Ami, Le Rouge et le Noir ?",
+      "text": "Quelle œuvre de Mary Shelley date de 1818 ?",
       "options": [
-        "Madame Bovary",
-        "En attendant Godot",
-        "Bel-Ami",
-        "Le Rouge et le Noir"
+        "Frankenstein",
+        "Orgueil et Préjugés",
+        "Le Rouge et le Noir",
+        "Notre-Dame de Paris"
       ],
-      "explanation": "Le Rouge et le Noir : 1830; Madame Bovary : 1857; Bel-Ami : 1885; En attendant Godot : 1952"
+      "explanation": "Il s'agit de « Frankenstein »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Madame Bovary, Waiting for Godot, Bel-Ami, The Red and the Black?",
+      "text": "Which work by Mary Shelley dates to 1818?",
       "options": [
-        "Madame Bovary",
-        "Waiting for Godot",
-        "Bel-Ami",
-        "The Red and the Black"
+        "Frankenstein",
+        "Pride and Prejudice",
+        "The Red and the Black",
+        "The Hunchback of Notre-Dame"
       ],
-      "explanation": "The Red and the Black: 1830; Madame Bovary: 1857; Bel-Ami: 1885; Waiting for Godot: 1952"
+      "explanation": "The work is “Frankenstein”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2540
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Orgueil et Préjugés, Le Misanthrope, Le Nom de la rose, Voyage au centre de la Terre ?",
+      "text": "De quelle année date l’œuvre « Le Portrait de Dorian Gray » ?",
       "options": [
-        "Orgueil et Préjugés",
-        "Le Misanthrope",
-        "Le Nom de la rose",
-        "Voyage au centre de la Terre"
+        "1890",
+        "1885",
+        "1883",
+        "1897"
       ],
-      "explanation": "Le Misanthrope : 1666; Orgueil et Préjugés : 1813; Voyage au centre de la Terre : 1864; Le Nom de la rose : 1980"
+      "explanation": "« Le Portrait de Dorian Gray » date de 1890."
     },
     "en": {
-      "text": "Which work is the second oldest among: Pride and Prejudice, The Misanthrope, The Name of the Rose, Journey to the Centre of the Earth?",
+      "text": "What year does the work “The Picture of Dorian Gray” date from?",
       "options": [
-        "Pride and Prejudice",
-        "The Misanthrope",
-        "The Name of the Rose",
-        "Journey to the Centre of the Earth"
+        "1890",
+        "1885",
+        "1883",
+        "1897"
       ],
-      "explanation": "The Misanthrope: 1666; Pride and Prejudice: 1813; Journey to the Centre of the Earth: 1864; The Name of the Rose: 1980"
+      "explanation": "“The Picture of Dorian Gray” dates to 1890."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2541
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Châtiments, Rhinocéros, L’Assommoir, La Chartreuse de Parme ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Le Portrait de Dorian Gray » ?",
       "options": [
-        "Les Châtiments",
-        "Rhinocéros",
-        "L’Assommoir",
-        "La Chartreuse de Parme"
+        "Irlande",
+        "Royaume-Uni",
+        "France",
+        "États-Unis"
       ],
-      "explanation": "La Chartreuse de Parme : 1839; Les Châtiments : 1853; L’Assommoir : 1877; Rhinocéros : 1959"
+      "explanation": "Oscar Wilde, à l’origine de « Le Portrait de Dorian Gray », est né sur le territoire de l’actuel pays « Irlande »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Les Châtiments, Rhinoceros, L’Assommoir, The Charterhouse of Parma?",
+      "text": "In which present-day country was the author behind “The Picture of Dorian Gray” born?",
       "options": [
-        "Les Châtiments",
-        "Rhinoceros",
-        "L’Assommoir",
-        "The Charterhouse of Parma"
+        "Ireland",
+        "United Kingdom",
+        "France",
+        "United States"
       ],
-      "explanation": "The Charterhouse of Parma: 1839; Les Châtiments: 1853; L’Assommoir: 1877; Rhinoceros: 1959"
+      "explanation": "Oscar Wilde, who created “The Picture of Dorian Gray”, was born in what is now Ireland."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2542
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Alcools, L’Assommoir, Vingt mille lieues sous les mers, Le Nom de la rose ?",
+      "text": "Quelle œuvre de Oscar Wilde date de 1890 ?",
       "options": [
-        "L’Assommoir",
-        "Alcools",
-        "Vingt mille lieues sous les mers",
-        "Le Nom de la rose"
+        "Le Portrait de Dorian Gray",
+        "Germinal",
+        "Bel-Ami",
+        "Une vie"
       ],
-      "explanation": "Vingt mille lieues sous les mers : 1870; L’Assommoir : 1877; Alcools : 1913; Le Nom de la rose : 1980"
+      "explanation": "Il s'agit de « Le Portrait de Dorian Gray »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Alcools, L’Assommoir, Twenty Thousand Leagues Under the Seas, The Name of the Rose?",
+      "text": "Which work by Oscar Wilde dates to 1890?",
       "options": [
-        "L’Assommoir",
-        "Alcools",
-        "Twenty Thousand Leagues Under the Seas",
-        "The Name of the Rose"
+        "The Picture of Dorian Gray",
+        "Germinal",
+        "Bel-Ami",
+        "A Woman’s Life"
       ],
-      "explanation": "Twenty Thousand Leagues Under the Seas: 1870; L’Assommoir: 1877; Alcools: 1913; The Name of the Rose: 1980"
+      "explanation": "The work is “The Picture of Dorian Gray”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2543
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Peste, Madame Bovary, Vingt mille lieues sous les mers, Du contrat social ?",
+      "text": "De quelle année date l’œuvre « Jane Eyre » ?",
       "options": [
-        "Madame Bovary",
-        "La Peste",
-        "Vingt mille lieues sous les mers",
-        "Du contrat social"
+        "1847",
+        "1844",
+        "1851",
+        "1853"
       ],
-      "explanation": "Du contrat social : 1762; Madame Bovary : 1857; Vingt mille lieues sous les mers : 1870; La Peste : 1947"
+      "explanation": "« Jane Eyre » date de 1847."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Plague, Madame Bovary, Twenty Thousand Leagues Under the Seas, The Social Contract?",
+      "text": "What year does the work “Jane Eyre” date from?",
       "options": [
-        "Madame Bovary",
-        "The Plague",
-        "Twenty Thousand Leagues Under the Seas",
-        "The Social Contract"
+        "1847",
+        "1844",
+        "1851",
+        "1853"
       ],
-      "explanation": "The Social Contract: 1762; Madame Bovary: 1857; Twenty Thousand Leagues Under the Seas: 1870; The Plague: 1947"
+      "explanation": "“Jane Eyre” dates to 1847."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2544
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Andromaque, Les Fleurs du mal, Les Raisins de la colère, Du contrat social ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Jane Eyre » ?",
       "options": [
-        "Du contrat social",
-        "Andromaque",
-        "Les Fleurs du mal",
-        "Les Raisins de la colère"
+        "Royaume-Uni",
+        "Irlande",
+        "France",
+        "États-Unis"
       ],
-      "explanation": "Andromaque : 1667; Du contrat social : 1762; Les Fleurs du mal : 1857; Les Raisins de la colère : 1939"
+      "explanation": "Charlotte Brontë, à l’origine de « Jane Eyre », est né sur le territoire de l’actuel pays « Royaume-Uni »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Andromaque, The Flowers of Evil, The Grapes of Wrath, The Social Contract?",
+      "text": "In which present-day country was the author behind “Jane Eyre” born?",
       "options": [
-        "The Social Contract",
-        "Andromaque",
-        "The Flowers of Evil",
-        "The Grapes of Wrath"
+        "United Kingdom",
+        "Ireland",
+        "France",
+        "United States"
       ],
-      "explanation": "Andromaque: 1667; The Social Contract: 1762; The Flowers of Evil: 1857; The Grapes of Wrath: 1939"
+      "explanation": "Charlotte Brontë, who created “Jane Eyre”, was born in what is now the United Kingdom."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2545
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Petit Prince, Nana, Andromaque, Germinal ?",
+      "text": "Quelle œuvre de Charlotte Brontë date de 1847 ?",
       "options": [
-        "Nana",
-        "Le Petit Prince",
-        "Andromaque",
-        "Germinal"
+        "Jane Eyre",
+        "Les Hauts de Hurlevent",
+        "Les Trois Mousquetaires",
+        "Moby Dick"
       ],
-      "explanation": "Andromaque : 1667; Nana : 1880; Germinal : 1885; Le Petit Prince : 1943"
+      "explanation": "Il s'agit de « Jane Eyre »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Little Prince, Nana, Andromaque, Germinal?",
+      "text": "Which work by Charlotte Brontë dates to 1847?",
       "options": [
-        "Nana",
-        "The Little Prince",
-        "Andromaque",
-        "Germinal"
+        "Jane Eyre",
+        "Wuthering Heights",
+        "The Three Musketeers",
+        "Moby-Dick"
       ],
-      "explanation": "Andromaque: 1667; Nana: 1880; Germinal: 1885; The Little Prince: 1943"
+      "explanation": "The work is “Jane Eyre”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2546
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Chartreuse de Parme, Bel-Ami, Andromaque, L’Alchimiste ?",
+      "text": "De quelle année date l’œuvre « Les Hauts de Hurlevent » ?",
       "options": [
-        "La Chartreuse de Parme",
-        "Bel-Ami",
-        "Andromaque",
-        "L’Alchimiste"
+        "1847",
+        "1844",
+        "1851",
+        "1853"
       ],
-      "explanation": "Andromaque : 1667; La Chartreuse de Parme : 1839; Bel-Ami : 1885; L’Alchimiste : 1988"
+      "explanation": "« Les Hauts de Hurlevent » date de 1847."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Charterhouse of Parma, Bel-Ami, Andromaque, The Alchemist?",
+      "text": "What year does the work “Wuthering Heights” date from?",
       "options": [
-        "The Charterhouse of Parma",
-        "Bel-Ami",
-        "Andromaque",
-        "The Alchemist"
+        "1847",
+        "1844",
+        "1851",
+        "1853"
       ],
-      "explanation": "Andromaque: 1667; The Charterhouse of Parma: 1839; Bel-Ami: 1885; The Alchemist: 1988"
+      "explanation": "“Wuthering Heights” dates to 1847."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2547
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : L’Étranger, La Chartreuse de Parme, L’Écume des jours, Madame Bovary ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Les Hauts de Hurlevent » ?",
       "options": [
-        "Madame Bovary",
-        "L’Étranger",
-        "La Chartreuse de Parme",
-        "L’Écume des jours"
+        "Royaume-Uni",
+        "Irlande",
+        "France",
+        "États-Unis"
       ],
-      "explanation": "La Chartreuse de Parme : 1839; Madame Bovary : 1857; L’Étranger : 1942; L’Écume des jours : 1947"
+      "explanation": "Emily Brontë, à l’origine de « Les Hauts de Hurlevent », est né sur le territoire de l’actuel pays « Royaume-Uni »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Stranger, The Charterhouse of Parma, Froth on the Daydream, Madame Bovary?",
+      "text": "In which present-day country was the author behind “Wuthering Heights” born?",
       "options": [
-        "Madame Bovary",
-        "The Stranger",
-        "The Charterhouse of Parma",
-        "Froth on the Daydream"
+        "United Kingdom",
+        "Ireland",
+        "France",
+        "United States"
       ],
-      "explanation": "The Charterhouse of Parma: 1839; Madame Bovary: 1857; The Stranger: 1942; Froth on the Daydream: 1947"
+      "explanation": "Emily Brontë, who created “Wuthering Heights”, was born in what is now the United Kingdom."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2548
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Châtiments, Moby Dick, La Chartreuse de Parme, Dracula ?",
+      "text": "Quelle œuvre de Emily Brontë date de 1847 ?",
       "options": [
-        "Moby Dick",
-        "Les Châtiments",
-        "La Chartreuse de Parme",
-        "Dracula"
+        "Les Hauts de Hurlevent",
+        "Jane Eyre",
+        "Les Trois Mousquetaires",
+        "Moby Dick"
       ],
-      "explanation": "La Chartreuse de Parme : 1839; Moby Dick : 1851; Les Châtiments : 1853; Dracula : 1897"
+      "explanation": "Il s'agit de « Les Hauts de Hurlevent »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Les Châtiments, Moby-Dick, The Charterhouse of Parma, Dracula?",
+      "text": "Which work by Emily Brontë dates to 1847?",
       "options": [
-        "Moby-Dick",
-        "Les Châtiments",
-        "The Charterhouse of Parma",
-        "Dracula"
+        "Wuthering Heights",
+        "Jane Eyre",
+        "The Three Musketeers",
+        "Moby-Dick"
       ],
-      "explanation": "The Charterhouse of Parma: 1839; Moby-Dick: 1851; Les Châtiments: 1853; Dracula: 1897"
+      "explanation": "The work is “Wuthering Heights”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2549
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Trois Mousquetaires, Le Nom de la rose, Bel-Ami, Le Meilleur des mondes ?",
+      "text": "De quelle année date l’œuvre « Orgueil et Préjugés » ?",
       "options": [
-        "Bel-Ami",
-        "Les Trois Mousquetaires",
-        "Le Nom de la rose",
-        "Le Meilleur des mondes"
+        "1813",
+        "1818",
+        "1830",
+        "1831"
       ],
-      "explanation": "Les Trois Mousquetaires : 1844; Bel-Ami : 1885; Le Meilleur des mondes : 1932; Le Nom de la rose : 1980"
+      "explanation": "« Orgueil et Préjugés » date de 1813."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Three Musketeers, The Name of the Rose, Bel-Ami, Brave New World?",
+      "text": "What year does the work “Pride and Prejudice” date from?",
       "options": [
-        "Bel-Ami",
-        "The Three Musketeers",
-        "The Name of the Rose",
-        "Brave New World"
+        "1813",
+        "1818",
+        "1830",
+        "1831"
       ],
-      "explanation": "The Three Musketeers: 1844; Bel-Ami: 1885; Brave New World: 1932; The Name of the Rose: 1980"
+      "explanation": "“Pride and Prejudice” dates to 1813."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2550
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Phèdre, Orgueil et Préjugés, Les Fleurs du mal, Les Raisins de la colère ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Orgueil et Préjugés » ?",
       "options": [
-        "Orgueil et Préjugés",
-        "Phèdre",
-        "Les Fleurs du mal",
-        "Les Raisins de la colère"
+        "Royaume-Uni",
+        "Irlande",
+        "France",
+        "États-Unis"
       ],
-      "explanation": "Phèdre : 1677; Orgueil et Préjugés : 1813; Les Fleurs du mal : 1857; Les Raisins de la colère : 1939"
+      "explanation": "Jane Austen, à l’origine de « Orgueil et Préjugés », est né sur le territoire de l’actuel pays « Royaume-Uni »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Phèdre, Pride and Prejudice, The Flowers of Evil, The Grapes of Wrath?",
+      "text": "In which present-day country was the author behind “Pride and Prejudice” born?",
       "options": [
-        "Pride and Prejudice",
-        "Phèdre",
-        "The Flowers of Evil",
-        "The Grapes of Wrath"
+        "United Kingdom",
+        "Ireland",
+        "France",
+        "United States"
       ],
-      "explanation": "Phèdre: 1677; Pride and Prejudice: 1813; The Flowers of Evil: 1857; The Grapes of Wrath: 1939"
+      "explanation": "Jane Austen, who created “Pride and Prejudice”, was born in what is now the United Kingdom."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2551
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Tour du monde en quatre-vingts jours, Alcools, L’Étranger, En attendant Godot ?",
+      "text": "Quelle œuvre de Jane Austen date de 1813 ?",
       "options": [
-        "Alcools",
-        "Le Tour du monde en quatre-vingts jours",
-        "L’Étranger",
-        "En attendant Godot"
+        "Orgueil et Préjugés",
+        "Frankenstein",
+        "Le Rouge et le Noir",
+        "Notre-Dame de Paris"
       ],
-      "explanation": "Le Tour du monde en quatre-vingts jours : 1873; Alcools : 1913; L’Étranger : 1942; En attendant Godot : 1952"
+      "explanation": "Il s'agit de « Orgueil et Préjugés »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Around the World in Eighty Days, Alcools, The Stranger, Waiting for Godot?",
+      "text": "Which work by Jane Austen dates to 1813?",
       "options": [
-        "Alcools",
-        "Around the World in Eighty Days",
-        "The Stranger",
-        "Waiting for Godot"
+        "Pride and Prejudice",
+        "Frankenstein",
+        "The Red and the Black",
+        "The Hunchback of Notre-Dame"
       ],
-      "explanation": "Around the World in Eighty Days: 1873; Alcools: 1913; The Stranger: 1942; Waiting for Godot: 1952"
+      "explanation": "The work is “Pride and Prejudice”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2552
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Eugénie Grandet, Fahrenheit 451, Le Cid, Phèdre ?",
+      "text": "De quelle année date l’œuvre « Moby Dick » ?",
       "options": [
-        "Phèdre",
-        "Eugénie Grandet",
-        "Fahrenheit 451",
-        "Le Cid"
+        "1851",
+        "1853",
+        "1847",
+        "1856"
       ],
-      "explanation": "Le Cid : 1637; Phèdre : 1677; Eugénie Grandet : 1833; Fahrenheit 451 : 1953"
+      "explanation": "« Moby Dick » date de 1851."
     },
     "en": {
-      "text": "Which work is the second oldest among: Eugénie Grandet, Fahrenheit 451, Le Cid, Phèdre?",
+      "text": "What year does the work “Moby-Dick” date from?",
       "options": [
-        "Phèdre",
-        "Eugénie Grandet",
-        "Fahrenheit 451",
-        "Le Cid"
+        "1851",
+        "1853",
+        "1847",
+        "1856"
       ],
-      "explanation": "Le Cid: 1637; Phèdre: 1677; Eugénie Grandet: 1833; Fahrenheit 451: 1953"
+      "explanation": "“Moby-Dick” dates to 1851."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2553
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Chartreuse de Parme, Fahrenheit 451, Les Raisins de la colère, Rhinocéros ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Moby Dick » ?",
       "options": [
-        "Les Raisins de la colère",
-        "La Chartreuse de Parme",
-        "Fahrenheit 451",
-        "Rhinocéros"
+        "États-Unis",
+        "Canada",
+        "Royaume-Uni",
+        "Australie"
       ],
-      "explanation": "La Chartreuse de Parme : 1839; Les Raisins de la colère : 1939; Fahrenheit 451 : 1953; Rhinocéros : 1959"
+      "explanation": "Herman Melville, à l’origine de « Moby Dick », est né sur le territoire de l’actuel pays « États-Unis »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Charterhouse of Parma, Fahrenheit 451, The Grapes of Wrath, Rhinoceros?",
+      "text": "In which present-day country was the author behind “Moby-Dick” born?",
       "options": [
-        "The Grapes of Wrath",
-        "The Charterhouse of Parma",
-        "Fahrenheit 451",
-        "Rhinoceros"
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Australia"
       ],
-      "explanation": "The Charterhouse of Parma: 1839; The Grapes of Wrath: 1939; Fahrenheit 451: 1953; Rhinoceros: 1959"
+      "explanation": "Herman Melville, who created “Moby-Dick”, was born in what is now the United States."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2554
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Peste, Le Père Goriot, Frankenstein, Les Raisins de la colère ?",
+      "text": "Quelle œuvre de Herman Melville date de 1851 ?",
       "options": [
-        "Le Père Goriot",
-        "La Peste",
-        "Frankenstein",
-        "Les Raisins de la colère"
+        "Moby Dick",
+        "Jane Eyre",
+        "Les Hauts de Hurlevent",
+        "Madame Bovary"
       ],
-      "explanation": "Frankenstein : 1818; Le Père Goriot : 1835; Les Raisins de la colère : 1939; La Peste : 1947"
+      "explanation": "Il s'agit de « Moby Dick »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Plague, Father Goriot, Frankenstein, The Grapes of Wrath?",
+      "text": "Which work by Herman Melville dates to 1851?",
       "options": [
-        "Father Goriot",
-        "The Plague",
-        "Frankenstein",
-        "The Grapes of Wrath"
+        "Moby-Dick",
+        "Jane Eyre",
+        "Wuthering Heights",
+        "Madame Bovary"
       ],
-      "explanation": "Frankenstein: 1818; Father Goriot: 1835; The Grapes of Wrath: 1939; The Plague: 1947"
+      "explanation": "The work is “Moby-Dick”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2555
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Dracula, Le Nom de la rose, Notre-Dame de Paris, Le Portrait de Dorian Gray ?",
+      "text": "De quelle année date l’œuvre « Le Vieil Homme et la Mer » ?",
       "options": [
-        "Le Portrait de Dorian Gray",
-        "Dracula",
-        "Le Nom de la rose",
-        "Notre-Dame de Paris"
+        "1952",
+        "1953",
+        "1949",
+        "1947"
       ],
-      "explanation": "Notre-Dame de Paris : 1831; Le Portrait de Dorian Gray : 1890; Dracula : 1897; Le Nom de la rose : 1980"
+      "explanation": "« Le Vieil Homme et la Mer » date de 1952."
     },
     "en": {
-      "text": "Which work is the second oldest among: Dracula, The Name of the Rose, The Hunchback of Notre-Dame, The Picture of Dorian Gray?",
+      "text": "What year does the work “The Old Man and the Sea” date from?",
       "options": [
-        "The Picture of Dorian Gray",
-        "Dracula",
-        "The Name of the Rose",
-        "The Hunchback of Notre-Dame"
+        "1952",
+        "1953",
+        "1949",
+        "1947"
       ],
-      "explanation": "The Hunchback of Notre-Dame: 1831; The Picture of Dorian Gray: 1890; Dracula: 1897; The Name of the Rose: 1980"
+      "explanation": "“The Old Man and the Sea” dates to 1952."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2556
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Hauts de Hurlevent, L’Assommoir, Le Portrait de Dorian Gray, Les Contemplations ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Le Vieil Homme et la Mer » ?",
       "options": [
-        "Les Contemplations",
-        "Les Hauts de Hurlevent",
-        "L’Assommoir",
-        "Le Portrait de Dorian Gray"
+        "États-Unis",
+        "Canada",
+        "Royaume-Uni",
+        "Australie"
       ],
-      "explanation": "Les Hauts de Hurlevent : 1847; Les Contemplations : 1856; L’Assommoir : 1877; Le Portrait de Dorian Gray : 1890"
+      "explanation": "Ernest Hemingway, à l’origine de « Le Vieil Homme et la Mer », est né sur le territoire de l’actuel pays « États-Unis »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Wuthering Heights, L’Assommoir, The Picture of Dorian Gray, Les Contemplations?",
+      "text": "In which present-day country was the author behind “The Old Man and the Sea” born?",
       "options": [
-        "Les Contemplations",
-        "Wuthering Heights",
-        "L’Assommoir",
-        "The Picture of Dorian Gray"
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Australia"
       ],
-      "explanation": "Wuthering Heights: 1847; Les Contemplations: 1856; L’Assommoir: 1877; The Picture of Dorian Gray: 1890"
+      "explanation": "Ernest Hemingway, who created “The Old Man and the Sea”, was born in what is now the United States."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2557
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Germinal, Frankenstein, Jane Eyre, Les Fleurs du mal ?",
+      "text": "Quelle œuvre de Ernest Hemingway date de 1952 ?",
       "options": [
-        "Jane Eyre",
-        "Germinal",
-        "Frankenstein",
-        "Les Fleurs du mal"
+        "Le Vieil Homme et la Mer",
+        "Fahrenheit 451",
+        "1984",
+        "La Peste"
       ],
-      "explanation": "Frankenstein : 1818; Jane Eyre : 1847; Les Fleurs du mal : 1857; Germinal : 1885"
+      "explanation": "Il s'agit de « Le Vieil Homme et la Mer »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Germinal, Frankenstein, Jane Eyre, The Flowers of Evil?",
+      "text": "Which work by Ernest Hemingway dates to 1952?",
       "options": [
-        "Jane Eyre",
-        "Germinal",
-        "Frankenstein",
-        "The Flowers of Evil"
+        "The Old Man and the Sea",
+        "Fahrenheit 451",
+        "Nineteen Eighty-Four",
+        "The Plague"
       ],
-      "explanation": "Frankenstein: 1818; Jane Eyre: 1847; The Flowers of Evil: 1857; Germinal: 1885"
+      "explanation": "The work is “The Old Man and the Sea”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2558
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Misanthrope, Le Père Goriot, Le Tour du monde en quatre-vingts jours, Bel-Ami ?",
+      "text": "De quelle année date l’œuvre « Gatsby le Magnifique » ?",
       "options": [
-        "Le Père Goriot",
-        "Le Misanthrope",
-        "Le Tour du monde en quatre-vingts jours",
-        "Bel-Ami"
+        "1925",
+        "1932",
+        "1913",
+        "1939"
       ],
-      "explanation": "Le Misanthrope : 1666; Le Père Goriot : 1835; Le Tour du monde en quatre-vingts jours : 1873; Bel-Ami : 1885"
+      "explanation": "« Gatsby le Magnifique » date de 1925."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Misanthrope, Father Goriot, Around the World in Eighty Days, Bel-Ami?",
+      "text": "What year does the work “The Great Gatsby” date from?",
       "options": [
-        "Father Goriot",
-        "The Misanthrope",
-        "Around the World in Eighty Days",
-        "Bel-Ami"
+        "1925",
+        "1932",
+        "1913",
+        "1939"
       ],
-      "explanation": "The Misanthrope: 1666; Father Goriot: 1835; Around the World in Eighty Days: 1873; Bel-Ami: 1885"
+      "explanation": "“The Great Gatsby” dates to 1925."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2559
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Contemplations, Gatsby le Magnifique, Salammbô, Le Père Goriot ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Gatsby le Magnifique » ?",
       "options": [
-        "Les Contemplations",
-        "Gatsby le Magnifique",
-        "Salammbô",
-        "Le Père Goriot"
+        "États-Unis",
+        "Canada",
+        "Royaume-Uni",
+        "Australie"
       ],
-      "explanation": "Le Père Goriot : 1835; Les Contemplations : 1856; Salammbô : 1862; Gatsby le Magnifique : 1925"
+      "explanation": "F. Scott Fitzgerald, à l’origine de « Gatsby le Magnifique », est né sur le territoire de l’actuel pays « États-Unis »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Les Contemplations, The Great Gatsby, Salammbô, Father Goriot?",
+      "text": "In which present-day country was the author behind “The Great Gatsby” born?",
       "options": [
-        "Les Contemplations",
-        "The Great Gatsby",
-        "Salammbô",
-        "Father Goriot"
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Australia"
       ],
-      "explanation": "Father Goriot: 1835; Les Contemplations: 1856; Salammbô: 1862; The Great Gatsby: 1925"
+      "explanation": "F. Scott Fitzgerald, who created “The Great Gatsby”, was born in what is now the United States."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2560
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Alcools, L’Avare, Vingt mille lieues sous les mers, La Chartreuse de Parme ?",
+      "text": "Quelle œuvre de F. Scott Fitzgerald date de 1925 ?",
       "options": [
-        "La Chartreuse de Parme",
-        "Alcools",
-        "L’Avare",
-        "Vingt mille lieues sous les mers"
+        "Gatsby le Magnifique",
+        "Le Meilleur des mondes",
+        "Les Raisins de la colère",
+        "L’Étranger"
       ],
-      "explanation": "L’Avare : 1668; La Chartreuse de Parme : 1839; Vingt mille lieues sous les mers : 1870; Alcools : 1913"
+      "explanation": "Il s'agit de « Gatsby le Magnifique »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Alcools, The Miser, Twenty Thousand Leagues Under the Seas, The Charterhouse of Parma?",
+      "text": "Which work by F. Scott Fitzgerald dates to 1925?",
       "options": [
-        "The Charterhouse of Parma",
-        "Alcools",
-        "The Miser",
-        "Twenty Thousand Leagues Under the Seas"
+        "The Great Gatsby",
+        "Brave New World",
+        "The Grapes of Wrath",
+        "The Stranger"
       ],
-      "explanation": "The Miser: 1668; The Charterhouse of Parma: 1839; Twenty Thousand Leagues Under the Seas: 1870; Alcools: 1913"
+      "explanation": "The work is “The Great Gatsby”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2561
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Contemplations, La Peste, De l’esprit des lois, Moby Dick ?",
+      "text": "De quelle année date l’œuvre « Les Raisins de la colère » ?",
       "options": [
-        "Moby Dick",
-        "Les Contemplations",
-        "La Peste",
-        "De l’esprit des lois"
+        "1939",
+        "1942",
+        "1943",
+        "1932"
       ],
-      "explanation": "De l’esprit des lois : 1748; Moby Dick : 1851; Les Contemplations : 1856; La Peste : 1947"
+      "explanation": "« Les Raisins de la colère » date de 1939."
     },
     "en": {
-      "text": "Which work is the second oldest among: Les Contemplations, The Plague, The Spirit of the Laws, Moby-Dick?",
+      "text": "What year does the work “The Grapes of Wrath” date from?",
       "options": [
-        "Moby-Dick",
-        "Les Contemplations",
-        "The Plague",
-        "The Spirit of the Laws"
+        "1939",
+        "1942",
+        "1943",
+        "1932"
       ],
-      "explanation": "The Spirit of the Laws: 1748; Moby-Dick: 1851; Les Contemplations: 1856; The Plague: 1947"
+      "explanation": "“The Grapes of Wrath” dates to 1939."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2562
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Peste, Les Fleurs du mal, Le Misanthrope, Vingt mille lieues sous les mers ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Les Raisins de la colère » ?",
       "options": [
-        "Les Fleurs du mal",
-        "La Peste",
-        "Le Misanthrope",
-        "Vingt mille lieues sous les mers"
+        "États-Unis",
+        "Canada",
+        "Royaume-Uni",
+        "Australie"
       ],
-      "explanation": "Le Misanthrope : 1666; Les Fleurs du mal : 1857; Vingt mille lieues sous les mers : 1870; La Peste : 1947"
+      "explanation": "John Steinbeck, à l’origine de « Les Raisins de la colère », est né sur le territoire de l’actuel pays « États-Unis »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Plague, The Flowers of Evil, The Misanthrope, Twenty Thousand Leagues Under the Seas?",
+      "text": "In which present-day country was the author behind “The Grapes of Wrath” born?",
       "options": [
-        "The Flowers of Evil",
-        "The Plague",
-        "The Misanthrope",
-        "Twenty Thousand Leagues Under the Seas"
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Australia"
       ],
-      "explanation": "The Misanthrope: 1666; The Flowers of Evil: 1857; Twenty Thousand Leagues Under the Seas: 1870; The Plague: 1947"
+      "explanation": "John Steinbeck, who created “The Grapes of Wrath”, was born in what is now the United States."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2563
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Frankenstein, La Chartreuse de Parme, La Peste, Les Misérables ?",
+      "text": "Quelle œuvre de John Steinbeck date de 1939 ?",
       "options": [
-        "La Chartreuse de Parme",
-        "Frankenstein",
-        "La Peste",
-        "Les Misérables"
+        "Les Raisins de la colère",
+        "L’Étranger",
+        "Le Meilleur des mondes",
+        "La Peste"
       ],
-      "explanation": "Frankenstein : 1818; La Chartreuse de Parme : 1839; Les Misérables : 1862; La Peste : 1947"
+      "explanation": "Il s'agit de « Les Raisins de la colère »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Frankenstein, The Charterhouse of Parma, The Plague, Les Misérables?",
+      "text": "Which work by John Steinbeck dates to 1939?",
       "options": [
-        "The Charterhouse of Parma",
-        "Frankenstein",
-        "The Plague",
-        "Les Misérables"
+        "The Grapes of Wrath",
+        "The Stranger",
+        "Brave New World",
+        "The Plague"
       ],
-      "explanation": "Frankenstein: 1818; The Charterhouse of Parma: 1839; Les Misérables: 1862; The Plague: 1947"
+      "explanation": "The work is “The Grapes of Wrath”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2564
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : L’Écume des jours, Le Portrait de Dorian Gray, Moby Dick, Les Fleurs du mal ?",
+      "text": "De quelle année date l’œuvre « Le Nom de la rose » ?",
       "options": [
-        "Les Fleurs du mal",
-        "L’Écume des jours",
-        "Le Portrait de Dorian Gray",
-        "Moby Dick"
+        "1980",
+        "1988",
+        "1959",
+        "1953"
       ],
-      "explanation": "Moby Dick : 1851; Les Fleurs du mal : 1857; Le Portrait de Dorian Gray : 1890; L’Écume des jours : 1947"
+      "explanation": "« Le Nom de la rose » date de 1980."
     },
     "en": {
-      "text": "Which work is the second oldest among: Froth on the Daydream, The Picture of Dorian Gray, Moby-Dick, The Flowers of Evil?",
+      "text": "What year does the work “The Name of the Rose” date from?",
       "options": [
-        "The Flowers of Evil",
-        "Froth on the Daydream",
-        "The Picture of Dorian Gray",
-        "Moby-Dick"
+        "1980",
+        "1988",
+        "1959",
+        "1953"
       ],
-      "explanation": "Moby-Dick: 1851; The Flowers of Evil: 1857; The Picture of Dorian Gray: 1890; Froth on the Daydream: 1947"
+      "explanation": "“The Name of the Rose” dates to 1980."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2565
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Trois Mousquetaires, Le Petit Prince, Les Misérables, Madame Bovary ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Le Nom de la rose » ?",
       "options": [
-        "Madame Bovary",
-        "Les Trois Mousquetaires",
-        "Le Petit Prince",
-        "Les Misérables"
+        "Italie",
+        "France",
+        "Espagne",
+        "Autriche"
       ],
-      "explanation": "Les Trois Mousquetaires : 1844; Madame Bovary : 1857; Les Misérables : 1862; Le Petit Prince : 1943"
+      "explanation": "Umberto Eco, à l’origine de « Le Nom de la rose », est né sur le territoire de l’actuel pays « Italie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Three Musketeers, The Little Prince, Les Misérables, Madame Bovary?",
+      "text": "In which present-day country was the author behind “The Name of the Rose” born?",
       "options": [
-        "Madame Bovary",
-        "The Three Musketeers",
-        "The Little Prince",
-        "Les Misérables"
+        "Italy",
+        "France",
+        "Spain",
+        "Austria"
       ],
-      "explanation": "The Three Musketeers: 1844; Madame Bovary: 1857; Les Misérables: 1862; The Little Prince: 1943"
+      "explanation": "Umberto Eco, who created “The Name of the Rose”, was born in what is now Italy."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2566
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Hauts de Hurlevent, 1984, Le Cid, Les Châtiments ?",
+      "text": "Quelle œuvre de Umberto Eco date de 1980 ?",
       "options": [
-        "Les Hauts de Hurlevent",
-        "1984",
-        "Le Cid",
-        "Les Châtiments"
+        "Le Nom de la rose",
+        "L’Alchimiste",
+        "Fahrenheit 451",
+        "Le Vieil Homme et la Mer"
       ],
-      "explanation": "Le Cid : 1637; Les Hauts de Hurlevent : 1847; Les Châtiments : 1853; 1984 : 1949"
+      "explanation": "Il s'agit de « Le Nom de la rose »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Wuthering Heights, Nineteen Eighty-Four, Le Cid, Les Châtiments?",
+      "text": "Which work by Umberto Eco dates to 1980?",
       "options": [
-        "Wuthering Heights",
-        "Nineteen Eighty-Four",
-        "Le Cid",
-        "Les Châtiments"
+        "The Name of the Rose",
+        "The Alchemist",
+        "Fahrenheit 451",
+        "The Old Man and the Sea"
       ],
-      "explanation": "Le Cid: 1637; Wuthering Heights: 1847; Les Châtiments: 1853; Nineteen Eighty-Four: 1949"
+      "explanation": "The work is “The Name of the Rose”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2567
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Fahrenheit 451, Rhinocéros, Jane Eyre, Le Meilleur des mondes ?",
+      "text": "De quelle année date l’œuvre « L’Alchimiste » ?",
       "options": [
-        "Le Meilleur des mondes",
-        "Fahrenheit 451",
-        "Rhinocéros",
-        "Jane Eyre"
+        "1988",
+        "1980",
+        "1959",
+        "1953"
       ],
-      "explanation": "Jane Eyre : 1847; Le Meilleur des mondes : 1932; Fahrenheit 451 : 1953; Rhinocéros : 1959"
+      "explanation": "« L’Alchimiste » date de 1988."
     },
     "en": {
-      "text": "Which work is the second oldest among: Fahrenheit 451, Rhinoceros, Jane Eyre, Brave New World?",
+      "text": "What year does the work “The Alchemist” date from?",
       "options": [
-        "Brave New World",
-        "Fahrenheit 451",
-        "Rhinoceros",
-        "Jane Eyre"
+        "1988",
+        "1980",
+        "1959",
+        "1953"
       ],
-      "explanation": "Jane Eyre: 1847; Brave New World: 1932; Fahrenheit 451: 1953; Rhinoceros: 1959"
+      "explanation": "“The Alchemist” dates to 1988."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2568
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Contemplations, Jane Eyre, L’Assommoir, La Chartreuse de Parme ?",
+      "text": "Dans quel pays actuel est né l’auteur de « L’Alchimiste » ?",
       "options": [
-        "Jane Eyre",
-        "Les Contemplations",
-        "L’Assommoir",
-        "La Chartreuse de Parme"
+        "Brésil",
+        "Argentine",
+        "Mexique",
+        "Portugal"
       ],
-      "explanation": "La Chartreuse de Parme : 1839; Jane Eyre : 1847; Les Contemplations : 1856; L’Assommoir : 1877"
+      "explanation": "Paulo Coelho, à l’origine de « L’Alchimiste », est né sur le territoire de l’actuel pays « Brésil »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Les Contemplations, Jane Eyre, L’Assommoir, The Charterhouse of Parma?",
+      "text": "In which present-day country was the author behind “The Alchemist” born?",
       "options": [
-        "Jane Eyre",
-        "Les Contemplations",
-        "L’Assommoir",
-        "The Charterhouse of Parma"
+        "Brazil",
+        "Argentina",
+        "Mexico",
+        "Portugal"
       ],
-      "explanation": "The Charterhouse of Parma: 1839; Jane Eyre: 1847; Les Contemplations: 1856; L’Assommoir: 1877"
+      "explanation": "Paulo Coelho, who created “The Alchemist”, was born in what is now Brazil."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2569
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : L’Écume des jours, Les Hauts de Hurlevent, Orgueil et Préjugés, De l’esprit des lois ?",
+      "text": "Quelle œuvre de Paulo Coelho date de 1988 ?",
       "options": [
-        "Orgueil et Préjugés",
-        "L’Écume des jours",
-        "Les Hauts de Hurlevent",
-        "De l’esprit des lois"
+        "L’Alchimiste",
+        "Le Nom de la rose",
+        "Fahrenheit 451",
+        "Le Vieil Homme et la Mer"
       ],
-      "explanation": "De l’esprit des lois : 1748; Orgueil et Préjugés : 1813; Les Hauts de Hurlevent : 1847; L’Écume des jours : 1947"
+      "explanation": "Il s'agit de « L’Alchimiste »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Froth on the Daydream, Wuthering Heights, Pride and Prejudice, The Spirit of the Laws?",
+      "text": "Which work by Paulo Coelho dates to 1988?",
       "options": [
-        "Pride and Prejudice",
-        "Froth on the Daydream",
-        "Wuthering Heights",
-        "The Spirit of the Laws"
+        "The Alchemist",
+        "The Name of the Rose",
+        "Fahrenheit 451",
+        "The Old Man and the Sea"
       ],
-      "explanation": "The Spirit of the Laws: 1748; Pride and Prejudice: 1813; Wuthering Heights: 1847; Froth on the Daydream: 1947"
+      "explanation": "The work is “The Alchemist”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2570
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Fleurs du mal, Le Père Goriot, Alcools, Notre-Dame de Paris ?",
+      "text": "De quelle année date l’œuvre « Le Cid » ?",
       "options": [
-        "Le Père Goriot",
-        "Les Fleurs du mal",
-        "Alcools",
-        "Notre-Dame de Paris"
+        "1637",
+        "1666",
+        "1667",
+        "1668"
       ],
-      "explanation": "Notre-Dame de Paris : 1831; Le Père Goriot : 1835; Les Fleurs du mal : 1857; Alcools : 1913"
+      "explanation": "« Le Cid » date de 1637."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Flowers of Evil, Father Goriot, Alcools, The Hunchback of Notre-Dame?",
+      "text": "What year does the work “Le Cid” date from?",
       "options": [
-        "Father Goriot",
-        "The Flowers of Evil",
-        "Alcools",
-        "The Hunchback of Notre-Dame"
+        "1637",
+        "1666",
+        "1667",
+        "1668"
       ],
-      "explanation": "The Hunchback of Notre-Dame: 1831; Father Goriot: 1835; The Flowers of Evil: 1857; Alcools: 1913"
+      "explanation": "“Le Cid” dates to 1637."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2571
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Fleurs du mal, Les Trois Mousquetaires, Fahrenheit 451, Une vie ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Le Cid » ?",
       "options": [
-        "Les Fleurs du mal",
-        "Les Trois Mousquetaires",
-        "Fahrenheit 451",
-        "Une vie"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Les Trois Mousquetaires : 1844; Les Fleurs du mal : 1857; Une vie : 1883; Fahrenheit 451 : 1953"
+      "explanation": "Pierre Corneille, à l’origine de « Le Cid », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Flowers of Evil, The Three Musketeers, Fahrenheit 451, A Woman’s Life?",
+      "text": "In which present-day country was the author behind “Le Cid” born?",
       "options": [
-        "The Flowers of Evil",
-        "The Three Musketeers",
-        "Fahrenheit 451",
-        "A Woman’s Life"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "The Three Musketeers: 1844; The Flowers of Evil: 1857; A Woman’s Life: 1883; Fahrenheit 451: 1953"
+      "explanation": "Pierre Corneille, who created “Le Cid”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2572
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Nom de la rose, Le Père Goriot, Jane Eyre, Le Cid ?",
+      "text": "Quelle œuvre de Pierre Corneille date de 1637 ?",
       "options": [
-        "Le Père Goriot",
-        "Le Nom de la rose",
-        "Jane Eyre",
-        "Le Cid"
+        "Le Cid",
+        "Le Misanthrope",
+        "Andromaque",
+        "L’Avare"
       ],
-      "explanation": "Le Cid : 1637; Le Père Goriot : 1835; Jane Eyre : 1847; Le Nom de la rose : 1980"
+      "explanation": "Il s'agit de « Le Cid »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Name of the Rose, Father Goriot, Jane Eyre, Le Cid?",
+      "text": "Which work by Pierre Corneille dates to 1637?",
       "options": [
-        "Father Goriot",
-        "The Name of the Rose",
-        "Jane Eyre",
-        "Le Cid"
+        "Le Cid",
+        "The Misanthrope",
+        "Andromaque",
+        "The Miser"
       ],
-      "explanation": "Le Cid: 1637; Father Goriot: 1835; Jane Eyre: 1847; The Name of the Rose: 1980"
+      "explanation": "The work is “Le Cid”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2573
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Phèdre, Les Raisins de la colère, L’Avare, 1984 ?",
+      "text": "De quelle année date l’œuvre « Phèdre » ?",
       "options": [
-        "Phèdre",
-        "Les Raisins de la colère",
-        "L’Avare",
-        "1984"
+        "1677",
+        "1673",
+        "1668",
+        "1667"
       ],
-      "explanation": "L’Avare : 1668; Phèdre : 1677; Les Raisins de la colère : 1939; 1984 : 1949"
+      "explanation": "« Phèdre » date de 1677."
     },
     "en": {
-      "text": "Which work is the second oldest among: Phèdre, The Grapes of Wrath, The Miser, Nineteen Eighty-Four?",
+      "text": "What year does the work “Phèdre” date from?",
       "options": [
-        "Phèdre",
-        "The Grapes of Wrath",
-        "The Miser",
-        "Nineteen Eighty-Four"
+        "1677",
+        "1673",
+        "1668",
+        "1667"
       ],
-      "explanation": "The Miser: 1668; Phèdre: 1677; The Grapes of Wrath: 1939; Nineteen Eighty-Four: 1949"
+      "explanation": "“Phèdre” dates to 1677."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2574
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Du contrat social, Vingt mille lieues sous les mers, Orgueil et Préjugés, Jane Eyre ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Phèdre » ?",
       "options": [
-        "Orgueil et Préjugés",
-        "Du contrat social",
-        "Vingt mille lieues sous les mers",
-        "Jane Eyre"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Du contrat social : 1762; Orgueil et Préjugés : 1813; Jane Eyre : 1847; Vingt mille lieues sous les mers : 1870"
+      "explanation": "Jean Racine, à l’origine de « Phèdre », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Social Contract, Twenty Thousand Leagues Under the Seas, Pride and Prejudice, Jane Eyre?",
+      "text": "In which present-day country was the author behind “Phèdre” born?",
       "options": [
-        "Pride and Prejudice",
-        "The Social Contract",
-        "Twenty Thousand Leagues Under the Seas",
-        "Jane Eyre"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "The Social Contract: 1762; Pride and Prejudice: 1813; Jane Eyre: 1847; Twenty Thousand Leagues Under the Seas: 1870"
+      "explanation": "Jean Racine, who created “Phèdre”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2575
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Vieil Homme et la Mer, Les Fleurs du mal, L’Alchimiste, Germinal ?",
+      "text": "Quelle œuvre de Jean Racine date de 1677 ?",
       "options": [
-        "Germinal",
-        "Le Vieil Homme et la Mer",
-        "Les Fleurs du mal",
-        "L’Alchimiste"
+        "Phèdre",
+        "Le Malade imaginaire",
+        "L’Avare",
+        "Andromaque"
       ],
-      "explanation": "Les Fleurs du mal : 1857; Germinal : 1885; Le Vieil Homme et la Mer : 1952; L’Alchimiste : 1988"
+      "explanation": "Il s'agit de « Phèdre »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Old Man and the Sea, The Flowers of Evil, The Alchemist, Germinal?",
+      "text": "Which work by Jean Racine dates to 1677?",
       "options": [
-        "Germinal",
-        "The Old Man and the Sea",
-        "The Flowers of Evil",
-        "The Alchemist"
+        "Phèdre",
+        "The Imaginary Invalid",
+        "The Miser",
+        "Andromaque"
       ],
-      "explanation": "The Flowers of Evil: 1857; Germinal: 1885; The Old Man and the Sea: 1952; The Alchemist: 1988"
+      "explanation": "The work is “Phèdre”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2576
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Salammbô, Dracula, Le Rouge et le Noir, Gatsby le Magnifique ?",
+      "text": "De quelle année date l’œuvre « Andromaque » ?",
       "options": [
-        "Salammbô",
-        "Dracula",
-        "Le Rouge et le Noir",
-        "Gatsby le Magnifique"
+        "1667",
+        "1666",
+        "1668",
+        "1673"
       ],
-      "explanation": "Le Rouge et le Noir : 1830; Salammbô : 1862; Dracula : 1897; Gatsby le Magnifique : 1925"
+      "explanation": "« Andromaque » date de 1667."
     },
     "en": {
-      "text": "Which work is the second oldest among: Salammbô, Dracula, The Red and the Black, The Great Gatsby?",
+      "text": "What year does the work “Andromaque” date from?",
       "options": [
-        "Salammbô",
-        "Dracula",
-        "The Red and the Black",
-        "The Great Gatsby"
+        "1667",
+        "1666",
+        "1668",
+        "1673"
       ],
-      "explanation": "The Red and the Black: 1830; Salammbô: 1862; Dracula: 1897; The Great Gatsby: 1925"
+      "explanation": "“Andromaque” dates to 1667."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2577
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Père Goriot, La Peste, Les Contemplations, Les Misérables ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Andromaque » ?",
       "options": [
-        "Les Contemplations",
-        "Le Père Goriot",
-        "La Peste",
-        "Les Misérables"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Le Père Goriot : 1835; Les Contemplations : 1856; Les Misérables : 1862; La Peste : 1947"
+      "explanation": "Jean Racine, à l’origine de « Andromaque », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Father Goriot, The Plague, Les Contemplations, Les Misérables?",
+      "text": "In which present-day country was the author behind “Andromaque” born?",
       "options": [
-        "Les Contemplations",
-        "Father Goriot",
-        "The Plague",
-        "Les Misérables"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "Father Goriot: 1835; Les Contemplations: 1856; Les Misérables: 1862; The Plague: 1947"
+      "explanation": "Jean Racine, who created “Andromaque”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2578
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Trois Mousquetaires, Fahrenheit 451, Du contrat social, Le Nom de la rose ?",
+      "text": "Quelle œuvre de Jean Racine date de 1667 ?",
       "options": [
-        "Les Trois Mousquetaires",
-        "Fahrenheit 451",
-        "Du contrat social",
-        "Le Nom de la rose"
+        "Andromaque",
+        "L’Avare",
+        "Le Misanthrope",
+        "Le Malade imaginaire"
       ],
-      "explanation": "Du contrat social : 1762; Les Trois Mousquetaires : 1844; Fahrenheit 451 : 1953; Le Nom de la rose : 1980"
+      "explanation": "Il s'agit de « Andromaque »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Three Musketeers, Fahrenheit 451, The Social Contract, The Name of the Rose?",
+      "text": "Which work by Jean Racine dates to 1667?",
       "options": [
-        "The Three Musketeers",
-        "Fahrenheit 451",
-        "The Social Contract",
-        "The Name of the Rose"
+        "Andromaque",
+        "The Miser",
+        "The Misanthrope",
+        "The Imaginary Invalid"
       ],
-      "explanation": "The Social Contract: 1762; The Three Musketeers: 1844; Fahrenheit 451: 1953; The Name of the Rose: 1980"
+      "explanation": "The work is “Andromaque”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2579
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Salammbô, Le Père Goriot, En attendant Godot, Les Châtiments ?",
+      "text": "De quelle année date l’œuvre « L’Avare » ?",
       "options": [
-        "Les Châtiments",
-        "Salammbô",
-        "Le Père Goriot",
-        "En attendant Godot"
+        "1668",
+        "1667",
+        "1666",
+        "1673"
       ],
-      "explanation": "Le Père Goriot : 1835; Les Châtiments : 1853; Salammbô : 1862; En attendant Godot : 1952"
+      "explanation": "« L’Avare » date de 1668."
     },
     "en": {
-      "text": "Which work is the second oldest among: Salammbô, Father Goriot, Waiting for Godot, Les Châtiments?",
+      "text": "What year does the work “The Miser” date from?",
       "options": [
-        "Les Châtiments",
-        "Salammbô",
-        "Father Goriot",
-        "Waiting for Godot"
+        "1668",
+        "1667",
+        "1666",
+        "1673"
       ],
-      "explanation": "Father Goriot: 1835; Les Châtiments: 1853; Salammbô: 1862; Waiting for Godot: 1952"
+      "explanation": "“The Miser” dates to 1668."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2580
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Chartreuse de Parme, Le Vieil Homme et la Mer, Jane Eyre, L’Alchimiste ?",
+      "text": "Dans quel pays actuel est né l’auteur de « L’Avare » ?",
       "options": [
-        "Jane Eyre",
-        "La Chartreuse de Parme",
-        "Le Vieil Homme et la Mer",
-        "L’Alchimiste"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "La Chartreuse de Parme : 1839; Jane Eyre : 1847; Le Vieil Homme et la Mer : 1952; L’Alchimiste : 1988"
+      "explanation": "Molière, à l’origine de « L’Avare », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Charterhouse of Parma, The Old Man and the Sea, Jane Eyre, The Alchemist?",
+      "text": "In which present-day country was the author behind “The Miser” born?",
       "options": [
-        "Jane Eyre",
-        "The Charterhouse of Parma",
-        "The Old Man and the Sea",
-        "The Alchemist"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "The Charterhouse of Parma: 1839; Jane Eyre: 1847; The Old Man and the Sea: 1952; The Alchemist: 1988"
+      "explanation": "Molière, who created “The Miser”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2581
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Misérables, L’Étranger, Frankenstein, Le Misanthrope ?",
+      "text": "Quelle œuvre de Molière date de 1668 ?",
       "options": [
-        "Frankenstein",
-        "Les Misérables",
-        "L’Étranger",
-        "Le Misanthrope"
+        "L’Avare",
+        "Andromaque",
+        "Le Misanthrope",
+        "Le Malade imaginaire"
       ],
-      "explanation": "Le Misanthrope : 1666; Frankenstein : 1818; Les Misérables : 1862; L’Étranger : 1942"
+      "explanation": "Il s'agit de « L’Avare »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Les Misérables, The Stranger, Frankenstein, The Misanthrope?",
+      "text": "Which work by Molière dates to 1668?",
       "options": [
-        "Frankenstein",
-        "Les Misérables",
-        "The Stranger",
-        "The Misanthrope"
+        "The Miser",
+        "Andromaque",
+        "The Misanthrope",
+        "The Imaginary Invalid"
       ],
-      "explanation": "The Misanthrope: 1666; Frankenstein: 1818; Les Misérables: 1862; The Stranger: 1942"
+      "explanation": "The work is “The Miser”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2582
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Nom de la rose, Andromaque, Voyage au centre de la Terre, Les Contemplations ?",
+      "text": "De quelle année date l’œuvre « Le Malade imaginaire » ?",
       "options": [
-        "Les Contemplations",
-        "Le Nom de la rose",
-        "Andromaque",
-        "Voyage au centre de la Terre"
+        "1673",
+        "1677",
+        "1668",
+        "1667"
       ],
-      "explanation": "Andromaque : 1667; Les Contemplations : 1856; Voyage au centre de la Terre : 1864; Le Nom de la rose : 1980"
+      "explanation": "« Le Malade imaginaire » date de 1673."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Name of the Rose, Andromaque, Journey to the Centre of the Earth, Les Contemplations?",
+      "text": "What year does the work “The Imaginary Invalid” date from?",
       "options": [
-        "Les Contemplations",
-        "The Name of the Rose",
-        "Andromaque",
-        "Journey to the Centre of the Earth"
+        "1673",
+        "1677",
+        "1668",
+        "1667"
       ],
-      "explanation": "Andromaque: 1667; Les Contemplations: 1856; Journey to the Centre of the Earth: 1864; The Name of the Rose: 1980"
+      "explanation": "“The Imaginary Invalid” dates to 1673."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2583
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Tour du monde en quatre-vingts jours, Voyage au centre de la Terre, Notre-Dame de Paris, Madame Bovary ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Le Malade imaginaire » ?",
       "options": [
-        "Madame Bovary",
-        "Le Tour du monde en quatre-vingts jours",
-        "Voyage au centre de la Terre",
-        "Notre-Dame de Paris"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Notre-Dame de Paris : 1831; Madame Bovary : 1857; Voyage au centre de la Terre : 1864; Le Tour du monde en quatre-vingts jours : 1873"
+      "explanation": "Molière, à l’origine de « Le Malade imaginaire », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Around the World in Eighty Days, Journey to the Centre of the Earth, The Hunchback of Notre-Dame, Madame Bovary?",
+      "text": "In which present-day country was the author behind “The Imaginary Invalid” born?",
       "options": [
-        "Madame Bovary",
-        "Around the World in Eighty Days",
-        "Journey to the Centre of the Earth",
-        "The Hunchback of Notre-Dame"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "The Hunchback of Notre-Dame: 1831; Madame Bovary: 1857; Journey to the Centre of the Earth: 1864; Around the World in Eighty Days: 1873"
+      "explanation": "Molière, who created “The Imaginary Invalid”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2584
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Hauts de Hurlevent, Salammbô, Gatsby le Magnifique, Les Châtiments ?",
+      "text": "Quelle œuvre de Molière date de 1673 ?",
       "options": [
-        "Les Châtiments",
-        "Les Hauts de Hurlevent",
-        "Salammbô",
-        "Gatsby le Magnifique"
+        "Le Malade imaginaire",
+        "Phèdre",
+        "L’Avare",
+        "Andromaque"
       ],
-      "explanation": "Les Hauts de Hurlevent : 1847; Les Châtiments : 1853; Salammbô : 1862; Gatsby le Magnifique : 1925"
+      "explanation": "Il s'agit de « Le Malade imaginaire »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Wuthering Heights, Salammbô, The Great Gatsby, Les Châtiments?",
+      "text": "Which work by Molière dates to 1673?",
       "options": [
-        "Les Châtiments",
-        "Wuthering Heights",
-        "Salammbô",
-        "The Great Gatsby"
+        "The Imaginary Invalid",
+        "Phèdre",
+        "The Miser",
+        "Andromaque"
       ],
-      "explanation": "Wuthering Heights: 1847; Les Châtiments: 1853; Salammbô: 1862; The Great Gatsby: 1925"
+      "explanation": "The work is “The Imaginary Invalid”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2585
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Une vie, Andromaque, Nana, Jane Eyre ?",
+      "text": "De quelle année date l’œuvre « Le Misanthrope » ?",
       "options": [
-        "Jane Eyre",
-        "Une vie",
-        "Andromaque",
-        "Nana"
+        "1666",
+        "1667",
+        "1668",
+        "1673"
       ],
-      "explanation": "Andromaque : 1667; Jane Eyre : 1847; Nana : 1880; Une vie : 1883"
+      "explanation": "« Le Misanthrope » date de 1666."
     },
     "en": {
-      "text": "Which work is the second oldest among: A Woman’s Life, Andromaque, Nana, Jane Eyre?",
+      "text": "What year does the work “The Misanthrope” date from?",
       "options": [
-        "Jane Eyre",
-        "A Woman’s Life",
-        "Andromaque",
-        "Nana"
+        "1666",
+        "1667",
+        "1668",
+        "1673"
       ],
-      "explanation": "Andromaque: 1667; Jane Eyre: 1847; Nana: 1880; A Woman’s Life: 1883"
+      "explanation": "“The Misanthrope” dates to 1666."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2586
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Vieil Homme et la Mer, Andromaque, L’Assommoir, Le Meilleur des mondes ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Le Misanthrope » ?",
       "options": [
-        "L’Assommoir",
-        "Le Vieil Homme et la Mer",
-        "Andromaque",
-        "Le Meilleur des mondes"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Andromaque : 1667; L’Assommoir : 1877; Le Meilleur des mondes : 1932; Le Vieil Homme et la Mer : 1952"
+      "explanation": "Molière, à l’origine de « Le Misanthrope », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Old Man and the Sea, Andromaque, L’Assommoir, Brave New World?",
+      "text": "In which present-day country was the author behind “The Misanthrope” born?",
       "options": [
-        "L’Assommoir",
-        "The Old Man and the Sea",
-        "Andromaque",
-        "Brave New World"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "Andromaque: 1667; L’Assommoir: 1877; Brave New World: 1932; The Old Man and the Sea: 1952"
+      "explanation": "Molière, who created “The Misanthrope”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2587
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Madame Bovary, Salammbô, La Chartreuse de Parme, Eugénie Grandet ?",
+      "text": "Quelle œuvre de Molière date de 1666 ?",
       "options": [
-        "La Chartreuse de Parme",
-        "Madame Bovary",
-        "Salammbô",
-        "Eugénie Grandet"
+        "Le Misanthrope",
+        "Andromaque",
+        "L’Avare",
+        "Le Malade imaginaire"
       ],
-      "explanation": "Eugénie Grandet : 1833; La Chartreuse de Parme : 1839; Madame Bovary : 1857; Salammbô : 1862"
+      "explanation": "Il s'agit de « Le Misanthrope »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Madame Bovary, Salammbô, The Charterhouse of Parma, Eugénie Grandet?",
+      "text": "Which work by Molière dates to 1666?",
       "options": [
-        "The Charterhouse of Parma",
-        "Madame Bovary",
-        "Salammbô",
-        "Eugénie Grandet"
+        "The Misanthrope",
+        "Andromaque",
+        "The Miser",
+        "The Imaginary Invalid"
       ],
-      "explanation": "Eugénie Grandet: 1833; The Charterhouse of Parma: 1839; Madame Bovary: 1857; Salammbô: 1862"
+      "explanation": "The work is “The Misanthrope”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2588
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Misanthrope, Les Raisins de la colère, Moby Dick, Une vie ?",
+      "text": "De quelle année date l’œuvre « Les Fleurs du mal » ?",
       "options": [
-        "Moby Dick",
-        "Le Misanthrope",
-        "Les Raisins de la colère",
-        "Une vie"
+        "1857",
+        "1856",
+        "1853",
+        "1862"
       ],
-      "explanation": "Le Misanthrope : 1666; Moby Dick : 1851; Une vie : 1883; Les Raisins de la colère : 1939"
+      "explanation": "« Les Fleurs du mal » date de 1857."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Misanthrope, The Grapes of Wrath, Moby-Dick, A Woman’s Life?",
+      "text": "What year does the work “The Flowers of Evil” date from?",
       "options": [
-        "Moby-Dick",
-        "The Misanthrope",
-        "The Grapes of Wrath",
-        "A Woman’s Life"
+        "1857",
+        "1856",
+        "1853",
+        "1862"
       ],
-      "explanation": "The Misanthrope: 1666; Moby-Dick: 1851; A Woman’s Life: 1883; The Grapes of Wrath: 1939"
+      "explanation": "“The Flowers of Evil” dates to 1857."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2589
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Frankenstein, Le Vieil Homme et la Mer, Dracula, Salammbô ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Les Fleurs du mal » ?",
       "options": [
-        "Salammbô",
-        "Frankenstein",
-        "Le Vieil Homme et la Mer",
-        "Dracula"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Frankenstein : 1818; Salammbô : 1862; Dracula : 1897; Le Vieil Homme et la Mer : 1952"
+      "explanation": "Charles Baudelaire, à l’origine de « Les Fleurs du mal », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Frankenstein, The Old Man and the Sea, Dracula, Salammbô?",
+      "text": "In which present-day country was the author behind “The Flowers of Evil” born?",
       "options": [
-        "Salammbô",
-        "Frankenstein",
-        "The Old Man and the Sea",
-        "Dracula"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "Frankenstein: 1818; Salammbô: 1862; Dracula: 1897; The Old Man and the Sea: 1952"
+      "explanation": "Charles Baudelaire, who created “The Flowers of Evil”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2590
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Fahrenheit 451, Notre-Dame de Paris, Le Misanthrope, Gatsby le Magnifique ?",
+      "text": "Quelle œuvre de Charles Baudelaire date de 1857 ?",
       "options": [
-        "Notre-Dame de Paris",
-        "Fahrenheit 451",
-        "Le Misanthrope",
-        "Gatsby le Magnifique"
+        "Les Fleurs du mal",
+        "Les Contemplations",
+        "Les Châtiments",
+        "Alcools"
       ],
-      "explanation": "Le Misanthrope : 1666; Notre-Dame de Paris : 1831; Gatsby le Magnifique : 1925; Fahrenheit 451 : 1953"
+      "explanation": "Il s'agit de « Les Fleurs du mal »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Fahrenheit 451, The Hunchback of Notre-Dame, The Misanthrope, The Great Gatsby?",
+      "text": "Which work by Charles Baudelaire dates to 1857?",
       "options": [
-        "The Hunchback of Notre-Dame",
-        "Fahrenheit 451",
-        "The Misanthrope",
-        "The Great Gatsby"
+        "The Flowers of Evil",
+        "Les Contemplations",
+        "Les Châtiments",
+        "Alcools"
       ],
-      "explanation": "The Misanthrope: 1666; The Hunchback of Notre-Dame: 1831; The Great Gatsby: 1925; Fahrenheit 451: 1953"
+      "explanation": "The work is “The Flowers of Evil”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2591
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Rouge et le Noir, Vingt mille lieues sous les mers, Alcools, Les Raisins de la colère ?",
+      "text": "De quelle année date l’œuvre « Les Contemplations » ?",
       "options": [
-        "Vingt mille lieues sous les mers",
-        "Le Rouge et le Noir",
-        "Alcools",
-        "Les Raisins de la colère"
+        "1856",
+        "1857",
+        "1853",
+        "1851"
       ],
-      "explanation": "Le Rouge et le Noir : 1830; Vingt mille lieues sous les mers : 1870; Alcools : 1913; Les Raisins de la colère : 1939"
+      "explanation": "« Les Contemplations » date de 1856."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Red and the Black, Twenty Thousand Leagues Under the Seas, Alcools, The Grapes of Wrath?",
+      "text": "What year does the work “Les Contemplations” date from?",
       "options": [
-        "Twenty Thousand Leagues Under the Seas",
-        "The Red and the Black",
-        "Alcools",
-        "The Grapes of Wrath"
+        "1856",
+        "1857",
+        "1853",
+        "1851"
       ],
-      "explanation": "The Red and the Black: 1830; Twenty Thousand Leagues Under the Seas: 1870; Alcools: 1913; The Grapes of Wrath: 1939"
+      "explanation": "“Les Contemplations” dates to 1856."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2592
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Du contrat social, Les Contemplations, Les Trois Mousquetaires, Madame Bovary ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Les Contemplations » ?",
       "options": [
-        "Les Trois Mousquetaires",
-        "Du contrat social",
-        "Les Contemplations",
-        "Madame Bovary"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Du contrat social : 1762; Les Trois Mousquetaires : 1844; Les Contemplations : 1856; Madame Bovary : 1857"
+      "explanation": "Victor Hugo, à l’origine de « Les Contemplations », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Social Contract, Les Contemplations, The Three Musketeers, Madame Bovary?",
+      "text": "In which present-day country was the author behind “Les Contemplations” born?",
       "options": [
-        "The Three Musketeers",
-        "The Social Contract",
-        "Les Contemplations",
-        "Madame Bovary"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "The Social Contract: 1762; The Three Musketeers: 1844; Les Contemplations: 1856; Madame Bovary: 1857"
+      "explanation": "Victor Hugo, who created “Les Contemplations”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2593
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Fleurs du mal, Frankenstein, Le Vieil Homme et la Mer, L’Assommoir ?",
+      "text": "Quelle œuvre de Victor Hugo date de 1856 ?",
       "options": [
+        "Les Contemplations",
         "Les Fleurs du mal",
-        "Frankenstein",
-        "Le Vieil Homme et la Mer",
-        "L’Assommoir"
+        "Les Châtiments",
+        "Alcools"
       ],
-      "explanation": "Frankenstein : 1818; Les Fleurs du mal : 1857; L’Assommoir : 1877; Le Vieil Homme et la Mer : 1952"
+      "explanation": "Il s'agit de « Les Contemplations »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Flowers of Evil, Frankenstein, The Old Man and the Sea, L’Assommoir?",
+      "text": "Which work by Victor Hugo dates to 1856?",
       "options": [
+        "Les Contemplations",
         "The Flowers of Evil",
-        "Frankenstein",
-        "The Old Man and the Sea",
-        "L’Assommoir"
+        "Les Châtiments",
+        "Alcools"
       ],
-      "explanation": "Frankenstein: 1818; The Flowers of Evil: 1857; L’Assommoir: 1877; The Old Man and the Sea: 1952"
+      "explanation": "The work is “Les Contemplations”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2594
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Peste, Le Tour du monde en quatre-vingts jours, Les Contemplations, Le Père Goriot ?",
+      "text": "De quelle année date l’œuvre « Alcools » ?",
       "options": [
-        "Les Contemplations",
-        "La Peste",
-        "Le Tour du monde en quatre-vingts jours",
-        "Le Père Goriot"
+        "1913",
+        "1925",
+        "1897",
+        "1932"
       ],
-      "explanation": "Le Père Goriot : 1835; Les Contemplations : 1856; Le Tour du monde en quatre-vingts jours : 1873; La Peste : 1947"
+      "explanation": "« Alcools » date de 1913."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Plague, Around the World in Eighty Days, Les Contemplations, Father Goriot?",
+      "text": "What year does the work “Alcools” date from?",
       "options": [
-        "Les Contemplations",
-        "The Plague",
-        "Around the World in Eighty Days",
-        "Father Goriot"
+        "1913",
+        "1925",
+        "1897",
+        "1932"
       ],
-      "explanation": "Father Goriot: 1835; Les Contemplations: 1856; Around the World in Eighty Days: 1873; The Plague: 1947"
+      "explanation": "“Alcools” dates to 1913."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2595
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Tour du monde en quatre-vingts jours, Alcools, L’Assommoir, Orgueil et Préjugés ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Alcools » ?",
       "options": [
-        "Le Tour du monde en quatre-vingts jours",
-        "Alcools",
-        "L’Assommoir",
-        "Orgueil et Préjugés"
+        "Italie",
+        "France",
+        "Espagne",
+        "Autriche"
       ],
-      "explanation": "Orgueil et Préjugés : 1813; Le Tour du monde en quatre-vingts jours : 1873; L’Assommoir : 1877; Alcools : 1913"
+      "explanation": "Guillaume Apollinaire, à l’origine de « Alcools », est né sur le territoire de l’actuel pays « Italie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Around the World in Eighty Days, Alcools, L’Assommoir, Pride and Prejudice?",
+      "text": "In which present-day country was the author behind “Alcools” born?",
       "options": [
-        "Around the World in Eighty Days",
-        "Alcools",
-        "L’Assommoir",
-        "Pride and Prejudice"
+        "Italy",
+        "France",
+        "Spain",
+        "Austria"
       ],
-      "explanation": "Pride and Prejudice: 1813; Around the World in Eighty Days: 1873; L’Assommoir: 1877; Alcools: 1913"
+      "explanation": "Guillaume Apollinaire, who created “Alcools”, was born in what is now Italy."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2596
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Germinal, Le Portrait de Dorian Gray, L’Écume des jours, Le Tour du monde en quatre-vingts jours ?",
+      "text": "Quelle œuvre de Guillaume Apollinaire date de 1913 ?",
       "options": [
-        "Germinal",
-        "Le Portrait de Dorian Gray",
-        "L’Écume des jours",
-        "Le Tour du monde en quatre-vingts jours"
+        "Alcools",
+        "Les Fleurs du mal",
+        "Les Contemplations",
+        "Les Châtiments"
       ],
-      "explanation": "Le Tour du monde en quatre-vingts jours : 1873; Germinal : 1885; Le Portrait de Dorian Gray : 1890; L’Écume des jours : 1947"
+      "explanation": "Il s'agit de « Alcools »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Germinal, The Picture of Dorian Gray, Froth on the Daydream, Around the World in Eighty Days?",
+      "text": "Which work by Guillaume Apollinaire dates to 1913?",
       "options": [
-        "Germinal",
-        "The Picture of Dorian Gray",
-        "Froth on the Daydream",
-        "Around the World in Eighty Days"
+        "Alcools",
+        "The Flowers of Evil",
+        "Les Contemplations",
+        "Les Châtiments"
       ],
-      "explanation": "Around the World in Eighty Days: 1873; Germinal: 1885; The Picture of Dorian Gray: 1890; Froth on the Daydream: 1947"
+      "explanation": "The work is “Alcools”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2597
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Peste, Une vie, Rhinocéros, L’Alchimiste ?",
+      "text": "De quelle année date l’œuvre « Les Châtiments » ?",
       "options": [
-        "La Peste",
-        "Une vie",
-        "Rhinocéros",
-        "L’Alchimiste"
+        "1853",
+        "1851",
+        "1856",
+        "1857"
       ],
-      "explanation": "Une vie : 1883; La Peste : 1947; Rhinocéros : 1959; L’Alchimiste : 1988"
+      "explanation": "« Les Châtiments » date de 1853."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Plague, A Woman’s Life, Rhinoceros, The Alchemist?",
+      "text": "What year does the work “Les Châtiments” date from?",
       "options": [
-        "The Plague",
-        "A Woman’s Life",
-        "Rhinoceros",
-        "The Alchemist"
+        "1853",
+        "1851",
+        "1856",
+        "1857"
       ],
-      "explanation": "A Woman’s Life: 1883; The Plague: 1947; Rhinoceros: 1959; The Alchemist: 1988"
+      "explanation": "“Les Châtiments” dates to 1853."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2598
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Frankenstein, Madame Bovary, Alcools, La Peste ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Les Châtiments » ?",
       "options": [
-        "Madame Bovary",
-        "Frankenstein",
-        "Alcools",
-        "La Peste"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Frankenstein : 1818; Madame Bovary : 1857; Alcools : 1913; La Peste : 1947"
+      "explanation": "Victor Hugo, à l’origine de « Les Châtiments », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Frankenstein, Madame Bovary, Alcools, The Plague?",
+      "text": "In which present-day country was the author behind “Les Châtiments” born?",
       "options": [
-        "Madame Bovary",
-        "Frankenstein",
-        "Alcools",
-        "The Plague"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "Frankenstein: 1818; Madame Bovary: 1857; Alcools: 1913; The Plague: 1947"
+      "explanation": "Victor Hugo, who created “Les Châtiments”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2599
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Tour du monde en quatre-vingts jours, Nana, Notre-Dame de Paris, L’Écume des jours ?",
+      "text": "Quelle œuvre de Victor Hugo date de 1853 ?",
       "options": [
-        "Le Tour du monde en quatre-vingts jours",
-        "Nana",
-        "Notre-Dame de Paris",
-        "L’Écume des jours"
+        "Les Châtiments",
+        "Les Contemplations",
+        "Les Fleurs du mal",
+        "Alcools"
       ],
-      "explanation": "Notre-Dame de Paris : 1831; Le Tour du monde en quatre-vingts jours : 1873; Nana : 1880; L’Écume des jours : 1947"
+      "explanation": "Il s'agit de « Les Châtiments »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Around the World in Eighty Days, Nana, The Hunchback of Notre-Dame, Froth on the Daydream?",
+      "text": "Which work by Victor Hugo dates to 1853?",
       "options": [
-        "Around the World in Eighty Days",
-        "Nana",
-        "The Hunchback of Notre-Dame",
-        "Froth on the Daydream"
+        "Les Châtiments",
+        "Les Contemplations",
+        "The Flowers of Evil",
+        "Alcools"
       ],
-      "explanation": "The Hunchback of Notre-Dame: 1831; Around the World in Eighty Days: 1873; Nana: 1880; Froth on the Daydream: 1947"
+      "explanation": "The work is “Les Châtiments”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2600
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Portrait de Dorian Gray, Les Fleurs du mal, Le Meilleur des mondes, Les Hauts de Hurlevent ?",
+      "text": "De quelle année date l’œuvre « En attendant Godot » ?",
       "options": [
-        "Les Fleurs du mal",
-        "Le Portrait de Dorian Gray",
-        "Le Meilleur des mondes",
-        "Les Hauts de Hurlevent"
+        "1952",
+        "1953",
+        "1949",
+        "1947"
       ],
-      "explanation": "Les Hauts de Hurlevent : 1847; Les Fleurs du mal : 1857; Le Portrait de Dorian Gray : 1890; Le Meilleur des mondes : 1932"
+      "explanation": "« En attendant Godot » date de 1952."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Picture of Dorian Gray, The Flowers of Evil, Brave New World, Wuthering Heights?",
+      "text": "What year does the work “Waiting for Godot” date from?",
       "options": [
-        "The Flowers of Evil",
-        "The Picture of Dorian Gray",
-        "Brave New World",
-        "Wuthering Heights"
+        "1952",
+        "1953",
+        "1949",
+        "1947"
       ],
-      "explanation": "Wuthering Heights: 1847; The Flowers of Evil: 1857; The Picture of Dorian Gray: 1890; Brave New World: 1932"
+      "explanation": "“Waiting for Godot” dates to 1952."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2601
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : L’Étranger, Voyage au centre de la Terre, 1984, La Peste ?",
+      "text": "Dans quel pays actuel est né l’auteur de « En attendant Godot » ?",
       "options": [
-        "L’Étranger",
-        "Voyage au centre de la Terre",
-        "1984",
-        "La Peste"
+        "Irlande",
+        "Royaume-Uni",
+        "France",
+        "États-Unis"
       ],
-      "explanation": "Voyage au centre de la Terre : 1864; L’Étranger : 1942; La Peste : 1947; 1984 : 1949"
+      "explanation": "Samuel Beckett, à l’origine de « En attendant Godot », est né sur le territoire de l’actuel pays « Irlande »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Stranger, Journey to the Centre of the Earth, Nineteen Eighty-Four, The Plague?",
+      "text": "In which present-day country was the author behind “Waiting for Godot” born?",
       "options": [
-        "The Stranger",
-        "Journey to the Centre of the Earth",
-        "Nineteen Eighty-Four",
-        "The Plague"
+        "Ireland",
+        "United Kingdom",
+        "France",
+        "United States"
       ],
-      "explanation": "Journey to the Centre of the Earth: 1864; The Stranger: 1942; The Plague: 1947; Nineteen Eighty-Four: 1949"
+      "explanation": "Samuel Beckett, who created “Waiting for Godot”, was born in what is now Ireland."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2602
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Alcools, Vingt mille lieues sous les mers, Les Châtiments, Voyage au centre de la Terre ?",
+      "text": "Quelle œuvre de Samuel Beckett date de 1952 ?",
       "options": [
-        "Voyage au centre de la Terre",
-        "Alcools",
-        "Vingt mille lieues sous les mers",
-        "Les Châtiments"
+        "En attendant Godot",
+        "Rhinocéros",
+        "Phèdre",
+        "Le Malade imaginaire"
       ],
-      "explanation": "Les Châtiments : 1853; Voyage au centre de la Terre : 1864; Vingt mille lieues sous les mers : 1870; Alcools : 1913"
+      "explanation": "Il s'agit de « En attendant Godot »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Alcools, Twenty Thousand Leagues Under the Seas, Les Châtiments, Journey to the Centre of the Earth?",
+      "text": "Which work by Samuel Beckett dates to 1952?",
       "options": [
-        "Journey to the Centre of the Earth",
-        "Alcools",
-        "Twenty Thousand Leagues Under the Seas",
-        "Les Châtiments"
+        "Waiting for Godot",
+        "Rhinoceros",
+        "Phèdre",
+        "The Imaginary Invalid"
       ],
-      "explanation": "Les Châtiments: 1853; Journey to the Centre of the Earth: 1864; Twenty Thousand Leagues Under the Seas: 1870; Alcools: 1913"
+      "explanation": "The work is “Waiting for Godot”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2603
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Madame Bovary, Alcools, L’Assommoir, La Chartreuse de Parme ?",
+      "text": "De quelle année date l’œuvre « Rhinocéros » ?",
       "options": [
-        "Madame Bovary",
-        "Alcools",
-        "L’Assommoir",
-        "La Chartreuse de Parme"
+        "1959",
+        "1953",
+        "1952",
+        "1949"
       ],
-      "explanation": "La Chartreuse de Parme : 1839; Madame Bovary : 1857; L’Assommoir : 1877; Alcools : 1913"
+      "explanation": "« Rhinocéros » date de 1959."
     },
     "en": {
-      "text": "Which work is the second oldest among: Madame Bovary, Alcools, L’Assommoir, The Charterhouse of Parma?",
+      "text": "What year does the work “Rhinoceros” date from?",
       "options": [
-        "Madame Bovary",
-        "Alcools",
-        "L’Assommoir",
-        "The Charterhouse of Parma"
+        "1959",
+        "1953",
+        "1952",
+        "1949"
       ],
-      "explanation": "The Charterhouse of Parma: 1839; Madame Bovary: 1857; L’Assommoir: 1877; Alcools: 1913"
+      "explanation": "“Rhinoceros” dates to 1959."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2604
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Fleurs du mal, Les Misérables, En attendant Godot, Nana ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Rhinocéros » ?",
       "options": [
-        "Les Misérables",
-        "Les Fleurs du mal",
-        "En attendant Godot",
-        "Nana"
+        "Roumanie",
+        "Hongrie",
+        "Bulgarie",
+        "Pologne"
       ],
-      "explanation": "Les Fleurs du mal : 1857; Les Misérables : 1862; Nana : 1880; En attendant Godot : 1952"
+      "explanation": "Eugène Ionesco, à l’origine de « Rhinocéros », est né sur le territoire de l’actuel pays « Roumanie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Flowers of Evil, Les Misérables, Waiting for Godot, Nana?",
+      "text": "In which present-day country was the author behind “Rhinoceros” born?",
       "options": [
-        "Les Misérables",
-        "The Flowers of Evil",
-        "Waiting for Godot",
-        "Nana"
+        "Romania",
+        "Hungary",
+        "Bulgaria",
+        "Poland"
       ],
-      "explanation": "The Flowers of Evil: 1857; Les Misérables: 1862; Nana: 1880; Waiting for Godot: 1952"
+      "explanation": "Eugène Ionesco, who created “Rhinoceros”, was born in what is now Romania."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2605
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : L’Alchimiste, Le Rouge et le Noir, En attendant Godot, Phèdre ?",
+      "text": "Quelle œuvre de Eugène Ionesco date de 1959 ?",
       "options": [
-        "Le Rouge et le Noir",
-        "L’Alchimiste",
+        "Rhinocéros",
         "En attendant Godot",
-        "Phèdre"
+        "Phèdre",
+        "Le Malade imaginaire"
       ],
-      "explanation": "Phèdre : 1677; Le Rouge et le Noir : 1830; En attendant Godot : 1952; L’Alchimiste : 1988"
+      "explanation": "Il s'agit de « Rhinocéros »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Alchemist, The Red and the Black, Waiting for Godot, Phèdre?",
+      "text": "Which work by Eugène Ionesco dates to 1959?",
       "options": [
-        "The Red and the Black",
-        "The Alchemist",
+        "Rhinoceros",
         "Waiting for Godot",
-        "Phèdre"
+        "Phèdre",
+        "The Imaginary Invalid"
       ],
-      "explanation": "Phèdre: 1677; The Red and the Black: 1830; Waiting for Godot: 1952; The Alchemist: 1988"
+      "explanation": "The work is “Rhinoceros”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2606
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Misanthrope, Bel-Ami, Orgueil et Préjugés, Les Châtiments ?",
+      "text": "De quelle année date l’œuvre « Du contrat social » ?",
       "options": [
-        "Orgueil et Préjugés",
-        "Le Misanthrope",
-        "Bel-Ami",
-        "Les Châtiments"
+        "1762",
+        "1748",
+        "1813",
+        "1818"
       ],
-      "explanation": "Le Misanthrope : 1666; Orgueil et Préjugés : 1813; Les Châtiments : 1853; Bel-Ami : 1885"
+      "explanation": "« Du contrat social » date de 1762."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Misanthrope, Bel-Ami, Pride and Prejudice, Les Châtiments?",
+      "text": "What year does the work “The Social Contract” date from?",
       "options": [
-        "Pride and Prejudice",
-        "The Misanthrope",
-        "Bel-Ami",
-        "Les Châtiments"
+        "1762",
+        "1748",
+        "1813",
+        "1818"
       ],
-      "explanation": "The Misanthrope: 1666; Pride and Prejudice: 1813; Les Châtiments: 1853; Bel-Ami: 1885"
+      "explanation": "“The Social Contract” dates to 1762."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2607
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Vingt mille lieues sous les mers, Les Châtiments, Voyage au centre de la Terre, Orgueil et Préjugés ?",
+      "text": "Dans quel pays actuel est né l’auteur de « Du contrat social » ?",
       "options": [
-        "Les Châtiments",
-        "Vingt mille lieues sous les mers",
-        "Voyage au centre de la Terre",
-        "Orgueil et Préjugés"
+        "Suisse",
+        "France",
+        "Autriche",
+        "Allemagne"
       ],
-      "explanation": "Orgueil et Préjugés : 1813; Les Châtiments : 1853; Voyage au centre de la Terre : 1864; Vingt mille lieues sous les mers : 1870"
+      "explanation": "Jean-Jacques Rousseau, à l’origine de « Du contrat social », est né sur le territoire de l’actuel pays « Suisse »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Twenty Thousand Leagues Under the Seas, Les Châtiments, Journey to the Centre of the Earth, Pride and Prejudice?",
+      "text": "In which present-day country was the author behind “The Social Contract” born?",
       "options": [
-        "Les Châtiments",
-        "Twenty Thousand Leagues Under the Seas",
-        "Journey to the Centre of the Earth",
-        "Pride and Prejudice"
+        "Switzerland",
+        "France",
+        "Austria",
+        "Germany"
       ],
-      "explanation": "Pride and Prejudice: 1813; Les Châtiments: 1853; Journey to the Centre of the Earth: 1864; Twenty Thousand Leagues Under the Seas: 1870"
+      "explanation": "Jean-Jacques Rousseau, who created “The Social Contract”, was born in what is now Switzerland."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2608
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Meilleur des mondes, Les Fleurs du mal, Le Tour du monde en quatre-vingts jours, Salammbô ?",
+      "text": "Quelle œuvre de Jean-Jacques Rousseau date de 1762 ?",
       "options": [
-        "Salammbô",
-        "Le Meilleur des mondes",
-        "Les Fleurs du mal",
-        "Le Tour du monde en quatre-vingts jours"
+        "Du contrat social",
+        "De l’esprit des lois",
+        "Orgueil et Préjugés",
+        "Frankenstein"
       ],
-      "explanation": "Les Fleurs du mal : 1857; Salammbô : 1862; Le Tour du monde en quatre-vingts jours : 1873; Le Meilleur des mondes : 1932"
+      "explanation": "Il s'agit de « Du contrat social »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Brave New World, The Flowers of Evil, Around the World in Eighty Days, Salammbô?",
+      "text": "Which work by Jean-Jacques Rousseau dates to 1762?",
       "options": [
-        "Salammbô",
-        "Brave New World",
-        "The Flowers of Evil",
-        "Around the World in Eighty Days"
+        "The Social Contract",
+        "The Spirit of the Laws",
+        "Pride and Prejudice",
+        "Frankenstein"
       ],
-      "explanation": "The Flowers of Evil: 1857; Salammbô: 1862; Around the World in Eighty Days: 1873; Brave New World: 1932"
+      "explanation": "The work is “The Social Contract”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2609
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Notre-Dame de Paris, Le Nom de la rose, Madame Bovary, Phèdre ?",
+      "text": "De quelle année date l’œuvre « De l’esprit des lois » ?",
       "options": [
-        "Notre-Dame de Paris",
-        "Le Nom de la rose",
-        "Madame Bovary",
-        "Phèdre"
+        "1748",
+        "1762",
+        "1813",
+        "1818"
       ],
-      "explanation": "Phèdre : 1677; Notre-Dame de Paris : 1831; Madame Bovary : 1857; Le Nom de la rose : 1980"
+      "explanation": "« De l’esprit des lois » date de 1748."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Hunchback of Notre-Dame, The Name of the Rose, Madame Bovary, Phèdre?",
+      "text": "What year does the work “The Spirit of the Laws” date from?",
       "options": [
-        "The Hunchback of Notre-Dame",
-        "The Name of the Rose",
-        "Madame Bovary",
-        "Phèdre"
+        "1748",
+        "1762",
+        "1813",
+        "1818"
       ],
-      "explanation": "Phèdre: 1677; The Hunchback of Notre-Dame: 1831; Madame Bovary: 1857; The Name of the Rose: 1980"
+      "explanation": "“The Spirit of the Laws” dates to 1748."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2610
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Vingt mille lieues sous les mers, Les Misérables, Phèdre, Eugénie Grandet ?",
+      "text": "Dans quel pays actuel est né l’auteur de « De l’esprit des lois » ?",
       "options": [
-        "Eugénie Grandet",
-        "Vingt mille lieues sous les mers",
-        "Les Misérables",
-        "Phèdre"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Phèdre : 1677; Eugénie Grandet : 1833; Les Misérables : 1862; Vingt mille lieues sous les mers : 1870"
+      "explanation": "Montesquieu, à l’origine de « De l’esprit des lois », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Twenty Thousand Leagues Under the Seas, Les Misérables, Phèdre, Eugénie Grandet?",
+      "text": "In which present-day country was the author behind “The Spirit of the Laws” born?",
       "options": [
-        "Eugénie Grandet",
-        "Twenty Thousand Leagues Under the Seas",
-        "Les Misérables",
-        "Phèdre"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "Phèdre: 1677; Eugénie Grandet: 1833; Les Misérables: 1862; Twenty Thousand Leagues Under the Seas: 1870"
+      "explanation": "Montesquieu, who created “The Spirit of the Laws”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2611
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Germinal, Les Misérables, L’Alchimiste, Les Fleurs du mal ?",
+      "text": "Quelle œuvre de Montesquieu date de 1748 ?",
       "options": [
-        "Les Misérables",
-        "Germinal",
-        "L’Alchimiste",
-        "Les Fleurs du mal"
+        "De l’esprit des lois",
+        "Du contrat social",
+        "Orgueil et Préjugés",
+        "Frankenstein"
       ],
-      "explanation": "Les Fleurs du mal : 1857; Les Misérables : 1862; Germinal : 1885; L’Alchimiste : 1988"
+      "explanation": "Il s'agit de « De l’esprit des lois »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Germinal, Les Misérables, The Alchemist, The Flowers of Evil?",
+      "text": "Which work by Montesquieu dates to 1748?",
       "options": [
-        "Les Misérables",
-        "Germinal",
-        "The Alchemist",
-        "The Flowers of Evil"
+        "The Spirit of the Laws",
+        "The Social Contract",
+        "Pride and Prejudice",
+        "Frankenstein"
       ],
-      "explanation": "The Flowers of Evil: 1857; Les Misérables: 1862; Germinal: 1885; The Alchemist: 1988"
+      "explanation": "The work is “The Spirit of the Laws”."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2612
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Meilleur des mondes, Andromaque, Les Misérables, Notre-Dame de Paris ?",
+      "text": "Quel roman de Victor Hugo paru en 1862 suit Jean Valjean ?",
       "options": [
-        "Notre-Dame de Paris",
-        "Le Meilleur des mondes",
-        "Andromaque",
-        "Les Misérables"
+        "Les Misérables",
+        "Voyage au centre de la Terre",
+        "Madame Bovary",
+        "Les Fleurs du mal"
       ],
-      "explanation": "Andromaque : 1667; Notre-Dame de Paris : 1831; Les Misérables : 1862; Le Meilleur des mondes : 1932"
+      "explanation": "Les Misérables suit le destin de Jean Valjean."
     },
     "en": {
-      "text": "Which work is the second oldest among: Brave New World, Andromaque, Les Misérables, The Hunchback of Notre-Dame?",
+      "text": "Which Victor Hugo novel published in 1862 follows Jean Valjean?",
       "options": [
-        "The Hunchback of Notre-Dame",
-        "Brave New World",
-        "Andromaque",
-        "Les Misérables"
+        "Les Misérables",
+        "Journey to the Centre of the Earth",
+        "Madame Bovary",
+        "The Flowers of Evil"
       ],
-      "explanation": "Andromaque: 1667; The Hunchback of Notre-Dame: 1831; Les Misérables: 1862; Brave New World: 1932"
+      "explanation": "Les Misérables follows Jean Valjean."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2613
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Peste, Notre-Dame de Paris, Les Raisins de la colère, Les Hauts de Hurlevent ?",
+      "text": "Quelle œuvre de type « roman » date de 1831 ?",
       "options": [
-        "Les Hauts de Hurlevent",
-        "La Peste",
         "Notre-Dame de Paris",
-        "Les Raisins de la colère"
+        "Le Rouge et le Noir",
+        "Eugénie Grandet",
+        "Le Père Goriot"
       ],
-      "explanation": "Notre-Dame de Paris : 1831; Les Hauts de Hurlevent : 1847; Les Raisins de la colère : 1939; La Peste : 1947"
+      "explanation": "« Notre-Dame de Paris » est une œuvre de type roman datée de 1831."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Plague, The Hunchback of Notre-Dame, The Grapes of Wrath, Wuthering Heights?",
+      "text": "Which novel dates to 1831?",
       "options": [
-        "Wuthering Heights",
-        "The Plague",
         "The Hunchback of Notre-Dame",
-        "The Grapes of Wrath"
+        "The Red and the Black",
+        "Eugénie Grandet",
+        "Father Goriot"
       ],
-      "explanation": "The Hunchback of Notre-Dame: 1831; Wuthering Heights: 1847; The Grapes of Wrath: 1939; The Plague: 1947"
+      "explanation": "“The Hunchback of Notre-Dame” is a novel dated 1831."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2614
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Raisins de la colère, L’Avare, Les Fleurs du mal, Les Misérables ?",
+      "text": "Quel roman d’Émile Zola paru en 1885 raconte la vie des mineurs ?",
       "options": [
-        "Les Fleurs du mal",
-        "Les Raisins de la colère",
-        "L’Avare",
-        "Les Misérables"
+        "Germinal",
+        "Une vie",
+        "Nana",
+        "Le Portrait de Dorian Gray"
       ],
-      "explanation": "L’Avare : 1668; Les Fleurs du mal : 1857; Les Misérables : 1862; Les Raisins de la colère : 1939"
+      "explanation": "Germinal met en scène des mineurs du Nord de la France."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Grapes of Wrath, The Miser, The Flowers of Evil, Les Misérables?",
+      "text": "Which Émile Zola novel published in 1885 portrays the lives of miners?",
       "options": [
-        "The Flowers of Evil",
-        "The Grapes of Wrath",
-        "The Miser",
-        "Les Misérables"
+        "Germinal",
+        "A Woman’s Life",
+        "Nana",
+        "The Picture of Dorian Gray"
       ],
-      "explanation": "The Miser: 1668; The Flowers of Evil: 1857; Les Misérables: 1862; The Grapes of Wrath: 1939"
+      "explanation": "Germinal portrays miners in northern France."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2615
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Notre-Dame de Paris, La Peste, Phèdre, L’Étranger ?",
+      "text": "Quelle œuvre de type « roman » date de 1877 ?",
       "options": [
-        "Notre-Dame de Paris",
-        "La Peste",
-        "Phèdre",
-        "L’Étranger"
+        "L’Assommoir",
+        "Nana",
+        "Le Tour du monde en quatre-vingts jours",
+        "Une vie"
       ],
-      "explanation": "Phèdre : 1677; Notre-Dame de Paris : 1831; L’Étranger : 1942; La Peste : 1947"
+      "explanation": "« L’Assommoir » est une œuvre de type roman datée de 1877."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Hunchback of Notre-Dame, The Plague, Phèdre, The Stranger?",
+      "text": "Which novel dates to 1877?",
       "options": [
-        "The Hunchback of Notre-Dame",
-        "The Plague",
-        "Phèdre",
-        "The Stranger"
+        "L’Assommoir",
+        "Nana",
+        "Around the World in Eighty Days",
+        "A Woman’s Life"
       ],
-      "explanation": "Phèdre: 1677; The Hunchback of Notre-Dame: 1831; The Stranger: 1942; The Plague: 1947"
+      "explanation": "“L’Assommoir” is a novel dated 1877."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2616
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Vieil Homme et la Mer, Andromaque, Jane Eyre, Une vie ?",
+      "text": "Quelle œuvre de type « roman » date de 1880 ?",
       "options": [
-        "Jane Eyre",
-        "Le Vieil Homme et la Mer",
-        "Andromaque",
-        "Une vie"
+        "Nana",
+        "L’Assommoir",
+        "Une vie",
+        "Germinal"
       ],
-      "explanation": "Andromaque : 1667; Jane Eyre : 1847; Une vie : 1883; Le Vieil Homme et la Mer : 1952"
+      "explanation": "« Nana » est une œuvre de type roman datée de 1880."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Old Man and the Sea, Andromaque, Jane Eyre, A Woman’s Life?",
+      "text": "Which novel dates to 1880?",
       "options": [
-        "Jane Eyre",
-        "The Old Man and the Sea",
-        "Andromaque",
-        "A Woman’s Life"
+        "Nana",
+        "L’Assommoir",
+        "A Woman’s Life",
+        "Germinal"
       ],
-      "explanation": "Andromaque: 1667; Jane Eyre: 1847; A Woman’s Life: 1883; The Old Man and the Sea: 1952"
+      "explanation": "“Nana” is a novel dated 1880."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2617
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Madame Bovary, Frankenstein, L’Alchimiste, L’Étranger ?",
+      "text": "Quelle œuvre de type « roman » date de 1857 ?",
       "options": [
         "Madame Bovary",
-        "Frankenstein",
-        "L’Alchimiste",
-        "L’Étranger"
+        "Les Fleurs du mal",
+        "Les Contemplations",
+        "Les Châtiments"
       ],
-      "explanation": "Frankenstein : 1818; Madame Bovary : 1857; L’Étranger : 1942; L’Alchimiste : 1988"
+      "explanation": "« Madame Bovary » est une œuvre de type roman datée de 1857."
     },
     "en": {
-      "text": "Which work is the second oldest among: Madame Bovary, Frankenstein, The Alchemist, The Stranger?",
+      "text": "Which novel dates to 1857?",
       "options": [
         "Madame Bovary",
-        "Frankenstein",
-        "The Alchemist",
-        "The Stranger"
+        "The Flowers of Evil",
+        "Les Contemplations",
+        "Les Châtiments"
       ],
-      "explanation": "Frankenstein: 1818; Madame Bovary: 1857; The Stranger: 1942; The Alchemist: 1988"
+      "explanation": "“Madame Bovary” is a novel dated 1857."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2618
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Eugénie Grandet, Les Contemplations, En attendant Godot, Les Raisins de la colère ?",
+      "text": "Quel roman de Flaubert paru en 1862 se déroule à Carthage ?",
       "options": [
-        "Les Contemplations",
-        "Eugénie Grandet",
-        "En attendant Godot",
-        "Les Raisins de la colère"
+        "Salammbô",
+        "Voyage au centre de la Terre",
+        "Madame Bovary",
+        "Les Fleurs du mal"
       ],
-      "explanation": "Eugénie Grandet : 1833; Les Contemplations : 1856; Les Raisins de la colère : 1939; En attendant Godot : 1952"
+      "explanation": "Salammbô se déroule dans la Carthage antique."
     },
     "en": {
-      "text": "Which work is the second oldest among: Eugénie Grandet, Les Contemplations, Waiting for Godot, The Grapes of Wrath?",
+      "text": "Which Flaubert novel published in 1862 is set in Carthage?",
       "options": [
-        "Les Contemplations",
-        "Eugénie Grandet",
-        "Waiting for Godot",
-        "The Grapes of Wrath"
+        "Salammbô",
+        "Journey to the Centre of the Earth",
+        "Madame Bovary",
+        "The Flowers of Evil"
       ],
-      "explanation": "Eugénie Grandet: 1833; Les Contemplations: 1856; The Grapes of Wrath: 1939; Waiting for Godot: 1952"
+      "explanation": "Salammbô is set in ancient Carthage."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2619
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Voyage au centre de la Terre, L’Assommoir, Madame Bovary, Vingt mille lieues sous les mers ?",
+      "text": "Quelle œuvre de type « roman » date de 1830 ?",
       "options": [
-        "Voyage au centre de la Terre",
-        "L’Assommoir",
-        "Madame Bovary",
-        "Vingt mille lieues sous les mers"
+        "Le Rouge et le Noir",
+        "Notre-Dame de Paris",
+        "Eugénie Grandet",
+        "Le Père Goriot"
       ],
-      "explanation": "Madame Bovary : 1857; Voyage au centre de la Terre : 1864; Vingt mille lieues sous les mers : 1870; L’Assommoir : 1877"
+      "explanation": "« Le Rouge et le Noir » est une œuvre de type roman datée de 1830."
     },
     "en": {
-      "text": "Which work is the second oldest among: Journey to the Centre of the Earth, L’Assommoir, Madame Bovary, Twenty Thousand Leagues Under the Seas?",
+      "text": "Which novel dates to 1830?",
       "options": [
-        "Journey to the Centre of the Earth",
-        "L’Assommoir",
-        "Madame Bovary",
-        "Twenty Thousand Leagues Under the Seas"
+        "The Red and the Black",
+        "The Hunchback of Notre-Dame",
+        "Eugénie Grandet",
+        "Father Goriot"
       ],
-      "explanation": "Madame Bovary: 1857; Journey to the Centre of the Earth: 1864; Twenty Thousand Leagues Under the Seas: 1870; L’Assommoir: 1877"
+      "explanation": "“The Red and the Black” is a novel dated 1830."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2620
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Du contrat social, Moby Dick, Bel-Ami, La Peste ?",
+      "text": "Quelle œuvre de type « roman » date de 1839 ?",
       "options": [
-        "Moby Dick",
-        "Du contrat social",
-        "Bel-Ami",
-        "La Peste"
+        "La Chartreuse de Parme",
+        "Le Père Goriot",
+        "Les Trois Mousquetaires",
+        "Eugénie Grandet"
       ],
-      "explanation": "Du contrat social : 1762; Moby Dick : 1851; Bel-Ami : 1885; La Peste : 1947"
+      "explanation": "« La Chartreuse de Parme » est une œuvre de type roman datée de 1839."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Social Contract, Moby-Dick, Bel-Ami, The Plague?",
+      "text": "Which novel dates to 1839?",
       "options": [
-        "Moby-Dick",
-        "The Social Contract",
-        "Bel-Ami",
-        "The Plague"
+        "The Charterhouse of Parma",
+        "Father Goriot",
+        "The Three Musketeers",
+        "Eugénie Grandet"
       ],
-      "explanation": "The Social Contract: 1762; Moby-Dick: 1851; Bel-Ami: 1885; The Plague: 1947"
+      "explanation": "“The Charterhouse of Parma” is a novel dated 1839."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2621
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Nom de la rose, Bel-Ami, Frankenstein, Moby Dick ?",
+      "text": "Quelle œuvre de type « roman » date de 1835 ?",
       "options": [
-        "Moby Dick",
-        "Le Nom de la rose",
-        "Bel-Ami",
-        "Frankenstein"
+        "Le Père Goriot",
+        "Eugénie Grandet",
+        "Notre-Dame de Paris",
+        "La Chartreuse de Parme"
       ],
-      "explanation": "Frankenstein : 1818; Moby Dick : 1851; Bel-Ami : 1885; Le Nom de la rose : 1980"
+      "explanation": "« Le Père Goriot » est une œuvre de type roman datée de 1835."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Name of the Rose, Bel-Ami, Frankenstein, Moby-Dick?",
+      "text": "Which novel dates to 1835?",
       "options": [
-        "Moby-Dick",
-        "The Name of the Rose",
-        "Bel-Ami",
-        "Frankenstein"
+        "Father Goriot",
+        "Eugénie Grandet",
+        "The Hunchback of Notre-Dame",
+        "The Charterhouse of Parma"
       ],
-      "explanation": "Frankenstein: 1818; Moby-Dick: 1851; Bel-Ami: 1885; The Name of the Rose: 1980"
+      "explanation": "“Father Goriot” is a novel dated 1835."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2622
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : L’Alchimiste, Nana, Eugénie Grandet, Alcools ?",
+      "text": "Quelle œuvre de type « roman » date de 1833 ?",
       "options": [
-        "Nana",
-        "L’Alchimiste",
         "Eugénie Grandet",
-        "Alcools"
+        "Notre-Dame de Paris",
+        "Le Père Goriot",
+        "Le Rouge et le Noir"
       ],
-      "explanation": "Eugénie Grandet : 1833; Nana : 1880; Alcools : 1913; L’Alchimiste : 1988"
+      "explanation": "« Eugénie Grandet » est une œuvre de type roman datée de 1833."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Alchemist, Nana, Eugénie Grandet, Alcools?",
+      "text": "Which novel dates to 1833?",
       "options": [
-        "Nana",
-        "The Alchemist",
         "Eugénie Grandet",
-        "Alcools"
+        "The Hunchback of Notre-Dame",
+        "Father Goriot",
+        "The Red and the Black"
       ],
-      "explanation": "Eugénie Grandet: 1833; Nana: 1880; Alcools: 1913; The Alchemist: 1988"
+      "explanation": "“Eugénie Grandet” is a novel dated 1833."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2623
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Portrait de Dorian Gray, Notre-Dame de Paris, Phèdre, L’Écume des jours ?",
+      "text": "Quel roman de Maupassant paru en 1885 suit l’ascension de Georges Duroy ?",
       "options": [
-        "Notre-Dame de Paris",
-        "Le Portrait de Dorian Gray",
-        "Phèdre",
-        "L’Écume des jours"
+        "Bel-Ami",
+        "Une vie",
+        "Nana",
+        "Le Portrait de Dorian Gray"
       ],
-      "explanation": "Phèdre : 1677; Notre-Dame de Paris : 1831; Le Portrait de Dorian Gray : 1890; L’Écume des jours : 1947"
+      "explanation": "Bel-Ami raconte l’ascension de Georges Duroy."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Picture of Dorian Gray, The Hunchback of Notre-Dame, Phèdre, Froth on the Daydream?",
+      "text": "Which Maupassant novel published in 1885 follows Georges Duroy’s rise?",
       "options": [
-        "The Hunchback of Notre-Dame",
-        "The Picture of Dorian Gray",
-        "Phèdre",
-        "Froth on the Daydream"
+        "Bel-Ami",
+        "A Woman’s Life",
+        "Nana",
+        "The Picture of Dorian Gray"
       ],
-      "explanation": "Phèdre: 1677; The Hunchback of Notre-Dame: 1831; The Picture of Dorian Gray: 1890; Froth on the Daydream: 1947"
+      "explanation": "Bel-Ami tells the story of Georges Duroy’s rise."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2624
   },
   {
-    "category": "Littérature & langues",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Peste, Le Père Goriot, Jane Eyre, Madame Bovary ?",
+      "text": "Quelle œuvre de type « roman » date de 1883 ?",
       "options": [
-        "Jane Eyre",
-        "La Peste",
-        "Le Père Goriot",
-        "Madame Bovary"
+        "Une vie",
+        "Germinal",
+        "Bel-Ami",
+        "Nana"
       ],
-      "explanation": "Le Père Goriot : 1835; Jane Eyre : 1847; Madame Bovary : 1857; La Peste : 1947"
+      "explanation": "« Une vie » est une œuvre de type roman datée de 1883."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Plague, Father Goriot, Jane Eyre, Madame Bovary?",
+      "text": "Which novel dates to 1883?",
       "options": [
-        "Jane Eyre",
-        "The Plague",
-        "Father Goriot",
-        "Madame Bovary"
+        "A Woman’s Life",
+        "Germinal",
+        "Bel-Ami",
+        "Nana"
       ],
-      "explanation": "Father Goriot: 1835; Jane Eyre: 1847; Madame Bovary: 1857; The Plague: 1947"
+      "explanation": "“A Woman’s Life” is a novel dated 1883."
     },
     "correct": 0,
+    "category": "Littérature & langues",
     "id": 2625
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Sacre du printemps, Le Lac des cygnes, Nighthawks, Le Dictateur ?",
+      "text": "Quelle œuvre de Salvador Dalí date de 1931 ?",
       "options": [
-        "Le Sacre du printemps",
-        "Le Lac des cygnes",
-        "Nighthawks",
-        "Le Dictateur"
+        "La Persistance de la mémoire",
+        "American Gothic",
+        "La Trahison des images",
+        "Guernica"
       ],
-      "explanation": "Le Lac des cygnes : 1877; Le Sacre du printemps : 1913; Le Dictateur : 1940; Nighthawks : 1942"
+      "explanation": "Il s'agit de « La Persistance de la mémoire »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Rite of Spring, Swan Lake, Nighthawks, The Great Dictator?",
+      "text": "Which work by Salvador Dalí dates to 1931?",
       "options": [
-        "The Rite of Spring",
-        "Swan Lake",
-        "Nighthawks",
-        "The Great Dictator"
+        "The Persistence of Memory",
+        "American Gothic",
+        "The Treachery of Images",
+        "Guernica"
       ],
-      "explanation": "Swan Lake: 1877; The Rite of Spring: 1913; The Great Dictator: 1940; Nighthawks: 1942"
+      "explanation": "The work is “The Persistence of Memory”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2626
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Nighthawks, Olympia, La Mort de Marat, Madame Butterfly ?",
+      "text": "De quelle année date l’œuvre « American Gothic » ?",
       "options": [
-        "Olympia",
-        "Nighthawks",
-        "La Mort de Marat",
-        "Madame Butterfly"
+        "1930",
+        "1929",
+        "1931",
+        "1927"
       ],
-      "explanation": "La Mort de Marat : 1793; Olympia : 1863; Madame Butterfly : 1904; Nighthawks : 1942"
+      "explanation": "« American Gothic » date de 1930."
     },
     "en": {
-      "text": "Which work is the second oldest among: Nighthawks, Olympia, The Death of Marat, Madama Butterfly?",
+      "text": "What year does the work “American Gothic” date from?",
       "options": [
-        "Olympia",
-        "Nighthawks",
-        "The Death of Marat",
-        "Madama Butterfly"
+        "1930",
+        "1929",
+        "1931",
+        "1927"
       ],
-      "explanation": "The Death of Marat: 1793; Olympia: 1863; Madama Butterfly: 1904; Nighthawks: 1942"
+      "explanation": "“American Gothic” dates to 1930."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2627
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Madame Butterfly, Le Serment des Horaces, Impression, soleil levant, Le Voyage dans la Lune ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « American Gothic » ?",
       "options": [
-        "Impression, soleil levant",
-        "Madame Butterfly",
-        "Le Serment des Horaces",
-        "Le Voyage dans la Lune"
+        "États-Unis",
+        "Canada",
+        "Royaume-Uni",
+        "Australie"
       ],
-      "explanation": "Le Serment des Horaces : 1784; Impression, soleil levant : 1872; Le Voyage dans la Lune : 1902; Madame Butterfly : 1904"
+      "explanation": "Grant Wood, à l’origine de « American Gothic », est né sur le territoire de l’actuel pays « États-Unis »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Madama Butterfly, The Oath of the Horatii, Impression, Sunrise, A Trip to the Moon?",
+      "text": "In which present-day country was the creator behind “American Gothic” born?",
       "options": [
-        "Impression, Sunrise",
-        "Madama Butterfly",
-        "The Oath of the Horatii",
-        "A Trip to the Moon"
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Australia"
       ],
-      "explanation": "The Oath of the Horatii: 1784; Impression, Sunrise: 1872; A Trip to the Moon: 1902; Madama Butterfly: 1904"
+      "explanation": "Grant Wood, who created “American Gothic”, was born in what is now the United States."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2628
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : American Gothic, Carmen, Le Lac des cygnes, Les Temps modernes ?",
+      "text": "Quelle œuvre de Grant Wood date de 1930 ?",
       "options": [
-        "Le Lac des cygnes",
         "American Gothic",
-        "Carmen",
-        "Les Temps modernes"
+        "La Persistance de la mémoire",
+        "La Trahison des images",
+        "Guernica"
       ],
-      "explanation": "Carmen : 1875; Le Lac des cygnes : 1877; American Gothic : 1930; Les Temps modernes : 1936"
+      "explanation": "Il s'agit de « American Gothic »."
     },
     "en": {
-      "text": "Which work is the second oldest among: American Gothic, Carmen, Swan Lake, Modern Times?",
+      "text": "Which work by Grant Wood dates to 1930?",
       "options": [
-        "Swan Lake",
         "American Gothic",
-        "Carmen",
-        "Modern Times"
+        "The Persistence of Memory",
+        "The Treachery of Images",
+        "Guernica"
       ],
-      "explanation": "Carmen: 1875; Swan Lake: 1877; American Gothic: 1930; Modern Times: 1936"
+      "explanation": "The work is “American Gothic”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2629
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Ronde de nuit, Citizen Kane, Psychose, Le Voyage de Chihiro ?",
+      "text": "De quelle année date l’œuvre « Nighthawks » ?",
       "options": [
-        "Citizen Kane",
-        "La Ronde de nuit",
-        "Psychose",
-        "Le Voyage de Chihiro"
+        "1942",
+        "1941",
+        "1940",
+        "1937"
       ],
-      "explanation": "La Ronde de nuit : 1642; Citizen Kane : 1941; Psychose : 1960; Le Voyage de Chihiro : 2001"
+      "explanation": "« Nighthawks » date de 1942."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Night Watch, Citizen Kane, Psycho, Spirited Away?",
+      "text": "What year does the work “Nighthawks” date from?",
       "options": [
-        "Citizen Kane",
-        "The Night Watch",
-        "Psycho",
-        "Spirited Away"
+        "1942",
+        "1941",
+        "1940",
+        "1937"
       ],
-      "explanation": "The Night Watch: 1642; Citizen Kane: 1941; Psycho: 1960; Spirited Away: 2001"
+      "explanation": "“Nighthawks” dates to 1942."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2630
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Symphonie fantastique, Guernica, Citizen Kane, Metropolis ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Nighthawks » ?",
       "options": [
-        "Metropolis",
-        "Symphonie fantastique",
-        "Guernica",
-        "Citizen Kane"
+        "États-Unis",
+        "Canada",
+        "Royaume-Uni",
+        "Australie"
       ],
-      "explanation": "Symphonie fantastique : 1830; Metropolis : 1927; Guernica : 1937; Citizen Kane : 1941"
+      "explanation": "Edward Hopper, à l’origine de « Nighthawks », est né sur le territoire de l’actuel pays « États-Unis »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Symphonie fantastique, Guernica, Citizen Kane, Metropolis?",
+      "text": "In which present-day country was the creator behind “Nighthawks” born?",
       "options": [
-        "Metropolis",
-        "Symphonie fantastique",
-        "Guernica",
-        "Citizen Kane"
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Australia"
       ],
-      "explanation": "Symphonie fantastique: 1830; Metropolis: 1927; Guernica: 1937; Citizen Kane: 1941"
+      "explanation": "Edward Hopper, who created “Nighthawks”, was born in what is now the United States."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2631
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Demoiselles d’Avignon, Le Lac des cygnes, Le Barbier de Séville, Le Voyage de Chihiro ?",
+      "text": "Quelle œuvre de Edward Hopper date de 1942 ?",
       "options": [
-        "Le Lac des cygnes",
-        "Les Demoiselles d’Avignon",
-        "Le Barbier de Séville",
-        "Le Voyage de Chihiro"
+        "Nighthawks",
+        "Guernica",
+        "La Persistance de la mémoire",
+        "American Gothic"
       ],
-      "explanation": "Le Barbier de Séville : 1816; Le Lac des cygnes : 1877; Les Demoiselles d’Avignon : 1907; Le Voyage de Chihiro : 2001"
+      "explanation": "Il s'agit de « Nighthawks »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Les Demoiselles d’Avignon, Swan Lake, The Barber of Seville, Spirited Away?",
+      "text": "Which work by Edward Hopper dates to 1942?",
       "options": [
-        "Swan Lake",
-        "Les Demoiselles d’Avignon",
-        "The Barber of Seville",
-        "Spirited Away"
+        "Nighthawks",
+        "Guernica",
+        "The Persistence of Memory",
+        "American Gothic"
       ],
-      "explanation": "The Barber of Seville: 1816; Swan Lake: 1877; Les Demoiselles d’Avignon: 1907; Spirited Away: 2001"
+      "explanation": "The work is “Nighthawks”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2632
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Trahison des images, Metropolis, American Gothic, Les Temps modernes ?",
+      "text": "De quelle année date l’œuvre « La Trahison des images » ?",
       "options": [
-        "La Trahison des images",
-        "Metropolis",
-        "American Gothic",
-        "Les Temps modernes"
+        "1929",
+        "1930",
+        "1927",
+        "1931"
       ],
-      "explanation": "Metropolis : 1927; La Trahison des images : 1929; American Gothic : 1930; Les Temps modernes : 1936"
+      "explanation": "« La Trahison des images » date de 1929."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Treachery of Images, Metropolis, American Gothic, Modern Times?",
+      "text": "What year does the work “The Treachery of Images” date from?",
       "options": [
-        "The Treachery of Images",
-        "Metropolis",
-        "American Gothic",
-        "Modern Times"
+        "1929",
+        "1930",
+        "1927",
+        "1931"
       ],
-      "explanation": "Metropolis: 1927; The Treachery of Images: 1929; American Gothic: 1930; Modern Times: 1936"
+      "explanation": "“The Treachery of Images” dates to 1929."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2633
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Liberté guidant le peuple, La Belle au bois dormant, La Bohème, La Mort de Marat ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « La Trahison des images » ?",
       "options": [
-        "La Liberté guidant le peuple",
-        "La Belle au bois dormant",
-        "La Bohème",
-        "La Mort de Marat"
+        "Belgique",
+        "Pays-Bas",
+        "France",
+        "Allemagne"
       ],
-      "explanation": "La Mort de Marat : 1793; La Liberté guidant le peuple : 1830; La Belle au bois dormant : 1890; La Bohème : 1896"
+      "explanation": "René Magritte, à l’origine de « La Trahison des images », est né sur le territoire de l’actuel pays « Belgique »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Liberty Leading the People, The Sleeping Beauty, La Bohème, The Death of Marat?",
+      "text": "In which present-day country was the creator behind “The Treachery of Images” born?",
       "options": [
-        "Liberty Leading the People",
-        "The Sleeping Beauty",
-        "La Bohème",
-        "The Death of Marat"
+        "Belgium",
+        "Netherlands",
+        "France",
+        "Germany"
       ],
-      "explanation": "The Death of Marat: 1793; Liberty Leading the People: 1830; The Sleeping Beauty: 1890; La Bohème: 1896"
+      "explanation": "René Magritte, who created “The Treachery of Images”, was born in what is now Belgium."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2634
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Radeau de La Méduse, Le Barbier de Séville, Don Giovanni, Metropolis ?",
+      "text": "Quelle œuvre de René Magritte date de 1929 ?",
       "options": [
-        "Le Barbier de Séville",
-        "Le Radeau de La Méduse",
-        "Don Giovanni",
-        "Metropolis"
+        "La Trahison des images",
+        "American Gothic",
+        "La Persistance de la mémoire",
+        "Guernica"
       ],
-      "explanation": "Don Giovanni : 1787; Le Barbier de Séville : 1816; Le Radeau de La Méduse : 1819; Metropolis : 1927"
+      "explanation": "Il s'agit de « La Trahison des images »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Raft of the Medusa, The Barber of Seville, Don Giovanni, Metropolis?",
+      "text": "Which work by René Magritte dates to 1929?",
       "options": [
-        "The Barber of Seville",
-        "The Raft of the Medusa",
-        "Don Giovanni",
-        "Metropolis"
+        "The Treachery of Images",
+        "American Gothic",
+        "The Persistence of Memory",
+        "Guernica"
       ],
-      "explanation": "Don Giovanni: 1787; The Barber of Seville: 1816; The Raft of the Medusa: 1819; Metropolis: 1927"
+      "explanation": "The work is “The Treachery of Images”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2635
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Flûte enchantée, Le Déjeuner sur l’herbe, Le Lac des cygnes, La Liberté guidant le peuple ?",
+      "text": "De quelle année date l’œuvre « Le Sacre de Napoléon » ?",
       "options": [
-        "La Liberté guidant le peuple",
-        "La Flûte enchantée",
-        "Le Déjeuner sur l’herbe",
-        "Le Lac des cygnes"
+        "1807",
+        "1816",
+        "1819",
+        "1793"
       ],
-      "explanation": "La Flûte enchantée : 1791; La Liberté guidant le peuple : 1830; Le Déjeuner sur l’herbe : 1863; Le Lac des cygnes : 1877"
+      "explanation": "« Le Sacre de Napoléon » date de 1807."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Magic Flute, Le Déjeuner sur l’herbe, Swan Lake, Liberty Leading the People?",
+      "text": "What year does the work “The Coronation of Napoleon” date from?",
       "options": [
-        "Liberty Leading the People",
-        "The Magic Flute",
-        "Le Déjeuner sur l’herbe",
-        "Swan Lake"
+        "1807",
+        "1816",
+        "1819",
+        "1793"
       ],
-      "explanation": "The Magic Flute: 1791; Liberty Leading the People: 1830; Le Déjeuner sur l’herbe: 1863; Swan Lake: 1877"
+      "explanation": "“The Coronation of Napoleon” dates to 1807."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2636
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Olympia, L’Oiseau de feu, Carmen, Tosca ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Le Sacre de Napoléon » ?",
       "options": [
-        "Carmen",
-        "Olympia",
-        "L’Oiseau de feu",
-        "Tosca"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Olympia : 1863; Carmen : 1875; Tosca : 1900; L’Oiseau de feu : 1910"
+      "explanation": "Jacques-Louis David, à l’origine de « Le Sacre de Napoléon », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Olympia, The Firebird, Carmen, Tosca?",
+      "text": "In which present-day country was the creator behind “The Coronation of Napoleon” born?",
       "options": [
-        "Carmen",
-        "Olympia",
-        "The Firebird",
-        "Tosca"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "Olympia: 1863; Carmen: 1875; Tosca: 1900; The Firebird: 1910"
+      "explanation": "Jacques-Louis David, who created “The Coronation of Napoleon”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2637
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Bohème, La Liberté guidant le peuple, Les Temps modernes, Le Serment des Horaces ?",
+      "text": "Quelle œuvre de Jacques-Louis David date de 1807 ?",
       "options": [
-        "La Liberté guidant le peuple",
-        "La Bohème",
-        "Les Temps modernes",
-        "Le Serment des Horaces"
+        "Le Sacre de Napoléon",
+        "Le Radeau de La Méduse",
+        "La Mort de Marat",
+        "La Liberté guidant le peuple"
       ],
-      "explanation": "Le Serment des Horaces : 1784; La Liberté guidant le peuple : 1830; La Bohème : 1896; Les Temps modernes : 1936"
+      "explanation": "Il s'agit de « Le Sacre de Napoléon »."
     },
     "en": {
-      "text": "Which work is the second oldest among: La Bohème, Liberty Leading the People, Modern Times, The Oath of the Horatii?",
+      "text": "Which work by Jacques-Louis David dates to 1807?",
       "options": [
-        "Liberty Leading the People",
-        "La Bohème",
-        "Modern Times",
-        "The Oath of the Horatii"
+        "The Coronation of Napoleon",
+        "The Raft of the Medusa",
+        "The Death of Marat",
+        "Liberty Leading the People"
       ],
-      "explanation": "The Oath of the Horatii: 1784; Liberty Leading the People: 1830; La Bohème: 1896; Modern Times: 1936"
+      "explanation": "The work is “The Coronation of Napoleon”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2638
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Carmen, La Ronde de nuit, Le Voyage de Chihiro, Casse-Noisette ?",
+      "text": "De quelle année date l’œuvre « La Mort de Marat » ?",
       "options": [
-        "Carmen",
-        "La Ronde de nuit",
-        "Le Voyage de Chihiro",
-        "Casse-Noisette"
+        "1793",
+        "1791",
+        "1787",
+        "1786"
       ],
-      "explanation": "La Ronde de nuit : 1642; Carmen : 1875; Casse-Noisette : 1892; Le Voyage de Chihiro : 2001"
+      "explanation": "« La Mort de Marat » date de 1793."
     },
     "en": {
-      "text": "Which work is the second oldest among: Carmen, The Night Watch, Spirited Away, The Nutcracker?",
+      "text": "What year does the work “The Death of Marat” date from?",
       "options": [
-        "Carmen",
-        "The Night Watch",
-        "Spirited Away",
-        "The Nutcracker"
+        "1793",
+        "1791",
+        "1787",
+        "1786"
       ],
-      "explanation": "The Night Watch: 1642; Carmen: 1875; The Nutcracker: 1892; Spirited Away: 2001"
+      "explanation": "“The Death of Marat” dates to 1793."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2639
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Mort de Marat, Impression, soleil levant, Madame Butterfly, Le Lac des cygnes ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « La Mort de Marat » ?",
       "options": [
-        "Impression, soleil levant",
-        "La Mort de Marat",
-        "Madame Butterfly",
-        "Le Lac des cygnes"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "La Mort de Marat : 1793; Impression, soleil levant : 1872; Le Lac des cygnes : 1877; Madame Butterfly : 1904"
+      "explanation": "Jacques-Louis David, à l’origine de « La Mort de Marat », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Death of Marat, Impression, Sunrise, Madama Butterfly, Swan Lake?",
+      "text": "In which present-day country was the creator behind “The Death of Marat” born?",
       "options": [
-        "Impression, Sunrise",
-        "The Death of Marat",
-        "Madama Butterfly",
-        "Swan Lake"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "The Death of Marat: 1793; Impression, Sunrise: 1872; Swan Lake: 1877; Madama Butterfly: 1904"
+      "explanation": "Jacques-Louis David, who created “The Death of Marat”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2640
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Metropolis, Rigoletto, Tosca, Aida ?",
+      "text": "Quelle œuvre de Jacques-Louis David date de 1793 ?",
       "options": [
-        "Aida",
-        "Metropolis",
-        "Rigoletto",
-        "Tosca"
+        "La Mort de Marat",
+        "Le Serment des Horaces",
+        "Le Sacre de Napoléon",
+        "Le Radeau de La Méduse"
       ],
-      "explanation": "Rigoletto : 1851; Aida : 1871; Tosca : 1900; Metropolis : 1927"
+      "explanation": "Il s'agit de « La Mort de Marat »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Metropolis, Rigoletto, Tosca, Aida?",
+      "text": "Which work by Jacques-Louis David dates to 1793?",
       "options": [
-        "Aida",
-        "Metropolis",
-        "Rigoletto",
-        "Tosca"
+        "The Death of Marat",
+        "The Oath of the Horatii",
+        "The Coronation of Napoleon",
+        "The Raft of the Medusa"
       ],
-      "explanation": "Rigoletto: 1851; Aida: 1871; Tosca: 1900; Metropolis: 1927"
+      "explanation": "The work is “The Death of Marat”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2641
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Nuit étoilée, Le Dictateur, La Trahison des images, Princesse Mononoké ?",
+      "text": "De quelle année date l’œuvre « Le Serment des Horaces » ?",
       "options": [
-        "La Trahison des images",
-        "La Nuit étoilée",
-        "Le Dictateur",
-        "Princesse Mononoké"
+        "1784",
+        "1786",
+        "1787",
+        "1791"
       ],
-      "explanation": "La Nuit étoilée : 1889; La Trahison des images : 1929; Le Dictateur : 1940; Princesse Mononoké : 1997"
+      "explanation": "« Le Serment des Horaces » date de 1784."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Starry Night, The Great Dictator, The Treachery of Images, Princess Mononoke?",
+      "text": "What year does the work “The Oath of the Horatii” date from?",
       "options": [
-        "The Treachery of Images",
-        "The Starry Night",
-        "The Great Dictator",
-        "Princess Mononoke"
+        "1784",
+        "1786",
+        "1787",
+        "1791"
       ],
-      "explanation": "The Starry Night: 1889; The Treachery of Images: 1929; The Great Dictator: 1940; Princess Mononoke: 1997"
+      "explanation": "“The Oath of the Horatii” dates to 1784."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2642
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Sacre de Napoléon, La Persistance de la mémoire, Les Demoiselles d’Avignon, Olympia ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Le Serment des Horaces » ?",
       "options": [
-        "Olympia",
-        "Le Sacre de Napoléon",
-        "La Persistance de la mémoire",
-        "Les Demoiselles d’Avignon"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Le Sacre de Napoléon : 1807; Olympia : 1863; Les Demoiselles d’Avignon : 1907; La Persistance de la mémoire : 1931"
+      "explanation": "Jacques-Louis David, à l’origine de « Le Serment des Horaces », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Coronation of Napoleon, The Persistence of Memory, Les Demoiselles d’Avignon, Olympia?",
+      "text": "In which present-day country was the creator behind “The Oath of the Horatii” born?",
       "options": [
-        "Olympia",
-        "The Coronation of Napoleon",
-        "The Persistence of Memory",
-        "Les Demoiselles d’Avignon"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "The Coronation of Napoleon: 1807; Olympia: 1863; Les Demoiselles d’Avignon: 1907; The Persistence of Memory: 1931"
+      "explanation": "Jacques-Louis David, who created “The Oath of the Horatii”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2643
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Rigoletto, Le Parrain, Citizen Kane, Le Barbier de Séville ?",
+      "text": "Quelle œuvre de Jacques-Louis David date de 1784 ?",
       "options": [
-        "Rigoletto",
-        "Le Parrain",
-        "Citizen Kane",
-        "Le Barbier de Séville"
+        "Le Serment des Horaces",
+        "La Mort de Marat",
+        "Le Sacre de Napoléon",
+        "Le Radeau de La Méduse"
       ],
-      "explanation": "Le Barbier de Séville : 1816; Rigoletto : 1851; Citizen Kane : 1941; Le Parrain : 1972"
+      "explanation": "Il s'agit de « Le Serment des Horaces »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Rigoletto, The Godfather, Citizen Kane, The Barber of Seville?",
+      "text": "Which work by Jacques-Louis David dates to 1784?",
       "options": [
-        "Rigoletto",
-        "The Godfather",
-        "Citizen Kane",
-        "The Barber of Seville"
+        "The Oath of the Horatii",
+        "The Death of Marat",
+        "The Coronation of Napoleon",
+        "The Raft of the Medusa"
       ],
-      "explanation": "The Barber of Seville: 1816; Rigoletto: 1851; Citizen Kane: 1941; The Godfather: 1972"
+      "explanation": "The work is “The Oath of the Horatii”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2644
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Dictateur, Tosca, La Trahison des images, Olympia ?",
+      "text": "De quelle année date l’œuvre « Carmen » ?",
       "options": [
-        "Tosca",
-        "Le Dictateur",
-        "La Trahison des images",
-        "Olympia"
+        "1875",
+        "1877",
+        "1872",
+        "1871"
       ],
-      "explanation": "Olympia : 1863; Tosca : 1900; La Trahison des images : 1929; Le Dictateur : 1940"
+      "explanation": "« Carmen » date de 1875."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Great Dictator, Tosca, The Treachery of Images, Olympia?",
+      "text": "What year does the work “Carmen” date from?",
       "options": [
-        "Tosca",
-        "The Great Dictator",
-        "The Treachery of Images",
-        "Olympia"
+        "1875",
+        "1877",
+        "1872",
+        "1871"
       ],
-      "explanation": "Olympia: 1863; Tosca: 1900; The Treachery of Images: 1929; The Great Dictator: 1940"
+      "explanation": "“Carmen” dates to 1875."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2645
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Carmen, Symphonie du Nouveau Monde, Le Sacre de Napoléon, Madame Butterfly ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Carmen » ?",
       "options": [
-        "Carmen",
-        "Symphonie du Nouveau Monde",
-        "Le Sacre de Napoléon",
-        "Madame Butterfly"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Le Sacre de Napoléon : 1807; Carmen : 1875; Symphonie du Nouveau Monde : 1893; Madame Butterfly : 1904"
+      "explanation": "Georges Bizet, à l’origine de « Carmen », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Carmen, New World Symphony, The Coronation of Napoleon, Madama Butterfly?",
+      "text": "In which present-day country was the creator behind “Carmen” born?",
       "options": [
-        "Carmen",
-        "New World Symphony",
-        "The Coronation of Napoleon",
-        "Madama Butterfly"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "The Coronation of Napoleon: 1807; Carmen: 1875; New World Symphony: 1893; Madama Butterfly: 1904"
+      "explanation": "Georges Bizet, who created “Carmen”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2646
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Madame Butterfly, Olympia, La Flûte enchantée, Don Giovanni ?",
+      "text": "Quelle œuvre de Georges Bizet date de 1875 ?",
       "options": [
-        "La Flûte enchantée",
-        "Madame Butterfly",
-        "Olympia",
-        "Don Giovanni"
+        "Carmen",
+        "Aida",
+        "La Bohème",
+        "La Traviata"
       ],
-      "explanation": "Don Giovanni : 1787; La Flûte enchantée : 1791; Olympia : 1863; Madame Butterfly : 1904"
+      "explanation": "Il s'agit de « Carmen »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Madama Butterfly, Olympia, The Magic Flute, Don Giovanni?",
+      "text": "Which work by Georges Bizet dates to 1875?",
       "options": [
-        "The Magic Flute",
-        "Madama Butterfly",
-        "Olympia",
-        "Don Giovanni"
+        "Carmen",
+        "Aida",
+        "La Bohème",
+        "La Traviata"
       ],
-      "explanation": "Don Giovanni: 1787; The Magic Flute: 1791; Olympia: 1863; Madama Butterfly: 1904"
+      "explanation": "The work is “Carmen”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2647
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Psychose, Le Radeau de La Méduse, Le Dictateur, Les Temps modernes ?",
+      "text": "De quelle année date l’œuvre « La Flûte enchantée » ?",
       "options": [
-        "Les Temps modernes",
-        "Psychose",
-        "Le Radeau de La Méduse",
-        "Le Dictateur"
+        "1791",
+        "1793",
+        "1787",
+        "1786"
       ],
-      "explanation": "Le Radeau de La Méduse : 1819; Les Temps modernes : 1936; Le Dictateur : 1940; Psychose : 1960"
+      "explanation": "« La Flûte enchantée » date de 1791."
     },
     "en": {
-      "text": "Which work is the second oldest among: Psycho, The Raft of the Medusa, The Great Dictator, Modern Times?",
+      "text": "What year does the work “The Magic Flute” date from?",
       "options": [
-        "Modern Times",
-        "Psycho",
-        "The Raft of the Medusa",
-        "The Great Dictator"
+        "1791",
+        "1793",
+        "1787",
+        "1786"
       ],
-      "explanation": "The Raft of the Medusa: 1819; Modern Times: 1936; The Great Dictator: 1940; Psycho: 1960"
+      "explanation": "“The Magic Flute” dates to 1791."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2648
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Impression, soleil levant, Le Radeau de La Méduse, 2001 : L’Odyssée de l’espace, La Trahison des images ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « La Flûte enchantée » ?",
       "options": [
-        "Impression, soleil levant",
-        "Le Radeau de La Méduse",
-        "2001 : L’Odyssée de l’espace",
-        "La Trahison des images"
+        "Autriche",
+        "Allemagne",
+        "Suisse",
+        "Italie"
       ],
-      "explanation": "Le Radeau de La Méduse : 1819; Impression, soleil levant : 1872; La Trahison des images : 1929; 2001 : L’Odyssée de l’espace : 1968"
+      "explanation": "Wolfgang Amadeus Mozart, à l’origine de « La Flûte enchantée », est né sur le territoire de l’actuel pays « Autriche »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Impression, Sunrise, The Raft of the Medusa, 2001: A Space Odyssey, The Treachery of Images?",
+      "text": "In which present-day country was the creator behind “The Magic Flute” born?",
       "options": [
-        "Impression, Sunrise",
-        "The Raft of the Medusa",
-        "2001: A Space Odyssey",
-        "The Treachery of Images"
+        "Austria",
+        "Germany",
+        "Switzerland",
+        "Italy"
       ],
-      "explanation": "The Raft of the Medusa: 1819; Impression, Sunrise: 1872; The Treachery of Images: 1929; 2001: A Space Odyssey: 1968"
+      "explanation": "Wolfgang Amadeus Mozart, who created “The Magic Flute”, was born in what is now Austria."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2649
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Parrain, Le Sacre du printemps, Olympia, Mon voisin Totoro ?",
+      "text": "Quelle œuvre de Wolfgang Amadeus Mozart date de 1791 ?",
       "options": [
-        "Le Sacre du printemps",
-        "Le Parrain",
-        "Olympia",
-        "Mon voisin Totoro"
+        "La Flûte enchantée",
+        "Don Giovanni",
+        "Les Noces de Figaro",
+        "Le Barbier de Séville"
       ],
-      "explanation": "Olympia : 1863; Le Sacre du printemps : 1913; Le Parrain : 1972; Mon voisin Totoro : 1988"
+      "explanation": "Il s'agit de « La Flûte enchantée »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Godfather, The Rite of Spring, Olympia, My Neighbor Totoro?",
+      "text": "Which work by Wolfgang Amadeus Mozart dates to 1791?",
       "options": [
-        "The Rite of Spring",
-        "The Godfather",
-        "Olympia",
-        "My Neighbor Totoro"
+        "The Magic Flute",
+        "Don Giovanni",
+        "The Marriage of Figaro",
+        "The Barber of Seville"
       ],
-      "explanation": "Olympia: 1863; The Rite of Spring: 1913; The Godfather: 1972; My Neighbor Totoro: 1988"
+      "explanation": "The work is “The Magic Flute”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2650
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Belle au bois dormant, 2001 : L’Odyssée de l’espace, Le Lac des cygnes, Le Dictateur ?",
+      "text": "De quelle année date l’œuvre « Don Giovanni » ?",
       "options": [
-        "La Belle au bois dormant",
-        "2001 : L’Odyssée de l’espace",
-        "Le Lac des cygnes",
-        "Le Dictateur"
+        "1787",
+        "1786",
+        "1784",
+        "1791"
       ],
-      "explanation": "Le Lac des cygnes : 1877; La Belle au bois dormant : 1890; Le Dictateur : 1940; 2001 : L’Odyssée de l’espace : 1968"
+      "explanation": "« Don Giovanni » date de 1787."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Sleeping Beauty, 2001: A Space Odyssey, Swan Lake, The Great Dictator?",
+      "text": "What year does the work “Don Giovanni” date from?",
       "options": [
-        "The Sleeping Beauty",
-        "2001: A Space Odyssey",
-        "Swan Lake",
-        "The Great Dictator"
+        "1787",
+        "1786",
+        "1784",
+        "1791"
       ],
-      "explanation": "Swan Lake: 1877; The Sleeping Beauty: 1890; The Great Dictator: 1940; 2001: A Space Odyssey: 1968"
+      "explanation": "“Don Giovanni” dates to 1787."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2651
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Carmen, American Gothic, Tosca, Symphonie du Nouveau Monde ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Don Giovanni » ?",
       "options": [
-        "Symphonie du Nouveau Monde",
-        "Carmen",
-        "American Gothic",
-        "Tosca"
+        "Autriche",
+        "Allemagne",
+        "Suisse",
+        "Italie"
       ],
-      "explanation": "Carmen : 1875; Symphonie du Nouveau Monde : 1893; Tosca : 1900; American Gothic : 1930"
+      "explanation": "Wolfgang Amadeus Mozart, à l’origine de « Don Giovanni », est né sur le territoire de l’actuel pays « Autriche »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Carmen, American Gothic, Tosca, New World Symphony?",
+      "text": "In which present-day country was the creator behind “Don Giovanni” born?",
       "options": [
-        "New World Symphony",
-        "Carmen",
-        "American Gothic",
-        "Tosca"
+        "Austria",
+        "Germany",
+        "Switzerland",
+        "Italy"
       ],
-      "explanation": "Carmen: 1875; New World Symphony: 1893; Tosca: 1900; American Gothic: 1930"
+      "explanation": "Wolfgang Amadeus Mozart, who created “Don Giovanni”, was born in what is now Austria."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2652
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Persistance de la mémoire, Psychose, Guernica, Le Déjeuner sur l’herbe ?",
+      "text": "Quelle œuvre de Wolfgang Amadeus Mozart date de 1787 ?",
       "options": [
-        "La Persistance de la mémoire",
-        "Psychose",
-        "Guernica",
-        "Le Déjeuner sur l’herbe"
+        "Don Giovanni",
+        "Les Noces de Figaro",
+        "La Flûte enchantée",
+        "Le Barbier de Séville"
       ],
-      "explanation": "Le Déjeuner sur l’herbe : 1863; La Persistance de la mémoire : 1931; Guernica : 1937; Psychose : 1960"
+      "explanation": "Il s'agit de « Don Giovanni »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Persistence of Memory, Psycho, Guernica, Le Déjeuner sur l’herbe?",
+      "text": "Which work by Wolfgang Amadeus Mozart dates to 1787?",
       "options": [
-        "The Persistence of Memory",
-        "Psycho",
-        "Guernica",
-        "Le Déjeuner sur l’herbe"
+        "Don Giovanni",
+        "The Marriage of Figaro",
+        "The Magic Flute",
+        "The Barber of Seville"
       ],
-      "explanation": "Le Déjeuner sur l’herbe: 1863; The Persistence of Memory: 1931; Guernica: 1937; Psycho: 1960"
+      "explanation": "The work is “Don Giovanni”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2653
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Citizen Kane, Les Ménines, Le Sacre de Napoléon, Le Serment des Horaces ?",
+      "text": "De quelle année date l’œuvre « Les Noces de Figaro » ?",
       "options": [
-        "Le Serment des Horaces",
-        "Citizen Kane",
-        "Les Ménines",
-        "Le Sacre de Napoléon"
+        "1786",
+        "1787",
+        "1784",
+        "1791"
       ],
-      "explanation": "Les Ménines : 1656; Le Serment des Horaces : 1784; Le Sacre de Napoléon : 1807; Citizen Kane : 1941"
+      "explanation": "« Les Noces de Figaro » date de 1786."
     },
     "en": {
-      "text": "Which work is the second oldest among: Citizen Kane, Las Meninas, The Coronation of Napoleon, The Oath of the Horatii?",
+      "text": "What year does the work “The Marriage of Figaro” date from?",
       "options": [
-        "The Oath of the Horatii",
-        "Citizen Kane",
-        "Las Meninas",
-        "The Coronation of Napoleon"
+        "1786",
+        "1787",
+        "1784",
+        "1791"
       ],
-      "explanation": "Las Meninas: 1656; The Oath of the Horatii: 1784; The Coronation of Napoleon: 1807; Citizen Kane: 1941"
+      "explanation": "“The Marriage of Figaro” dates to 1786."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2654
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Serment des Horaces, Metropolis, L’Oiseau de feu, Symphonie du Nouveau Monde ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Les Noces de Figaro » ?",
       "options": [
-        "Symphonie du Nouveau Monde",
-        "Le Serment des Horaces",
-        "Metropolis",
-        "L’Oiseau de feu"
+        "Autriche",
+        "Allemagne",
+        "Suisse",
+        "Italie"
       ],
-      "explanation": "Le Serment des Horaces : 1784; Symphonie du Nouveau Monde : 1893; L’Oiseau de feu : 1910; Metropolis : 1927"
+      "explanation": "Wolfgang Amadeus Mozart, à l’origine de « Les Noces de Figaro », est né sur le territoire de l’actuel pays « Autriche »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Oath of the Horatii, Metropolis, The Firebird, New World Symphony?",
+      "text": "In which present-day country was the creator behind “The Marriage of Figaro” born?",
       "options": [
-        "New World Symphony",
-        "The Oath of the Horatii",
-        "Metropolis",
-        "The Firebird"
+        "Austria",
+        "Germany",
+        "Switzerland",
+        "Italy"
       ],
-      "explanation": "The Oath of the Horatii: 1784; New World Symphony: 1893; The Firebird: 1910; Metropolis: 1927"
+      "explanation": "Wolfgang Amadeus Mozart, who created “The Marriage of Figaro”, was born in what is now Austria."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2655
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Princesse Mononoké, Symphonie fantastique, Le Lac des cygnes, Les Mangeurs de pommes de terre ?",
+      "text": "Quelle œuvre de Wolfgang Amadeus Mozart date de 1786 ?",
       "options": [
-        "Le Lac des cygnes",
-        "Princesse Mononoké",
-        "Symphonie fantastique",
-        "Les Mangeurs de pommes de terre"
+        "Les Noces de Figaro",
+        "Don Giovanni",
+        "La Flûte enchantée",
+        "Le Barbier de Séville"
       ],
-      "explanation": "Symphonie fantastique : 1830; Le Lac des cygnes : 1877; Les Mangeurs de pommes de terre : 1885; Princesse Mononoké : 1997"
+      "explanation": "Il s'agit de « Les Noces de Figaro »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Princess Mononoke, Symphonie fantastique, Swan Lake, The Potato Eaters?",
+      "text": "Which work by Wolfgang Amadeus Mozart dates to 1786?",
       "options": [
-        "Swan Lake",
-        "Princess Mononoke",
-        "Symphonie fantastique",
-        "The Potato Eaters"
+        "The Marriage of Figaro",
+        "Don Giovanni",
+        "The Magic Flute",
+        "The Barber of Seville"
       ],
-      "explanation": "Symphonie fantastique: 1830; Swan Lake: 1877; The Potato Eaters: 1885; Princess Mononoke: 1997"
+      "explanation": "The work is “The Marriage of Figaro”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2656
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Bohème, Les Noces de Figaro, La Trahison des images, Le Barbier de Séville ?",
+      "text": "De quelle année date l’œuvre « Aida » ?",
       "options": [
-        "Le Barbier de Séville",
-        "La Bohème",
-        "Les Noces de Figaro",
-        "La Trahison des images"
+        "1871",
+        "1872",
+        "1875",
+        "1877"
       ],
-      "explanation": "Les Noces de Figaro : 1786; Le Barbier de Séville : 1816; La Bohème : 1896; La Trahison des images : 1929"
+      "explanation": "« Aida » date de 1871."
     },
     "en": {
-      "text": "Which work is the second oldest among: La Bohème, The Marriage of Figaro, The Treachery of Images, The Barber of Seville?",
+      "text": "What year does the work “Aida” date from?",
       "options": [
-        "The Barber of Seville",
-        "La Bohème",
-        "The Marriage of Figaro",
-        "The Treachery of Images"
+        "1871",
+        "1872",
+        "1875",
+        "1877"
       ],
-      "explanation": "The Marriage of Figaro: 1786; The Barber of Seville: 1816; La Bohème: 1896; The Treachery of Images: 1929"
+      "explanation": "“Aida” dates to 1871."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2657
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Traviata, Guernica, La Ronde de nuit, La Belle au bois dormant ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Aida » ?",
       "options": [
-        "La Traviata",
-        "Guernica",
-        "La Ronde de nuit",
-        "La Belle au bois dormant"
+        "Italie",
+        "France",
+        "Espagne",
+        "Autriche"
       ],
-      "explanation": "La Ronde de nuit : 1642; La Traviata : 1853; La Belle au bois dormant : 1890; Guernica : 1937"
+      "explanation": "Giuseppe Verdi, à l’origine de « Aida », est né sur le territoire de l’actuel pays « Italie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: La Traviata, Guernica, The Night Watch, The Sleeping Beauty?",
+      "text": "In which present-day country was the creator behind “Aida” born?",
       "options": [
-        "La Traviata",
-        "Guernica",
-        "The Night Watch",
-        "The Sleeping Beauty"
+        "Italy",
+        "France",
+        "Spain",
+        "Austria"
       ],
-      "explanation": "The Night Watch: 1642; La Traviata: 1853; The Sleeping Beauty: 1890; Guernica: 1937"
+      "explanation": "Giuseppe Verdi, who created “Aida”, was born in what is now Italy."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2658
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Mort de Marat, Guernica, La Trahison des images, American Gothic ?",
+      "text": "Quelle œuvre de Giuseppe Verdi date de 1871 ?",
       "options": [
-        "La Trahison des images",
-        "La Mort de Marat",
-        "Guernica",
-        "American Gothic"
+        "Aida",
+        "Carmen",
+        "La Traviata",
+        "Rigoletto"
       ],
-      "explanation": "La Mort de Marat : 1793; La Trahison des images : 1929; American Gothic : 1930; Guernica : 1937"
+      "explanation": "Il s'agit de « Aida »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Death of Marat, Guernica, The Treachery of Images, American Gothic?",
+      "text": "Which work by Giuseppe Verdi dates to 1871?",
       "options": [
-        "The Treachery of Images",
-        "The Death of Marat",
-        "Guernica",
-        "American Gothic"
+        "Aida",
+        "Carmen",
+        "La Traviata",
+        "Rigoletto"
       ],
-      "explanation": "The Death of Marat: 1793; The Treachery of Images: 1929; American Gothic: 1930; Guernica: 1937"
+      "explanation": "The work is “Aida”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2659
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Impression, soleil levant, La Flûte enchantée, La Bohème, Guernica ?",
+      "text": "De quelle année date l’œuvre « La Traviata » ?",
       "options": [
-        "Impression, soleil levant",
-        "La Flûte enchantée",
-        "La Bohème",
-        "Guernica"
+        "1853",
+        "1851",
+        "1863",
+        "1871"
       ],
-      "explanation": "La Flûte enchantée : 1791; Impression, soleil levant : 1872; La Bohème : 1896; Guernica : 1937"
+      "explanation": "« La Traviata » date de 1853."
     },
     "en": {
-      "text": "Which work is the second oldest among: Impression, Sunrise, The Magic Flute, La Bohème, Guernica?",
+      "text": "What year does the work “La Traviata” date from?",
       "options": [
-        "Impression, Sunrise",
-        "The Magic Flute",
-        "La Bohème",
-        "Guernica"
+        "1853",
+        "1851",
+        "1863",
+        "1871"
       ],
-      "explanation": "The Magic Flute: 1791; Impression, Sunrise: 1872; La Bohème: 1896; Guernica: 1937"
+      "explanation": "“La Traviata” dates to 1853."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2660
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Olympia, Les Oiseaux, Impression, soleil levant, Les Ménines ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « La Traviata » ?",
       "options": [
-        "Olympia",
-        "Les Oiseaux",
-        "Impression, soleil levant",
-        "Les Ménines"
+        "Italie",
+        "France",
+        "Espagne",
+        "Autriche"
       ],
-      "explanation": "Les Ménines : 1656; Olympia : 1863; Impression, soleil levant : 1872; Les Oiseaux : 1963"
+      "explanation": "Giuseppe Verdi, à l’origine de « La Traviata », est né sur le territoire de l’actuel pays « Italie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Olympia, The Birds, Impression, Sunrise, Las Meninas?",
+      "text": "In which present-day country was the creator behind “La Traviata” born?",
       "options": [
-        "Olympia",
-        "The Birds",
-        "Impression, Sunrise",
-        "Las Meninas"
+        "Italy",
+        "France",
+        "Spain",
+        "Austria"
       ],
-      "explanation": "Las Meninas: 1656; Olympia: 1863; Impression, Sunrise: 1872; The Birds: 1963"
+      "explanation": "Giuseppe Verdi, who created “La Traviata”, was born in what is now Italy."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2661
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Sacre du printemps, La Nuit étoilée, Le Voyage dans la Lune, Don Giovanni ?",
+      "text": "Quelle œuvre de Giuseppe Verdi date de 1853 ?",
       "options": [
-        "La Nuit étoilée",
-        "Le Sacre du printemps",
-        "Le Voyage dans la Lune",
-        "Don Giovanni"
+        "La Traviata",
+        "Rigoletto",
+        "Aida",
+        "Carmen"
       ],
-      "explanation": "Don Giovanni : 1787; La Nuit étoilée : 1889; Le Voyage dans la Lune : 1902; Le Sacre du printemps : 1913"
+      "explanation": "Il s'agit de « La Traviata »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Rite of Spring, The Starry Night, A Trip to the Moon, Don Giovanni?",
+      "text": "Which work by Giuseppe Verdi dates to 1853?",
       "options": [
-        "The Starry Night",
-        "The Rite of Spring",
-        "A Trip to the Moon",
-        "Don Giovanni"
+        "La Traviata",
+        "Rigoletto",
+        "Aida",
+        "Carmen"
       ],
-      "explanation": "Don Giovanni: 1787; The Starry Night: 1889; A Trip to the Moon: 1902; The Rite of Spring: 1913"
+      "explanation": "The work is “La Traviata”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2662
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Ronde de nuit, Impression, soleil levant, Olympia, L’Oiseau de feu ?",
+      "text": "De quelle année date l’œuvre « Rigoletto » ?",
       "options": [
-        "Olympia",
-        "La Ronde de nuit",
-        "Impression, soleil levant",
-        "L’Oiseau de feu"
+        "1851",
+        "1853",
+        "1863",
+        "1871"
       ],
-      "explanation": "La Ronde de nuit : 1642; Olympia : 1863; Impression, soleil levant : 1872; L’Oiseau de feu : 1910"
+      "explanation": "« Rigoletto » date de 1851."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Night Watch, Impression, Sunrise, Olympia, The Firebird?",
+      "text": "What year does the work “Rigoletto” date from?",
       "options": [
-        "Olympia",
-        "The Night Watch",
-        "Impression, Sunrise",
-        "The Firebird"
+        "1851",
+        "1853",
+        "1863",
+        "1871"
       ],
-      "explanation": "The Night Watch: 1642; Olympia: 1863; Impression, Sunrise: 1872; The Firebird: 1910"
+      "explanation": "“Rigoletto” dates to 1851."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2663
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Demoiselles d’Avignon, La Bohème, Le Barbier de Séville, Olympia ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Rigoletto » ?",
       "options": [
-        "Olympia",
-        "Les Demoiselles d’Avignon",
-        "La Bohème",
-        "Le Barbier de Séville"
+        "Italie",
+        "France",
+        "Espagne",
+        "Autriche"
       ],
-      "explanation": "Le Barbier de Séville : 1816; Olympia : 1863; La Bohème : 1896; Les Demoiselles d’Avignon : 1907"
+      "explanation": "Giuseppe Verdi, à l’origine de « Rigoletto », est né sur le territoire de l’actuel pays « Italie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Les Demoiselles d’Avignon, La Bohème, The Barber of Seville, Olympia?",
+      "text": "In which present-day country was the creator behind “Rigoletto” born?",
       "options": [
-        "Olympia",
-        "Les Demoiselles d’Avignon",
-        "La Bohème",
-        "The Barber of Seville"
+        "Italy",
+        "France",
+        "Spain",
+        "Austria"
       ],
-      "explanation": "The Barber of Seville: 1816; Olympia: 1863; La Bohème: 1896; Les Demoiselles d’Avignon: 1907"
+      "explanation": "Giuseppe Verdi, who created “Rigoletto”, was born in what is now Italy."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2664
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Radeau de La Méduse, Les Mangeurs de pommes de terre, Madame Butterfly, Les Ménines ?",
+      "text": "Quelle œuvre de Giuseppe Verdi date de 1851 ?",
       "options": [
-        "Le Radeau de La Méduse",
-        "Les Mangeurs de pommes de terre",
-        "Madame Butterfly",
-        "Les Ménines"
+        "Rigoletto",
+        "La Traviata",
+        "Aida",
+        "Carmen"
       ],
-      "explanation": "Les Ménines : 1656; Le Radeau de La Méduse : 1819; Les Mangeurs de pommes de terre : 1885; Madame Butterfly : 1904"
+      "explanation": "Il s'agit de « Rigoletto »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Raft of the Medusa, The Potato Eaters, Madama Butterfly, Las Meninas?",
+      "text": "Which work by Giuseppe Verdi dates to 1851?",
       "options": [
-        "The Raft of the Medusa",
-        "The Potato Eaters",
-        "Madama Butterfly",
-        "Las Meninas"
+        "Rigoletto",
+        "La Traviata",
+        "Aida",
+        "Carmen"
       ],
-      "explanation": "Las Meninas: 1656; The Raft of the Medusa: 1819; The Potato Eaters: 1885; Madama Butterfly: 1904"
+      "explanation": "The work is “Rigoletto”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2665
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Noces de Figaro, Le Parrain, Le Serment des Horaces, Le Barbier de Séville ?",
+      "text": "De quelle année date l’œuvre « Tosca » ?",
       "options": [
-        "Les Noces de Figaro",
-        "Le Parrain",
-        "Le Serment des Horaces",
-        "Le Barbier de Séville"
+        "1900",
+        "1902",
+        "1896",
+        "1904"
       ],
-      "explanation": "Le Serment des Horaces : 1784; Les Noces de Figaro : 1786; Le Barbier de Séville : 1816; Le Parrain : 1972"
+      "explanation": "« Tosca » date de 1900."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Marriage of Figaro, The Godfather, The Oath of the Horatii, The Barber of Seville?",
+      "text": "What year does the work “Tosca” date from?",
       "options": [
-        "The Marriage of Figaro",
-        "The Godfather",
-        "The Oath of the Horatii",
-        "The Barber of Seville"
+        "1900",
+        "1902",
+        "1896",
+        "1904"
       ],
-      "explanation": "The Oath of the Horatii: 1784; The Marriage of Figaro: 1786; The Barber of Seville: 1816; The Godfather: 1972"
+      "explanation": "“Tosca” dates to 1900."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2666
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Mon voisin Totoro, Le Radeau de La Méduse, Le Sacre de Napoléon, Le Parrain ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Tosca » ?",
       "options": [
-        "Le Radeau de La Méduse",
-        "Mon voisin Totoro",
-        "Le Sacre de Napoléon",
-        "Le Parrain"
+        "Italie",
+        "France",
+        "Espagne",
+        "Autriche"
       ],
-      "explanation": "Le Sacre de Napoléon : 1807; Le Radeau de La Méduse : 1819; Le Parrain : 1972; Mon voisin Totoro : 1988"
+      "explanation": "Giacomo Puccini, à l’origine de « Tosca », est né sur le territoire de l’actuel pays « Italie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: My Neighbor Totoro, The Raft of the Medusa, The Coronation of Napoleon, The Godfather?",
+      "text": "In which present-day country was the creator behind “Tosca” born?",
       "options": [
-        "The Raft of the Medusa",
-        "My Neighbor Totoro",
-        "The Coronation of Napoleon",
-        "The Godfather"
+        "Italy",
+        "France",
+        "Spain",
+        "Austria"
       ],
-      "explanation": "The Coronation of Napoleon: 1807; The Raft of the Medusa: 1819; The Godfather: 1972; My Neighbor Totoro: 1988"
+      "explanation": "Giacomo Puccini, who created “Tosca”, was born in what is now Italy."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2667
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Voyage dans la Lune, Psychose, Les Ménines, Les Demoiselles d’Avignon ?",
+      "text": "Quelle œuvre de Giacomo Puccini date de 1900 ?",
       "options": [
-        "Le Voyage dans la Lune",
-        "Psychose",
-        "Les Ménines",
-        "Les Demoiselles d’Avignon"
+        "Tosca",
+        "La Bohème",
+        "Madame Butterfly",
+        "Carmen"
       ],
-      "explanation": "Les Ménines : 1656; Le Voyage dans la Lune : 1902; Les Demoiselles d’Avignon : 1907; Psychose : 1960"
+      "explanation": "Il s'agit de « Tosca »."
     },
     "en": {
-      "text": "Which work is the second oldest among: A Trip to the Moon, Psycho, Las Meninas, Les Demoiselles d’Avignon?",
+      "text": "Which work by Giacomo Puccini dates to 1900?",
       "options": [
-        "A Trip to the Moon",
-        "Psycho",
-        "Las Meninas",
-        "Les Demoiselles d’Avignon"
+        "Tosca",
+        "La Bohème",
+        "Madama Butterfly",
+        "Carmen"
       ],
-      "explanation": "Las Meninas: 1656; A Trip to the Moon: 1902; Les Demoiselles d’Avignon: 1907; Psycho: 1960"
+      "explanation": "The work is “Tosca”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2668
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Sept Samouraïs, Citizen Kane, Guernica, Mon voisin Totoro ?",
+      "text": "De quelle année date l’œuvre « La Bohème » ?",
       "options": [
-        "Citizen Kane",
-        "Les Sept Samouraïs",
-        "Guernica",
-        "Mon voisin Totoro"
+        "1896",
+        "1893",
+        "1892",
+        "1900"
       ],
-      "explanation": "Guernica : 1937; Citizen Kane : 1941; Les Sept Samouraïs : 1954; Mon voisin Totoro : 1988"
+      "explanation": "« La Bohème » date de 1896."
     },
     "en": {
-      "text": "Which work is the second oldest among: Seven Samurai, Citizen Kane, Guernica, My Neighbor Totoro?",
+      "text": "What year does the work “La Bohème” date from?",
       "options": [
-        "Citizen Kane",
-        "Seven Samurai",
-        "Guernica",
-        "My Neighbor Totoro"
+        "1896",
+        "1893",
+        "1892",
+        "1900"
       ],
-      "explanation": "Guernica: 1937; Citizen Kane: 1941; Seven Samurai: 1954; My Neighbor Totoro: 1988"
+      "explanation": "“La Bohème” dates to 1896."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2669
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Temps modernes, Psychose, Olympia, Princesse Mononoké ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « La Bohème » ?",
       "options": [
-        "Les Temps modernes",
-        "Psychose",
-        "Olympia",
-        "Princesse Mononoké"
+        "Italie",
+        "France",
+        "Espagne",
+        "Autriche"
       ],
-      "explanation": "Olympia : 1863; Les Temps modernes : 1936; Psychose : 1960; Princesse Mononoké : 1997"
+      "explanation": "Giacomo Puccini, à l’origine de « La Bohème », est né sur le territoire de l’actuel pays « Italie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Modern Times, Psycho, Olympia, Princess Mononoke?",
+      "text": "In which present-day country was the creator behind “La Bohème” born?",
       "options": [
-        "Modern Times",
-        "Psycho",
-        "Olympia",
-        "Princess Mononoke"
+        "Italy",
+        "France",
+        "Spain",
+        "Austria"
       ],
-      "explanation": "Olympia: 1863; Modern Times: 1936; Psycho: 1960; Princess Mononoke: 1997"
+      "explanation": "Giacomo Puccini, who created “La Bohème”, was born in what is now Italy."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2670
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Casse-Noisette, La Bohème, Guernica, La Belle au bois dormant ?",
+      "text": "Quelle œuvre de Giacomo Puccini date de 1896 ?",
       "options": [
-        "Casse-Noisette",
         "La Bohème",
-        "Guernica",
-        "La Belle au bois dormant"
+        "Tosca",
+        "Madame Butterfly",
+        "Carmen"
       ],
-      "explanation": "La Belle au bois dormant : 1890; Casse-Noisette : 1892; La Bohème : 1896; Guernica : 1937"
+      "explanation": "Il s'agit de « La Bohème »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Nutcracker, La Bohème, Guernica, The Sleeping Beauty?",
+      "text": "Which work by Giacomo Puccini dates to 1896?",
       "options": [
-        "The Nutcracker",
         "La Bohème",
-        "Guernica",
-        "The Sleeping Beauty"
+        "Tosca",
+        "Madama Butterfly",
+        "Carmen"
       ],
-      "explanation": "The Sleeping Beauty: 1890; The Nutcracker: 1892; La Bohème: 1896; Guernica: 1937"
+      "explanation": "The work is “La Bohème”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2671
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Impression, soleil levant, La Traviata, Le Barbier de Séville, La Ronde de nuit ?",
+      "text": "De quelle année date l’œuvre « Madame Butterfly » ?",
       "options": [
-        "Le Barbier de Séville",
-        "Impression, soleil levant",
-        "La Traviata",
-        "La Ronde de nuit"
+        "1904",
+        "1902",
+        "1907",
+        "1900"
       ],
-      "explanation": "La Ronde de nuit : 1642; Le Barbier de Séville : 1816; La Traviata : 1853; Impression, soleil levant : 1872"
+      "explanation": "« Madame Butterfly » date de 1904."
     },
     "en": {
-      "text": "Which work is the second oldest among: Impression, Sunrise, La Traviata, The Barber of Seville, The Night Watch?",
+      "text": "What year does the work “Madama Butterfly” date from?",
       "options": [
-        "The Barber of Seville",
-        "Impression, Sunrise",
-        "La Traviata",
-        "The Night Watch"
+        "1904",
+        "1902",
+        "1907",
+        "1900"
       ],
-      "explanation": "The Night Watch: 1642; The Barber of Seville: 1816; La Traviata: 1853; Impression, Sunrise: 1872"
+      "explanation": "“Madama Butterfly” dates to 1904."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2672
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Barbier de Séville, La Bohème, Psychose, Le Voyage dans la Lune ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Madame Butterfly » ?",
       "options": [
-        "La Bohème",
-        "Le Barbier de Séville",
-        "Psychose",
-        "Le Voyage dans la Lune"
+        "Italie",
+        "France",
+        "Espagne",
+        "Autriche"
       ],
-      "explanation": "Le Barbier de Séville : 1816; La Bohème : 1896; Le Voyage dans la Lune : 1902; Psychose : 1960"
+      "explanation": "Giacomo Puccini, à l’origine de « Madame Butterfly », est né sur le territoire de l’actuel pays « Italie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Barber of Seville, La Bohème, Psycho, A Trip to the Moon?",
+      "text": "In which present-day country was the creator behind “Madama Butterfly” born?",
       "options": [
-        "La Bohème",
-        "The Barber of Seville",
-        "Psycho",
-        "A Trip to the Moon"
+        "Italy",
+        "France",
+        "Spain",
+        "Austria"
       ],
-      "explanation": "The Barber of Seville: 1816; La Bohème: 1896; A Trip to the Moon: 1902; Psycho: 1960"
+      "explanation": "Giacomo Puccini, who created “Madama Butterfly”, was born in what is now Italy."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2673
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Psychose, Carmen, Princesse Mononoké, Les Mangeurs de pommes de terre ?",
+      "text": "Quelle œuvre de Giacomo Puccini date de 1904 ?",
       "options": [
-        "Les Mangeurs de pommes de terre",
-        "Psychose",
-        "Carmen",
-        "Princesse Mononoké"
+        "Madame Butterfly",
+        "Tosca",
+        "La Bohème",
+        "Carmen"
       ],
-      "explanation": "Carmen : 1875; Les Mangeurs de pommes de terre : 1885; Psychose : 1960; Princesse Mononoké : 1997"
+      "explanation": "Il s'agit de « Madame Butterfly »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Psycho, Carmen, Princess Mononoke, The Potato Eaters?",
+      "text": "Which work by Giacomo Puccini dates to 1904?",
       "options": [
-        "The Potato Eaters",
-        "Psycho",
-        "Carmen",
-        "Princess Mononoke"
+        "Madama Butterfly",
+        "Tosca",
+        "La Bohème",
+        "Carmen"
       ],
-      "explanation": "Carmen: 1875; The Potato Eaters: 1885; Psycho: 1960; Princess Mononoke: 1997"
+      "explanation": "The work is “Madama Butterfly”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2674
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Aida, Don Giovanni, Les Ménines, Princesse Mononoké ?",
+      "text": "De quelle année date l’œuvre « Le Barbier de Séville » ?",
       "options": [
-        "Don Giovanni",
-        "Aida",
-        "Les Ménines",
-        "Princesse Mononoké"
+        "1816",
+        "1819",
+        "1807",
+        "1830"
       ],
-      "explanation": "Les Ménines : 1656; Don Giovanni : 1787; Aida : 1871; Princesse Mononoké : 1997"
+      "explanation": "« Le Barbier de Séville » date de 1816."
     },
     "en": {
-      "text": "Which work is the second oldest among: Aida, Don Giovanni, Las Meninas, Princess Mononoke?",
+      "text": "What year does the work “The Barber of Seville” date from?",
       "options": [
-        "Don Giovanni",
-        "Aida",
-        "Las Meninas",
-        "Princess Mononoke"
+        "1816",
+        "1819",
+        "1807",
+        "1830"
       ],
-      "explanation": "Las Meninas: 1656; Don Giovanni: 1787; Aida: 1871; Princess Mononoke: 1997"
+      "explanation": "“The Barber of Seville” dates to 1816."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2675
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Belle au bois dormant, Le Voyage de Chihiro, Le Barbier de Séville, Les Ménines ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Le Barbier de Séville » ?",
       "options": [
-        "Le Barbier de Séville",
-        "La Belle au bois dormant",
-        "Le Voyage de Chihiro",
-        "Les Ménines"
+        "Italie",
+        "France",
+        "Espagne",
+        "Autriche"
       ],
-      "explanation": "Les Ménines : 1656; Le Barbier de Séville : 1816; La Belle au bois dormant : 1890; Le Voyage de Chihiro : 2001"
+      "explanation": "Gioachino Rossini, à l’origine de « Le Barbier de Séville », est né sur le territoire de l’actuel pays « Italie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Sleeping Beauty, Spirited Away, The Barber of Seville, Las Meninas?",
+      "text": "In which present-day country was the creator behind “The Barber of Seville” born?",
       "options": [
-        "The Barber of Seville",
-        "The Sleeping Beauty",
-        "Spirited Away",
-        "Las Meninas"
+        "Italy",
+        "France",
+        "Spain",
+        "Austria"
       ],
-      "explanation": "Las Meninas: 1656; The Barber of Seville: 1816; The Sleeping Beauty: 1890; Spirited Away: 2001"
+      "explanation": "Gioachino Rossini, who created “The Barber of Seville”, was born in what is now Italy."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2676
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Dictateur, La Ronde de nuit, Mon voisin Totoro, Olympia ?",
+      "text": "Quelle œuvre de Gioachino Rossini date de 1816 ?",
       "options": [
-        "Olympia",
-        "Le Dictateur",
-        "La Ronde de nuit",
-        "Mon voisin Totoro"
+        "Le Barbier de Séville",
+        "La Flûte enchantée",
+        "Don Giovanni",
+        "Les Noces de Figaro"
       ],
-      "explanation": "La Ronde de nuit : 1642; Olympia : 1863; Le Dictateur : 1940; Mon voisin Totoro : 1988"
+      "explanation": "Il s'agit de « Le Barbier de Séville »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Great Dictator, The Night Watch, My Neighbor Totoro, Olympia?",
+      "text": "Which work by Gioachino Rossini dates to 1816?",
       "options": [
-        "Olympia",
-        "The Great Dictator",
-        "The Night Watch",
-        "My Neighbor Totoro"
+        "The Barber of Seville",
+        "The Magic Flute",
+        "Don Giovanni",
+        "The Marriage of Figaro"
       ],
-      "explanation": "The Night Watch: 1642; Olympia: 1863; The Great Dictator: 1940; My Neighbor Totoro: 1988"
+      "explanation": "The work is “The Barber of Seville”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2677
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Voyage dans la Lune, Impression, soleil levant, Les Noces de Figaro, Carmen ?",
+      "text": "De quelle année date l’œuvre « Le Sacre du printemps » ?",
       "options": [
-        "Impression, soleil levant",
-        "Le Voyage dans la Lune",
-        "Les Noces de Figaro",
-        "Carmen"
+        "1913",
+        "1910",
+        "1907",
+        "1904"
       ],
-      "explanation": "Les Noces de Figaro : 1786; Impression, soleil levant : 1872; Carmen : 1875; Le Voyage dans la Lune : 1902"
+      "explanation": "« Le Sacre du printemps » date de 1913."
     },
     "en": {
-      "text": "Which work is the second oldest among: A Trip to the Moon, Impression, Sunrise, The Marriage of Figaro, Carmen?",
+      "text": "What year does the work “The Rite of Spring” date from?",
       "options": [
-        "Impression, Sunrise",
-        "A Trip to the Moon",
-        "The Marriage of Figaro",
-        "Carmen"
+        "1913",
+        "1910",
+        "1907",
+        "1904"
       ],
-      "explanation": "The Marriage of Figaro: 1786; Impression, Sunrise: 1872; Carmen: 1875; A Trip to the Moon: 1902"
+      "explanation": "“The Rite of Spring” dates to 1913."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2678
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Mangeurs de pommes de terre, La Bohème, Olympia, Guernica ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Le Sacre du printemps » ?",
       "options": [
-        "Les Mangeurs de pommes de terre",
-        "La Bohème",
-        "Olympia",
-        "Guernica"
+        "Russie",
+        "Ukraine",
+        "Pologne",
+        "Allemagne"
       ],
-      "explanation": "Olympia : 1863; Les Mangeurs de pommes de terre : 1885; La Bohème : 1896; Guernica : 1937"
+      "explanation": "Igor Stravinsky, à l’origine de « Le Sacre du printemps », est né sur le territoire de l’actuel pays « Russie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Potato Eaters, La Bohème, Olympia, Guernica?",
+      "text": "In which present-day country was the creator behind “The Rite of Spring” born?",
       "options": [
-        "The Potato Eaters",
-        "La Bohème",
-        "Olympia",
-        "Guernica"
+        "Russia",
+        "Ukraine",
+        "Poland",
+        "Germany"
       ],
-      "explanation": "Olympia: 1863; The Potato Eaters: 1885; La Bohème: 1896; Guernica: 1937"
+      "explanation": "Igor Stravinsky, who created “The Rite of Spring”, was born in what is now Russia."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2679
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Serment des Horaces, Les Sept Samouraïs, Les Demoiselles d’Avignon, La Trahison des images ?",
+      "text": "Quelle œuvre de Igor Stravinsky date de 1913 ?",
       "options": [
-        "Les Demoiselles d’Avignon",
-        "Le Serment des Horaces",
-        "Les Sept Samouraïs",
-        "La Trahison des images"
+        "Le Sacre du printemps",
+        "L’Oiseau de feu",
+        "Casse-Noisette",
+        "La Belle au bois dormant"
       ],
-      "explanation": "Le Serment des Horaces : 1784; Les Demoiselles d’Avignon : 1907; La Trahison des images : 1929; Les Sept Samouraïs : 1954"
+      "explanation": "Il s'agit de « Le Sacre du printemps »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Oath of the Horatii, Seven Samurai, Les Demoiselles d’Avignon, The Treachery of Images?",
+      "text": "Which work by Igor Stravinsky dates to 1913?",
       "options": [
-        "Les Demoiselles d’Avignon",
-        "The Oath of the Horatii",
-        "Seven Samurai",
-        "The Treachery of Images"
+        "The Rite of Spring",
+        "The Firebird",
+        "The Nutcracker",
+        "The Sleeping Beauty"
       ],
-      "explanation": "The Oath of the Horatii: 1784; Les Demoiselles d’Avignon: 1907; The Treachery of Images: 1929; Seven Samurai: 1954"
+      "explanation": "The work is “The Rite of Spring”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2680
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Mon voisin Totoro, La Liberté guidant le peuple, American Gothic, Symphonie du Nouveau Monde ?",
+      "text": "De quelle année date l’œuvre « L’Oiseau de feu » ?",
       "options": [
-        "Symphonie du Nouveau Monde",
-        "Mon voisin Totoro",
-        "La Liberté guidant le peuple",
-        "American Gothic"
+        "1910",
+        "1907",
+        "1913",
+        "1904"
       ],
-      "explanation": "La Liberté guidant le peuple : 1830; Symphonie du Nouveau Monde : 1893; American Gothic : 1930; Mon voisin Totoro : 1988"
+      "explanation": "« L’Oiseau de feu » date de 1910."
     },
     "en": {
-      "text": "Which work is the second oldest among: My Neighbor Totoro, Liberty Leading the People, American Gothic, New World Symphony?",
+      "text": "What year does the work “The Firebird” date from?",
       "options": [
-        "New World Symphony",
-        "My Neighbor Totoro",
-        "Liberty Leading the People",
-        "American Gothic"
+        "1910",
+        "1907",
+        "1913",
+        "1904"
       ],
-      "explanation": "Liberty Leading the People: 1830; New World Symphony: 1893; American Gothic: 1930; My Neighbor Totoro: 1988"
+      "explanation": "“The Firebird” dates to 1910."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2681
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Casse-Noisette, Le Dictateur, Tosca, Les Temps modernes ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « L’Oiseau de feu » ?",
       "options": [
-        "Tosca",
-        "Casse-Noisette",
-        "Le Dictateur",
-        "Les Temps modernes"
+        "Russie",
+        "Ukraine",
+        "Pologne",
+        "Allemagne"
       ],
-      "explanation": "Casse-Noisette : 1892; Tosca : 1900; Les Temps modernes : 1936; Le Dictateur : 1940"
+      "explanation": "Igor Stravinsky, à l’origine de « L’Oiseau de feu », est né sur le territoire de l’actuel pays « Russie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Nutcracker, The Great Dictator, Tosca, Modern Times?",
+      "text": "In which present-day country was the creator behind “The Firebird” born?",
       "options": [
-        "Tosca",
-        "The Nutcracker",
-        "The Great Dictator",
-        "Modern Times"
+        "Russia",
+        "Ukraine",
+        "Poland",
+        "Germany"
       ],
-      "explanation": "The Nutcracker: 1892; Tosca: 1900; Modern Times: 1936; The Great Dictator: 1940"
+      "explanation": "Igor Stravinsky, who created “The Firebird”, was born in what is now Russia."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2682
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Sacre du printemps, Le Barbier de Séville, Le Lac des cygnes, Le Déjeuner sur l’herbe ?",
+      "text": "Quelle œuvre de Igor Stravinsky date de 1910 ?",
       "options": [
-        "Le Déjeuner sur l’herbe",
+        "L’Oiseau de feu",
         "Le Sacre du printemps",
-        "Le Barbier de Séville",
-        "Le Lac des cygnes"
+        "Casse-Noisette",
+        "La Belle au bois dormant"
       ],
-      "explanation": "Le Barbier de Séville : 1816; Le Déjeuner sur l’herbe : 1863; Le Lac des cygnes : 1877; Le Sacre du printemps : 1913"
+      "explanation": "Il s'agit de « L’Oiseau de feu »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Rite of Spring, The Barber of Seville, Swan Lake, Le Déjeuner sur l’herbe?",
+      "text": "Which work by Igor Stravinsky dates to 1910?",
       "options": [
-        "Le Déjeuner sur l’herbe",
+        "The Firebird",
         "The Rite of Spring",
-        "The Barber of Seville",
-        "Swan Lake"
+        "The Nutcracker",
+        "The Sleeping Beauty"
       ],
-      "explanation": "The Barber of Seville: 1816; Le Déjeuner sur l’herbe: 1863; Swan Lake: 1877; The Rite of Spring: 1913"
+      "explanation": "The work is “The Firebird”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2683
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Demoiselles d’Avignon, Olympia, La Ronde de nuit, Citizen Kane ?",
+      "text": "De quelle année date l’œuvre « Le Lac des cygnes » ?",
       "options": [
-        "Olympia",
-        "Les Demoiselles d’Avignon",
-        "La Ronde de nuit",
-        "Citizen Kane"
+        "1877",
+        "1875",
+        "1872",
+        "1871"
       ],
-      "explanation": "La Ronde de nuit : 1642; Olympia : 1863; Les Demoiselles d’Avignon : 1907; Citizen Kane : 1941"
+      "explanation": "« Le Lac des cygnes » date de 1877."
     },
     "en": {
-      "text": "Which work is the second oldest among: Les Demoiselles d’Avignon, Olympia, The Night Watch, Citizen Kane?",
+      "text": "What year does the work “Swan Lake” date from?",
       "options": [
-        "Olympia",
-        "Les Demoiselles d’Avignon",
-        "The Night Watch",
-        "Citizen Kane"
+        "1877",
+        "1875",
+        "1872",
+        "1871"
       ],
-      "explanation": "The Night Watch: 1642; Olympia: 1863; Les Demoiselles d’Avignon: 1907; Citizen Kane: 1941"
+      "explanation": "“Swan Lake” dates to 1877."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2684
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Radeau de La Méduse, Don Giovanni, La Jeune Fille à la perle, Citizen Kane ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Le Lac des cygnes » ?",
       "options": [
-        "Don Giovanni",
-        "Le Radeau de La Méduse",
-        "La Jeune Fille à la perle",
-        "Citizen Kane"
+        "Russie",
+        "Ukraine",
+        "Pologne",
+        "Allemagne"
       ],
-      "explanation": "La Jeune Fille à la perle : 1665; Don Giovanni : 1787; Le Radeau de La Méduse : 1819; Citizen Kane : 1941"
+      "explanation": "Pyotr Ilyich Tchaikovsky, à l’origine de « Le Lac des cygnes », est né sur le territoire de l’actuel pays « Russie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Raft of the Medusa, Don Giovanni, Girl with a Pearl Earring, Citizen Kane?",
+      "text": "In which present-day country was the creator behind “Swan Lake” born?",
       "options": [
-        "Don Giovanni",
-        "The Raft of the Medusa",
-        "Girl with a Pearl Earring",
-        "Citizen Kane"
+        "Russia",
+        "Ukraine",
+        "Poland",
+        "Germany"
       ],
-      "explanation": "Girl with a Pearl Earring: 1665; Don Giovanni: 1787; The Raft of the Medusa: 1819; Citizen Kane: 1941"
+      "explanation": "Pyotr Ilyich Tchaikovsky, who created “Swan Lake”, was born in what is now Russia."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2685
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Sept Samouraïs, Citizen Kane, Symphonie du Nouveau Monde, Olympia ?",
+      "text": "Quelle œuvre de Pyotr Ilyich Tchaikovsky date de 1877 ?",
       "options": [
-        "Symphonie du Nouveau Monde",
-        "Les Sept Samouraïs",
-        "Citizen Kane",
-        "Olympia"
+        "Le Lac des cygnes",
+        "La Belle au bois dormant",
+        "Casse-Noisette",
+        "L’Oiseau de feu"
       ],
-      "explanation": "Olympia : 1863; Symphonie du Nouveau Monde : 1893; Citizen Kane : 1941; Les Sept Samouraïs : 1954"
+      "explanation": "Il s'agit de « Le Lac des cygnes »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Seven Samurai, Citizen Kane, New World Symphony, Olympia?",
+      "text": "Which work by Pyotr Ilyich Tchaikovsky dates to 1877?",
       "options": [
-        "New World Symphony",
-        "Seven Samurai",
-        "Citizen Kane",
-        "Olympia"
+        "Swan Lake",
+        "The Sleeping Beauty",
+        "The Nutcracker",
+        "The Firebird"
       ],
-      "explanation": "Olympia: 1863; New World Symphony: 1893; Citizen Kane: 1941; Seven Samurai: 1954"
+      "explanation": "The work is “Swan Lake”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2686
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Persistance de la mémoire, Rigoletto, L’Oiseau de feu, Les Mangeurs de pommes de terre ?",
+      "text": "De quelle année date l’œuvre « Casse-Noisette » ?",
       "options": [
-        "Les Mangeurs de pommes de terre",
-        "La Persistance de la mémoire",
-        "Rigoletto",
-        "L’Oiseau de feu"
+        "1892",
+        "1893",
+        "1890",
+        "1889"
       ],
-      "explanation": "Rigoletto : 1851; Les Mangeurs de pommes de terre : 1885; L’Oiseau de feu : 1910; La Persistance de la mémoire : 1931"
+      "explanation": "« Casse-Noisette » date de 1892."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Persistence of Memory, Rigoletto, The Firebird, The Potato Eaters?",
+      "text": "What year does the work “The Nutcracker” date from?",
       "options": [
-        "The Potato Eaters",
-        "The Persistence of Memory",
-        "Rigoletto",
-        "The Firebird"
+        "1892",
+        "1893",
+        "1890",
+        "1889"
       ],
-      "explanation": "Rigoletto: 1851; The Potato Eaters: 1885; The Firebird: 1910; The Persistence of Memory: 1931"
+      "explanation": "“The Nutcracker” dates to 1892."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2687
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Tosca, Le Voyage dans la Lune, Les Sept Samouraïs, La Traviata ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Casse-Noisette » ?",
       "options": [
-        "Tosca",
-        "Le Voyage dans la Lune",
-        "Les Sept Samouraïs",
-        "La Traviata"
+        "Russie",
+        "Ukraine",
+        "Pologne",
+        "Allemagne"
       ],
-      "explanation": "La Traviata : 1853; Tosca : 1900; Le Voyage dans la Lune : 1902; Les Sept Samouraïs : 1954"
+      "explanation": "Pyotr Ilyich Tchaikovsky, à l’origine de « Casse-Noisette », est né sur le territoire de l’actuel pays « Russie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Tosca, A Trip to the Moon, Seven Samurai, La Traviata?",
+      "text": "In which present-day country was the creator behind “The Nutcracker” born?",
       "options": [
-        "Tosca",
-        "A Trip to the Moon",
-        "Seven Samurai",
-        "La Traviata"
+        "Russia",
+        "Ukraine",
+        "Poland",
+        "Germany"
       ],
-      "explanation": "La Traviata: 1853; Tosca: 1900; A Trip to the Moon: 1902; Seven Samurai: 1954"
+      "explanation": "Pyotr Ilyich Tchaikovsky, who created “The Nutcracker”, was born in what is now Russia."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2688
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Oiseaux, La Persistance de la mémoire, Les Ménines, Le Barbier de Séville ?",
+      "text": "Quelle œuvre de Pyotr Ilyich Tchaikovsky date de 1892 ?",
       "options": [
-        "Le Barbier de Séville",
-        "Les Oiseaux",
-        "La Persistance de la mémoire",
-        "Les Ménines"
+        "Casse-Noisette",
+        "La Belle au bois dormant",
+        "Le Lac des cygnes",
+        "L’Oiseau de feu"
       ],
-      "explanation": "Les Ménines : 1656; Le Barbier de Séville : 1816; La Persistance de la mémoire : 1931; Les Oiseaux : 1963"
+      "explanation": "Il s'agit de « Casse-Noisette »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Birds, The Persistence of Memory, Las Meninas, The Barber of Seville?",
+      "text": "Which work by Pyotr Ilyich Tchaikovsky dates to 1892?",
       "options": [
-        "The Barber of Seville",
-        "The Birds",
-        "The Persistence of Memory",
-        "Las Meninas"
+        "The Nutcracker",
+        "The Sleeping Beauty",
+        "Swan Lake",
+        "The Firebird"
       ],
-      "explanation": "Las Meninas: 1656; The Barber of Seville: 1816; The Persistence of Memory: 1931; The Birds: 1963"
+      "explanation": "The work is “The Nutcracker”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2689
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Dictateur, Guernica, Les Sept Samouraïs, Rigoletto ?",
+      "text": "De quelle année date l’œuvre « La Belle au bois dormant » ?",
       "options": [
-        "Guernica",
-        "Le Dictateur",
-        "Les Sept Samouraïs",
-        "Rigoletto"
+        "1890",
+        "1889",
+        "1892",
+        "1893"
       ],
-      "explanation": "Rigoletto : 1851; Guernica : 1937; Le Dictateur : 1940; Les Sept Samouraïs : 1954"
+      "explanation": "« La Belle au bois dormant » date de 1890."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Great Dictator, Guernica, Seven Samurai, Rigoletto?",
+      "text": "What year does the work “The Sleeping Beauty” date from?",
       "options": [
-        "Guernica",
-        "The Great Dictator",
-        "Seven Samurai",
-        "Rigoletto"
+        "1890",
+        "1889",
+        "1892",
+        "1893"
       ],
-      "explanation": "Rigoletto: 1851; Guernica: 1937; The Great Dictator: 1940; Seven Samurai: 1954"
+      "explanation": "“The Sleeping Beauty” dates to 1890."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2690
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Casse-Noisette, Madame Butterfly, La Mort de Marat, Aida ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « La Belle au bois dormant » ?",
       "options": [
-        "Aida",
-        "Casse-Noisette",
-        "Madame Butterfly",
-        "La Mort de Marat"
+        "Russie",
+        "Ukraine",
+        "Pologne",
+        "Allemagne"
       ],
-      "explanation": "La Mort de Marat : 1793; Aida : 1871; Casse-Noisette : 1892; Madame Butterfly : 1904"
+      "explanation": "Pyotr Ilyich Tchaikovsky, à l’origine de « La Belle au bois dormant », est né sur le territoire de l’actuel pays « Russie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Nutcracker, Madama Butterfly, The Death of Marat, Aida?",
+      "text": "In which present-day country was the creator behind “The Sleeping Beauty” born?",
       "options": [
-        "Aida",
-        "The Nutcracker",
-        "Madama Butterfly",
-        "The Death of Marat"
+        "Russia",
+        "Ukraine",
+        "Poland",
+        "Germany"
       ],
-      "explanation": "The Death of Marat: 1793; Aida: 1871; The Nutcracker: 1892; Madama Butterfly: 1904"
+      "explanation": "Pyotr Ilyich Tchaikovsky, who created “The Sleeping Beauty”, was born in what is now Russia."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2691
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Liberté guidant le peuple, Le Voyage dans la Lune, Aida, American Gothic ?",
+      "text": "Quelle œuvre de Pyotr Ilyich Tchaikovsky date de 1890 ?",
       "options": [
-        "Aida",
-        "La Liberté guidant le peuple",
-        "Le Voyage dans la Lune",
-        "American Gothic"
+        "La Belle au bois dormant",
+        "Casse-Noisette",
+        "Le Lac des cygnes",
+        "L’Oiseau de feu"
       ],
-      "explanation": "La Liberté guidant le peuple : 1830; Aida : 1871; Le Voyage dans la Lune : 1902; American Gothic : 1930"
+      "explanation": "Il s'agit de « La Belle au bois dormant »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Liberty Leading the People, A Trip to the Moon, Aida, American Gothic?",
+      "text": "Which work by Pyotr Ilyich Tchaikovsky dates to 1890?",
       "options": [
-        "Aida",
-        "Liberty Leading the People",
-        "A Trip to the Moon",
-        "American Gothic"
+        "The Sleeping Beauty",
+        "The Nutcracker",
+        "Swan Lake",
+        "The Firebird"
       ],
-      "explanation": "Liberty Leading the People: 1830; Aida: 1871; A Trip to the Moon: 1902; American Gothic: 1930"
+      "explanation": "The work is “The Sleeping Beauty”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2692
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Ronde de nuit, Le Déjeuner sur l’herbe, La Persistance de la mémoire, Les Ménines ?",
+      "text": "De quelle année date l’œuvre « Symphonie fantastique » ?",
       "options": [
-        "Les Ménines",
-        "La Ronde de nuit",
-        "Le Déjeuner sur l’herbe",
-        "La Persistance de la mémoire"
+        "1830",
+        "1819",
+        "1816",
+        "1851"
       ],
-      "explanation": "La Ronde de nuit : 1642; Les Ménines : 1656; Le Déjeuner sur l’herbe : 1863; La Persistance de la mémoire : 1931"
+      "explanation": "« Symphonie fantastique » date de 1830."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Night Watch, Le Déjeuner sur l’herbe, The Persistence of Memory, Las Meninas?",
+      "text": "What year does the work “Symphonie fantastique” date from?",
       "options": [
-        "Las Meninas",
-        "The Night Watch",
-        "Le Déjeuner sur l’herbe",
-        "The Persistence of Memory"
+        "1830",
+        "1819",
+        "1816",
+        "1851"
       ],
-      "explanation": "The Night Watch: 1642; Las Meninas: 1656; Le Déjeuner sur l’herbe: 1863; The Persistence of Memory: 1931"
+      "explanation": "“Symphonie fantastique” dates to 1830."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2693
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Madame Butterfly, La Traviata, Les Oiseaux, Princesse Mononoké ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Symphonie fantastique » ?",
       "options": [
-        "Madame Butterfly",
-        "La Traviata",
-        "Les Oiseaux",
-        "Princesse Mononoké"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "La Traviata : 1853; Madame Butterfly : 1904; Les Oiseaux : 1963; Princesse Mononoké : 1997"
+      "explanation": "Hector Berlioz, à l’origine de « Symphonie fantastique », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Madama Butterfly, La Traviata, The Birds, Princess Mononoke?",
+      "text": "In which present-day country was the creator behind “Symphonie fantastique” born?",
       "options": [
-        "Madama Butterfly",
-        "La Traviata",
-        "The Birds",
-        "Princess Mononoke"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "La Traviata: 1853; Madama Butterfly: 1904; The Birds: 1963; Princess Mononoke: 1997"
+      "explanation": "Hector Berlioz, who created “Symphonie fantastique”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2694
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Ronde de nuit, La Bohème, Rigoletto, Guernica ?",
+      "text": "Quelle œuvre de Hector Berlioz date de 1830 ?",
       "options": [
-        "Rigoletto",
-        "La Ronde de nuit",
-        "La Bohème",
-        "Guernica"
+        "Symphonie fantastique",
+        "Symphonie du Nouveau Monde",
+        "La Liberté guidant le peuple",
+        "Le Radeau de La Méduse"
       ],
-      "explanation": "La Ronde de nuit : 1642; Rigoletto : 1851; La Bohème : 1896; Guernica : 1937"
+      "explanation": "Il s'agit de « Symphonie fantastique »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Night Watch, La Bohème, Rigoletto, Guernica?",
+      "text": "Which work by Hector Berlioz dates to 1830?",
       "options": [
-        "Rigoletto",
-        "The Night Watch",
-        "La Bohème",
-        "Guernica"
+        "Symphonie fantastique",
+        "New World Symphony",
+        "Liberty Leading the People",
+        "The Raft of the Medusa"
       ],
-      "explanation": "The Night Watch: 1642; Rigoletto: 1851; La Bohème: 1896; Guernica: 1937"
+      "explanation": "The work is “Symphonie fantastique”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2695
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Jeune Fille à la perle, Casse-Noisette, Les Noces de Figaro, La Flûte enchantée ?",
+      "text": "De quelle année date l’œuvre « Symphonie du Nouveau Monde » ?",
       "options": [
-        "Les Noces de Figaro",
-        "La Jeune Fille à la perle",
-        "Casse-Noisette",
-        "La Flûte enchantée"
+        "1893",
+        "1892",
+        "1890",
+        "1896"
       ],
-      "explanation": "La Jeune Fille à la perle : 1665; Les Noces de Figaro : 1786; La Flûte enchantée : 1791; Casse-Noisette : 1892"
+      "explanation": "« Symphonie du Nouveau Monde » date de 1893."
     },
     "en": {
-      "text": "Which work is the second oldest among: Girl with a Pearl Earring, The Nutcracker, The Marriage of Figaro, The Magic Flute?",
+      "text": "What year does the work “New World Symphony” date from?",
       "options": [
-        "The Marriage of Figaro",
-        "Girl with a Pearl Earring",
-        "The Nutcracker",
-        "The Magic Flute"
+        "1893",
+        "1892",
+        "1890",
+        "1896"
       ],
-      "explanation": "Girl with a Pearl Earring: 1665; The Marriage of Figaro: 1786; The Magic Flute: 1791; The Nutcracker: 1892"
+      "explanation": "“New World Symphony” dates to 1893."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2696
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Jeune Fille à la perle, La Bohème, Aida, Princesse Mononoké ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Symphonie du Nouveau Monde » ?",
       "options": [
-        "Aida",
-        "La Jeune Fille à la perle",
-        "La Bohème",
-        "Princesse Mononoké"
+        "Tchéquie",
+        "Slovaquie",
+        "Autriche",
+        "Pologne"
       ],
-      "explanation": "La Jeune Fille à la perle : 1665; Aida : 1871; La Bohème : 1896; Princesse Mononoké : 1997"
+      "explanation": "Antonín Dvořák, à l’origine de « Symphonie du Nouveau Monde », est né sur le territoire de l’actuel pays « Tchéquie »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Girl with a Pearl Earring, La Bohème, Aida, Princess Mononoke?",
+      "text": "In which present-day country was the creator behind “New World Symphony” born?",
       "options": [
-        "Aida",
-        "Girl with a Pearl Earring",
-        "La Bohème",
-        "Princess Mononoke"
+        "Czechia",
+        "Slovakia",
+        "Austria",
+        "Poland"
       ],
-      "explanation": "Girl with a Pearl Earring: 1665; Aida: 1871; La Bohème: 1896; Princess Mononoke: 1997"
+      "explanation": "Antonín Dvořák, who created “New World Symphony”, was born in what is now Czechia."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2697
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Persistance de la mémoire, Le Barbier de Séville, Symphonie fantastique, Carmen ?",
+      "text": "Quelle œuvre de Antonín Dvořák date de 1893 ?",
       "options": [
+        "Symphonie du Nouveau Monde",
         "Symphonie fantastique",
-        "La Persistance de la mémoire",
-        "Le Barbier de Séville",
-        "Carmen"
+        "Casse-Noisette",
+        "La Bohème"
       ],
-      "explanation": "Le Barbier de Séville : 1816; Symphonie fantastique : 1830; Carmen : 1875; La Persistance de la mémoire : 1931"
+      "explanation": "Il s'agit de « Symphonie du Nouveau Monde »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Persistence of Memory, The Barber of Seville, Symphonie fantastique, Carmen?",
+      "text": "Which work by Antonín Dvořák dates to 1893?",
       "options": [
+        "New World Symphony",
         "Symphonie fantastique",
-        "The Persistence of Memory",
-        "The Barber of Seville",
-        "Carmen"
+        "The Nutcracker",
+        "La Bohème"
       ],
-      "explanation": "The Barber of Seville: 1816; Symphonie fantastique: 1830; Carmen: 1875; The Persistence of Memory: 1931"
+      "explanation": "The work is “New World Symphony”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2698
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Ronde de nuit, La Bohème, Impression, soleil levant, Le Lac des cygnes ?",
+      "text": "De quelle année date l’œuvre « Citizen Kane » ?",
       "options": [
-        "Impression, soleil levant",
-        "La Ronde de nuit",
-        "La Bohème",
-        "Le Lac des cygnes"
+        "1941",
+        "1940",
+        "1942",
+        "1937"
       ],
-      "explanation": "La Ronde de nuit : 1642; Impression, soleil levant : 1872; Le Lac des cygnes : 1877; La Bohème : 1896"
+      "explanation": "« Citizen Kane » date de 1941."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Night Watch, La Bohème, Impression, Sunrise, Swan Lake?",
+      "text": "What year does the work “Citizen Kane” date from?",
       "options": [
-        "Impression, Sunrise",
-        "The Night Watch",
-        "La Bohème",
-        "Swan Lake"
+        "1941",
+        "1940",
+        "1942",
+        "1937"
       ],
-      "explanation": "The Night Watch: 1642; Impression, Sunrise: 1872; Swan Lake: 1877; La Bohème: 1896"
+      "explanation": "“Citizen Kane” dates to 1941."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2699
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Mort de Marat, Le Sacre du printemps, Les Mangeurs de pommes de terre, Le Parrain ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Citizen Kane » ?",
       "options": [
-        "Les Mangeurs de pommes de terre",
-        "La Mort de Marat",
-        "Le Sacre du printemps",
-        "Le Parrain"
+        "États-Unis",
+        "Canada",
+        "Royaume-Uni",
+        "Australie"
       ],
-      "explanation": "La Mort de Marat : 1793; Les Mangeurs de pommes de terre : 1885; Le Sacre du printemps : 1913; Le Parrain : 1972"
+      "explanation": "Orson Welles, à l’origine de « Citizen Kane », est né sur le territoire de l’actuel pays « États-Unis »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Death of Marat, The Rite of Spring, The Potato Eaters, The Godfather?",
+      "text": "In which present-day country was the creator behind “Citizen Kane” born?",
       "options": [
-        "The Potato Eaters",
-        "The Death of Marat",
-        "The Rite of Spring",
-        "The Godfather"
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Australia"
       ],
-      "explanation": "The Death of Marat: 1793; The Potato Eaters: 1885; The Rite of Spring: 1913; The Godfather: 1972"
+      "explanation": "Orson Welles, who created “Citizen Kane”, was born in what is now the United States."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2700
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Citizen Kane, Symphonie du Nouveau Monde, Impression, soleil levant, Les Mangeurs de pommes de terre ?",
+      "text": "Quelle œuvre de Orson Welles date de 1941 ?",
       "options": [
-        "Les Mangeurs de pommes de terre",
         "Citizen Kane",
-        "Symphonie du Nouveau Monde",
-        "Impression, soleil levant"
+        "Le Dictateur",
+        "Les Temps modernes",
+        "Les Sept Samouraïs"
       ],
-      "explanation": "Impression, soleil levant : 1872; Les Mangeurs de pommes de terre : 1885; Symphonie du Nouveau Monde : 1893; Citizen Kane : 1941"
+      "explanation": "Il s'agit de « Citizen Kane »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Citizen Kane, New World Symphony, Impression, Sunrise, The Potato Eaters?",
+      "text": "Which work by Orson Welles dates to 1941?",
       "options": [
-        "The Potato Eaters",
         "Citizen Kane",
-        "New World Symphony",
-        "Impression, Sunrise"
+        "The Great Dictator",
+        "Modern Times",
+        "Seven Samurai"
       ],
-      "explanation": "Impression, Sunrise: 1872; The Potato Eaters: 1885; New World Symphony: 1893; Citizen Kane: 1941"
+      "explanation": "The work is “Citizen Kane”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2701
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Belle au bois dormant, Tosca, Psychose, Les Mangeurs de pommes de terre ?",
+      "text": "De quelle année date l’œuvre « Les Sept Samouraïs » ?",
       "options": [
-        "La Belle au bois dormant",
-        "Tosca",
-        "Psychose",
-        "Les Mangeurs de pommes de terre"
+        "1954",
+        "1960",
+        "1963",
+        "1942"
       ],
-      "explanation": "Les Mangeurs de pommes de terre : 1885; La Belle au bois dormant : 1890; Tosca : 1900; Psychose : 1960"
+      "explanation": "« Les Sept Samouraïs » date de 1954."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Sleeping Beauty, Tosca, Psycho, The Potato Eaters?",
+      "text": "What year does the work “Seven Samurai” date from?",
       "options": [
-        "The Sleeping Beauty",
-        "Tosca",
-        "Psycho",
-        "The Potato Eaters"
+        "1954",
+        "1960",
+        "1963",
+        "1942"
       ],
-      "explanation": "The Potato Eaters: 1885; The Sleeping Beauty: 1890; Tosca: 1900; Psycho: 1960"
+      "explanation": "“Seven Samurai” dates to 1954."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2702
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Metropolis, Le Sacre du printemps, L’Oiseau de feu, Citizen Kane ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Les Sept Samouraïs » ?",
       "options": [
-        "Le Sacre du printemps",
-        "Metropolis",
-        "L’Oiseau de feu",
-        "Citizen Kane"
+        "Japon",
+        "Chine",
+        "Corée du Sud",
+        "Inde"
       ],
-      "explanation": "L’Oiseau de feu : 1910; Le Sacre du printemps : 1913; Metropolis : 1927; Citizen Kane : 1941"
+      "explanation": "Akira Kurosawa, à l’origine de « Les Sept Samouraïs », est né sur le territoire de l’actuel pays « Japon »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Metropolis, The Rite of Spring, The Firebird, Citizen Kane?",
+      "text": "In which present-day country was the creator behind “Seven Samurai” born?",
       "options": [
-        "The Rite of Spring",
-        "Metropolis",
-        "The Firebird",
-        "Citizen Kane"
+        "Japan",
+        "China",
+        "South Korea",
+        "India"
       ],
-      "explanation": "The Firebird: 1910; The Rite of Spring: 1913; Metropolis: 1927; Citizen Kane: 1941"
+      "explanation": "Akira Kurosawa, who created “Seven Samurai”, was born in what is now Japan."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2703
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Psychose, L’Oiseau de feu, La Nuit étoilée, Les Temps modernes ?",
+      "text": "Quelle œuvre de Akira Kurosawa date de 1954 ?",
       "options": [
-        "L’Oiseau de feu",
+        "Les Sept Samouraïs",
         "Psychose",
-        "La Nuit étoilée",
-        "Les Temps modernes"
+        "Les Oiseaux",
+        "Citizen Kane"
       ],
-      "explanation": "La Nuit étoilée : 1889; L’Oiseau de feu : 1910; Les Temps modernes : 1936; Psychose : 1960"
+      "explanation": "Il s'agit de « Les Sept Samouraïs »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Psycho, The Firebird, The Starry Night, Modern Times?",
+      "text": "Which work by Akira Kurosawa dates to 1954?",
       "options": [
-        "The Firebird",
+        "Seven Samurai",
         "Psycho",
-        "The Starry Night",
-        "Modern Times"
+        "The Birds",
+        "Citizen Kane"
       ],
-      "explanation": "The Starry Night: 1889; The Firebird: 1910; Modern Times: 1936; Psycho: 1960"
+      "explanation": "The work is “Seven Samurai”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2704
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Symphonie fantastique, Le Barbier de Séville, Le Radeau de La Méduse, Le Lac des cygnes ?",
+      "text": "De quelle année date l’œuvre « Psychose » ?",
       "options": [
-        "Le Radeau de La Méduse",
-        "Symphonie fantastique",
-        "Le Barbier de Séville",
-        "Le Lac des cygnes"
+        "1960",
+        "1963",
+        "1954",
+        "1968"
       ],
-      "explanation": "Le Barbier de Séville : 1816; Le Radeau de La Méduse : 1819; Symphonie fantastique : 1830; Le Lac des cygnes : 1877"
+      "explanation": "« Psychose » date de 1960."
     },
     "en": {
-      "text": "Which work is the second oldest among: Symphonie fantastique, The Barber of Seville, The Raft of the Medusa, Swan Lake?",
+      "text": "What year does the work “Psycho” date from?",
       "options": [
-        "The Raft of the Medusa",
-        "Symphonie fantastique",
-        "The Barber of Seville",
-        "Swan Lake"
+        "1960",
+        "1963",
+        "1954",
+        "1968"
       ],
-      "explanation": "The Barber of Seville: 1816; The Raft of the Medusa: 1819; Symphonie fantastique: 1830; Swan Lake: 1877"
+      "explanation": "“Psycho” dates to 1960."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2705
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Psychose, Princesse Mononoké, Guernica, Casse-Noisette ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Psychose » ?",
       "options": [
-        "Guernica",
-        "Psychose",
-        "Princesse Mononoké",
-        "Casse-Noisette"
+        "Royaume-Uni",
+        "Irlande",
+        "France",
+        "États-Unis"
       ],
-      "explanation": "Casse-Noisette : 1892; Guernica : 1937; Psychose : 1960; Princesse Mononoké : 1997"
+      "explanation": "Alfred Hitchcock, à l’origine de « Psychose », est né sur le territoire de l’actuel pays « Royaume-Uni »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Psycho, Princess Mononoke, Guernica, The Nutcracker?",
+      "text": "In which present-day country was the creator behind “Psycho” born?",
       "options": [
-        "Guernica",
-        "Psycho",
-        "Princess Mononoke",
-        "The Nutcracker"
+        "United Kingdom",
+        "Ireland",
+        "France",
+        "United States"
       ],
-      "explanation": "The Nutcracker: 1892; Guernica: 1937; Psycho: 1960; Princess Mononoke: 1997"
+      "explanation": "Alfred Hitchcock, who created “Psycho”, was born in what is now the United Kingdom."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2706
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Jeune Fille à la perle, 2001 : L’Odyssée de l’espace, Princesse Mononoké, La Persistance de la mémoire ?",
+      "text": "Quelle œuvre de Alfred Hitchcock date de 1960 ?",
       "options": [
-        "La Persistance de la mémoire",
-        "La Jeune Fille à la perle",
-        "2001 : L’Odyssée de l’espace",
-        "Princesse Mononoké"
+        "Psychose",
+        "Les Oiseaux",
+        "Les Sept Samouraïs",
+        "2001 : L’Odyssée de l’espace"
       ],
-      "explanation": "La Jeune Fille à la perle : 1665; La Persistance de la mémoire : 1931; 2001 : L’Odyssée de l’espace : 1968; Princesse Mononoké : 1997"
+      "explanation": "Il s'agit de « Psychose »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Girl with a Pearl Earring, 2001: A Space Odyssey, Princess Mononoke, The Persistence of Memory?",
+      "text": "Which work by Alfred Hitchcock dates to 1960?",
       "options": [
-        "The Persistence of Memory",
-        "Girl with a Pearl Earring",
-        "2001: A Space Odyssey",
-        "Princess Mononoke"
+        "Psycho",
+        "The Birds",
+        "Seven Samurai",
+        "2001: A Space Odyssey"
       ],
-      "explanation": "Girl with a Pearl Earring: 1665; The Persistence of Memory: 1931; 2001: A Space Odyssey: 1968; Princess Mononoke: 1997"
+      "explanation": "The work is “Psycho”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2707
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : 2001 : L’Odyssée de l’espace, La Jeune Fille à la perle, Le Radeau de La Méduse, Les Oiseaux ?",
+      "text": "De quelle année date l’œuvre « Les Oiseaux » ?",
       "options": [
-        "Le Radeau de La Méduse",
-        "2001 : L’Odyssée de l’espace",
-        "La Jeune Fille à la perle",
-        "Les Oiseaux"
+        "1963",
+        "1960",
+        "1968",
+        "1954"
       ],
-      "explanation": "La Jeune Fille à la perle : 1665; Le Radeau de La Méduse : 1819; Les Oiseaux : 1963; 2001 : L’Odyssée de l’espace : 1968"
+      "explanation": "« Les Oiseaux » date de 1963."
     },
     "en": {
-      "text": "Which work is the second oldest among: 2001: A Space Odyssey, Girl with a Pearl Earring, The Raft of the Medusa, The Birds?",
+      "text": "What year does the work “The Birds” date from?",
       "options": [
-        "The Raft of the Medusa",
-        "2001: A Space Odyssey",
-        "Girl with a Pearl Earring",
-        "The Birds"
+        "1963",
+        "1960",
+        "1968",
+        "1954"
       ],
-      "explanation": "Girl with a Pearl Earring: 1665; The Raft of the Medusa: 1819; The Birds: 1963; 2001: A Space Odyssey: 1968"
+      "explanation": "“The Birds” dates to 1963."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2708
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Casse-Noisette, Impression, soleil levant, Le Déjeuner sur l’herbe, 2001 : L’Odyssée de l’espace ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Les Oiseaux » ?",
       "options": [
-        "Impression, soleil levant",
-        "Casse-Noisette",
-        "Le Déjeuner sur l’herbe",
-        "2001 : L’Odyssée de l’espace"
+        "Royaume-Uni",
+        "Irlande",
+        "France",
+        "États-Unis"
       ],
-      "explanation": "Le Déjeuner sur l’herbe : 1863; Impression, soleil levant : 1872; Casse-Noisette : 1892; 2001 : L’Odyssée de l’espace : 1968"
+      "explanation": "Alfred Hitchcock, à l’origine de « Les Oiseaux », est né sur le territoire de l’actuel pays « Royaume-Uni »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Nutcracker, Impression, Sunrise, Le Déjeuner sur l’herbe, 2001: A Space Odyssey?",
+      "text": "In which present-day country was the creator behind “The Birds” born?",
       "options": [
-        "Impression, Sunrise",
-        "The Nutcracker",
-        "Le Déjeuner sur l’herbe",
-        "2001: A Space Odyssey"
+        "United Kingdom",
+        "Ireland",
+        "France",
+        "United States"
       ],
-      "explanation": "Le Déjeuner sur l’herbe: 1863; Impression, Sunrise: 1872; The Nutcracker: 1892; 2001: A Space Odyssey: 1968"
+      "explanation": "Alfred Hitchcock, who created “The Birds”, was born in what is now the United Kingdom."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2709
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Mangeurs de pommes de terre, 2001 : L’Odyssée de l’espace, Carmen, Metropolis ?",
+      "text": "Quelle œuvre de Alfred Hitchcock date de 1963 ?",
       "options": [
-        "Les Mangeurs de pommes de terre",
+        "Les Oiseaux",
+        "Psychose",
         "2001 : L’Odyssée de l’espace",
-        "Carmen",
-        "Metropolis"
+        "Les Sept Samouraïs"
       ],
-      "explanation": "Carmen : 1875; Les Mangeurs de pommes de terre : 1885; Metropolis : 1927; 2001 : L’Odyssée de l’espace : 1968"
+      "explanation": "Il s'agit de « Les Oiseaux »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Potato Eaters, 2001: A Space Odyssey, Carmen, Metropolis?",
+      "text": "Which work by Alfred Hitchcock dates to 1963?",
       "options": [
-        "The Potato Eaters",
+        "The Birds",
+        "Psycho",
         "2001: A Space Odyssey",
-        "Carmen",
-        "Metropolis"
+        "Seven Samurai"
       ],
-      "explanation": "Carmen: 1875; The Potato Eaters: 1885; Metropolis: 1927; 2001: A Space Odyssey: 1968"
+      "explanation": "The work is “The Birds”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2710
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Mort de Marat, Le Barbier de Séville, Les Sept Samouraïs, L’Oiseau de feu ?",
+      "text": "De quelle année date l’œuvre « 2001 : L’Odyssée de l’espace » ?",
       "options": [
-        "Le Barbier de Séville",
-        "La Mort de Marat",
-        "Les Sept Samouraïs",
-        "L’Oiseau de feu"
+        "1968",
+        "1972",
+        "1963",
+        "1960"
       ],
-      "explanation": "La Mort de Marat : 1793; Le Barbier de Séville : 1816; L’Oiseau de feu : 1910; Les Sept Samouraïs : 1954"
+      "explanation": "« 2001 : L’Odyssée de l’espace » date de 1968."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Death of Marat, The Barber of Seville, Seven Samurai, The Firebird?",
+      "text": "What year does the work “2001: A Space Odyssey” date from?",
       "options": [
-        "The Barber of Seville",
-        "The Death of Marat",
-        "Seven Samurai",
-        "The Firebird"
+        "1968",
+        "1972",
+        "1963",
+        "1960"
       ],
-      "explanation": "The Death of Marat: 1793; The Barber of Seville: 1816; The Firebird: 1910; Seven Samurai: 1954"
+      "explanation": "“2001: A Space Odyssey” dates to 1968."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2711
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Belle au bois dormant, Les Oiseaux, La Ronde de nuit, Les Sept Samouraïs ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « 2001 : L’Odyssée de l’espace » ?",
       "options": [
-        "La Belle au bois dormant",
-        "Les Oiseaux",
-        "La Ronde de nuit",
-        "Les Sept Samouraïs"
+        "États-Unis",
+        "Canada",
+        "Royaume-Uni",
+        "Australie"
       ],
-      "explanation": "La Ronde de nuit : 1642; La Belle au bois dormant : 1890; Les Sept Samouraïs : 1954; Les Oiseaux : 1963"
+      "explanation": "Stanley Kubrick, à l’origine de « 2001 : L’Odyssée de l’espace », est né sur le territoire de l’actuel pays « États-Unis »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Sleeping Beauty, The Birds, The Night Watch, Seven Samurai?",
+      "text": "In which present-day country was the creator behind “2001: A Space Odyssey” born?",
       "options": [
-        "The Sleeping Beauty",
-        "The Birds",
-        "The Night Watch",
-        "Seven Samurai"
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Australia"
       ],
-      "explanation": "The Night Watch: 1642; The Sleeping Beauty: 1890; Seven Samurai: 1954; The Birds: 1963"
+      "explanation": "Stanley Kubrick, who created “2001: A Space Odyssey”, was born in what is now the United States."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2712
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Psychose, Olympia, Le Lac des cygnes, Impression, soleil levant ?",
+      "text": "Quelle œuvre de Stanley Kubrick date de 1968 ?",
       "options": [
-        "Impression, soleil levant",
-        "Psychose",
-        "Olympia",
-        "Le Lac des cygnes"
+        "2001 : L’Odyssée de l’espace",
+        "Le Parrain",
+        "Les Oiseaux",
+        "Psychose"
       ],
-      "explanation": "Olympia : 1863; Impression, soleil levant : 1872; Le Lac des cygnes : 1877; Psychose : 1960"
+      "explanation": "Il s'agit de « 2001 : L’Odyssée de l’espace »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Psycho, Olympia, Swan Lake, Impression, Sunrise?",
+      "text": "Which work by Stanley Kubrick dates to 1968?",
       "options": [
-        "Impression, Sunrise",
-        "Psycho",
-        "Olympia",
-        "Swan Lake"
+        "2001: A Space Odyssey",
+        "The Godfather",
+        "The Birds",
+        "Psycho"
       ],
-      "explanation": "Olympia: 1863; Impression, Sunrise: 1872; Swan Lake: 1877; Psycho: 1960"
+      "explanation": "The work is “2001: A Space Odyssey”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2713
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Trahison des images, Les Mangeurs de pommes de terre, Rigoletto, Casse-Noisette ?",
+      "text": "De quelle année date l’œuvre « Le Parrain » ?",
       "options": [
-        "Les Mangeurs de pommes de terre",
-        "La Trahison des images",
-        "Rigoletto",
-        "Casse-Noisette"
+        "1972",
+        "1968",
+        "1963",
+        "1960"
       ],
-      "explanation": "Rigoletto : 1851; Les Mangeurs de pommes de terre : 1885; Casse-Noisette : 1892; La Trahison des images : 1929"
+      "explanation": "« Le Parrain » date de 1972."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Treachery of Images, The Potato Eaters, Rigoletto, The Nutcracker?",
+      "text": "What year does the work “The Godfather” date from?",
       "options": [
-        "The Potato Eaters",
-        "The Treachery of Images",
-        "Rigoletto",
-        "The Nutcracker"
+        "1972",
+        "1968",
+        "1963",
+        "1960"
       ],
-      "explanation": "Rigoletto: 1851; The Potato Eaters: 1885; The Nutcracker: 1892; The Treachery of Images: 1929"
+      "explanation": "“The Godfather” dates to 1972."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2714
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Sacre de Napoléon, La Flûte enchantée, Les Mangeurs de pommes de terre, L’Oiseau de feu ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Le Parrain » ?",
       "options": [
-        "Le Sacre de Napoléon",
-        "La Flûte enchantée",
-        "Les Mangeurs de pommes de terre",
-        "L’Oiseau de feu"
+        "États-Unis",
+        "Canada",
+        "Royaume-Uni",
+        "Australie"
       ],
-      "explanation": "La Flûte enchantée : 1791; Le Sacre de Napoléon : 1807; Les Mangeurs de pommes de terre : 1885; L’Oiseau de feu : 1910"
+      "explanation": "Francis Ford Coppola, à l’origine de « Le Parrain », est né sur le territoire de l’actuel pays « États-Unis »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Coronation of Napoleon, The Magic Flute, The Potato Eaters, The Firebird?",
+      "text": "In which present-day country was the creator behind “The Godfather” born?",
       "options": [
-        "The Coronation of Napoleon",
-        "The Magic Flute",
-        "The Potato Eaters",
-        "The Firebird"
+        "United States",
+        "Canada",
+        "United Kingdom",
+        "Australia"
       ],
-      "explanation": "The Magic Flute: 1791; The Coronation of Napoleon: 1807; The Potato Eaters: 1885; The Firebird: 1910"
+      "explanation": "Francis Ford Coppola, who created “The Godfather”, was born in what is now the United States."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2715
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Aida, Symphonie fantastique, La Traviata, Les Oiseaux ?",
+      "text": "Quelle œuvre de Francis Ford Coppola date de 1972 ?",
       "options": [
-        "La Traviata",
-        "Aida",
-        "Symphonie fantastique",
-        "Les Oiseaux"
+        "Le Parrain",
+        "2001 : L’Odyssée de l’espace",
+        "Les Oiseaux",
+        "Psychose"
       ],
-      "explanation": "Symphonie fantastique : 1830; La Traviata : 1853; Aida : 1871; Les Oiseaux : 1963"
+      "explanation": "Il s'agit de « Le Parrain »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Aida, Symphonie fantastique, La Traviata, The Birds?",
+      "text": "Which work by Francis Ford Coppola dates to 1972?",
       "options": [
-        "La Traviata",
-        "Aida",
-        "Symphonie fantastique",
-        "The Birds"
+        "The Godfather",
+        "2001: A Space Odyssey",
+        "The Birds",
+        "Psycho"
       ],
-      "explanation": "Symphonie fantastique: 1830; La Traviata: 1853; Aida: 1871; The Birds: 1963"
+      "explanation": "The work is “The Godfather”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2716
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Casse-Noisette, Les Noces de Figaro, La Flûte enchantée, Le Barbier de Séville ?",
+      "text": "De quelle année date l’œuvre « Le Voyage de Chihiro » ?",
       "options": [
-        "La Flûte enchantée",
-        "Casse-Noisette",
-        "Les Noces de Figaro",
-        "Le Barbier de Séville"
+        "2001",
+        "1997",
+        "1988",
+        "1972"
       ],
-      "explanation": "Les Noces de Figaro : 1786; La Flûte enchantée : 1791; Le Barbier de Séville : 1816; Casse-Noisette : 1892"
+      "explanation": "« Le Voyage de Chihiro » date de 2001."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Nutcracker, The Marriage of Figaro, The Magic Flute, The Barber of Seville?",
+      "text": "What year does the work “Spirited Away” date from?",
       "options": [
-        "The Magic Flute",
-        "The Nutcracker",
-        "The Marriage of Figaro",
-        "The Barber of Seville"
+        "2001",
+        "1997",
+        "1988",
+        "1972"
       ],
-      "explanation": "The Marriage of Figaro: 1786; The Magic Flute: 1791; The Barber of Seville: 1816; The Nutcracker: 1892"
+      "explanation": "“Spirited Away” dates to 2001."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2717
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Ménines, La Persistance de la mémoire, Don Giovanni, Le Dictateur ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Le Voyage de Chihiro » ?",
       "options": [
-        "Don Giovanni",
-        "Les Ménines",
-        "La Persistance de la mémoire",
-        "Le Dictateur"
+        "Japon",
+        "Chine",
+        "Corée du Sud",
+        "Inde"
       ],
-      "explanation": "Les Ménines : 1656; Don Giovanni : 1787; La Persistance de la mémoire : 1931; Le Dictateur : 1940"
+      "explanation": "Hayao Miyazaki, à l’origine de « Le Voyage de Chihiro », est né sur le territoire de l’actuel pays « Japon »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Las Meninas, The Persistence of Memory, Don Giovanni, The Great Dictator?",
+      "text": "In which present-day country was the creator behind “Spirited Away” born?",
       "options": [
-        "Don Giovanni",
-        "Las Meninas",
-        "The Persistence of Memory",
-        "The Great Dictator"
+        "Japan",
+        "China",
+        "South Korea",
+        "India"
       ],
-      "explanation": "Las Meninas: 1656; Don Giovanni: 1787; The Persistence of Memory: 1931; The Great Dictator: 1940"
+      "explanation": "Hayao Miyazaki, who created “Spirited Away”, was born in what is now Japan."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2718
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Trahison des images, La Belle au bois dormant, Le Radeau de La Méduse, L’Oiseau de feu ?",
+      "text": "Quelle œuvre de Hayao Miyazaki date de 2001 ?",
       "options": [
-        "La Belle au bois dormant",
-        "La Trahison des images",
-        "Le Radeau de La Méduse",
-        "L’Oiseau de feu"
+        "Le Voyage de Chihiro",
+        "Princesse Mononoké",
+        "Mon voisin Totoro",
+        "Le Parrain"
       ],
-      "explanation": "Le Radeau de La Méduse : 1819; La Belle au bois dormant : 1890; L’Oiseau de feu : 1910; La Trahison des images : 1929"
+      "explanation": "Il s'agit de « Le Voyage de Chihiro »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Treachery of Images, The Sleeping Beauty, The Raft of the Medusa, The Firebird?",
+      "text": "Which work by Hayao Miyazaki dates to 2001?",
       "options": [
-        "The Sleeping Beauty",
-        "The Treachery of Images",
-        "The Raft of the Medusa",
-        "The Firebird"
+        "Spirited Away",
+        "Princess Mononoke",
+        "My Neighbor Totoro",
+        "The Godfather"
       ],
-      "explanation": "The Raft of the Medusa: 1819; The Sleeping Beauty: 1890; The Firebird: 1910; The Treachery of Images: 1929"
+      "explanation": "The work is “Spirited Away”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2719
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : 2001 : L’Odyssée de l’espace, Guernica, Le Voyage de Chihiro, Nighthawks ?",
+      "text": "De quelle année date l’œuvre « Mon voisin Totoro » ?",
       "options": [
-        "Nighthawks",
-        "2001 : L’Odyssée de l’espace",
-        "Guernica",
-        "Le Voyage de Chihiro"
+        "1988",
+        "1997",
+        "2001",
+        "1972"
       ],
-      "explanation": "Guernica : 1937; Nighthawks : 1942; 2001 : L’Odyssée de l’espace : 1968; Le Voyage de Chihiro : 2001"
+      "explanation": "« Mon voisin Totoro » date de 1988."
     },
     "en": {
-      "text": "Which work is the second oldest among: 2001: A Space Odyssey, Guernica, Spirited Away, Nighthawks?",
+      "text": "What year does the work “My Neighbor Totoro” date from?",
       "options": [
-        "Nighthawks",
-        "2001: A Space Odyssey",
-        "Guernica",
-        "Spirited Away"
+        "1988",
+        "1997",
+        "2001",
+        "1972"
       ],
-      "explanation": "Guernica: 1937; Nighthawks: 1942; 2001: A Space Odyssey: 1968; Spirited Away: 2001"
+      "explanation": "“My Neighbor Totoro” dates to 1988."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2720
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Demoiselles d’Avignon, Le Sacre de Napoléon, Les Oiseaux, Olympia ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Mon voisin Totoro » ?",
       "options": [
-        "Olympia",
-        "Les Demoiselles d’Avignon",
-        "Le Sacre de Napoléon",
-        "Les Oiseaux"
+        "Japon",
+        "Chine",
+        "Corée du Sud",
+        "Inde"
       ],
-      "explanation": "Le Sacre de Napoléon : 1807; Olympia : 1863; Les Demoiselles d’Avignon : 1907; Les Oiseaux : 1963"
+      "explanation": "Hayao Miyazaki, à l’origine de « Mon voisin Totoro », est né sur le territoire de l’actuel pays « Japon »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Les Demoiselles d’Avignon, The Coronation of Napoleon, The Birds, Olympia?",
+      "text": "In which present-day country was the creator behind “My Neighbor Totoro” born?",
       "options": [
-        "Olympia",
-        "Les Demoiselles d’Avignon",
-        "The Coronation of Napoleon",
-        "The Birds"
+        "Japan",
+        "China",
+        "South Korea",
+        "India"
       ],
-      "explanation": "The Coronation of Napoleon: 1807; Olympia: 1863; Les Demoiselles d’Avignon: 1907; The Birds: 1963"
+      "explanation": "Hayao Miyazaki, who created “My Neighbor Totoro”, was born in what is now Japan."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2721
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Ronde de nuit, Aida, Impression, soleil levant, La Persistance de la mémoire ?",
+      "text": "Quelle œuvre de Hayao Miyazaki date de 1988 ?",
       "options": [
-        "Aida",
-        "La Ronde de nuit",
-        "Impression, soleil levant",
-        "La Persistance de la mémoire"
+        "Mon voisin Totoro",
+        "Princesse Mononoké",
+        "Le Voyage de Chihiro",
+        "Le Parrain"
       ],
-      "explanation": "La Ronde de nuit : 1642; Aida : 1871; Impression, soleil levant : 1872; La Persistance de la mémoire : 1931"
+      "explanation": "Il s'agit de « Mon voisin Totoro »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Night Watch, Aida, Impression, Sunrise, The Persistence of Memory?",
+      "text": "Which work by Hayao Miyazaki dates to 1988?",
       "options": [
-        "Aida",
-        "The Night Watch",
-        "Impression, Sunrise",
-        "The Persistence of Memory"
+        "My Neighbor Totoro",
+        "Princess Mononoke",
+        "Spirited Away",
+        "The Godfather"
       ],
-      "explanation": "The Night Watch: 1642; Aida: 1871; Impression, Sunrise: 1872; The Persistence of Memory: 1931"
+      "explanation": "The work is “My Neighbor Totoro”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2722
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Ronde de nuit, Le Radeau de La Méduse, Rigoletto, La Traviata ?",
+      "text": "De quelle année date l’œuvre « Princesse Mononoké » ?",
       "options": [
-        "Le Radeau de La Méduse",
-        "La Ronde de nuit",
-        "Rigoletto",
-        "La Traviata"
+        "1997",
+        "2001",
+        "1988",
+        "1972"
       ],
-      "explanation": "La Ronde de nuit : 1642; Le Radeau de La Méduse : 1819; Rigoletto : 1851; La Traviata : 1853"
+      "explanation": "« Princesse Mononoké » date de 1997."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Night Watch, The Raft of the Medusa, Rigoletto, La Traviata?",
+      "text": "What year does the work “Princess Mononoke” date from?",
       "options": [
-        "The Raft of the Medusa",
-        "The Night Watch",
-        "Rigoletto",
-        "La Traviata"
+        "1997",
+        "2001",
+        "1988",
+        "1972"
       ],
-      "explanation": "The Night Watch: 1642; The Raft of the Medusa: 1819; Rigoletto: 1851; La Traviata: 1853"
+      "explanation": "“Princess Mononoke” dates to 1997."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2723
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Nighthawks, Citizen Kane, Le Serment des Horaces, Le Parrain ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Princesse Mononoké » ?",
       "options": [
-        "Citizen Kane",
-        "Nighthawks",
-        "Le Serment des Horaces",
-        "Le Parrain"
+        "Japon",
+        "Chine",
+        "Corée du Sud",
+        "Inde"
       ],
-      "explanation": "Le Serment des Horaces : 1784; Citizen Kane : 1941; Nighthawks : 1942; Le Parrain : 1972"
+      "explanation": "Hayao Miyazaki, à l’origine de « Princesse Mononoké », est né sur le territoire de l’actuel pays « Japon »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Nighthawks, Citizen Kane, The Oath of the Horatii, The Godfather?",
+      "text": "In which present-day country was the creator behind “Princess Mononoke” born?",
       "options": [
-        "Citizen Kane",
-        "Nighthawks",
-        "The Oath of the Horatii",
-        "The Godfather"
+        "Japan",
+        "China",
+        "South Korea",
+        "India"
       ],
-      "explanation": "The Oath of the Horatii: 1784; Citizen Kane: 1941; Nighthawks: 1942; The Godfather: 1972"
+      "explanation": "Hayao Miyazaki, who created “Princess Mononoke”, was born in what is now Japan."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2724
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Symphonie du Nouveau Monde, Le Sacre du printemps, Le Voyage dans la Lune, La Trahison des images ?",
+      "text": "Quelle œuvre de Hayao Miyazaki date de 1997 ?",
       "options": [
-        "Le Voyage dans la Lune",
-        "Symphonie du Nouveau Monde",
-        "Le Sacre du printemps",
-        "La Trahison des images"
+        "Princesse Mononoké",
+        "Le Voyage de Chihiro",
+        "Mon voisin Totoro",
+        "Le Parrain"
       ],
-      "explanation": "Symphonie du Nouveau Monde : 1893; Le Voyage dans la Lune : 1902; Le Sacre du printemps : 1913; La Trahison des images : 1929"
+      "explanation": "Il s'agit de « Princesse Mononoké »."
     },
     "en": {
-      "text": "Which work is the second oldest among: New World Symphony, The Rite of Spring, A Trip to the Moon, The Treachery of Images?",
+      "text": "Which work by Hayao Miyazaki dates to 1997?",
       "options": [
-        "A Trip to the Moon",
-        "New World Symphony",
-        "The Rite of Spring",
-        "The Treachery of Images"
+        "Princess Mononoke",
+        "Spirited Away",
+        "My Neighbor Totoro",
+        "The Godfather"
       ],
-      "explanation": "New World Symphony: 1893; A Trip to the Moon: 1902; The Rite of Spring: 1913; The Treachery of Images: 1929"
+      "explanation": "The work is “Princess Mononoke”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2725
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : L’Oiseau de feu, La Bohème, La Belle au bois dormant, Les Sept Samouraïs ?",
+      "text": "De quelle année date l’œuvre « Les Temps modernes » ?",
       "options": [
-        "La Bohème",
-        "L’Oiseau de feu",
-        "La Belle au bois dormant",
-        "Les Sept Samouraïs"
+        "1936",
+        "1937",
+        "1940",
+        "1931"
       ],
-      "explanation": "La Belle au bois dormant : 1890; La Bohème : 1896; L’Oiseau de feu : 1910; Les Sept Samouraïs : 1954"
+      "explanation": "« Les Temps modernes » date de 1936."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Firebird, La Bohème, The Sleeping Beauty, Seven Samurai?",
+      "text": "What year does the work “Modern Times” date from?",
       "options": [
-        "La Bohème",
-        "The Firebird",
-        "The Sleeping Beauty",
-        "Seven Samurai"
+        "1936",
+        "1937",
+        "1940",
+        "1931"
       ],
-      "explanation": "The Sleeping Beauty: 1890; La Bohème: 1896; The Firebird: 1910; Seven Samurai: 1954"
+      "explanation": "“Modern Times” dates to 1936."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2726
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Impression, soleil levant, Mon voisin Totoro, Le Sacre du printemps, L’Oiseau de feu ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Les Temps modernes » ?",
       "options": [
-        "L’Oiseau de feu",
-        "Impression, soleil levant",
-        "Mon voisin Totoro",
-        "Le Sacre du printemps"
+        "Royaume-Uni",
+        "Irlande",
+        "France",
+        "États-Unis"
       ],
-      "explanation": "Impression, soleil levant : 1872; L’Oiseau de feu : 1910; Le Sacre du printemps : 1913; Mon voisin Totoro : 1988"
+      "explanation": "Charlie Chaplin, à l’origine de « Les Temps modernes », est né sur le territoire de l’actuel pays « Royaume-Uni »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Impression, Sunrise, My Neighbor Totoro, The Rite of Spring, The Firebird?",
+      "text": "In which present-day country was the creator behind “Modern Times” born?",
       "options": [
-        "The Firebird",
-        "Impression, Sunrise",
-        "My Neighbor Totoro",
-        "The Rite of Spring"
+        "United Kingdom",
+        "Ireland",
+        "France",
+        "United States"
       ],
-      "explanation": "Impression, Sunrise: 1872; The Firebird: 1910; The Rite of Spring: 1913; My Neighbor Totoro: 1988"
+      "explanation": "Charlie Chaplin, who created “Modern Times”, was born in what is now the United Kingdom."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2727
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Casse-Noisette, La Jeune Fille à la perle, Les Demoiselles d’Avignon, Mon voisin Totoro ?",
+      "text": "Quelle œuvre de Charlie Chaplin date de 1936 ?",
       "options": [
-        "Casse-Noisette",
-        "La Jeune Fille à la perle",
-        "Les Demoiselles d’Avignon",
-        "Mon voisin Totoro"
+        "Les Temps modernes",
+        "Le Dictateur",
+        "Citizen Kane",
+        "Metropolis"
       ],
-      "explanation": "La Jeune Fille à la perle : 1665; Casse-Noisette : 1892; Les Demoiselles d’Avignon : 1907; Mon voisin Totoro : 1988"
+      "explanation": "Il s'agit de « Les Temps modernes »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Nutcracker, Girl with a Pearl Earring, Les Demoiselles d’Avignon, My Neighbor Totoro?",
+      "text": "Which work by Charlie Chaplin dates to 1936?",
       "options": [
-        "The Nutcracker",
-        "Girl with a Pearl Earring",
-        "Les Demoiselles d’Avignon",
-        "My Neighbor Totoro"
+        "Modern Times",
+        "The Great Dictator",
+        "Citizen Kane",
+        "Metropolis"
       ],
-      "explanation": "Girl with a Pearl Earring: 1665; The Nutcracker: 1892; Les Demoiselles d’Avignon: 1907; My Neighbor Totoro: 1988"
+      "explanation": "The work is “Modern Times”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2728
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Radeau de La Méduse, Aida, Princesse Mononoké, Le Parrain ?",
+      "text": "De quelle année date l’œuvre « Le Dictateur » ?",
       "options": [
-        "Aida",
-        "Le Radeau de La Méduse",
-        "Princesse Mononoké",
-        "Le Parrain"
+        "1940",
+        "1941",
+        "1942",
+        "1937"
       ],
-      "explanation": "Le Radeau de La Méduse : 1819; Aida : 1871; Le Parrain : 1972; Princesse Mononoké : 1997"
+      "explanation": "« Le Dictateur » date de 1940."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Raft of the Medusa, Aida, Princess Mononoke, The Godfather?",
+      "text": "What year does the work “The Great Dictator” date from?",
       "options": [
-        "Aida",
-        "The Raft of the Medusa",
-        "Princess Mononoke",
-        "The Godfather"
+        "1940",
+        "1941",
+        "1942",
+        "1937"
       ],
-      "explanation": "The Raft of the Medusa: 1819; Aida: 1871; The Godfather: 1972; Princess Mononoke: 1997"
+      "explanation": "“The Great Dictator” dates to 1940."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2729
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Tosca, Guernica, Les Mangeurs de pommes de terre, Le Déjeuner sur l’herbe ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Le Dictateur » ?",
       "options": [
-        "Les Mangeurs de pommes de terre",
-        "Tosca",
-        "Guernica",
-        "Le Déjeuner sur l’herbe"
+        "Royaume-Uni",
+        "Irlande",
+        "France",
+        "États-Unis"
       ],
-      "explanation": "Le Déjeuner sur l’herbe : 1863; Les Mangeurs de pommes de terre : 1885; Tosca : 1900; Guernica : 1937"
+      "explanation": "Charlie Chaplin, à l’origine de « Le Dictateur », est né sur le territoire de l’actuel pays « Royaume-Uni »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Tosca, Guernica, The Potato Eaters, Le Déjeuner sur l’herbe?",
+      "text": "In which present-day country was the creator behind “The Great Dictator” born?",
       "options": [
-        "The Potato Eaters",
-        "Tosca",
-        "Guernica",
-        "Le Déjeuner sur l’herbe"
+        "United Kingdom",
+        "Ireland",
+        "France",
+        "United States"
       ],
-      "explanation": "Le Déjeuner sur l’herbe: 1863; The Potato Eaters: 1885; Tosca: 1900; Guernica: 1937"
+      "explanation": "Charlie Chaplin, who created “The Great Dictator”, was born in what is now the United Kingdom."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2730
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Aida, Le Lac des cygnes, La Liberté guidant le peuple, American Gothic ?",
+      "text": "Quelle œuvre de Charlie Chaplin date de 1940 ?",
       "options": [
-        "Aida",
-        "Le Lac des cygnes",
-        "La Liberté guidant le peuple",
-        "American Gothic"
+        "Le Dictateur",
+        "Citizen Kane",
+        "Les Temps modernes",
+        "Metropolis"
       ],
-      "explanation": "La Liberté guidant le peuple : 1830; Aida : 1871; Le Lac des cygnes : 1877; American Gothic : 1930"
+      "explanation": "Il s'agit de « Le Dictateur »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Aida, Swan Lake, Liberty Leading the People, American Gothic?",
+      "text": "Which work by Charlie Chaplin dates to 1940?",
       "options": [
-        "Aida",
-        "Swan Lake",
-        "Liberty Leading the People",
-        "American Gothic"
+        "The Great Dictator",
+        "Citizen Kane",
+        "Modern Times",
+        "Metropolis"
       ],
-      "explanation": "Liberty Leading the People: 1830; Aida: 1871; Swan Lake: 1877; American Gothic: 1930"
+      "explanation": "The work is “The Great Dictator”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2731
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Dictateur, La Nuit étoilée, Les Temps modernes, La Jeune Fille à la perle ?",
+      "text": "De quelle année date l’œuvre « Le Voyage dans la Lune » ?",
       "options": [
-        "La Nuit étoilée",
-        "Le Dictateur",
-        "Les Temps modernes",
-        "La Jeune Fille à la perle"
+        "1902",
+        "1900",
+        "1904",
+        "1907"
       ],
-      "explanation": "La Jeune Fille à la perle : 1665; La Nuit étoilée : 1889; Les Temps modernes : 1936; Le Dictateur : 1940"
+      "explanation": "« Le Voyage dans la Lune » date de 1902."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Great Dictator, The Starry Night, Modern Times, Girl with a Pearl Earring?",
+      "text": "What year does the work “A Trip to the Moon” date from?",
       "options": [
-        "The Starry Night",
-        "The Great Dictator",
-        "Modern Times",
-        "Girl with a Pearl Earring"
+        "1902",
+        "1900",
+        "1904",
+        "1907"
       ],
-      "explanation": "Girl with a Pearl Earring: 1665; The Starry Night: 1889; Modern Times: 1936; The Great Dictator: 1940"
+      "explanation": "“A Trip to the Moon” dates to 1902."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2732
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Carmen, Les Demoiselles d’Avignon, Madame Butterfly, Citizen Kane ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Le Voyage dans la Lune » ?",
       "options": [
-        "Madame Butterfly",
-        "Carmen",
-        "Les Demoiselles d’Avignon",
-        "Citizen Kane"
+        "France",
+        "Royaume-Uni",
+        "Italie",
+        "Allemagne"
       ],
-      "explanation": "Carmen : 1875; Madame Butterfly : 1904; Les Demoiselles d’Avignon : 1907; Citizen Kane : 1941"
+      "explanation": "Georges Méliès, à l’origine de « Le Voyage dans la Lune », est né sur le territoire de l’actuel pays « France »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Carmen, Les Demoiselles d’Avignon, Madama Butterfly, Citizen Kane?",
+      "text": "In which present-day country was the creator behind “A Trip to the Moon” born?",
       "options": [
-        "Madama Butterfly",
-        "Carmen",
-        "Les Demoiselles d’Avignon",
-        "Citizen Kane"
+        "France",
+        "United Kingdom",
+        "Italy",
+        "Germany"
       ],
-      "explanation": "Carmen: 1875; Madama Butterfly: 1904; Les Demoiselles d’Avignon: 1907; Citizen Kane: 1941"
+      "explanation": "Georges Méliès, who created “A Trip to the Moon”, was born in what is now France."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2733
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Nighthawks, Le Dictateur, Le Voyage dans la Lune, Princesse Mononoké ?",
+      "text": "Quelle œuvre de Georges Méliès date de 1902 ?",
       "options": [
-        "Le Dictateur",
-        "Nighthawks",
         "Le Voyage dans la Lune",
-        "Princesse Mononoké"
+        "Metropolis",
+        "Les Temps modernes",
+        "Le Dictateur"
       ],
-      "explanation": "Le Voyage dans la Lune : 1902; Le Dictateur : 1940; Nighthawks : 1942; Princesse Mononoké : 1997"
+      "explanation": "Il s'agit de « Le Voyage dans la Lune »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Nighthawks, The Great Dictator, A Trip to the Moon, Princess Mononoke?",
+      "text": "Which work by Georges Méliès dates to 1902?",
       "options": [
-        "The Great Dictator",
-        "Nighthawks",
         "A Trip to the Moon",
-        "Princess Mononoke"
+        "Metropolis",
+        "Modern Times",
+        "The Great Dictator"
       ],
-      "explanation": "A Trip to the Moon: 1902; The Great Dictator: 1940; Nighthawks: 1942; Princess Mononoke: 1997"
+      "explanation": "The work is “A Trip to the Moon”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2734
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Aida, La Persistance de la mémoire, La Liberté guidant le peuple, La Belle au bois dormant ?",
+      "text": "De quelle année date l’œuvre « Metropolis » ?",
       "options": [
-        "Aida",
-        "La Persistance de la mémoire",
-        "La Liberté guidant le peuple",
-        "La Belle au bois dormant"
+        "1927",
+        "1929",
+        "1930",
+        "1931"
       ],
-      "explanation": "La Liberté guidant le peuple : 1830; Aida : 1871; La Belle au bois dormant : 1890; La Persistance de la mémoire : 1931"
+      "explanation": "« Metropolis » date de 1927."
     },
     "en": {
-      "text": "Which work is the second oldest among: Aida, The Persistence of Memory, Liberty Leading the People, The Sleeping Beauty?",
+      "text": "What year does the work “Metropolis” date from?",
       "options": [
-        "Aida",
-        "The Persistence of Memory",
-        "Liberty Leading the People",
-        "The Sleeping Beauty"
+        "1927",
+        "1929",
+        "1930",
+        "1931"
       ],
-      "explanation": "Liberty Leading the People: 1830; Aida: 1871; The Sleeping Beauty: 1890; The Persistence of Memory: 1931"
+      "explanation": "“Metropolis” dates to 1927."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2735
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Sacre du printemps, La Mort de Marat, La Ronde de nuit, Mon voisin Totoro ?",
+      "text": "Dans quel pays actuel est né la personne à l’origine de « Metropolis » ?",
       "options": [
-        "La Mort de Marat",
-        "Le Sacre du printemps",
-        "La Ronde de nuit",
-        "Mon voisin Totoro"
+        "Autriche",
+        "Allemagne",
+        "Suisse",
+        "Italie"
       ],
-      "explanation": "La Ronde de nuit : 1642; La Mort de Marat : 1793; Le Sacre du printemps : 1913; Mon voisin Totoro : 1988"
+      "explanation": "Fritz Lang, à l’origine de « Metropolis », est né sur le territoire de l’actuel pays « Autriche »."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Rite of Spring, The Death of Marat, The Night Watch, My Neighbor Totoro?",
+      "text": "In which present-day country was the creator behind “Metropolis” born?",
       "options": [
-        "The Death of Marat",
-        "The Rite of Spring",
-        "The Night Watch",
-        "My Neighbor Totoro"
+        "Austria",
+        "Germany",
+        "Switzerland",
+        "Italy"
       ],
-      "explanation": "The Night Watch: 1642; The Death of Marat: 1793; The Rite of Spring: 1913; My Neighbor Totoro: 1988"
+      "explanation": "Fritz Lang, who created “Metropolis”, was born in what is now Austria."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2736
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Citizen Kane, Le Lac des cygnes, La Bohème, Don Giovanni ?",
+      "text": "Quelle œuvre de Fritz Lang date de 1927 ?",
       "options": [
-        "Le Lac des cygnes",
-        "Citizen Kane",
-        "La Bohème",
-        "Don Giovanni"
+        "Metropolis",
+        "Les Temps modernes",
+        "Le Dictateur",
+        "Citizen Kane"
       ],
-      "explanation": "Don Giovanni : 1787; Le Lac des cygnes : 1877; La Bohème : 1896; Citizen Kane : 1941"
+      "explanation": "Il s'agit de « Metropolis »."
     },
     "en": {
-      "text": "Which work is the second oldest among: Citizen Kane, Swan Lake, La Bohème, Don Giovanni?",
+      "text": "Which work by Fritz Lang dates to 1927?",
       "options": [
-        "Swan Lake",
-        "Citizen Kane",
-        "La Bohème",
-        "Don Giovanni"
+        "Metropolis",
+        "Modern Times",
+        "The Great Dictator",
+        "Citizen Kane"
       ],
-      "explanation": "Don Giovanni: 1787; Swan Lake: 1877; La Bohème: 1896; Citizen Kane: 1941"
+      "explanation": "The work is “Metropolis”."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2737
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Mon voisin Totoro, Nighthawks, Les Ménines, Carmen ?",
+      "text": "Quelle œuvre de type « peinture » date de 1937 ?",
       "options": [
-        "Carmen",
-        "Mon voisin Totoro",
-        "Nighthawks",
-        "Les Ménines"
+        "Guernica",
+        "Les Temps modernes",
+        "Le Dictateur",
+        "Citizen Kane"
       ],
-      "explanation": "Les Ménines : 1656; Carmen : 1875; Nighthawks : 1942; Mon voisin Totoro : 1988"
+      "explanation": "« Guernica » est une œuvre de type peinture datée de 1937."
     },
     "en": {
-      "text": "Which work is the second oldest among: My Neighbor Totoro, Nighthawks, Las Meninas, Carmen?",
+      "text": "Which painting dates to 1937?",
       "options": [
-        "Carmen",
-        "My Neighbor Totoro",
-        "Nighthawks",
-        "Las Meninas"
+        "Guernica",
+        "Modern Times",
+        "The Great Dictator",
+        "Citizen Kane"
       ],
-      "explanation": "Las Meninas: 1656; Carmen: 1875; Nighthawks: 1942; My Neighbor Totoro: 1988"
+      "explanation": "“Guernica” is a painting dated 1937."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2738
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Lac des cygnes, 2001 : L’Odyssée de l’espace, Le Sacre de Napoléon, Les Demoiselles d’Avignon ?",
+      "text": "Quelle œuvre de type « peinture » date de 1907 ?",
       "options": [
-        "Le Lac des cygnes",
-        "2001 : L’Odyssée de l’espace",
-        "Le Sacre de Napoléon",
-        "Les Demoiselles d’Avignon"
+        "Les Demoiselles d’Avignon",
+        "Madame Butterfly",
+        "L’Oiseau de feu",
+        "Le Voyage dans la Lune"
       ],
-      "explanation": "Le Sacre de Napoléon : 1807; Le Lac des cygnes : 1877; Les Demoiselles d’Avignon : 1907; 2001 : L’Odyssée de l’espace : 1968"
+      "explanation": "« Les Demoiselles d’Avignon » est une œuvre de type peinture datée de 1907."
     },
     "en": {
-      "text": "Which work is the second oldest among: Swan Lake, 2001: A Space Odyssey, The Coronation of Napoleon, Les Demoiselles d’Avignon?",
+      "text": "Which painting dates to 1907?",
       "options": [
-        "Swan Lake",
-        "2001: A Space Odyssey",
-        "The Coronation of Napoleon",
-        "Les Demoiselles d’Avignon"
+        "Les Demoiselles d’Avignon",
+        "Madama Butterfly",
+        "The Firebird",
+        "A Trip to the Moon"
       ],
-      "explanation": "The Coronation of Napoleon: 1807; Swan Lake: 1877; Les Demoiselles d’Avignon: 1907; 2001: A Space Odyssey: 1968"
+      "explanation": "“Les Demoiselles d’Avignon” is a painting dated 1907."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2739
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Ménines, Les Demoiselles d’Avignon, Le Serment des Horaces, Tosca ?",
+      "text": "Quelle œuvre de type « peinture » date de 1889 ?",
       "options": [
-        "Le Serment des Horaces",
-        "Les Ménines",
-        "Les Demoiselles d’Avignon",
-        "Tosca"
+        "La Nuit étoilée",
+        "La Belle au bois dormant",
+        "Casse-Noisette",
+        "Les Mangeurs de pommes de terre"
       ],
-      "explanation": "Les Ménines : 1656; Le Serment des Horaces : 1784; Tosca : 1900; Les Demoiselles d’Avignon : 1907"
+      "explanation": "« La Nuit étoilée » est une œuvre de type peinture datée de 1889."
     },
     "en": {
-      "text": "Which work is the second oldest among: Las Meninas, Les Demoiselles d’Avignon, The Oath of the Horatii, Tosca?",
+      "text": "Which painting dates to 1889?",
       "options": [
-        "The Oath of the Horatii",
-        "Las Meninas",
-        "Les Demoiselles d’Avignon",
-        "Tosca"
+        "The Starry Night",
+        "The Sleeping Beauty",
+        "The Nutcracker",
+        "The Potato Eaters"
       ],
-      "explanation": "Las Meninas: 1656; The Oath of the Horatii: 1784; Tosca: 1900; Les Demoiselles d’Avignon: 1907"
+      "explanation": "“The Starry Night” is a painting dated 1889."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2740
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Princesse Mononoké, Les Mangeurs de pommes de terre, Le Voyage de Chihiro, La Liberté guidant le peuple ?",
+      "text": "Quelle œuvre de type « peinture » date de 1885 ?",
       "options": [
         "Les Mangeurs de pommes de terre",
-        "Princesse Mononoké",
-        "Le Voyage de Chihiro",
-        "La Liberté guidant le peuple"
+        "La Nuit étoilée",
+        "La Belle au bois dormant",
+        "Casse-Noisette"
       ],
-      "explanation": "La Liberté guidant le peuple : 1830; Les Mangeurs de pommes de terre : 1885; Princesse Mononoké : 1997; Le Voyage de Chihiro : 2001"
+      "explanation": "« Les Mangeurs de pommes de terre » est une œuvre de type peinture datée de 1885."
     },
     "en": {
-      "text": "Which work is the second oldest among: Princess Mononoke, The Potato Eaters, Spirited Away, Liberty Leading the People?",
+      "text": "Which painting dates to 1885?",
       "options": [
         "The Potato Eaters",
-        "Princess Mononoke",
-        "Spirited Away",
-        "Liberty Leading the People"
+        "The Starry Night",
+        "The Sleeping Beauty",
+        "The Nutcracker"
       ],
-      "explanation": "Liberty Leading the People: 1830; The Potato Eaters: 1885; Princess Mononoke: 1997; Spirited Away: 2001"
+      "explanation": "“The Potato Eaters” is a painting dated 1885."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2741
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Princesse Mononoké, La Belle au bois dormant, La Nuit étoilée, Le Radeau de La Méduse ?",
+      "text": "Quelle œuvre de type « peinture » date de 1665 ?",
       "options": [
-        "La Nuit étoilée",
-        "Princesse Mononoké",
-        "La Belle au bois dormant",
-        "Le Radeau de La Méduse"
+        "La Jeune Fille à la perle",
+        "Les Ménines",
+        "La Ronde de nuit",
+        "Le Serment des Horaces"
       ],
-      "explanation": "Le Radeau de La Méduse : 1819; La Nuit étoilée : 1889; La Belle au bois dormant : 1890; Princesse Mononoké : 1997"
+      "explanation": "« La Jeune Fille à la perle » est une œuvre de type peinture datée de 1665."
     },
     "en": {
-      "text": "Which work is the second oldest among: Princess Mononoke, The Sleeping Beauty, The Starry Night, The Raft of the Medusa?",
+      "text": "Which painting dates to 1665?",
       "options": [
-        "The Starry Night",
-        "Princess Mononoke",
-        "The Sleeping Beauty",
-        "The Raft of the Medusa"
+        "Girl with a Pearl Earring",
+        "Las Meninas",
+        "The Night Watch",
+        "The Oath of the Horatii"
       ],
-      "explanation": "The Raft of the Medusa: 1819; The Starry Night: 1889; The Sleeping Beauty: 1890; Princess Mononoke: 1997"
+      "explanation": "“Girl with a Pearl Earring” is a painting dated 1665."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2742
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Trahison des images, Le Déjeuner sur l’herbe, Le Lac des cygnes, La Liberté guidant le peuple ?",
+      "text": "Quelle œuvre de type « peinture » date de 1642 ?",
       "options": [
-        "Le Déjeuner sur l’herbe",
-        "La Trahison des images",
-        "Le Lac des cygnes",
-        "La Liberté guidant le peuple"
+        "La Ronde de nuit",
+        "Les Ménines",
+        "La Jeune Fille à la perle",
+        "Le Serment des Horaces"
       ],
-      "explanation": "La Liberté guidant le peuple : 1830; Le Déjeuner sur l’herbe : 1863; Le Lac des cygnes : 1877; La Trahison des images : 1929"
+      "explanation": "« La Ronde de nuit » est une œuvre de type peinture datée de 1642."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Treachery of Images, Le Déjeuner sur l’herbe, Swan Lake, Liberty Leading the People?",
+      "text": "Which painting dates to 1642?",
       "options": [
-        "Le Déjeuner sur l’herbe",
-        "The Treachery of Images",
-        "Swan Lake",
-        "Liberty Leading the People"
+        "The Night Watch",
+        "Las Meninas",
+        "Girl with a Pearl Earring",
+        "The Oath of the Horatii"
       ],
-      "explanation": "Liberty Leading the People: 1830; Le Déjeuner sur l’herbe: 1863; Swan Lake: 1877; The Treachery of Images: 1929"
+      "explanation": "“The Night Watch” is a painting dated 1642."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2743
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Les Temps modernes, Princesse Mononoké, La Mort de Marat, Don Giovanni ?",
+      "text": "Quelle œuvre de type « peinture » date de 1656 ?",
       "options": [
-        "La Mort de Marat",
-        "Les Temps modernes",
-        "Princesse Mononoké",
-        "Don Giovanni"
+        "Les Ménines",
+        "La Jeune Fille à la perle",
+        "La Ronde de nuit",
+        "Le Serment des Horaces"
       ],
-      "explanation": "Don Giovanni : 1787; La Mort de Marat : 1793; Les Temps modernes : 1936; Princesse Mononoké : 1997"
+      "explanation": "« Les Ménines » est une œuvre de type peinture datée de 1656."
     },
     "en": {
-      "text": "Which work is the second oldest among: Modern Times, Princess Mononoke, The Death of Marat, Don Giovanni?",
+      "text": "Which painting dates to 1656?",
       "options": [
-        "The Death of Marat",
-        "Modern Times",
-        "Princess Mononoke",
-        "Don Giovanni"
+        "Las Meninas",
+        "Girl with a Pearl Earring",
+        "The Night Watch",
+        "The Oath of the Horatii"
       ],
-      "explanation": "Don Giovanni: 1787; The Death of Marat: 1793; Modern Times: 1936; Princess Mononoke: 1997"
+      "explanation": "“Las Meninas” is a painting dated 1656."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2744
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Radeau de La Méduse, Le Serment des Horaces, Metropolis, Les Noces de Figaro ?",
+      "text": "Quelle œuvre de type « peinture » date de 1830 ?",
       "options": [
-        "Les Noces de Figaro",
+        "La Liberté guidant le peuple",
+        "Symphonie fantastique",
         "Le Radeau de La Méduse",
-        "Le Serment des Horaces",
-        "Metropolis"
+        "Le Barbier de Séville"
       ],
-      "explanation": "Le Serment des Horaces : 1784; Les Noces de Figaro : 1786; Le Radeau de La Méduse : 1819; Metropolis : 1927"
+      "explanation": "« La Liberté guidant le peuple » est une œuvre de type peinture datée de 1830."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Raft of the Medusa, The Oath of the Horatii, Metropolis, The Marriage of Figaro?",
+      "text": "Which painting dates to 1830?",
       "options": [
-        "The Marriage of Figaro",
+        "Liberty Leading the People",
+        "Symphonie fantastique",
         "The Raft of the Medusa",
-        "The Oath of the Horatii",
-        "Metropolis"
+        "The Barber of Seville"
       ],
-      "explanation": "The Oath of the Horatii: 1784; The Marriage of Figaro: 1786; The Raft of the Medusa: 1819; Metropolis: 1927"
+      "explanation": "“Liberty Leading the People” is a painting dated 1830."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2745
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Barbier de Séville, Impression, soleil levant, Les Mangeurs de pommes de terre, American Gothic ?",
+      "text": "Quelle œuvre de type « peinture » date de 1819 ?",
       "options": [
-        "Impression, soleil levant",
+        "Le Radeau de La Méduse",
         "Le Barbier de Séville",
-        "Les Mangeurs de pommes de terre",
-        "American Gothic"
+        "La Liberté guidant le peuple",
+        "Symphonie fantastique"
       ],
-      "explanation": "Le Barbier de Séville : 1816; Impression, soleil levant : 1872; Les Mangeurs de pommes de terre : 1885; American Gothic : 1930"
+      "explanation": "« Le Radeau de La Méduse » est une œuvre de type peinture datée de 1819."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Barber of Seville, Impression, Sunrise, The Potato Eaters, American Gothic?",
+      "text": "Which painting dates to 1819?",
       "options": [
-        "Impression, Sunrise",
+        "The Raft of the Medusa",
         "The Barber of Seville",
-        "The Potato Eaters",
-        "American Gothic"
+        "Liberty Leading the People",
+        "Symphonie fantastique"
       ],
-      "explanation": "The Barber of Seville: 1816; Impression, Sunrise: 1872; The Potato Eaters: 1885; American Gothic: 1930"
+      "explanation": "“The Raft of the Medusa” is a painting dated 1819."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2746
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Aida, La Mort de Marat, Mon voisin Totoro, L’Oiseau de feu ?",
+      "text": "Quel tableau de 1863 montre deux hommes vêtus et une femme nue déjeunant dans un bois ?",
       "options": [
+        "Le Déjeuner sur l’herbe",
         "Aida",
-        "La Mort de Marat",
-        "Mon voisin Totoro",
-        "L’Oiseau de feu"
+        "Impression, soleil levant",
+        "La Traviata"
       ],
-      "explanation": "La Mort de Marat : 1793; Aida : 1871; L’Oiseau de feu : 1910; Mon voisin Totoro : 1988"
+      "explanation": "Le Déjeuner sur l’herbe représente cette scène."
     },
     "en": {
-      "text": "Which work is the second oldest among: Aida, The Death of Marat, My Neighbor Totoro, The Firebird?",
+      "text": "Which 1863 painting shows two clothed men and a nude woman having lunch in a woodland?",
       "options": [
+        "Le Déjeuner sur l’herbe",
         "Aida",
-        "The Death of Marat",
-        "My Neighbor Totoro",
-        "The Firebird"
+        "Impression, Sunrise",
+        "La Traviata"
       ],
-      "explanation": "The Death of Marat: 1793; Aida: 1871; The Firebird: 1910; My Neighbor Totoro: 1988"
+      "explanation": "Le Déjeuner sur l’herbe depicts this scene."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2747
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : La Nuit étoilée, La Liberté guidant le peuple, Le Sacre du printemps, Rigoletto ?",
+      "text": "Quel tableau réalisé en 1863 représente une femme nue allongée sur un lit ?",
       "options": [
-        "Rigoletto",
-        "La Nuit étoilée",
-        "La Liberté guidant le peuple",
-        "Le Sacre du printemps"
+        "Olympia",
+        "Aida",
+        "Impression, soleil levant",
+        "La Traviata"
       ],
-      "explanation": "La Liberté guidant le peuple : 1830; Rigoletto : 1851; La Nuit étoilée : 1889; Le Sacre du printemps : 1913"
+      "explanation": "Olympia représente cette scène."
     },
     "en": {
-      "text": "Which work is the second oldest among: The Starry Night, Liberty Leading the People, The Rite of Spring, Rigoletto?",
+      "text": "Which painting made in 1863 depicts a nude woman reclining on a bed?",
       "options": [
-        "Rigoletto",
-        "The Starry Night",
-        "Liberty Leading the People",
-        "The Rite of Spring"
+        "Olympia",
+        "Aida",
+        "Impression, Sunrise",
+        "La Traviata"
       ],
-      "explanation": "Liberty Leading the People: 1830; Rigoletto: 1851; The Starry Night: 1889; The Rite of Spring: 1913"
+      "explanation": "Olympia depicts this scene."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2748
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Le Voyage de Chihiro, La Trahison des images, 2001 : L’Odyssée de l’espace, Les Oiseaux ?",
+      "text": "Quelle œuvre de type « peinture » date de 1872 ?",
       "options": [
-        "Les Oiseaux",
-        "Le Voyage de Chihiro",
-        "La Trahison des images",
-        "2001 : L’Odyssée de l’espace"
+        "Impression, soleil levant",
+        "Aida",
+        "Carmen",
+        "Le Lac des cygnes"
       ],
-      "explanation": "La Trahison des images : 1929; Les Oiseaux : 1963; 2001 : L’Odyssée de l’espace : 1968; Le Voyage de Chihiro : 2001"
+      "explanation": "« Impression, soleil levant » est une œuvre de type peinture datée de 1872."
     },
     "en": {
-      "text": "Which work is the second oldest among: Spirited Away, The Treachery of Images, 2001: A Space Odyssey, The Birds?",
+      "text": "Which painting dates to 1872?",
       "options": [
-        "The Birds",
-        "Spirited Away",
-        "The Treachery of Images",
-        "2001: A Space Odyssey"
+        "Impression, Sunrise",
+        "Aida",
+        "Carmen",
+        "Swan Lake"
       ],
-      "explanation": "The Treachery of Images: 1929; The Birds: 1963; 2001: A Space Odyssey: 1968; Spirited Away: 2001"
+      "explanation": "“Impression, Sunrise” is a painting dated 1872."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2749
   },
   {
-    "category": "Arts & musique",
     "fr": {
-      "text": "Quelle œuvre est la deuxième plus ancienne parmi : Princesse Mononoké, Tosca, Le Parrain, Les Ménines ?",
+      "text": "Quelle œuvre de type « peinture » date de 1931 ?",
       "options": [
-        "Tosca",
-        "Princesse Mononoké",
-        "Le Parrain",
-        "Les Ménines"
+        "La Persistance de la mémoire",
+        "American Gothic",
+        "La Trahison des images",
+        "Metropolis"
       ],
-      "explanation": "Les Ménines : 1656; Tosca : 1900; Le Parrain : 1972; Princesse Mononoké : 1997"
+      "explanation": "« La Persistance de la mémoire » est une œuvre de type peinture datée de 1931."
     },
     "en": {
-      "text": "Which work is the second oldest among: Princess Mononoke, Tosca, The Godfather, Las Meninas?",
+      "text": "Which painting dates to 1931?",
       "options": [
-        "Tosca",
-        "Princess Mononoke",
-        "The Godfather",
-        "Las Meninas"
+        "The Persistence of Memory",
+        "American Gothic",
+        "The Treachery of Images",
+        "Metropolis"
       ],
-      "explanation": "Las Meninas: 1656; Tosca: 1900; The Godfather: 1972; Princess Mononoke: 1997"
+      "explanation": "“The Persistence of Memory” is a painting dated 1931."
     },
     "correct": 0,
+    "category": "Arts & musique",
     "id": 2750
   },
   {

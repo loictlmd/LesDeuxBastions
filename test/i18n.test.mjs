@@ -56,3 +56,15 @@ test('all questions ask one question and never combine two answer sets', () => {
     }
   }
 });
+
+test('the bilingual bank has 375 questions per theme without oldest-or-newest comparisons', () => {
+  const themes = new Map();
+  for (const source of QUESTIONS) {
+    themes.set(source.category, (themes.get(source.category) ?? 0) + 1);
+    for (const question of [source, ENGLISH_QUESTIONS[source.id]]) {
+      assert.doesNotMatch(question.text, /plus ancien(?:ne)?|plus récent(?:e)?|oldest|most recent/i, `Chronology comparison: ${source.id}`);
+    }
+  }
+  assert.equal(themes.size, 8);
+  assert.ok([...themes.values()].every(count => count === 375));
+});
